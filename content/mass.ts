@@ -47,8 +47,8 @@ export type MassMoment = {
   posture: { position: Posture; note: Text };
   response?: ResponseLine[];
   cue?: Text; // original listening cue: when and how the people take part (shown and spoken)
-  // Optional response practice. The expected answer and its meaning come from the people's line in
-  // `response`; these are only the question, a hint, and the feedback after a correct answer.
+  // Optional response practice. The expected answer and its meaning come from the first people's line
+  // with words in `response`; these are only the question, a hint, and the feedback after a correct answer.
   practice?: { prompt: Text; hint: Text; success: Text };
   illustration: { id: SceneId; caption: Text }; // caption describes this moment; the scene may be shared
   condition?: Text; // set when this rite does not happen at every Mass
@@ -368,6 +368,20 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
       en: "Now listen for each short call for mercy. The priest or cantor sings or says a line, and everyone repeats it right back: Kyrie, eleison. Christe, eleison. Kyrie, eleison.",
       es: "Ahora escucha cada breve súplica de misericordia. El sacerdote o el cantor canta o dice una línea, y todos la repiten enseguida: Kyrie, eleison. Christe, eleison. Kyrie, eleison.",
     },
+    practice: {
+      prompt: {
+        en: "In this exercise, the priest or cantor leads in Greek. He sings or says the first call for mercy, “Kyrie, eleison,” and the congregation repeats it. (The Kyrie can also be sung or said in English or Spanish; this exercise uses the Greek.) What do you sing or say back?",
+        es: "En este ejercicio, el sacerdote o el cantor dirige en griego. Canta o dice la primera súplica de misericordia, «Kyrie, eleison», y la asamblea la repite. (El Kyrie también puede cantarse o decirse en español o en inglés; este ejercicio usa el griego). ¿Qué cantas o dices tú?",
+      },
+      hint: {
+        en: "The people simply repeat the leader’s words.",
+        es: "El pueblo simplemente repite las palabras de quien dirige.",
+      },
+      success: {
+        en: "“Kyrie, eleison” is Greek for “Lord, have mercy.” By repeating it, the whole assembly calls on the Lord together. Next comes “Christe, eleison,” then “Kyrie, eleison” once more. Where the Kyrie is in English or Spanish, the people repeat each line after the leader in the same way.",
+        es: "«Kyrie, eleison» significa en griego «Señor, ten piedad». Al repetirlo, toda la asamblea invoca junta al Señor. Luego viene «Christe, eleison» y de nuevo «Kyrie, eleison». Donde el Kyrie se dice en español o en inglés, el pueblo repite cada línea después de quien dirige de la misma manera.",
+      },
+    },
     illustration: {
       id: "congregation-prayer",
       caption: {
@@ -480,6 +494,20 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
     cue: {
       en: "The priest invites everyone to pray, then pauses. Bring your own intentions to God in that silence. Then he says the prayer of the day for all of us. At the end, you answer: Amen. Afterward, everyone sits.",
       es: "El sacerdote invita a todos a orar y hace una pausa. Presenta a Dios tus propias intenciones en ese silencio. Luego dice la oración del día por todos. Al final, respondes: Amén. Después, todos se sientan.",
+    },
+    practice: {
+      prompt: {
+        en: "The priest gathers everyone’s prayers into the Collect, the opening prayer of the Mass. When he finishes, the congregation responds together. What do you say?",
+        es: "El sacerdote reúne las oraciones de todos en la colecta, la oración inicial de la Misa. Cuando termina, la asamblea responde junta. ¿Qué dices?",
+      },
+      hint: {
+        en: "It’s the same word you said after the Sign of the Cross.",
+        es: "Es la misma palabra que dijiste después de la señal de la cruz.",
+      },
+      success: {
+        en: "As at the beginning of Mass, “Amen” means “Yes, it is so.” Here it seals the Collect: the priest prayed in everyone’s name, and your Amen makes that prayer your own.",
+        es: "Como al comienzo de la Misa, «Amén» significa «Sí, así es». Aquí sella la colecta: el sacerdote oró en nombre de todos, y tu «Amén» hace tuya esa oración.",
+      },
     },
     illustration: {
       id: "collect",

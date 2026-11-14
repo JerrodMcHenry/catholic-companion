@@ -56,9 +56,13 @@ npm run build
 
 **Milestone 4B: prerecorded narration.** The browser speech of Milestone 4 was replaced by 28 prerecorded MP3s (see "Audio" below).
 
-**Milestone 5A: response practice** (`app/simulation/practice.tsx`, Sign of the Cross only)
+**Milestone 5A/5B: response practice** (`app/simulation/practice.tsx`)
 
-- An optional "Practice your response" panel, collapsed by default. It asks what the people answer after the opening Sign of the Cross.
+- An optional "Practice your response" panel, collapsed by default, at three moments:
+  - **Sign of the Cross:** Amen / Amén.
+  - **Kyrie:** the people's first response, "Kyrie, eleison", repeating the leader's Greek invocation. The prompt notes that the Kyrie may also be in English or Spanish.
+  - **Collect:** Amen / Amén.
+- No other moment has practice. The **Greeting** is deferred until the official response wording, the Spanish missal to follow, and permission to quote are settled (see licensing questions).
 - **Speak** (browser speech recognition, U.S. English or Mexican Spanish) or **Type**. Typing always works.
 - Spoken answers appear in an editable box. Nothing is checked until the learner presses Check, so a wrong transcription is never graded.
 - Feedback: "That's right" with the meaning of Amen, or a gentle hint. Try again, Show answer, and Skip practice are always available. There are no scores, and navigation is never blocked.
@@ -117,7 +121,7 @@ Official dialogue recordings, if licensed later, must stay separate from this ed
 
 ## Core requirement: voice practice (first exercise built)
 
-Practicing congregational responses is a core feature. The first exercise (Sign of the Cross, "Amen") is built; the other responses are not yet. The planned flow:
+Practicing congregational responses is a core feature. Three exercises are built (Sign of the Cross, Kyrie, Collect); the others are not yet. The planned flow:
 
 1. Hear the priest's part (audio playback, never automatic). Today this is described by the listening cue; official dialogue audio awaits licensing.
 2. See the congregation's response.
@@ -132,6 +136,7 @@ Voice is always optional. Every step works with text alone, in English or Spanis
 - **Checking.** Checking is deterministic, with no AI. Both the answer and the expected words are lowercased, accents and punctuation are removed, and spaces are collapsed. "Amen", "amén." and "¡AMÉN!" all match. There is no fuzzy matching, so "a man" (a common mishearing) is not accepted, but the learner can correct it in the box before checking. An empty answer is not graded.
 - **Speech recognition.** `SpeechRecognition` or `webkitSpeechRecognition`, one short session per button press (`continuous = false`), never restarted automatically. The browser asks for microphone permission itself. Errors (permission blocked, no speech, no microphone, network, other) are explained, are never graded, and offer Try again or Type. Recognition is aborted on Cancel, on switching to Type, and when the panel unmounts (navigation, language change, restart, finishing). A session counter makes the panel ignore late callbacks from a stopped session.
 - **Privacy.** Catholic Companion does not record, store, upload, or log voice or answers. Answers live only in the panel's memory and are cleared when the learner leaves the moment. Speech-to-text is done by the browser: Chrome sends the audio to Google's speech service, and other browsers may use their provider's service. The panel says this.
+- **Kyrie and Greek.** U.S. English and Mexican Spanish recognizers may mishear "Kyrie, eleison". The learner corrects it in the box before checking. Only the Greek is accepted in this exercise, because the prompt gives the leader's line in Greek. Only the first of the three responses is practiced.
 - **Browser support.** Chrome and Edge (desktop and Android) and Safari support speech recognition. Firefox does not; it shows a note, and typing works. Recognition accuracy for a single short word varies.
 
 The `response` lines in `content/mass.ts` (speaker, exact words when available, meaning) are shaped for this flow.
@@ -153,6 +158,8 @@ Each moment in `content/mass.ts` lists the specific references it relies on.
    - the Collect
 
    Permission from ICEL and the USCCB would be needed to include them.
+
+   **Greeting practice depends on this.** Before it can be added, three things are needed: permission to quote the people's response, the exact wording from a licensed copy, and confirmation of which Spanish missal to follow (U.S. 2018 or Mexico) and whether its greetings have more than one response. Once settled, add the `words` to the Greeting's people line in `content/mass.ts`; the lesson then shows them, and practice works with no code change.
 2. **Quoted words.** Only "Amen" / "Amén" and the Greek "Kyrie, eleison" / "Christe, eleison" are quoted. These are ancient acclamations, not translations, and are widely treated as free to use. Confirm this before release.
 3. **Order of Mass paragraph numbers.** The content cites the Order of Mass by section, not by paragraph number. Add paragraph numbers after checking a printed Roman Missal. (The USCCB Order of Mass page could not be fetched automatically.)
 4. **Review.** A priest or diocesan liturgy office should review the explanations, and a native-speaking catechist should review the Spanish.
