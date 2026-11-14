@@ -46,6 +46,7 @@ export type MassMoment = {
   deeper?: Text;
   posture: { position: Posture; note: Text };
   response?: ResponseLine[];
+  cue?: Text; // original listening cue: when and how the people take part (shown and spoken)
   illustration: { id: SceneId; caption: Text }; // caption describes this moment; the scene may be shared
   condition?: Text; // set when this rite does not happen at every Mass
   variations?: Text;
@@ -159,6 +160,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         },
       },
     ],
+    cue: {
+      en: "Listen for the priest to begin the Mass in the name of the Father, the Son, and the Holy Spirit. Make the Sign of the Cross with him. When he finishes, everyone answers together: Amen.",
+      es: "Escucha cuando el sacerdote comienza la Misa en el nombre del Padre, del Hijo y del Espíritu Santo. Haz con él la señal de la cruz. Cuando termina, todos responden juntos: Amén.",
+    },
     illustration: {
       id: "sign-of-the-cross",
       caption: {
@@ -203,6 +208,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         },
       },
     ],
+    cue: {
+      en: "Next, the priest opens his hands and greets you, wishing you the Lord’s presence. That is your cue: everyone answers together, returning the greeting. If you don’t know the words yet, it’s fine to listen and join in when you can.",
+      es: "Luego el sacerdote abre las manos y te saluda, deseándote la presencia del Señor. Esa es tu señal: todos responden juntos, devolviendo el saludo. Si aún no sabes las palabras, puedes escuchar y unirte cuando puedas.",
+    },
     illustration: {
       id: "opening-greeting",
       caption: {
@@ -266,6 +275,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         },
       },
     ],
+    cue: {
+      en: "In the form shown in this guide, the priest invites everyone to call their sins to mind, and a short silence follows. Then everyone prays the confession together. Finally, the priest prays for God’s mercy on all of us, and you answer: Amen. At some Masses another form is used instead, such as a short exchange or a series of invocations.",
+      es: "En la forma que muestra esta guía, el sacerdote invita a todos a reconocer sus pecados, y sigue un breve silencio. Luego todos rezan juntos la confesión. Al final, el sacerdote pide la misericordia de Dios para todos, y tú respondes: Amén. En algunas Misas se usa otra forma, como un breve diálogo o una serie de invocaciones.",
+    },
     illustration: {
       id: "congregation-prayer",
       caption: {
@@ -334,6 +347,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         meaning: { en: "We end as we began.", es: "Terminamos como empezamos." },
       },
     ],
+    cue: {
+      en: "Now listen for each short call for mercy. The priest or cantor sings or says a line, and everyone repeats it right back: Kyrie, eleison. Christe, eleison. Kyrie, eleison.",
+      es: "Ahora escucha cada breve súplica de misericordia. El sacerdote o el cantor canta o dice una línea, y todos la repiten enseguida: Kyrie, eleison. Christe, eleison. Kyrie, eleison.",
+    },
     illustration: {
       id: "congregation-prayer",
       caption: {
@@ -379,6 +396,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         },
       },
     ],
+    cue: {
+      en: "There’s no back-and-forth here. Everyone sings or says the Gloria together as one hymn of praise. If it’s new to you, it’s fine to listen and pray along in your heart.",
+      es: "Aquí no hay diálogo. Todos cantan o recitan juntos el Gloria como un solo himno de alabanza. Si es nuevo para ti, puedes escuchar y orar en tu corazón.",
+    },
     illustration: {
       id: "congregation-prayer",
       caption: {
@@ -439,6 +460,10 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
         },
       },
     ],
+    cue: {
+      en: "The priest invites everyone to pray, then pauses. Bring your own intentions to God in that silence. Then he says the prayer of the day for all of us. At the end, you answer: Amen. Afterward, everyone sits.",
+      es: "El sacerdote invita a todos a orar y hace una pausa. Presenta a Dios tus propias intenciones en ese silencio. Luego dice la oración del día por todos. Al final, respondes: Amén. Después, todos se sientan.",
+    },
     illustration: {
       id: "collect",
       caption: {

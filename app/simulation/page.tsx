@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { flushSync } from "react-dom";
 import { readLanguage, saveLanguage, subscribeToLanguage, type Language } from "../language";
+import Listen from "./listen";
 import {
   INTRODUCTORY_RITES,
   SCENE_ALT,
@@ -23,6 +24,7 @@ const ui = {
   when: { en: "When this happens", es: "Cuándo ocurre" },
   posture: { en: "Posture", es: "Postura" },
   practice: { en: "Practice the responses", es: "Practica las respuestas" },
+  cue: { en: "Your cue", es: "Tu señal" },
   placeholder: {
     en: "Official text not yet included. What is said:",
     es: "Texto oficial aún no incluido. Lo que se dice:",
@@ -118,7 +120,7 @@ export default function SimulationPage() {
             Tu primera Misa
           </span>
         </p>
-        <div className="mt-8 flex aspect-[3/2] animate-pulse flex-col items-center justify-center rounded-3xl bg-cream/70">
+        <div className="mt-8 flex aspect-[3/2] animate-pulse motion-reduce:animate-none flex-col items-center justify-center rounded-3xl bg-cream/70">
           <span aria-hidden="true" className="font-serif text-5xl text-gold">
             ✠
           </span>
@@ -154,6 +156,9 @@ export default function SimulationPage() {
 function Player({ language }: { language: Language }) {
   const [position, setPosition] = useState<Position>(readProgress);
   const [confirmingRestart, setConfirmingRestart] = useState(false);
+  // Counts navigations. Used as part of the audio panel's key so any navigation (including a
+  // restart while already on step 1) remounts the panel, which stops speech.
+  const [visit, setVisit] = useState(0);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const t = (text: Text) => <Bilingual language={language} text={text} />;
 
@@ -162,6 +167,7 @@ function Player({ language }: { language: Language }) {
     flushSync(() => {
       setPosition(next);
       setConfirmingRestart(false);
+      setVisit((v) => v + 1);
     });
     saveProgress(next);
     headingRef.current?.focus();
@@ -253,6 +259,8 @@ function Player({ language }: { language: Language }) {
             {t(moment.title)}
           </h2>
 
+          <Listen key={`${moment.id}-${language}-${visit}`} moment={moment} language={language} t={t} />
+
           {moment.condition && (
             <p className="mt-3 rounded-xl border-l-4 border-gold bg-cream/60 px-4 py-3 text-sm leading-relaxed">
               <strong className="font-medium">{t(ui.when)}: </strong>
@@ -275,6 +283,14 @@ function Player({ language }: { language: Language }) {
               <h3 id="practice-heading" className="text-sm font-medium tracking-wider text-burgundy uppercase">
                 {t(ui.practice)}
               </h3>
+              {moment.cue && (
+                <p className="mt-3 rounded-xl bg-cream/60 px-4 py-3 leading-relaxed">
+                  <strong className="block text-xs font-medium tracking-wider text-gold-deep uppercase">
+                    {t(ui.cue)}
+                  </strong>
+                  {t(moment.cue)}
+                </p>
+              )}
               <ol className="mt-3 space-y-4">
                 {moment.response.map((line, i) => (
                   <ResponseItem key={i} line={line} t={t} />
