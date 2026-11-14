@@ -13,6 +13,7 @@ export const LANGUAGES: { value: Language; label: string; description: string }[
 ];
 
 const STORAGE_KEY = "catholic-companion:language";
+const CHANGE_EVENT = "catholic-companion:language-change";
 
 export function readLanguage(): Language | null {
   try {
@@ -29,10 +30,16 @@ export function saveLanguage(language: Language) {
   } catch {
     // If storage is unavailable, the choice simply isn't remembered.
   }
+  // "storage" events only reach other tabs, so tell this tab too.
+  window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
-// Lets components re-read the preference when it changes in another tab.
+// Lets components re-read the preference when it changes, in this tab or another.
 export function subscribeToLanguage(onChange: () => void) {
   window.addEventListener("storage", onChange);
-  return () => window.removeEventListener("storage", onChange);
+  window.addEventListener(CHANGE_EVENT, onChange);
+  return () => {
+    window.removeEventListener("storage", onChange);
+    window.removeEventListener(CHANGE_EVENT, onChange);
+  };
 }
