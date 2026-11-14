@@ -42,6 +42,7 @@ npm run build
 - It follows a clearly labeled typical Sunday path (Ordinary Time: "I confess", Kyrie, Gloria). Conditional rites are marked with when they occur.
 - Back and Next buttons, an intentional "Start over" (confirmed inline), and a completion screen
 - An English / Español / Bilingual switch inside the player. Changing language never resets progress.
+- Realistic illustrated scenes: six images cover the eight moments (see `docs/illustrations.md`), shown with `next/image` and bilingual alt text.
 - Progress is saved as a single value: the current moment id, or `complete`. It is stored in `localStorage` under `catholic-companion:introductory-rites` and resumes after a refresh.
 
 ## Project layout
@@ -55,7 +56,11 @@ app/
   onboarding/page.tsx   language selection
   simulation/page.tsx   the guided Mass player (loading state, navigation, progress)
 content/
-  mass.ts               liturgical content for the Introductory Rites, and the source list
+  mass.ts               liturgical content for the Introductory Rites, scene alt text, and the source list
+public/
+  scenes/               the six illustrated scenes (1536 × 1024 WebP)
+docs/
+  illustrations.md      scene specifications, prompts, accuracy checklist, and image review
 ```
 
 To edit or add liturgical content, change `content/mass.ts` only. The player renders whatever moments it finds there, in order.
@@ -93,7 +98,7 @@ Each moment in `content/mass.ts` lists the specific references it relies on.
 2. **Quoted words.** Only "Amen" / "Amén" and the Greek "Kyrie, eleison" / "Christe, eleison" are quoted. These are ancient acclamations, not translations, and are widely treated as free to use. Confirm this before release.
 3. **Order of Mass paragraph numbers.** The content cites the Order of Mass by section, not by paragraph number. Add paragraph numbers after checking a printed Roman Missal. (The USCCB Order of Mass page could not be fetched automatically.)
 4. **Review.** A priest or diocesan liturgy office should review the explanations, and a native-speaking catechist should review the Spanish.
-5. **Illustrations.** Custom scenes are planned. No external images are used.
+5. **Illustrations.** The six scenes were supplied by the project owner. Confirm their usage rights before release. Open accuracy items are listed in `docs/illustrations.md`, section 8.
 
 ## Known issues
 

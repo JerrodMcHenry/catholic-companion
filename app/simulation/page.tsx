@@ -1,11 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { flushSync } from "react-dom";
 import { readLanguage, saveLanguage, subscribeToLanguage, type Language } from "../language";
 import {
   INTRODUCTORY_RITES,
+  SCENE_ALT,
   SOURCES,
   TYPICAL_PATH,
   type MomentId,
@@ -18,7 +20,6 @@ const ui = {
   heading: { en: "Your First Mass", es: "Tu primera Misa" },
   part: { en: "The Introductory Rites", es: "Los Ritos iniciales" },
   loading: { en: "Loading your guide…", es: "Cargando tu guía…" },
-  illustration: { en: "Illustration coming soon", es: "Ilustración próximamente" },
   when: { en: "When this happens", es: "Cuándo ocurre" },
   posture: { en: "Posture", es: "Postura" },
   practice: { en: "Practice the responses", es: "Practica las respuestas" },
@@ -117,7 +118,7 @@ export default function SimulationPage() {
             Tu primera Misa
           </span>
         </p>
-        <div className="mt-8 flex aspect-[4/3] animate-pulse flex-col items-center justify-center rounded-3xl bg-cream/70">
+        <div className="mt-8 flex aspect-[3/2] animate-pulse flex-col items-center justify-center rounded-3xl bg-cream/70">
           <span aria-hidden="true" className="font-serif text-5xl text-gold">
             ✠
           </span>
@@ -231,20 +232,20 @@ function Player({ language }: { language: Language }) {
             className="mt-2 h-2 w-full appearance-none overflow-hidden rounded-full bg-cream [&::-moz-progress-bar]:bg-burgundy [&::-webkit-progress-bar]:bg-cream [&::-webkit-progress-value]:bg-burgundy"
           />
 
-          {/* Placeholder for the custom illustrated scene identified by moment.illustration.id. */}
-          <figure
-            data-illustration={moment.illustration.id}
-            className="mt-6 flex aspect-[4/3] flex-col items-center justify-end overflow-hidden rounded-3xl bg-linear-to-b from-cream to-gold/30 px-6 pt-6 text-center"
-          >
-            <div
-              aria-hidden="true"
-              className="flex w-2/5 flex-1 items-center justify-center rounded-t-full border-2 border-b-0 border-gold/60 bg-ivory/70 font-serif text-5xl text-gold"
-            >
-              ✠
+          {/* Fixed 3:2 frame (matching the 1536×1024 scenes) so the page never shifts while the image loads. */}
+          <figure className="mt-6 overflow-hidden rounded-3xl bg-cream">
+            <div className="relative aspect-[3/2]">
+              <Image
+                src={`/scenes/${moment.illustration.id}.webp`}
+                alt={language === "es" ? SCENE_ALT[moment.illustration.id].es : SCENE_ALT[moment.illustration.id].en}
+                fill
+                sizes="(min-width: 672px) 632px, calc(100vw - 40px)"
+                loading="eager"
+                className="object-cover"
+              />
             </div>
-            <figcaption className="w-full border-t border-gold/40 bg-ivory/80 px-4 py-3 text-sm text-ink-soft">
+            <figcaption className="px-4 py-3 text-center text-sm text-ink-soft">
               {t(moment.illustration.caption)}
-              <span className="mt-1 block text-xs tracking-wider uppercase">{t(ui.illustration)}</span>
             </figcaption>
           </figure>
 

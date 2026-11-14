@@ -2,7 +2,7 @@
 
 The brief for the custom illustrated scenes in the guided Mass simulation (`/simulation`).
 
-**Status:** specification only. No image files exist yet, and the app still shows text placeholders. Code integration starts once all six files below are in `public/scenes/`.
+**Status:** all six scenes have been supplied in `public/scenes/` and are integrated into the simulation. The chosen style is **realistic** (see section 5). Several images have open review items; see **section 8** before release.
 
 The images are **artistic interpretations** of one typical U.S. parish celebrating the Ordinary Form of the Roman Rite. They are not liturgical instruction. The authority is the text in `content/mass.ts` and the sources it cites, chiefly the General Instruction of the Roman Missal (GIRM) and the Roman Missal. Real parishes differ in architecture and in many legitimate options.
 
@@ -53,7 +53,7 @@ All six scenes show **the same church, during the same Mass**.
 
 **People (the same characters in every scene)**
 - **Priest:** a middle-aged man with short dark hair and a calm expression. He wears a **green chasuble** over a **white alb**. The stole is worn under the chasuble, so it is not visible over it (GIRM 337).
-- **Servers (three):** white albs. One carries the processional crucifix and two carry candles. Later, one holds the Roman Missal at the Collect.
+- **Servers (three):** black cassocks with white surplices (as in the supplied images; white albs are equally legitimate). One carries the processional crucifix and two carry candles. Later, one holds the Roman Missal at the Collect.
 - **Lector:** a lay man or woman in modest Sunday clothes.
 - **Congregation:** a diverse parish of all ages, including families, older parishioners and young adults, in modest Sunday clothes. Most are seen from behind or in three-quarter view.
 
@@ -66,12 +66,15 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
 
 ## 3. Image specifications (all six files)
 
+The final English and Spanish alt text is in `SCENE_ALT` in `content/mass.ts`. It describes what each supplied image actually shows.
+
 | Property | Value |
 |---|---|
 | Location | `public/scenes/` |
 | Format | WebP (preferred) or PNG. PNG will be converted to WebP. |
 | Dimensions | **1536 × 1024 px** (3:2 landscape) |
 | Target file size | about 150–250 KB each after WebP conversion |
+| Style | Realistic, natural-light church interior (see section 5) |
 | Text in image | None: no lettering, signage, or captions |
 | Composition | The key action in the central area. Nothing essential within about 5% of the edges, since small screens may display slight cropping. |
 
@@ -82,8 +85,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - the congregation standing in the pews on both sides, some singing from hymnals
   - the sanctuary visible in the distance: altar, wall crucifix, ambo on the left, chair on the right
 - **Must not show:** a deacon, incense, a tabernacle, people sitting or kneeling.
-- **Alt (EN):** The entrance procession moves up the center aisle: a server carrying a crucifix between two candle bearers, a lector holding the Book of the Gospels, and the priest in green vestments, while the congregation stands.
-- **Alt (ES):** La procesión de entrada avanza por el pasillo central: un monaguillo con la cruz entre dos ciriales, un lector con el Evangeliario y el sacerdote con vestiduras verdes, mientras la asamblea está de pie.
 
 ### `altar-reverence.webp`: moment 2
 - **Camera:** a three-quarter view of the sanctuary from the front of the nave.
@@ -93,8 +94,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - two servers standing to the side with hands joined (their bow has already happened)
   - the backs of a few standing congregants in the foreground
 - **Must not show:** genuflection, incense, a tabernacle, the processional crucifix next to the altar.
-- **Alt (EN):** The priest bends to kiss the altar, where the Book of the Gospels rests, as servers stand nearby.
-- **Alt (ES):** El sacerdote se inclina para besar el altar, sobre el que descansa el Evangeliario, mientras los monaguillos esperan cerca.
 
 ### `sign-of-the-cross.webp`: moment 3
 - **Camera:** from the middle of the nave, slightly to the right, so that both the chair and the congregation are visible.
@@ -102,8 +101,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - the priest standing in front of the presider's chair, facing the people, his right hand at his forehead beginning the Sign of the Cross
   - congregants in the foreground making the Sign of the Cross with him, with their right hands
 - **Must not show:** the priest blessing the people (a raised hand tracing a cross toward them), or anyone using the left hand.
-- **Alt (EN):** At his chair, the priest makes the Sign of the Cross, and the standing congregation makes it with him.
-- **Alt (ES):** Desde la sede, el sacerdote hace la señal de la cruz, y la asamblea, de pie, la hace con él.
 
 ### `opening-greeting.webp`: moment 4
 - **Camera:** the same angle as `sign-of-the-cross` (a consistent viewpoint is desirable).
@@ -112,8 +109,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - the congregation standing and attentive
   - servers nearby with hands joined
 - **Must not show:** a wave, a raised blessing hand, or a microphone held in his hand.
-- **Alt (EN):** The priest stands at his chair with his hands extended, greeting the standing congregation.
-- **Alt (ES):** El sacerdote, de pie junto a la sede, extiende las manos y saluda a la asamblea, que está de pie.
 
 ### `congregation-prayer.webp`: moments 5, 6 and 7
 - **Camera:** at mid-nave from a slight side angle, focused on the congregation.
@@ -122,8 +117,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - the priest in the background, standing at the chair with hands joined
   - a cantor at a small music stand near the front
 - **Must not show:** any single distinctive gesture, such as hands raised or breast-striking, since this one image serves three moments; anyone sitting or kneeling; a choir loft dominating the image.
-- **Alt (EN):** The congregation stands in prayer, some holding worship aids, while the priest stands at his chair and a cantor waits near the front.
-- **Alt (ES):** La asamblea está de pie en oración, algunos con hojas de cantos, mientras el sacerdote está junto a la sede y un cantor espera al frente.
 
 ### `collect.webp`: moment 8
 - **Camera:** the same angle as `sign-of-the-cross` and `opening-greeting`.
@@ -132,8 +125,6 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
   - a server standing in front of him, slightly to the side, holding the open Roman Missal so the priest can read it
   - the congregation standing quietly
 - **Must not show:** the priest reading from a phone or a loose sheet, or a server blocking the priest's face.
-- **Alt (EN):** The priest prays the Collect with hands extended as a server holds the open Missal before him, and the congregation stands.
-- **Alt (ES):** El sacerdote reza la colecta con las manos extendidas mientras un monaguillo sostiene el Misal abierto ante él, y la asamblea está de pie.
 
 ---
 
@@ -154,14 +145,17 @@ In our entrance scene the lector carries it, slightly elevated. This is **one le
 
 Build each prompt as **STYLE + SET + SCENE**, and add the **AVOID** list as a negative prompt (or as "Avoid: …" for tools without one).
 
-### STYLE
+### STYLE (chosen: realistic)
+
+The project moved from the editorial style first proposed to a **realistic** style. It reads as a real parish and makes vestments, gestures, and furnishings easy to recognize. The images are still artistic renderings, not photographs of a real church, and should never be presented as such.
 
 ```
-Refined editorial illustration with a gouache and soft ink texture and restrained detail.
-Warm ivory and cream palette with muted gold accents, soft burgundy and terracotta.
-Natural daylight from tall side windows, gentle shadows, calm and reverent atmosphere.
-Eye-level perspective. Figures with simple, natural faces and modest proportions.
-Not cartoon, not anime, not photorealistic. No text or lettering. No halos.
+Realistic image of a church interior during Mass, natural and true to life.
+Warm ivory, cream, and marble tones with muted gold accents; green and gold liturgical banners.
+Soft natural daylight with warm interior light, gentle shadows, calm and reverent atmosphere.
+Eye-level perspective, shallow depth of field on the main action.
+People with natural faces, modest expressions, and natural proportions.
+No text or lettering. No halos. No dramatic light rays.
 ```
 
 ### SET
@@ -174,7 +168,7 @@ A single crucifix with the figure of Christ hangs on the back wall directly abov
 A wooden ambo stands on the left side of the sanctuary; the presider's chair is on the right
 side, facing the people. There is no tabernacle in the sanctuary.
 The same priest throughout: a middle-aged man with short dark hair and a calm expression,
-wearing a simple green chasuble over a white alb. Altar servers wear white albs.
+wearing a simple green chasuble over a white alb. Altar servers wear black cassocks with white surplices.
 A diverse congregation of all ages in modest Sunday clothes, standing.
 ```
 
@@ -236,11 +230,12 @@ so the priest can read from it. The congregation stands quietly in the foregroun
 ### AVOID
 
 ```
-cartoon, anime, chibi, 3D render, photograph, photorealistic, text, lettering, signage, halos,
+cartoon, anime, chibi, flat vector illustration, plastic 3D render, text, lettering, signage, halos,
 glowing light rays, exaggerated facial expressions, faces staring at the viewer, purple or red
 or white chasuble, stole worn over the chasuble, tabernacle in the sanctuary, iconostasis,
 more than one crucifix on the wall, crosses on every surface, a second priest, a deacon,
-incense or thurible, people kneeling or sitting, distorted or extra fingers, cluttered ornament
+incense or thurible, people kneeling or sitting, distorted or extra fingers, cluttered ornament, congregation with hands raised, priest with hands extended (except greeting and Collect),
+a standing altar cross in addition to the wall crucifix
 ```
 
 ---
@@ -264,7 +259,7 @@ Check every image before supplying it. Mark anything uncertain for review by a p
 - [ ] His hands and gestures match the scene description exactly; there are no invented gestures.
 
 **Ministers and people**
-- [ ] Servers in white albs. The lector is in modest street clothes, not an alb or vestments.
+- [ ] Servers in cassock and surplice (or albs), the same in every scene. The lector is in modest street clothes, not an alb or vestments.
 - [ ] No deacon and no second priest.
 - [ ] **The congregation is standing** in every scene (GIRM 43).
 - [ ] The Sign of the Cross is made with the right hand.
@@ -287,11 +282,29 @@ Check every image before supplying it. Mark anything uncertain for review by a p
 
 ---
 
-## 7. Integration (after the files are supplied)
+## 7. Integration
 
-Not yet implemented. The planned code changes are:
-
-- `content/mass.ts`: each moment's `illustration.id` will name one of the six scenes above. A small map will hold the bilingual alt text from section 3. Captions and liturgical text stay unchanged.
-- `app/simulation/page.tsx`: the placeholder card will be replaced by `next/image` (`fill`, responsive `sizes`, inside a fixed 3:2 frame so nothing shifts while loading).
-- Alt text will be in Spanish in Spanish mode and in English in English and bilingual modes.
+- `content/mass.ts`: each moment's `illustration.id` is a `SceneId`, the scene's filename without `.webp`. `SCENE_ALT` holds bilingual alt text for each scene. The moment captions and liturgical text are unchanged.
+- `app/simulation/page.tsx`: renders `next/image` with `src="/scenes/<id>.webp"`, `fill`, and responsive `sizes`, inside a fixed 3:2 frame with a cream background, so the layout never shifts while the image loads. Next.js serves resized WebP through its built-in optimizer.
+- Alt text is in Spanish in Spanish mode, and in English in English and bilingual modes (matching the page's `lang="en"`).
+- **To replace an image:** overwrite the file in `public/scenes/`, keeping the same name and 1536 × 1024 size, then update its `SCENE_ALT` entry if what it shows has changed.
 - No new dependencies.
+
+## 8. Review of the supplied images (13 November 2026)
+
+This is a visual review against the checklist in section 6. It is not an authoritative liturgical judgment: please confirm with a priest or diocesan liturgy office. Severity: **High** = shows something that contradicts the guide's text or liturgical practice; **Medium** = inconsistent with our agreed arrangement; **Low** = minor.
+
+| Scene | Finding | Severity | Recommendation |
+|---|---|---|---|
+| `congregation-prayer` (moments 5–7) | The **priest stands with hands extended** (orans). During the Penitential Act, Kyrie, and Gloria the priest's hands are joined; extended hands belong to the greeting and the Collect. He also stands beside the altar rather than at the chair. | High | Regenerate with the priest at the chair, hands joined. |
+| `congregation-prayer` | **Several congregants hold their hands open and raised.** The GIRM does not prescribe this posture for the faithful, and it is not part of our guide's posture instructions. Showing it in the only image for three moments may read as a norm. | High | Regenerate with hands joined or holding worship aids. |
+| `congregation-prayer` | **No cantor or choir is visible**, but the Kyrie caption ("A cantor leads the people…") and the Gloria caption ("The congregation and choir sing…") mention them. A Marian shrine appears on the left, which is fine and recognizably Catholic. | Medium | Include a cantor in the regenerated image. Alternatively, revise those two captions (a content change that needs approval). |
+| `entrance-procession` | The procession has **no processional crucifix and no lector with the Book of the Gospels**. The priest walks among the servers rather than last. The caption ("led by the cross") therefore does not match the image. | High | Regenerate following the section 3 order. |
+| `entrance-procession` | A **standing gold altar cross** appears in addition to the wall crucifix (two crosses, contrary to our arrangement). | Medium | Remove in the regenerated image. |
+| `entrance-procession` | The **interior differs from the other scenes**: stained-glass windows, columns, a reredos, and six candles, where the others show plain marble walls and two candles. It does not look like the same church. | Medium | Regenerate using `altar-reverence` as the reference. |
+| `collect` | Good: orans posture, server holding the open Missal, chair visible. The **priest's face and hair differ** noticeably from the other scenes, and a stained-glass window appears. He is looking up rather than at the Missal (common, but he reads the prayer from the book). | Low | Optional regeneration for consistency. |
+| `sign-of-the-cross` | Good: right hand at forehead, left hand at the chest, in front of the chair. Some **congregants' hands are hard to read**; confirm that no one appears to sign with the left hand. | Low | Check at full size. |
+| `opening-greeting` | Good: hands extended in greeting at the chair. The servers mentioned in the spec are not visible, which is acceptable. The arms are spread quite wide; still a plausible greeting. | Low | None required. |
+| `altar-reverence` | Good: kissing the altar, Book of the Gospels on the altar, servers with hands joined, ambo on the left, chair on the right, one crucifix, two candles, no tabernacle. | None | Use as the reference image for any regeneration. |
+
+**Consistent across all six:** green chasuble over a white alb, no stole visible over the chasuble, servers in cassock and surplice, congregation standing, no tabernacle in the sanctuary, no deacon, no incense.

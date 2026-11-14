@@ -21,6 +21,16 @@ export type MomentId =
 
 export type Posture = "stand" | "sit" | "kneel";
 
+// Illustrated scenes, stored as public/scenes/<id>.webp. Several moments may share one scene.
+// See docs/illustrations.md for the specifications and review notes.
+export type SceneId =
+  | "entrance-procession"
+  | "altar-reverence"
+  | "sign-of-the-cross"
+  | "opening-greeting"
+  | "congregation-prayer"
+  | "collect";
+
 // One line of dialogue for response practice (and, later, voice practice).
 export type ResponseLine = {
   speaker: "priest" | "people" | "all";
@@ -36,7 +46,7 @@ export type MassMoment = {
   deeper?: Text;
   posture: { position: Posture; note: Text };
   response?: ResponseLine[];
-  illustration: { id: string; caption: Text };
+  illustration: { id: SceneId; caption: Text }; // caption describes this moment; the scene may be shared
   condition?: Text; // set when this rite does not happen at every Mass
   variations?: Text;
   sources: string[];
@@ -257,7 +267,7 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
       },
     ],
     illustration: {
-      id: "penitential-act",
+      id: "congregation-prayer",
       caption: {
         en: "A moment of silence as the people examine their hearts.",
         es: "Un momento de silencio mientras el pueblo examina su corazón.",
@@ -325,7 +335,7 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
       },
     ],
     illustration: {
-      id: "kyrie",
+      id: "congregation-prayer",
       caption: {
         en: "A cantor leads the people in the Kyrie.",
         es: "Un cantor guía al pueblo en el Kyrie.",
@@ -370,7 +380,7 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
       },
     ],
     illustration: {
-      id: "gloria",
+      id: "congregation-prayer",
       caption: {
         en: "The congregation and choir sing the Gloria.",
         es: "La asamblea y el coro cantan el Gloria.",
@@ -443,6 +453,34 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
     sources: ["GIRM 43, 54", "Order of Mass: Introductory Rites"],
   },
 ];
+
+// Alt text for each scene. It describes what the image actually shows.
+export const SCENE_ALT: Record<SceneId, Text> = {
+  "entrance-procession": {
+    en: "The priest in a green chasuble walks up the center aisle with altar servers toward the altar, as the congregation stands in the pews.",
+    es: "El sacerdote, con casulla verde, avanza por el pasillo central con los monaguillos hacia el altar, mientras la asamblea está de pie en las bancas.",
+  },
+  "altar-reverence": {
+    en: "The priest bends to kiss the altar, where the Book of the Gospels rests, as two altar servers stand nearby with hands joined.",
+    es: "El sacerdote se inclina para besar el altar, sobre el que descansa el Evangeliario, mientras dos monaguillos esperan cerca con las manos juntas.",
+  },
+  "sign-of-the-cross": {
+    en: "Standing before his chair, the priest makes the Sign of the Cross, and the standing congregation makes it with him.",
+    es: "De pie ante la sede, el sacerdote hace la señal de la cruz, y la asamblea, de pie, la hace con él.",
+  },
+  "opening-greeting": {
+    en: "The priest stands before his chair with his hands extended, greeting the standing congregation.",
+    es: "El sacerdote, de pie ante la sede, extiende las manos y saluda a la asamblea, que está de pie.",
+  },
+  "congregation-prayer": {
+    en: "The congregation stands in prayer in the pews facing the altar, some with open hands, while the priest stands in the sanctuary with hands extended.",
+    es: "La asamblea está de pie en oración en las bancas, frente al altar, algunos con las manos abiertas, mientras el sacerdote está en el presbiterio con las manos extendidas.",
+  },
+  collect: {
+    en: "The priest prays with hands extended as an altar server holds the open Missal beside him.",
+    es: "El sacerdote ora con las manos extendidas mientras un monaguillo sostiene a su lado el Misal abierto.",
+  },
+};
 
 export const SOURCES = [
   {
