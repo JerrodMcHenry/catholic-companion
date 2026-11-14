@@ -1,0 +1,170 @@
+{
+  "en-US-marin/collect-cue.mp3": {
+    "hash": "84a15198f70221fdfb77cb75e7e54b2972b0089d0204c8a5e6e8cb2230501fa8",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 237696
+  },
+  "en-US-marin/collect-explanation.mp3": {
+    "hash": "f7c5283c18194cc2a3601d5e1f0af7854ee55038c46c350d569b05b133c87854",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 372096
+  },
+  "en-US-marin/entrance-explanation.mp3": {
+    "hash": "ca28a8823e5057174f567e2477bcf1efe9746497a06edd24a30525c7d2be907d",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 372096
+  },
+  "en-US-marin/gloria-cue.mp3": {
+    "hash": "db5fbb9feeb306056fbdbcbc9abd8fe7e3386cc110a5bde02350eedca7d03bce",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 168960
+  },
+  "en-US-marin/gloria-explanation.mp3": {
+    "hash": "0eeb213e9dd097090d6b79842dcf1149cb36748d47a53a55e3be837d7b9cdaa0",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 364800
+  },
+  "en-US-marin/greeting-cue.mp3": {
+    "hash": "ae7faf16008640a568d694ec45dc84fb0138f3d59f31fcfdca36911a8b31e1a3",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 225024
+  },
+  "en-US-marin/greeting-explanation.mp3": {
+    "hash": "9339eb9566ba90cb32a5a23ade8c600e669fe9b2925ba5fc939108a848cbfa72",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 284928
+  },
+  "en-US-marin/kyrie-cue.mp3": {
+    "hash": "486bf83be0f72b45bace7ec031e82ef45ab451a13afcfe348ce55af659de6f42",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 183168
+  },
+  "en-US-marin/kyrie-explanation.mp3": {
+    "hash": "bd0350d310c55ad3100fc4546879e23de724a9684e23c1ef760c7529423ff40e",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 336000
+  },
+  "en-US-marin/penitential-act-cue.mp3": {
+    "hash": "ba06e9e1e4a0cef380bf12d0b5de56d04fae0213f2f98f2fb20da1d12b948501",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 346368
+  },
+  "en-US-marin/penitential-act-explanation.mp3": {
+    "hash": "2f2cb077a85828d578dfe30b9fc980a72b077160029b3cb684c9883e0f60b361",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 391296
+  },
+  "en-US-marin/reverence-explanation.mp3": {
+    "hash": "e47ea959df232c1ee30405119f01ce8c0b5d6731a28df04712165598fd35ab44",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 352896
+  },
+  "en-US-marin/sign-of-the-cross-cue.mp3": {
+    "hash": "efebe3a815bbd8cd87bd782bfe53b8bd51fc28a00c1cc5de75f2f500badf4aca",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 206592
+  },
+  "en-US-marin/sign-of-the-cross-explanation.mp3": {
+    "hash": "5237ea1a2f9a3207672493482dce4770f94e374be436e1d66e4c8388409d072a",
+    "model": "gpt-4o-mini-tts",
+    "voice": "marin",
+    "bytes": 303360
+  },
+  "es-MX-cedar/collect-cue.mp3": {
+    "hash": "7f486ec4165ad0a0987caed0114e552376dba061001912d0595805f3acca2d4f",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 256128
+  },
+  "es-MX-cedar/collect-explanation.mp3": {
+    "hash": "65d8cf2e440a0a7369f640163a5e237874873dd4188921a63dcbc248f021bc94",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 485760
+  },
+  "es-MX-cedar/entrance-explanation.mp3": {
+    "hash": "119fe2505a097352f6b4e3f7a22a1244668b16ab3633f1dbd3d6eec01064f12a",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 396288
+  },
+  "es-MX-cedar/gloria-cue.mp3": {
+    "hash": "8a97bd7381aa665328775d77cf503273d03a54f809c231f8ddf38e1c23a4a733",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 185088
+  },
+  "es-MX-cedar/gloria-explanation.mp3": {
+    "hash": "d5c1b1fbb5f2917a9e1203fc1722cefa8e215d63528500ed8f49835bad3a35f4",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 481920
+  },
+  "es-MX-cedar/greeting-cue.mp3": {
+    "hash": "30616389930addb603ec9cdba0989d67c9ebc15b714164860342a75bdb78c75d",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 266496
+  },
+  "es-MX-cedar/greeting-explanation.mp3": {
+    "hash": "e5d5a6443be7cff06cc23c7a0888b8628a23630b2b20f023f48621296f305857",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 352896
+  },
+  "es-MX-cedar/kyrie-cue.mp3": {
+    "hash": "2e64192c6aa753cb7502b37414188053ab657a9874d47c7ada4a5f3e7f0b4171",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 216192
+  },
+  "es-MX-cedar/kyrie-explanation.mp3": {
+    "hash": "6782ba96b08fab1a458837568888d496e3c42e568f3a4413f7b95969d123d271",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 429696
+  },
+  "es-MX-cedar/penitential-act-cue.mp3": {
+    "hash": "a3375e8ac520138147e9204e48e8dff4092338853b392e64683d5af0efb1755d",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 414720
+  },
+  "es-MX-cedar/penitential-act-explanation.mp3": {
+    "hash": "89e6c58e2dbb50d91374bdfacfa0788c78d341f7d08012cc29bc750f7327d892",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 494592
+  },
+  "es-MX-cedar/reverence-explanation.mp3": {
+    "hash": "b0f692aad29aaea2add152580731b8d6161ca0de3265af807117ddd7d5fb0c5d",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 357120
+  },
+  "es-MX-cedar/sign-of-the-cross-cue.mp3": {
+    "hash": "fcb8e1126fe36db9dbdafd9c54bf39ab93dbb5f9286e5520236bd0fd45111bb0",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 213120
+  },
+  "es-MX-cedar/sign-of-the-cross-explanation.mp3": {
+    "hash": "67864c89c86a4ab205cd33086baa8bc8021aada8fc4245187c0abe560a7ba799",
+    "model": "gpt-4o-mini-tts",
+    "voice": "cedar",
+    "bytes": 364032
+  }
+}

@@ -45,6 +45,17 @@ npm run build
 - Realistic illustrated scenes: six images cover the eight moments (see `docs/illustrations.md`), shown with `next/image` and bilingual alt text.
 - Progress is saved as a single value: the current moment id, or `complete`. It is stored in `localStorage` under `catholic-companion:introductory-rites` and resumes after a refresh.
 
+**Milestone 4: optional spoken narration** (`app/simulation/listen.tsx`)
+
+- **Listen to explanation** plays the moment's on-screen explanation and posture note.
+- **Listen for your cue** plays a short, original listening cue (when and how the people take part). The cue is also shown as text under "Your cue".
+- Pause, Resume (from the exact position), and Replay (from the beginning), with loading and error messages.
+- English mode plays the English recording, Spanish mode the Spanish one. Bilingual mode has a simple English/Español narration choice (English by default, not saved).
+- Nothing plays or downloads automatically. Playback stops when moving between moments, changing language or narration language, restarting, finishing, or leaving the page.
+- The narration is labeled as an AI-generated voice. It is educational, not a recording of the priest or of the official prayers.
+
+**Milestone 4B: prerecorded narration.** The browser speech of Milestone 4 was replaced by 28 prerecorded MP3s (see "Audio" below).
+
 ## Project layout
 
 ```
@@ -55,26 +66,55 @@ app/
   language.ts           language options; reading, saving, and watching the preference
   onboarding/page.tsx   language selection
   simulation/page.tsx   the guided Mass player (loading state, navigation, progress)
+  simulation/listen.tsx optional narration player (native <audio>)
 content/
   mass.ts               liturgical content for the Introductory Rites, scene alt text, and the source list
 public/
   scenes/               the six illustrated scenes (1536 × 1024 WebP)
+  audio/                prerecorded narration, one folder per narrator voice
+scripts/
+  generate-narration.mjs     makes the narration MP3s from content/mass.ts (run by hand, never by the app)
+  narration-manifest.json    what each MP3 was generated from, to detect stale recordings
 docs/
   illustrations.md      scene specifications, prompts, accuracy checklist, and image review
 ```
 
-To edit or add liturgical content, change `content/mass.ts` only. The player renders whatever moments it finds there, in order.
+To edit or add liturgical content, change `content/mass.ts`. The player renders whatever moments it finds there, in order. If you change an explanation, posture note, or cue, regenerate the narration (below).
 
-## Core requirement: voice and audio practice (not yet built)
+## Audio: how it works and its limits
+
+The narration is prerecorded. The app only plays static files from `public/audio/` with a native `<audio>` element. It calls no service at runtime, and no API key is ever in the app.
+
+- **Files:** `public/audio/<narrator>/<moment id>-explanation.mp3` and `…-cue.mp3`. There are 28: 8 explanations and 6 cues, in English and Spanish. The explanation recording is the explanation plus the posture note, the same text shown on the page.
+- **Narrators:** `en-US-marin` (English, U.S.) and `es-MX-cedar` (Spanish, Mexico). There is one narrator per language. A second narrator per language is planned but not yet chosen, and the app offers no narrator choice.
+- **Generation:** OpenAI `gpt-4o-mini-tts` with a "warm Catholic teacher" style instruction, and a pronunciation hint for "Kyrie, eleison" / "Christe, eleison".
+- **Disclosure:** OpenAI's usage policies require telling listeners the voice is AI-generated. The Listen panel says so.
+
+**Regenerating after a text change.** Put `OPENAI_API_KEY` in `.env.local` (gitignored), then:
+
+```bash
+node scripts/generate-narration.mjs --check                 # list missing or stale recordings; no API calls
+node --env-file=.env.local scripts/generate-narration.mjs   # regenerate only those
+```
+
+The manifest stores a hash of each recording's text, model, voice, and instructions. A failed request leaves the old file and keeps it marked stale. Generating all 28 costs well under $1.
+
+**Provider retirement.** OpenAI's speech models (`gpt-4o-mini-tts`, `tts-1`, `tts-1-hd`) shut down on **January 6, 2027** (OpenAI deprecations page, announced October 1, 2026). After that the script needs a new model or provider (OpenAI suggests `gpt-realtime-2.1-mini` via its Realtime API), and new recordings may not match the current voices. Finish text reviews and regenerate before that date where possible. The app and the existing files are unaffected.
+
+**Not yet verified by ear:** voice quality, the Mexican Spanish accent, and the pronunciation of "Kyrie, eleison" / "Christe, eleison". Playback on real iPhone and Android devices has not been tested either.
+
+Official dialogue recordings, if licensed later, must stay separate from this educational narration.
+
+## Core requirement: voice practice (not yet built)
 
 Practicing congregational responses is a core feature. The planned flow:
 
-1. Hear the priest's part (audio playback, never automatic).
+1. Hear the priest's part (audio playback, never automatic). Today this is described by the listening cue; official dialogue audio awaits licensing.
 2. See the congregation's response.
 3. Optionally speak the response into the microphone. It is transcribed and compared with the expected words.
 4. Get feedback on whether the words match, then retry or continue.
 
-Voice is always optional. Every step works with text alone, in English or Spanish. Feedback compares words only. A transcript cannot judge pronunciation, so the app will not claim to assess it. No speech service or AI API has been chosen yet. Continuous (non-self-paced) playback is also planned.
+Voice is always optional. Every step works with text alone, in English or Spanish. Feedback compares words only. A transcript cannot judge pronunciation, so the app will not claim to assess it. No speech-recognition service has been chosen yet. Continuous (non-self-paced) playback is also planned.
 
 The `response` lines in `content/mass.ts` (speaker, exact words when available, meaning) are shaped for this flow.
 
