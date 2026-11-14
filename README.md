@@ -56,6 +56,15 @@ npm run build
 
 **Milestone 4B: prerecorded narration.** The browser speech of Milestone 4 was replaced by 28 prerecorded MP3s (see "Audio" below).
 
+**Milestone 5A: response practice** (`app/simulation/practice.tsx`, Sign of the Cross only)
+
+- An optional "Practice your response" panel, collapsed by default. It asks what the people answer after the opening Sign of the Cross.
+- **Speak** (browser speech recognition, U.S. English or Mexican Spanish) or **Type**. Typing always works.
+- Spoken answers appear in an editable box. Nothing is checked until the learner presses Check, so a wrong transcription is never graded.
+- Feedback: "That's right" with the meaning of Amen, or a gentle hint. Try again, Show answer, and Skip practice are always available. There are no scores, and navigation is never blocked.
+- In bilingual mode, a practice-language choice sets the recognition language (English by default, not saved).
+- Starting to speak pauses the narration so the microphone doesn't hear it.
+
 ## Project layout
 
 ```
@@ -67,6 +76,7 @@ app/
   onboarding/page.tsx   language selection
   simulation/page.tsx   the guided Mass player (loading state, navigation, progress)
   simulation/listen.tsx optional narration player (native <audio>)
+  simulation/practice.tsx optional response practice (speech recognition or typing)
 content/
   mass.ts               liturgical content for the Introductory Rites, scene alt text, and the source list
 public/
@@ -105,16 +115,24 @@ The manifest stores a hash of each recording's text, model, voice, and instructi
 
 Official dialogue recordings, if licensed later, must stay separate from this educational narration.
 
-## Core requirement: voice practice (not yet built)
+## Core requirement: voice practice (first exercise built)
 
-Practicing congregational responses is a core feature. The planned flow:
+Practicing congregational responses is a core feature. The first exercise (Sign of the Cross, "Amen") is built; the other responses are not yet. The planned flow:
 
 1. Hear the priest's part (audio playback, never automatic). Today this is described by the listening cue; official dialogue audio awaits licensing.
 2. See the congregation's response.
 3. Optionally speak the response into the microphone. It is transcribed and compared with the expected words.
 4. Get feedback on whether the words match, then retry or continue.
 
-Voice is always optional. Every step works with text alone, in English or Spanish. Feedback compares words only. A transcript cannot judge pronunciation, so the app will not claim to assess it. No speech-recognition service has been chosen yet. Continuous (non-self-paced) playback is also planned.
+Voice is always optional. Every step works with text alone, in English or Spanish. Feedback compares words only. A transcript cannot judge pronunciation, so the app will not claim to assess it. Continuous (non-self-paced) playback is also planned.
+
+### How the practice works
+
+- **Content.** A moment opts in with an optional `practice` field (`prompt`, `hint`, `success`). The expected answer and its meaning come from the people's line in `response`, so they are not duplicated.
+- **Checking.** Checking is deterministic, with no AI. Both the answer and the expected words are lowercased, accents and punctuation are removed, and spaces are collapsed. "Amen", "amén." and "¡AMÉN!" all match. There is no fuzzy matching, so "a man" (a common mishearing) is not accepted, but the learner can correct it in the box before checking. An empty answer is not graded.
+- **Speech recognition.** `SpeechRecognition` or `webkitSpeechRecognition`, one short session per button press (`continuous = false`), never restarted automatically. The browser asks for microphone permission itself. Errors (permission blocked, no speech, no microphone, network, other) are explained, are never graded, and offer Try again or Type. Recognition is aborted on Cancel, on switching to Type, and when the panel unmounts (navigation, language change, restart, finishing). A session counter makes the panel ignore late callbacks from a stopped session.
+- **Privacy.** Catholic Companion does not record, store, upload, or log voice or answers. Answers live only in the panel's memory and are cleared when the learner leaves the moment. Speech-to-text is done by the browser: Chrome sends the audio to Google's speech service, and other browsers may use their provider's service. The panel says this.
+- **Browser support.** Chrome and Edge (desktop and Android) and Safari support speech recognition. Firefox does not; it shows a note, and typing works. Recognition accuracy for a single short word varies.
 
 The `response` lines in `content/mass.ts` (speaker, exact words when available, meaning) are shaped for this flow.
 
@@ -142,6 +160,7 @@ Each moment in `content/mass.ts` lists the specific references it relies on.
 
 ## Known issues
 
+- Response practice has not yet been tested with a real microphone or on iPhone and Android.
 - The default Next.js favicon is still in place.
 
 ## Next milestone

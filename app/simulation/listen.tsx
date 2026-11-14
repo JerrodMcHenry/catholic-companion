@@ -159,7 +159,9 @@ export default function Listen({
         onPlaying={() => setStatus("playing")}
         onWaiting={() => setStatus((s) => (s === "playing" ? "loading" : s))}
         // Paused outside the app (lock screen, headphone controls, another app); the end is handled by onEnded.
-        onPause={(event) => !event.currentTarget.ended && setStatus((s) => (s === "playing" ? "paused" : s))}
+        onPause={(event) =>
+          !event.currentTarget.ended && setStatus((s) => (s === "playing" || s === "loading" ? "paused" : s))
+        }
         onEnded={() => setStatus("finished")}
         onError={() => setStatus("error")}
       />

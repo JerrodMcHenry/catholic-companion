@@ -6,6 +6,7 @@ import { useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { flushSync } from "react-dom";
 import { readLanguage, saveLanguage, subscribeToLanguage, type Language } from "../language";
 import Listen from "./listen";
+import Practice from "./practice";
 import {
   INTRODUCTORY_RITES,
   SCENE_ALT,
@@ -297,6 +298,10 @@ function Player({ language }: { language: Language }) {
                 ))}
               </ol>
             </section>
+          )}
+
+          {moment.practice && (
+            <Practice key={`practice-${moment.id}-${language}-${visit}`} moment={moment} language={language} t={t} />
           )}
 
           {moment.deeper && (

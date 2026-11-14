@@ -47,6 +47,9 @@ export type MassMoment = {
   posture: { position: Posture; note: Text };
   response?: ResponseLine[];
   cue?: Text; // original listening cue: when and how the people take part (shown and spoken)
+  // Optional response practice. The expected answer and its meaning come from the people's line in
+  // `response`; these are only the question, a hint, and the feedback after a correct answer.
+  practice?: { prompt: Text; hint: Text; success: Text };
   illustration: { id: SceneId; caption: Text }; // caption describes this moment; the scene may be shared
   condition?: Text; // set when this rite does not happen at every Mass
   variations?: Text;
@@ -163,6 +166,20 @@ export const INTRODUCTORY_RITES: MassMoment[] = [
     cue: {
       en: "Listen for the priest to begin the Mass in the name of the Father, the Son, and the Holy Spirit. Make the Sign of the Cross with him. When he finishes, everyone answers together: Amen.",
       es: "Escucha cuando el sacerdote comienza la Misa en el nombre del Padre, del Hijo y del Espíritu Santo. Haz con él la señal de la cruz. Cuando termina, todos responden juntos: Amén.",
+    },
+    practice: {
+      prompt: {
+        en: "The priest makes the Sign of the Cross and begins the Mass in the name of the Father, the Son, and the Holy Spirit. Then the whole congregation answers together. What do you say?",
+        es: "El sacerdote hace la señal de la cruz y comienza la Misa en el nombre del Padre, del Hijo y del Espíritu Santo. Luego toda la asamblea responde junta. ¿Qué dices?",
+      },
+      hint: {
+        en: "It’s one short word, said at the end of many prayers. It means “Yes, it is so.”",
+        es: "Es una palabra corta que se dice al final de muchas oraciones. Significa «Sí, así es».",
+      },
+      success: {
+        en: "“Amen” is a Hebrew word meaning “Yes, it is so.” When you say it, you make the priest’s words your own. You’ll answer Amen many times during Mass, so keep joining in.",
+        es: "«Amén» es una palabra hebrea que significa «Sí, así es». Al decirla, haces tuyas las palabras del sacerdote. Responderás «Amén» muchas veces durante la Misa; sigue participando.",
+      },
     },
     illustration: {
       id: "sign-of-the-cross",
