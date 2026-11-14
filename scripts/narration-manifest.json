@@ -1,4 +1,10 @@
 {
+  "en-US-marin/arriving-narration.mp3": {
+    "hash": "bac6859bfd109533edebba73f1517b17c018677d8ae380bd43aa9bd3cee0c1a6",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 618624
+  },
   "en-US-marin/collect-cue.mp3": {
     "hash": "84a15198f70221fdfb77cb75e7e54b2972b0089d0204c8a5e6e8cb2230501fa8",
     "model": "gpt-4o-mini-tts",
@@ -16,6 +22,12 @@
     "model": "gpt-4o-mini-tts",
     "voice": "marin",
     "bytes": 372096
+  },
+  "en-US-marin/genuflection-narration.mp3": {
+    "hash": "0fd642e14f0ea98978037bcf882017aacbb4c62b275328db4d3dadcbca167c02",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 1300992
   },
   "en-US-marin/gloria-cue.mp3": {
     "hash": "db5fbb9feeb306056fbdbcbc9abd8fe7e3386cc110a5bde02350eedca7d03bce",
@@ -41,6 +53,12 @@
     "voice": "marin",
     "bytes": 284928
   },
+  "en-US-marin/holy-water-narration.mp3": {
+    "hash": "1cb20a40c5a63fd733a52c729218ade0e9922d6361872a44ef571751030d9797",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 917760
+  },
   "en-US-marin/kyrie-cue.mp3": {
     "hash": "486bf83be0f72b45bace7ec031e82ef45ab451a13afcfe348ce55af659de6f42",
     "model": "gpt-4o-mini-tts",
@@ -65,6 +83,12 @@
     "voice": "marin",
     "bytes": 391296
   },
+  "en-US-marin/quiet-prayer-narration.mp3": {
+    "hash": "31c1cadd54f42bcd444d6ac9afdd8e9682409a5ab82079fdba5bf93ad6f1c75f",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 1116288
+  },
   "en-US-marin/reverence-explanation.mp3": {
     "hash": "e47ea959df232c1ee30405119f01ce8c0b5d6731a28df04712165598fd35ab44",
     "model": "gpt-4o-mini-tts",
@@ -82,6 +106,18 @@
     "model": "gpt-4o-mini-tts",
     "voice": "marin",
     "bytes": 303360
+  },
+  "en-US-marin/whos-who-narration.mp3": {
+    "hash": "3efaca2946cb079f0a454db8480b2d8e4a4309021f60b45721ac4a528c2a3c7f",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 1001856
+  },
+  "en-US-marin/why-sunday-narration.mp3": {
+    "hash": "9062ea0e0d33d2b3a3021a465ad0de4096853a552922c121ba8591100870accf",
+    "model": "gpt-4o-mini-tts-2025-03-20",
+    "voice": "marin",
+    "bytes": 1254528
   },
   "es-MX-cedar/collect-cue.mp3": {
     "hash": "7f486ec4165ad0a0987caed0114e552376dba061001912d0595805f3acca2d4f",
@@ -166,5 +202,17 @@
     "model": "gpt-4o-mini-tts",
     "voice": "cedar",
     "bytes": 364032
+  },
+  "priest-en-US-onyx/sign-of-the-cross-invocation.mp3": {
+    "hash": "c349e6d5d9c6009893e9e23698c27c1f2b61eb4a9de8df027886989cf57a3bf0",
+    "model": "gpt-4o-mini-tts",
+    "voice": "onyx",
+    "bytes": 78720
+  },
+  "priest-es-MX-onyx/sign-of-the-cross-invocation.mp3": {
+    "hash": "a9a56d0f668e902092804a02aa4efabc5db948511d1ace2fc20d9023f24f9813",
+    "model": "gpt-4o-mini-tts",
+    "voice": "onyx",
+    "bytes": 80256
   }
 }

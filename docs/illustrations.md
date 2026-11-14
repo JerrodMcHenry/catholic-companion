@@ -308,3 +308,46 @@ This is a visual review against the checklist in section 6. It is not an authori
 | `altar-reverence` | Good: kissing the altar, Book of the Gospels on the altar, servers with hands joined, ambo on the left, chair on the right, one crucifix, two candles, no tabernacle. | None | Use as the reference image for any regeneration. |
 
 **Consistent across all six:** green chasuble over a white alb, no stole visible over the chasuble, servers in cassock and surplice, congregation standing, no tabernacle in the sanctuary, no deacon, no incense.
+
+## 9. Before Mass scenes (Milestone 7B)
+
+**Status.** B1–B5 now use the cinematic images in `public/images/mass/before-mass/`:
+
+| Scene | File |
+|---|---|
+| church-exterior | `b1-church-exterior.png` |
+| church-entrance | `b2-arriving.png` |
+| holy-water-font | `b3-holy-water.png` |
+| tabernacle-chapel | `b4-tabernacle.png` |
+| pew-view | `b5-entering-pew.png` |
+
+They are mapped in `BEFORE_MASS_IMAGES` (`content/before-mass.ts`). **Still needed:** `sanctuary-preparing` (B6), because `b6-ministers-DRAFT.png` has baked-in text labels and must not be used, and `aisle-reverence` (B4: one person genuflecting, one bowing).
+
+**Review of the supplied images** (visual review, not an authoritative liturgical judgment):
+
+| Image | Finding | Severity |
+|---|---|---|
+| `b2-arriving`, `b3-holy-water` | A gold tabernacle (and, in B2, a red lamp) appears **behind the main altar**. This contradicts the side-chapel arrangement shown in B4 and spoken in the narration ("as here, in a side chapel"). `b5-entering-pew` is correct. | High |
+| `b2-arriving` | The literature rack holds books labeled "Roman Missal". The Missal is the priest's altar book, not a pew book for the congregation. The rack also shows "Breaking Bread", the name of a real publisher's hymnal (trademark), and the usher's badge text is garbled. | Medium |
+| All | Baked-in English text (signs, plaque, the parish name "St. Michael Catholic Church") is not localized for Spanish mode. The parish name is generic, but many real parishes share it. | Low |
+| B1–B5 vs. the six Mass scenes | Different interiors: the Before Mass church does not match `entrance-procession` and the other Mass scenes, so the handoff after B6 changes church. | Medium |
+| `b4-tabernacle` | The man holds a kneel on one knee with folded hands, which reads more as kneeling in prayer than a brief genuflection. Acceptable for "comes before the Blessed Sacrament". | Low |
+| `b1-church-exterior` | The parish sign at the right edge is slightly trimmed by the 3:2 crop. | Low |
+
+The original specifications for each scene follow.
+
+Experience Mass now opens with six narrated Before Mass moments (`content/before-mass.ts`). Until these images exist, the player shows a labeled "Illustration in progress" card for each one. All seven show **the same church as §2, before Mass**: no priest at the altar, no procession, and the Book of the Gospels not yet on the altar. Full directions are in `docs/before-mass-narration.md` §3 (each moment's "A. Scene").
+
+| File (`public/scenes/`) | Moment | What it must show | Accuracy notes |
+|---|---|---|---|
+| `church-exterior.webp` | B1 | The front of the parish church on a bright Sunday morning; people of all ages walking to open doors | Modest American parish; matches §2 |
+| `church-entrance.webp` | B2 | Just inside the doors: a greeter or usher, worship aids, the nave beyond, a Confession door along a side wall with two people waiting, a parent with a child, an accessible entrance | No phones shown |
+| `holy-water-font.webp` | B3 | A holy water font inside the doors; a right hand touching the water | Right hand |
+| `tabernacle-chapel.webp` | B4 | The side chapel: a gold tabernacle with a closed door, a lit sanctuary lamp (red glass), one person kneeling in prayer | The tabernacle is **not** in the sanctuary (§2) |
+| `aisle-reverence.webp` | B4 | The main aisle: one person genuflecting (right knee to the floor) toward the side chapel, another making a profound bow toward the altar | Both gestures visible; neither suggested as interchangeable |
+| `pew-view.webp` | B5 | From a pew a few rows from the back, toward the empty sanctuary: altar (white cloth, two lit candles), crucifix above, ambo left, chair right; a folded-down kneeler and worship aid in the foreground; a few people kneeling, others sitting | Same layout as `altar-reverence` |
+| `sanctuary-preparing.webp` | B6 | The same angle as `pew-view`, minutes later: a server lighting the candles, a lector at the ambo, the cantor at a music stand, an usher at the edge of the frame; the priest not visible | Same camera as `pew-view`, so the change reads as time passing |
+
+**No longer reused:** the brief `sign-of-the-cross.webp` demonstration in B3 was removed, because `b3-holy-water.png` itself shows a person making the Sign of the Cross.
+
+**To add an image:** save it under `public/images/mass/before-mass/` and add an entry (src, alt text, optional focus) to `BEFORE_MASS_IMAGES` in `content/before-mass.ts`. The player then shows the image instead of the card. `npm test` checks that the file exists, that it is not a draft, and that it has alt text.

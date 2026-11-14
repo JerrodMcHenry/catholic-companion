@@ -62,6 +62,19 @@ export const TYPICAL_PATH: Text = {
   es: "Aquí se muestra una Misa dominical típica del Tiempo Ordinario, con el Acto penitencial del «Yo confieso», seguido del Kyrie y el Gloria. Las otras opciones se explican en el camino.",
 };
 
+// The major sections of the Mass, in order, as in docs/mass-curriculum.md (Before Mass, then §3–6, with
+// the Communion Rite named separately). Only the section names live here: each section's moments come
+// from its own content (BEFORE_MASS in content/before-mass.ts, INTRODUCTORY_RITES below). Sections
+// without content yet are shown as not yet available.
+export const MASS_PARTS = [
+  { id: "before-mass", title: { en: "Before Mass", es: "Antes de la Misa" } },
+  { id: "introductory-rites", title: { en: "Introductory Rites", es: "Ritos iniciales" } },
+  { id: "liturgy-of-the-word", title: { en: "Liturgy of the Word", es: "Liturgia de la Palabra" } },
+  { id: "liturgy-of-the-eucharist", title: { en: "Liturgy of the Eucharist", es: "Liturgia eucarística" } },
+  { id: "communion-rite", title: { en: "Communion Rite", es: "Rito de la Comunión" } },
+  { id: "concluding-rites", title: { en: "Concluding Rites", es: "Rito de conclusión" } },
+] as const satisfies readonly { id: string; title: Text }[];
+
 export const INTRODUCTORY_RITES: MassMoment[] = [
   {
     id: "entrance",

@@ -29,12 +29,22 @@ export default function HomePage() {
           Catholic Companion walks you through the Mass step by step, like a friend sitting beside
           you in the pew who knows what comes next and why.
         </p>
-        <Link
-          href="/onboarding"
-          className="mt-10 inline-flex min-h-14 items-center justify-center rounded-full bg-burgundy px-8 text-lg font-medium text-ivory shadow-sm transition-colors hover:bg-burgundy-deep"
-        >
-          Begin Your First Mass
-        </Link>
+        <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">
+          <Link
+            href="/experience"
+            className="inline-flex min-h-14 items-center justify-center rounded-full bg-burgundy px-8 text-lg font-medium text-ivory shadow-sm transition-colors hover:bg-burgundy-deep"
+          >
+            Experience Mass
+          </Link>
+          <p className="text-sm text-ink-soft">Take part in a simulated Mass as it unfolds.</p>
+          <Link
+            href="/onboarding"
+            className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border-2 border-burgundy px-8 font-medium text-burgundy transition-colors hover:bg-cream"
+          >
+            Learn the Mass
+          </Link>
+          <p className="text-sm text-ink-soft">Go step by step, with explanations and practice.</p>
+        </div>
       </section>
 
       <div aria-hidden="true" className="my-14 flex items-center gap-4 text-gold">

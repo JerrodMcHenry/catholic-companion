@@ -1,0 +1,129 @@
+{
+  "en-US-marin/arriving-narration.mp3": {
+    "hash": "bac6859bfd109533edebba73f1517b17c018677d8ae380bd43aa9bd3cee0c1a6",
+    "duration": 38.66,
+    "starts": [
+      0,
+      2.44,
+      8.4,
+      11.18,
+      13.56,
+      16.84,
+      23.4,
+      28.82,
+      34.42
+    ]
+  },
+  "en-US-marin/genuflection-narration.mp3": {
+    "hash": "0fd642e14f0ea98978037bcf882017aacbb4c62b275328db4d3dadcbca167c02",
+    "duration": 81.31,
+    "starts": [
+      0,
+      9.44,
+      14.68,
+      22,
+      25,
+      33.52,
+      39.36,
+      48.72,
+      52.65,
+      57.68,
+      65.34,
+      68.58,
+      74.36,
+      78.62
+    ]
+  },
+  "en-US-marin/holy-water-narration.mp3": {
+    "hash": "1cb20a40c5a63fd733a52c729218ade0e9922d6361872a44ef571751030d9797",
+    "duration": 57.36,
+    "starts": [
+      0,
+      2.7,
+      7.48,
+      8.64,
+      16.62,
+      23.82,
+      25.06,
+      33.38,
+      37.4,
+      46.1,
+      50.34,
+      52.02,
+      54.22
+    ]
+  },
+  "en-US-marin/quiet-prayer-narration.mp3": {
+    "hash": "31c1cadd54f42bcd444d6ac9afdd8e9682409a5ab82079fdba5bf93ad6f1c75f",
+    "duration": 69.76,
+    "starts": [
+      0,
+      4.7,
+      6.94,
+      9.14,
+      18.22,
+      25.7,
+      28.08,
+      34.36,
+      38.3,
+      42.44,
+      49.62,
+      57.74,
+      60.54,
+      66.42
+    ]
+  },
+  "en-US-marin/whos-who-narration.mp3": {
+    "hash": "3efaca2946cb079f0a454db8480b2d8e4a4309021f60b45721ac4a528c2a3c7f",
+    "duration": 62.61,
+    "starts": [
+      0,
+      2.54,
+      12.7,
+      16.34,
+      22.12,
+      30.86,
+      33.42,
+      39.26,
+      49.7,
+      54.72,
+      58.52,
+      61.08
+    ]
+  },
+  "en-US-marin/why-sunday-narration.mp3": {
+    "hash": "9062ea0e0d33d2b3a3021a465ad0de4096853a552922c121ba8591100870accf",
+    "duration": 78.4,
+    "starts": [
+      0,
+      1.16,
+      2.76,
+      5.5,
+      8.04,
+      11.02,
+      19.66,
+      26,
+      31.8,
+      41.98,
+      48.08,
+      55.98,
+      66.86,
+      74.64,
+      76.52
+    ]
+  },
+  "priest-en-US-onyx/sign-of-the-cross-invocation.mp3": {
+    "hash": "c349e6d5d9c6009893e9e23698c27c1f2b61eb4a9de8df027886989cf57a3bf0",
+    "duration": 4.92,
+    "starts": [
+      0
+    ]
+  },
+  "priest-es-MX-onyx/sign-of-the-cross-invocation.mp3": {
+    "hash": "a9a56d0f668e902092804a02aa4efabc5db948511d1ace2fc20d9023f24f9813",
+    "duration": 5.01,
+    "starts": [
+      0
+    ]
+  }
+}
