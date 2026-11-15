@@ -6,23 +6,24 @@
 //   1. Before Mass: six narrated moments (content/before-mass.ts). Each plays one recording; captions
 //      follow it one sentence at a time, using the sentence start times in content/narration-timings.json.
 //      Cues change the scene, a label, or the posture chip at particular sentences.
-//   2. The opening of Mass (content/experience.ts, the Milestone 6A prototype): scenes with descriptive
-//      captions and the simulated priest's opening invocation. The people's "Amen" is shown
-//      automatically; nothing waits for the learner, and no microphone is used.
+//   2. The Introductory Rites (content/experience.ts): the eight moments of content/mass.ts, each a few
+//      beats: narration (captioned by sentence, like Before Mass), the simulated priest or Kyrie leader,
+//      the simulated congregation, silences, and the official texts (ICEL / Misal Romano). An official
+//      text is voiced only from your private local copy (see "Official texts" below); without one, it is
+//      a labeled, silent placeholder. Nothing waits for the learner, and no microphone is used.
 //
 // Both are "steps" in one list, played by one reducer and one <audio> element:
 //
 //   ready ─Begin/Resume─▶ playing ─step done─▶ playing (next step) … ─last step─▶ ended
-//                          │  ▲                  │ step with the people's answer
-//                  Pause / │  │ Resume           ▼
-//            tab hidden /  ▼  │            acknowledging ─1.8 s─▶ playing (next step)
-//            Learn more  paused  (also from acknowledging; resumes to the same state)
+//                          │  ▲
+//   Pause / tab hidden /   ▼  │ Resume
+//   Learn more           paused
 //   playing ─audio failed─▶ audioError ─Play again─▶ playing   (or Continue without audio)
 //   jump(step, offset): seek, ±15 s, previous/next, chapter. Keeps paused if paused; otherwise plays.
 //
 // The timeline. Every step has a known length: its recording (durations from narration-timings.json),
-// then its hold, then (for the priest's line) the people's answer. Adding them up places every moment on
-// one timeline, so seeking can land anywhere and the bar can mark where each moment begins.
+// then its hold. Adding them up places every step on one timeline, so seeking can land anywhere and the
+// bar can mark where each moment begins.
 //
 // `take` increases every time a step starts afresh (a new step, a jump, Begin, Play again). Timers and
 // audio callbacks carry the take they were started for, and the reducer ignores them if it has changed,
@@ -42,19 +43,19 @@ import {
   PLACEHOLDER_SCENES,
   narrationFile,
   sentencesOf,
+  splitSentences,
   type BeforeMassMoment,
   type PlaceholderScene,
 } from "../../content/before-mass";
-import { EXPERIENCE, PRIEST_VOICE, type Beat } from "../../content/experience";
+import { EXPERIENCE, MASS_PLACEHOLDERS, type Beat, type MassPlaceholder } from "../../content/experience";
 import { INTRODUCTORY_RITES, MASS_PARTS, SCENE_ALT, type MassMoment, type MomentId, type SceneId, type Text } from "../../content/mass";
 import TIMINGS from "../../content/narration-timings.json";
 
 type Spoken = "en" | "es";
-type SceneKey = SceneId | PlaceholderScene;
-type Active = "playing" | "acknowledging";
-type Status = "ready" | Active | "paused" | "audioError" | "ended";
+type SceneKey = SceneId | PlaceholderScene | MassPlaceholder;
+type Status = "ready" | "playing" | "paused" | "audioError" | "ended";
 // `offset`: seconds into the step at which the current take starts (0 unless the learner jumped).
-type State = { status: Status; index: number; offset: number; resumeTo: Active; take: number };
+type State = { status: Status; index: number; offset: number; take: number };
 type Action =
   | { type: "begin"; index: number; offset: number } // Begin, Resume, Restart
   | { type: "jump"; index: number; offset: number } // seek, ±15 s, previous/next, chapter
@@ -62,22 +63,25 @@ type Action =
   | { type: "audioFailed"; take: number }
   | { type: "retryAudio" }
   | { type: "skipAudio" }
-  | { type: "ackDone"; take: number }
   | { type: "pause" }
   | { type: "resume" };
 
+// Captions one sentence at a time, timed by the recording (Before Mass moments and narrator beats).
+type Captioned = { sentences: string[]; starts?: number[] };
 // A Before Mass moment, with its captions and cues worked out once.
-type Narrated = {
+type Narrated = Captioned & {
   kind: "before";
   moment: BeforeMassMoment;
   number: number; // 1–6
-  sentences: string[];
-  starts?: number[]; // when each sentence starts, if timings exist for this recording
   cues: (BeforeMassMoment["cues"][number] & { sentence: number })[];
 };
-type Step = Narrated | { kind: "mass"; beat: Beat };
+// A beat of the Introductory Rites; `sentences` only for narrator beats.
+type MassStep = Partial<Captioned> & { kind: "mass"; beat: Beat; number: number };
+type Step = Narrated | MassStep;
 
 const timings = TIMINGS as Record<string, { hash: string; duration?: number; starts: number[] } | undefined>;
+const beatAudioPath = (beat: Beat, spoken: Spoken) =>
+  beat.audio === undefined ? null : typeof beat.audio === "string" ? beat.audio : beat.audio[spoken];
 
 const STEPS: Step[] = [
   ...BEFORE_MASS.map((moment, i): Narrated => {
@@ -94,10 +98,47 @@ const STEPS: Step[] = [
         .filter((cue) => cue.sentence !== -1),
     };
   }),
-  ...EXPERIENCE.map((beat): Step => ({ kind: "mass", beat })),
+  ...EXPERIENCE.map((beat): MassStep => {
+    const number = INTRODUCTORY_RITES.findIndex((m) => m.id === beat.moment) + 1;
+    if (!beat.narration) return { kind: "mass", beat, number };
+    const sentences = splitSentences(beat.narration);
+    const starts = timings[beatAudioPath(beat, "en")!]?.starts;
+    return { kind: "mass", beat, number, sentences, starts: starts?.length === sentences.length ? starts : undefined };
+  }),
 ];
 
-const ACKNOWLEDGE_MS = 1800;
+// Official texts (private, local only). Their words and recordings are never in the app's tracked files:
+// scripts/generate-narration.mjs records them from your git-ignored public/local/liturgical-texts.json
+// into public/local/, with public/local/timings.json (duration, sentence starts, and the verified text).
+// The page loads that file once, before the player starts (loadOfficialTexts); if it is absent, every
+// official text stays a placeholder. A text recorded only in English is also used in Spanish mode.
+type Official = { file: string; text: string; sentences: string[]; starts: number[]; duration: number; lang: Spoken };
+let OFFICIAL: Record<string, { hash: string; duration: number; starts: number[]; text: string } | undefined> = {};
+let timelinesCache: Record<Spoken, { spans: Span[]; total: number }> | null = null;
+export async function loadOfficialTexts() {
+  try {
+    const res = await fetch("/local/timings.json", { cache: "no-store" });
+    OFFICIAL = res.ok ? await res.json() : {};
+  } catch {
+    OFFICIAL = {};
+  }
+  timelinesCache = null;
+}
+function officialFor(step: Step, spoken: Spoken): Official | null {
+  if (step.kind !== "mass" || step.beat.role !== "pending") return null;
+  const ext = step.beat.pending!.speaker === "priest" ? "mp3" : "wav";
+  for (const lang of [spoken, "en"] as const) {
+    const file = `${step.beat.id}-${lang}.${ext}`;
+    const entry = OFFICIAL[file];
+    if (entry?.text) {
+      const sentences = splitSentences([entry.text]);
+      const starts = entry.starts?.length === sentences.length ? entry.starts : [];
+      return { file, text: entry.text, sentences, starts, duration: entry.duration, lang };
+    }
+  }
+  return null;
+}
+
 const GAP_MS = 1000; // silence after each Before Mass recording, while the next scene fades in
 const END_GUARD = 1.5; // a seek never lands closer than this to the end of a recording or a timed scene
 const LAST = STEPS.length - 1;
@@ -107,83 +148,74 @@ function next(state: State): State {
   return { ...state, status: "playing", index: state.index + 1, offset: 0, take: state.take + 1 };
 }
 
-// After a step's audio and hold: show the people's answer if the step has one, otherwise move on.
-function afterStep(state: State): State {
-  const step = STEPS[state.index];
-  return step.kind === "mass" && step.beat.peopleAnswer ? { ...state, status: "acknowledging" } : next(state);
-}
-
 function reducer(state: State, action: Action): State {
   switch (action.type) {
     case "begin":
-      return { status: "playing", index: action.index, offset: action.offset, resumeTo: "playing", take: state.take + 1 };
+      return { status: "playing", index: action.index, offset: action.offset, take: state.take + 1 };
     case "jump":
       return {
         status: state.status === "paused" ? "paused" : "playing",
         index: action.index,
         offset: action.offset,
-        resumeTo: "playing",
         take: state.take + 1,
       };
     case "stepDone":
-      return state.status === "playing" && action.take === state.take ? afterStep(state) : state;
+      return state.status === "playing" && action.take === state.take ? next(state) : state;
     case "audioFailed":
       return state.status === "playing" && action.take === state.take ? { ...state, status: "audioError" } : state;
     case "retryAudio":
       return state.status === "audioError" ? { ...state, status: "playing", offset: 0, take: state.take + 1 } : state;
     case "skipAudio":
-      return state.status === "audioError" ? afterStep(state) : state;
-    case "ackDone":
-      return state.status === "acknowledging" && action.take === state.take ? next(state) : state;
+      return state.status === "audioError" ? next(state) : state;
     case "pause":
-      return state.status === "playing" || state.status === "acknowledging"
-        ? { ...state, status: "paused", resumeTo: state.status }
-        : state;
+      return state.status === "playing" ? { ...state, status: "paused" } : state;
     case "resume":
-      return state.status === "paused" ? { ...state, status: state.resumeTo } : state;
+      return state.status === "paused" ? { ...state, status: "playing" } : state;
   }
 }
 
-// The recording for a step, or null. Before Mass is English-only for now, in every language mode.
+// The recording for a step, or null. Narration is English-only for now, in every language mode.
 function audioFor(step: Step, spoken: Spoken): string | null {
   if (step.kind === "before") return `/audio/${narrationFile(step.moment)}`;
-  return step.beat.audio ? `/audio/${PRIEST_VOICE[spoken]}/${step.beat.audio}.mp3` : null;
+  const official = officialFor(step, spoken);
+  if (official) return `/local/${official.file}`;
+  const path = beatAudioPath(step.beat, spoken);
+  return path ? `/audio/${path}` : null;
 }
 
-const holdOf = (step: Step) => (step.kind === "before" ? GAP_MS : step.beat.hold);
+const OFFICIAL_HOLD = 600; // after an official text's recording, as after the priest's other lines
+const holdOf = (step: Step, spoken: Spoken) =>
+  step.kind === "before" ? GAP_MS : officialFor(step, spoken) ? OFFICIAL_HOLD : step.beat.hold;
 
-// Each step's place on the timeline, in seconds: its recording, then its hold, then the people's answer.
-type Span = { start: number; audio: number; hold: number; ack: number; end: number };
+// Each step's place on the timeline, in seconds: its recording, then its hold.
+type Span = { start: number; audio: number; hold: number; end: number };
 function timeline(spoken: Spoken): { spans: Span[]; total: number } {
   let t = 0;
   const spans = STEPS.map((step) => {
     const file = audioFor(step, spoken);
-    const audio = file ? (timings[file.replace("/audio/", "")]?.duration ?? 0) : 0;
-    const hold = holdOf(step) / 1000;
-    const ack = step.kind === "mass" && step.beat.peopleAnswer ? ACKNOWLEDGE_MS / 1000 : 0;
-    const span = { start: t, audio, hold, ack, end: t + audio + hold + ack };
+    const audio = officialFor(step, spoken)?.duration ?? (file ? (timings[file.replace("/audio/", "")]?.duration ?? 0) : 0);
+    const hold = holdOf(step, spoken) / 1000;
+    const span = { start: t, audio, hold, end: t + audio + hold };
     t = span.end;
     return span;
   });
   return { spans, total: t };
 }
-const TIMELINES = { en: timeline("en"), es: timeline("es") };
+// Computed on first use, after the official texts are loaded.
+const timelines = () => (timelinesCache ??= { en: timeline("en"), es: timeline("es") });
 
 // Where a seek to time T on the timeline should go. Never into the last moments of a recording or timed
-// scene (so a seek can't trigger an immediate advance); a seek into the silence between Before Mass
-// moments goes to the start of the next moment.
+// beat (so a seek can't trigger an immediate advance); a seek into the short pause after a recording
+// goes to the start of the next step.
 function resolveSeek(spoken: Spoken, target: number): { index: number; offset: number } {
-  const { spans, total } = TIMELINES[spoken];
+  const { spans, total } = timelines()[spoken];
   const t = Math.min(Math.max(target, 0), total);
   let index = spans.findLastIndex((span) => span.start <= t);
   if (index < 0) index = 0;
   const span = spans[index];
-  let local = t - span.start;
+  const local = t - span.start;
   if (span.audio > 0) {
-    if (local >= span.audio) {
-      if (span.ack === 0 && index < LAST) return { index: index + 1, offset: 0 };
-      local = span.audio;
-    }
+    if (local >= span.audio && index < LAST) return { index: index + 1, offset: 0 };
     return { index, offset: Math.max(0, Math.min(local, span.audio - END_GUARD)) };
   }
   return { index, offset: Math.max(0, Math.min(local, span.hold - END_GUARD)) };
@@ -191,7 +223,7 @@ function resolveSeek(spoken: Spoken, target: number): { index: number; offset: n
 
 // Which sentence is being spoken at time t. Uses the measured start times; without them, spreads the
 // sentences over the recording by length.
-function sentenceAt(step: Narrated, t: number, duration: number): number {
+function sentenceAt(step: Captioned, t: number, duration: number): number {
   let starts = step.starts;
   if (!starts) {
     const lengths = step.sentences.map((s) => s.length);
@@ -232,15 +264,22 @@ const SCENES = [
     ),
   ]),
 ];
+const PLACEHOLDERS: Record<string, { title: string; description: string }> = { ...PLACEHOLDER_SCENES, ...MASS_PLACEHOLDERS };
 const FIRST_AUDIO = audioFor(STEPS[0], "en");
 const momentFor = (id: MomentId) => INTRODUCTORY_RITES.find((m) => m.id === id) as MassMoment;
-const isPlaceholder = (scene: SceneKey): scene is PlaceholderScene => scene in PLACEHOLDER_SCENES;
-// Which section of the Mass a step belongs to.
+const isPlaceholder = (scene: SceneKey): scene is PlaceholderScene | MassPlaceholder => scene in PLACEHOLDERS;
+// Which section of the Mass a step belongs to, and which moment (chapter).
 const partOf = (step: Step) => (step.kind === "before" ? "before-mass" : "introductory-rites");
+const momentKey = (step: Step) => (step.kind === "before" ? `before:${step.moment.id}` : `mass:${step.beat.moment}`);
+const MOMENT_START = STEPS.map((step) => STEPS.findIndex((s) => momentKey(s) === momentKey(step)));
+const nextMomentStart = (i: number) => STEPS.findIndex((s, j) => j > i && momentKey(s) !== momentKey(STEPS[i]));
+// Moments that still contain a placeholder (an official text with no local recording) in this language.
+const pendingMoments = (spoken: Spoken) =>
+  new Set(STEPS.flatMap((s) => (s.kind === "mass" && s.beat.role === "pending" && !officialFor(s, spoken) ? [s.beat.moment] : [])));
 
 // Saved progress: a step id and a second. Nothing else.
 const PROGRESS_KEY = "catholic-companion:experience-progress";
-const stepId = (step: Step) => (step.kind === "before" ? `before:${step.moment.id}` : `mass:${step.beat.moment}`);
+const stepId = (step: Step) => (step.kind === "before" ? `before:${step.moment.id}` : `mass:${step.beat.id}`);
 function readProgress(): { index: number; offset: number } | null {
   try {
     const saved = JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? "null");
@@ -266,8 +305,8 @@ function clearProgress() {
 const ui = {
   title: { en: "Experience Mass", es: "Vive la Misa" },
   intro: {
-    en: "Walk into a Catholic church with a guide beside you. We begin at the door, before Mass, and then step into the start of Mass itself. Everything plays on its own; just listen and watch.",
-    es: "Entra en una iglesia católica con un guía a tu lado. Comenzamos en la puerta, antes de la Misa, y luego entramos al inicio de la Misa. Todo avanza solo; solo escucha y observa.",
+    en: "Walk into a Catholic church with a guide beside you. We begin at the door, before Mass, and then go through the opening of Mass itself, the Introductory Rites. Everything plays on its own; just listen and watch.",
+    es: "Entra en una iglesia católica con un guía a tu lado. Comenzamos en la puerta, antes de la Misa, y luego recorremos el inicio de la Misa, los Ritos iniciales. Todo avanza solo; solo escucha y observa.",
   },
   disclosure: {
     en: "This is an educational simulation using AI-generated voices. It is not a celebration of Mass.",
@@ -278,8 +317,8 @@ const ui = {
     es: "Activa el sonido. No se te pide nada: ni micrófono ni preguntas.",
   },
   englishOnly: {
-    en: "The Before Mass narration is in English for now; Spanish is being prepared.",
-    es: "Por ahora, la narración de «Antes de la Misa» está en inglés; la versión en español está en preparación.",
+    en: "The narration is in English for now; Spanish is being prepared.",
+    es: "Por ahora, la narración está en inglés; la versión en español está en preparación.",
   },
   chooseLanguage: { en: "Choose a language to begin.", es: "Elige un idioma para comenzar." },
   begin: { en: "Begin Mass", es: "Comenzar la Misa" },
@@ -292,12 +331,21 @@ const ui = {
   learnMore: { en: "Learn more", es: "Saber más" },
   paused: { en: "Paused", es: "En pausa" },
   of: { en: "of", es: "de" },
-  preview: { en: "preview", es: "vista previa" },
   narrator: { en: "Guide", es: "Guía" },
-  priest: { en: "Priest", es: "Sacerdote" },
-  aiVoice: { en: "simulated AI voice", es: "voz simulada por IA" },
-  people: { en: "People", es: "Pueblo" },
-  scene: { en: "Scene description", es: "Descripción de la escena" },
+  priest: { en: "Priest (simulated AI voice)", es: "Sacerdote (voz simulada por IA)" },
+  leader: { en: "Priest or cantor (simulated AI voice)", es: "Sacerdote o cantor (voz simulada por IA)" },
+  people: { en: "People (simulated congregation, AI voices)", es: "Pueblo (asamblea simulada, voces de IA)" },
+  silence: { en: "Silence", es: "Silencio" },
+  pendingBadge: { en: "Official text · not in your local copy", es: "Texto oficial · no está en tu copia local" },
+  pendingBody: {
+    en: "The official words are never included in the app. Add them from your own Missal to your private local copy (public/local/liturgical-texts.json) and record them to hear them here.",
+    es: "Las palabras oficiales nunca se incluyen en la aplicación. Agrégalas desde tu propio Misal a tu copia local privada (public/local/liturgical-texts.json) y grábalas para escucharlas aquí.",
+  },
+  officialLocal: {
+    en: "Official text from your private local copy (not included in the app).",
+    es: "Texto oficial de tu copia local privada (no incluido en la aplicación).",
+  },
+  someTextsPending: { en: "some texts pending", es: "algunos textos pendientes" },
   loadingAudio: { en: "Loading audio…", es: "Cargando el audio…" },
   audioError: {
     en: "The audio couldn’t play. Check your sound and connection, then try again. The words are shown above.",
@@ -306,13 +354,12 @@ const ui = {
   tryAgain: { en: "Play again", es: "Reproducir de nuevo" },
   continueWithout: { en: "Continue without audio", es: "Continuar sin audio" },
   inProgress: { en: "Illustration in progress", es: "Ilustración en preparación" },
-  endTitle: { en: "The guided Mass pauses here for now", es: "La Misa guiada se detiene aquí por ahora" },
+  endTitle: { en: "The Introductory Rites are complete", es: "Los Ritos iniciales han terminado" },
   endBody: {
-    en: "You’ve walked from the church door to the Sign of the Cross. Next, the priest greets the people and they answer him. The rest of the guided Mass, from the Greeting to the dismissal, is still being prepared.",
-    es: "Has recorrido el camino desde la puerta de la iglesia hasta la señal de la cruz. Luego, el sacerdote saluda al pueblo y el pueblo le responde. El resto de la Misa guiada, desde el saludo hasta la despedida, todavía se está preparando.",
+    en: "You’ve walked from the church door through the opening of Mass. Next comes the Liturgy of the Word, which is still being prepared. Some prayers of the Introductory Rites are shown as placeholders until permission to use their official words is confirmed.",
+    es: "Has recorrido el camino desde la puerta de la iglesia hasta el inicio de la Misa. Luego viene la Liturgia de la Palabra, que todavía se está preparando. Algunas oraciones de los Ritos iniciales aparecen como marcadores provisionales hasta confirmar el permiso para usar sus palabras oficiales.",
   },
   restartExperience: { en: "Restart Experience", es: "Reiniciar la experiencia" },
-  learnGreeting: { en: "Learn about the Greeting", es: "Aprende sobre el saludo" },
   home: { en: "Return Home", es: "Volver al inicio" },
   close: { en: "Close", es: "Cerrar" },
   deeper: { en: "Go deeper", es: "Profundiza" },
@@ -363,19 +410,19 @@ const secondaryButton =
 const controlButton =
   "inline-flex min-h-11 items-center gap-1 rounded-full border-2 border-cream bg-white/60 px-4 text-sm font-medium text-burgundy hover:border-gold";
 const chip = "inline-flex items-center rounded-full px-3 py-1 text-sm font-medium";
+const roleLabel = "block text-xs font-medium tracking-wider text-gold-deep uppercase";
 
 export default function Player({ language: saved }: { language: Language | null }) {
-  const [state, dispatch] = useReducer(reducer, { status: "ready", index: 0, offset: 0, resumeTo: "playing", take: 0 });
-  const [massLang, setMassLang] = useState<Spoken>("en"); // bilingual mode only: the language the priest speaks
+  const [state, dispatch] = useReducer(reducer, { status: "ready", index: 0, offset: 0, take: 0 });
+  const [massLang, setMassLang] = useState<Spoken>("en"); // bilingual mode only: the language the priest and people speak
   const [pos, setPos] = useState({ key: "", local: 0 }); // where we are in the current step, in seconds
   const [scrub, setScrub] = useState<number | null>(null); // timeline position while the thumb is dragged
   const [savedProgress] = useState(readProgress); // offered on the start screen
   const [buffering, setBuffering] = useState(false);
-  const [about, setAbout] = useState<Step | "greeting" | null>(null);
+  const [about, setAbout] = useState<Step | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const loaded = useRef<string | null>(null); // which take and file the <audio> source belongs to
   const holdRef = useRef({ key: "", start: 0, elapsed: 0 }); // the hold of the current step, once started
-  const ackRef = useRef({ take: -1, start: 0, elapsed: 0 }); // the people's answer, once started
   const latest = useRef({ started: false, index: 0, local: 0 }); // for saving progress from timers
   const pausedByDialog = useRef(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -391,19 +438,17 @@ export default function Player({ language: saved }: { language: Language | null 
   const step = STEPS[index];
   const src = audioFor(step, spoken);
   const stepKey = `${take}:${src}`;
-  const { spans, total } = TIMELINES[spoken];
-  const span = spans[index];
+  const { spans, total } = timelines()[spoken];
   const local = pos.key === stepKey ? pos.local : offset;
-  const time = scrub ?? (status === "ended" ? total : span.start + local);
+  const time = scrub ?? (status === "ended" ? total : spans[index].start + local);
 
   // What the screen shows now (while dragging the timeline, it previews the place being dragged to).
   const view = scrub !== null ? resolveSeek(spoken, scrub) : { index, offset: local };
   const viewStep = STEPS[view.index];
-  const sentence = viewStep.kind === "before" ? sentenceAt(viewStep, view.offset, spans[view.index].audio) : 0;
+  const captioned = viewStep.kind === "before" ? viewStep : viewStep.sentences ? (viewStep as Captioned) : null;
+  const sentence = captioned ? sentenceAt(captioned, view.offset, spans[view.index].audio) : 0;
   const cue = viewStep.kind === "before" ? cuesAt(viewStep, sentence) : null;
   const scene: SceneKey = cue ? cue.scene : viewStep.kind === "mass" ? viewStep.beat.scene : "church-exterior";
-  const moment = viewStep.kind === "mass" ? momentFor(viewStep.beat.moment) : null;
-  const people = moment?.response?.find((line) => line.speaker === "people" && line.words);
 
   useEffect(() => {
     latest.current = { started: status !== "ready" && status !== "ended", index, local };
@@ -429,10 +474,10 @@ export default function Player({ language: saved }: { language: Language | null 
     const hold = () => {
       if (held) return;
       held = true;
-      // Resuming a hold continues it; a jump into a timed scene starts that far in.
+      // Resuming a hold continues it; a jump into a timed beat starts that far in.
       const prior = holdRef.current.key === key ? holdRef.current.elapsed : file ? 0 : offset * 1000;
       holdRef.current = { key, start: performance.now() - prior, elapsed: prior };
-      timer = window.setTimeout(() => dispatch({ type: "stepDone", take }), Math.max(0, holdOf(current) - prior));
+      timer = window.setTimeout(() => dispatch({ type: "stepDone", take }), Math.max(0, holdOf(current, spoken) - prior));
     };
     const stop = () => {
       window.clearTimeout(timer);
@@ -462,18 +507,17 @@ export default function Player({ language: saved }: { language: Language | null 
   }, [status, index, take, spoken, offset]);
 
   // While playing, keep the position up to date (four times a second) for the timeline and captions:
-  // the recording's time, then the hold, then the people's answer.
+  // the recording's time, then the hold.
   useEffect(() => {
-    if (status !== "playing" && status !== "acknowledging") return;
+    if (status !== "playing") return;
     const file = audioFor(STEPS[index], spoken);
     const key = `${take}:${file}`;
-    const s = TIMELINES[spoken].spans[index];
+    const s = timelines()[spoken].spans[index];
     const id = window.setInterval(() => {
-      const now = performance.now();
-      let at: number;
-      if (status === "acknowledging" && ackRef.current.take === take) at = s.audio + s.hold + (now - ackRef.current.start) / 1000;
-      else if (holdRef.current.key === key) at = (file ? s.audio : 0) + (now - holdRef.current.start) / 1000;
-      else at = audioRef.current?.currentTime ?? 0;
+      const at =
+        holdRef.current.key === key
+          ? (file ? s.audio : 0) + (performance.now() - holdRef.current.start) / 1000
+          : (audioRef.current?.currentTime ?? 0);
       setPos({ key, local: Math.min(at, s.end - s.start) });
     }, 250);
     return () => window.clearInterval(id);
@@ -484,7 +528,8 @@ export default function Player({ language: saved }: { language: Language | null 
   // The single <audio> element below is the only thing that ever plays.
   useEffect(() => {
     if (status !== "playing" || index === LAST) return;
-    const following = audioFor(STEPS[index + 1], spoken);
+    const upcoming = STEPS.slice(index + 1).find((s) => audioFor(s, spoken));
+    const following = upcoming && audioFor(upcoming, spoken);
     if (!following) return;
     const warm = new Audio();
     warm.preload = "auto";
@@ -492,23 +537,11 @@ export default function Player({ language: saved }: { language: Language | null 
     return () => warm.removeAttribute("src");
   }, [status, index, spoken]);
 
-  // A short pause on the people's answer before the Mass continues. Pausing here and resuming continues it.
-  useEffect(() => {
-    if (status !== "acknowledging") return;
-    const prior = ackRef.current.take === take ? ackRef.current.elapsed : 0;
-    ackRef.current = { take, start: performance.now() - prior, elapsed: prior };
-    const timer = window.setTimeout(() => dispatch({ type: "ackDone", take }), Math.max(0, ACKNOWLEDGE_MS - prior));
-    return () => {
-      window.clearTimeout(timer);
-      ackRef.current = { ...ackRef.current, elapsed: performance.now() - ackRef.current.start };
-    };
-  }, [status, take]);
-
   // Save progress every 5 s while playing, and right away on pause; forget it at the end.
   useEffect(() => {
     if (status === "paused") saveProgress(latest.current.index, latest.current.local);
     if (status === "ended") clearProgress();
-    if (status !== "playing" && status !== "acknowledging") return;
+    if (status !== "playing") return;
     const id = window.setInterval(() => saveProgress(latest.current.index, latest.current.local), 5000);
     return () => window.clearInterval(id);
   }, [status]);
@@ -569,8 +602,8 @@ export default function Player({ language: saved }: { language: Language | null 
   }
   const seek = (seconds: number) => jump(resolveSeek(spoken, seconds));
 
-  function openAbout(what: Step | "greeting") {
-    if (status === "playing" || status === "acknowledging") {
+  function openAbout(what: Step) {
+    if (status === "playing") {
       pausedByDialog.current = true;
       dispatch({ type: "pause" });
     }
@@ -585,13 +618,15 @@ export default function Player({ language: saved }: { language: Language | null 
 
   const started = status !== "ready";
   const paused = status === "paused";
-  const showPeople =
-    viewStep === step && (status === "acknowledging" || (paused && state.resumeTo === "acknowledging"));
-  const postureLabel = cue ? cue.posture : viewStep.kind === "mass" ? short(ui[viewStep.beat.posture.position]) : undefined;
+  const postureLabel = cue
+    ? cue.posture
+    : viewStep.kind === "mass"
+      ? short(viewStep.beat.chip ?? ui[viewStep.beat.posture.position])
+      : undefined;
 
   // Navigation by section of the Mass. Moment titles come from the content itself: BEFORE_MASS for Before
-  // Mass and INTRODUCTORY_RITES for the Introductory Rites (moments not yet in Experience Mass are listed
-  // as not yet available). Later sections have no content yet and are shown as not yet available.
+  // Mass and INTRODUCTORY_RITES for the Introductory Rites. Moments that still contain a
+  // placeholder (no local official text) say so. Later sections have no content yet and are shown as not yet available.
   const titleOf = (s: Step): string => (s.kind === "before" ? s.moment.title : momentFor(s.beat.moment).title[language === "es" ? "es" : "en"]);
   const sections: ChapterSection[] = MASS_PARTS.map((part) => {
     if (part.id === "before-mass")
@@ -608,17 +643,32 @@ export default function Player({ language: saved }: { language: Language | null 
         available: true,
         items: INTRODUCTORY_RITES.map((m) => {
           const i = STEPS.findIndex((s) => s.kind === "mass" && s.beat.moment === m.id);
-          return { key: m.id, title: short(m.title), index: i >= 0 ? i : undefined, note: i >= 0 ? short(ui.preview) : undefined };
+          return {
+            key: m.id,
+            title: short(m.title),
+            index: i >= 0 ? i : undefined,
+            note: pendingMoments(spoken).has(m.id) ? short(ui.someTextsPending) : undefined,
+          };
         }),
       };
     return { id: part.id, title: short(part.title), available: false, items: [] };
   });
   const partTitle = (s: Step) => short(MASS_PARTS.find((p) => p.id === partOf(s))!.title);
-  const marks = spans.slice(1).map((s, i) => ({
-    at: s.start,
-    section: partOf(STEPS[i + 1]) !== partOf(STEPS[i]),
-    label: `${partTitle(STEPS[i + 1])} · ${titleOf(STEPS[i + 1])}`,
-  }));
+  const marks = spans.flatMap((s, i) =>
+    i > 0 && momentKey(STEPS[i]) !== momentKey(STEPS[i - 1])
+      ? [{ at: s.start, section: partOf(STEPS[i]) !== partOf(STEPS[i - 1]), label: `${partTitle(STEPS[i])} · ${titleOf(STEPS[i])}` }]
+      : [],
+  );
+  // Previous: the start of this moment, or of the previous moment if we're within 3 s of the start.
+  const momentStart = MOMENT_START[index];
+  const goPrevious = () => {
+    const intoMoment = spans[index].start + local - spans[momentStart].start;
+    jump({ index: intoMoment > 3 || momentStart === 0 ? momentStart : MOMENT_START[momentStart - 1], offset: 0 });
+  };
+  const goNext = () => {
+    const nextStart = nextMomentStart(index);
+    if (nextStart > 0) jump({ index: nextStart, offset: 0 });
+  };
 
   const languageSwitch = (
     <div className="flex flex-wrap items-center gap-2">
@@ -660,6 +710,65 @@ export default function Player({ language: saved }: { language: Language | null 
     </div>
   );
 
+  // What is said or shown now, by role.
+  const caption = (() => {
+    if (captioned) {
+      // The narration is heard, so screen readers are not asked to read each caption as well; the full
+      // text is under Learn more (Before Mass) or in the script.
+      return (
+        <div className="mt-3 min-h-28">
+          <p className="text-xs font-medium tracking-wider text-gold-deep uppercase">{short(ui.narrator)}</p>
+          <p lang="en" className="mt-1 font-serif text-2xl leading-snug font-semibold">
+            {captioned.sentences[sentence]}
+          </p>
+          {language !== "en" && <p className="mt-2 text-xs text-ink-soft">{t(ui.englishOnly)}</p>}
+        </div>
+      );
+    }
+    const beat = (viewStep as MassStep).beat;
+    const official = officialFor(viewStep, spoken);
+    if (official) {
+      // An official text from the private local copy, captioned by sentence like the narration.
+      const at = sentenceAt({ sentences: official.sentences, starts: official.starts.length ? official.starts : undefined }, view.offset, official.duration);
+      return (
+        <div className="mt-3 min-h-28">
+          <p className={roleLabel}>{short(beat.pending!.speaker === "priest" ? ui.priest : ui.people)}</p>
+          <p lang={official.lang} className={`mt-1 font-serif text-2xl leading-snug font-semibold ${beat.pending!.speaker === "people" ? "text-burgundy" : ""}`}>
+            {official.sentences[at]}
+          </p>
+          <p className="mt-2 text-xs text-ink-soft">{t(ui.officialLocal)}</p>
+        </div>
+      );
+    }
+    if (beat.role === "pending")
+      return (
+        <div aria-live="polite" className="mt-3 min-h-28 rounded-2xl border-2 border-dashed border-gold-deep/60 bg-cream/50 p-4">
+          <p className="inline-flex rounded-full bg-gold-deep px-2 py-0.5 text-[0.7rem] font-semibold tracking-wider text-ivory uppercase">
+            {short(ui.pendingBadge)}
+          </p>
+          <p className="mt-2 font-serif text-xl font-semibold">{t(beat.pending!.what)}</p>
+          <p className="mt-1 text-sm leading-relaxed text-ink-soft">{t(ui.pendingBody)}</p>
+          <p lang="en" className="mt-1 text-xs text-ink-soft">
+            {beat.pending!.source}
+          </p>
+        </div>
+      );
+    if (beat.role === "silence")
+      return (
+        <div aria-live="polite" className="mt-3 min-h-28">
+          <p className={roleLabel}>{short(ui.silence)}</p>
+          <p className="mt-1 leading-relaxed text-ink-soft italic">{t(beat.text!)}</p>
+        </div>
+      );
+    const label = beat.role === "priest" ? ui.priest : beat.role === "leader" ? ui.leader : ui.people;
+    return (
+      <div className="mt-3 min-h-28">
+        <p className={roleLabel}>{short(label)}</p>
+        <p className={`mt-1 font-serif text-2xl leading-snug font-semibold ${beat.role === "people" ? "text-burgundy" : ""}`}>{t(beat.text!)}</p>
+      </div>
+    );
+  })();
+
   return (
     <>
       {started ? languageSwitch : null}
@@ -681,7 +790,7 @@ export default function Player({ language: saved }: { language: Language | null 
             const fade = `transition-opacity duration-1000 ease-in-out motion-reduce:transition-none ${
               current ? "opacity-100" : "opacity-0"
             }`;
-            const image = isPlaceholder(key) ? BEFORE_MASS_IMAGES[key] : undefined;
+            const image = key in BEFORE_MASS_IMAGES ? BEFORE_MASS_IMAGES[key as PlaceholderScene] : undefined;
             if (image) {
               // A finished Before Mass illustration (16:9, cover-cropped into the 3:2 stage around `focus`).
               return (
@@ -701,7 +810,7 @@ export default function Player({ language: saved }: { language: Language | null 
               );
             }
             if (isPlaceholder(key)) {
-              const placeholder = PLACEHOLDER_SCENES[key];
+              const placeholder = PLACEHOLDERS[key];
               return (
                 <div
                   key={key}
@@ -729,7 +838,7 @@ export default function Player({ language: saved }: { language: Language | null 
               <Image
                 key={key}
                 src={`/scenes/${key}.webp`}
-                alt={current ? (language === "es" ? SCENE_ALT[key].es : SCENE_ALT[key].en) : ""}
+                alt={current ? (language === "es" ? SCENE_ALT[key as SceneId].es : SCENE_ALT[key as SceneId].en) : ""}
                 aria-hidden={!current}
                 fill
                 sizes="(min-width: 672px) 632px, calc(100vw - 40px)"
@@ -775,11 +884,16 @@ export default function Player({ language: saved }: { language: Language | null 
             <div className="mt-6 rounded-2xl border-2 border-gold bg-cream/70 p-4">
               <p className="font-medium">{t(ui.resumeTitle)}</p>
               <p className="mt-1 text-sm text-ink-soft">
-                {partTitle(STEPS[savedProgress.index])} · <span lang={STEPS[savedProgress.index].kind === "before" ? "en" : undefined}>{titleOf(STEPS[savedProgress.index])}</span> ·{" "}
+                {partTitle(STEPS[savedProgress.index])} ·{" "}
+                <span lang={STEPS[savedProgress.index].kind === "before" ? "en" : undefined}>{titleOf(STEPS[savedProgress.index])}</span> ·{" "}
                 {formatTime(spans[savedProgress.index].start + savedProgress.offset)}
               </p>
               <div className="mt-3 flex flex-col gap-2 sm:flex-row">
-                <button type="button" onClick={() => begin(resolveSeek(spoken, spans[savedProgress.index].start + savedProgress.offset))} className={`${primaryButton} flex-1`}>
+                <button
+                  type="button"
+                  onClick={() => begin(resolveSeek(spoken, spans[savedProgress.index].start + savedProgress.offset))}
+                  className={`${primaryButton} flex-1`}
+                >
                   <span>{t(ui.resumeAction)}</span>
                 </button>
                 <button type="button" onClick={() => begin()} className={`${secondaryButton} flex-1`}>
@@ -805,49 +919,14 @@ export default function Player({ language: saved }: { language: Language | null 
       {started && status !== "ended" && (
         <>
           <p className="mt-5 text-xs font-medium tracking-[0.15em] text-gold-deep uppercase">
-            {partTitle(viewStep)}
-            {viewStep.kind === "before" ? ` · ${viewStep.number} ${short(ui.of)} ${BEFORE_MASS.length}` : ` · ${short(ui.preview)}`}
+            {partTitle(viewStep)} · {viewStep.number} {short(ui.of)} {viewStep.kind === "before" ? BEFORE_MASS.length : INTRODUCTORY_RITES.length}
             <span className="sr-only">: </span>
             <span lang={viewStep.kind === "before" ? "en" : undefined} className="block normal-case tracking-normal text-ink-soft">
               {titleOf(viewStep)}
             </span>
           </p>
 
-          {viewStep.kind === "before" ? (
-            // The narration is heard, so screen readers are not asked to read each caption as well;
-            // the full text is available under Learn more.
-            <div className="mt-3 min-h-28">
-              <p className="text-xs font-medium tracking-wider text-gold-deep uppercase">{short(ui.narrator)}</p>
-              <p lang="en" className="mt-1 font-serif text-2xl leading-snug font-semibold">
-                {viewStep.sentences[sentence]}
-              </p>
-              {language !== "en" && <p className="mt-2 text-xs text-ink-soft">{t(ui.englishOnly)}</p>}
-            </div>
-          ) : (
-            // What is said or seen now in the Mass. Announced politely as it changes.
-            <div aria-live="polite" className="mt-3 min-h-28">
-              {viewStep.beat.caption.speaker === "priest" ? (
-                <p>
-                  <span className="block text-xs font-medium tracking-wider text-gold-deep uppercase">
-                    {short(ui.priest)} <span className="normal-case tracking-normal">({short(ui.aiVoice)})</span>
-                  </span>
-                  <span className="mt-1 block font-serif text-2xl leading-snug font-semibold">{t(viewStep.beat.caption.text)}</span>
-                </p>
-              ) : (
-                <p className="leading-relaxed text-ink-soft italic">
-                  <span className="sr-only">{t(ui.scene)}: </span>
-                  {t(viewStep.beat.caption.text)}
-                </p>
-              )}
-              {showPeople && people?.words && (
-                <p className="mt-3">
-                  <span className="block text-xs font-medium tracking-wider text-gold-deep uppercase">{short(ui.people)}</span>
-                  <span className="mt-1 block font-serif text-2xl font-semibold text-burgundy">{t(people.words)}</span>
-                </p>
-              )}
-              <p className="mt-2 text-sm text-ink-soft">{t(viewStep.beat.posture.note)}</p>
-            </div>
-          )}
+          {caption}
 
           <p role="status" className="mt-2 min-h-5 text-sm font-medium text-burgundy">
             {status === "playing" && buffering && t(ui.loadingAudio)}
@@ -876,7 +955,7 @@ export default function Player({ language: saved }: { language: Language | null 
           time={time}
           total={total}
           marks={marks}
-          currentIndex={index}
+          currentIndex={momentStart}
           currentSection={partOf(step)}
           sections={sections}
           paused={paused}
@@ -900,8 +979,8 @@ export default function Player({ language: saved }: { language: Language | null 
           onSeek={seek}
           onBack={() => seek(time - 15)}
           onForward={() => seek(time + 15)}
-          onPrevious={() => jump({ index: local > 3 || index === 0 ? index : index - 1, offset: 0 })}
-          onNext={() => index < LAST && jump({ index: index + 1, offset: 0 })}
+          onPrevious={goPrevious}
+          onNext={goNext}
           onToggle={() => dispatch({ type: paused ? "resume" : "pause" })}
           onChapter={(i) => jump({ index: i, offset: 0 })}
         />
@@ -933,9 +1012,9 @@ export default function Player({ language: saved }: { language: Language | null 
             <button type="button" onClick={() => begin()} className={primaryButton}>
               <span>{t(ui.restartExperience)}</span>
             </button>
-            <button type="button" onClick={() => openAbout("greeting")} className={secondaryButton}>
-              <span>{t(ui.learnGreeting)}</span>
-            </button>
+            <Link href="/simulation" className={secondaryButton}>
+              <span>{t(ui.learnMass)}</span>
+            </Link>
             <Link href="/" className={secondaryButton}>
               <span>{t(ui.home)}</span>
             </Link>
@@ -958,11 +1037,7 @@ export default function Player({ language: saved }: { language: Language | null 
 
       {about && (
         <AboutDialog dialogRef={dialogRef} closeLabel={t(ui.close)} onClose={closedAbout}>
-          {about !== "greeting" && about.kind === "before" ? (
-            <BeforeMassAbout step={about} t={t} />
-          ) : (
-            <MassAbout moment={momentFor(about === "greeting" ? "greeting" : about.beat.moment)} t={t} />
-          )}
+          {about.kind === "before" ? <BeforeMassAbout step={about} t={t} /> : <MassAbout moment={momentFor(about.beat.moment)} t={t} />}
           <p className="mt-4 text-xs leading-relaxed text-ink-soft">{t(ui.disclosure)}</p>
           <Link href="/simulation" className="mt-3 inline-block text-sm text-burgundy underline underline-offset-4">
             {t(ui.learnMass)}
@@ -1030,7 +1105,7 @@ function BeforeMassAbout({ step, t }: { step: Narrated; t: (text: Text) => React
   );
 }
 
-// "What's happening?" for a moment of the Mass itself: the existing explanation from content/mass.ts.
+// Learn more for a moment of the Mass itself: the existing explanation from content/mass.ts.
 function MassAbout({ moment, t }: { moment: MassMoment; t: (text: Text) => ReactNode }) {
   return (
     <>
@@ -1042,10 +1117,19 @@ function MassAbout({ moment, t }: { moment: MassMoment; t: (text: Text) => React
         <strong className="font-medium">{t(ui[moment.posture.position])}. </strong>
         {t(moment.posture.note)}
       </p>
+      {moment.condition && (
+        <p className="mt-4 rounded-2xl border-l-4 border-gold bg-cream/60 p-4 text-sm leading-relaxed">{t(moment.condition)}</p>
+      )}
       {moment.deeper && (
         <details className="mt-4 rounded-2xl bg-cream/60 p-4">
           <summary className="cursor-pointer font-medium text-burgundy">{t(ui.deeper)}</summary>
           <p className="mt-3 leading-relaxed">{t(moment.deeper)}</p>
+        </details>
+      )}
+      {moment.variations && (
+        <details className="mt-3 rounded-2xl bg-cream/60 p-4">
+          <summary className="cursor-pointer font-medium text-burgundy">{t({ en: "How this can vary", es: "Cómo puede variar" })}</summary>
+          <p className="mt-3 leading-relaxed">{t(moment.variations)}</p>
         </details>
       )}
     </>

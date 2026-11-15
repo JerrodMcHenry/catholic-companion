@@ -42,3 +42,6 @@ next-env.d.ts
 
 # python virtual environment (unused)
 /.venv
+
+# official liturgical texts and their recordings: private, local only, never committed
+/public/local/

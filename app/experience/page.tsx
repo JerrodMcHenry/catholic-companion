@@ -1,17 +1,22 @@
 "use client";
 
 // Experience Mass: a continuous, simulated Mass the learner takes part in. See ./player.tsx.
-// This page only waits until the saved language can be read in the browser.
+// This page only waits until the saved language can be read in the browser, and until the private
+// local copy of the official texts (if any) has been looked for.
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { readLanguage, subscribeToLanguage } from "../language";
-import Player from "./player";
+import Player, { loadOfficialTexts } from "./player";
 
 export default function ExperiencePage() {
   // undefined = not yet read (server render); null = no preference saved (chosen on the start screen).
   const language = useSyncExternalStore(subscribeToLanguage, readLanguage, () => undefined);
+  const [official, setOfficial] = useState(false);
+  useEffect(() => {
+    loadOfficialTexts().then(() => setOfficial(true));
+  }, []);
 
-  if (language === undefined) {
+  if (language === undefined || !official) {
     return (
       <div role="status" className="text-center">
         <p className="font-serif text-4xl font-semibold">

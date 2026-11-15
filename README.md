@@ -20,8 +20,25 @@ npm run dev        # http://localhost:3000
 npm run lint
 npm run typecheck  # next typegen && tsc --noEmit
 npm run build
-npm test           # Before Mass content and caption timing checks (Node's built-in test runner)
+npm test           # content, timing, and private-text checks (Node's built-in test runner)
 ```
+
+### Official texts (private, local only)
+
+Catholic Companion is a private, personal educational project: it is run only on this machine and is not distributed. The official prayers and responses (ICEL English, *Misal Romano* Spanish) are never stored in a tracked file. You supply them yourself:
+
+1. `node scripts/generate-narration.mjs` creates `public/local/liturgical-texts.json`, an empty template with one entry per official text in the Introductory Rites. Each entry names what the text is, its source, and who says it.
+2. Paste the exact wording from your own Roman Missal, or from the USCCB's published text, into each entry's `"en"` (and optionally `"es"`) field. Don't retype from memory and don't paraphrase. For the Greeting, choose one of the Missal's forms. The Collect is the one for the **Fifteenth Sunday in Ordinary Time** (the fixed example Sunday; Year B for the readings).
+3. Run `node --env-file=.env.local scripts/generate-narration.mjs` again. Each text is recorded by the simulated priest or congregation and then checked word for word. The recording, its manifest, and its timings (with the verified text, used for captions) are written to `public/local/`.
+
+The player then voices those texts, labeled "Official text from your private local copy". A text recorded only in English is also used in Spanish mode. Without a local copy, each one stays a labeled, silent placeholder.
+
+**Kept out of Git:** `/public/local/` is in `.gitignore`. `npm test` (`scripts/private-texts.test.mjs`) fails in three cases:
+- that folder stops being ignored;
+- anything in it is tracked or staged;
+- the first line of any text in your local copy appears in a tracked or staged file.
+
+The only way around this is a deliberate `git add -f`, and the tests then fail.
 
 **Type checking on a fresh checkout:** the layout uses `LayoutProps`, a global type that Next.js generates into `.next/types`. That folder and `next-env.d.ts` are gitignored, as Next.js recommends. Running `tsc --noEmit` by itself on a fresh clone therefore fails with `Cannot find name 'LayoutProps'`. Use `npm run typecheck`, which generates the route types first.
 
@@ -144,7 +161,7 @@ At any point, Pause, Learn more, a hidden tab, or leaving the page pauses; Resta
 - the narrated Mass after the Sign of the Cross, which is still the 6A preview with descriptive captions and ends before the Greeting;
 - liturgical review of the items flagged in `docs/before-mass-narration.md` §7–8 (especially F3, the side-chapel genuflect-or-bow guidance).
 
-`app/experience/respond.tsx` (the 6A response bar) is no longer used. It is kept, unimported, until you decide whether to delete it.
+The 6A response bar (`app/experience/respond.tsx`) was removed after 7B made it unused; Learn the Mass keeps its own optional practice.
 
 **Playback controls and chapter navigation** (`/experience`)
 
@@ -172,6 +189,31 @@ The learner can still just press Begin and listen, but can now also move around 
 - **Saved progress.** Only the current step id and second are kept, under `catholic-companion:experience-progress`. They are saved every 5 s while playing, on pause, on any jump, and when the page is left. The start screen then offers **Resume** (showing the section, moment, and time) or **Start from the beginning**. Progress is cleared when the experience ends. No answers, audio, or personal data are stored.
 - **Files.** `app/experience/controls.tsx` (new) is presentational: timeline, transport, and chapter list. `app/experience/player.tsx` owns all state.
 
+**Milestone 8B-1: the Introductory Rites** (`/experience`, after Before Mass)
+
+All eight moments of `content/mass.ts` (Entrance, Reverence, Sign of the Cross, Greeting, Penitential Act, Kyrie, Gloria, Collect) now play after Before Mass as one sequence. It follows the approved script `docs/introductory-rites-narration.md`, a simulated Sunday in Ordinary Time: Penitential Act form A, then the Kyrie (said, in Greek), then the Gloria. Other valid forms and seasonal changes are explained in the narration and in Learn more.
+
+- **Beats by role** (`content/experience.ts`). Each moment is a short run of beats:
+  - **narrator:** one recording per block of the approved narration, captioned sentence by sentence like Before Mass;
+  - **priest / leader:** the simulated priest voice, CLEARED words only;
+  - **people:** a simulated congregation;
+  - **silence:** captioned;
+  - **pending.**
+- **Official-text beats** (`pending` role). These cover the Greeting and its reply, the invitation to the Penitential Act, the Confiteor, the prayer for mercy, the Gloria, the invitation to pray, and the Collect.
+  - In the tracked code, each has only a name, its Missal source, and its speaker (priest or people).
+  - The player voices it from the private local copy (see "Official texts" above). Without one, it shows a 3-second labeled, silent placeholder ("Official text · not in your local copy").
+  - The chapter list marks moments that still have a placeholder "some texts pending".
+  - `npm test` fails if a tracked pending beat ever gets audio or words, or if a voiced beat uses anything but the cleared texts.
+- **Simulated congregation.** Each response (*Amen*, *Amén*, *Kyrie, eleison*, *Christe, eleison*) is six different AI voices. Each voice is requested as raw PCM and mixed by `scripts/generate-narration.mjs` into one WAV in `public/audio/congregation/`, with fixed small offsets and levels: no extra tools. The caption label reads "People (simulated congregation, AI voices)".
+- **Posture.** The chip follows each beat: Stand, Make the Sign of the Cross, Strike the breast (Confiteor), Repeat after the leader (Kyrie), Bow the head at the name of Jesus (Gloria), and Sit after the Collect.
+- **Player changes** (`app/experience/player.tsx`).
+  - Several steps per moment: chapters, timeline marks, and previous/next work by moment.
+  - The separate "acknowledging" state is gone, because the people's answers are now audible beats of their own.
+  - Seeking, ±15 s, pause/resume, saved progress, and autoplay are unchanged and work across Before Mass and the Introductory Rites.
+  - The whole experience is now about 14 minutes.
+- **Scenes.** `altar-reverence`, `sign-of-the-cross`, `opening-greeting`, and `collect` are reused (accurate, though a different church from Before Mass). The Entrance and the Penitential Act, Kyrie, and Gloria use labeled placeholders, because `entrance-procession` and `congregation-prayer` are flagged inaccurate in `docs/illustrations.md` §8.
+- **Not yet included:** official texts awaiting permission; music (entrance hymn, a sung Gloria); Spanish narration (the cleared responses are bilingual); the Liturgy of the Word.
+
 ## Project layout
 
 ```
@@ -183,16 +225,14 @@ app/
   onboarding/page.tsx   language selection
   simulation/page.tsx   the guided Mass player (loading state, navigation, progress)
   simulation/listen.tsx optional narration player (native <audio>)
-  simulation/practice.tsx optional response practice (speech recognition or typing); also exports
-                        the speech helpers reused by Experience Mass
+  simulation/practice.tsx optional response practice (speech recognition or typing)
   experience/page.tsx   Experience Mass route (waits for the saved language)
   experience/player.tsx the continuous player: Before Mass and the Mass beats, state, audio, captions,
                         cues, placeholders, controls, Learn more dialog
   experience/controls.tsx playback controls: seekable timeline with moment marks, transport, chapters by section
-  experience/respond.tsx 6A response bar (type or speak); no longer used since 7B, kept pending a decision
 content/
   mass.ts               liturgical content for the Introductory Rites, scene alt text, and the source list
-  experience.ts         the Experience Mass beats after Before Mass, and the priest voice folders
+  experience.ts         the Introductory Rites beats (narrator, priest, leader, people, silence, pending)
   before-mass.ts        the six Before Mass moments: approved narration, cues, placeholder scenes, Learn more
   narration-timings.json  generated: duration of each Before Mass and priest recording, and when each
                           Before Mass caption sentence starts
@@ -204,11 +244,17 @@ scripts/
   generate-narration.mjs     makes the narration, priest, and Before Mass MP3s, and the Before Mass caption
                              timings (run by hand, never by the app)
   before-mass.test.mjs       `npm test`: narration matches the approved document; cues and timings are valid
+  introductory-rites.test.mjs `npm test`: narration matches its script; eight moments in order; only cleared
+                             words voiced; pending beats silent; recordings and timings present
+  private-texts.test.mjs     `npm test`: public/local/ is ignored, untracked, unstaged, and no local official
+                             text appears in a tracked or staged file
   narration-manifest.json    what each MP3 was generated from, to detect stale recordings
+public/local/                git-ignored: your official texts, their recordings, manifest, and timings
 docs/
   illustrations.md      scene specifications, prompts, accuracy checklist, image review, Before Mass checklist
   mass-curriculum.md    the whole Mass as a teaching plan (Milestone 6B)
   before-mass-narration.md  the approved Before Mass script, sources, and review flags (Milestone 7A)
+  introductory-rites-narration.md  the approved Introductory Rites script, licensing inventory, and open questions (8A)
 ```
 
 To edit or add liturgical content, change `content/mass.ts`. The player renders whatever moments it finds there, in order. If you change an explanation, posture note, or cue, regenerate the narration (below).
@@ -231,7 +277,7 @@ node scripts/generate-narration.mjs --check                 # list missing or st
 node --env-file=.env.local scripts/generate-narration.mjs   # regenerate only those
 ```
 
-The manifest stores a hash of each recording's text, model, voice, and instructions. A failed request leaves the old file and keeps it marked stale. There are 36 recordings in all (28 narration, 2 priest, 6 Before Mass). Generating all of them costs well under $1.
+The manifest stores a hash of each recording's text, model, voice, and instructions. A failed request leaves the old file and keeps it marked stale. There are 56 recordings in all: 28 Learn the Mass narration, 6 Before Mass, 14 Introductory Rites narration, 4 priest or leader lines, and 4 congregation mixes. Generating all of them costs well under $1.
 
 **Provider retirement.** OpenAI's speech models (`gpt-4o-mini-tts`, `tts-1`, `tts-1-hd`) shut down on **January 6, 2027** (OpenAI deprecations page, announced October 1, 2026). After that the script needs a new model or provider (OpenAI suggests `gpt-realtime-2.1-mini` via its Realtime API), and new recordings may not match the current voices. Finish text reviews and regenerate before that date where possible. The app and the existing files are unaffected.
 
@@ -268,16 +314,40 @@ The `response` lines in `content/mass.ts` (speaker, exact words when available, 
 
 Each moment in `content/mass.ts` lists the specific references it relies on.
 
-## Liturgical text and licensing questions (resolve before release)
+## Liturgical text and licensing questions (private use)
 
-1. **Official texts are not reproduced.** The English (ICEL, 2010) and Spanish (*Misal Romano*, USCCB 2018) texts are copyrighted. Where they would appear, the app shows a labeled placeholder ("Official text not yet included") with an original description of what is said and what it means. These are:
-   - the greeting and its response
-   - the Confiteor
-   - the absolution
-   - the Gloria
-   - the Collect
+*This is our reading of the published policies, not legal advice.*
 
-   Permission from ICEL and the USCCB would be needed to include them.
+**Scope.** This is a private, personal, non-commercial educational project. It is not distributed, deployed, sold, or listed anywhere.
+
+**Private use is not itself a permission.**
+- ICEL's copyright page directs all requests to its Secretariat and says nothing about personal use.
+- The USCCB's permissions page doesn't address it either.
+- What remains is U.S. fair use: a case-by-case defense, strongest here because the use is personal and non-commercial, nothing is distributed, the text comes from a copy the owner has, and there is no effect on the market for missals.
+
+Contacting ICEL is not a prerequisite for continued private development (owner's decision).
+
+### Rights inventory
+
+| Material | Holder | How it is handled |
+|---|---|---|
+| Order of Mass and the Collect, English | ICEL | Only in the git-ignored local copy, supplied by the owner from an authoritative source. |
+| Order of Mass and the Collect, Spanish | *Misal Romano* (USCCB, 2018 edition, or another edition) | Same as English. Optional. |
+| Lectionary readings (next milestone) | USCCB / CCD (NABRE Lectionary) | Its policy allows use without written permission under 5,000 words and under 40% of a rite's or season's readings, verbatim, with the acknowledgment. It does not allow posting or podcasting. Readings go in the local copy as well. |
+| Music (hymns, a sung Gloria, psalm settings) | Various publishers | Not included. The AI voices speak and do not sing. |
+| Amen, the Greek Kyrie, the Trinitarian invocation | Treated as free (item 2 below) | Tracked and recorded. |
+| Narration, illustrations | The project owner | Tracked. |
+
+### Open legal questions (unresolved, flagged)
+
+1. Whether fair use covers keeping full recorded audio of ICEL texts for personal study, as distinct from reading them from a printed missal.
+2. Whether sending the texts to OpenAI's speech and transcription APIs to record them is consistent with the rights holders' terms. OpenAI's API data-use terms also apply.
+3. Whether the Lectionary allowance ("one-time use") covers a private app that replays the readings.
+4. Whether short responses (the reply to the Greeting, the three-word invitation to pray) are free as short phrases. They are treated as licensed for now.
+
+If the project's scope ever changes (sharing, deployment, distribution), all of the above must be settled with ICEL and the USCCB first.
+
+**Earlier notes, kept for reference:**
 
    **Greeting practice depends on this.** Before it can be added, three things are needed: permission to quote the people's response, the exact wording from a licensed copy, and confirmation of which Spanish missal to follow (U.S. 2018 or Mexico) and whether its greetings have more than one response. Once settled, add the `words` to the Greeting's people line in `content/mass.ts`; the lesson then shows them, and practice works with no code change.
 2. **Quoted words.** Only "Amen" / "Amén", the Greek "Kyrie, eleison" / "Christe, eleison", and (in Experience Mass) the priest's opening Trinitarian invocation are quoted. Amen and the Kyrie are ancient acclamations, not translations, and are widely treated as free to use. Confirm this before release.
@@ -298,9 +368,12 @@ Each moment in `content/mass.ts` lists the specific references it relies on.
 - Response practice (Learn the Mass) has not yet been tested with a real microphone or on iPhone and Android. Experience Mass no longer uses the microphone.
 - Experience Mass has been tested in desktop Chrome only, including 320 and 390 px widths in frames. It has not been tested on real iPhone or Android devices, and the iOS audio unlock is untested on a real iPhone.
 - The Before Mass narration has not been reviewed by ear (pace, tone, "hearing" in B2). Its seven illustrations are placeholders.
+- The congregation recordings were trimmed (no new TTS). They had kept up to 1.7 s of near-silence after the voices; now 0.25 s remains after the last audible sound, and `mixToWav` trims new mixes the same way.
+- Introductory Rites audio: listen to confirm words the transcription check heard differently. These are probably transcription slips, but "invocations" was heard as "indications" in two separate recordings (Penitential Act and Kyrie closing narration). Also "Sign" (heard "side"), "some" ("sun"), and "that" ("at"). Check the Greek pronunciation and whether the congregation mixes sound natural.
+- `whisper-1`, used only by the generation script to check words and time captions, shuts down on February 26, 2027 (OpenAI deprecations page); the text-to-speech models on January 6, 2027.
 - The priest voice and its Spanish accent have not been reviewed by ear.
 - The default Next.js favicon is still in place.
 
 ## Next milestone
 
-Not yet defined. The natural continuation is the Liturgy of the Word.
+First, record the official texts of the Introductory Rites from the local copy, and finish the listening checks above. Then comes the Liturgy of the Word for the fixed example, the **Fifteenth Sunday in Ordinary Time, Year B**: the script first, for review, with the readings and psalm in the local copy only.

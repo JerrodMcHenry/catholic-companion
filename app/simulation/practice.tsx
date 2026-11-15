@@ -18,11 +18,11 @@ import type { MassMoment, Text } from "../../content/mass";
 type Spoken = "en" | "es";
 type Mode = "speak" | "type";
 type Mic = "idle" | "starting" | "listening" | "processing";
-export type RecognitionError = "permission" | "noSpeech" | "noMic" | "network" | "other";
+type RecognitionError = "permission" | "noSpeech" | "noMic" | "network" | "other";
 type Feedback = "correct" | "guidance" | "empty" | RecognitionError | null;
 
 // The parts of the Web Speech recognition API used here (not in TypeScript's DOM types).
-export type Recognition = {
+type Recognition = {
   lang: string;
   continuous: boolean;
   interimResults: boolean;
@@ -37,16 +37,16 @@ export type Recognition = {
 };
 type RecognitionClass = new () => Recognition;
 
-export function recognitionClass(): RecognitionClass | undefined {
+function recognitionClass(): RecognitionClass | undefined {
   if (typeof window === "undefined") return undefined;
   const w = window as unknown as { SpeechRecognition?: RecognitionClass; webkitSpeechRecognition?: RecognitionClass };
   return w.SpeechRecognition ?? w.webkitSpeechRecognition;
 }
 
-export const RECOGNITION_LANG: Record<Spoken, string> = { en: "en-US", es: "es-MX" };
+const RECOGNITION_LANG: Record<Spoken, string> = { en: "en-US", es: "es-MX" };
 
 // Lowercase, without accents, punctuation, or extra spaces: "¡Amén!" → "amen".
-export function normalize(text: string) {
+function normalize(text: string) {
   return text
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
@@ -126,7 +126,7 @@ const ui = {
   },
 };
 
-export const ERRORS: Record<string, RecognitionError> = {
+const ERRORS: Record<string, RecognitionError> = {
   "not-allowed": "permission",
   "service-not-allowed": "permission",
   "no-speech": "noSpeech",

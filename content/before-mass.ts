@@ -274,7 +274,12 @@ export const BEFORE_MASS: BeforeMassMoment[] = [
 // The narration of a moment split into the sentences shown as captions. The generation script,
 // the player, and the tests all use this one function, so the timings line up with the captions.
 export function sentencesOf(moment: BeforeMassMoment): string[] {
-  return moment.paragraphs.flatMap((paragraph) => paragraph.split(/(?<=[.?!]["”]?)\s+(?=["“]?[A-Z])/));
+  return splitSentences(moment.paragraphs);
+}
+
+// Also used for the narrated beats of the Introductory Rites (content/experience.ts).
+export function splitSentences(paragraphs: string[]): string[] {
+  return paragraphs.flatMap((paragraph) => paragraph.split(/(?<=[.?!]["”]?)\s+(?=["“]?[A-Z])/));
 }
 
 // The audio file for a moment, relative to public/audio/.
