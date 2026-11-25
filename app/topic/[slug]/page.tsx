@@ -28,6 +28,7 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
     ? { href: "/apologetics", label: "Apologetics" }
     : { href: `/category/${category.slug}`, label: category.title };
   const { catechism = [], scripture = [], documents = [] } = topic.teaching;
+  const fathers = topic.debate?.fathers;
 
   return (
     <article>
@@ -74,7 +75,7 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
                 {catechism.map((ref) => (
                   <li key={ref.paragraphs}>
                     <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
-                      {ref.paragraphs.includes("–") ? "Paragraphs" : "Paragraph"} {ref.paragraphs}
+                      {/[–,]/.test(ref.paragraphs) ? "Paragraphs" : "Paragraph"} {ref.paragraphs}
                       <span className="sr-only"> (opens in a new tab)</span>
                     </a>
                   </li>
@@ -82,27 +83,40 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
               </ul>
             </div>
           )}
-          {scripture.length > 0 && (
-            <div>
-              <h3 className="mb-3 font-medium text-ink">Scripture</h3>
-              <ul className="flex flex-wrap gap-2">
-                {scripture.map((ref) => (
-                  <li key={ref.passage}>
-                    <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
-                      {ref.passage}
-                      <span className="sr-only"> (opens in a new tab)</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {topic.debate?.fathers && <Fathers fathers={topic.debate.fathers} />}
           {documents.length > 0 && (
             <div>
               <h3 className="mb-3 font-medium text-ink">Church documents</h3>
               <ResourceList resources={resourcesFor(documents)} />
             </div>
+          )}
+          {/* Supporting references stay one tap away so the page stays short on phones. */}
+          {(scripture.length > 0 || fathers) && (
+            <details className="group rounded-2xl border border-line bg-card">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 rounded-2xl px-5 font-medium text-accent">
+                {fathers ? "Scripture and the early Church" : "Scripture"}
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <div className="space-y-6 px-5 pb-5">
+                {scripture.length > 0 && (
+                  <div>
+                    <h3 className="mb-3 font-medium text-ink">Scripture</h3>
+                    <ul className="flex flex-wrap gap-2">
+                      {scripture.map((ref) => (
+                        <li key={ref.passage}>
+                          <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
+                            {ref.passage}
+                            <span className="sr-only"> (opens in a new tab)</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {fathers && <Fathers fathers={fathers} />}
+              </div>
+            </details>
           )}
         </div>
       </section>

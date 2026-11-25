@@ -6,7 +6,7 @@ import { categories, pillars } from "./categories";
 import { resources } from "./resources";
 import { commonQuestions, startHere, topics as learningTopics } from "./topics";
 import { traditions } from "./traditions";
-import type { PillarId, Tradition } from "./types";
+import type { PillarId, ResourceType, Tradition } from "./types";
 
 const topics = [...learningTopics, ...apologeticsTopics];
 
@@ -36,10 +36,19 @@ export function debatesFor(slug: string) {
   return debateTopics.filter((t) => t.debate!.perspectives.some((p) => family.has(p.tradition)));
 }
 
+export const resourceTypeLabel: Record<ResourceType, string> = {
+  document: "Church document",
+  source: "Source",
+  article: "Article",
+  video: "Video",
+  podcast: "Podcast",
+  book: "Book",
+  course: "Course",
+};
+
 // Only call with ids that validation has already checked.
 export const topicsFor = (slugs: string[] = []) => slugs.map((s) => topicBySlug.get(s)!);
 export const resourcesFor = (ids: string[] = []) => ids.map((id) => resourceById.get(id)!);
-export const traditionsFor = (slugs: string[] = []) => slugs.map((s) => traditionBySlug.get(s)!);
 
 function check(ok: boolean, message: string) {
   if (!ok) throw new Error(`Content error: ${message}`);
@@ -69,6 +78,8 @@ for (const t of topics) {
   checkTopics(where, t.related, t.slug);
   checkResources(where, t.resources);
   checkResources(where, t.teaching.documents, "document");
+  const cccLinks = (t.teaching.catechism ?? []).map((c) => c.url);
+  check(new Set(cccLinks).size === cccLinks.length, `${where} links the same Catechism page twice; combine them`);
   if (t.debate) {
     check(t.debate.perspectives.length > 0, `${where} has a debate with no perspectives`);
     for (const p of t.debate.perspectives) {

@@ -8,8 +8,9 @@ export const traditions: Tradition[] = [
     slug: "protestantism",
     name: "Protestantism",
     group: "christian",
+    keywords: ["Protestant", "Protestants", "Reformation", "Martin Luther", "John Calvin", "denominations"],
     overview: [
-      "Protestantism began with the Reformation of the sixteenth century, when reformers such as Martin Luther and John Calvin sought to reform the Western Church and, in the end, separated from Rome. Today it includes hundreds of millions of Christians in many different churches and traditions.",
+      "Protestantism began with the Reformation of the sixteenth century, when reformers such as Martin Luther and John Calvin sought to reform the Western Church and, in the end, separated from Rome. Today it includes many different churches and traditions around the world.",
       "Protestants differ widely among themselves, so no single description fits them all. Most share a great deal with Catholics: faith in the Trinity, in Jesus Christ as true God and true man, in the authority of Scripture, and in salvation through Christ.",
       "The Catholic Church regards baptized Protestants as fellow Christians, brothers and sisters in Christ who are in real, though imperfect, communion with the Catholic Church.",
     ],
@@ -38,9 +39,10 @@ export const traditions: Tradition[] = [
     slug: "jehovahs-witnesses",
     name: "Jehovah’s Witnesses",
     group: "christian",
+    keywords: ["Jehovah’s Witness", "JW", "Watchtower", "Kingdom Hall", "New World Translation"],
     overview: [
       "Jehovah’s Witnesses grew out of the Bible Student movement led by Charles Taze Russell in the United States in the 1870s. Witnesses are known for their door-to-door ministry, their use of God’s name, Jehovah, and their own translation of the Bible, the New World Translation. They are guided by a Governing Body.",
-      "Witnesses see themselves as restoring the original Christianity of the first century. They teach that Jehovah alone is Almighty God, that Jesus is God’s Son and the first of his creations, and that the holy spirit is God’s active force rather than a person.",
+      "According to their publications, Jehovah alone is Almighty God, Jesus is God’s Son and the first of his creations, and the holy spirit is God’s active force rather than a person.",
     ],
     differences: [
       "Who Jesus is: God’s first creation, or the eternal Son, true God and true man",
@@ -58,9 +60,10 @@ export const traditions: Tradition[] = [
     slug: "islam",
     name: "Islam",
     group: "religion",
+    keywords: ["Muslim", "Muslims", "Qur’an", "Koran", "Allah", "Muhammad"],
     overview: [
-      "Muslims believe that God (in Arabic, Allah) revealed the Qur’an to the Prophet Muhammad in seventh-century Arabia, renewing the faith in one God taught by all the prophets. With close to two billion followers, Islam is the world’s second-largest religion. Its two main branches are Sunni and Shia.",
-      "Muslims honor Jesus as one of the greatest prophets and as the Messiah, born of the Virgin Mary. But they hold that he is not God or the Son of God.",
+      "Islam teaches that God (in Arabic, Allah) revealed the Qur’an to the Prophet Muhammad in seventh-century Arabia, calling people to worship the one God proclaimed by earlier prophets. It is one of the world’s largest religions; its two main branches are Sunni and Shia.",
+      "The Qur’an honors Jesus as a prophet and the Messiah, born of the Virgin Mary, but teaches that he is not God or the Son of God.",
       "The Catholic Church regards Muslims with esteem. The Second Vatican Council noted that they worship the one, merciful God, the Creator of heaven and earth, revere Jesus as a prophet, honor his virgin mother Mary, and await the day of judgment.",
     ],
     differences: [
@@ -82,8 +85,9 @@ export const traditions: Tradition[] = [
     slug: "atheism",
     name: "Atheism",
     group: "worldview",
+    keywords: ["atheist", "atheists", "nonbeliever", "unbeliever", "does God exist"],
     overview: [
-      "Atheism is the view that God does not exist, or more broadly the absence of belief in God. Atheists hold many different philosophical positions, and come to their view for many different reasons: questions about evidence, science, suffering, or their experience of religion.",
+      "Atheism is the view that God does not exist, or more broadly the absence of belief in God. People come to it by many different paths, and atheists hold a wide range of philosophical views.",
       "The Church teaches that rejecting God goes against the virtue of religion, while recognizing that personal responsibility can be greatly reduced by intentions and circumstances. It also admits that believers themselves can hide the face of God by the way they live.",
     ],
     differences: [
@@ -99,9 +103,10 @@ export const traditions: Tradition[] = [
     slug: "agnosticism",
     name: "Agnosticism",
     group: "worldview",
+    keywords: ["agnostic", "agnostics", "doubt", "unsure about God"],
     overview: [
       "Agnosticism is the view that we do not, or cannot, know whether God exists. The term was coined in the late nineteenth century by the English biologist T. H. Huxley.",
-      "Agnostics range from people who think the question can never be answered to people who simply have not found the arguments on either side convincing. Many remain open and searching.",
+      "Some agnostics hold that the question can never be answered; others have simply not found the arguments on either side convincing.",
     ],
     differences: [
       "Whether God’s existence can be known",

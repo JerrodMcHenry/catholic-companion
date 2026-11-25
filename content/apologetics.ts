@@ -17,6 +17,8 @@ export const apologeticsTopics: Topic[] = [
     keywords: [
       "Bible only",
       "only the Bible",
+      "Bible authority",
+      "authority of Scripture",
       "Sacred Tradition",
       "tradition",
       "Magisterium",
@@ -52,7 +54,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Scripture is the only infallible rule of faith. Creeds, councils, and church traditions can be valuable guides, but they are fallible and must always be tested by the Bible. The Westminster Confession, for example, teaches that everything necessary for salvation is either set down in Scripture or can be deduced from it, and that the Holy Spirit speaking in Scripture is the supreme judge of all controversies.",
           variations:
-            "Protestants apply this principle in different ways. Lutheran and Anglican Christians, for instance, give real weight to the ancient creeds and the early Church as faithful witnesses under Scripture, while some evangelical and non-denominational Christians give less attention to historical tradition. Many Protestant theologians stress that sola scriptura does not mean rejecting tradition entirely.",
+            "Protestant churches apply this principle in different ways. The Lutheran Formula of Concord, for example, holds Scripture as the only rule and norm of teaching while receiving the ancient creeds as faithful witnesses to it. Churches and theologians differ in how much weight they give to the creeds and the early Church.",
           arguments: [
             {
               claim:
@@ -107,7 +109,8 @@ export const apologeticsTopics: Topic[] = [
     alsoKnownAs: ["Divinity of Christ", "Deity of Christ", "Incarnation"],
     category: "objections",
     keywords: [
-      "Jesus God",
+      "Jesus is God",
+      "is Jesus God",
       "Son of God",
       "Trinity",
       "prophet",
@@ -149,13 +152,13 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Islam teaches that God is absolutely one and has no partner or offspring. The Qur’an honors Jesus (ʿĪsā) as the Messiah, a messenger of God, born of the Virgin Mary, who worked miracles by God’s permission. But it denies that he is divine or the Son of God, and it calls on Christians not to speak of God as “three.”",
           variations:
-            "Sunni and Shia Muslims share this understanding of Jesus, though Muslim scholars interpret particular verses about him in different ways.",
+            "Muslims read these passages within different traditions of interpretation. This summary follows the Qur’an’s own statements rather than any one school.",
           arguments: [
             {
               claim:
                 "God is one. Saying that God has a son, or that God is three, compromises his absolute oneness.",
               response:
-                "Catholics also confess that there is only one God. The doctrine of the Trinity does not mean three gods, or that God took a partner, but one God in three persons, each of whom is God whole and entire. Calling Jesus “Son” does not mean God had a child in a physical sense; it names an eternal relationship within the one God.",
+                "Catholics also confess that there is only one God. The Trinity is not three gods, but one God in three persons, each of whom is God whole and entire. The Church professes that the Son is eternally begotten of the Father, not made: “Son” names an eternal relationship within the one God, not a physical birth or a partner beside God.",
               authority: "doctrine",
             },
             {
@@ -173,13 +176,13 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Jehovah’s Witnesses teach that Jehovah alone is Almighty God. Jesus is God’s Son, created by Jehovah before everything else, who then worked with his Father in creating all other things. They identify him with the archangel Michael before and after his life on earth. They honor him as Savior and King, but hold that he is not equal to the Father, and regard the Trinity as unbiblical.",
           variations:
-            "Jehovah’s Witness teaching on this point is presented consistently in the movement’s official publications.",
+            "This summary follows the movement’s official publications on jw.org. Individual Witnesses may explain their beliefs in their own ways.",
           arguments: [
             {
               claim:
                 "John 1:1 should read “the Word was a god,” as in the New World Translation, because the Greek has no definite article before the final word for God.",
               response:
-                "Nearly all Bible translations, Catholic and Protestant, render the verse “the Word was God.” Catholics read the missing article as describing what the Word is, fully divine, while the Word remains distinct from the Father. The same Gospel ends with Thomas calling the risen Jesus “My Lord and my God” (John 20:28).",
+                "Catholic Bibles, including the New American Bible used by the U.S. bishops, translate the verse “the Word was God.” Catholics read the Greek as describing what the Word is, fully divine, while the Word remains distinct from the Father. The same Gospel ends with Thomas calling the risen Jesus “My Lord and my God” (John 20:28).",
               authority: "apologetic-argument",
             },
             {
@@ -226,6 +229,7 @@ export const apologeticsTopics: Topic[] = [
       "evil",
       "pain",
       "why bad things happen",
+      "bad things happen to good people",
       "God allows evil",
       "natural disasters",
       "free will",
@@ -238,8 +242,7 @@ export const apologeticsTopics: Topic[] = [
       "If God is all-good and all-powerful, why is there so much suffering? Many atheists see this as strong evidence against God, and many agnostics find it a serious reason for doubt. The Church does not offer a quick answer. It teaches that God is never the cause of moral evil, that he permits evil out of respect for human freedom and can bring good even from it, and that the deepest answer is Christ’s own suffering, death, and resurrection.",
     teaching: {
       catechism: [
-        { paragraphs: "309–314", url: ccc("__P19") },
-        { paragraphs: "324", url: ccc("__P19") },
+        { paragraphs: "309–314, 324", url: ccc("__P19") },
       ],
       scripture: [
         { passage: "Genesis 50:20", url: bible("genesis/50") },
@@ -255,15 +258,15 @@ export const apologeticsTopics: Topic[] = [
         {
           tradition: "atheism",
           position:
-            "The argument from evil is one of the most widely discussed arguments against God. Its strongest form, often called the logical problem, claims that an all-powerful, all-knowing, perfectly good God could not coexist with evil at all. A more modest form, the evidential problem, argues that the amount and kind of suffering in the world, such as the suffering of children and animals, makes the existence of such a God unlikely.",
+            "The argument from evil holds that the evil and suffering in the world give good reason not to believe in God. One version, the logical problem, claims that an all-powerful, all-knowing, perfectly good God could not coexist with evil at all. Another, the evidential problem, argues more modestly that the amount and kind of suffering in the world, such as the suffering of children and animals, makes the existence of such a God unlikely.",
           variations:
-            "Atheists weigh this argument differently. Some consider it decisive, others treat it as one consideration among many, and many atheists do not base their view on it at all.",
+            "Atheists weigh this argument differently, and not every atheist bases their view on it.",
           arguments: [
             {
               claim:
                 "A perfectly good God would prevent all evil, and an all-powerful God could. Evil exists, so such a God does not exist.",
               response:
-                "There is no contradiction if God has a good reason to permit evil. One such reason is the gift of real freedom, which makes love possible but also makes it possible to do wrong. The Church teaches that God permits moral evil because he respects the freedom of his creatures, and that he can bring good even out of evil. The Protestant philosopher Alvin Plantinga’s “free will defense” is a well-known version of this reply.",
+                "There is no contradiction if God has a good reason to permit evil. One such reason is the gift of real freedom, which makes love possible but also makes it possible to do wrong. The Church teaches that God permits moral evil because he respects the freedom of his creatures, and that he can bring good even out of evil. The Christian philosopher Alvin Plantinga’s “free will defense” is a well-known version of this reply.",
               authority: "apologetic-argument",
             },
             {
@@ -281,14 +284,14 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Many agnostics do not claim that suffering disproves God. Instead they find that it makes belief in a loving God hard to accept, or that it leaves the question of God’s existence unresolved.",
           variations:
-            "For some agnostics this is an intellectual question; for others it comes from personal experience of grief or loss.",
+            "For some people this is mainly an intellectual question; for others it comes from personal experience of grief or loss.",
           arguments: [
             {
               claim:
                 "If God exists and cares, why is he so silent and hidden when people suffer?",
               response:
                 "The Church does not deny how dark suffering can be, and the Bible itself gives voice to this cry, in Job and the Psalms. Christians believe God answered not with an explanation but by entering suffering himself: in Jesus, God suffered and died, and rose to defeat evil. Faith does not remove every question, but it gives the hope that suffering will not have the last word.",
-              authority: "doctrine",
+              authority: "pastoral-reflection",
             },
           ],
           sources: ["sep-atheism-agnosticism"],

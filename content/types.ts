@@ -55,7 +55,13 @@ export type Topic = {
 // topic with a perspective from that tradition, so nothing is duplicated.
 
 // How authoritative a Catholic claim is, so doctrine is never confused with opinion.
-export type Authority = "dogma" | "doctrine" | "theological-opinion" | "apologetic-argument";
+// Labels are assigned conservatively; anything uncertain is flagged for theological review.
+export type Authority =
+  | "dogma" // Solemnly defined (e.g. by an ecumenical council).
+  | "doctrine" // Taught by the Church, e.g. in the Catechism.
+  | "theological-opinion"
+  | "pastoral-reflection" // A reflection drawing on Church teaching, not a formal teaching itself.
+  | "apologetic-argument";
 
 export type Debate = {
   catholicPosition: { summary: string; authority: Authority };
@@ -76,6 +82,7 @@ export type Tradition = {
   name: string;
   group: "christian" | "religion" | "worldview";
   parent?: string; // Denominations point to "protestantism".
+  keywords?: string[]; // Other names people search for: "Muslim", "Watchtower".
   // Everything below is optional: a tradition gets a page only once it has an overview.
   overview?: string[];
   differences?: string[]; // Main points where Catholics and this tradition differ.

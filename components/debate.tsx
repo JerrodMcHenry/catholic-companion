@@ -10,6 +10,7 @@ const authorityLabel: Record<Authority, string> = {
   dogma: "Defined Church teaching",
   doctrine: "Church teaching",
   "theological-opinion": "Theological opinion",
+  "pastoral-reflection": "Pastoral reflection drawn from Church teaching",
   "apologetic-argument": "Apologetic argument, not official teaching",
 };
 
@@ -107,7 +108,7 @@ export function Fathers({ fathers }: { fathers: NonNullable<Debate["fathers"]> }
       <h3 className="mb-3 font-medium text-ink">From the early Church</h3>
       <ul className="space-y-3">
         {fathers.map((f) => (
-          <li key={f.url} className="rounded-2xl border border-line bg-card px-5 py-4">
+          <li key={f.url} className="rounded-2xl border border-line px-5 py-4">
             <p className="font-medium">{f.name}</p>
             <a href={f.url} target="_blank" rel="noopener noreferrer" className={`inline-flex min-h-11 items-center text-[0.9375rem] ${externalLink}`}>
               {f.work}

@@ -1,3 +1,4 @@
+import Form from "next/form";
 import Link from "next/link";
 import { CardLink, SectionTitle, TopicList } from "@/components/cards";
 import { commonQuestions, pillars, topicsFor } from "@/content";
@@ -17,17 +18,31 @@ export default function HomePage() {
           to go deeper.
         </p>
 
-        {/* Opens the search page; the field itself lives there. */}
-        <Link
-          href="/search"
-          className="mx-auto mt-8 flex min-h-14 max-w-lg items-center gap-3 rounded-full border-2 border-line bg-card px-5 text-left text-ink-soft transition-colors hover:border-gold"
-        >
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="size-6 shrink-0 text-gold-ink" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            <circle cx="11" cy="11" r="7" />
-            <path d="m20.5 20.5-4.5-4.5" />
-          </svg>
-          Search a question or topic
-        </Link>
+        {/* A real search field: type here, press Enter, and land on the results. */}
+        <Form action="/search" role="search" className="relative mx-auto mt-8 max-w-lg">
+          <label htmlFor="home-search" className="sr-only">
+            Search Catholic Companion
+          </label>
+          <input
+            id="home-search"
+            name="q"
+            type="search"
+            enterKeyHint="search"
+            autoComplete="off"
+            placeholder="Search a question or topic"
+            className="min-h-14 w-full rounded-full border-2 border-line bg-card pr-16 pl-6 text-lg text-ink placeholder:text-ink-soft focus:border-gold-ink focus:outline-none"
+          />
+          <button
+            type="submit"
+            aria-label="Search"
+            className="absolute top-1/2 right-1.5 flex size-11 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-on-accent hover:bg-accent-strong"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20.5 20.5-4.5-4.5" />
+            </svg>
+          </button>
+        </Form>
       </section>
 
       <Link
