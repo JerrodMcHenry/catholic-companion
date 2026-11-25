@@ -7,7 +7,7 @@ import { getTradition, resourcesFor, type Authority, type Debate } from "@/conte
 
 // Plain-language labels, so readers can tell Church teaching from apologetic reasoning.
 const authorityLabel: Record<Authority, string> = {
-  dogma: "Defined Church teaching",
+  dogma: "Church dogma (infallibly taught)",
   doctrine: "Church teaching",
   "theological-opinion": "Theological opinion",
   "pastoral-reflection": "Pastoral reflection drawn from Church teaching",

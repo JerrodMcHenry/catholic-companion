@@ -1,14 +1,11 @@
 // Lookups used by pages, plus checks that run whenever content is loaded.
 // A broken reference throws here, so `next build` fails instead of shipping a dead link.
 
-import { apologeticsTopics } from "./apologetics";
 import { categories, pillars } from "./categories";
 import { resources } from "./resources";
-import { commonQuestions, startHere, topics as learningTopics } from "./topics";
+import { commonQuestions, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
 import { resourceTypeLabel, type PillarId, type Tradition } from "./types";
-
-const topics = [...learningTopics, ...apologeticsTopics];
 
 export { categories, commonQuestions, pillars, resources, startHere, topics, traditions };
 export type * from "./types";

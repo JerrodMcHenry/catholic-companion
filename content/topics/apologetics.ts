@@ -1,11 +1,9 @@
-import type { Topic } from "./types";
+import type { Topic } from "../types";
+import { bible, ccc } from "./refs";
 
 // Debate topics. These are ordinary topics with a `debate` section, kept in their own
 // file only because they are long. Every tradition page that lists one links here;
 // the content itself exists once.
-
-const ccc = (page: string) => `https://www.vatican.va/archive/ENG0015/${page}.HTM`;
-const bible = (bookAndChapter: string) => `https://bible.usccb.org/bible/${bookAndChapter}`;
 
 export const apologeticsTopics: Topic[] = [
   {

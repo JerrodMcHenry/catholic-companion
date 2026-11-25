@@ -16,7 +16,9 @@ export type SearchEntry = {
 export type SearchResult = { entry: SearchEntry; score: number };
 
 // Field weights, strongest first. Shared with the code that builds entries.
-export const WEIGHT = { title: 10, alias: 8, keyword: 6, context: 3, summary: 2, detail: 1 } as const;
+// External resources use `resourceTitle`: strong, but below the app's own pages, and below
+// the threshold for phrase bonuses, so an article never outranks the topic it supports.
+export const WEIGHT = { title: 10, alias: 8, resourceTitle: 7, keyword: 6, context: 3, summary: 2, detail: 1 } as const;
 
 // Words too common to signal meaning. Ignored unless the query has nothing else.
 const STOP_WORDS = new Set(

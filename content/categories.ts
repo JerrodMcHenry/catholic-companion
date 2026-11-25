@@ -32,6 +32,12 @@ export const categories: Category[] = [
     description: "God, Jesus Christ, the Church, and the Creed.",
   },
   {
+    slug: "church",
+    pillar: "learn",
+    title: "The Church",
+    description: "What the Church is, the pope and bishops, and how the faith is handed on.",
+  },
+  {
     slug: "sacraments",
     pillar: "learn",
     title: "The Sacraments",
@@ -68,6 +74,12 @@ export const categories: Category[] = [
     description: "How Catholics understand right and wrong, and living well.",
   },
   {
+    slug: "faith-and-reason",
+    pillar: "learn",
+    title: "Faith and Reason",
+    description: "Does God exist? Faith, science, and the big questions.",
+  },
+  {
     slug: "objections",
     pillar: "apologetics",
     title: "Common Objections",
@@ -90,5 +102,17 @@ export const categories: Category[] = [
     pillar: "live",
     title: "Spiritual Life",
     description: "Growing in faith, hope, and love in everyday life.",
+  },
+  {
+    slug: "church-year",
+    pillar: "live",
+    title: "The Church Year",
+    description: "Advent, Christmas, Lent, Easter, and the feasts in between.",
+  },
+  {
+    slug: "catholic-life",
+    pillar: "live",
+    title: "Catholic Life",
+    description: "Everyday practices, marriage and family, and vocations.",
   },
 ];

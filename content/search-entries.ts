@@ -54,7 +54,7 @@ export function searchEntries(): SearchEntry[] {
         [t.debate ? "Apologetics questions objections" : getCategory(t.category)!.title, WEIGHT.context],
         [traditionNames.join(" "), WEIGHT.context],
         [(t.teaching.scripture ?? []).map((s) => s.passage).join(" "), WEIGHT.context],
-        [`Catechism ${(t.teaching.catechism ?? []).map((c) => expandParagraphs(c.paragraphs)).join(" ")}`, WEIGHT.context],
+        [`Catechism CCC ${(t.teaching.catechism ?? []).map((c) => expandParagraphs(c.paragraphs)).join(" ")}`, WEIGHT.context],
         [t.summary, WEIGHT.summary],
         [resourcesFor(t.teaching.documents).map((r) => r.title).join(" "), WEIGHT.summary],
         [
@@ -127,7 +127,7 @@ export function searchEntries(): SearchEntry[] {
       label: `${resourceTypeLabel[r.type]} · ${r.source}`,
       description: r.note,
       fields: [
-        [r.title, WEIGHT.title],
+        [r.title, WEIGHT.resourceTitle],
         [r.source, WEIGHT.keyword],
         [resourceTypeLabel[r.type], WEIGHT.context],
         [r.note ?? "", WEIGHT.summary],
