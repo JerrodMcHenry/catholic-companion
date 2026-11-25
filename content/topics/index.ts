@@ -2,6 +2,7 @@
 
 import { apologeticsTopics } from "./apologetics";
 import { becomingCatholic } from "./becoming-catholic";
+import { catholicLife } from "./catholic-life";
 import { church } from "./church";
 import { foundations } from "./foundations";
 import { god } from "./god";
@@ -19,6 +20,7 @@ export const topics = [
   ...mass,
   ...massParts,
   ...becomingCatholic,
+  ...catholicLife,
   ...apologeticsTopics,
 ];
 

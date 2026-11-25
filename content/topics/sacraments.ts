@@ -135,7 +135,7 @@ export const sacraments: Topic[] = [
       documents: ["pastoralis-actio", "canon-law-sacraments"],
     },
     resources: ["ca-early-infant-baptism", "video-a101-baptism"],
-    related: ["baptism", "confirmation", "are-catholics-christians"],
+    related: ["baptism", "confirmation", "catechumen-or-candidate", "are-catholics-christians"],
   },
   {
     slug: "confirmation",
@@ -209,6 +209,7 @@ export const sacraments: Topic[] = [
     slug: "real-presence",
     title: "The Real Presence",
     question: "What is the Real Presence of Jesus in the Eucharist?",
+    alsoKnownAs: ["Transubstantiation", "Eucharistic presence"],
     category: "sacraments",
     keywords: [
       "Eucharist",
@@ -266,7 +267,7 @@ export const sacraments: Topic[] = [
       "A memorial that makes present: in the Bible, a memorial is more than remembering. When Israel celebrated the Passover, the events of the Exodus became present to each generation. In the same way, when the Church does what Jesus commanded, “do this in memory of me” (Luke 22:19), his Passover becomes present (CCC 1362–1364). The words of institution are themselves sacrificial: his Body “given for you,” his Blood “shed for you” (Luke 22:19–20; CCC 1365).",
       "The Church's offering: because the Church is Christ's Body, she is united with her Head's offering. The faithful offer their praise, sufferings, prayer, and work with Christ (CCC 1368), and the sacrifice is offered for the living and the dead (CCC 1371). This is why the Mass can be offered for an intention.",
       "Early witness: the prophet Malachi foretold that among the nations incense offerings and “a pure offering” would be made to God's name “everywhere” (Malachi 1:11). The Didache, a very early Christian manual, applies that verse to the Sunday Eucharist, telling Christians to confess their sins “that your sacrifice may be pure” (Didache 14).",
-      "Where Christians differ: Protestant traditions reject the sacrifice of the Mass, but not for the same reasons. The Reformed Westminster Confession (1646) teaches that in the Lord's Supper “Christ is not offered up to his Father; nor any real sacrifice made at all,” but only a commemoration of his one offering on the cross and a spiritual offering of praise (29.2); it holds that Christ is received “really, but spiritually,” by faith, not bodily in the bread and wine (29.7). Lutherans kept the Mass and confess that Christ's Body and Blood “are truly present” in the Supper (Augsburg Confession, Article X). Their objection, in Article XXIV, was to the belief that the Mass takes away sins “by the outward act,” which they held contrary to Christ's offering once for all (Hebrews 10:10, 14) and to justification by faith. So Lutherans differ from Catholics on the offering, not on Christ's true presence; the Reformed differ on both the offering and the manner of his presence.",
+      "Where Christians differ: Protestant traditions reject the sacrifice of the Mass, but not for the same reasons. The Reformed Westminster Confession (1646) teaches that in the Lord's Supper “Christ is not offered up to his Father; nor any real sacrifice made at all,” but only a commemoration of his one offering on the cross and a spiritual offering of praise (29.2); it holds that Christ is received “really, but spiritually,” by faith, not bodily in the bread and wine (29.7). Lutherans kept the Mass and confess that Christ's Body and Blood “are truly present” in the Supper (Augsburg Confession, Article X), but they explain that presence differently: the Smalcald Articles (1537) affirm that the bread and wine “are the true body and blood of Christ” while rejecting transubstantiation and holding that the bread remains bread (Part III, Article VI). Their objection to the sacrifice, in Article XXIV, was to the belief that the Mass takes away sins “by the outward act,” which they held contrary to Christ's offering once for all (Hebrews 10:10, 14) and to justification by faith. So Catholics and confessional Lutherans both affirm Christ's true presence but explain it differently, and they differ on the sacrifice; the Reformed differ on the sacrifice and hold a spiritual rather than bodily presence.",
       "The Catholic reply: the Mass takes nothing away from the cross, because it is not another sacrifice but that same sacrifice made present, through which the fruits of the cross are received (Council of Trent, Session 22, ch. 2; CCC 1366–1367). Its benefits are received by those who take part with faith and the right dispositions; the Church does not teach that it saves anyone mechanically (CCC 1128).",
     ],
     teaching: {
@@ -356,7 +357,7 @@ export const sacraments: Topic[] = [
       documents: ["canon-law-penance", "reconciliatio-et-paenitentia"],
     },
     resources: ["video-ascension-need-confession", "ascension-how-to-go-to-confession"],
-    related: ["how-to-go-to-confession", "why-confess-to-a-priest", "mortal-and-venial-sin", "seven-sacraments"],
+    related: ["how-to-go-to-confession", "why-confess-to-a-priest", "mortal-and-venial-sin", "returning-to-the-church"],
   },
   {
     slug: "why-confess-to-a-priest",
@@ -463,7 +464,7 @@ export const sacraments: Topic[] = [
       documents: ["reconciliatio-et-paenitentia"],
     },
     resources: ["video-ascension-mortal-venial", "video-a101-mortal-venial", "ca-do-venial-sins-matter"],
-    related: ["confession", "how-to-go-to-confession", "who-can-receive-communion", "why-go-to-mass-on-sunday"],
+    related: ["confession", "how-to-go-to-confession", "returning-after-mortal-sin", "who-can-receive-communion"],
   },
   {
     slug: "marriage-sacrament",
@@ -501,6 +502,6 @@ export const sacraments: Topic[] = [
       documents: ["canon-law-orders-marriage", "gaudium-et-spes", "familiaris-consortio"],
     },
     resources: ["fym-marriage-as-sacrament"],
-    related: ["seven-sacraments", "what-is-a-sacrament", "baptism"],
+    related: ["seven-sacraments", "what-is-a-sacrament", "married-before-ocia"],
   },
 ];

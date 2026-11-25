@@ -764,7 +764,7 @@ export const massParts: Topic[] = [
     slug: "mass-consecration",
     title: "The Consecration",
     question: "What happens at the consecration?",
-    alsoKnownAs: ["Institution narrative", "Words of institution", "Elevation", "Transubstantiation"],
+    alsoKnownAs: ["Institution narrative", "Words of institution", "Elevation"],
     category: "mass",
     keywords: ["consecration", "this is my body", "this is my blood", "words of institution", "elevation", "transubstantiation", "bread becomes the body of Christ", "bells", "genuflect", "Real Presence", "when does the bread become Jesus"],
     summary:

@@ -64,7 +64,7 @@ export const foundations: Topic[] = [
     category: "beliefs",
     keywords: ["are Catholics Christian", "Catholic vs Christian", "Catholic or Christian", "Christianity", "Protestant", "born again"],
     summary:
-      "Yes. A Christian is someone who believes in Jesus Christ and is baptized into him, and Catholics are baptized believers who profess faith in Christ in the words of the ancient Creeds. The Catholic Church traces its history back to the apostles. Every Catholic is a Christian, though not every Christian is Catholic.",
+      "Yes: a Christian is someone who believes in Jesus Christ and is baptized into him, and Catholics are baptized believers who profess faith in Christ in the words of the ancient Creeds. The Catholic Church traces its history back to the apostles. Every Catholic is a Christian, though not every Christian is Catholic.",
     explanation: [
       "The name goes back to the first generation of believers: the disciples were first called Christians at Antioch (Acts 11:26). What makes someone a Christian is faith in Christ and Baptism, which the Catechism calls “the basis of the whole Christian life.”",
       "Catholics profess the Nicene Creed, which the Catechism notes is common to the great Churches of East and West: one God in three persons, and Jesus Christ, true God and true man, who died and rose for our salvation.",

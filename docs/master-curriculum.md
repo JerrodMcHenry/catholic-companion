@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–5 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts) are built: 83 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–6 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics) are built: 91 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -561,21 +561,21 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
 | `how-to-become-catholic` ✓ | How do I become Catholic? | OCIA, RCIA | B | P1 | `what-is-ocia` | Built |
-| `what-is-ocia` | What is OCIA? | RCIA, Order of Christian Initiation of Adults | B | P1 | `stages-of-ocia` | |
-| `stages-of-ocia` | What are the stages of OCIA? | Precatechumenate, catechumenate, purification, mystagogy | B | P1 | `rite-of-acceptance` | |
-| `catechumen-or-candidate` | What's the difference between a catechumen and a candidate? | | B | P1 | `already-baptized` | |
-| `already-baptized` | I'm already a baptized Christian. What changes for me? | Reception into full communion | B | P1 | `catechumen-or-candidate` | |
+| `what-is-ocia` ✓ | What is OCIA? | RCIA, Order of Christian Initiation of Adults | B | P1 | `stages-of-ocia` | |
+| `stages-of-ocia` ✓ | What are the stages of OCIA? | Precatechumenate, catechumenate, purification, mystagogy | B | P1 | `rite-of-acceptance` | |
+| `catechumen-or-candidate` ✓ | What's the difference between a catechumen and a candidate? | | B | P1 | `already-baptized` | |
+| `already-baptized` ✓ | I'm already a baptized Christian. What changes for me? | Reception into full communion | B | P1 | `catechumen-or-candidate` | |
 | `ocia-sponsor` | What does an OCIA sponsor do? | | B | P2 | `godparents` | |
 | `choosing-a-confirmation-saint` | How do I choose a Confirmation saint? | Confirmation name | B | P2 | `patron-saints` | |
 | `rite-of-acceptance` | What happens at the Rite of Acceptance? | Rite of Welcoming | B | P2 | `stages-of-ocia` | |
 | `rite-of-election` | What is the Rite of Election? | | B | P2 | `lent` | |
 | `scrutinies` | What are the Scrutinies? | | B | P2 | `lent` | |
 | `confession-before-becoming-catholic` | Do I go to Confession before becoming Catholic? | | B | P2 | `how-to-go-to-confession` | |
-| `married-before-ocia` | What if I've been married before? | Annulment, OCIA and marriage | I | P1 | `annulment` | R; common barrier |
+| `married-before-ocia` ✓ | What if I've been married before? | Annulment, OCIA and marriage | I | P1 | `annulment` | R; common barrier |
 | `after-becoming-catholic` | What happens after I become Catholic? | Mystagogy | B | P2 | `stages-of-ocia` | |
 | `telling-family` | How do I talk to my family about becoming Catholic? | | B | P3 | | Pastoral reflection |
-| `finding-a-parish` | How do I find a parish? | | B | P1 | `dioceses-and-parishes` | |
-| `returning-to-the-church` | I was raised Catholic but stopped practicing. How do I come back? | Returning Catholics | B | P1 | `how-to-go-to-confession` | |
+| `finding-a-parish` ✓ | How do I find a parish? | | B | P1 | `dioceses-and-parishes` | |
+| `returning-to-the-church` ✓ | I was raised Catholic but stopped practicing. How do I come back? | Returning Catholics | B | P1 | `how-to-go-to-confession` | |
 | `catholic-but-not-confirmed` | I'm Catholic but was never confirmed. What do I do? | | B | P2 | `confirmation` | |
 
 ### 4.20 Everyday Catholic Life, Marriage, and Vocation (new)
@@ -597,7 +597,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `sharing-your-faith` | How do I share my faith? | Evangelization | B | P2 | `evangelization` | |
 | `evangelization` | Why does the Church evangelize? | Mission | I | P3 | `sharing-your-faith` | |
 | `grief-and-faith` | How does the faith help with grief? | Consolation | B | P3 | `catholic-funerals` | Pastoral reflection |
-| `returning-after-mortal-sin` | I've committed a mortal sin. Can I still go to Mass? | | B | P1 | `how-to-go-to-confession`, `mortal-and-venial-sin` | R; pastoral |
+| `returning-after-mortal-sin` ✓ | I've committed a mortal sin. Can I still go to Mass? | | B | P1 | `how-to-go-to-confession`, `mortal-and-venial-sin` | R; pastoral |
 | `doubts-about-faith` | Is it wrong to have doubts about my faith? | Doubt and unbelief | B | P2 | `what-is-faith`, `faith-and-reason` | |
 | `cremation` | Can Catholics be cremated? | Ad resurgendum cum Christo | B | P2 | `catholic-funerals`, `resurrection-of-the-body` | |
 | `single-life` | Is the single life a vocation? | | I | P3 | `vocation` | |
@@ -1010,7 +1010,7 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 `what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
-`how-to-become-catholic` ✓ → `what-is-ocia` → `stages-of-ocia` → `catechumen-or-candidate` → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` → `what-happens-when-we-die` → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
+`how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` → `what-happens-when-we-die` → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
 
 ### 8.3 Attending a first Mass (10)
 `first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
@@ -1114,7 +1114,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 3 | Mass parts I (before Mass, Introductory Rites, Word) | 0 | 19 | `mass-arriving` ✓, `mass-holy-water` ✓, `mass-genuflection` ✓, `mass-quiet-prayer` ✓, `mass-entrance` ✓, `mass-sign-of-the-cross` ✓, `mass-greeting` ✓, `mass-penitential-act` ✓, `mass-kyrie` ✓, `mass-gloria` ✓, `mass-collect` ✓, `mass-first-reading` ✓, `mass-responsorial-psalm` ✓, `mass-second-reading` ✓, `mass-gospel-acclamation` ✓, `mass-gospel` ✓, `mass-homily` ✓, `mass-creed` ✓, `mass-universal-prayer` ✓ |
 | 4 | Mass parts II (Eucharist, Communion, Concluding) | 0 | 15 | `mass-preparation-of-the-gifts` ✓, `mass-prayer-over-the-offerings` ✓, `mass-preface-dialogue` ✓, `mass-sanctus` ✓, `mass-eucharistic-prayer` ✓, `mass-consecration` ✓, `mass-mystery-of-faith` ✓, `mass-great-amen` ✓, `mass-lords-prayer` ✓, `mass-sign-of-peace` ✓, `mass-lamb-of-god` ✓, `mass-invitation-to-communion` ✓, `mass-communion` ✓, `mass-final-blessing` ✓, `mass-dismissal` ✓ |
 | 5 | Sacraments and the remaining Mass parts | 0 | 21 | `what-is-a-sacrament` ✓, `seven-sacraments` ✓, `baptism` ✓, `infant-baptism` ✓, `confirmation` ✓, `what-is-the-eucharist` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `confession` ✓, `why-confess-to-a-priest` ✓, `how-to-go-to-confession` ✓, `mortal-and-venial-sin` ✓, `marriage-sacrament` ✓, `mass-reverence-to-the-altar` ✓, `mass-preface` ✓, `mass-epiclesis` ✓, `mass-intercessions` ✓, `mass-thanksgiving-after-communion` ✓, `mass-prayer-after-communion` ✓, `mass-recessional` ✓ |
-| 6 | OCIA and returning Catholics | 8 | 1 | `how-to-become-catholic` ✓, `what-is-ocia`, `stages-of-ocia`, `catechumen-or-candidate`, `already-baptized`, `married-before-ocia`, `finding-a-parish`, `returning-to-the-church`, `returning-after-mortal-sin` |
+| 6 | OCIA and returning Catholics | 0 | 9 | `how-to-become-catholic` ✓, `what-is-ocia` ✓, `stages-of-ocia` ✓, `catechumen-or-candidate` ✓, `already-baptized` ✓, `married-before-ocia` ✓, `finding-a-parish` ✓, `returning-to-the-church` ✓, `returning-after-mortal-sin` ✓ |
 | 7 | Sacred Scripture | 6 | 0 | `what-is-the-bible`, `catholic-bible-books`, `inspiration-of-scripture`, `how-to-read-the-bible`, `which-bible-translation`, `where-to-start-reading-the-bible` |
 | 8 | Apologetics I: Church authority and other Christians | 8 | 1 | `did-jesus-found-a-church`, `sola-scriptura` ✓, `what-is-the-magisterium`, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `catholic-and-protestant-differences`, `catholic-and-orthodox-differences`, `praying-directly-to-god` |
 | 9 | Mary, saints, and salvation | 15 | 0 | `who-is-mary`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `what-is-a-saint`, `praying-to-saints`, `statues-and-images`, `how-are-we-saved`, `what-is-grace`, `faith-and-works`, `what-happens-when-we-die`, `heaven`, `hell`, `purgatory`, `salvation-of-non-christians` |
@@ -1156,12 +1156,12 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 1 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 0 |
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
-| 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 1 |
-| 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 0 |
+| 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 8 |
+| 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 1 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
 | 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **89** |
+| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **97** |
 
 <!-- /generated: counts -->
 

@@ -43,7 +43,7 @@ export const jesus: Topic[] = [
     category: "beliefs",
     keywords: ["did Jesus exist", "historical Jesus", "Jesus myth", "evidence for Jesus", "Tacitus", "Josephus", "history"],
     summary:
-      "Yes. Historians, including many who are not Christians, broadly accept that Jesus of Nazareth was a real Jewish teacher who was crucified under Pontius Pilate. Besides the New Testament, which includes letters written within a few decades of his death, ancient non-Christian writers such as the Roman historian Tacitus and the Jewish historian Josephus mention him.",
+      "Yes: historians, including many who are not Christians, broadly accept that Jesus of Nazareth was a real Jewish teacher who was crucified under Pontius Pilate. Besides the New Testament, which includes letters written within a few decades of his death, ancient non-Christian writers such as the Roman historian Tacitus and the Jewish historian Josephus mention him.",
     explanation: [
       "The earliest Christian writings about Jesus are St. Paul's letters. Around the year 56, Paul passed on to the Corinthians a summary of the faith that he had himself received: that Christ died, was buried, rose, and appeared to many witnesses (1 Corinthians 15:3–8).",
       "Roman and Jewish writers also mention him. Describing Nero's persecution of Christians, the historian Tacitus writes that “Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius” under the procurator Pontius Pilate (Annals 15.44). The Jewish historian Josephus refers to James as “the brother of Jesus, who was called Christ” (Antiquities 20.9.1).",

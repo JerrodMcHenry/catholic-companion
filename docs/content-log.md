@@ -137,7 +137,7 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `infant-baptism` | 1250–1255, 1282 | Acts 2:38–39; 16:15, 33; Mk 10:13–16; Col 2:11–12 | Pastoralis Actio; canons 867–868 | Catholic Answers, “What the Early Church Believed: Infant Baptism”; Thomistic Institute video | **D** deferred to the apologetics batch. Protestant views summarized from the Westminster Confession 28.4 and the Baptist Faith and Message; Tertullian's dissent acknowledged | Draft |
 | `confirmation` | 1285–1290, 1300–1308, 1312–1321 | Acts 8:14–17; 2:1–4 | Canons 879–896 (891 on age) | Thomistic Institute (Fr. Gregory Pine, O.P.) video; Loyola Press | U.S. age of Confirmation stated only as varying by diocese: the USCCB's complementary norm could not be opened (site blocks automated reading) | Draft |
 | `what-is-the-eucharist` | 1322–1332, 1406–1419 | Lk 22:14–20; Jn 6:51–58; 1 Cor 10:16–17 | SC; Ecclesia de Eucharistia; USCCB, The Real Presence | Catholic Answers; Bishop Barron video (reused) | Overview only; Real Presence and sacrifice have their own pages | Draft |
-| `mass-as-sacrifice` | 613–614, 1128, 1330, 1362–1372, 1410, 1414 | Heb 7:23–27; 9:24–28; 10:10–14; Lk 22:19–20; 1 Cor 10:16–21; Mal 1:11 | Ecclesia de Eucharistia 11–12; Trent, Session 22; SC | St. Paul Center (reused); Catholic Answers, early Church; Didache | **R:** the whole explanation. Reformed and Lutheran positions are kept distinct: Westminster denies any offering and holds a real but spiritual presence (29.2, 29.7); Augsburg affirms Christ's true presence (X) and rejects the Mass as taking away sins “by the outward act” (XXIV). Formal debate section (**D**) deferred to the apologetics batch; Anglican views not stated (no primary source checked) | Draft |
+| `mass-as-sacrifice` | 613–614, 1128, 1330, 1362–1372, 1410, 1414 | Heb 7:23–27; 9:24–28; 10:10–14; Lk 22:19–20; 1 Cor 10:16–21; Mal 1:11 | Ecclesia de Eucharistia 11–12; Trent, Session 22; SC | St. Paul Center (reused); Catholic Answers, early Church; Didache | **R:** the whole explanation. Reformed and Lutheran positions are kept distinct: Westminster denies any offering and holds a real but spiritual presence (29.2, 29.7). Augsburg affirms Christ's true presence (X) and rejects the Mass as taking away sins “by the outward act” (XXIV). Batch 6 clarified that Catholics and confessional Lutherans both affirm the true presence but explain it differently: the Smalcald Articles, Part III, Article VI, say the bread and wine “are the true body and blood of Christ” and reject transubstantiation. Formal debate section (**D**) deferred to the apologetics batch; Anglican views not stated (no primary source checked) | Draft |
 | `who-can-receive-communion` | 1384–1401, 1415, 1665 | 1 Cor 10:16–17; 11:27–29 | USCCB Guidelines; canons 844, 912–917; Unitatis Redintegratio | Spannagel, Part 69 | **R** (curriculum). **D** deferred. Eligibility rules moved here from `how-to-receive-communion` and `non-catholics-at-mass`, which now link to this page. The Spannagel post's “eligible” for Orthodox is looser than canon 844 §3, which the page itself states exactly | Draft |
 | `confession` | 1420–1424, 1440–1449, 1468–1470, 1485–1498 | Jn 20:19–23; Lk 15:11–32; 2 Cor 5:17–20 | Canons 959–997; Reconciliatio et Paenitentia | Fr. Mike Schmitz video (Ascension Presents); Ascension guide | None noted | Draft |
 | `why-confess-to-a-priest` | 1440–1449, 1452, 1461–1467, 1484 | Jn 20:21–23; Mt 9:1–8; 16:19; 18:18; 2 Cor 5:18–20; Jas 5:16 | Canons 959–997; Reconciliatio et Paenitentia | Fr. Mike Schmitz (Ascension); Thomistic Institute (Fr. Gregory Pine, O.P.) on the seal | **D** deferred. Lutheran retention of private absolution verified (Augsburg XI) | Draft |
@@ -165,6 +165,42 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 **Resource balance:** the National Eucharistic Congress series (one author) supplies a topic-specific post for each new Mass part, the homily, and Communion eligibility, alongside an official text and, on most pages, a second publisher. The Sacraments topics draw on the Thomistic Institute, Ascension, Catholic Answers, Loyola Press, the St. Paul Center, and the USCCB. No paid resources were added.
 
+## Batch 6: OCIA and returning Catholics (2026-11-25)
+
+**Verification (Batch 6):**
+
+- **U.S. law for OCIA:** the *National Statutes for the Christian Initiation of Adults* (USCCB, effective December 1, 2024) read in full, Norms 1–18, with the decree of promulgation.
+- **Canon law:** canons 206, 515, 518–519, 788–789, 851, 863–866, 869, 883, 885, 923, 1060, 1085–1086, 1137, 1143, and 1671–1674 (revised text) read on the Vatican pages.
+- **Catechism:** all 219 Catechism references in the app checked automatically (0 problems). New paragraphs read: 818–819, 1229–1233, 1247–1249, 1259, 1272, 1399, 1427–1429, 1439, 1446, 1629, 1640, 1650–1651, 1857, 2179–2182, 2226.
+- **Scripture:** the new quotations (Acts 2:42, Luke 18:13, and the cited Ephesians 4:5) matched on bible.usccb.org in a browser; Matthew 19:6 and Luke 15:20 had been matched in Batch 5.
+- **Lutheran sources (Batch 5 follow-up):** Smalcald Articles, Part III, Article VI, paragraphs 1 and 5, read on BookOfConcord.org.
+- **Resources:** every URL opened and the author and date confirmed from page metadata.
+- **OCIA rites:** the ritual book (*Order of Christian Initiation of Adults*) is not available online. The rites (Acceptance, Welcoming, Election, Call to Continuing Conversion, Scrutinies) are described from two catechetical sources that agree: the Catholic Answers OCIA guide and Ascension's step-by-step guide. The page attributes the parallel rites for baptized candidates to “catechetical guides.”
+
+| Topic | Catechism | Scripture | Church documents and law | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `what-is-ocia` | 1229–1233, 1247–1249 | Acts 8:26–39; Mt 28:19–20 | National Statutes (Norms 2, 4, 6); canons 204–207; USCCB OCIA | Catholic Answers OCIA guide; Ascension (both reused) | “Not just a class” is a pastoral summary of CCC 1248 and Norm 6 | Draft |
+| `stages-of-ocia` | 1229–1233, 1247–1249 | Acts 2:37–42 | National Statutes (Norms 1, 8, 10, 12, 13, 15); canons 206, 788–789, 866 | Ascension; Catholic Answers (reused) | **Research:** rite names, the Sunday of the Rite of Election, and the Sundays of the Scrutinies are taken from catechetical guides until the OCIA ritual itself is checked | Draft |
+| `catechumen-or-candidate` | 818, 1249, 1259, 1271 | Eph 4:4–6 | National Statutes (Norms 3, 18); canons 206, 864 | Catholic Answers; Ascension (reused) | Follows Norm 18: “convert” is not used of the baptized | Draft |
+| `already-baptized` | 818–819, 1271–1272, 1399 | Eph 4:4–6; Jn 17:20–23 | Unitatis Redintegratio; National Statutes (Norms 2, 17); canons 864, 869 | Catholic Answers; Ascension (reused) | **R:** wording on groups whose baptism may be doubtful (kept general; canon 869). The Orthodox paragraph says only that Chrismation is recognized and not repeated; the exact form of reception is left to the parish | Draft |
+| `married-before-ocia` | 1629, 1640, 1650–1651 | Mt 19:3–9; 1 Cor 7:10–15 | National Statutes (Norms 2, 7); canons 1060, 1085, 1137, 1143, 1671–1673 | Rose Sweet, Catholic Answers Magazine (2018) | **R** (curriculum). Edward Peters' 1999 annulment article was not used because it predates the 2015 reform of the nullity process | Draft |
+| `finding-a-parish` | 2179–2182, 2226 | Acts 2:42–47; Heb 10:24–25 | Canons 515, 518, 923 | MassTimes (Mass Times Trust) | Registration described as common U.S. practice, not a requirement of Church law. MassTimes is labeled as a directory whose times should be confirmed with the parish | Draft |
+| `returning-to-the-church` | 1272, 1385, 1427–1429, 1439, 1446, 2181 | Lk 15:11–32; 1 Jn 1:9 | Canons 959–997 | Lindsey Kettner, Relevant Radio (2019, quoting Msgr. Stuart Swetland); Catholics Come Home | Mentions hurt caused by people in the Church without detail; pastoral tone for review | Draft |
+| `returning-after-mortal-sin` | 1385, 1415, 1452, 1857, 2180–2181 | Lk 18:9–14; 1 Cor 11:27–29; Ps 51 | Canons 916, 1247; Ecclesia de Eucharistia 34 | Fr. Charles Grondin (Catholic Answers); Msgr. Charles Pope (Our Sunday Visitor) | **R** (curriculum): pastoral tone. Says perfect contrition forgives but does not replace Confession before Communion, with the canon 916 exception referred to its existing page | Draft |
+
+**Updated:**
+
+- `how-to-become-catholic`: related links to the new topics.
+- `real-presence`: “Transubstantiation” added as an alternative name. It is removed from `mass-consecration`, which keeps it as a keyword, so the doctrinal page ranks first.
+- `are-catholics-christians`, `did-jesus-exist`, `non-catholics-at-mass`: the first sentence of each summary (the search description) no longer reads only “Yes.”
+- `mass-as-sacrifice`: Lutheran comparison clarified (see Batch 5 row).
+- `mortal-and-venial-sin`, `confession`, `marriage-sacrament`, `infant-baptism`: related links to the new topics.
+- New subject file `content/topics/catholic-life.ts` (Live the Faith › Catholic Life) holds `returning-after-mortal-sin`, following the one-file-per-subject rule.
+
+**Resource balance:** Catholic Answers (2), Our Sunday Visitor, Relevant Radio, Catholics Come Home, Mass Times Trust, and the Vatican canon-law pages, plus the existing Ascension and Catholic Answers OCIA guides. No paid resources.
+
+**Baseline for the 100-topic assessment (97 topics):** 295 search entries (97 topics, 12 traditions, 18 categories, 168 resources); search entries serialized as JSON: 315 KB raw, 82 KB gzipped; mean query time 0.78 ms in Node; `.next/server/app` 18 MB, `.next/static` 1.0 MB. These are recorded for comparison, not as the assessment, which is due at 100 topics.
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -179,8 +215,9 @@ These stay open until checked against an authoritative source; topics describe t
 - The 2014 circular letter on the sign of peace (official text not located online).
 - The USCCB *Guidelines for the Reception of Communion*: the request that Orthodox Christians respect the discipline of their own Churches is carried over from the Batch 2 reading; the page now refuses automated reading and could not be reopened in Batch 5.
 - The USCCB complementary norm on the age of Confirmation (canon 891), not cited until it can be read.
+- The OCIA ritual's text for the Rites of Acceptance, Welcoming, and Election, the Call to Continuing Conversion, and the Scrutinies (Batch 6 relies on catechetical guides).
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, and who can receive Communion.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, and the pastoral tone of the returning-Catholic and mortal-sin pages.
 
 ## Earlier topics (Phases 2–4)
 
