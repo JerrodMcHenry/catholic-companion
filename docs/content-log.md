@@ -115,18 +115,72 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 **Resource balance note:** the National Eucharistic Congress series (one author) supplies one topic-specific post on most Batch 4 pages; each page also has an official text and, where a good one was found, a second publisher.
 
+## Batch 5: Sacraments and the remaining Mass parts (2026-11-25)
+
+**Scope:** the 13 new P1 Sacraments topics, plus the seven Mass parts promoted from P2 to P1 (all 41 Mass part topics are now built). `real-presence` was reused.
+
+**Verification (Batch 5):**
+
+- **Catechism:** the whole English Catechism was cached from vatican.va and every cited paragraph read in it. An automated check confirms that all 192 Catechism references in the app link to the page that holds each cited paragraph (0 problems).
+- **Scripture:** every new quotation was matched word for word on bible.usccb.org (NABRE). The site now refuses scripted requests, so the chapters were opened one at a time in a normal browser. Three quotations were corrected before publication: Psalm 43:4 (“That I may come to the altar of God,” not “Then I will come”), Malachi 1:11 (“everywhere,” not “in every place”), and John 6:54, which could not be confirmed in that session and is now paraphrased.
+- **Liturgy:** GIRM 43, 45, 49, 79, 88–90, 117, 123, 147–151, 163–169, 173, 186, 273–279, 298, 301–308, 364, and 365 read in the vatican.va text (2003 translation; wording paraphrased or kept short).
+- **Canon law:** canons 844, 849, 867–868, 879, 891, 909, 912–917, 959–961, 983–984, 988–989, 1055–1057, 1108, 1124, 1134, and 1141 read on the Vatican's Code of Canon Law pages.
+- **Church documents:** Ecclesia de Eucharistia 11–12 (including “The Mass makes present the sacrifice of the Cross; it does not add to that sacrifice nor does it multiply it”); Council of Trent, Session 22, chapters 1–2 and canons 1, 3, 4 (Waterworth translation, Hanover Historical Texts Project); Pastoralis Actio 4–6, 14–15, 18; Reconciliatio et Paenitentia 17. Familiaris Consortio and Misericordia Dei URLs and titles confirmed.
+- **Other traditions' sources (quoted in the text, not linked):** Westminster Confession 28.4 and 29.1–2, 29.7 (OPC text); Augsburg Confession Articles X, XI, and XXIV (BookOfConcord.org); Baptist Faith and Message (2000), Article VII (SBC). The Didache, chapters 4, 7, and 14 (New Advent).
+- **Resources:** every URL opened; title, author, and publisher confirmed from page metadata. YouTube videos confirmed by the official oEmbed title and channel, and the presenter named only where the publisher's own page names him. Spannagel posts read in full.
+
+| Topic | Catechism | Scripture | Church documents and law | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `what-is-a-sacrament` | 1114–1134, 1667–1670 | Mt 28:19–20; Lk 24:47 | CCC; Sacrosanctum Concilium | Thomistic Institute (Fr. Dominic Langevin, O.P.) video; Catholic Answers list | Ex opere operato explained with the caveat on dispositions (CCC 1128) | Draft |
+| `seven-sacraments` | 1113, 1210–1212, 1420–1421, 1533–1535 | — | CCC; Compendium | Loyola Press; Catholic Answers list | Sentence on Protestant “two sacraments” and Baptist “ordinances” is a general description (ordinance wording verified in the Baptist Faith and Message) | Draft |
+| `baptism` | 1213–1216, 1239–1240, 1256–1284 | Jn 3:5; Mt 28:19; Acts 2:38; Rom 6:3–4 | Canons 834–878 | Thomistic Institute video; Didache | **R:** wording on the necessity of Baptism, baptism of desire and blood, and children who die without Baptism (kept to CCC 1257–1261) | Draft |
+| `infant-baptism` | 1250–1255, 1282 | Acts 2:38–39; 16:15, 33; Mk 10:13–16; Col 2:11–12 | Pastoralis Actio; canons 867–868 | Catholic Answers, “What the Early Church Believed: Infant Baptism”; Thomistic Institute video | **D** deferred to the apologetics batch. Protestant views summarized from the Westminster Confession 28.4 and the Baptist Faith and Message; Tertullian's dissent acknowledged | Draft |
+| `confirmation` | 1285–1290, 1300–1308, 1312–1321 | Acts 8:14–17; 2:1–4 | Canons 879–896 (891 on age) | Thomistic Institute (Fr. Gregory Pine, O.P.) video; Loyola Press | U.S. age of Confirmation stated only as varying by diocese: the USCCB's complementary norm could not be opened (site blocks automated reading) | Draft |
+| `what-is-the-eucharist` | 1322–1332, 1406–1419 | Lk 22:14–20; Jn 6:51–58; 1 Cor 10:16–17 | SC; Ecclesia de Eucharistia; USCCB, The Real Presence | Catholic Answers; Bishop Barron video (reused) | Overview only; Real Presence and sacrifice have their own pages | Draft |
+| `mass-as-sacrifice` | 613–614, 1128, 1330, 1362–1372, 1410, 1414 | Heb 7:23–27; 9:24–28; 10:10–14; Lk 22:19–20; 1 Cor 10:16–21; Mal 1:11 | Ecclesia de Eucharistia 11–12; Trent, Session 22; SC | St. Paul Center (reused); Catholic Answers, early Church; Didache | **R:** the whole explanation. Reformed and Lutheran positions are kept distinct: Westminster denies any offering and holds a real but spiritual presence (29.2, 29.7); Augsburg affirms Christ's true presence (X) and rejects the Mass as taking away sins “by the outward act” (XXIV). Formal debate section (**D**) deferred to the apologetics batch; Anglican views not stated (no primary source checked) | Draft |
+| `who-can-receive-communion` | 1384–1401, 1415, 1665 | 1 Cor 10:16–17; 11:27–29 | USCCB Guidelines; canons 844, 912–917; Unitatis Redintegratio | Spannagel, Part 69 | **R** (curriculum). **D** deferred. Eligibility rules moved here from `how-to-receive-communion` and `non-catholics-at-mass`, which now link to this page. The Spannagel post's “eligible” for Orthodox is looser than canon 844 §3, which the page itself states exactly | Draft |
+| `confession` | 1420–1424, 1440–1449, 1468–1470, 1485–1498 | Jn 20:19–23; Lk 15:11–32; 2 Cor 5:17–20 | Canons 959–997; Reconciliatio et Paenitentia | Fr. Mike Schmitz video (Ascension Presents); Ascension guide | None noted | Draft |
+| `why-confess-to-a-priest` | 1440–1449, 1452, 1461–1467, 1484 | Jn 20:21–23; Mt 9:1–8; 16:19; 18:18; 2 Cor 5:18–20; Jas 5:16 | Canons 959–997; Reconciliatio et Paenitentia | Fr. Mike Schmitz (Ascension); Thomistic Institute (Fr. Gregory Pine, O.P.) on the seal | **D** deferred. Lutheran retention of private absolution verified (Augsburg XI) | Draft |
+| `how-to-go-to-confession` | 1449–1460, 1467, 1480–1484 | Lk 15:11–32; Ps 51; Ex 20:1–17 | USCCB Examinations of Conscience; canons 959–997 | Ascension guide; Fr. Mike Schmitz video | The text of the Act of Contrition is not reproduced (several approved versions) | Draft |
+| `mortal-and-venial-sin` | 1394, 1452, 1458, 1849–1864, 1874–1876 | 1 Jn 5:16–17; Gal 5:19–21; Mt 19:16–19 | Reconciliatio et Paenitentia 17 | Fr. Mike Schmitz video; Thomistic Institute video; Mike Schramm (Catholic Answers) | **R:** grave matter, culpability, and judgment of persons (CCC 1860–1861), consistent with the Batch 4 correction on Sunday Mass | Draft |
+| `marriage-sacrament` | 1601–1605, 1613–1617, 1623, 1626, 1638–1652, 1660–1666 | Gn 2:18–24; Mt 19:3–9; Jn 2:1–11; Eph 5:21–33 | Canons 1055–1057, 1108, 1134, 1141; Gaudium et Spes; Familiaris Consortio | For Your Marriage (USCCB) | Annulment, divorce, and mixed marriage left to their own P2 topics | Draft |
+| `mass-reverence-to-the-altar` | 1182, 1383 | Ps 43:3–4; 141:2; Rev 8:3–4; Heb 13:10 | GIRM 49, 117, 123, 173, 273–276, 298, 302, 304, 307–308 | Spannagel, Part 5; USCCB, Introductory Rites (reused) | None noted | Draft |
+| `mass-preface` | 1352 | 1 Thes 5:16–18; Rev 4:8–11 | GIRM 79, 148, 364–365 | Spannagel, Part 44; USCCB, Liturgy of the Eucharist (reused) | “Many Prefaces begin…” describes the common pattern, not every Preface | Draft |
+| `mass-epiclesis` | 1105–1106, 1353 | Lk 1:35; Rom 15:16; 1 Cor 12:13 | GIRM 43, 79, 150 | Spannagel, Part 48; USCCB (reused) | **Research:** the priest's gesture (hands outstretched over the gifts, then the Sign of the Cross) and the double epiclesis of Eucharistic Prayers II–IV are described from secondary sources (Spannagel, quoting Belmonte), not the printed Missal. The Roman Canon and the Eastern placement are stated from CCC 1353 | Draft |
+| `mass-intercessions` | 1032, 1354, 1362–1364, 1368–1371 | Lk 22:19; Rom 12:1; Heb 12:1; 2 Mc 12:43–46 | GIRM 43, 79, 365 | Spannagel, Parts 53–54; Church Life Journal (reused) | **Research:** placement of the Roman Canon's intercessions before and after the consecration confirmed in two secondary sources (Spannagel, Parts 54–55; O'Malley, Church Life Journal) and consistent with GIRM 365; the printed Missal not seen | Draft |
+| `mass-thanksgiving-after-communion` | 1377, 1391–1397 | Ps 116:12–14; Jn 6:56–57 | GIRM 43, 45, 88, 163–164, 279 | Spannagel, Parts 74–75 | Posture stated as an option (GIRM 43) | Draft |
+| `mass-prayer-after-communion` | 1402–1405 | Jn 6:54 (paraphrased) | GIRM 43, 89, 165–166 | Spannagel, Part 76; Liturgy Office leaflet (reused) | None noted | Draft |
+| `mass-recessional` | 1332, 1418 | Lk 24:50–53; Ps 84:2–5 | GIRM 90, 169, 186, 274; canon 909 | Spannagel, Parts 79–80; USCCB, Concluding Rites (reused) | Closing song and staying until the priest leaves described as custom, not rule | Draft |
+
+**Updated:**
+
+- `mass-homily`: added Spannagel, Parts 24 and 26 (resolves the homily-resource gap).
+- `mass-entrance`, `mass-preface-dialogue`, `mass-communion`, `mass-dismissal`: material now covered by the new parts reduced to a sentence pointing to the next part. Aliases and keywords for the new parts moved to them (“Preface,” “Prayer after Communion,” “Recessional,” “closing hymn”).
+- `mass-eucharistic-prayer`: aliases no longer include its parts. A new paragraph says the elements are common to every Eucharistic Prayer but not always in the same order. The sacrifice paragraph is shortened and points to `mass-as-sacrifice`.
+- `how-to-receive-communion`, `non-catholics-at-mass`: eligibility rules replaced by a pointer to `who-can-receive-communion` (alias “Can non-Catholics receive Communion?” moved there).
+- `real-presence`, `mass-in-scripture`, `why-go-to-mass-on-sunday`: related links to the new topics.
+- Resource registry: two canon-law entries retitled to match their pages (“The Sacraments and Baptism, canons 834–878”; “Confirmation and the Most Holy Eucharist, canons 879–958”). Their ids are unchanged, so saved bookmarks still work.
+
+**Not used (could not be verified):** the USCCB sacrament pages (Baptism, Confirmation, Penance, Matrimony, and the sacraments index) and two Word on Fire pages (“A Word to Those Being Confirmed,” the Eucharist page) refuse automated reading, so their content was not read and they are not cited. Bishop Barron's “On the Sacrament of Baptism” page loaded but holds only an embedded video whose identity could not be confirmed.
+
+**Resource balance:** the National Eucharistic Congress series (one author) supplies a topic-specific post for each new Mass part, the homily, and Communion eligibility, alongside an official text and, on most pages, a second publisher. The Sacraments topics draw on the Thomistic Institute, Ascension, Catholic Answers, Loyola Press, the St. Paul Center, and the USCCB. No paid resources were added.
+
 ## Pending verification (carried forward)
 
-These stay open until checked against an authoritative source; topics describe them cautiously until then.
+These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
 
 - The Confiteor rubric was verified in the ICEL 2010 text as published in England and Wales; the printed U.S. Missal itself has not been seen. Order of Mass paragraph numbers also need the printed Missal.
 - The OCIA ritual's own text and paragraph numbers for the dismissal (the U.S. statute is verified).
 - A U.S.-published free copy of the people's parts (the England and Wales leaflet is used meanwhile).
-- A topic-specific etiquette resource and a homily resource of sufficient quality (the Spannagel series has posts on the homily and other Batch 3 parts that could be added after review).
+- A topic-specific etiquette resource of sufficient quality. (Homily: resolved in Batch 5 with Spannagel, Parts 24 and 26.)
 - The priest's words of institution and other priest's texts quoted from the 2011 Missal, against the printed Missal.
+- The priest's gesture at the epiclesis and the internal order of Eucharistic Prayers I–IV (double epiclesis; placement of the Roman Canon's intercessions), against the printed Missal (Batch 5; secondary sources used meanwhile).
 - The official U.S. Lenten Gospel acclamations (Lectionary), not quoted until checked.
 - The 2014 circular letter on the sign of peace (official text not located online).
-- Theological review (**R**): the Mass as sacrifice, transubstantiation, “my sacrifice and yours,” grave matter and culpability, and canon 915.
+- The USCCB *Guidelines for the Reception of Communion*: the request that Orthodox Christians respect the discipline of their own Churches is carried over from the Batch 2 reading; the page now refuses automated reading and could not be reopened in Batch 5.
+- The USCCB complementary norm on the age of Confirmation (canon 891), not cited until it can be read.
+- bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, and who can receive Communion.
 
 ## Earlier topics (Phases 2–4)
 

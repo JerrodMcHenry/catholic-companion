@@ -1,7 +1,7 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–4 (Foundations launch, First Mass, Mass parts I and II) are built: 63 new topics, marked ✓ like the 6 built earlier. The P2 Mass parts (`mass-reverence-to-the-altar`, `mass-preface`, `mass-epiclesis`, `mass-intercessions`, `mass-thanksgiving-after-communion`, `mass-prayer-after-communion`, `mass-recessional`) are not yet separate pages; their content is covered briefly inside the neighboring P1 pages, and each will be inserted into `massOrder` when built. Debate sections for Batch 1 topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
-**Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory.
+**Status:** approved with revisions (Phase 7). Batches 1–5 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts) are built: 83 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
 
@@ -36,7 +36,7 @@ All theological content in this plan, and everything later written from it, is s
 - **One topic, many routes.** Every question is written once. Pathways, tradition pages, and apologetics browsing link to the same topic; nothing is duplicated.
 - **The Holy Mass is the flagship:** 65 topics (24 themes and 41 parts), covering every part of the Mass from arrival to the recessional. Every GIRM paragraph number in this plan was checked against the official text (see [§5.7](#57-verified-liturgical-references)).
 - **Apologetics is woven in, not bolted on.** 91 topics carry a debate section with one or more opposing perspectives. Tradition pages gather them by religion, and dedicated curricula cover the Protestant, Orthodox, Jewish, and Islamic dialogues.
-- **Priorities:** the 157 P1 topics make a credible public launch. They cover every acceptance-criteria journey and the questions beginners ask first.
+- **Priorities:** the 164 P1 topics make a credible public launch. They cover every acceptance-criteria journey and the questions beginners ask first.
 - **Nothing here invents a source.** URLs appear only where they were opened and checked during this phase ([Appendix A](#appendix-a-verified-anchor-sources)). Everything else names a source type or a document to locate.
 
 ---
@@ -292,33 +292,33 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `what-is-a-sacrament` | What is a sacrament? | Ex opere operato | B | P1 | `seven-sacraments` | |
-| `seven-sacraments` | What are the seven sacraments? | | B | P1 | `what-is-a-sacrament` | |
+| `what-is-a-sacrament` ✓ | What is a sacrament? | Ex opere operato | B | P1 | `seven-sacraments` | |
+| `seven-sacraments` ✓ | What are the seven sacraments? | | B | P1 | `what-is-a-sacrament` | |
 | `sacraments-in-scripture` | Are the sacraments in the Bible? | | I | P2 | `seven-sacraments` | D: Protestantism |
 | `sacramentals` | What are sacramentals? | Holy water, blessings, rosaries | B | P2 | `mass-holy-water` | |
-| `baptism` | What is Baptism? | Christening | B | P1 | `original-sin` | |
-| `infant-baptism` | Why do Catholics baptize babies? | Paedobaptism | B | P1 | `baptism` | D: Protestantism (Baptist, Pentecostal, evangelical) |
+| `baptism` ✓ | What is Baptism? | Christening | B | P1 | `original-sin` | |
+| `infant-baptism` ✓ | Why do Catholics baptize babies? | Paedobaptism | B | P1 | `baptism` | D: Protestantism (Baptist, Pentecostal, evangelical) |
 | `is-baptism-necessary` | Is Baptism necessary for salvation? | Baptism of desire, baptism of blood | I | P2 | `salvation-of-non-christians` | |
 | `godparents` | What does a godparent do? | Sponsor | B | P2 | `baptism` | |
-| `confirmation` | What is Confirmation? | Chrismation | B | P1 | `who-is-the-holy-spirit` | |
+| `confirmation` ✓ | What is Confirmation? | Chrismation | B | P1 | `who-is-the-holy-spirit` | |
 | `confirmation-age` | Why is Confirmation given at different ages? | Restored order | I | P3 | `confirmation` | |
-| `what-is-the-eucharist` | What is the Eucharist? | Holy Communion, Blessed Sacrament | B | P1 | `real-presence` | |
+| `what-is-the-eucharist` ✓ | What is the Eucharist? | Holy Communion, Blessed Sacrament | B | P1 | `real-presence` | |
 | `real-presence` ✓ | What is the Real Presence of Jesus in the Eucharist? | Transubstantiation | B | P1 | `mass-as-sacrifice` | D: Protestantism; built (debate section added in a later batch) |
-| `mass-as-sacrifice` | Is the Mass a sacrifice? | Eucharistic sacrifice | I | P1 | `why-did-jesus-die` | D: Protestantism |
+| `mass-as-sacrifice` ✓ | Is the Mass a sacrifice? | Eucharistic sacrifice | I | P1 | `why-did-jesus-die` | D: Protestantism |
 | `passover-and-the-eucharist` | How is the Eucharist connected to the Passover? | Last Supper, Seder, paschal lamb | I | P2 | `mass-in-scripture`, `the-temple` | Context for Jewish dialogue |
-| `who-can-receive-communion` | Who can receive Communion? | Communion guidelines, intercommunion | B | P1 | `how-to-receive-communion` | D: Protestantism; R |
+| `who-can-receive-communion` ✓ | Who can receive Communion? | Communion guidelines, intercommunion | B | P1 | `how-to-receive-communion` | D: Protestantism; R |
 | `eucharistic-adoration` | What is Eucharistic adoration? | Adoration, Benediction | B | P2 | `real-presence` | |
-| `confession` | What is Confession? | Penance, Reconciliation | B | P1 | `how-to-go-to-confession` | |
-| `why-confess-to-a-priest` | Why confess to a priest? | | I | P1 | `confession` | D: Protestantism |
-| `how-to-go-to-confession` | How do I go to Confession? | Examination of conscience, Act of Contrition | B | P1 | `confession` | |
-| `mortal-and-venial-sin` | What is the difference between mortal and venial sin? | | I | P1 | `what-is-sin` | |
+| `confession` ✓ | What is Confession? | Penance, Reconciliation | B | P1 | `how-to-go-to-confession` | |
+| `why-confess-to-a-priest` ✓ | Why confess to a priest? | | I | P1 | `confession` | D: Protestantism |
+| `how-to-go-to-confession` ✓ | How do I go to Confession? | Examination of conscience, Act of Contrition | B | P1 | `confession` | |
+| `mortal-and-venial-sin` ✓ | What is the difference between mortal and venial sin? | | I | P1 | `what-is-sin` | |
 | `anointing-of-the-sick` | What is the Anointing of the Sick? | Extreme unction | B | P2 | `last-rites` | |
 | `last-rites` | What are the last rites? | Viaticum | B | P2 | `anointing-of-the-sick` | |
 | `holy-orders` | What is Holy Orders? | Ordination | B | P2 | `bishops-priests-deacons` | |
 | `priestly-celibacy` | Why are Catholic priests usually celibate? | Celibacy | I | P2 | `married-priests` | D: Protestantism |
 | `married-priests` | Are there married Catholic priests? | Eastern Catholic clergy, Pastoral Provision | I | P3 | `priestly-celibacy` | |
 | `women-and-the-priesthood` | Why can't women be priests? | Ordinatio Sacerdotalis | I | P2 | `holy-orders` | D: Protestantism; R |
-| `marriage-sacrament` | What makes marriage a sacrament? | Matrimony | B | P1 | `catholic-marriage-preparation` | |
+| `marriage-sacrament` ✓ | What makes marriage a sacrament? | Matrimony | B | P1 | `catholic-marriage-preparation` | |
 | `annulment` | What is an annulment? | Declaration of nullity | I | P2 | `divorce-and-remarriage` | R |
 | `divorce-and-remarriage` | What does the Church teach about divorce? | | I | P2 | `annulment` | R |
 | `mixed-marriage` | Can a Catholic marry a non-Catholic? | Mixed marriage, disparity of cult | B | P2 | `marriage-sacrament` | |
@@ -679,7 +679,7 @@ Columns: **People** = what the congregation does or says (short responses may be
 | Slug | Part | People | Posture | GIRM | Scripture · CCC (re-check) | Pri |
 |---|---|---|---|---|---|---|
 | `mass-entrance` ✓ | Entrance procession and chant | Sing | Stand | 47–48 | Ps 122; CCC 1156–1158, 1348 ✔ | P1 |
-| `mass-reverence-to-the-altar` | Reverence to the altar | Watch | Stand | 49, 276 | — | P2 |
+| `mass-reverence-to-the-altar` ✓ | Reverence to the altar | Watch | Stand | 49, 123, 273–276, 298 | Ps 43:3–4; Ps 141:2; Rev 8:3–4; Heb 13:10; CCC 1182, 1383 ✔ | P1 |
 | `mass-sign-of-the-cross` ✓ | Sign of the Cross | Sign oneself; Amen | Stand | 50 | Mt 28:19; CCC 1235, 2157 ✔ | P1 |
 | `mass-greeting` ✓ | Greeting | Respond to the priest | Stand | 50 | 2 Cor 13:13; Gal 6:18; 2 Tm 4:22; Ruth 2:4 ✔ | P1 |
 | `mass-penitential-act` ✓ | Penitential Act (or Sprinkling Rite) | Confess together; strike the breast; Amen | Stand | 51 | Lk 18:9–14; Jas 5:16; CCC 1393–1395 ✔ | P1 |
@@ -707,13 +707,13 @@ Columns: **People** = what the congregation does or says (short responses may be
 | `mass-preparation-of-the-gifts` ✓ | Preparation of the altar and gifts (and the collection) | Offer; sing; respond if prayers are said aloud | Sit | 73–76, 140–145 | Mal 1:11; 2 Cor 9:7; Ps 141:2; CCC 1350–1351 ✔ | P1 |
 | `mass-prayer-over-the-offerings` ✓ | Invitation to prayer and Prayer over the Offerings | Stand and respond; Amen | Stand | 77, 146 | Rom 12:1; CCC 1368; SC 48 ✔ | P1 |
 | `mass-preface-dialogue` ✓ | Preface Dialogue | Three responses | Stand | 78, 148 | Lam 3:41; CCC 1352 ✔ | P1 |
-| `mass-preface` | Preface | Listen | Stand | 79a | CCC 1352 | P2 |
+| `mass-preface` ✓ | Preface | Listen | Stand | 79a, 148, 364–365 | 1 Thes 5:16–18; Rev 4:8–11; CCC 1352 ✔ | P1 |
 | `mass-sanctus` ✓ | Holy, Holy, Holy (Sanctus) | Sing or say | Stand, then kneel | 79b, 43 | Is 6:1–3; Rev 4:8; Mt 21:9; CCC 1352 ✔ | P1 |
 | `mass-eucharistic-prayer` ✓ | The Eucharistic Prayer as a whole | Pray silently with the priest | Kneel | 78–79 | 1 Cor 11:23–26; Heb 10:10–14; CCC 1105–1106, 1352–1355, 1362–1372 ✔ | P1 |
-| `mass-epiclesis` | Calling down the Holy Spirit (Epiclesis) | Pray silently | Kneel | 79c | CCC 1105–1106, 1353 | P2 |
+| `mass-epiclesis` ✓ | Calling down the Holy Spirit (Epiclesis) | Pray silently | Kneel | 79c, 150, 43 | Lk 1:35; Rom 15:16; 1 Cor 12:13; CCC 1105–1106, 1353 ✔ | P1 |
 | `mass-consecration` ✓ | Institution narrative and Consecration | Adore in silence; look at the elevated Host and chalice | Kneel | 79d, 150 | Mt 26:26–28; Lk 22:19–20; 1 Cor 11:23–26; Jn 6:51–58; CCC 1353, 1366–1367, 1373–1377 ✔ | P1 (R) |
 | `mass-mystery-of-faith` ✓ | Mystery of Faith | Sing or say an acclamation | Kneel | 151 | 1 Cor 11:26; CCC 1362–1364 ✔ | P1 |
-| `mass-intercessions` | Remembering, offering, interceding | Pray silently | Kneel | 79e–g | CCC 1354, 1368–1371 | P2 |
+| `mass-intercessions` ✓ | Remembering, offering, interceding | Pray silently | Kneel | 79e–g, 365, 43 | Lk 22:19; Rom 12:1; Heb 12:1; 2 Mc 12:43–46; CCC 1032, 1354, 1362–1364, 1368–1371 ✔ | P1 |
 | `mass-great-amen` ✓ | Final Doxology and Great Amen | Amen | Kneel, then stand | 79h, 151 | Rom 11:36; 2 Cor 1:20; CCC 1355 ✔ | P1 |
 
 #### Communion Rite (GIRM 80–89)
@@ -725,8 +725,8 @@ Columns: **People** = what the congregation does or says (short responses may be
 | `mass-lamb-of-god` ✓ | Breaking of the Bread and Lamb of God | Sing or say | Stand, then kneel | 83, 155, 43 | Jn 1:29; 1 Cor 10:16–17; Rev 5:6–14; CCC 1329 ✔ | P1 |
 | `mass-invitation-to-communion` ✓ | Invitation to Communion | Respond; strike the breast (custom) | Kneel | 84, 157 | Mt 8:5–13; Jn 1:29; Rev 19:9; CCC 1386 ✔ | P1 |
 | `mass-communion` ✓ | Holy Communion | Procession; bow; receive; Amen — or remain in prayer | Procession | 85–87, 160–162, 281–287 | Jn 6:51–58; 1 Cor 10:16–17; 1 Cor 11:27–29; CCC 1382–1405; CIC 912–921 (on `how-to-receive-communion`) ✔ | P1 (R) |
-| `mass-thanksgiving-after-communion` | Silence or song of thanksgiving | Pray | Kneel or sit | 88, 164, 43 | CCC 1391–1397 | P2 |
-| `mass-prayer-after-communion` | Prayer after Communion | Amen | Stand | 89, 165 | — | P2 |
+| `mass-thanksgiving-after-communion` ✓ | Silence or song of thanksgiving | Pray | Kneel or sit | 43, 45, 88, 163–164, 279 | Ps 116:12–14; Jn 6:56–57; CCC 1377, 1391–1397 ✔ | P1 |
+| `mass-prayer-after-communion` ✓ | Prayer after Communion | Amen | Stand | 43, 89, 165–166 | Jn 6:54; CCC 1402–1405 ✔ | P1 |
 
 #### Concluding Rites (GIRM 90)
 
@@ -734,7 +734,7 @@ Columns: **People** = what the congregation does or says (short responses may be
 |---|---|---|---|---|---|---|
 | `mass-final-blessing` ✓ | Announcements, greeting, and blessing | Respond; sign oneself; Amen | Stand | 90, 166–167 | Num 6:22–27; Lk 24:50–53; CCC 1671 ✔ | P1 |
 | `mass-dismissal` ✓ | Dismissal | Respond | Stand | 90c, 168 | Mt 28:19–20; Lk 24:50–53; CCC 1332; Sacramentum Caritatis 51 ✔ | P1 |
-| `mass-recessional` | Veneration of the altar, recessional, and after Mass | Sing; quiet prayer; genuflect on leaving | Stand | 90d, 169, 274 | CCC 1418 | P2 |
+| `mass-recessional` ✓ | Veneration of the altar, recessional, and after Mass | Sing; quiet prayer; genuflect on leaving | Stand | 90d, 169, 186, 274 | Lk 24:50–53; Ps 84:2–5; CCC 1332, 1418; CIC 909 ✔ | P1 |
 
 **Count:** 4 before Mass + 8 introductory + 8 Word + 11 Eucharist + 7 Communion + 3 concluding = **41 part topics**. The Sprinkling Rite is covered inside `mass-penitential-act` and stays searchable through "Also called."
 
@@ -782,7 +782,8 @@ Remaining checks before the Mass topics are published:
 2. **CCC, Scripture, and canon law references** in the part tables were carried over from the original curriculum. Each is re-read when its topic is written.
 3. **Order of Mass paragraph numbers** (not used above) need the printed Missal.
 4. Items flagged in the original curriculum: Redemptionis Sacramentum on the doxology; whether the renewal of baptismal promises replaces the Creed at all Easter Sunday Masses; the current OCIA edition and its paragraph numbers. (The dismissal of catechumens is now verified in the 2024 U.S. National Statutes for the Christian Initiation of Adults, Norm 10; the OCIA ritual paragraph numbers remain open.)
-5. **Pastoral review by a priest or diocesan liturgy office:** `mass-consecration`, `mass-communion`, `who-can-receive-communion`, `non-catholics-at-mass`, `latin-mass`.
+5. **Added in Batch 5:** GIRM 123, 148, 163–166, 169, 186, 273, 279, 298, 302, 304, 307–308, 364, and 365 were read in the vatican.va text. The priest's gesture at the epiclesis and the internal order of Eucharistic Prayers II–IV are described from secondary sources (see the content log) until the printed Missal is checked.
+6. **Pastoral review by a priest or diocesan liturgy office:** `mass-consecration`, `mass-communion`, `who-can-receive-communion`, `non-catholics-at-mass`, `latin-mass`.
 
 ### 5.8 Official texts and copyright
 
@@ -937,7 +938,7 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 
 <!-- generated: debate-index -->
 
-- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books`, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
+- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books`, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
 - **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock`, `papal-infallibility`, `immaculate-conception`, `purgatory`, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
 - **Oriental Orthodoxy** (1): `chalcedon-and-oriental-orthodoxy`
 - **Latter-day Saints** (4): `trinity-in-scripture`, `early-church`, `great-apostasy`, `book-of-mormon`
@@ -1006,19 +1007,19 @@ Each curriculum is an ordered reading plan built only from inventory topics, wit
 Pathways are ordered lists of existing topic slugs. Each can later be a simple ordered list like today's Start here page; no new software is needed. Topics already built are marked ✓.
 
 ### 8.1 Completely new to Catholicism (12)
-`what-do-catholics-believe` → `who-is-god` → `who-is-jesus` → `divinity-of-jesus` ✓ → `why-did-jesus-die` → `resurrection` → `what-is-the-church` → `what-is-the-bible` → `seven-sacraments` → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
+`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
-`how-to-become-catholic` ✓ → `what-is-ocia` → `stages-of-ocia` → `catechumen-or-candidate` → `what-is-the-creed` → `what-is-the-trinity` → `what-is-sacred-tradition` → `sola-scriptura` ✓ → `seven-sacraments` → `baptism` → `confirmation` → `real-presence` ✓ → `how-to-go-to-confession` → `why-honor-mary` → `what-happens-when-we-die` → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
+`how-to-become-catholic` ✓ → `what-is-ocia` → `stages-of-ocia` → `catechumen-or-candidate` → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` → `what-happens-when-we-die` → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
 
 ### 8.3 Attending a first Mass (10)
-`first-time-at-mass` → `mass-etiquette` → `non-catholics-at-mass` → `what-happens-at-mass` ✓ → `mass-postures` → `mass-responses` → `mass-gestures` → `who-can-receive-communion` → `real-presence` ✓ → `why-go-to-mass-on-sunday`
+`first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
 
 ### 8.4 Practicing Catholic going deeper (14)
-`what-is-dogma` → `divine-revelation` → `development-of-doctrine` → `what-is-grace` → `mass-as-sacrifice` → `mass-eucharistic-prayer` → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` → `who-are-the-church-fathers` → `thomas-aquinas`
+`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` → `who-are-the-church-fathers` → `thomas-aquinas`
 
 ### 8.5 Exploring Catholic apologetics (12)
-`does-god-exist` → `problem-of-evil` ✓ → `did-jesus-exist` → `resurrection` → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` → `sola-scriptura` ✓ → `peter-the-rock` → `faith-and-works` → `real-presence` ✓ → `why-honor-mary` → `salvation-of-non-christians`
+`does-god-exist` → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` → `sola-scriptura` ✓ → `peter-the-rock` → `faith-and-works` → `real-presence` ✓ → `why-honor-mary` → `salvation-of-non-christians`
 
 ### 8.6 Comparing Catholicism with another tradition (template)
 1. The tradition page (overview, agreement, differences)
@@ -1112,7 +1113,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 2 | First Mass | 0 | 10 | `what-happens-at-mass` ✓, `first-time-at-mass` ✓, `why-go-to-mass-on-sunday` ✓, `mass-in-scripture` ✓, `mass-etiquette` ✓, `mass-postures` ✓, `mass-gestures` ✓, `mass-responses` ✓, `non-catholics-at-mass` ✓, `how-to-receive-communion` ✓ |
 | 3 | Mass parts I (before Mass, Introductory Rites, Word) | 0 | 19 | `mass-arriving` ✓, `mass-holy-water` ✓, `mass-genuflection` ✓, `mass-quiet-prayer` ✓, `mass-entrance` ✓, `mass-sign-of-the-cross` ✓, `mass-greeting` ✓, `mass-penitential-act` ✓, `mass-kyrie` ✓, `mass-gloria` ✓, `mass-collect` ✓, `mass-first-reading` ✓, `mass-responsorial-psalm` ✓, `mass-second-reading` ✓, `mass-gospel-acclamation` ✓, `mass-gospel` ✓, `mass-homily` ✓, `mass-creed` ✓, `mass-universal-prayer` ✓ |
 | 4 | Mass parts II (Eucharist, Communion, Concluding) | 0 | 15 | `mass-preparation-of-the-gifts` ✓, `mass-prayer-over-the-offerings` ✓, `mass-preface-dialogue` ✓, `mass-sanctus` ✓, `mass-eucharistic-prayer` ✓, `mass-consecration` ✓, `mass-mystery-of-faith` ✓, `mass-great-amen` ✓, `mass-lords-prayer` ✓, `mass-sign-of-peace` ✓, `mass-lamb-of-god` ✓, `mass-invitation-to-communion` ✓, `mass-communion` ✓, `mass-final-blessing` ✓, `mass-dismissal` ✓ |
-| 5 | Sacraments | 13 | 1 | `what-is-a-sacrament`, `seven-sacraments`, `baptism`, `infant-baptism`, `confirmation`, `what-is-the-eucharist`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `confession`, `why-confess-to-a-priest`, `how-to-go-to-confession`, `mortal-and-venial-sin`, `marriage-sacrament` |
+| 5 | Sacraments and the remaining Mass parts | 0 | 21 | `what-is-a-sacrament` ✓, `seven-sacraments` ✓, `baptism` ✓, `infant-baptism` ✓, `confirmation` ✓, `what-is-the-eucharist` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `confession` ✓, `why-confess-to-a-priest` ✓, `how-to-go-to-confession` ✓, `mortal-and-venial-sin` ✓, `marriage-sacrament` ✓, `mass-reverence-to-the-altar` ✓, `mass-preface` ✓, `mass-epiclesis` ✓, `mass-intercessions` ✓, `mass-thanksgiving-after-communion` ✓, `mass-prayer-after-communion` ✓, `mass-recessional` ✓ |
 | 6 | OCIA and returning Catholics | 8 | 1 | `how-to-become-catholic` ✓, `what-is-ocia`, `stages-of-ocia`, `catechumen-or-candidate`, `already-baptized`, `married-before-ocia`, `finding-a-parish`, `returning-to-the-church`, `returning-after-mortal-sin` |
 | 7 | Sacred Scripture | 6 | 0 | `what-is-the-bible`, `catholic-bible-books`, `inspiration-of-scripture`, `how-to-read-the-bible`, `which-bible-translation`, `where-to-start-reading-the-bible` |
 | 8 | Apologetics I: Church authority and other Christians | 8 | 1 | `did-jesus-found-a-church`, `sola-scriptura` ✓, `what-is-the-magisterium`, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `catholic-and-protestant-differences`, `catholic-and-orthodox-differences`, `praying-directly-to-god` |
@@ -1132,7 +1133,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 
 ## 12. Topic counts and priorities
 
-Generated from the inventory tables by the same script that builds §7.3 and §11. Tradition pages are counted separately in [§6.2](#62-tradition-map) (31 entries, 29 planned pages, 5 built).
+Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies). Run `node scripts/curriculum.mjs` to check the inventory: unique slugs, every P1 topic in exactly one batch, and ✓ marks matching the topics in `content/topics`. Run `node scripts/curriculum.mjs --write` to regenerate this table, the §11 batch table, and the ✓ marks in §7.3 and §8. Batch membership is edited by hand in §11. Tradition pages are counted separately in [§6.2](#62-tradition-map) (31 entries, 29 planned pages, 5 built).
 
 <!-- generated: counts -->
 
@@ -1144,7 +1145,7 @@ Generated from the inventory tables by the same script that builds §7.3 and §1
 | 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 0 |
 | 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 0 |
 | 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 5 |
-| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 1 |
+| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 0 |
 | 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 0 |
 | 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 0 |
@@ -1157,10 +1158,10 @@ Generated from the inventory tables by the same script that builds §7.3 and §1
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
 | 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 1 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 0 |
-| 5 Holy Mass (themes and parts) | 65 | 44 | 16 | 5 | 1 | 3 | 44 |
+| 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
 | 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **157** | **185** | **80** | **91** | **52** | **69** |
+| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **89** |
 
 <!-- /generated: counts -->
 

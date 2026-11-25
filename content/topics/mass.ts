@@ -102,7 +102,7 @@ export const mass: Topic[] = [
       documents: ["dies-domini", "canon-law-sunday"],
     },
     resources: ["wof-come-back-to-mass"],
-    related: ["what-happens-at-mass", "resurrection", "first-time-at-mass", "real-presence"],
+    related: ["what-happens-at-mass", "resurrection", "mortal-and-venial-sin", "real-presence"],
   },
   {
     slug: "mass-in-scripture",
@@ -137,7 +137,7 @@ export const mass: Topic[] = [
       documents: ["sacrosanctum-concilium"],
     },
     resources: ["video-mass-pitre", "stpaul-fourth-cup", "ewtn-eucharist-in-scripture", "book-lambs-supper"],
-    related: ["real-presence", "what-happens-at-mass", "why-did-jesus-die"],
+    related: ["mass-as-sacrifice", "real-presence", "what-happens-at-mass", "why-did-jesus-die"],
   },
   {
     slug: "mass-etiquette",
@@ -235,15 +235,13 @@ export const mass: Topic[] = [
     slug: "non-catholics-at-mass",
     title: "Non-Catholics at Mass",
     question: "Can non-Catholics attend Mass?",
-    alsoKnownAs: ["Can non-Catholics receive Communion?", "Visitors at Mass", "Intercommunion"],
+    alsoKnownAs: ["Visitors at Mass", "Can I go to Mass if I'm not Catholic?"],
     category: "mass",
-    keywords: ["OCIA at Mass", "catechumen", "candidate", "can non-Catholics go to Mass", "Protestant at Catholic Mass", "not Catholic", "non-Catholic communion", "can I receive communion", "Orthodox communion", "arms crossed blessing", "wedding Mass", "funeral Mass"],
+    keywords: ["OCIA at Mass", "catechumen", "candidate", "can non-Catholics go to Mass", "Protestant at Catholic Mass", "not Catholic", "visitor", "arms crossed blessing", "wedding Mass", "funeral Mass"],
     summary:
       "Yes. Everyone is welcome to attend Mass, to pray, sing, and listen, whatever their faith. What non-Catholics are asked not to do is receive Holy Communion, because for Catholics receiving Communion is a sign of full unity in faith with the Church. The U.S. bishops welcome other Christians as brothers and sisters and ask everyone who does not receive to pray for unity.",
     explanation: [
-      "The U.S. bishops' guidelines explain that because the Eucharist is a sign of the oneness of faith, life, and worship, members of churches not yet fully united with the Catholic Church are ordinarily not admitted to Communion. Exceptions require the permission of the diocesan bishop under the Church's law (canon 844 §4).",
-      "The Church's relationship with the Orthodox and other Eastern Churches is closer: the Catechism teaches that they have true sacraments, and the Church's law allows Catholic ministers to give Communion to their members who ask for it and are properly disposed (canon 844 §3). The bishops urge them to follow the discipline of their own Churches.",
-      "Christians of the communities that came from the Reformation are not invited to receive, because, in the Catechism's words, those communities have not preserved “the proper reality of the Eucharistic mystery in its fullness.” The Church prays urgently for the day when all Christians can share one table.",
+      "The U.S. bishops' guidelines explain that because the Eucharist is a sign of the oneness of faith, life, and worship, members of churches not yet fully united with the Catholic Church are ordinarily not admitted to Communion. The rules for Orthodox and other Christians, and the reasons behind them, are explained in “Who can receive Communion?” The Church prays urgently for the day when all Christians can share one table.",
       "People preparing to become Catholic through OCIA wait to receive Communion until they are received into the Church, usually at the Easter Vigil, when Christian initiation reaches its culmination in the Eucharist. Catechumens (those preparing for Baptism) are often dismissed with a catechist after the homily to reflect on the readings, a practice the U.S. bishops call praiseworthy (National Statutes for the Christian Initiation of Adults, Norm 10).",
       "Not receiving is normal: Catholics who are not prepared also stay in the pew. In some parishes people who are not receiving come forward with arms crossed for a blessing; this is a local custom rather than part of the liturgy, so follow the practice of the parish. The same norms apply at weddings and funerals.",
     ],
@@ -255,7 +253,7 @@ export const mass: Topic[] = [
       scripture: [{ passage: "1 Corinthians 10:16–17", url: bible("1corinthians/10") }],
       documents: ["usccb-communion-guidelines", "canon-law-sacraments", "unitatis-redintegratio", "usccb-nscia"],
     },
-    related: ["first-time-at-mass", "how-to-receive-communion", "how-to-become-catholic", "real-presence", "are-catholics-christians"],
+    related: ["first-time-at-mass", "who-can-receive-communion", "how-to-receive-communion", "how-to-become-catholic", "are-catholics-christians"],
   },
   {
     slug: "how-to-receive-communion",
@@ -269,7 +267,7 @@ export const mass: Topic[] = [
     explanation: [
       "The fast: abstain from food and drink, except water and medicine, for at least one hour before Communion. The elderly, the sick, and those who care for them may receive even if they have eaten within the hour (canon 919).",
       "Grave sin: anyone conscious of grave sin is not to receive without first going to Confession (canon 916; CCC 1385). Canon 916 allows one exception, and all of its conditions must be met: there is a grave reason to receive, there is no opportunity to go to Confession beforehand, and the person makes an act of perfect contrition, which includes the resolution to confess as soon as possible. Venial sins do not keep anyone from Communion; the Eucharist itself wipes them away (CCC 1394).",
-      "Who may receive: any baptized Catholic not prohibited by law (canon 912). Children receive after suitable preparation (canon 913). Those under certain Church penalties, or obstinately persevering in manifest grave sin, are not to be admitted (canon 915). Other Christians are covered in “Can non-Catholics attend Mass?”",
+      "Who may receive, and why the Church sets these conditions, is explained in “Who can receive Communion?”",
       "How often: once a day, and a second time on the same day only at another Mass in which you take part (canon 917). Someone in danger of death is urged to receive again as Viaticum even if they already received that day (canon 921).",
       "In the line: in the United States, Communion is normally received standing, and those who kneel are not to be refused. Bow your head before receiving (GIRM 160). The minister says “The Body of Christ”; you answer “Amen” and receive on the tongue or, if you choose, in the hand, and you consume the Host right away (GIRM 161).",
       "To receive in the hand, many parishes teach placing one open hand on the other to make a “throne” for the Host, then taking it with your lower hand. To receive on the tongue, open your mouth and extend your tongue. Watch the videos below if you'd like to see both.",
@@ -282,6 +280,6 @@ export const mass: Topic[] = [
       documents: ["usccb-happy-are-those", "canon-law-eucharist", "girm"],
     },
     resources: ["video-springfield-receiving-communion", "video-dominicast-communion"],
-    related: ["real-presence", "non-catholics-at-mass", "mass-gestures", "first-time-at-mass"],
+    related: ["who-can-receive-communion", "real-presence", "mass-gestures", "first-time-at-mass"],
   },
 ];

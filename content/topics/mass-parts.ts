@@ -7,13 +7,14 @@
 import type { Topic } from "../types";
 import { bible, ccc } from "./refs";
 
-// The parts in Mass order, grouped as the Missal groups them. Later batches append sections.
+// The parts in Mass order, grouped as the Missal groups them. Inside the Eucharistic Prayer the order
+// is that of Eucharistic Prayers II–IV; the topics themselves explain how other prayers differ.
 // Validated in content/index.ts: every slug must be a Mass topic and appear once.
 export const massOrder: { section: string; slugs: string[] }[] = [
   { section: "Before Mass", slugs: ["mass-arriving", "mass-holy-water", "mass-genuflection", "mass-quiet-prayer"] },
   {
     section: "Introductory Rites",
-    slugs: ["mass-entrance", "mass-sign-of-the-cross", "mass-greeting", "mass-penitential-act", "mass-kyrie", "mass-gloria", "mass-collect"],
+    slugs: ["mass-entrance", "mass-reverence-to-the-altar", "mass-sign-of-the-cross", "mass-greeting", "mass-penitential-act", "mass-kyrie", "mass-gloria", "mass-collect"],
   },
   {
     section: "Liturgy of the Word",
@@ -34,18 +35,29 @@ export const massOrder: { section: string; slugs: string[] }[] = [
       "mass-preparation-of-the-gifts",
       "mass-prayer-over-the-offerings",
       "mass-preface-dialogue",
+      "mass-preface",
       "mass-sanctus",
       "mass-eucharistic-prayer",
+      "mass-epiclesis",
       "mass-consecration",
       "mass-mystery-of-faith",
+      "mass-intercessions",
       "mass-great-amen",
     ],
   },
   {
     section: "Communion Rite",
-    slugs: ["mass-lords-prayer", "mass-sign-of-peace", "mass-lamb-of-god", "mass-invitation-to-communion", "mass-communion"],
+    slugs: [
+      "mass-lords-prayer",
+      "mass-sign-of-peace",
+      "mass-lamb-of-god",
+      "mass-invitation-to-communion",
+      "mass-communion",
+      "mass-thanksgiving-after-communion",
+      "mass-prayer-after-communion",
+    ],
   },
-  { section: "Concluding Rites", slugs: ["mass-final-blessing", "mass-dismissal"] },
+  { section: "Concluding Rites", slugs: ["mass-final-blessing", "mass-dismissal", "mass-recessional"] },
 ];
 
 export const massParts: Topic[] = [
@@ -156,7 +168,7 @@ export const massParts: Topic[] = [
       "Mass begins as the priest and ministers walk in procession to the altar while everyone stands and sings. The song, called the Entrance Chant, opens the celebration, unites the people, and introduces the feast or season. When they reach the sanctuary, the priest and deacon reverence the altar, the symbol of Christ, with a kiss.",
     explanation: [
       "Why: the Introductory Rites help the people who have gathered become one assembly and prepare to hear God's word and celebrate the Eucharist (GIRM 46). The Entrance Chant opens the celebration, fosters unity, introduces the mystery of the day or season, and accompanies the procession (GIRM 47).",
-      "The procession: servers usually carry the cross and candles, followed by the reader or the deacon with the Book of the Gospels, and the priest. At the sanctuary, they bow to the altar, and the priest and deacon kiss it; the priest may also incense the cross and the altar (GIRM 49).",
+      "The procession: servers usually carry the cross and candles, followed by the reader or the deacon with the Book of the Gospels, and the priest. At the sanctuary, the ministers reverence the altar, explained in the next part (GIRM 49).",
       "What the congregation does: stand and join in the singing. In the United States, the chant may be the antiphon from the Missal, a psalm, or another suitable song approved by the bishops (GIRM 48). If there is no singing, the people, a reader, or the priest recites the antiphon printed in the Missal.",
       "The Psalms sang of going up to God's house: “I rejoiced when they said to me, ‘Let us go to the house of the LORD’” (Psalm 122:1).",
     ],
@@ -170,6 +182,38 @@ export const massParts: Topic[] = [
     },
     resources: ["usccb-introductory-rites"],
     related: ["what-happens-at-mass", "mass-sign-of-the-cross", "mass-postures"],
+  },
+  {
+    slug: "mass-reverence-to-the-altar",
+    title: "Reverencing the Altar",
+    question: "Why does the priest kiss the altar?",
+    alsoKnownAs: ["Reverence to the altar", "Veneration of the altar", "Altar kiss", "Incensing the altar"],
+    category: "mass",
+    keywords: ["kiss the altar", "priest kisses the altar", "bow to the altar", "profound bow", "incense", "incensing the altar", "altar", "relics in the altar", "altar stone", "why is the altar important", "altar cloth"],
+    summary:
+      "When the entrance procession reaches the sanctuary, the priest, the deacon, and the other ministers make a profound bow to the altar, and the priest and deacon kiss it. On more solemn occasions the priest also incenses the cross and the altar. The altar is honored because it is the place where Christ's sacrifice is made present and the table of the Lord, and because the Church sees in it a symbol of Christ himself.",
+    explanation: [
+      "What happens: the ministers bow deeply to the altar; then, “as an expression of veneration,” the priest and deacon kiss it, and the priest may incense the cross and the altar (GIRM 49, 123, 173). If the tabernacle is in the sanctuary, the ministers genuflect to the Blessed Sacrament as they approach and leave the altar (GIRM 274). If the deacon carries the Book of the Gospels, he places it on the altar first (GIRM 173).",
+      "Why the altar: the Catechism calls the altar “the center of the church,” where the sacrifice of the Cross is made present under sacramental signs, and “the table of the Lord, to which the People of God are invited” (CCC 1182). It is also “the symbol of Christ himself”; St. Ambrose asked, “For what is the altar of Christ if not the image of the Body of Christ?” (CCC 1383). A fixed altar signifies Christ, “the living stone” (GIRM 298).",
+      "Why a kiss and incense: kissing the altar is a traditional sign of veneration; where it does not suit a culture, the bishops' conference may establish another sign (GIRM 273). Incense expresses reverence and prayer, as Scripture says: “Let my prayer be incense before you” (Psalm 141:2; Revelation 8:3–4; GIRM 276).",
+      "What the congregation does: stand and continue singing. There is nothing for the people to say; you can unite yourself with the priest's gesture of love for Christ, in the spirit of the Psalm: “That I may come to the altar of God, to God, my joy, my delight” (Psalm 43:4).",
+      "You may also see: many altars contain relics of saints: the Church “fittingly” keeps the ancient practice of placing relics under an altar when it is dedicated (GIRM 302). The altar is covered with at least one white cloth and has candles and a crucifix on or near it (GIRM 117, 304, 307–308). The same kiss and bow are repeated at the end of Mass.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1182", url: ccc("__P3A") },
+        { paragraphs: "1383", url: ccc("__P42") },
+      ],
+      scripture: [
+        { passage: "Psalm 43:3–4", url: bible("psalms/43") },
+        { passage: "Psalm 141:2", url: bible("psalms/141") },
+        { passage: "Revelation 8:3–4", url: bible("revelation/8") },
+        { passage: "Hebrews 13:10", url: bible("hebrews/13") },
+      ],
+      documents: ["girm"],
+    },
+    resources: ["ec-altar-kiss", "usccb-introductory-rites"],
+    related: ["mass-entrance", "mass-recessional", "mass-gestures", "mass-preparation-of-the-gifts"],
   },
   {
     slug: "mass-sign-of-the-cross",
@@ -468,6 +512,7 @@ export const massParts: Topic[] = [
       ],
       documents: ["girm", "homiletic-directory", "usccb-nscia"],
     },
+    resources: ["ec-homily", "ec-engage-homily"],
     related: ["mass-gospel", "mass-creed", "how-to-become-catholic", "bishops-priests-deacons"],
   },
   {
@@ -579,14 +624,14 @@ export const massParts: Topic[] = [
     slug: "mass-preface-dialogue",
     title: "Lift Up Your Hearts",
     question: "Why does the priest say “Lift up your hearts”?",
-    alsoKnownAs: ["Preface Dialogue", "Sursum corda", "Preface"],
+    alsoKnownAs: ["Preface Dialogue", "Sursum corda"],
     category: "mass",
-    keywords: ["lift up your hearts", "we lift them up to the Lord", "it is right and just", "preface", "preface dialogue", "Sursum corda", "let us give thanks", "thanksgiving"],
+    keywords: ["lift up your hearts", "we lift them up to the Lord", "it is right and just", "preface dialogue", "Sursum corda", "let us give thanks", "thanksgiving"],
     summary:
       "The Eucharistic Prayer opens with an ancient dialogue. The priest says “The Lord be with you,” “Lift up your hearts,” and “Let us give thanks to the Lord our God,” and the people answer “And with your spirit,” “We lift them up to the Lord,” and “It is right and just.” The priest then prays the Preface, giving thanks to the Father for the work of salvation.",
     explanation: [
       "Why: the Eucharistic Prayer is the center and summit of the Mass, a prayer of thanksgiving and sanctification. In the dialogue, the priest invites the people to lift up their hearts to the Lord in prayer and thanksgiving and unites them with himself in the prayer he addresses to God the Father (GIRM 78). The word “Eucharist” itself means thanksgiving.",
-      "The Preface: the priest, in the name of all God's people, glorifies the Father and gives thanks for the whole work of salvation, or for an aspect of it that fits the day or season (GIRM 79). There are many Prefaces, so the words change through the year. It always ends by inviting everyone to join the angels' hymn, the Holy, Holy, Holy (CCC 1352).",
+      "The dialogue leads straight into the Preface, the priest's prayer of thanksgiving that changes with the day and season, explained in the next part (GIRM 79; CCC 1352).",
       "In Scripture: “Let us lift up our hearts as well as our hands toward God in heaven!” (Lamentations 3:41).",
       "Everyone stands. The priest extends and raises his hands during the dialogue (GIRM 148).",
     ],
@@ -597,6 +642,33 @@ export const massParts: Topic[] = [
     },
     resources: ["ec-the-preface", "liturgy-office-order-of-mass"],
     related: ["mass-sanctus", "mass-eucharistic-prayer", "mass-responses"],
+  },
+  {
+    slug: "mass-preface",
+    title: "The Preface",
+    question: "What is the Preface at Mass?",
+    alsoKnownAs: ["Preface", "Prefaces of the Roman Missal", "It is truly right and just"],
+    category: "mass",
+    keywords: ["preface", "what is the preface", "it is truly right and just", "thanksgiving", "proper preface", "common preface", "Advent preface", "Easter preface", "preface of the Eucharistic Prayer", "why does the preface change", "with the angels and archangels"],
+    summary:
+      "The Preface is the priest's great prayer of thanksgiving that opens the Eucharistic Prayer, right after “Lift up your hearts.” In the name of the whole Church, he praises God the Father for the work of salvation, or for the particular mystery of the day or season, and then invites everyone to join the angels and saints in singing the Holy, Holy, Holy. The Missal contains many Prefaces, so its words change through the year.",
+    explanation: [
+      "What it is: the first element of the Eucharistic Prayer is thanksgiving, “expressed especially in the Preface,” in which the priest, in the name of the entire holy people, glorifies the Father and gives thanks for the whole work of salvation or some aspect of it that fits the day, feast, or season (GIRM 79). The Church gives thanks “for all his works: creation, redemption, and sanctification” (CCC 1352).",
+      "Why so many: the many Prefaces of the Roman Missal bring out more fully the reasons for thanksgiving and the different facets of the mystery of salvation (GIRM 364). There are Prefaces for Advent, Christmas, Lent, Easter, Sundays in Ordinary Time, Mary and the saints, Masses for the dead, and more.",
+      "Not always a free choice: some Eucharistic Prayers come with their own Preface. Eucharistic Prayer IV has an unchangeable Preface; Eucharistic Prayer II has its own Preface but may also be used with others; Eucharistic Prayer III may be said with any Preface (GIRM 365).",
+      "Its shape: many Prefaces begin by echoing the people's last response, saying it is truly right and just to give God thanks, then name a reason for thanksgiving from salvation history, and end by joining the praise of heaven. That final invitation leads straight into the Sanctus.",
+      "What the people do: stand and listen. The priest prays the Preface with hands extended (GIRM 148). It is a good moment to notice the theme of the day and make that thanksgiving your own, in the spirit of St. Paul: “In all circumstances give thanks” (1 Thessalonians 5:18).",
+    ],
+    teaching: {
+      catechism: [{ paragraphs: "1352", url: ccc("__P40") }],
+      scripture: [
+        { passage: "1 Thessalonians 5:16–18", url: bible("1thessalonians/5") },
+        { passage: "Revelation 4:8–11", url: bible("revelation/4") },
+      ],
+      documents: ["girm"],
+    },
+    resources: ["ec-preface-as-thanksgiving", "usccb-liturgy-of-the-eucharist"],
+    related: ["mass-preface-dialogue", "mass-sanctus", "mass-eucharistic-prayer"],
   },
   {
     slug: "mass-sanctus",
@@ -629,14 +701,15 @@ export const massParts: Topic[] = [
     slug: "mass-eucharistic-prayer",
     title: "The Eucharistic Prayer",
     question: "What is the Eucharistic Prayer?",
-    alsoKnownAs: ["Anaphora", "Canon of the Mass", "Epiclesis", "Anamnesis", "Intercessions"],
+    alsoKnownAs: ["Anaphora", "Canon of the Mass", "Roman Canon"],
     category: "mass",
-    keywords: ["Eucharistic Prayer", "anaphora", "Roman Canon", "Eucharistic Prayer II", "epiclesis", "anamnesis", "intercessions", "offering", "doxology", "heart of the Mass", "why kneel", "bells at Mass", "in persona Christi"],
+    keywords: ["Eucharistic Prayer", "anaphora", "Roman Canon", "Eucharistic Prayer II", "Eucharistic Prayer III", "different Eucharistic Prayers", "doxology", "heart of the Mass", "why kneel", "bells at Mass", "in persona Christi"],
     summary:
       "The Eucharistic Prayer is the center and summit of the Mass: the great prayer of thanksgiving and consecration that the priest addresses to God the Father, through Christ, in the Holy Spirit. In it, the bread and wine become the Body and Blood of Christ, and the Church offers Christ's sacrifice to the Father. The priest alone says it, by virtue of his ordination; the people pray it with him in faith and silence and join in its acclamations.",
     explanation: [
-      "Its parts: the instruction on the Mass lists them: thanksgiving (the Preface); the acclamation (Holy, Holy, Holy); the epiclesis, in which the Church asks the Father to send the Holy Spirit so that the gifts become Christ's Body and Blood; the institution narrative and consecration; the anamnesis, or memorial of Christ's Passion, Resurrection, and Ascension; the offering of the spotless Victim to the Father; the intercessions for the whole Church, living and dead; and the final doxology, confirmed by the people's Amen (GIRM 79; CCC 1352–1355).",
-      "A sacrifice: the Church teaches that the Mass makes present the one sacrifice of Christ on the cross. It does not repeat it or add to it: Christ offered himself “once for all” (Hebrews 10:10). In the Catechism's words, the sacrifice of Christ and the sacrifice of the Eucharist are “one single sacrifice”; only the manner of offering is different (CCC 1366–1367).",
+      "Its parts: the instruction on the Mass names its chief elements: thanksgiving (the Preface); the acclamation (Holy, Holy, Holy); the epiclesis, calling down the Holy Spirit; the institution narrative and consecration; the anamnesis, or memorial; the offering; the intercessions; and the final doxology with the people's Amen (GIRM 79; CCC 1352–1355). Each has its own page in “The Mass, step by step.”",
+      "One prayer, several forms: these elements belong to every Eucharistic Prayer, but not always in the same order. In Eucharistic Prayers II, III, and IV the Holy Spirit is invoked on the gifts before the consecration and on the communicants after it, and the intercessions follow the consecration; the Roman Canon places some intercessions and a list of saints before the consecration; and some liturgical traditions put the epiclesis after the anamnesis (CCC 1353). The pages on each part follow the order of Eucharistic Prayers II–IV and note the differences.",
+      "A sacrifice: the Eucharistic Prayer makes present the one sacrifice Christ offered “once for all” on the cross (Hebrews 10:10), without repeating it or adding to it; the sacrifice of Christ and the sacrifice of the Eucharist are “one single sacrifice” (CCC 1366–1367). This is explained in “Is the Mass a sacrifice?”",
       "Who prays what: the Eucharistic Prayer by its nature is said only by the priest, in virtue of his ordination. The people associate themselves with him in faith and in silence, and through their parts: the Preface dialogue, the Holy, Holy, Holy, the acclamation after the consecration, and the Great Amen (GIRM 147). The whole assembly joins Christ in offering the sacrifice, and offers itself with him (GIRM 78–79).",
       "Options: the Missal contains several Eucharistic Prayers, including the ancient Roman Canon (Eucharistic Prayer I); the priest chooses one according to the rubrics (GIRM 147).",
       "Posture: in the United States the people kneel from after the Holy, Holy, Holy until after the Great Amen; those who cannot kneel make a profound bow when the priest genuflects after the consecration (GIRM 43). A bell may be rung shortly before the consecration and, by local custom, at the elevations (GIRM 150).",
@@ -654,7 +727,38 @@ export const massParts: Topic[] = [
       documents: ["girm", "ecclesia-de-eucharistia"],
     },
     resources: ["ec-the-eucharistic-prayer", "clj-roman-canon", "stpaul-re-presentation-of-calvary"],
-    related: ["mass-consecration", "real-presence", "mass-in-scripture", "mass-sanctus"],
+    related: ["mass-consecration", "mass-as-sacrifice", "real-presence", "mass-in-scripture"],
+  },
+  {
+    slug: "mass-epiclesis",
+    title: "The Epiclesis",
+    question: "What is the epiclesis?",
+    alsoKnownAs: ["Epiclesis", "Calling down the Holy Spirit", "Invocation of the Holy Spirit"],
+    category: "mass",
+    keywords: ["epiclesis", "calling down the Holy Spirit", "invocation of the Spirit", "hands over the gifts", "priest extends hands over the bread and wine", "bell before the consecration", "Holy Spirit at Mass", "consecratory epiclesis", "communion epiclesis", "send down your Spirit"],
+    summary:
+      "The epiclesis (from the Greek for “calling upon”) is the part of the Eucharistic Prayer in which the Church asks the Father to send the Holy Spirit on the bread and wine so that they become the Body and Blood of Christ, and on those who will receive them so that they become one body in Christ. The priest says it; the people pray silently, kneeling.",
+    explanation: [
+      "What it asks: by particular invocations, the Church “implores the power of the Holy Spirit” that the gifts offered by human hands be consecrated, and that the Victim received in Communion be for the salvation of those who receive (GIRM 79). The Catechism calls it the intercession in which the priest begs the Father to send the Spirit, the Sanctifier, so that the offerings become Christ's Body and Blood and the faithful, receiving them, become a living offering to God (CCC 1105).",
+      "Why the Holy Spirit: Christ's words and the power of the Holy Spirit together bring about the change (CCC 1353). An ancient explanation the Catechism quotes compares it to the Incarnation: as the Lord took flesh of the Virgin by the Holy Spirit, so by the Spirit the bread becomes his Body (CCC 1106; Luke 1:35).",
+      "Not the same in every prayer: in Eucharistic Prayers II, III, and IV, the Holy Spirit is invoked on the gifts just before the institution narrative, and again after the consecration on those who will receive Communion, asking that they be gathered into one. The Roman Canon (Eucharistic Prayer I) asks God to bless and accept the offering so that it may become Christ's Body and Blood, without naming the Spirit at that point; the Catechism notes the epiclesis may ask for the Spirit “or the power of his blessing.” And “some liturgical traditions put the epiclesis after the anamnesis”: in many Eastern liturgies it comes after the words of institution (CCC 1353).",
+      "What you may see and hear: in the Roman Missal the priest holds his hands outstretched over the bread and wine and then makes the Sign of the Cross over them. A server may ring a bell “a little before the consecration” (GIRM 150). The people kneel (GIRM 43).",
+      "Praying along: this is a good moment to ask the Holy Spirit to transform you, too, as the gifts are transformed, so that you become what you receive.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1105–1106", url: ccc("__P2X") },
+        { paragraphs: "1353", url: ccc("__P40") },
+      ],
+      scripture: [
+        { passage: "Luke 1:35", url: bible("luke/1") },
+        { passage: "Romans 15:16", url: bible("romans/15") },
+        { passage: "1 Corinthians 12:13", url: bible("1corinthians/12") },
+      ],
+      documents: ["girm"],
+    },
+    resources: ["ec-epiclesis", "usccb-liturgy-of-the-eucharist"],
+    related: ["mass-eucharistic-prayer", "mass-consecration", "who-is-the-holy-spirit"],
   },
   {
     slug: "mass-consecration",
@@ -710,6 +814,39 @@ export const massParts: Topic[] = [
     },
     resources: ["ec-anamnesis", "liturgy-office-order-of-mass"],
     related: ["mass-consecration", "mass-great-amen", "mass-responses"],
+  },
+  {
+    slug: "mass-intercessions",
+    title: "Remembering, Offering, Interceding",
+    question: "What happens in the Eucharistic Prayer after the consecration?",
+    alsoKnownAs: ["Anamnesis", "Oblation", "Intercessions", "Commemoration of the saints", "Prayer for the dead at Mass"],
+    category: "mass",
+    keywords: ["anamnesis", "memorial", "offering", "oblation", "intercessions", "Eucharistic Prayer intercessions", "pope and bishop named at Mass", "prayer for the dead", "remember our brothers and sisters", "saints named at Mass", "Mary and Joseph", "Roman Canon saints", "Mass intention"],
+    summary:
+      "After the consecration and the Mystery of Faith, the Eucharistic Prayer remembers Christ's Passion, Resurrection, and Ascension; offers him, the spotless Victim, to the Father, together with the Church's own self-offering; and prays for the whole Church, living and dead, in communion with Mary and all the saints. The pope and the local bishop are named. The priest says these prayers; the people pray silently, kneeling.",
+    explanation: [
+      "Remembering (anamnesis): fulfilling Christ's command, the Church “keeps the memorial of Christ,” recalling especially his Passion, Resurrection, and Ascension (GIRM 79). In the Bible a memorial makes the saving event present, which is why the Mass is the memorial of Christ's sacrifice (CCC 1362–1364).",
+      "Offering: in this memorial the Church offers the spotless Victim to the Father in the Holy Spirit. The Church's intention is that the faithful “not only offer this spotless Victim but also learn to offer themselves” (GIRM 79; CCC 1368). This is the moment to place your own life, needs, and intentions on the altar with Christ's offering.",
+      "Interceding: the intercessions express that the Eucharist is celebrated in communion with the whole Church of heaven and earth, and that it is offered for all her members, living and dead (GIRM 79). The pope and the diocesan bishop are named as signs of the Church's unity (CCC 1369). The Church offers the sacrifice in communion with Mary and the saints (CCC 1370) and for the faithful departed who are not yet wholly purified (CCC 1371). Praying for the dead is a practice already found in Scripture (2 Maccabees 12:43–46; CCC 1032).",
+      "Not the same in every prayer: in Eucharistic Prayers II, III, and IV, these prayers follow the consecration in this order. The Roman Canon (Eucharistic Prayer I) is arranged differently: it prays for the Church, for the living, and in communion with a list of saints before the consecration, and for the dead and with a second list of saints after it. Some prayers allow a special remembrance of a person who has died (GIRM 365).",
+      "Posture: the people remain kneeling until after the Great Amen (GIRM 43).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1032", url: ccc("__P2N") },
+        { paragraphs: "1354", url: ccc("__P40") },
+        { paragraphs: "1362–1364, 1368–1371", url: ccc("__P41") },
+      ],
+      scripture: [
+        { passage: "Luke 22:19", url: bible("luke/22") },
+        { passage: "Romans 12:1", url: bible("romans/12") },
+        { passage: "Hebrews 12:1", url: bible("hebrews/12") },
+        { passage: "2 Maccabees 12:43–46", url: bible("2maccabees/12") },
+      ],
+      documents: ["girm"],
+    },
+    resources: ["ec-offering", "ec-intercessions", "clj-roman-canon"],
+    related: ["mass-eucharistic-prayer", "mass-great-amen", "mass-as-sacrifice", "mass-universal-prayer"],
   },
   {
     slug: "mass-great-amen",
@@ -849,9 +986,9 @@ export const massParts: Topic[] = [
     slug: "mass-communion",
     title: "Holy Communion",
     question: "What happens at Communion during Mass?",
-    alsoKnownAs: ["Communion procession", "Communion song", "Prayer after Communion", "Spiritual Communion"],
+    alsoKnownAs: ["Communion procession", "Communion song", "Spiritual Communion"],
     category: "mass",
-    keywords: ["Communion", "Holy Communion", "Communion line", "Communion procession", "Communion hymn", "Precious Blood", "extraordinary ministers", "silence after Communion", "prayer after Communion", "spiritual communion", "not receiving Communion"],
+    keywords: ["Communion", "Holy Communion", "Communion line", "Communion procession", "Communion hymn", "Precious Blood", "extraordinary ministers", "spiritual communion", "not receiving Communion"],
     summary:
       "Catholics who are prepared come forward in procession to receive the Body of Christ, and where it is offered, the Precious Blood, while a Communion song is sung. Those not receiving stay in the pew and pray. Afterward there is a time of silent prayer or a song of praise, and the priest says the Prayer after Communion, to which the people answer “Amen.”",
     explanation: [
@@ -859,7 +996,7 @@ export const massParts: Topic[] = [
       "The procession: the priest receives first; the Communion song begins, expressing the communicants' unity and joy (GIRM 86). People normally receive standing in the United States and bow their heads before the Sacrament; the minister says “The Body of Christ,” and the communicant answers “Amen” (GIRM 160–161). How to receive, the Eucharistic fast, and who may receive are explained in “How do I receive Communion?”",
       "Other ministers: when there are many communicants, the priest may be assisted by other priests, deacons, or extraordinary ministers of Holy Communion (GIRM 162).",
       "If you are not receiving: stay in the pew and pray. The Church recommends a “spiritual communion,” a heartfelt desire to be united with Christ, for those who cannot receive (Ecclesia de Eucharistia 34).",
-      "Afterward: the priest purifies the vessels (GIRM 163). The priest and people pray in silence for a while, or a hymn of praise may be sung; people kneel or sit (GIRM 43, 88). Then all stand for the Prayer after Communion, in which the priest prays for the fruits of the mystery just celebrated (GIRM 89).",
+      "Afterward comes a time of silent prayer or a song of praise, explained in the next part, and then the Prayer after Communion (GIRM 88–89).",
     ],
     teaching: {
       catechism: [
@@ -874,7 +1011,60 @@ export const massParts: Topic[] = [
       documents: ["girm", "ecclesia-de-eucharistia", "redemptionis-sacramentum"],
     },
     resources: ["ec-holy-communion", "video-dominicast-communion"],
-    related: ["how-to-receive-communion", "real-presence", "non-catholics-at-mass", "mass-final-blessing"],
+    related: ["how-to-receive-communion", "who-can-receive-communion", "real-presence", "what-is-the-eucharist"],
+  },
+  {
+    slug: "mass-thanksgiving-after-communion",
+    title: "Silence After Communion",
+    question: "What should I do after receiving Communion?",
+    alsoKnownAs: ["Thanksgiving after Communion", "Silence after Communion", "Hymn of thanksgiving", "Purification of the vessels"],
+    category: "mass",
+    keywords: ["after communion", "what to pray after communion", "silence after communion", "kneel or sit after communion", "thanksgiving", "post-communion hymn", "song of praise", "purification", "priest cleaning the chalice", "ablutions", "back to the pew"],
+    summary:
+      "When Communion is over, the priest and people pray in silence for a while, and a psalm, hymn, or song of praise may also be sung. It is a time to thank Christ, who has just come to you in Communion, and to speak with him in your own words. You may kneel or sit. Meanwhile the priest or deacon may purify the sacred vessels at the altar or side table.",
+    explanation: [
+      "What the Church asks: when the distribution of Communion is finished, the priest and faithful pray quietly for some time; if desired, the whole congregation may also sing a psalm, canticle of praise, or hymn (GIRM 88, 164). After Communion, the instruction on the Mass says, all “praise and pray to God in their hearts” (GIRM 45).",
+      "Posture: as circumstances allow, people may sit or kneel during this silence (GIRM 43). Either is fine; follow what you find most prayerful or what is customary in your parish.",
+      "How to pray: there is no set prayer. Thank Christ for the gift of himself, bring him your needs and the people you love, and ask for strength for the week ahead. Many Catholics also use traditional prayers after Communion. The Psalmist asked, “How can I repay the LORD for all the great good done for me?” and answered, “I will raise the cup of salvation and call on the name of the LORD” (Psalm 116:12–13).",
+      "Why it matters: Communion's first fruit is intimate union with Christ, who said, “Whoever eats my flesh and drinks my blood remains in me and I in him” (John 6:56; CCC 1391). It strengthens charity and commits us to the poor (CCC 1394, 1397).",
+      "At the altar: the priest consumes any remaining Precious Blood, places remaining Hosts in the tabernacle, and purifies the vessels, or does this after Mass (GIRM 163, 279). The care taken with every fragment shows the Church's faith that Christ is present in even the smallest part (CCC 1377).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1377", url: ccc("__P41") },
+        { paragraphs: "1391–1397", url: ccc("__P42") },
+      ],
+      scripture: [
+        { passage: "Psalm 116:12–14", url: bible("psalms/116") },
+        { passage: "John 6:56–57", url: bible("john/6") },
+      ],
+      documents: ["girm"],
+    },
+    resources: ["ec-private-silent-prayer", "ec-purification-of-vessels"],
+    related: ["mass-communion", "mass-postures", "mass-prayer-after-communion"],
+  },
+  {
+    slug: "mass-prayer-after-communion",
+    title: "The Prayer After Communion",
+    question: "What is the Prayer after Communion?",
+    alsoKnownAs: ["Prayer after Communion", "Postcommunion"],
+    category: "mass",
+    keywords: ["prayer after communion", "postcommunion", "let us pray", "stand after communion", "end of the communion rite", "fruits of the Mass", "Amen"],
+    summary:
+      "After the time of silence, the priest says “Let us pray,” everyone stands, and he prays the Prayer after Communion, asking God that the mystery just celebrated may bear fruit in those who received it. The people make the prayer their own by answering “Amen.” It closes the Communion Rite.",
+    explanation: [
+      "What it is: to complete the prayer of the People of God and conclude the whole Communion Rite, the priest says the Prayer after Communion, in which he prays for the fruits of the mystery just celebrated (GIRM 89). Only one is said at each Mass, and it changes with the day.",
+      "How it goes: standing at the chair or at the altar, the priest says “Let us pray” with hands joined, may allow a brief silence if there has not been one already, and then prays with hands extended. The people answer “Amen” (GIRM 165).",
+      "What it asks: these prayers often ask that what was received at the altar be lived out in daily life, and that Communion now be a pledge of eternal life with God. The Catechism calls the Eucharist “an anticipation of the heavenly glory” (CCC 1402). Jesus promised eternal life, and resurrection on the last day, to those who eat his flesh and drink his blood (John 6:54).",
+      "Posture: everyone stands from the invitation “Let us pray” to the end of Mass (GIRM 43). Brief announcements may follow, before the final blessing (GIRM 166).",
+    ],
+    teaching: {
+      catechism: [{ paragraphs: "1402–1405", url: ccc("__P43") }],
+      scripture: [{ passage: "John 6:54", url: bible("john/6") }],
+      documents: ["girm"],
+    },
+    resources: ["ec-prayer-after-communion", "liturgy-office-order-of-mass"],
+    related: ["mass-thanksgiving-after-communion", "mass-final-blessing", "mass-collect"],
   },
 
   // Concluding Rites
@@ -908,15 +1098,15 @@ export const massParts: Topic[] = [
     slug: "mass-dismissal",
     title: "The Dismissal",
     question: "Why does Mass end with “Go forth”?",
-    alsoKnownAs: ["Ite, missa est", "Recessional", "Go in peace"],
+    alsoKnownAs: ["Ite, missa est", "Go in peace", "Go forth, the Mass is ended"],
     category: "mass",
-    keywords: ["dismissal", "Go forth the Mass is ended", "Go in peace", "Thanks be to God", "Ite missa est", "why is it called Mass", "recessional", "closing hymn", "leaving Mass early", "after Mass"],
+    keywords: ["dismissal", "Go forth the Mass is ended", "Go in peace", "Thanks be to God", "Ite missa est", "why is it called Mass", "sent on mission"],
     summary:
       "The deacon or priest sends the people out with words such as “Go forth, the Mass is ended” or “Go and announce the Gospel of the Lord,” and everyone answers “Thanks be to God.” The very name “Mass” comes from this sending: Catholics go out to live what they have celebrated. The priest then kisses the altar, and the ministers leave, usually during a closing song.",
     explanation: [
       "The words: the Missal offers four dismissals: “Go forth, the Mass is ended”; “Go and announce the Gospel of the Lord”; “Go in peace, glorifying the Lord by your life”; and “Go in peace.” The people answer “Thanks be to God.”",
       "Why “Mass”: the Catechism explains that the liturgy takes its name, Missa, from the sending forth (missio) of the faithful to fulfill God's will in their daily lives (CCC 1332). Pope Benedict XVI noted that in Christian usage “dismissal” has come to imply a “mission” (Sacramentum Caritatis 51). The dismissal sends each person out to do good works, praising and blessing God (GIRM 90).",
-      "The recessional: the priest venerates the altar with a kiss, bows with the ministers, and departs (GIRM 169). A closing song is a common custom; the Missal does not require one. Many people stay until the procession has left, and some remain afterward for a few minutes of thanksgiving. On the way out, Catholics genuflect toward the tabernacle (GIRM 274).",
+      "Then the priest kisses the altar and the ministers leave in procession; what happens next, and how to leave, is explained in the next part (GIRM 90).",
       "Like the apostles sent by the risen Jesus to make disciples of all nations (Matthew 28:19–20), the faithful leave Mass to carry Christ into the world.",
     ],
     teaching: {
@@ -929,5 +1119,35 @@ export const massParts: Topic[] = [
     },
     resources: ["ec-dismissal", "usccb-concluding-rites", "liturgy-office-order-of-mass"],
     related: ["what-happens-at-mass", "mass-final-blessing", "why-go-to-mass-on-sunday"],
+  },
+  {
+    slug: "mass-recessional",
+    title: "The Recessional",
+    question: "What happens after the dismissal?",
+    alsoKnownAs: ["Recessional", "Closing hymn", "Leaving Mass", "Thanksgiving after Mass"],
+    category: "mass",
+    keywords: ["recessional", "closing hymn", "closing song", "end of Mass", "leaving Mass", "when can I leave Mass", "leaving Mass early", "after Mass", "prayer after Mass", "genuflect on the way out", "kiss the altar at the end"],
+    summary:
+      "After the dismissal, the priest and deacon kiss the altar, bow to it with the other ministers, and leave in procession, usually during a closing song. Many people stay in place until the procession has passed, genuflect toward the tabernacle as they leave the pew, and some remain for a few minutes of personal thanksgiving.",
+    explanation: [
+      "What the Missal prescribes: the Mass ends where it began, at the altar. The priest and deacon venerate the altar with a kiss, and the priest, the deacon, and the other ministers make a profound bow before departing (GIRM 90, 169, 186). If the tabernacle is in the sanctuary, they genuflect as they leave the altar (GIRM 274).",
+      "The closing song: singing as the ministers leave is a widespread custom; the Missal itself does not prescribe a recessional chant, as it does for the entrance and for Communion. Instrumental music is also common.",
+      "Leaving: remaining until the priest has left is a courtesy and custom, not a rule. As you leave your pew, genuflect toward the tabernacle, since all who pass before the Blessed Sacrament genuflect unless they are in procession (GIRM 274). If you cannot genuflect, a bow is fine.",
+      "Personal thanksgiving: many saints recommended staying a few minutes after Mass to thank God. The Church's law asks priests to give thanks after celebrating Mass (canon 909), and the Catechism calls a visit to the Blessed Sacrament “a proof of gratitude, an expression of love, and a duty of adoration” (CCC 1418). Conversation is best continued outside the church, out of respect for those still praying.",
+      "Going out: after the Ascension the disciples “returned to Jerusalem with great joy, and they were continually in the temple praising God” (Luke 24:52–53). The Mass sends Catholics out to live what they have celebrated.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1332", url: ccc("__P3Y") },
+        { paragraphs: "1418", url: ccc("__P44") },
+      ],
+      scripture: [
+        { passage: "Luke 24:50–53", url: bible("luke/24") },
+        { passage: "Psalm 84:2–5", url: bible("psalms/84") },
+      ],
+      documents: ["girm", "canon-law-eucharist"],
+    },
+    resources: ["ec-recessional", "ec-personal-thanksgiving", "usccb-concluding-rites"],
+    related: ["mass-dismissal", "mass-genuflection", "mass-reverence-to-the-altar", "mass-etiquette"],
   },
 ];

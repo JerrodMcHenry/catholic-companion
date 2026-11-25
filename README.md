@@ -20,3 +20,14 @@ npm run build
 ```
 
 Use `npm run typecheck` rather than `tsc` alone: the layout uses `LayoutProps`, a type Next.js generates into the gitignored `.next/types` folder.
+
+## Curriculum maintenance
+
+`docs/master-curriculum.md` is the plan for every topic. After adding topics or changing priorities or batches:
+
+```bash
+node scripts/curriculum.mjs          # check the inventory and print the counts
+node scripts/curriculum.mjs --write  # also regenerate the counts and batch tables and the ✓ marks
+```
+
+The check fails if a slug is listed twice, a P1 topic is in no batch (or two), a batched topic is not P1, or a ✓ mark does not match the topics in `content/topics`. Verification and review status for each topic is recorded in `docs/content-log.md`.
