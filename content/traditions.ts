@@ -53,7 +53,29 @@ export const traditions: Tradition[] = [
     resources: ["unitatis-redintegratio", "ca-are-catholics-christian", "ca-assurance-of-salvation", "ca-scripture-and-tradition"],
     related: ["catholic-and-protestant-differences", "did-jesus-found-a-church", "faith-and-works", "how-are-we-saved", "infant-baptism", "real-presence"],
   },
-  { slug: "eastern-orthodoxy", name: "Eastern Orthodoxy", group: "christian" },
+  {
+    slug: "eastern-orthodoxy",
+    name: "Eastern Orthodoxy",
+    group: "christian",
+    keywords: ["Orthodox", "Eastern Orthodox", "Orthodox Church", "Orthodox Christian", "Greek Orthodox", "Russian Orthodox", "Ecumenical Patriarch", "Patriarch of Constantinople", "Byzantine"],
+    overview: [
+      "The Eastern Orthodox Church is a communion of self-governing (autocephalous) Churches, among them the Ecumenical Patriarchate of Constantinople and the Russian Orthodox Church, which share one faith and one Eucharist. They trace their origins to the apostles and hold to Holy Tradition, which the Orthodox describe as “the very life of the Church itself” guided by the Holy Spirit. Scripture is its central written part, together with the Creed, the seven Ecumenical Councils, the Fathers, the liturgy, the canons, and the icons.",
+      "The Orthodox Churches are led by bishops in apostolic succession and make decisions in councils. Each Church has its own primate, and there is no single head with jurisdiction over all. The Ecumenical Patriarch of Constantinople holds the first place, though Orthodox Churches describe that primacy differently: the Moscow Patriarchate calls him “the first among equal Primates,” without powers of governance over the whole Church, while Metropolitan Elpidophoros of the Ecumenical Patriarchate has called him “first without equals.”",
+      "East and West grew apart over centuries, through differences of language and outlook, the Western addition of the filioque to the Creed, and, in the Orthodox view above all, papal claims to jurisdiction over all the Churches. The break is usually dated to 1054. In 1965 Pope Paul VI and Ecumenical Patriarch Athenagoras I committed the mutual excommunications of 1054 “to oblivion.”",
+      "Eastern Orthodoxy is distinct from the Oriental Orthodox Churches, which did not accept the Council of Chalcedon (451), and from the Eastern Catholic Churches, which share Eastern liturgical and spiritual traditions while in full communion with the bishop of Rome.",
+      "The Catholic Church teaches that the Orthodox Churches have true sacraments, above all the priesthood and the Eucharist, by apostolic succession, and that communion with them “lacks little” to be complete (CCC 838, 1399). A joint international commission carries on official theological dialogue. Its documents, such as the Ravenna Document (2007), are statements of the commission, not binding teaching of either Church; the Moscow Patriarchate, absent when it was adopted, disagreed with its section on primacy at the universal level.",
+    ],
+    differences: [
+      "The bishop of Rome: a primacy of honor among the Churches, or a primacy of universal jurisdiction",
+      "Papal infallibility, and how the Church's teaching authority is exercised",
+      "The filioque in the Creed",
+      "Teachings defined in the West after the separation, such as the Immaculate Conception and purgatory, and how they relate to Eastern theology",
+      "Some disciplines, such as the ordination of married men as priests (also the practice of the Eastern Catholic Churches)",
+    ],
+    sources: ["oca-orthodox-faith", "oca-holy-tradition", "oca-icons", "oca-great-schism", "oca-qa-pope-unity", "mospat-primacy-2013", "first-without-equals", "encyclical-eastern-patriarchs"],
+    resources: ["unitatis-redintegratio", "orientale-lumen", "orientalium-ecclesiarum", "common-declaration-1965", "ravenna-document", "ut-unum-sint"],
+    related: ["catholic-and-orthodox-differences", "what-is-sacred-tradition", "seven-sacraments", "real-presence", "mother-of-god"],
+  },
   { slug: "oriental-orthodoxy", name: "Oriental Orthodoxy", group: "christian" },
   { slug: "latter-day-saints", name: "Latter-day Saints", group: "christian" },
   {
@@ -76,7 +98,30 @@ export const traditions: Tradition[] = [
   },
 
   // Other religions
-  { slug: "judaism", name: "Judaism", group: "religion" },
+  {
+    slug: "judaism",
+    name: "Judaism",
+    group: "religion",
+    keywords: ["Jewish", "Jews", "Judaism", "Torah", "synagogue", "rabbi", "Tanakh", "Hebrew Bible", "Orthodox Judaism", "Conservative Judaism", "Reform Judaism", "Shema"],
+    overview: [
+      "Judaism is the religion of the Jewish people, centered on the one God, the covenant God made with Israel, and the Torah. Its central affirmation, the Shema, is recited every morning and evening: “Hear O’ Israel, the Lord is our God, the Lord is One” (Deuteronomy 6:4).",
+      "Judaism has a long history. The religion of ancient Israel is recorded in the Hebrew Bible. In the Second Temple period, when Jesus lived, Jewish life was diverse, with sharp debates over how to interpret the Torah and how to live under Roman rule. After the Romans destroyed the Temple in 70 CE, rabbinic Judaism grew around the study of the Torah and the oral tradition recorded in the Mishnah and Talmud, which shape Jewish practice today.",
+      "Maimonides' Thirteen Principles of Faith, recited in many congregations, include God's absolute unity and incorporeality, the divine origin of the Torah, the coming of the Messiah, and the resurrection of the dead. Jewish hopes for the Messiah have taken many forms: traditionally a descendant of David who will gather the Jewish people and bring an age of peace. The Reform movement reinterpreted the messianic hope, and many contemporary Jews have rejected belief in an individual messiah.",
+      "Jewish movements do not hold identical positions. Orthodox Judaism holds that the Torah and its oral interpretation were given at Sinai and are binding today; Conservative Judaism holds Jewish law binding while allowing more adaptation; Reform Judaism has emphasized the ethical aspects of the tradition and treats ritual practice more flexibly.",
+      "Jesus was born and lived as a Jew, as did his first followers. Jews do not believe that Jesus was the Messiah or the Son of God, though some have come to regard him as a Jewish teacher.",
+      "The Catholic Church teaches that the Jewish people were “the first to hear the Word of God” and that their faith is a response to God's revelation in the Old Covenant (CCC 839), a covenant that “has never been revoked” (CCC 121). The Second Vatican Council taught that Christ's passion “cannot be charged against all the Jews, without distinction, then alive, nor against the Jews of today,” and decried “hatred, persecutions, displays of anti-Semitism, directed against Jews at any time and by anyone” (Nostra Aetate 4; CCC 597).",
+      "Catholics and Jews have carried on formal dialogue since the Council. A 2015 reflection of the Vatican's Commission for Religious Relations with the Jews, which states that it is not a magisterial document, affirms that God's covenant with Israel is irrevocable and that the Catholic Church “neither conducts nor supports any specific institutional mission work directed towards Jews,” while Christians remain called to bear witness to Christ “in a humble and sensitive manner.”",
+    ],
+    differences: [
+      "Jesus: a Jewish teacher, or the Messiah and the Son of God",
+      "God: absolute oneness, or one God in three persons",
+      "The covenant: how God's covenant with Israel and the New Covenant in Christ relate",
+      "Scripture: the Hebrew Bible read with the rabbinic tradition, or the Old Testament read with the New",
+    ],
+    sources: ["mjl-shema", "chabad-thirteen-principles", "mjl-jewish-messianism", "mjl-jews-and-jesus", "mjl-orthodox-judaism", "mjl-conservative-judaism", "mjl-reform-judaism"],
+    resources: ["nostra-aetate", "gifts-and-calling"],
+    related: ["who-is-jesus", "what-is-the-trinity", "what-is-the-bible", "catholic-bible-books", "mass-in-scripture", "salvation-of-non-christians"],
+  },
   {
     slug: "islam",
     name: "Islam",

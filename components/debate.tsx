@@ -22,6 +22,8 @@ const externalLink = "font-medium text-accent underline decoration-line underlin
 
 export function DebateSections({ debate }: { debate: Debate }) {
   const several = debate.perspectives.length > 1;
+  // With one perspective there is no "From …" h3, so the response heading moves up a level.
+  const ResponseHeading = several ? "h4" : "h3";
   return (
     <>
       <section aria-labelledby="others" className="mt-12">
@@ -85,7 +87,7 @@ export function DebateSections({ debate }: { debate: Debate }) {
                         </svg>
                       </summary>
                       <div className="border-t border-line px-5 pt-4 pb-5">
-                        <h4 className="font-medium text-accent">Catholic response</h4>
+                        <ResponseHeading className="font-medium text-accent">Catholic response</ResponseHeading>
                         <p className="mt-2 leading-relaxed">{a.response}</p>
                         <AuthorityNote authority={a.authority} />
                       </div>

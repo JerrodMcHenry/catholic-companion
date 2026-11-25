@@ -109,7 +109,7 @@ export const maryAndSaints: Topic[] = [
       "Mary needed a Savior: her holiness “comes wholly from Christ: she is ‘redeemed, in a more exalted fashion, by reason of the merits of her Son’” (CCC 492). God preserved her in advance through the same grace that saves us.",
       "Why: God prepared Mary to give the free assent of faith at the Annunciation, “wholly borne by God's grace” (CCC 490). The angel greets her as one already filled with God's favor: “Hail, favored one!” (Luke 1:28). By God's grace Mary also remained free from personal sin throughout her life (CCC 493).",
       "Not the virgin birth: people often confuse the two. The Immaculate Conception concerns Mary's own conception by her parents; the virginal conception concerns Jesus, conceived by the Holy Spirit (CCC 496–498).",
-      "East and West: the Fathers of the Eastern tradition call Mary “the All-Holy” (Panagia) and celebrate her as free from any stain of sin (CCC 493). Christians of other traditions understand Mary's holiness in different ways, and not all accept the 1854 definition.",
+      "East and West: the Fathers of the Eastern tradition call Mary “the All-Holy” (Panagia) and celebrate her as free from any stain of sin (CCC 493). Orthodox and Protestant Christians understand Mary's holiness in different ways and have not accepted the 1854 definition; their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [{ paragraphs: "490–493, 496–498", url: ccc("__P1K") }],
@@ -122,6 +122,69 @@ export const maryAndSaints: Topic[] = [
     },
     resources: ["ca-immaculate-conception-assumption"],
     related: ["who-is-mary", "mother-of-god", "baptism", "papal-infallibility"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "From the first moment of her conception, Mary was preserved from all stain of original sin by a singular grace of God, in view of the merits of Jesus Christ, the Savior of the human race. She was redeemed, “in a more exalted fashion,” by her Son. Pope Pius IX defined this as a dogma in 1854 (CCC 491–492).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants generally hold that Scripture does not teach the Immaculate Conception and that every human being except Christ inherits original sin. They point to Mary's own words, “my spirit rejoices in God my savior” (Luke 1:47), and to Paul's teaching that “all have sinned and are deprived of the glory of God” (Romans 3:23). The Westminster Confession teaches that the corruption of original sin is “conveyed to all their posterity descending from them by ordinary generation” (6.3).",
+          arguments: [
+            {
+              claim: "Mary called God her Savior (Luke 1:47), so she was a sinner who needed saving.",
+              response:
+                "Catholics agree that Mary needed a Savior. The dogma says she was preserved “by virtue of the merits of Jesus Christ, Saviour of the human race” (CCC 491): she was “redeemed, in a more exalted fashion, by reason of the merits of her Son” (CCC 492), saved in advance rather than cleansed afterward.",
+              authority: "doctrine",
+            },
+            {
+              claim: "“All have sinned” (Romans 3:23) leaves no room for exceptions.",
+              response:
+                "Catholics read Paul as describing humanity's universal need for grace rather than listing every individual; Christ himself is the obvious exception. The Church holds that God's grace also preserved Mary, so that her holiness “comes wholly from Christ” (CCC 492).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The doctrine is not in Scripture and was defined only in 1854.",
+              response:
+                "The Church holds that this truth belongs to revelation and was grasped more fully over time: “Through the centuries the Church has become ever more aware that Mary, ‘full of grace’ through God, was redeemed from the moment of her conception” (CCC 491). Catholics cite the angel's greeting, “Hail, favored one!” (Luke 1:28), and the Eastern Fathers' title for Mary, “the All-Holy” (CCC 493).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession"],
+        },
+        {
+          tradition: "eastern-orthodoxy",
+          position:
+            "Orthodox Christians venerate the Mother of God as all-holy and celebrate her as free from personal sin, but the Orthodox Churches have not accepted the 1854 definition. In an explanation published by the Orthodox Church in America, Mary, as a human being, “could indeed have sinned, but chose not to,” and the Orthodox “do not accept that humans share the guilt of the first sin but, rather, only the consequences.” Mary herself calls God her Savior (Luke 1:47).",
+          variations:
+            "The same Orthodox source notes that the Orthodox Church has not developed as detailed a Marian theology as the West, and Orthodox explanations of Mary's holiness vary in emphasis.",
+          arguments: [
+            {
+              claim: "The doctrine assumes that everyone inherits the guilt of Adam's sin, which the Orthodox do not accept.",
+              response:
+                "Part of this difference is terminology. The Catechism teaches that original sin “does not have the character of a personal fault in any of Adam's descendants”; it is “a deprivation of original holiness and justice” (CCC 405). The dogma affirms that Mary possessed grace and holiness from her first moment, not that others bear personal guilt for Adam's act. Substantive questions remain about how East and West understand original sin and whether this definition was needed.",
+              authority: "doctrine",
+            },
+            {
+              claim: "If Mary was preserved from sin from conception, her free “yes” at the Annunciation would mean less.",
+              response:
+                "The Church teaches that grace makes freedom possible rather than removing it: Mary gave “the free assent of her faith” at the Annunciation because she was “wholly borne by God's grace” (CCC 490), and she gave herself to her Son's work “without a single sin to restrain her” (CCC 494).",
+              authority: "doctrine",
+            },
+            {
+              claim: "The pope defined this dogma alone, without an ecumenical council of East and West.",
+              response:
+                "Catholics hold that the pope's solemn definitions express the infallibility of the whole Church (CCC 891) and that the definition expressed a faith already present, including in the Eastern liturgy's praise of the Mother of God as “All-Holy” and free from every stain (CCC 493). How doctrines defined in the West after the separation relate to Eastern theology remains a question for Catholic–Orthodox dialogue.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["oca-qa-sinlessness-of-mary"],
+        },
+      ],
+    },
   },
   {
     slug: "what-is-a-saint",
@@ -198,7 +261,7 @@ export const maryAndSaints: Topic[] = [
       "The Incarnation changes things: in Jesus the invisible God became visible. On this basis the Second Council of Nicaea (787) defended the veneration of icons of Christ, Mary, the angels, and the saints against those who wanted them destroyed (CCC 2131).",
       "Veneration, not worship: “the honor rendered to an image passes to its prototype,” and the honor paid to sacred images is “a respectful veneration, not the adoration due to God alone” (CCC 2132). Trent taught the same: no divinity or power is believed to be in images; the honor shown them is referred to those they represent (Session 25).",
       "In practice: kneeling before a crucifix or kissing an icon is like kissing a photograph of someone you love; the gesture is directed to the person, not the material object.",
-      "Other views: Christians differ on the use of images in worship, and Jewish and Muslim traditions understand the commandment against images in their own ways. Catholics agree that only God may be worshiped and answer that veneration of images, rightly understood, is not worship.",
+      "Other views: Reformed Protestants, Muslims, and Jews understand the commandment against images in their own ways. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [{ paragraphs: "2129–2132", url: ccc("__P7F") }],
@@ -208,9 +271,78 @@ export const maryAndSaints: Topic[] = [
         { passage: "Numbers 21:8–9", url: bible("numbers/21") },
         { passage: "Colossians 1:15", url: bible("colossians/1") },
       ],
-      documents: ["trent-session-25"],
+      documents: ["nicaea-ii", "trent-session-25"],
     },
     resources: ["ca-worship-statues", "ca-saint-worship"],
     related: ["why-honor-mary", "what-is-a-saint", "incarnation", "praying-to-saints"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Worship belongs to God alone. Christians may make and venerate images of Christ, Mary, the angels, and the saints because the Son of God became visible in the Incarnation. The honor paid to an image passes to the person it represents and is a respectful veneration, not adoration (Second Council of Nicaea, 787; CCC 2131–2132).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "The Reformed tradition holds that the second commandment forbids any image of God and any use of images in worship. The Heidelberg Catechism teaches that “God can not and may not be visibly portrayed in any way,” and that images should not be permitted in churches, because God wants his people “instructed by the living preaching of his Word” (Questions 97–98).",
+          variations:
+            "The Westminster Larger Catechism likewise forbids “the making any representation of God, of all or of any of the three persons” (Question 109). The Heidelberg Catechism allows that creatures may be portrayed, but not worshiped or used to serve God (Question 97). Protestant churches differ in their practice.",
+          arguments: [
+            {
+              claim: "The second commandment forbids making images (Exodus 20:4–5).",
+              response:
+                "God forbade Israel to make any image of him (CCC 2129), yet he himself commanded images for his sanctuary, such as the cherubim of the ark, and the bronze serpent (Exodus 25:18–22; Numbers 21:8–9; CCC 2130). The commandment forbids idols, not every image.",
+              authority: "doctrine",
+            },
+            {
+              claim: "God cannot be portrayed, so an image of Christ either divides his natures or tries to depict his divinity.",
+              response:
+                "In Christ the invisible God became visible: he is “the image of the invisible God” (Colossians 1:15). An icon portrays the incarnate Son as he was seen, which is the basis on which the Second Council of Nicaea defended icons (CCC 2131). St. John of Damascus wrote: “I do not worship matter, I worship the God of matter, who became matter for my sake.”",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["heidelberg-catechism", "westminster-larger-catechism"],
+        },
+        {
+          tradition: "islam",
+          position:
+            "Islam calls people to worship the one God alone and condemns associating anything with him. The Qur'an recalls Abraham's challenge to his father and his people: “What are these statues to which you are so devoted?” (21:52). A hadith in Sahih al-Bukhari reports the Prophet saying that angels “do not enter a house wherein there is a dog or a picture of a living creature” (3225).",
+          arguments: [
+            {
+              claim: "Bowing before statues and images is a form of associating creatures with God.",
+              response:
+                "Catholics agree that giving worship to any creature would be idolatry. The honor shown to images is “not the adoration due to God alone” (CCC 2132), and the Church teaches that no divinity or power is believed to be in images (Council of Trent, Session 25). The deeper difference is the Incarnation: Catholics believe God became man in Jesus and so can be depicted, which Muslims do not accept (see “Is Jesus truly God?”).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["quran-21-52", "bukhari-3225"],
+        },
+        {
+          tradition: "judaism",
+          position:
+            "Jewish tradition holds that God has no body or form and forbids worshiping any image (Exodus 20:3–5). Maimonides ruled that even decorative images of gold and silver may not be made, “lest others err and view them as deities,” and forbade decorative sculptures of the human form, while permitting engraved or painted portraits (Mishneh Torah, Foreign Worship and Customs of the Nations 3:10).",
+          variations:
+            "Jewish thought also distinguishes holy objects from idols. Reflecting on the golden calf, Rabbi Elliot Kukla writes that the problem with idols is that “instead of serving as symbols of holiness, they replace holiness.”",
+          arguments: [
+            {
+              claim: "God forbade Israel to make images, and Christian images break that commandment.",
+              response:
+                "Catholics affirm that God, who revealed himself to Israel without any visible form, forbade every representation of himself (CCC 2129), a commandment the Church received from Israel. They also note that God commanded images for the sanctuary, such as the cherubim of the ark (Exodus 25:18–22; CCC 2130). Catholics believe that by becoming incarnate the Son of God introduced a new “economy” of images (CCC 2131), a conviction rooted in faith in Jesus that Jews do not share.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["sefaria-mt-images", "mjl-idolatry", "chabad-thirteen-principles"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. John of Damascus",
+          work: "Apologia Against Those Who Decry Holy Images (c. 730)",
+          note: "Defends icons from the Incarnation: “I do not worship matter, I worship the God of matter, who became matter for my sake.”",
+          url: "https://sourcebooks.fordham.edu/basis/johndamascus-images.asp",
+        },
+      ],
+    },
   },
 ];

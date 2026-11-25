@@ -405,7 +405,7 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 | Debate section | Perspective sources | Early Church | Open questions for review |
 |---|---|---|---|
-| `are-catholics-christians` | Augsburg (Conclusion of Part I); Westminster 25; NAE | Ignatius, Smyrnaeans 8 | **R:** the summary of evangelical doubts is general, not sourced to one statement |
+| `are-catholics-christians` | Augsburg (Conclusion of Part I); Westminster 25; NAE | Ignatius, Smyrnaeans 8 | **R:** fairness of the Protestant summary (the unsourced clause on evangelical doubts was removed in Batch 11) |
 | `real-presence` | Augsburg X; Smalcald III.6; Westminster 29.7; Baptist Faith and Message VII | Ignatius, Smyrnaeans 7; Justin 66 | The John 6:63 response is labelled an apologetic argument |
 | `mass-in-scripture` | Westminster 29.2; Augsburg XXIV; Baptist Faith and Message VII | Didache 14; Justin 67 | |
 | `infant-baptism` | Baptist Faith and Message VII; Augsburg IX; Westminster 28.4 | (Pastoralis Actio, already cited) | |
@@ -413,6 +413,74 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `who-can-receive-communion` | Augsburg XXIV; Westminster 29.8; Baptist Faith and Message VII | Justin 66 | **R** (carried over) |
 | `why-confess-to-a-priest` | Westminster 15.6; Augsburg XI | Didache 4; Cyprian, On the Lapsed 28 | |
 | `catholic-bible-books` | Westminster 1.3 | Augustine, On Christian Doctrine 2.8 | Anglican and Lutheran views of these books are not stated until sourced |
+
+## Batch 11: Apologetics III, Eastern Orthodoxy and Judaism (2026-11-25)
+
+**Batch 10 follow-up:**
+
+- **Accessibility and keyboard checks** (automated, in Chrome against the production build), run on 23 pages: the Batch 10 and 11 debate topics, the tradition pages, Apologetics, Resources, Search, and Saved.
+  - Checks: language, one h1, heading order, landmarks, duplicate ids, unnamed controls, broken aria-labelledby, and notices on new-tab links.
+  - One defect predated this batch: in debate sections with a single perspective, the “Catholic response” heading jumped from h2 to h4. `components/debate.tsx` now uses h3 when there is no “From …” subheading. All 23 pages then passed.
+  - Keyboard (real key presses): the skip link comes first, focus order follows the page, every stop shows a visible outline, Enter opens an argument disclosure, and Space toggles Save (stored under the unchanged bookmark key). The test bookmark was then cleared.
+- **Denominational review of the eight Batch 10 sections:** Lutheran, Reformed, and Baptist positions are already distinguished where they differ (Eucharistic presence, the sacrifice of the Mass, infant baptism, admission to Communion, private absolution). Denominations are not added where they have no distinct objection (for example, `catholic-bible-books` cites only Westminster until the Anglican and Lutheran research is done). One unsourced clause, that “some evangelicals question whether Catholic teaching presents that Gospel clearly,” was removed from `are-catholics-christians`; the sentence now cites only the NAE Statement of Faith.
+
+**Built:**
+
+- **Eastern Orthodoxy page** covers:
+  - autocephalous Churches, apostolic origins, and Holy Tradition (OCA);
+  - bishops, councils, and differing Orthodox accounts of Constantinople's primacy (Moscow Patriarchate 2013; Metropolitan Elpidophoros);
+  - the separation (an Orthodox account in the OCA history) and the 1965 lifting of the excommunications;
+  - how it differs from the Oriental Orthodox and Eastern Catholic Churches;
+  - Catholic teaching (CCC 838, 1399);
+  - the status of the Ravenna Document: a commission statement, not binding teaching of either Church, with Moscow's disagreement noted.
+- **Judaism page** covers:
+  - the Shema and the Torah;
+  - ancient Israel, the Second Temple period, and rabbinic Judaism after 70 CE;
+  - Maimonides' Thirteen Principles;
+  - the range of messianic belief;
+  - Orthodox, Conservative, and Reform positions, kept distinct;
+  - Jesus as a Jew, and Jewish views of him;
+  - Catholic teaching (CCC 839, 121, 597; Nostra Aetate 4, including the rejection of collective blame and of antisemitism);
+  - the 2015 Vatican reflection, described as it describes itself: not a magisterial document.
+- **Debate sections:**
+  - `peter-the-rock` and `papal-infallibility`: Eastern Orthodox perspectives added. Both are now complete; their prose Orthodox paragraphs were shortened to pointers.
+  - `immaculate-conception` (Protestant, Orthodox), `purgatory` (Protestant, Orthodox), and `statues-and-images` (Protestant, Islam, Judaism): new.
+  - The Orthodox perspectives separate terminology from substance. On the Immaculate Conception: inherited guilt versus CCC 405. On purgatory: a “third state” versus CCC 1031, and Orthodox variety, including Dositheus Decree 18.
+- **Search:**
+  - “Papal primacy” was added as an alternative name of `peter-the-rock`.
+  - “Differences between Catholics and Orthodox” was added as an alternative name of the comparison topic. The new Orthodox content had lowered the weight of “Orthodox” and let the catechumen page outrank it again.
+
+**Verification (Batch 11):**
+
+- **Orthodox sources** (Orthodox-authored or official), read in full where quoted:
+  - OCA, Fr. Thomas Hopko, *The Orthodox Faith*: Tradition, councils, icons, the Church; and the OCA history pages on the Great Schism and Chalcedon.
+  - OCA Questions & Answers: “The Pope & Christian Unity,” “Infallibility,” “Sinlessness of Mary,” “Indulgences,” and “Prayers for the Departed.”
+  - Fr. John Breck, “May We Pray for the Departed?” (OCA).
+  - Moscow Patriarchate, *Position … on the Problem of Primacy* (2013, mospat.ru).
+  - Metropolitan Elpidophoros, “First Without Equals” (copy hosted by the Society of Saint John Chrysostom).
+  - *Encyclical of the Eastern Patriarchs* (1848, Fordham Internet History Sourcebooks).
+  - Confession of Dositheus, Decree 18, read in the Latin and Greek on CCEL; the English summary there is by the Protestant historian Schaff and was not relied on.
+- **Jewish sources** (Jewish-authored):
+  - My Jewish Learning: “The Shema,” “Jewish Messianism,” “What Do Jews Believe About Jesus?,” “Orthodox Judaism,” “Conservative Judaism,” “Reform Judaism,” Rabbi Louis Jacobs on the denominations, and Rabbi Elliot Kukla, “Idolatry Everywhere.”
+  - Chabad.org, the Thirteen Principles; Maimonides, *Mishneh Torah*, Foreign Worship 3:10 (Sefaria). Chabad and Sefaria were read in a browser because they refuse scripted requests.
+- **Islamic sources:** Qur'an 21:52 (Quran.com) and Sahih al-Bukhari 3225 (Sunnah.com), read in a browser.
+- **Reformed sources:** Heidelberg Catechism 96–98 (CRCNA); Westminster Larger Catechism 109 and Confession 6.3 (OPC). **Lutheran:** Smalcald Articles II.2.
+- **Catholic sources:**
+  - Nostra Aetate 4; Lumen Gentium 25; Ut Unum Sint 95; Pastor Aeternus 4 (Latin); Ravenna 41, 43, 45.
+  - “The Gifts and the Calling” (2015, christianunity.va); Orientale Lumen; Second Council of Nicaea (decree on images).
+  - Augustine, Confessions 9.11; John of Damascus on images (Fordham).
+  - CCC 121, 405, 490–494, 597, 838–840, 882, 889, 891, 1030–1032, 1472, 2129–2132: quotations compared word for word with the vatican.va cache, and all 288 linked references checked (0 problems).
+- **Scripture:** new NABRE quotations checked on bible.usccb.org in a browser (Luke 1:47, Romans 3:23, Colossians 1:15, Matthew 12:32); the others were verified in earlier batches.
+- **Not accessible:** the Greek Orthodox Archdiocese of America (goarch.org) shows a bot-protection challenge to scripts and to the browser, which was not bypassed, so none of its material is used. The Word on Fire article on the Immaculate Conception returned 404.
+- **Search:** 151 of 151 regression checks pass (11 new). **Build:** 158 static pages; 1,861 internal links, 0 problems. All resource and topic ids are unchanged (additions only).
+
+| Debate section | Perspectives (sources) | Early Church | Open questions for review |
+|---|---|---|---|
+| `peter-the-rock` | Protestant (existing); **Orthodox** (OCA Q&A, OCA history, Moscow 2013, Elpidophoros) | Irenaeus; Cyprian (existing) | **R:** the Chalcedon example presents both readings |
+| `papal-infallibility` | Protestant (existing); **Orthodox** (OCA Q&A; Encyclical of 1848) | | **R** |
+| `immaculate-conception` | Protestant (Westminster 6.3); Orthodox (OCA Q&A) | | **R:** the terminology-versus-substance analysis of original sin |
+| `purgatory` | Protestant (Westminster 32.1; Smalcald II.2); Orthodox (OCA Q&A ×2, Breck, Dositheus 18) | Augustine, Confessions 9.11 | **R:** the summary of Orthodox variety |
+| `statues-and-images` | Protestant (Heidelberg 96–98; Larger Catechism 109); Islam (Qur'an 21:52; Bukhari 3225); Judaism (Mishneh Torah; Kukla; Thirteen Principles) | John of Damascus | **R:** the Islamic and Jewish summaries; Lutheran practice not stated (unsourced) |
 
 ## Pending verification (carried forward)
 
@@ -431,12 +499,13 @@ These stay open until checked against an authoritative source; topics describe t
 - The OCIA ritual's text for the Rites of Acceptance, Welcoming, and Election, the Call to Continuing Conversion, and the Scrutinies (Batch 6 relies on catechetical guides).
 - Which translation the current U.S. Lectionary for Mass uses (not stated in `which-bible-translation` until verified).
 - The Anglican Thirty-Nine Articles, Article VI, on the deuterocanonical books (page did not load; Anglican views not stated).
-- An Eastern Orthodoxy tradition page with verified Orthodox primary sources, so that the Orthodox perspectives on `peter-the-rock` and `papal-infallibility` can become formal debate perspectives (Batch 8 presents them in prose, citing the Ravenna Document).
+- Greek Orthodox Archdiocese of America sources (goarch.org blocked automated and browser access in Batch 11); other Orthodox jurisdictions' official statements beyond the OCA, Moscow, and the Ecumenical Patriarchate could broaden the Orthodox perspectives.
+- Anglican and Lutheran positions on the deuterocanonical books (`catholic-bible-books`): still unresearched; Thirty-Nine Articles page did not load.
 - **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
 - Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
 - Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, and in Batch 9 the teaching on hell, salvation outside the Church, and justification.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages.
 
 ## Earlier topics (Phases 2–4)
 

@@ -377,7 +377,7 @@ export const apologeticsTopics: Topic[] = [
     slug: "peter-the-rock",
     title: "Peter the Rock",
     question: "Did Jesus make Peter the leader of the apostles?",
-    alsoKnownAs: ["Petrine primacy", "Matthew 16:18", "Papacy in Scripture", "Keys of the kingdom"],
+    alsoKnownAs: ["Petrine primacy", "Matthew 16:18", "Papacy in Scripture", "Keys of the kingdom", "Papal primacy"],
     category: "church",
     keywords: ["Peter the rock", "you are Peter", "upon this rock", "keys of the kingdom", "Isaiah 22", "feed my sheep", "Petros petra", "first pope", "primacy of Peter", "is the pope in the Bible", "Cephas", "strengthen your brothers"],
     summary:
@@ -387,7 +387,7 @@ export const apologeticsTopics: Topic[] = [
       "The keys: Catholics read the keys in light of Isaiah 22, where the king's steward receives “the key of the House of David” and authority over the household, an office passed from one holder to the next (Isaiah 22:20–22). The Catechism says the keys designate “authority to govern the house of God, which is the Church” (CCC 553).",
       "Peter among the apostles: Peter is named first in the lists of apostles, speaks for them, preaches first at Pentecost, and leads the decision to welcome Gentiles (Acts 2; 10; 15:7). Christ “made Simon alone… the ‘rock’ of his Church” and the office of binding and loosing was also given to the college of apostles united to its head (CCC 881).",
       "Successors: Catholics believe this office, like the apostles' office of shepherding, is permanent and continues in the bishop of Rome, “the perpetual and visible source and foundation of the unity both of the bishops and of the whole company of the faithful” (CCC 882). The First Vatican Council defined this primacy as a dogma in 1870 (Pastor Aeternus).",
-      "The Orthodox view: Orthodox Christians honor Peter and agree that Rome held first place among the churches in the first millennium. In the Ravenna Document (2007), a joint Catholic–Orthodox commission agreed that Rome “occupied the first place” and that the bishop of Rome was the “protos” among the patriarchs, but noted disagreement about the interpretation of his prerogatives and about the scriptural and theological foundations of universal primacy (Ravenna 41, 43). St. John Paul II invited other Christians into a “patient and fraternal dialogue” on how the primacy is exercised (Ut Unum Sint 95–96).",
+      "The Orthodox view: Orthodox Christians honor Peter and agree that Rome held first place among the churches in the first millennium, but understand that primacy differently; their view and the Catholic responses are set out below. St. John Paul II invited other Christians into a “patient and fraternal dialogue” on how the primacy is exercised (Ut Unum Sint 95–96).",
     ],
     teaching: {
       catechism: [
@@ -441,6 +441,28 @@ export const apologeticsTopics: Topic[] = [
           ],
           sources: ["westminster-confession"],
         },
+        {
+          tradition: "eastern-orthodoxy",
+          position:
+            "Orthodox Christians honor Peter as the first of the apostles and agree that in the first millennium the bishop of Rome held the first place among the Churches. They deny that this was a primacy of universal jurisdiction. In the words of the Orthodox Church in America, the early councils, “while acknowledging the Pope as the ‘first among equals,’ in no way envision the Bishop of Rome's ‘primacy of honor’ as a ‘supremacy of jurisdiction.’” From the Orthodox perspective, papal claims to jurisdiction over all the Churches were the chief cause of the separation of East and West.",
+          variations:
+            "Orthodox Churches agree in rejecting papal supremacy but describe primacy among themselves differently. The Moscow Patriarchate (2013) holds that the primacy of honour once held by Rome passed to the Patriarch of Constantinople “as the first among equal Primates of Local Orthodox Churches,” carrying no powers of governance over the whole Church, and it disagreed with the Ravenna Document's section on primacy at the universal level. Metropolitan Elpidophoros of the Ecumenical Patriarchate replied that the Ecumenical Patriarch is “first without equals” (primus sine paribus).",
+          arguments: [
+            {
+              claim: "The early Church knew a primacy of honor, not of jurisdiction; the councils' canons give the bishop of Rome no authority over other Churches.",
+              response:
+                "Catholics and Orthodox agree that Rome held the first place in the first millennium. The joint commission records that they disagree on how to interpret the evidence about the bishop of Rome's prerogatives, which “was already understood in different ways in the first millennium” (Ravenna 41). Both sides cite the Council of Chalcedon (451): an Orthodox account records that the bishops cried out at the reading of Pope Leo's letter, “Peter has spoken through Leo!”, and adds that the letter “was not the last word” but was examined by the council. Catholics see there a recognized Petrine authority; Orthodox see conciliar reception.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Christ alone is the head of the Church; its unity comes from the one faith and the one Eucharist, not from one bishop's jurisdiction.",
+              response:
+                "Catholics agree that Christ is the head of the Church and that the Eucharist makes the Church. They hold that Christ also gave the Church a visible principle of unity in Peter and his successors (CCC 882). St. John Paul II acknowledged the difficulties the papacy has caused other Christians and committed himself “to find a way of exercising the primacy which, while in no way renouncing what is essential to its mission, is nonetheless open to a new situation” (Ut Unum Sint 95).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["oca-qa-pope-unity", "oca-great-schism", "mospat-primacy-2013", "first-without-equals"],
+        },
       ],
       fathers: [
         {
@@ -473,7 +495,7 @@ export const apologeticsTopics: Topic[] = [
       "Part of a larger gift: Christ willed to give his whole Church a share in his own infallibility, so that the People of God “unfailingly adheres” to the faith (CCC 889). The bishops united with the pope also teach infallibly when they define a doctrine together, above all in an ecumenical council, or when, dispersed throughout the world, they agree on a doctrine to be held definitively (CCC 891; Lumen Gentium 25). How doctrines are classified is explained in “What is a dogma?”",
       "Examples: the two clearest papal definitions are the Immaculate Conception (1854) and the Assumption of Mary (1950) (CCC 491, 966).",
       "Scripture: Catholics see the basis in Christ's prayer that Peter's faith would not fail (Luke 22:32), his promise that the Spirit would guide the apostles “to all truth” (John 16:13), and the Church as “the pillar and foundation of truth” (1 Timothy 3:15).",
-      "Other Christians: the Orthodox Churches do not accept the First Vatican Council's teaching on papal primacy and infallibility, and how that teaching should be understood in light of the first millennium is an open question in Catholic–Orthodox dialogue (Ravenna 45). Most Protestant churches hold that popes and councils can err.",
+      "Other Christians: the Orthodox Churches and most Protestant churches do not accept papal infallibility. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -518,6 +540,28 @@ export const apologeticsTopics: Topic[] = [
             },
           ],
           sources: ["westminster-confession", "formula-of-concord"],
+        },
+        {
+          tradition: "eastern-orthodoxy",
+          position:
+            "According to the Orthodox Church in America, “Orthodoxy does not believe in the infallibility of the Pope of Rome, nor of any other individual. Orthodoxy upholds the reality that the Church, gathered together in Council under the inspiration of the Holy Spirit, is guided in making correct decisions and in enunciating truth.” The Orthodox Churches have not accepted the First Vatican Council's definitions on papal primacy and infallibility.",
+          variations:
+            "The Encyclical of the Eastern Patriarchs (1848), written in reply to Pope Pius IX, expressed the conviction that the faith is safeguarded by the whole Church: “the protector of religion is the very body of the Church, even the people themselves.”",
+          arguments: [
+            {
+              claim: "Infallibility belongs to the whole Church gathered in council, not to one bishop.",
+              response:
+                "Catholics agree that infallibility is first a gift to the whole Church: the People of God, guided by the Spirit, “unfailingly adheres” to the faith (CCC 889), and the bishops teach infallibly together, above all in an ecumenical council (CCC 891). The disagreement is whether the bishop of Rome can, in certain solemn acts, express that infallibility of the Church on his own, as the First Vatican Council taught.",
+              authority: "doctrine",
+            },
+            {
+              claim: "Saying that papal definitions are irreformable without the consent of the Church sets the pope above the Church.",
+              response:
+                "The Second Vatican Council repeats that such definitions are irreformable “of themselves, and not from the consent of the Church” (Lumen Gentium 25). Catholics read this as excluding a later veto, not as separating the pope from the Church's faith: he defines what belongs to the deposit of faith, and the Spirit's assistance is given to guard it, not to reveal new doctrine. How the First Vatican Council's teaching should be understood in light of the first millennium is, in the joint commission's words, a crucial question for dialogue (Ravenna 45).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["oca-qa-infallibility", "encyclical-eastern-patriarchs"],
         },
       ],
     },

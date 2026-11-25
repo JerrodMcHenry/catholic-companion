@@ -205,7 +205,7 @@ export const salvation: Topic[] = [
       "Praying for the dead: the doctrine is tied to the ancient practice of praying for the dead, already found in Scripture: Judas Maccabeus “made atonement for the dead that they might be absolved from their sin” (2 Maccabees 12:46; CCC 1032). The Church offers prayer, the Eucharist, almsgiving, and penance for them (CCC 1032).",
       "Scripture: Catholics also point to Paul's words that on the day of judgment a person's work will be tested and “the person will be saved, but only as through fire” (1 Corinthians 3:15), and to the teaching that nothing unclean enters the heavenly city (Revelation 21:27).",
       "Doctrine and imagery: the doctrine itself is the reality of purification after death and the value of prayer for the dead. How it happens is not defined. The tradition speaks of a “cleansing fire” (CCC 1031); Pope Benedict XVI noted that some recent theologians understand that fire as Christ himself, whose loving gaze burns away all that is false and heals us (Spe Salvi 47). That is a theological opinion, not a defined teaching.",
-      "Other Christians: many Protestants reject purgatory; the Westminster Confession, for example, holds that besides heaven and hell, “for souls separated from their bodies, the Scripture acknowledgeth none” (32.1). Other Christian perspectives are planned for a questions-and-objections section on this topic.",
+      "Other Christians: many Protestants reject purgatory, and Orthodox Christians pray for the departed while not accepting the Western doctrine as it is formulated. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -222,6 +222,67 @@ export const salvation: Topic[] = [
     },
     resources: ["ca-purgatory", "ascension-purgatory", "westminster-confession"],
     related: ["what-happens-when-we-die", "heaven", "mass-intercessions", "catholic-bible-books"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "All who die in God's grace and friendship but still imperfectly purified are assured of their salvation, and after death they undergo purification to reach the holiness needed for heaven. This final purification of the elect is “entirely different from the punishment of the damned,” and the faithful help those being purified by their prayers, above all the Eucharist. The Church formulated this teaching at the Councils of Florence and Trent (CCC 1030–1032).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Most Protestants hold that Christ's sacrifice fully atones for the sins of believers, who go to be with the Lord at death, so there is no purification after death. The Westminster Confession teaches that besides heaven and hell, “for souls separated from their bodies, the Scripture acknowledgeth none” (32.1).",
+          variations:
+            "The Lutheran Smalcald Articles objected especially to the belief that the Mass frees souls from sins “in purgatory,” insisting that “only the Lamb of God shall and must do this” (Part II, Article II).",
+          arguments: [
+            {
+              claim: "Purgatory denies that Christ's sacrifice is sufficient.",
+              response:
+                "Catholics believe Christ's sacrifice alone saves. Those being purified are already saved (CCC 1030); purification completes Christ's work in them rather than adding a payment to it. Paul speaks of a person whose work is tested on the day of judgment who “will be saved, but only as through fire” (1 Corinthians 3:15).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Purgatory is not in Scripture, and 2 Maccabees is not even in the Protestant Bible.",
+              response:
+                "The prayer for the dead in 2 Maccabees 12:46 belongs to the Old Testament the Church received (see “Why do Catholic Bibles have more books?”). The Church also cites Christ's words about sin that will not be forgiven “either in this age or in the age to come” (Matthew 12:32; CCC 1031) and the Church's practice of praying for the dead from the beginning (CCC 1032).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession", "smalcald-articles-ii"],
+        },
+        {
+          tradition: "eastern-orthodoxy",
+          position:
+            "Orthodox Christians pray for the departed constantly: at death, at the funeral, on the third, ninth, and fortieth days, and on anniversaries, convinced that the living and the departed are united in the communion of saints. But the Orthodox Churches have not accepted the Western doctrine of purgatory. The Orthodox Church in America explains that it “does not believe in purgatory as a ‘third’ or ‘alternate’ state to heaven and hell,” and that there is no concept of indulgences in Orthodox Christianity.",
+          variations:
+            "Orthodox explanations of the state of the departed vary. The Confession of Dositheus, adopted by the Synod of Jerusalem in 1672, taught that the souls of those who repented but did not bring forth fruits of repentance suffer for their sins after death and can be delivered through the prayers of priests, the almsgiving of their relatives, and above all the bloodless sacrifice of the Liturgy (Decree 18). It does not use the word purgatory.",
+          arguments: [
+            {
+              claim: "Purgatory turns the afterlife into a third place of punishment between heaven and hell.",
+              response:
+                "Catholics agree that there is no third final destiny. Purgatory is the final purification of those already saved, “entirely different from the punishment of the damned” (CCC 1031). The Church does not define how this purification takes place; Pope Benedict XVI noted that some theologians understand the purifying fire as Christ himself, whose gaze heals “through an undeniably painful transformation” (Spe Salvi 47).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Legal ideas of temporal punishment and indulgences are foreign to an Eastern understanding of salvation as healing.",
+              response:
+                "Catholic teaching also speaks of purification as healing. The Catechism says temporal punishment “must not be conceived of as a kind of vengeance inflicted by God from without, but as following from the very nature of sin” (CCC 1472), and Spe Salvi calls the encounter with Christ “a blessed pain” (47). Catholics and Orthodox share prayer for the departed; the open question is how to express what that prayer achieves.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["oca-qa-prayers-for-departed", "oca-qa-indulgences", "oca-breck-pray-for-departed", "confession-of-dositheus"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Augustine of Hippo",
+          work: "Confessions, Book 9, Chapter 11 (c. 397)",
+          note: "His dying mother, St. Monica, asks: “This only I ask, that you will remember me at the Lord's altar, wherever you be.”",
+          url: "https://www.newadvent.org/fathers/110109.htm",
+        },
+      ],
+    },
   },
   {
     slug: "salvation-of-non-christians",
