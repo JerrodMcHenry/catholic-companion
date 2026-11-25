@@ -83,12 +83,14 @@ export const mass: Topic[] = [
     explanation: [
       "Jesus rose “on the first day of the week,” and Christians call it the Lord's Day. It recalls the first day of creation and the “eighth day” of the new creation begun by the Resurrection. Already in the New Testament, Christians gathered “on the first day of the week” to break bread (Acts 20:7).",
       "The Church's law says that on Sundays and other holy days of obligation, the faithful are obliged to participate in the Mass, and that a Mass celebrated anywhere in a Catholic rite, on the day itself or on the evening before, fulfills the obligation (canons 1247–1248).",
-      "The obligation does not bind someone with a serious reason, such as illness or caring for infants, or someone dispensed by their pastor. The Catechism teaches that deliberately failing to attend without such a reason is a grave sin, because the Sunday Eucharist is “the foundation and confirmation of all Christian practice.”",
+      "The obligation does not bind someone with a serious reason, such as illness or caring for infants, or someone dispensed by their pastor. The Catechism teaches that those who deliberately fail in this obligation commit a grave sin, because the Sunday Eucharist is “the foundation and confirmation of all Christian practice” (CCC 2181).",
+      "Grave matter is not the same as mortal sin. Missing Mass without a serious reason is grave matter. It is a mortal sin only when it is also done with full knowledge and deliberate consent (CCC 1857–1859); without these, the sin is venial (CCC 1862). The Catechism adds that while we can judge that an act is gravely wrong, we must entrust the judgment of persons to God's justice and mercy (CCC 1861). Anyone unsure about their own situation can talk with a priest, especially in Confession.",
       "Sunday is also a day of rest: Catholics are asked to set aside work and activities that get in the way of worship, joy, works of mercy, and rest. Pope John Paul II's letter Dies Domini explores the meaning of Sunday in depth.",
     ],
     teaching: {
       catechism: [
         { paragraphs: "1166–1167", url: ccc("__P39") },
+        { paragraphs: "1857–1862", url: ccc("__P6C") },
         { paragraphs: "2174–2188", url: ccc("__P7O") },
       ],
       scripture: [
@@ -155,7 +157,7 @@ export const mass: Topic[] = [
       catechism: [{ paragraphs: "1385–1390", url: ccc("__P42") }],
       documents: ["girm", "canon-law-eucharist"],
     },
-    related: ["first-time-at-mass", "mass-postures", "how-to-receive-communion"],
+    related: ["mass-arriving", "mass-quiet-prayer", "first-time-at-mass", "mass-postures"],
   },
   {
     slug: "mass-postures",
@@ -183,16 +185,17 @@ export const mass: Topic[] = [
     slug: "mass-gestures",
     title: "Gestures at Mass",
     question: "What do bows, genuflections, and signs of the cross mean?",
-    alsoKnownAs: ["Genuflection", "Profound bow", "Sign of the Cross"],
+    alsoKnownAs: ["Profound bow", "Gestures of reverence"],
     category: "mass",
-    keywords: ["genuflect", "genuflection", "bow", "bowing", "sign of the cross", "holy water", "kneeling on one knee", "striking the breast", "gestures at Mass"],
+    keywords: ["genuflect", "genuflection", "bow", "bowing", "sign of the cross", "holy water", "kneeling on one knee", "gestures at Mass"],
     summary:
       "Catholics pray with their bodies as well as their words. A genuflection, bending the right knee to the floor, is a sign of adoration reserved for Christ in the Blessed Sacrament. A bow shows reverence and honor. The Sign of the Cross professes faith in the Trinity and in Christ's saving death. Some gestures are asked of everyone by the Church's liturgical instructions; others are long-standing customs.",
     explanation: [
-      "Genuflection: the Church's instructions call it a sign of adoration, reserved for the Blessed Sacrament (and for the Cross on Good Friday). The priest genuflects after showing the Host and the chalice at the consecration and before Communion (GIRM 274). Many Catholics also genuflect toward the tabernacle when entering or leaving their pew, a long-standing custom; people who cannot kneel often bow instead.",
+      "Genuflection: the Church's instructions call it a sign of adoration, reserved for the Blessed Sacrament (and for the Cross on Good Friday). The priest genuflects after showing the Host and the chalice at the consecration and before Communion, and everyone who passes before the Blessed Sacrament genuflects unless moving in procession (GIRM 274). That is why Catholics genuflect toward the tabernacle before entering their pew; people who cannot kneel bow instead.",
       "Bows: a bow signifies reverence and honor (GIRM 275). Everyone makes a profound bow during the Creed at the words about the Son of God becoming man; on Christmas and the Annunciation, everyone genuflects instead (GIRM 137). In the United States, communicants bow their heads before receiving Communion (GIRM 160).",
-      "The Sign of the Cross begins and ends the Mass, as it begins the Christian's day and prayers. Before the Gospel, many people also trace a small cross on their forehead, lips, and heart.",
-      "Holy water at the door recalls Baptism; blessing yourself with it is a devotional custom. Striking the breast during the prayer of confession and before Communion is a traditional gesture of sorrow and humility.",
+      "The Sign of the Cross begins and ends the Mass, as it begins the Christian's day and prayers. As the Gospel is announced, the deacon or priest traces a small cross on the book and on his forehead, lips, and breast, and everyone else does the same (GIRM 134).",
+      "Striking the breast: during the I confess, the Missal directs everyone to strike their breast at the words admitting fault. Some people also strike their breast before Communion at “Lord, I am not worthy”; the Missal does not call for it there, so it is a personal custom.",
+      "Holy water at the door recalls Baptism; blessing yourself with it is a devotional custom rather than part of the Mass.",
     ],
     teaching: {
       catechism: [
@@ -201,8 +204,8 @@ export const mass: Topic[] = [
       ],
       documents: ["girm", "usccb-praying-body-mind-voice"],
     },
-    resources: ["ncr-catholic-calisthenics"],
-    related: ["mass-postures", "real-presence", "first-time-at-mass"],
+    resources: ["ncr-catholic-calisthenics", "catholicculture-gestures-of-worship"],
+    related: ["mass-postures", "mass-genuflection", "mass-penitential-act", "mass-gospel"],
   },
   {
     slug: "mass-responses",
@@ -218,14 +221,14 @@ export const mass: Topic[] = [
       "Amen: in Hebrew, amen comes from the same root as “believe.” It is the people's “yes” after the prayers, after the Eucharistic Prayer (the Great Amen), and when receiving Communion.",
       "Prayers said or sung by all: the prayer of confession on many Sundays, the Lord, have mercy (Kyrie), the Gloria, the Creed, the Holy, Holy, Holy (Sanctus), an acclamation after the consecration, the Lord's Prayer, and the Lamb of God.",
       "Why it matters: the Second Vatican Council asked that all the faithful be led to “fully conscious, and active participation” in the liturgy (Sacrosanctum Concilium 14).",
-      "Where to find the words: the official English texts come from the Roman Missal, Third Edition. Parishes print them in missals and worship aids. Catholic Companion describes the responses rather than reproducing them, because the official translation is copyrighted.",
+      "Where to find the words: the official English texts come from the Roman Missal, Third Edition. Parishes print them in missals and worship aids, and the bishops of England and Wales publish a free leaflet of the people's texts in the same translation (linked below). Catholic Companion quotes short responses on each part's page and links to the official texts for longer prayers such as the Gloria and the Creed, because the translation is copyrighted.",
     ],
     teaching: {
       catechism: [{ paragraphs: "1062–1064", url: ccc("__P2S") }],
       documents: ["sacrosanctum-concilium", "usccb-parts-of-the-mass", "girm"],
     },
-    resources: ["usccb-order-of-mass"],
-    related: ["what-happens-at-mass", "mass-postures", "what-is-the-creed"],
+    resources: ["liturgy-office-order-of-mass", "usccb-order-of-mass"],
+    related: ["what-happens-at-mass", "mass-greeting", "mass-creed", "mass-postures"],
   },
   {
     slug: "non-catholics-at-mass",
@@ -240,7 +243,7 @@ export const mass: Topic[] = [
       "The U.S. bishops' guidelines explain that because the Eucharist is a sign of the oneness of faith, life, and worship, members of churches not yet fully united with the Catholic Church are ordinarily not admitted to Communion. Exceptions require the permission of the diocesan bishop under the Church's law (canon 844 §4).",
       "The Church's relationship with the Orthodox and other Eastern Churches is closer: the Catechism teaches that they have true sacraments, and the Church's law allows Catholic ministers to give Communion to their members who ask for it and are properly disposed (canon 844 §3). The bishops urge them to follow the discipline of their own Churches.",
       "Christians of the communities that came from the Reformation are not invited to receive, because, in the Catechism's words, those communities have not preserved “the proper reality of the Eucharistic mystery in its fullness.” The Church prays urgently for the day when all Christians can share one table.",
-      "People preparing to become Catholic through OCIA take full part in the Mass and wait to receive Communion until they are received into the Church, usually at the Easter Vigil, when Christian initiation reaches its culmination in the Eucharist.",
+      "People preparing to become Catholic through OCIA wait to receive Communion until they are received into the Church, usually at the Easter Vigil, when Christian initiation reaches its culmination in the Eucharist. Catechumens (those preparing for Baptism) are often dismissed with a catechist after the homily to reflect on the readings, a practice the U.S. bishops call praiseworthy (National Statutes for the Christian Initiation of Adults, Norm 10).",
       "Not receiving is normal: Catholics who are not prepared also stay in the pew. In some parishes people who are not receiving come forward with arms crossed for a blessing; this is a local custom rather than part of the liturgy, so follow the practice of the parish. The same norms apply at weddings and funerals.",
     ],
     teaching: {
@@ -249,7 +252,7 @@ export const mass: Topic[] = [
         { paragraphs: "1398–1401", url: ccc("__P42") },
       ],
       scripture: [{ passage: "1 Corinthians 10:16–17", url: bible("1corinthians/10") }],
-      documents: ["usccb-communion-guidelines", "canon-law-sacraments", "unitatis-redintegratio"],
+      documents: ["usccb-communion-guidelines", "canon-law-sacraments", "unitatis-redintegratio", "usccb-nscia"],
     },
     related: ["first-time-at-mass", "how-to-receive-communion", "how-to-become-catholic", "real-presence", "are-catholics-christians"],
   },
@@ -263,14 +266,17 @@ export const mass: Topic[] = [
     summary:
       "Catholics who are prepared walk forward in procession and bow their heads before the Sacrament. The minister shows the Host and says “The Body of Christ,” and the communicant answers “Amen.” You may receive the Host on the tongue or in the hand, and where the chalice is offered, you may also receive the Precious Blood. The Church asks that those receiving have fasted for an hour and not be conscious of grave sin.",
     explanation: [
-      "Preparing: fast for at least one hour from food and drink, except water and medicine (canon 919). Anyone conscious of grave sin should go to Confession before receiving (canon 916; CCC 1385).",
+      "The fast: abstain from food and drink, except water and medicine, for at least one hour before Communion. The elderly, the sick, and those who care for them may receive even if they have eaten within the hour (canon 919).",
+      "Grave sin: anyone conscious of grave sin is not to receive without first going to Confession (canon 916; CCC 1385). The one exception is when there is a grave reason to receive and no opportunity to confess; then the person must make an act of perfect contrition, which includes the resolve to confess as soon as possible (canon 916). Venial sins do not keep anyone from Communion; the Eucharist itself wipes them away (CCC 1394).",
+      "Who may receive: any baptized Catholic not prohibited by law (canon 912). Children receive after suitable preparation (canon 913). Those under certain Church penalties, or obstinately persevering in manifest grave sin, are not to be admitted (canon 915). Other Christians are covered in “Can non-Catholics attend Mass?”",
+      "How often: once a day, and a second time on the same day only at another Mass in which you take part (canon 917). Someone in danger of death is urged to receive again as Viaticum even if they already received that day (canon 921).",
       "In the line: in the United States, Communion is normally received standing, and those who kneel are not to be refused. Bow your head before receiving (GIRM 160). The minister says “The Body of Christ”; you answer “Amen” and receive on the tongue or, if you choose, in the hand, and you consume the Host right away (GIRM 161).",
       "To receive in the hand, many parishes teach placing one open hand on the other to make a “throne” for the Host, then taking it with your lower hand. To receive on the tongue, open your mouth and extend your tongue. Watch the videos below if you'd like to see both.",
       "The chalice: where it is offered, the minister says “The Blood of Christ” and you answer “Amen” (GIRM 286). Christ is wholly present under either form, so receiving the Host alone is a complete Communion (CCC 1390).",
       "Afterward, return to your place for a time of prayer and thanksgiving.",
     ],
     teaching: {
-      catechism: [{ paragraphs: "1384–1390", url: ccc("__P42") }],
+      catechism: [{ paragraphs: "1384–1390, 1394", url: ccc("__P42") }],
       scripture: [{ passage: "1 Corinthians 11:27–29", url: bible("1corinthians/11") }],
       documents: ["usccb-happy-are-those", "canon-law-eucharist", "girm"],
     },

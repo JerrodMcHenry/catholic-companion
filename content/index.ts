@@ -3,7 +3,7 @@
 
 import { categories, pillars } from "./categories";
 import { resources } from "./resources";
-import { commonQuestions, startHere, topics } from "./topics";
+import { commonQuestions, massOrder, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
 import { resourceLabel, type PillarId, type Tradition } from "./types";
 
@@ -23,6 +23,14 @@ export const getTradition = (slug: string) => traditionBySlug.get(slug);
 export const categoriesIn = (pillar: PillarId) => categories.filter((c) => c.pillar === pillar);
 export const topicsIn = (category: string) => topics.filter((t) => t.category === category);
 export const debateTopics = topics.filter((t) => t.debate);
+
+// The parts of the Mass in order, so a reader can follow the Mass step by step.
+export const massSections = massOrder.map(({ section, slugs }) => ({ section, topics: slugs.map((s) => topicBySlug.get(s)!) }));
+const massSteps = massSections.flatMap(({ topics }) => topics);
+export function massNeighbors(slug: string) {
+  const i = massSteps.findIndex((t) => t.slug === slug);
+  return i < 0 ? undefined : { previous: massSteps[i - 1], next: massSteps[i + 1] };
+}
 
 // A tradition has its own page once it has an overview.
 export const hasPage = (t: Tradition) => Boolean(t.overview);
@@ -118,3 +126,7 @@ for (const t of traditions) {
 }
 
 checkTopics("homepage list", [...startHere, ...commonQuestions]);
+
+const massSlugs = massOrder.flatMap((s) => s.slugs);
+check(new Set(massSlugs).size === massSlugs.length, "a Mass part appears twice in massOrder");
+for (const slug of massSlugs) check(topicBySlug.get(slug)?.category === "mass", `massOrder has bad Mass topic "${slug}"`);

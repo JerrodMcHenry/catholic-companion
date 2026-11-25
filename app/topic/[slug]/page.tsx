@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { BackLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
+import { BackLink, CardLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
 import { DebateSections, Fathers } from "@/components/debate";
 import { SaveButton } from "@/components/save-button";
-import { getCategory, getTopic, resourcesFor, topics, topicsFor } from "@/content";
+import { getCategory, getTopic, massNeighbors, massSections, resourcesFor, topics, topicsFor } from "@/content";
 
 export const dynamicParams = false; // Unknown topics are a 404.
 
@@ -15,6 +15,8 @@ export async function generateMetadata({ params }: PageProps<"/topic/[slug]">): 
   const topic = getTopic((await params).slug);
   return { title: topic?.question, description: topic?.summary };
 }
+
+const MASS_HUB = "what-happens-at-mass";
 
 const refLink =
   "inline-flex min-h-11 items-center rounded-full border border-line bg-card px-4 font-medium text-accent hover:border-gold";
@@ -30,6 +32,9 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
     : { href: `/category/${category.slug}`, label: category.title };
   const { catechism = [], scripture = [], documents = [] } = topic.teaching;
   const fathers = topic.debate?.fathers;
+  const massStep = massNeighbors(topic.slug);
+  // Skip related questions already offered as the previous or next part of the Mass.
+  const related = topicsFor(topic.related).filter((t) => t !== massStep?.previous && t !== massStep?.next);
 
   return (
     <article>
@@ -65,6 +70,27 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
             ))}
           </div>
         </details>
+      )}
+
+      {/* The Mass overview is the hub: every part, in the order it happens. */}
+      {topic.slug === MASS_HUB && (
+        <section aria-labelledby="steps" className="mt-12">
+          <SectionTitle id="steps">The Mass, step by step</SectionTitle>
+          <div className="space-y-8">
+            {massSections.map(({ section, topics: parts }) => (
+              <div key={section}>
+                <h3 className="mb-3 font-medium text-ink">{section}</h3>
+                <ol className="space-y-3">
+                  {parts.map((part) => (
+                    <li key={part.slug}>
+                      <CardLink href={`/topic/${part.slug}`} title={part.title} />
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
+        </section>
       )}
 
       {topic.debate && <DebateSections debate={topic.debate} />}
@@ -132,10 +158,31 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
         </section>
       )}
 
-      {topic.related && (
+      {massStep && (
+        <nav aria-labelledby="follow" className="mt-12">
+          <SectionTitle id="follow">Follow the Mass</SectionTitle>
+          <ul className="space-y-3">
+            {massStep.previous && (
+              <li>
+                <CardLink href={`/topic/${massStep.previous.slug}`} eyebrow="Previous part" title={massStep.previous.title} />
+              </li>
+            )}
+            {massStep.next && (
+              <li>
+                <CardLink href={`/topic/${massStep.next.slug}`} eyebrow="Next part" title={massStep.next.title} />
+              </li>
+            )}
+            <li>
+              <CardLink href={`/topic/${MASS_HUB}`} eyebrow="Overview" title="All parts of the Mass, in order" />
+            </li>
+          </ul>
+        </nav>
+      )}
+
+      {related.length > 0 && (
         <section aria-labelledby="related" className="mt-12">
           <SectionTitle id="related">Related questions</SectionTitle>
-          <TopicList topics={topicsFor(topic.related)} />
+          <TopicList topics={related} />
         </section>
       )}
     </article>

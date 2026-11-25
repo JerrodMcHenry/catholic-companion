@@ -7,6 +7,7 @@ import { foundations } from "./foundations";
 import { god } from "./god";
 import { jesus } from "./jesus";
 import { mass } from "./mass";
+import { massOrder, massParts } from "./mass-parts";
 import { sacraments } from "./sacraments";
 
 export const topics = [
@@ -16,6 +17,7 @@ export const topics = [
   ...church,
   ...sacraments,
   ...mass,
+  ...massParts,
   ...becomingCatholic,
   ...apologeticsTopics,
 ];
@@ -32,6 +34,8 @@ export const startHere = [
   "what-happens-at-mass",
   "how-to-become-catholic",
 ];
+
+export { massOrder };
 
 // Shown on the homepage.
 export const commonQuestions = ["how-to-become-catholic", "what-happens-at-mass", "real-presence"];

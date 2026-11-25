@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1 (Foundations launch) and 2 (First Mass) are built: 29 new topics, marked ✓ like the 6 built earlier. Debate sections for Batch 1 topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1 (Foundations launch), 2 (First Mass), and 3 (Mass parts I) are built: 48 new topics, marked ✓ like the 6 built earlier. Debate sections for Batch 1 topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory.
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -636,7 +636,7 @@ Each part topic follows the existing topic page, filling these fields (the first
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `what-happens-at-mass` ✓ | What happens during Mass? | Order of Mass | B | P1 | `first-time-at-mass` | Built; becomes the hub linking all parts |
+| `what-happens-at-mass` ✓ | What happens during Mass? | Order of Mass | B | P1 | `first-time-at-mass` | Built; the hub: lists every built part in order (“The Mass, step by step”), and each part links to the previous and next part |
 | `first-time-at-mass` ✓ | I'm going to Mass for the first time. What should I know? | Visitor's guide | B | P1 | `mass-etiquette`, `non-catholics-at-mass` | Acceptance-criteria journey |
 | `why-go-to-mass-on-sunday` ✓ | Why do Catholics go to Mass every Sunday? | Sunday obligation, Lord's Day | B | P1 | `holy-days-of-obligation` |  |
 | `mass-in-scripture` ✓ | Where is the Mass in the Bible? | Last Supper, Passover, Malachi 1:11 | I | P1 | `mass-as-sacrifice` | D: Protestantism |
@@ -663,42 +663,42 @@ Each part topic follows the existing topic page, filling these fields (the first
 
 ### 5.4 Part topics
 
-Columns: **People** = what the congregation does or says (described, never quoted in the official translation). **GIRM** numbers are all verified ([§5.7](#57-verified-liturgical-references)). **Scripture · CCC** come from the original Mass curriculum and are re-checked when each topic is written.
+Columns: **People** = what the congregation does or says (short responses may be quoted; longer prayers are described and linked to the official text). **GIRM** numbers are all verified ([§5.7](#57-verified-liturgical-references)). **Scripture · CCC** come from the original Mass curriculum and are re-checked when each topic is written; ✔ marks references re-checked and corrected in Batch 3.
 
 #### Before Mass
 
 | Slug | Part | People | Posture | GIRM | Scripture · CCC (re-check) | Pri |
 |---|---|---|---|---|---|---|
-| `mass-arriving` | Arriving and preparing | Arrive early, silence, the one-hour fast | — | 45 | CCC 1385, 1387; CIC 919 | P1 |
-| `mass-holy-water` | Holy water and the Sign of the Cross | Bless oneself (optional for visitors) | — | — | Rom 6:3–4; CCC 1667–1679 | P1 |
-| `mass-genuflection` | Genuflecting toward the tabernacle | Genuflect, or bow | Genuflect | 274, 314–316 | Phil 2:10; CCC 1378–1379 | P1 |
-| `mass-quiet-prayer` | Finding a seat and praying | Kneel or sit in prayer | Kneel or sit | 45 | — | P1 |
+| `mass-arriving` ✓ | Arriving and preparing | Arrive early, silence, the one-hour fast | — | 45 | 1 Cor 11:27–29; CCC 1385, 1387; CIC 919 ✔ | P1 |
+| `mass-holy-water` ✓ | Holy water and the Sign of the Cross | Bless oneself (optional for visitors) | — | — | Rom 6:3–4; CCC 1185, 1667–1670 ✔ | P1 |
+| `mass-genuflection` ✓ | Genuflecting toward the tabernacle | Genuflect, or bow | Genuflect | 274, 314–316 | Phil 2:10; CCC 1378–1379 ✔ | P1 |
+| `mass-quiet-prayer` ✓ | Finding a seat and praying | Kneel or sit in prayer | Kneel or sit | 45 | Hab 2:20; CCC 1185 ✔ | P1 |
 
 #### Introductory Rites (GIRM 46)
 
 | Slug | Part | People | Posture | GIRM | Scripture · CCC (re-check) | Pri |
 |---|---|---|---|---|---|---|
-| `mass-entrance` | Entrance procession and chant | Sing | Stand | 47–48 | Ps 122 | P1 |
+| `mass-entrance` ✓ | Entrance procession and chant | Sing | Stand | 47–48 | Ps 122; CCC 1156–1158, 1348 ✔ | P1 |
 | `mass-reverence-to-the-altar` | Reverence to the altar | Watch | Stand | 49, 276 | — | P2 |
-| `mass-sign-of-the-cross` | Sign of the Cross | Sign oneself; Amen | Stand | 50 | Mt 28:19 | P1 |
-| `mass-greeting` | Greeting | Respond to the priest | Stand | 50 | 2 Cor 13:13; Ruth 2:4 | P1 |
-| `mass-penitential-act` | Penitential Act (or Sprinkling Rite) | Confess together; strike the breast; Amen | Stand | 51 | Jas 5:16; CCC 1393 | P1 |
-| `mass-kyrie` | Kyrie (Lord, have mercy) | Kyrie, eleison / Christe, eleison | Stand | 52 | Mt 20:30–31 | P1 |
-| `mass-gloria` | Gloria | Sing or say the hymn | Stand | 53 | Lk 2:14 | P1 |
-| `mass-collect` | Collect (Opening Prayer) | Silent prayer; Amen | Stand, then sit | 54 | — | P1 |
+| `mass-sign-of-the-cross` ✓ | Sign of the Cross | Sign oneself; Amen | Stand | 50 | Mt 28:19; CCC 1235, 2157 ✔ | P1 |
+| `mass-greeting` ✓ | Greeting | Respond to the priest | Stand | 50 | 2 Cor 13:13; Gal 6:18; 2 Tm 4:22; Ruth 2:4 ✔ | P1 |
+| `mass-penitential-act` ✓ | Penitential Act (or Sprinkling Rite) | Confess together; strike the breast; Amen | Stand | 51 | Lk 18:9–14; Jas 5:16; CCC 1393–1395 ✔ | P1 |
+| `mass-kyrie` ✓ | Kyrie (Lord, have mercy) | Kyrie, eleison / Christe, eleison | Stand | 52 | Mt 20:29–34 ✔ | P1 |
+| `mass-gloria` ✓ | Gloria | Sing or say the hymn | Stand | 53 | Lk 2:13–14; CCC 2639–2643 ✔ | P1 |
+| `mass-collect` ✓ | Collect (Opening Prayer) | Silent prayer; Amen | Stand, then sit | 54 | CCC 2664 ✔ | P1 |
 
 #### Liturgy of the Word (GIRM 55–71)
 
 | Slug | Part | People | Posture | GIRM | Scripture · CCC (re-check) | Pri |
 |---|---|---|---|---|---|---|
-| `mass-first-reading` | First Reading | Listen; short response | Sit | 56–59, 309 | Neh 8:1–8; CCC 1100–1102, 1349 | P1 |
-| `mass-responsorial-psalm` | Responsorial Psalm | Repeat the refrain | Sit | 61 | Col 3:16; CCC 2585–2589 | P1 |
-| `mass-second-reading` | Second Reading | Listen; short response | Sit | 57–59 | — | P1 |
-| `mass-gospel-acclamation` | Gospel Acclamation | Sing Alleluia (Lenten acclamation in Lent) | Stand | 62–64 | Rev 19:1–6 | P1 |
-| `mass-gospel` | The Gospel | Respond; trace three small crosses | Stand | 60, 132–134 | Lk 4:16–21; CCC 1154 | P1 |
-| `mass-homily` | Homily | Listen | Sit | 65–66 | Neh 8:8; Lk 24:27; CCC 1349 | P1 |
-| `mass-creed` | Profession of Faith (Creed) | Profess the Creed; bow at the Incarnation | Stand | 67–68, 137 | CCC 185–197 | P1 |
-| `mass-universal-prayer` | Universal Prayer (Prayer of the Faithful) | Respond to each intention | Stand | 69–71, 138 | 1 Tim 2:1–4 | P1 |
+| `mass-first-reading` ✓ | First Reading | Listen; short response | Sit | 56–59, 309 | Neh 8:1–8; CCC 1088, 1100–1102, 1349 ✔ | P1 |
+| `mass-responsorial-psalm` ✓ | Responsorial Psalm | Repeat the refrain | Sit | 61 | Col 3:16; CCC 2585–2589 ✔ | P1 |
+| `mass-second-reading` ✓ | Second Reading | Listen; short response | Sit | 57–59 | 1 Thes 5:27; Col 4:16; CCC 1349 ✔ | P1 |
+| `mass-gospel-acclamation` ✓ | Gospel Acclamation (page title: The Alleluia) | Sing Alleluia (Lenten acclamation in Lent) | Stand | 62–64, 132, 175 | Rev 19:1–6 ✔ | P1 |
+| `mass-gospel` ✓ | The Gospel | Respond; trace three small crosses | Stand | 60, 132–134 | Lk 4:16–21; CCC 1088, 1154 ✔ | P1 |
+| `mass-homily` ✓ | Homily | Listen | Sit | 65–66 | Neh 8:8; Lk 24:27; CCC 1349; NSCIA Norm 10 ✔ | P1 |
+| `mass-creed` ✓ | Profession of Faith (Creed) | Profess the Creed; bow at the Incarnation | Stand | 67–68, 137 | Rom 10:9–10; CCC 167, 185–197 ✔ | P1 |
+| `mass-universal-prayer` ✓ | Universal Prayer (Prayer of the Faithful) | Respond to each intention | Stand | 69–71, 138 | 1 Tim 2:1–4; CCC 1349, 2636 ✔ | P1 |
 
 #### Liturgy of the Eucharist (GIRM 72–79)
 
@@ -774,14 +774,14 @@ From GIRM 43 with the U.S. adaptations (verified). Those unable to kneel may sit
 
 ### 5.7 Verified liturgical references
 
-Every GIRM paragraph cited in §5 was checked against the official English text of the GIRM with the U.S. adaptations on vatican.va ([Appendix A](#appendix-a-verified-anchor-sources)). The numbers checked: 28, 29, 37, 43, 45–47, 49–63, 64–90 (all cited ones), 91, 95, 100, 132–134, 137, 138, 140–142, 145, 146, 148, 150–152, 154, 155, 157, 160–169, 274–276, 281–284, 286–288, 295, 309, 314–316, 335–341, 346, 347.
+Every GIRM paragraph cited in §5 was checked against the official English text of the GIRM with the U.S. adaptations on vatican.va ([Appendix A](#appendix-a-verified-anchor-sources)). The numbers checked: 28, 29, 37, 43, 45–47, 49–63, 64–90 (all cited ones), 91, 95, 100, 128–138, 140–142, 145, 146, 148, 150–152, 154, 155, 157, 160–169, 175, 274–276, 281–284, 286–288, 295, 309, 314–316, 335–341, 346, 347.
 
 Remaining checks before the Mass topics are published:
 
 1. **Translation:** the vatican.va GIRM is the 2003 English translation. The USCCB's 2011 translation is current in the U.S.; paragraph numbers match, but quoted wording must come from the current text (or be paraphrased).
 2. **CCC, Scripture, and canon law references** in the part tables were carried over from the original curriculum. Each is re-read when its topic is written.
 3. **Order of Mass paragraph numbers** (not used above) need the printed Missal.
-4. Items flagged in the original curriculum: Redemptionis Sacramentum on the doxology; whether the renewal of baptismal promises replaces the Creed at all Easter Sunday Masses; the current OCIA edition and its paragraph numbers.
+4. Items flagged in the original curriculum: Redemptionis Sacramentum on the doxology; whether the renewal of baptismal promises replaces the Creed at all Easter Sunday Masses; the current OCIA edition and its paragraph numbers. (The dismissal of catechumens is now verified in the 2024 U.S. National Statutes for the Christian Initiation of Adults, Norm 10; the OCIA ritual paragraph numbers remain open.)
 5. **Pastoral review by a priest or diocesan liturgy office:** `mass-consecration`, `mass-communion`, `who-can-receive-communion`, `non-catholics-at-mass`, `latin-mass`.
 
 ### 5.8 Official texts and copyright
@@ -806,11 +806,11 @@ Topics must say which kind each action is, so newcomers are never told a custom 
 | Kneeling or sitting during the silence after Communion | Option | GIRM 43† |
 | Form of the sign of peace (handshake, bow) | Set by the bishops' conference; local custom; only to those nearest, soberly | GIRM 82† |
 | Penitential Act form, Sprinkling Rite, incense, Eucharistic Prayer choice, Communion under both kinds | Options of the priest or pastor within the rubrics | GIRM 51†, 276†, 281–283† |
-| Striking the breast during the Confiteor | Rubric of the Order of Mass | Verify against the printed Missal |
-| Signing forehead, lips, and breast at the Gospel | Rubric of the Order of Mass | Verify against the printed Missal |
-| Genuflecting toward the tabernacle when entering or leaving the pew | Long-standing custom (the GIRM prescribes genuflection for the priest and ministers) | GIRM 274† |
+| Striking the breast during the Confiteor | Rubric of the Order of Mass (“And, striking their breast, they say”) | Verified in the ICEL 2010 text as published by the Bishops' Conference of England and Wales; the printed U.S. Missal itself not yet seen |
+| Signing forehead, lips, and breast at the Gospel | Required of all (“which everyone else does as well”) | GIRM 134† |
+| Genuflecting toward the tabernacle when entering or leaving the pew | Norm: all who pass before the Blessed Sacrament genuflect unless in procession; bowing to the altar when the tabernacle is elsewhere is custom | GIRM 274† |
 | Holy water and the Sign of the Cross at the door | Devotional custom | — |
-| Striking the breast at "Lord, I am not worthy" | Custom | — |
+| Striking the breast at "Lord, I am not worthy" | Custom (no rubric for the people at that point in the Order of Mass) | — |
 | Holding hands or raising hands during the Lord's Prayer | Custom (not in the liturgical books; some bishops discourage it) | — |
 | Coming forward with arms crossed for a blessing | Custom in some places (not in the liturgical books) | — |
 | Applause, dress, and arriving early | Custom and courtesy | — |
@@ -1110,7 +1110,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 |---|---|---|---|---|
 | 1 | Foundations launch | 0 | 21 | `what-do-catholics-believe` ✓, `what-does-catholic-mean` ✓, `are-catholics-christians` ✓, `what-is-the-creed` ✓, `what-is-faith` ✓, `divine-revelation` ✓, `what-is-the-catechism` ✓, `what-is-dogma` ✓, `who-is-god` ✓, `what-is-the-trinity` ✓, `who-is-the-holy-spirit` ✓, `who-is-jesus` ✓, `divinity-of-jesus` ✓, `did-jesus-exist` ✓, `incarnation` ✓, `why-did-jesus-die` ✓, `resurrection` ✓, `what-is-the-church` ✓, `what-is-sacred-tradition` ✓, `what-is-the-pope` ✓, `bishops-priests-deacons` ✓ |
 | 2 | First Mass | 0 | 10 | `what-happens-at-mass` ✓, `first-time-at-mass` ✓, `why-go-to-mass-on-sunday` ✓, `mass-in-scripture` ✓, `mass-etiquette` ✓, `mass-postures` ✓, `mass-gestures` ✓, `mass-responses` ✓, `non-catholics-at-mass` ✓, `how-to-receive-communion` ✓ |
-| 3 | Mass parts I (before Mass, Introductory Rites, Word) | 19 | 0 | `mass-arriving`, `mass-holy-water`, `mass-genuflection`, `mass-quiet-prayer`, `mass-entrance`, `mass-sign-of-the-cross`, `mass-greeting`, `mass-penitential-act`, `mass-kyrie`, `mass-gloria`, `mass-collect`, `mass-first-reading`, `mass-responsorial-psalm`, `mass-second-reading`, `mass-gospel-acclamation`, `mass-gospel`, `mass-homily`, `mass-creed`, `mass-universal-prayer` |
+| 3 | Mass parts I (before Mass, Introductory Rites, Word) | 0 | 19 | `mass-arriving` ✓, `mass-holy-water` ✓, `mass-genuflection` ✓, `mass-quiet-prayer` ✓, `mass-entrance` ✓, `mass-sign-of-the-cross` ✓, `mass-greeting` ✓, `mass-penitential-act` ✓, `mass-kyrie` ✓, `mass-gloria` ✓, `mass-collect` ✓, `mass-first-reading` ✓, `mass-responsorial-psalm` ✓, `mass-second-reading` ✓, `mass-gospel-acclamation` ✓, `mass-gospel` ✓, `mass-homily` ✓, `mass-creed` ✓, `mass-universal-prayer` ✓ |
 | 4 | Mass parts II (Eucharist, Communion, Concluding) | 15 | 0 | `mass-preparation-of-the-gifts`, `mass-prayer-over-the-offerings`, `mass-preface-dialogue`, `mass-sanctus`, `mass-eucharistic-prayer`, `mass-consecration`, `mass-mystery-of-faith`, `mass-great-amen`, `mass-lords-prayer`, `mass-sign-of-peace`, `mass-lamb-of-god`, `mass-invitation-to-communion`, `mass-communion`, `mass-final-blessing`, `mass-dismissal` |
 | 5 | Sacraments | 13 | 1 | `what-is-a-sacrament`, `seven-sacraments`, `baptism`, `infant-baptism`, `confirmation`, `what-is-the-eucharist`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `confession`, `why-confess-to-a-priest`, `how-to-go-to-confession`, `mortal-and-venial-sin`, `marriage-sacrament` |
 | 6 | OCIA and returning Catholics | 8 | 1 | `how-to-become-catholic` ✓, `what-is-ocia`, `stages-of-ocia`, `catechumen-or-candidate`, `already-baptized`, `married-before-ocia`, `finding-a-parish`, `returning-to-the-church`, `returning-after-mortal-sin` |
@@ -1157,10 +1157,10 @@ Generated from the inventory tables by the same script that builds §7.3 and §1
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
 | 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 1 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 0 |
-| 5 Holy Mass (themes and parts) | 65 | 44 | 16 | 5 | 1 | 3 | 10 |
+| 5 Holy Mass (themes and parts) | 65 | 44 | 16 | 5 | 1 | 3 | 29 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
 | 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **157** | **185** | **80** | **91** | **52** | **35** |
+| **Total** | **422** | **157** | **185** | **80** | **91** | **52** | **54** |
 
 <!-- /generated: counts -->
 
