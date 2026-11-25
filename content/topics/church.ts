@@ -63,7 +63,7 @@ export const church: Topic[] = [
       documents: ["dei-verbum"],
     },
     resources: ["ca-scripture-and-tradition"],
-    related: ["sola-scriptura", "divine-revelation", "what-is-dogma"],
+    related: ["sola-scriptura", "what-is-the-bible", "divine-revelation", "what-is-dogma"],
   },
   {
     slug: "what-is-the-pope",

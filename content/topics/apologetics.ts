@@ -44,7 +44,7 @@ export const apologeticsTopics: Topic[] = [
       documents: ["dei-verbum"],
     },
     resources: ["ca-scripture-and-tradition", "video-akin-white-sola-scriptura"],
-    related: ["divinity-of-jesus", "real-presence"],
+    related: ["catholic-bible-books", "what-is-sacred-tradition", "how-to-read-the-bible"],
     debate: {
       perspectives: [
         {

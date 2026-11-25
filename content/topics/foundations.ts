@@ -166,7 +166,7 @@ export const foundations: Topic[] = [
       documents: ["dei-verbum"],
     },
     resources: ["ca-revelation-public-private"],
-    related: ["what-is-sacred-tradition", "what-is-faith", "sola-scriptura"],
+    related: ["what-is-sacred-tradition", "inspiration-of-scripture", "what-is-faith", "sola-scriptura"],
   },
   {
     slug: "what-is-the-catechism",

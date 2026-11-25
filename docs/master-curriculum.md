@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–6 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics) are built: 91 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–7 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture) are built: 97 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -240,16 +240,16 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `what-is-the-bible` | What is the Bible? | Sacred Scripture | B | P1 | `catholic-bible-books` | |
-| `catholic-bible-books` | Why do Catholic Bibles have more books? | Deuterocanon, Apocrypha, biblical canon | B | P1 | `sola-scriptura` | D: Protestantism |
-| `inspiration-of-scripture` | How is the Bible the word of God? | Inspiration | I | P1 | `inerrancy` | |
+| `what-is-the-bible` ✓ | What is the Bible? | Sacred Scripture | B | P1 | `catholic-bible-books` | |
+| `catholic-bible-books` ✓ | Why do Catholic Bibles have more books? | Deuterocanon, Apocrypha, biblical canon | B | P1 | `sola-scriptura` | D: Protestantism |
+| `inspiration-of-scripture` ✓ | How is the Bible the word of God? | Inspiration | I | P1 | `inerrancy` | |
 | `inerrancy` | Can the Bible contain errors? | Inerrancy | I | P2 | `inspiration-of-scripture` | R |
-| `how-to-read-the-bible` | How should Catholics read the Bible? | Senses of Scripture, exegesis | B | P1 | `lectio-divina` | |
+| `how-to-read-the-bible` ✓ | How should Catholics read the Bible? | Senses of Scripture, exegesis | B | P1 | `lectio-divina` | |
 | `literal-or-figurative` | Do Catholics take the Bible literally? | Literal sense, genre | B | P2 | `how-to-read-genesis` | |
 | `old-and-new-testament` | How do the Old and New Testaments fit together? | Typology | I | P2 | `prophecy-fulfilled` | |
 | `who-wrote-the-gospels` | Who wrote the Gospels, and are they reliable? | Authorship, historicity | I | P2 | `did-jesus-exist` | D: atheism |
-| `which-bible-translation` | Which Bible translation should Catholics use? | NABRE, RSV-2CE | B | P1 | | |
-| `where-to-start-reading-the-bible` | Where should a beginner start reading the Bible? | Reading plan | B | P1 | `how-to-read-the-bible` | |
+| `which-bible-translation` ✓ | Which Bible translation should Catholics use? | NABRE, RSV-2CE | B | P1 | | |
+| `where-to-start-reading-the-bible` ✓ | Where should a beginner start reading the Bible? | Reading plan | B | P1 | `how-to-read-the-bible` | |
 | `lectio-divina` | How do I pray with Scripture? | Lectio divina | B | P2 | `how-to-pray` | |
 | `bible-at-mass` | How is the Bible used at Mass? | Lectionary, three-year cycle | B | P2 | `mass-first-reading` | |
 | `prophecy-fulfilled` | Did Jesus fulfill Old Testament prophecy? | Messianic prophecy | I | P2 | `jesus-the-messiah` | D: Judaism |
@@ -938,7 +938,7 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 
 <!-- generated: debate-index -->
 
-- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books`, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
+- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books` ✓, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
 - **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock`, `papal-infallibility`, `immaculate-conception`, `purgatory`, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
 - **Oriental Orthodoxy** (1): `chalcedon-and-oriental-orthodoxy`
 - **Latter-day Saints** (4): `trinity-in-scripture`, `early-church`, `great-apostasy`, `book-of-mormon`
@@ -1007,7 +1007,7 @@ Each curriculum is an ordered reading plan built only from inventory topics, wit
 Pathways are ordered lists of existing topic slugs. Each can later be a simple ordered list like today's Start here page; no new software is needed. Topics already built are marked ✓.
 
 ### 8.1 Completely new to Catholicism (12)
-`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
+`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
 `how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` → `what-happens-when-we-die` → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
@@ -1115,7 +1115,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 4 | Mass parts II (Eucharist, Communion, Concluding) | 0 | 15 | `mass-preparation-of-the-gifts` ✓, `mass-prayer-over-the-offerings` ✓, `mass-preface-dialogue` ✓, `mass-sanctus` ✓, `mass-eucharistic-prayer` ✓, `mass-consecration` ✓, `mass-mystery-of-faith` ✓, `mass-great-amen` ✓, `mass-lords-prayer` ✓, `mass-sign-of-peace` ✓, `mass-lamb-of-god` ✓, `mass-invitation-to-communion` ✓, `mass-communion` ✓, `mass-final-blessing` ✓, `mass-dismissal` ✓ |
 | 5 | Sacraments and the remaining Mass parts | 0 | 21 | `what-is-a-sacrament` ✓, `seven-sacraments` ✓, `baptism` ✓, `infant-baptism` ✓, `confirmation` ✓, `what-is-the-eucharist` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `confession` ✓, `why-confess-to-a-priest` ✓, `how-to-go-to-confession` ✓, `mortal-and-venial-sin` ✓, `marriage-sacrament` ✓, `mass-reverence-to-the-altar` ✓, `mass-preface` ✓, `mass-epiclesis` ✓, `mass-intercessions` ✓, `mass-thanksgiving-after-communion` ✓, `mass-prayer-after-communion` ✓, `mass-recessional` ✓ |
 | 6 | OCIA and returning Catholics | 0 | 9 | `how-to-become-catholic` ✓, `what-is-ocia` ✓, `stages-of-ocia` ✓, `catechumen-or-candidate` ✓, `already-baptized` ✓, `married-before-ocia` ✓, `finding-a-parish` ✓, `returning-to-the-church` ✓, `returning-after-mortal-sin` ✓ |
-| 7 | Sacred Scripture | 6 | 0 | `what-is-the-bible`, `catholic-bible-books`, `inspiration-of-scripture`, `how-to-read-the-bible`, `which-bible-translation`, `where-to-start-reading-the-bible` |
+| 7 | Sacred Scripture | 0 | 6 | `what-is-the-bible` ✓, `catholic-bible-books` ✓, `inspiration-of-scripture` ✓, `how-to-read-the-bible` ✓, `which-bible-translation` ✓, `where-to-start-reading-the-bible` ✓ |
 | 8 | Apologetics I: Church authority and other Christians | 8 | 1 | `did-jesus-found-a-church`, `sola-scriptura` ✓, `what-is-the-magisterium`, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `catholic-and-protestant-differences`, `catholic-and-orthodox-differences`, `praying-directly-to-god` |
 | 9 | Mary, saints, and salvation | 15 | 0 | `who-is-mary`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `what-is-a-saint`, `praying-to-saints`, `statues-and-images`, `how-are-we-saved`, `what-is-grace`, `faith-and-works`, `what-happens-when-we-die`, `heaven`, `hell`, `purgatory`, `salvation-of-non-christians` |
 | 10 | Faith, reason, creation, and other religions | 8 | 1 | `why-did-god-create-us`, `creation`, `creation-and-evolution`, `original-sin`, `does-god-exist`, `faith-and-science`, `problem-of-evil` ✓, `catholics-and-muslims`, `do-all-religions-lead-to-god` |
@@ -1143,7 +1143,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.2 God and the Holy Trinity | 12 | 3 | 5 | 4 | 3 | 0 | 3 |
 | 4.3 Jesus Christ | 15 | 6 | 7 | 2 | 4 | 0 | 6 |
 | 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 0 |
-| 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 0 |
+| 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 6 |
 | 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 5 |
 | 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 0 |
@@ -1161,7 +1161,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
 | 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **97** |
+| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **103** |
 
 <!-- /generated: counts -->
 

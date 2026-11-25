@@ -12,6 +12,7 @@ const groups: { type: ResourceType; title: string }[] = [
   { type: "podcast", title: "Podcasts" },
   { type: "book", title: "Books" },
   { type: "course", title: "Courses" },
+  { type: "directory", title: "Directories" },
 ];
 
 export default function ResourcesPage() {

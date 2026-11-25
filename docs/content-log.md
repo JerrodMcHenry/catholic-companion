@@ -201,6 +201,64 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 **Baseline for the 100-topic assessment (97 topics):** 295 search entries (97 topics, 12 traditions, 18 categories, 168 resources); search entries serialized as JSON: 315 KB raw, 82 KB gzipped; mean query time 0.78 ms in Node; `.next/server/app` 18 MB, `.next/static` 1.0 MB. These are recorded for comparison, not as the assessment, which is due at 100 topics.
 
+## Batch 7: Sacred Scripture (2026-11-25)
+
+**Verification (Batch 7):**
+
+- **Dei Verbum:** paragraphs 11, 12, 21, 22, and 25 read on vatican.va.
+- **Council of Trent, Session 4 (1546):** the decree on the canonical Scriptures read (Waterworth translation, Hanover).
+- **Council of Carthage (419), canon 24:** read on New Advent.
+- **Verbum Domini:** paragraphs 86–87 read.
+- **Canon law:** canon 825 read.
+- **Westminster Confession:** 1.3 read on the OPC text.
+- **Catechism:** paragraphs 101–141 read. The automated check covers all 236 Catechism references in the app (0 problems).
+- **Scripture:** every new quotation matched on bible.usccb.org in a browser: 2 Timothy 3:16; 2 Peter 1:21; Hebrews 4:12; Acts 8:30–31; Luke 24:27; Psalm 119:105.
+- **Resources:** all opened, and authors and dates confirmed from page metadata.
+
+| Topic | Catechism | Scripture | Church documents | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `what-is-the-bible` | 101–108, 120–141 | 2 Tm 3:14–17; Heb 1:1–2; Jn 20:30–31 | Dei Verbum; Verbum Domini | John Bergsma (Catholic Answers, 2024); The Bible in a Year (Ascension) | None noted | Draft |
+| `catholic-bible-books` | 120, 138, 1032 | 2 Mc 12:38–46; Wis 2:12–20; Tb 12:6–15 | Dei Verbum 22; Trent, Session 4; Council of Carthage (419), canon 24 | Steve Ray, “The Council That Wasn't” (Catholic Answers, 2004); Westminster Confession | **D** (Protestantism) deferred to the apologetics batch. The canon is described as defined teaching (Trent). The Jewish canon and the Septuagint are mentioned without taking a side on contested history. The Anglican Article VI could not be loaded, so Anglican views are not stated. Two candidate resources were rejected for tone or for repeating the disputed Jamnia account (Kellmeyer, 1998; Akin) | Draft |
+| `inspiration-of-scripture` | 101–110, 135–136 | 2 Tm 3:14–17; 2 Pt 1:19–21; Lk 1:1–4; Heb 4:12 | Dei Verbum 11, 21; Verbum Domini | John Bergsma | Inerrancy is touched on only as Dei Verbum 11 states it; the full question belongs to the P2 `inerrancy` topic (**R**) | Draft |
+| `how-to-read-the-bible` | 109–119 | Acts 8:26–35; Lk 24:13–35; 2 Pt 3:15–16 | Dei Verbum 12; Verbum Domini 86–87 | John Bergsma; The Bible in a Year | The four senses are presented as the Church's interpretive tradition, not a code for hidden meanings | Draft |
+| `which-bible-translation` | 131–133 | Neh 8:1–8 | Dei Verbum 22; canon 825 | Douglas M. Beaumont (Catholic Answers, 2018); USCCB daily readings (reused) | Translation descriptions attributed to the study guide. No claim made about which translation the U.S. Lectionary uses (not verified). The “imprimatur” wording is general | Draft |
+| `where-to-start-reading-the-bible` | 112, 125, 129, 131–133 | Ps 119:105; Jn 20:30–31; Acts 17:11 | Dei Verbum 25; Verbum Domini 86–87 | The Bible in a Year; USCCB daily readings; Beaumont | The reading order is labeled practical advice, not Church teaching | Draft |
+
+**Batch 6 follow-ups (done in Batch 7):**
+
+- New “Directory” resource type, with its own section on the Resources page. MassTimes moved to it; its id is unchanged.
+- `married-before-ocia` reframed as general orientation. It now says only the parish and the diocesan tribunal can assess an individual case, and that the tribunal decides which procedure, if any, applies.
+- `returning-to-the-church` and `returning-after-mortal-sin` now state explicitly that coming to Mass and receiving Communion are different steps: everyone is welcome at Mass, and Communion follows Confession when one is aware of serious sin.
+
+**Updated:**
+
+- `startHere` (homepage “Start here”) brought back in line with the approved pathway 8.1, using built topics only. Added `divinity-of-jesus` (built in Phase 3 but missing from the list), `seven-sacraments` (Batch 5), and `what-is-the-bible`.
+- Related links: `sola-scriptura`, `what-is-sacred-tradition`, `divine-revelation`.
+
+**100-topic scalability assessment (103 topics; measured unless marked as a projection):**
+
+- **Search entries:** 309: 103 topics, 176 resources, 18 categories, 12 traditions (Batch 6 baseline: 295).
+- **Serialized index:** 336 KB raw / 88 KB gzipped (baseline 315 / 82). The search page delivers it inside its HTML: 369 KB raw, 94–95 KB transferred gzipped.
+- **JavaScript:** about 570 KB raw / 172 KB gzipped on every page (framework, shared by all pages). The search page adds about 7 KB.
+- **Query time (Node, 88 queries × 30 runs):** average 1.19 ms, median 1.00 ms, 95th percentile 1.97 ms. The rare maximum of 21 ms is consistent with garbage collection. Building the index takes 13 ms (once per page load).
+- **In the browser (desktop Chrome, local production build):** page load 188 ms. 149 simulated keystrokes measured from input to the next rendered frame: median 33 ms, 95th percentile 45 ms. Most of that is the two animation frames waited for; the search work itself is a few milliseconds. Mobile was not measured on a device. **Projection:** at the 4–6× slower CPU typical of mid-range phones, about 10–30 ms of work per keystroke, within a responsive range.
+- **Relevance:** 84 of 84 regression checks pass, including two ambiguous terms accepted in the top two.
+- **Build:** 4.7 s clean, 2.7 s warm (baseline 2.9 s warm).
+- **Static output:** 131 HTML pages (6.3 MB of HTML); 19 MB in `.next/server/app` (baseline 18 MB), of which topic pages are 13 MB; 1.0 MB in `.next/static`.
+- **Projections** (synthetic entries cloned from real ones, scaled to 1.7 resources per topic):
+  - 164 topics: about 474 entries; 143 KB gzipped; 3.1 ms at the 95th percentile; 20 ms index build.
+  - 422 topics: about 1,170 entries; 371 KB gzipped; 7.7 ms at the 95th percentile; 52 ms index build.
+- **Assessment:** search speed is not a problem at any projected size. The payload is acceptable at launch size but would become heavy for mobile data at the full curriculum (about 370 KB gzipped on top of 172 KB of framework JavaScript). No change is recommended now; re-measure at about 250 topics (see the completion report for the smallest option if needed).
+
+**Resource directory review (measured at 390 px):**
+
+- 176 resources in 7 type sections, with no grouping by subject or publisher and no filter.
+- The page is about 32,000 px tall, roughly 40 phone screens, with 2,470 DOM nodes; 546 KB of raw HTML (38 KB gzipped). “Articles” is a single list of 95 items.
+- Resources are findable through site search by title, publisher, and format: “Catholic Answers” returns 38 resources, “Spannagel” 29, “video” 19.
+- Every resource is cited by at least one topic, which already provides subject access from topic pages.
+- Publisher names are inconsistent (for example “Catholic Answers” and “Catholic Answers Magazine”, and years inside the publisher field), giving 63 apparent publishers.
+- **Assessment:** the directory is already hard to browse on a phone and will not scale. Recommendations are in the completion report and await approval; nothing was changed.
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -216,6 +274,8 @@ These stay open until checked against an authoritative source; topics describe t
 - The USCCB *Guidelines for the Reception of Communion*: the request that Orthodox Christians respect the discipline of their own Churches is carried over from the Batch 2 reading; the page now refuses automated reading and could not be reopened in Batch 5.
 - The USCCB complementary norm on the age of Confirmation (canon 891), not cited until it can be read.
 - The OCIA ritual's text for the Rites of Acceptance, Welcoming, and Election, the Call to Continuing Conversion, and the Scrutinies (Batch 6 relies on catechetical guides).
+- Which translation the current U.S. Lectionary for Mass uses (not stated in `which-bible-translation` until verified).
+- The Anglican Thirty-Nine Articles, Article VI, on the deuterocanonical books (page did not load; Anglican views not stated).
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
 - Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, and the pastoral tone of the returning-Catholic and mortal-sin pages.
 

@@ -17,8 +17,9 @@ export type Category = {
 };
 
 // "document" is an official Catholic Church document; "source" is a primary source
-// from another tradition, used to state that tradition's views in its own words.
-export type ResourceType = "document" | "source" | "article" | "video" | "podcast" | "book" | "course";
+// from another tradition, used to state that tradition's views in its own words;
+// "directory" is a searchable listing, such as parish and Mass times.
+export type ResourceType = "document" | "source" | "article" | "video" | "podcast" | "book" | "course" | "directory";
 
 // Kept here, beside the type and away from the content data, so browser code can use
 // it without pulling the whole content registry into the JavaScript bundle.
@@ -30,6 +31,7 @@ export const resourceTypeLabel: Record<ResourceType, string> = {
   podcast: "Podcast",
   book: "Book",
   course: "Course",
+  directory: "Directory",
 };
 
 // The small label shown above a resource: its type, publisher, and any cost or sign-up.

@@ -2,6 +2,7 @@
 
 import { apologeticsTopics } from "./apologetics";
 import { becomingCatholic } from "./becoming-catholic";
+import { bibleTopics } from "./bible";
 import { catholicLife } from "./catholic-life";
 import { church } from "./church";
 import { foundations } from "./foundations";
@@ -16,6 +17,7 @@ export const topics = [
   ...god,
   ...jesus,
   ...church,
+  ...bibleTopics,
   ...sacraments,
   ...mass,
   ...massParts,
@@ -30,9 +32,12 @@ export const startHere = [
   "what-do-catholics-believe",
   "who-is-god",
   "who-is-jesus",
+  "divinity-of-jesus",
   "why-did-jesus-die",
   "resurrection",
   "what-is-the-church",
+  "what-is-the-bible",
+  "seven-sacraments",
   "what-happens-at-mass",
   "how-to-become-catholic",
 ];
