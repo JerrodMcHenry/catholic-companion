@@ -219,4 +219,95 @@ export const church: Topic[] = [
     resources: ["ca-what-catholics-believe-about-the-pope"],
     related: ["catholic-and-protestant-differences", "peter-the-rock", "papal-infallibility", "who-can-receive-communion", "what-is-the-trinity"],
   },
+  {
+    slug: "catholics-and-muslims",
+    title: "Catholics and Muslims",
+    question: "What do Catholics and Muslims share, and where do they differ?",
+    alsoKnownAs: ["Christianity and Islam", "Catholic vs. Muslim"],
+    category: "church",
+    keywords: ["Catholics and Muslims", "Christianity and Islam", "Islam", "Muslim", "do Muslims and Christians worship the same God", "Abraham", "Nostra Aetate", "Jesus in Islam", "Mary in Islam", "difference between Christianity and Islam"],
+    summary:
+      "Catholics and Muslims both worship the one God, Creator of heaven and earth, who has spoken to humanity. Both look to Abraham, honor Jesus and his virgin mother Mary, await the day of judgment, and value prayer, almsgiving, and fasting. They differ above all about who Jesus is: Christians believe he is the Son of God made man, who died and rose again, while Islam honors him as a prophet. They also differ about Muhammad and the Qur'an.",
+    explanation: [
+      "Catholic teaching: the Second Vatican Council said that the Church “regards with esteem also the Moslems. They adore the one God, living and subsisting in Himself; merciful and all-powerful, the Creator of heaven and earth, who has spoken to men” (Nostra Aetate 3). With Christians, Muslims “adore the one, merciful God, mankind's judge on the last day” (CCC 841).",
+      "What is shared: Muslims link their faith to Abraham; “though they do not acknowledge Jesus as God, they revere Him as a prophet. They also honor Mary, His virgin Mother” (Nostra Aetate 3). They await the day of judgment and “value the moral life and worship God especially through prayer, almsgiving and fasting” (Nostra Aetate 3).",
+      "Where they differ: Christians confess one God in three persons and Jesus as the eternal Son made man; Islam rejects both (see “Is the Trinity in the Bible?” and “Is Jesus truly God?”). Most Muslims hold that Jesus was not crucified (see “Was Jesus really crucified?”). Christians believe that God's revelation is complete in Christ; Muslims believe the Qur'an is God's final revelation (see “How do Catholics view Muhammad and the Qur'an?”).",
+      "Many voices: Islam includes Sunni and Shia Muslims and many schools of law and thought, so not every Muslim explains these beliefs in the same way.",
+      "Living together: noting that “not a few quarrels and hostilities have arisen between Christians and Moslems,” the Council urged all “to forget the past and to work sincerely for mutual understanding” and to promote together social justice, moral welfare, peace, and freedom (Nostra Aetate 3).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "841", url: ccc("__P29") },
+      ],
+      scripture: [
+        { passage: "Genesis 12:1–3", url: bible("genesis/12") },
+        { passage: "John 1:1–14", url: bible("john/1") },
+      ],
+      documents: ["nostra-aetate", "lumen-gentium"],
+    },
+    resources: ["quran-112", "quran-4-171"],
+    related: ["muhammad-and-the-quran", "divinity-of-jesus", "trinity-in-scripture", "was-jesus-crucified", "salvation-of-non-christians"],
+  },
+  {
+    slug: "do-all-religions-lead-to-god",
+    title: "Do All Religions Lead to God?",
+    question: "Do all religions lead to God?",
+    alsoKnownAs: ["Religious pluralism", "Are all religions the same?", "Other religions: Hinduism, Buddhism, Sikhism"],
+    category: "church",
+    keywords: ["do all religions lead to God", "are all religions the same", "religious pluralism", "many paths to God", "relativism", "Hinduism", "Buddhism", "Sikhism", "other religions", "Dominus Iesus", "Nostra Aetate", "interfaith"],
+    summary:
+      "The Catholic Church respects what is true and holy in other religions and teaches that God's grace can reach people outside the visible Church. But it does not teach that all religions are equally true or equally ways of salvation. Catholics believe that Jesus Christ is the one Savior and the fullness of God's revelation. The world's religions also differ deeply from one another in what they say about God, the human person, and the goal of life.",
+    explanation: [
+      "Respect: the Church “rejects nothing that is true and holy in these religions” and regards their teachings and ways of life with “sincere reverence,” since they “often reflect a ray of that Truth which enlightens all men.” Yet “she proclaims, and ever must proclaim Christ ‘the way, the truth, and the life’” (Nostra Aetate 2).",
+      "Not equal ways: “it would be contrary to the faith to consider the Church as one way of salvation alongside those constituted by the other religions” (Dominus Iesus 21). The equality presupposed in dialogue “refers to the equal personal dignity of the parties in dialogue, not to doctrinal content” (Dominus Iesus 22). Whatever is good and true in other religions is “a preparation for the Gospel” (CCC 843).",
+      "Hinduism is “a diverse family of philosophies and traditions” with no single founder or sole authoritative scripture (Hindu American Foundation). Many Hindu schools speak of Brahman, the Ultimate Reality, and seek moksha, liberation from the cycle of birth and rebirth, through paths of devotion, knowledge, action, and meditation. Schools differ deeply, for example on whether the self and the Divine are ultimately one (Advaita) or distinct (Dvaita). Many Hindus regard religious pluralism as essential, acknowledging “more than one path (religion) or way of relating to Truth (God).”",
+      "Buddhism traces its teaching to the Buddha's Four Noble Truths: life is marked by suffering, or “stress” (dukkha); it arises from craving; it ceases when craving is relinquished; and the way to that cessation is the Noble Eightfold Path, leading to awakening and nirvana, the “Unbinding” (Dhammacakkappavattana Sutta). Its goal is not communion with a creator God: the Theravada teacher Nyanaponika Thera writes that a creator god “is incompatible with the Buddha's teachings.” Buddhism has several major branches, including Theravada, Zen, Pure Land, and Vajrayana, with very different practices (Lion's Roar).",
+      "Sikhism, founded by Guru Nanak in fifteenth-century Punjab, is “strictly monotheistic” and distinct from both Hinduism and Islam (SikhNet). Sikhs practice meditation on God's name, honest work, and sharing with others, and honor the scripture Guru Granth Sahib as the Guru. Liberation (mukti) is union with God, reached by devotion and “the grace of the Guru”: in the words of the Sikh Gurdwara committee, “Man does not become God, only the spark merges in the fire” (SGPC).",
+      "These goals, moksha, nirvana, and mukti, are not the same as one another, nor the same as Christian salvation, which is communion with the triune God through Christ. Formal perspectives from these traditions are planned after launch. The Islamic view and the Catholic responses are set out below; see also “Can non-Christians be saved?”",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "842–848", url: ccc("__P29") },
+      ],
+      scripture: [
+        { passage: "John 14:6", url: bible("john/14") },
+        { passage: "Acts 17:22–31", url: bible("acts/17") },
+        { passage: "1 Timothy 2:3–6", url: bible("1timothy/2") },
+      ],
+      documents: ["nostra-aetate", "dominus-iesus"],
+    },
+    resources: ["haf-hinduism-basics", "ati-dhammacakka", "ati-god-idea", "lionsroar-branches", "sikhnet-what-is-sikhism", "sgpc-main-principles"],
+    related: ["salvation-of-non-christians", "catholics-and-muslims", "who-is-jesus", "what-is-the-church"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "All salvation comes from Christ, the one mediator, through his Church. The Church respects what is true and holy in other religions and recognizes that God's grace can work in them, but it would be contrary to the faith to regard the Church as one way of salvation alongside others, or other religions as complementary to Christ's revelation (Nostra Aetate 2; Dominus Iesus 6, 21; CCC 843, 846).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "islam",
+          position:
+            "Islam teaches that Islam is the true religion before God: “Whoever seeks a way other than Islam, it will never be accepted from them” (Qur'an 3:85). The Sunni scholar Salman Younas, writing for SeekersGuidance, states that in the consensus of Islamic scholarship “the concept of the universal validity of religions is a heterodox belief.”",
+          variations:
+            "Muslims read Qur'an 2:62, which promises reward to “the believers, Jews, Christians, and Sabians” who believe in God and the Last Day and do good, in different ways. SeekersGuidance reads it of those who lived before Muhammad's mission or who later accepted Islam; some exegetes regard it as abrogated by 3:85; and, according to the Shia reference work WikiShia, some Muslim pluralists read it as making faith in God and righteous deeds the only conditions of salvation.",
+          arguments: [
+            {
+              claim: "Faith in God and good deeds are enough, whatever one's religion (a pluralist reading of Qur'an 2:62).",
+              response:
+                "Catholics agree that God's grace can reach those who, through no fault of their own, do not know the Gospel but seek God sincerely and try to do his will (Lumen Gentium 16; CCC 847). But they are saved by Christ's grace, not because their religion is an equal path: all salvation “comes from Christ the Head through the Church which is his Body” (CCC 846).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Muslims and Christians worship the same one God, so the differences between the religions do not really matter.",
+              response:
+                "Catholics affirm that Muslims “adore the one, merciful God” together with Christians (CCC 841). But the two faiths differ about who God has revealed himself to be: Christians believe in one God in three persons and in Jesus as the Son of God made man, which Islam denies. Respect for Muslims does not require treating those differences as unimportant (Dominus Iesus 22).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["quran-3-85", "quran-2-62", "seekers-quran-2-62", "wikishia-2-62"],
+        },
+      ],
+    },
+  },
 ];

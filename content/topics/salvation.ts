@@ -378,7 +378,7 @@ export const salvation: Topic[] = [
       "Those who do not know: the teaching “is not aimed at those who, through no fault of their own, do not know Christ and his Church.” Those who “seek God with a sincere heart, and, moved by grace, try in their actions to do his will as they know it through the dictates of their conscience — those too may achieve eternal salvation” (CCC 847; Lumen Gentium 16).",
       "Still by grace: such people are saved not by their own goodness or by their religion as such, but by Christ's grace working in ways known to God (CCC 848, 1260). God “wills everyone to be saved and to come to knowledge of the truth” (1 Timothy 2:4).",
       "Mission remains: God can lead people to faith in ways known to himself, but “the Church still has the obligation and also the sacred right to evangelize all men” (CCC 848). The Church respects what is true and holy in other religions while proclaiming Christ as “the way and the truth and the life” (John 14:6; Nostra Aetate 2).",
-      "This is a sensitive question, and how the Catholic position relates to other religions' own views of salvation is addressed in “Do all religions lead to God?” when it is written.",
+      "Other religions understand the goal of life differently, so “salvation” is not a shared term. Many Hindu traditions seek moksha, liberation from the cycle of birth and rebirth; Buddhism teaches the end of suffering through the Noble Eightfold Path, leading to awakening and nirvana; Sikhism seeks mukti, union with the one God by the Guru's grace. Each of these traditions is internally diverse, and each is introduced more fully in “Do all religions lead to God?” The Church holds that what is true and good in them may be a preparation for the Gospel (CCC 843), while salvation itself comes from Christ. Evangelical and Jewish views, and the Catholic responses, are set out below.",
     ],
     teaching: {
       catechism: [
@@ -395,5 +395,50 @@ export const salvation: Topic[] = [
     },
     resources: ["ca-salvation-outside-church"],
     related: ["how-are-we-saved", "baptism", "what-is-the-church", "heaven"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "All salvation comes from Christ the Head through the Church, his Body. Those who, through no fault of their own, do not know the Gospel or the Church, but seek God with a sincere heart and, moved by grace, try to do his will as their conscience shows it, may attain eternal salvation (Lumen Gentium 16; CCC 846–848). The Church does not pronounce on any individual's eternal destiny, and she remains bound to proclaim the Gospel to all.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "evangelical",
+          position:
+            "The Lausanne Covenant teaches that “there is only one Saviour and only one gospel.” It recognizes that “everyone has some knowledge of God through his general revelation in nature,” but denies that this can save, “for people suppress the truth by their unrighteousness,” and holds that “those who reject Christ repudiate the joy of salvation and condemn themselves to eternal separation from God.”",
+          variations:
+            "The same Covenant affirms that “God loves everyone, not wishing that any should perish but that all should repent,” and rejects “every kind of syncretism and dialogue which implies that Christ speaks equally through all religions and ideologies.”",
+          arguments: [
+            {
+              claim: "General revelation in nature cannot save; only explicit faith in Christ can.",
+              response:
+                "Catholics agree that nature alone does not save and that there is salvation only through Christ (Acts 4:12; CCC 846). The Catholic teaching is not that people are saved by natural knowledge or by their own religion, but that Christ's grace can reach those who, through no fault of their own, have not received the Gospel, “in ways known to himself” (CCC 848; Lumen Gentium 16).",
+              authority: "doctrine",
+            },
+            {
+              claim: "If non-Christians can be saved, there is no reason for mission.",
+              response:
+                "The Church teaches that, although God can lead people to faith in ways known to himself, she “still has the obligation and also the sacred right to evangelize all men” (CCC 848). Those outside the Church who receive grace are still, “objectively speaking,” in “a gravely deficient situation” compared with those who have the fullness of the means of salvation (Dominus Iesus 22).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["lausanne-covenant"],
+        },
+        {
+          tradition: "judaism",
+          position:
+            "Judaism does not require non-Jews to become Jewish in order to have a share in the world to come. Maimonides teaches that a non-Jew who accepts and carefully observes the seven commandments given to the descendants of Noah, because God commanded them in the Torah, “is considered one of ‘the pious among the gentiles’ and will merit a share in the world to come” (Mishneh Torah, Kings and Wars 8:11).",
+          arguments: [
+            {
+              claim: "God's covenant with Israel remains, so Jews do not need Christ in order to be saved.",
+              response:
+                "The Church teaches that God's covenant with Israel “has never been revoked” (CCC 121) and that the Jewish faith is “a response to God's revelation in the Old Covenant” (CCC 839). She also confesses Christ as the Savior of all. A 2015 reflection of the Vatican's Commission for Religious Relations with the Jews, which states that it is not a magisterial document, says that Jews' participation in God's salvation is “theologically unquestionable,” but that how this is possible without confessing Christ explicitly “is and remains an unfathomable divine mystery.”",
+              authority: "theological-opinion",
+            },
+          ],
+          sources: ["sefaria-mt-kings-8-11"],
+        },
+      ],
+    },
   },
 ];

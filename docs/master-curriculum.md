@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–11 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV) are built: 122 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–11 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions) are built: 131 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -223,11 +223,11 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `why-did-god-create-us` | Why did God create us? | Purpose of life | B | P1 | `meaning-of-life` | |
-| `creation` | Did God create the world? | Creation from nothing | B | P1 | `creation-and-evolution` | |
-| `creation-and-evolution` | Can Catholics accept evolution? | Humani Generis | I | P1 | `adam-and-eve`, `faith-and-science` | D: atheism; R |
+| `why-did-god-create-us` ✓ | Why did God create us? | Purpose of life | B | P1 | `meaning-of-life` | |
+| `creation` ✓ | Did God create the world? | Creation from nothing | B | P1 | `creation-and-evolution` | |
+| `creation-and-evolution` ✓ | Can Catholics accept evolution? | Humani Generis | I | P1 | `adam-and-eve`, `faith-and-science` | D: atheism; R |
 | `adam-and-eve` | Were Adam and Eve real people? | Monogenism, the Fall | I | P2 | `original-sin` | R |
-| `original-sin` | What is original sin? | The Fall, concupiscence | B | P1 | `baptism` | |
+| `original-sin` ✓ | What is original sin? | The Fall, concupiscence | B | P1 | `baptism` | |
 | `how-to-read-genesis` | Is Genesis meant to be read literally? | Literary genre, senses of Scripture | I | P2 | `literal-or-figurative` | |
 | `image-of-god` | What does it mean that we are made in God's image? | Imago Dei, human dignity | B | P2 | `human-life-dignity` | |
 | `human-soul` | Do humans have a soul? | Spiritual soul | B | P2 | `what-happens-when-we-die` | D: Jehovah's Witnesses |
@@ -500,13 +500,13 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `does-god-exist` | Does God exist? | Theism | B | P1 | `five-ways`, `problem-of-evil` | D: atheism, agnosticism |
+| `does-god-exist` ✓ | Does God exist? | Theism | B | P1 | `five-ways`, `problem-of-evil` | D: atheism, agnosticism |
 | `knowing-god-by-reason` | Can we know God by reason alone? | Natural theology | I | P2 | `does-god-exist` | |
 | `five-ways` | What are Aquinas's five ways? | Cosmological argument | I | P2 | `thomas-aquinas` | |
 | `cosmological-argument` | Did the universe have a beginning, and does it need a cause? | Kalam | I | P3 | `five-ways` | D: atheism |
 | `design-argument` | Does the order of the universe point to a designer? | Fine-tuning, teleological argument | I | P2 | `faith-and-science` | D: atheism |
 | `morality-without-god` | Can people be good without God? | Moral argument | I | P2 | `natural-law` | D: atheism |
-| `faith-and-science` | Are faith and science in conflict? | | B | P1 | `galileo`, `creation-and-evolution` | D: atheism |
+| `faith-and-science` ✓ | Are faith and science in conflict? | | B | P1 | `galileo`, `creation-and-evolution` | D: atheism |
 | `lemaitre-and-the-big-bang` | Did a Catholic priest propose the Big Bang? | Georges Lemaître | B | P3 | `faith-and-science` | |
 | `miracles` | Are miracles possible? | | I | P2 | `miracles-of-jesus` | D: atheism |
 | `is-there-objective-truth` | Is there objective truth? | Relativism | I | P2 | `faith-and-reason` | |
@@ -882,8 +882,8 @@ Short "how do we compare" topics that pull from many pages:
 | `catholic-and-protestant-differences` ✓ | How are Catholics and Protestants different? | B | P1 | `sola-scriptura`, `faith-and-works` | Agreement first |
 | `catholic-and-orthodox-differences` ✓ | How are Catholics and Orthodox different? | I | P1 | `great-schism` | |
 | `catholics-and-jews` | What do Catholics and Jews share? | B | P2 | `jesus-the-messiah` | R |
-| `catholics-and-muslims` | What do Catholics and Muslims share, and where do they differ? | B | P1 | `divinity-of-jesus` | R |
-| `do-all-religions-lead-to-god` | Do all religions lead to God? | B | P1 | `salvation-of-non-christians` | D: Hinduism, Buddhism, Sikhism, all; R |
+| `catholics-and-muslims` ✓ | What do Catholics and Muslims share, and where do they differ? | B | P1 | `divinity-of-jesus` | R |
+| `do-all-religions-lead-to-god` ✓ | Do all religions lead to God? | B | P1 | `salvation-of-non-christians` | D: Hinduism, Buddhism, Sikhism, all; R |
 | `why-are-there-so-many-churches` | Why are there so many Christian churches? | B | P2 | `church-and-other-christians` | |
 
 ---
@@ -909,7 +909,7 @@ Questions that belong to no other subject:
 | `book-of-mormon` | Is the Book of Mormon scripture? | | I | P2 | Latter-day Saints | R |
 | `who-goes-to-heaven` | Who goes to heaven? | 144,000 | I | P3 | Jehovah's Witnesses | |
 | `chalcedon-and-oriental-orthodoxy` | Do Oriental Orthodox Christians believe Jesus is God and man? | Miaphysitism | A | P3 | Oriental Orthodoxy | Mostly agreement |
-| `muhammad-and-the-quran` | How do Catholics view Muhammad and the Qur'an? | | I | P1 | Islam | R |
+| `muhammad-and-the-quran` ✓ | How do Catholics view Muhammad and the Qur'an? | | I | P1 | Islam | R |
 | `old-covenant` | Is God's covenant with Israel still valid? | | A | P3 | Judaism | R |
 | `reincarnation` | Do Catholics believe in reincarnation? | | B | P2 | Hinduism, Buddhism | |
 | `yoga-and-meditation` | Can Catholics practice yoga or Eastern meditation? | | I | P3 | Hinduism, Buddhism | R |
@@ -944,13 +944,13 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 - **Latter-day Saints** (4): `trinity-in-scripture` ✓, `early-church`, `great-apostasy`, `book-of-mormon`
 - **Jehovah's Witnesses** (9): `trinity-in-scripture` ✓, `who-is-the-holy-spirit` ✓, `divinity-of-jesus` ✓, `human-soul`, `st-michael`, `hell` ✓, `early-church`, `great-apostasy`, `who-goes-to-heaven`
 - **Judaism** (7): `trinity-in-scripture` ✓, `prophecy-fulfilled`, `septuagint`, `statues-and-images` ✓, `old-covenant`, `jewish-objections-to-jesus`, `isaiah-53`
-- **Islam** (10): `trinity-in-scripture` ✓, `divinity-of-jesus` ✓, `resurrection` ✓, `was-jesus-crucified` ✓, `statues-and-images` ✓, `crusades`, `muhammad-and-the-quran`, `bible-corruption-claims`, `jesus-in-the-quran`, `muhammad-in-the-bible`
-- **Hinduism** (4): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god`, `reincarnation`, `yoga-and-meditation`
-- **Buddhism** (4): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god`, `reincarnation`, `yoga-and-meditation`
-- **Sikhism** (2): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god`
-- **Atheism** (18): `did-jesus-exist` ✓, `resurrection` ✓, `creation-and-evolution`, `who-wrote-the-gospels`, `constantine`, `crusades`, `inquisition`, `galileo`, `does-god-exist`, `cosmological-argument`, `design-argument`, `morality-without-god`, `faith-and-science`, `miracles`, `problem-of-evil` ✓, `religion-and-violence`, `is-catholicism-pagan`, `church-wealth`
-- **Agnosticism** (3): `does-god-exist`, `problem-of-evil` ✓, `hiddenness-of-god`
-- **All traditions** (4): `salvation-of-non-christians` ✓, `abuse-crisis`, `do-all-religions-lead-to-god`, `why-stay-catholic`
+- **Islam** (10): `trinity-in-scripture` ✓, `divinity-of-jesus` ✓, `resurrection` ✓, `was-jesus-crucified` ✓, `statues-and-images` ✓, `crusades`, `muhammad-and-the-quran` ✓, `bible-corruption-claims`, `jesus-in-the-quran`, `muhammad-in-the-bible`
+- **Hinduism** (4): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓, `reincarnation`, `yoga-and-meditation`
+- **Buddhism** (4): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓, `reincarnation`, `yoga-and-meditation`
+- **Sikhism** (2): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓
+- **Atheism** (18): `did-jesus-exist` ✓, `resurrection` ✓, `creation-and-evolution` ✓, `who-wrote-the-gospels`, `constantine`, `crusades`, `inquisition`, `galileo`, `does-god-exist` ✓, `cosmological-argument`, `design-argument`, `morality-without-god`, `faith-and-science` ✓, `miracles`, `problem-of-evil` ✓, `religion-and-violence`, `is-catholicism-pagan`, `church-wealth`
+- **Agnosticism** (3): `does-god-exist` ✓, `problem-of-evil` ✓, `hiddenness-of-god`
+- **All traditions** (4): `salvation-of-non-christians` ✓, `abuse-crisis`, `do-all-religions-lead-to-god` ✓, `why-stay-catholic`
 
 <!-- /generated -->
 
@@ -1021,15 +1021,15 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 At launch this pathway is the eight topics that will exist then; `development-of-doctrine`, `kinds-of-prayer`, `liturgy-of-the-hours`, `virtues`, `natural-law`, and `thomas-aquinas` stay P2 and join it after launch. If the pathway is shown in the app before then, it lists only built topics, so there are no dead links or partial-completion counts.
 
 ### 8.5 Exploring Catholic apologetics (12)
-`does-god-exist` → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` ✓ → `sola-scriptura` ✓ → `peter-the-rock` ✓ → `faith-and-works` ✓ → `real-presence` ✓ → `why-honor-mary` ✓ → `salvation-of-non-christians` ✓
+`does-god-exist` ✓ → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` ✓ → `sola-scriptura` ✓ → `peter-the-rock` ✓ → `faith-and-works` ✓ → `real-presence` ✓ → `why-honor-mary` ✓ → `salvation-of-non-christians` ✓
 
 ### 8.6 Comparing Catholicism with another tradition (template)
 1. The tradition page (overview, agreement, differences)
 2. The matching comparison question from [§6.3](#63-comparison-questions), if one exists
 3. The tradition's debate topics in the order of its page ([§7.3](#73-debate-topic-index-by-tradition))
-4. `salvation-of-non-christians` ✓ and `do-all-religions-lead-to-god`
+4. `salvation-of-non-christians` ✓ and `do-all-religions-lead-to-god` ✓
 
-Example, Islam: `islam` ✓ → `catholics-and-muslims` → `divinity-of-jesus` ✓ → `trinity-in-scripture` ✓ → `was-jesus-crucified` ✓ → `muhammad-and-the-quran` → `salvation-of-non-christians` ✓.
+Example, Islam: `islam` ✓ → `catholics-and-muslims` ✓ → `divinity-of-jesus` ✓ → `trinity-in-scripture` ✓ → `was-jesus-crucified` ✓ → `muhammad-and-the-quran` ✓ → `salvation-of-non-christians` ✓.
 
 ---
 
@@ -1123,7 +1123,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 10 | Apologetics II: Protestant dialogue (debate sections) | 0 | 0 | — |
 | 11 | Apologetics III: Eastern Orthodoxy and Judaism (pages and debate sections) | 0 | 0 | — |
 | 12 | Apologetics IV: Mary, salvation, and other traditions (debate sections) | 0 | 2 | `trinity-in-scripture` ✓, `was-jesus-crucified` ✓ |
-| 13 | Faith, reason, creation, and other religions | 9 | 1 | `why-did-god-create-us`, `creation`, `creation-and-evolution`, `original-sin`, `does-god-exist`, `faith-and-science`, `problem-of-evil` ✓, `catholics-and-muslims`, `do-all-religions-lead-to-god`, `muhammad-and-the-quran` |
+| 13 | Faith, reason, creation, and other religions | 0 | 10 | `why-did-god-create-us` ✓, `creation` ✓, `creation-and-evolution` ✓, `original-sin` ✓, `does-god-exist` ✓, `faith-and-science` ✓, `problem-of-evil` ✓, `catholics-and-muslims` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ |
 | 14 | Moral life and social teaching | 8 | 0 | `how-catholics-decide-right-and-wrong`, `conscience`, `ten-commandments`, `what-is-sin`, `human-life-dignity`, `abortion`, `sexuality`, `what-is-catholic-social-teaching` |
 | 15 | Prayer, the Church year, and Catholic life | 16 | 0 | `what-is-prayer`, `how-to-pray`, `basic-catholic-prayers`, `our-father`, `hail-mary`, `sign-of-the-cross`, `the-rosary`, `liturgical-year`, `advent`, `lent`, `ash-wednesday`, `holy-week`, `easter-vigil`, `holy-days-of-obligation`, `fasting-and-abstinence`, `after-becoming-catholic` |
 | 16 | Church history and the Fathers | 7 | 0 | `church-history-overview`, `early-church`, `council-of-nicaea`, `great-schism`, `protestant-reformation`, `who-are-the-church-fathers`, `fathers-on-the-eucharist` |
@@ -1142,7 +1142,7 @@ Debate sections extend existing topics and tradition pages support them; neither
 | 10 | `are-catholics-christians` ✓, `real-presence` ✓, `mass-in-scripture` ✓, `infant-baptism` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `catholic-bible-books` ✓ | `evangelical` ✓ |
 | 11 | `peter-the-rock` ✓, `papal-infallibility` ✓, `immaculate-conception` ✓, `purgatory` ✓, `statues-and-images` ✓ | `eastern-orthodoxy` ✓, `judaism` ✓ |
 | 12 | `why-honor-mary` ✓, `mother-of-god` ✓, `praying-to-saints` ✓, `faith-and-works` ✓, `who-is-the-holy-spirit` ✓, `hell` ✓, `did-jesus-exist` ✓, `resurrection` ✓, `was-jesus-crucified` ✓ | — |
-| 13 | `does-god-exist`, `faith-and-science`, `creation-and-evolution`, `salvation-of-non-christians`, `do-all-religions-lead-to-god`, `muhammad-and-the-quran` | — |
+| 13 | `does-god-exist` ✓, `faith-and-science` ✓, `creation-and-evolution` ✓, `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ | — |
 | 16 | `early-church`, `great-schism`, `trinity-in-scripture` | `latter-day-saints` |
 
 **Deferred after launch (approved):** formal perspectives for `hinduism`, `buddhism`, `sikhism`. The launch topics that name them (`salvation-of-non-christians`, `do-all-religions-lead-to-god`) must introduce each in prose, written in Batch 13 with those debate sections.
@@ -1181,7 +1181,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.1 Foundations of Catholicism | 12 | 8 | 4 | 0 | 1 | 0 | 8 |
 | 4.2 God and the Holy Trinity | 12 | 4 | 4 | 4 | 3 | 0 | 4 |
 | 4.3 Jesus Christ | 15 | 7 | 6 | 2 | 4 | 0 | 7 |
-| 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 0 |
+| 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 4 |
 | 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 6 |
 | 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 10 |
 | 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
@@ -1192,15 +1192,15 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
 | 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 0 |
 | 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 0 |
-| 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 1 |
+| 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 0 |
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
 | 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 8 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 1 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
-| 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 2 |
-| 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 1 |
-| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **128** |
+| 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
+| 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
+| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **137** |
 
 <!-- /generated: counts -->
 

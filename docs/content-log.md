@@ -557,6 +557,91 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `resurrection` | Atheism (Hume); Islam (Qur'an 4:158; SeekersGuidance) | Ignatius, Smyrnaeans 3 | **R** |
 | `was-jesus-crucified` | Islam (Qur'an 4:157; SeekersGuidance; Ibn Kathir; Ahmadiyya) | Ignatius, Trallians 9 | **R:** the summary of Muslim interpretations; whether the Ahmadiyya view should be framed further (no sourced framing added) |
 
+## Batch 13: Faith, reason, creation, and other religions (2026-11-25)
+
+**Batch 12 follow-up:**
+
+- **Resource reconciliation:** the Batch 12 report said “two of the four Catholic additions aren't from Catholic Answers.” In fact there were three Catholic additions (one Thomistic Institute video and two St. Paul Center articles), and none was from Catholic Answers. The Ehrman article and the Tacitus text are historical sources, not Catholic resources.
+- **Thomistic Institute video (“The Triune God”):**
+  - Deferred. Its YouTube transcript panel did not load in the browser, so its content could not be verified.
+  - It was removed from `trinity-in-scripture` and from the resource registry (`video-a101-triune-god`); a reader who had saved it will no longer see it on the Saved page.
+  - The earlier Aquinas 101 videos, `video-a101-grace` and `video-a101-last-things`, were likewise checked only through their descriptions and listings, and are flagged here for the same review.
+- **Universalism:** kept as a post-launch coverage item. **Josephus:** the authenticity question stays in the research backlog.
+
+**Curriculum:**
+
+- **Built:** all nine Batch 13 topics, including the promoted `muhammad-and-the-quran`, and all six assigned debate sections. There were no assignment discrepancies.
+- **Pluralism debates:** `salvation-of-non-christians` and `do-all-religions-lead-to-god` list “Hinduism, Buddhism, Sikhism, all.”
+  - Following the Batch 10 decision, their formal perspectives come from traditions with launch pages that hold distinct, sourced views of other religions: Evangelical and Jewish (`salvation-of-non-christians`) and Islamic (`do-all-religions-lead-to-god`).
+  - Hinduism, Buddhism, and Sikhism are covered in the topics' prose. The curriculum script now reports their introductory coverage as done on both topics, and continues to report the formal perspectives as deferred.
+- **Pathways** 8.5 and 8.6 are now fully built at launch (12/12, 7/7).
+
+**Built:**
+
+- **Topics:**
+  - `why-did-god-create-us`, `creation`, `original-sin` (new file `content/topics/creation.ts`).
+  - `does-god-exist`, `faith-and-science`, `creation-and-evolution` (new file `content/topics/faith-and-reason.ts`; the Faith and Reason category now has topics).
+  - `catholics-and-muslims`, `do-all-religions-lead-to-god` (The Church; added to the “Comparing traditions” list on the Apologetics page).
+  - `muhammad-and-the-quran` (Common Objections).
+- **Debate sections:**
+  - `does-god-exist` (atheism, agnosticism); `faith-and-science` (atheism); `creation-and-evolution` (atheism).
+  - `salvation-of-non-christians` (Evangelical, Judaism); `do-all-religions-lead-to-god` (Islam); `muhammad-and-the-quran` (Islam).
+- **Distinctions maintained:**
+  - Philosophical arguments versus scientific experiments (CCC 31: “not … proofs in the natural sciences”), with the arguments presented as disputed.
+  - Scientific findings versus open questions (the origin of life, the earliest moments of the universe).
+  - Methodological versus ontological naturalism.
+  - Respect for other religions versus doctrinal equality (Dominus Iesus 22).
+  - Islamic religious claims versus historical study versus Catholic theological conclusions.
+- **Hindu, Buddhist, and Sikh introductions** (in `do-all-religions-lead-to-god`, summarized in `salvation-of-non-christians`), each from sources representing the tradition and noting internal diversity:
+  - Hinduism: Brahman, moksha, the paths of yoga, Advaita and Dvaita, and the Hindu American Foundation's own pluralism.
+  - Buddhism: the Four Noble Truths and nirvana, Nyanaponika on a creator god, and the Theravada, Zen, Pure Land, and Vajrayana branches.
+  - Sikhism: strict monotheism, meditation on the Name, honest work and sharing, the Guru Granth Sahib, grace, and mukti.
+  - The topics state that moksha, nirvana, and mukti are not interchangeable with one another or with Christian salvation.
+- **Small changes:**
+  - The Islam page now links `catholics-and-muslims`.
+  - The Hinduism, Buddhism, and Sikhism tradition entries (still without pages) list their sources, so those resources appear under “Other traditions” in the directory.
+
+**Verification (Batch 13):**
+
+- **Catholic documents:**
+  - First Vatican Council, Dei Filius chapters 2 and 4 (Papal Encyclicals Online); Humani Generis 36–37; Fides et Ratio (opening); Dominus Iesus 4, 6, 21, 22; Nostra Aetate 2–3; Lumen Gentium 16.
+  - International Theological Commission, Communion and Stewardship 63 and 70: a commission study, approved by ballot and published with Cardinal Ratzinger's permission; its 2004 age-of-the-universe figure is not used.
+  - The 1996 message of St. John Paul II on evolution, English text from Catholic Culture. That translation reads “more than one hypothesis” in section 4 where other English versions read “more than a hypothesis,” so the disputed sentence is not quoted; only the next sentence and sections 5–6 are.
+  - The 2015 Vatican reflection on Catholic–Jewish relations (“unfathomable divine mystery”).
+- **Aquinas:** Summa Theologiae I, q. 2, a. 3 (New Advent). **Augustine:** Confessions 1.1 (New Advent).
+- **Philosophy** (Stanford Encyclopedia of Philosophy): Cosmological Argument; Atheism and Agnosticism (definitions, global and local atheism, Le Poidevin's argument for agnosticism, Huxley); Religion and Science (the conflict model and its reception); Naturalism.
+- **Science:** Smithsonian Human Origins Program; NASA Science (universe overview: 13.8 billion years, open questions about inflation).
+- **Islamic sources:**
+  - Qur'an 2:62, 3:85, 33:40 (Quran.com, browser).
+  - SeekersGuidance, Salman Younas on 2:62 and 3:85 (Sunni).
+  - WikiShia, “Imamate” and a draft article on 2:62 (Shia; the draft status is shown in the resource title).
+  - Yaqeen Institute, “The Inimitable Qur'an” (only its own account of the Qur'an is cited, not its comparative claims about other faiths).
+- **Jewish:** Maimonides, Mishneh Torah, Kings and Wars 8:11 (Sefaria, browser).
+- **Evangelical:** Lausanne Covenant, section 3.
+- **Hindu:** Hindu American Foundation, “Hinduism Basics.”
+- **Buddhist:** Dhammacakkappavattana Sutta (trans. Thanissaro Bhikkhu) and Nyanaponika Thera, “Buddhism and the God-idea” (Access to Insight); Lion's Roar, “The Branches of Buddhism.”
+- **Sikh:** SikhNet, “Who Are Sikhs? What Is Sikhism?”; Shiromani Gurdwara Parbandhak Committee, “Main Principles.”
+- **Catechism:** quotations checked against the vatican.va cache (27, 31–37, 65–67, 108, 156, 159, 279–309, 337, 356–366, 390–405, 841–848, 1721); all 310 linked references checked (0 problems).
+- **Scripture:** new NABRE quotations checked on bible.usccb.org in a browser (Genesis 1:1, Romans 1:20, 5:12, 5:19, Hebrews 1:2). Hebrews 1:2 was corrected from “has spoken” to “spoke.”
+- **Not used:**
+  - Russell's “Why I Am Not a Christian” (the linked copy returned 404).
+  - The National Academies' evolution site (refused access).
+  - The al-islam.org pages (Cloudflare block).
+  - The Society of Catholic Scientists (only the homepage was read, so it is not cited as a resource).
+  - The 2019 Document on Human Fraternity, deliberately not used for the pluralism topics: its phrase on religious diversity being “willed by God” needs its later clarification, which was not verified.
+- **Search:** 182 of 182 regression checks pass (18 new). “Cosmological argument” and “Other religions: Hinduism, Buddhism, Sikhism” were added as alternative names so that the topics outrank individual source pages. **Build:** 169 static pages; 2,041 internal links, 0 problems.
+
+| Topic / debate | Perspectives (sources) | Open questions for review |
+|---|---|---|
+| `does-god-exist` | Atheism, agnosticism (SEP) | Presentation of the Five Ways in brief |
+| `faith-and-science` | Atheism (SEP Religion and Science; SEP Naturalism) | |
+| `creation-and-evolution` | Atheism (SEP Naturalism) | **R:** human origins and original sin (monogenism, Humani Generis 37, the ITC wording); the third response is labelled theological opinion |
+| `original-sin` | — | **R:** as above |
+| `salvation-of-non-christians` | Evangelical (Lausanne 3); Judaism (Maimonides) | **R:** the response on Judaism, which relies on a non-magisterial 2015 reflection and is labelled theological opinion |
+| `do-all-religions-lead-to-god` | Islam (Qur'an; SeekersGuidance; WikiShia) | **R:** the Hindu, Buddhist, and Sikh summaries (formal perspectives deferred) |
+| `muhammad-and-the-quran` | Islam (Qur'an 33:40, 4:171; Yaqeen; WikiShia) | **R:** the Islamic summaries |
+| `catholics-and-muslims` | — | **R** |
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -578,11 +663,13 @@ These stay open until checked against an authoritative source; topics describe t
 - Anglican and Lutheran positions on the deuterocanonical books (`catholic-bible-books`): still unresearched; Thirty-Nine Articles page did not load.
 - **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
 - Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
-- Universalism and other views on hell beyond the assigned Jehovah's Witness perspective (not assigned in the curriculum; a decision on coverage may be needed).
+- Universalism: a post-launch coverage item (decided after Batch 12); the launch curriculum is not expanded for it.
+- Aquinas 101 videos verified only from descriptions (`video-a101-grace`, `video-a101-last-things`): review their content; “The Triune God” was deferred and removed in Batch 13.
+- Hindu, Buddhist, and Sikh tradition pages and formal debate perspectives (after launch; introductory coverage done in Batch 13).
 - A verified source on the authenticity debate over Josephus, Antiquities 18.3.3 (the Testimonium), before it is quoted.
 - Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, and in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections, and in Batch 13 human origins and original sin, the Hindu, Buddhist, Sikh, Islamic, and Jewish summaries, and the pluralism topics.
 
 ## Earlier topics (Phases 2–4)
 

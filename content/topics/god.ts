@@ -85,7 +85,7 @@ export const god: Topic[] = [
       ],
       documents: [],
     },
-    resources: ["video-a101-triune-god", "ca-explaining-the-trinity", "ca-early-church-trinity"],
+    resources: ["ca-explaining-the-trinity", "ca-early-church-trinity"],
     related: ["what-is-the-trinity", "divinity-of-jesus", "who-is-the-holy-spirit", "who-is-god"],
   },
   {

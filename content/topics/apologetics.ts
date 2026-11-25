@@ -708,4 +708,72 @@ export const apologeticsTopics: Topic[] = [
       ],
     },
   },
+  {
+    slug: "muhammad-and-the-quran",
+    title: "Muhammad and the Qur'an",
+    question: "How do Catholics view Muhammad and the Qur'an?",
+    alsoKnownAs: ["Muhammad", "The Qur'an", "Islam and revelation"],
+    category: "objections",
+    keywords: ["Muhammad", "Prophet Muhammad", "Quran", "Qur'an", "Koran", "is Muhammad a prophet", "seal of the prophets", "Islamic revelation", "Sunni and Shia", "Imamate", "Catholic view of Islam"],
+    summary:
+      "Muslims believe that Muhammad is the final prophet of God and that the Qur'an is God's own speech, revealed to him in Arabic in the seventh century. The Catholic Church regards Muslims with esteem and honors what is true in their faith, but it does not accept Muhammad as a prophet who brings new public revelation, or the Qur'an as the word of God, because Catholics believe that God's revelation is complete in Jesus Christ.",
+    explanation: [
+      "Muhammad in Islam: the Qur'an calls him “the Messenger of Allah and the seal of the prophets” (Qur'an 33:40). Muslims understand him as the final prophet sent by God, and Muslim teachers present his message as continuous with that of earlier prophets on the oneness of God.",
+      "The Qur'an in Islam: Muslims hold that the Qur'an, revealed to Muhammad and recited in Arabic, is God's own word. As the Yaqeen Institute puts it, the Qur'an “presents itself as the literal speech of God” and asserts that nothing like it will ever be produced.",
+      "Different Muslim traditions: Sunni and Shia Muslims agree that Muhammad is the final prophet. Shia Muslims also hold that God designated Imams to succeed him in leading the community, a teaching called the Imamate, which is “one of the points of difference between Shi'a and Sunnis” (WikiShia).",
+      "Faith, history, and theology: these are Islamic religious beliefs. Historians study the origins of Islam and of the Qur'an with their own methods, and Catholic theology reaches its own conclusions; the three are distinct.",
+      "Catholic teaching: the Church “regards with esteem also the Moslems,” who “adore the one God … who has spoken to men” (Nostra Aetate 3). Catholics believe that Christ, the Son of God made man, “is the Father's one, perfect and unsurpassable Word”: “there will be no other word than this one” (CCC 65), and “no new public revelation is to be expected” (CCC 66). For this reason the Church does not receive the Qur'an as revelation.",
+      "The differences concern above all Jesus: see “Is the Trinity in the Bible?”, “Is Jesus truly God?”, “Was Jesus really crucified?”, and “Did Jesus really rise from the dead?” The Islamic view and the Catholic responses are set out below.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "65–67", url: ccc("__PH") },
+        { paragraphs: "841", url: ccc("__P29") },
+      ],
+      scripture: [
+        { passage: "Hebrews 1:1–2", url: bible("hebrews/1") },
+        { passage: "John 1:14–18", url: bible("john/1") },
+      ],
+      documents: ["nostra-aetate", "dei-verbum", "lumen-gentium"],
+    },
+    resources: ["quran-33-40", "yaqeen-inimitable-quran", "wikishia-imamate"],
+    related: ["catholics-and-muslims", "trinity-in-scripture", "divinity-of-jesus", "was-jesus-crucified", "resurrection"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "God's revelation reaches its fullness in Jesus Christ, the Father's “one, perfect and unsurpassable Word”; no new public revelation is to be expected before his return (CCC 65–66; Dei Verbum 4). The Church regards Muslims with esteem and acknowledges that they adore the one God (Nostra Aetate 3; CCC 841), but she does not accept a revelation that claims to complete or correct Christ (CCC 67).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "islam",
+          position:
+            "Muslims believe that Muhammad is “the Messenger of Allah and the seal of the prophets” (Qur'an 33:40), the last of the prophets sent by God, and that the Qur'an, which “presents itself as the literal speech of God,” is God's final revelation and cannot be imitated (Yaqeen Institute).",
+          variations:
+            "Sunni and Shia Muslims share these beliefs about Muhammad and the Qur'an, but differ over leadership after him: Shia Muslims hold that God designated Imams as his successors (WikiShia).",
+          arguments: [
+            {
+              claim: "The Qur'an's unique beauty and inimitability show that it comes from God.",
+              response:
+                "Catholics respect the Qur'an's religious and literary significance for Muslims. But Christians believe God's definitive self-revelation is a person, not a book: Christianity is “not a ‘religion of the book’” but “the religion of the ‘Word’ of God, ‘not a written and mute word, but incarnate and living’” (CCC 108).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Muhammad is the seal of the prophets, who completed and confirmed earlier revelations.",
+              response:
+                "Catholics believe that in these last days God “spoke to us through a son” (Hebrews 1:2) and that in Christ he “has said everything; there will be no other word than this one” (CCC 65). Christian faith therefore “cannot accept ‘revelations’ that claim to surpass or correct the Revelation of which Christ is the fulfilment” (CCC 67).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Muslims honor Jesus, so Christians should honor Muhammad as Muslims honor Jesus.",
+              response:
+                "The difference is not whether Jesus is honored but who he is. The Qur'an teaches that Jesus is a messenger and not God's Son (Qur'an 4:171), while Christians confess him as the eternal Son made man, crucified and risen. Catholics can respect Muslims' devotion while disagreeing on this central point.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["quran-33-40", "quran-4-171", "yaqeen-inimitable-quran", "wikishia-imamate"],
+        },
+      ],
+    },
+  },
 ];

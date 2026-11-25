@@ -5,6 +5,8 @@ import { becomingCatholic } from "./becoming-catholic";
 import { bibleTopics } from "./bible";
 import { catholicLife } from "./catholic-life";
 import { church } from "./church";
+import { creationTopics } from "./creation";
+import { faithAndReason } from "./faith-and-reason";
 import { foundations } from "./foundations";
 import { god } from "./god";
 import { jesus } from "./jesus";
@@ -17,6 +19,7 @@ import { salvation } from "./salvation";
 export const topics = [
   ...foundations,
   ...god,
+  ...creationTopics,
   ...jesus,
   ...salvation,
   ...church,
@@ -27,6 +30,7 @@ export const topics = [
   ...massParts,
   ...becomingCatholic,
   ...catholicLife,
+  ...faithAndReason,
   ...apologeticsTopics,
 ];
 
@@ -49,7 +53,7 @@ export const startHere = [
 export { massOrder };
 
 // "Comparing traditions" on the Apologetics page: comparison topics, which live under The Church.
-export const comparisonTopics = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences"];
+export const comparisonTopics = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences", "catholics-and-muslims", "do-all-religions-lead-to-god"];
 
 // Shown on the homepage.
 export const commonQuestions = ["how-to-become-catholic", "what-happens-at-mass", "real-presence"];

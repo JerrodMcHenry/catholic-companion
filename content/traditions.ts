@@ -140,10 +140,11 @@ export const traditions: Tradition[] = [
     ],
     sources: ["quran-4-171", "quran-112"],
     resources: ["nostra-aetate"],
+    related: ["catholics-and-muslims"],
   },
-  { slug: "hinduism", name: "Hinduism", group: "religion" },
-  { slug: "buddhism", name: "Buddhism", group: "religion" },
-  { slug: "sikhism", name: "Sikhism", group: "religion" },
+  { slug: "hinduism", name: "Hinduism", group: "religion", sources: ["haf-hinduism-basics"] }, // Page after launch; sources used in launch topics.
+  { slug: "buddhism", name: "Buddhism", group: "religion", sources: ["ati-dhammacakka", "ati-god-idea", "lionsroar-branches"] }, // Page after launch; sources used in launch topics.
+  { slug: "sikhism", name: "Sikhism", group: "religion", sources: ["sikhnet-what-is-sikhism", "sgpc-main-principles"] }, // Page after launch; sources used in launch topics.
   { slug: "other-religions", name: "Other religions", group: "religion" },
 
   // Worldviews
