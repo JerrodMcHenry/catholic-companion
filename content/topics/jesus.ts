@@ -32,7 +32,7 @@ export const jesus: Topic[] = [
         { passage: "John 1:1–18", url: bible("john/1") },
       ],
     },
-    resources: ["ca-god-became-man"],
+    resources: ["ncr-christology-101", "ca-god-became-man"],
     related: ["divinity-of-jesus", "incarnation", "why-did-jesus-die", "resurrection"],
   },
   {

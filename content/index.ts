@@ -5,11 +5,11 @@ import { categories, pillars } from "./categories";
 import { resources } from "./resources";
 import { commonQuestions, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
-import { resourceTypeLabel, type PillarId, type Tradition } from "./types";
+import { resourceLabel, type PillarId, type Tradition } from "./types";
 
 export { categories, commonQuestions, pillars, resources, startHere, topics, traditions };
 export type * from "./types";
-export { resourceTypeLabel } from "./types";
+export { resourceLabel, resourceTypeLabel } from "./types";
 
 const topicBySlug = new Map(topics.map((t) => [t.slug, t]));
 const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
@@ -54,7 +54,7 @@ export function savableItems(): Record<string, SavedItem> {
     items[`resource:${r.id}`] = {
       title: r.title,
       href: r.url,
-      label: `${resourceTypeLabel[r.type]} · ${r.source}`,
+      label: resourceLabel(r),
       description: r.note,
       external: true,
     };

@@ -134,6 +134,7 @@ export const foundations: Topic[] = [
       ],
       documents: ["lumen-fidei", "dei-verbum"],
     },
+    resources: ["video-aquinas101-faith-reason", "wof-i-believe"],
     related: ["divine-revelation", "what-do-catholics-believe", "what-is-the-creed"],
   },
   {

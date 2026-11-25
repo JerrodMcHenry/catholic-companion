@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batch 1 (Foundations launch) is built: 20 new topics, marked ✓ like the 6 built earlier. Debate sections for Batch 1 topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1 (Foundations launch) and 2 (First Mass) are built: 29 new topics, marked ✓ like the 6 built earlier. Debate sections for Batch 1 topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory.
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -637,16 +637,16 @@ Each part topic follows the existing topic page, filling these fields (the first
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
 | `what-happens-at-mass` ✓ | What happens during Mass? | Order of Mass | B | P1 | `first-time-at-mass` | Built; becomes the hub linking all parts |
-| `first-time-at-mass` | I'm going to Mass for the first time. What should I know? | Visitor's guide | B | P1 | `mass-etiquette`, `non-catholics-at-mass` | Acceptance-criteria journey |
-| `why-go-to-mass-on-sunday` | Why do Catholics go to Mass every Sunday? | Sunday obligation, Lord's Day | B | P1 | `holy-days-of-obligation` | |
-| `mass-in-scripture` | Where is the Mass in the Bible? | Last Supper, Passover, Malachi 1:11 | I | P1 | `mass-as-sacrifice` | D: Protestantism |
+| `first-time-at-mass` ✓ | I'm going to Mass for the first time. What should I know? | Visitor's guide | B | P1 | `mass-etiquette`, `non-catholics-at-mass` | Acceptance-criteria journey |
+| `why-go-to-mass-on-sunday` ✓ | Why do Catholics go to Mass every Sunday? | Sunday obligation, Lord's Day | B | P1 | `holy-days-of-obligation` |  |
+| `mass-in-scripture` ✓ | Where is the Mass in the Bible? | Last Supper, Passover, Malachi 1:11 | I | P1 | `mass-as-sacrifice` | D: Protestantism |
 | `mass-history` | How has the Mass developed over time? | Justin Martyr, Tridentine Mass, Vatican II reform | I | P2 | `justin-martyr`, `latin-mass` | |
-| `mass-etiquette` | What should I wear and how should I act at Mass? | Church etiquette | B | P1 | `first-time-at-mass` | |
-| `mass-postures` | When do I stand, sit, and kneel? | Postures | B | P1 | `mass-gestures` | Uses the posture table in §5.6 |
-| `mass-gestures` | What do bows, genuflections, and signs of the cross mean? | Genuflection, profound bow | B | P1 | `mass-genuflection` | |
-| `mass-responses` | What does the congregation say at Mass? | People's parts, responses | B | P1 | `mass-postures` | Links to official texts |
-| `non-catholics-at-mass` | Can non-Catholics attend Mass? | | B | P1 | `who-can-receive-communion` | |
-| `how-to-receive-communion` | How do I receive Communion? | On the tongue, in the hand, under both kinds | B | P1 | `who-can-receive-communion` | |
+| `mass-etiquette` ✓ | What should I wear and how should I act at Mass? | Church etiquette | B | P1 | `first-time-at-mass` |  |
+| `mass-postures` ✓ | When do I stand, sit, and kneel? | Postures | B | P1 | `mass-gestures` | Uses the posture table in §5.6 |
+| `mass-gestures` ✓ | What do bows, genuflections, and signs of the cross mean? | Genuflection, profound bow | B | P1 | `mass-genuflection` |  |
+| `mass-responses` ✓ | What does the congregation say at Mass? | People's parts, responses | B | P1 | `mass-postures` | Links to official texts |
+| `non-catholics-at-mass` ✓ | Can non-Catholics attend Mass? |  | B | P1 | `who-can-receive-communion` |  |
+| `how-to-receive-communion` ✓ | How do I receive Communion? | On the tongue, in the hand, under both kinds | B | P1 | `who-can-receive-communion` |  |
 | `eucharistic-fast` | Why do Catholics fast before Communion? | One-hour fast | B | P2 | `how-to-receive-communion` | |
 | `who-does-what-at-mass` | Who's who at Mass? | Priest, deacon, lector, cantor, servers | B | P2 | `vestments` | |
 | `vestments` | What do the priest's vestments mean? | Alb, stole, chasuble, dalmatic | B | P2 | `liturgical-colors` | |
@@ -937,7 +937,7 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 
 <!-- generated: debate-index -->
 
-- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books`, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture`, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
+- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books`, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
 - **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock`, `papal-infallibility`, `immaculate-conception`, `purgatory`, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
 - **Oriental Orthodoxy** (1): `chalcedon-and-oriental-orthodoxy`
 - **Latter-day Saints** (4): `trinity-in-scripture`, `early-church`, `great-apostasy`, `book-of-mormon`
@@ -1109,7 +1109,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | Batch | Name | New | Built (reused) | Topics |
 |---|---|---|---|---|
 | 1 | Foundations launch | 0 | 21 | `what-do-catholics-believe` ✓, `what-does-catholic-mean` ✓, `are-catholics-christians` ✓, `what-is-the-creed` ✓, `what-is-faith` ✓, `divine-revelation` ✓, `what-is-the-catechism` ✓, `what-is-dogma` ✓, `who-is-god` ✓, `what-is-the-trinity` ✓, `who-is-the-holy-spirit` ✓, `who-is-jesus` ✓, `divinity-of-jesus` ✓, `did-jesus-exist` ✓, `incarnation` ✓, `why-did-jesus-die` ✓, `resurrection` ✓, `what-is-the-church` ✓, `what-is-sacred-tradition` ✓, `what-is-the-pope` ✓, `bishops-priests-deacons` ✓ |
-| 2 | First Mass | 9 | 1 | `what-happens-at-mass` ✓, `first-time-at-mass`, `why-go-to-mass-on-sunday`, `mass-in-scripture`, `mass-etiquette`, `mass-postures`, `mass-gestures`, `mass-responses`, `non-catholics-at-mass`, `how-to-receive-communion` |
+| 2 | First Mass | 0 | 10 | `what-happens-at-mass` ✓, `first-time-at-mass` ✓, `why-go-to-mass-on-sunday` ✓, `mass-in-scripture` ✓, `mass-etiquette` ✓, `mass-postures` ✓, `mass-gestures` ✓, `mass-responses` ✓, `non-catholics-at-mass` ✓, `how-to-receive-communion` ✓ |
 | 3 | Mass parts I (before Mass, Introductory Rites, Word) | 19 | 0 | `mass-arriving`, `mass-holy-water`, `mass-genuflection`, `mass-quiet-prayer`, `mass-entrance`, `mass-sign-of-the-cross`, `mass-greeting`, `mass-penitential-act`, `mass-kyrie`, `mass-gloria`, `mass-collect`, `mass-first-reading`, `mass-responsorial-psalm`, `mass-second-reading`, `mass-gospel-acclamation`, `mass-gospel`, `mass-homily`, `mass-creed`, `mass-universal-prayer` |
 | 4 | Mass parts II (Eucharist, Communion, Concluding) | 15 | 0 | `mass-preparation-of-the-gifts`, `mass-prayer-over-the-offerings`, `mass-preface-dialogue`, `mass-sanctus`, `mass-eucharistic-prayer`, `mass-consecration`, `mass-mystery-of-faith`, `mass-great-amen`, `mass-lords-prayer`, `mass-sign-of-peace`, `mass-lamb-of-god`, `mass-invitation-to-communion`, `mass-communion`, `mass-final-blessing`, `mass-dismissal` |
 | 5 | Sacraments | 13 | 1 | `what-is-a-sacrament`, `seven-sacraments`, `baptism`, `infant-baptism`, `confirmation`, `what-is-the-eucharist`, `real-presence` ✓, `mass-as-sacrifice`, `who-can-receive-communion`, `confession`, `why-confess-to-a-priest`, `how-to-go-to-confession`, `mortal-and-venial-sin`, `marriage-sacrament` |
@@ -1157,10 +1157,10 @@ Generated from the inventory tables by the same script that builds §7.3 and §1
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
 | 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 1 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 0 |
-| 5 Holy Mass (themes and parts) | 65 | 44 | 16 | 5 | 1 | 3 | 1 |
+| 5 Holy Mass (themes and parts) | 65 | 44 | 16 | 5 | 1 | 3 | 10 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
 | 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **157** | **185** | **80** | **91** | **52** | **26** |
+| **Total** | **422** | **157** | **185** | **80** | **91** | **52** | **35** |
 
 <!-- /generated: counts -->
 

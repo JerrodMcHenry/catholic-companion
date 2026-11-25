@@ -32,6 +32,12 @@ export const resourceTypeLabel: Record<ResourceType, string> = {
   course: "Course",
 };
 
+// The small label shown above a resource: its type, publisher, and any cost or sign-up.
+export function resourceLabel(r: Resource) {
+  const access = r.access === "paid" ? " · Paid" : r.access === "registration" ? " · Free with sign-up" : "";
+  return `${resourceTypeLabel[r.type]} · ${r.source}${access}`;
+}
+
 // One entry in the shared registry. Topics refer to resources by id.
 export type Resource = {
   id: string;
@@ -40,6 +46,7 @@ export type Resource = {
   source: string; // Who published it: "Vatican", "Catholic Answers", ...
   url: string;
   note?: string; // One line on what it is or why it is recommended.
+  access?: "paid" | "registration"; // Omitted when the resource is free to read or watch.
 };
 
 export type Topic = {

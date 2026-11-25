@@ -32,7 +32,7 @@ export const church: Topic[] = [
       ],
       documents: ["lumen-gentium"],
     },
-    resources: ["ca-what-catholics-believe"],
+    resources: ["catholicculture-church-not-christ", "loyola-jesus-head-of-the-church"],
     related: ["what-is-the-pope", "bishops-priests-deacons", "what-is-sacred-tradition", "what-does-catholic-mean"],
   },
   {

@@ -77,3 +77,10 @@ test("numbers match references, not running text", () => {
   assert.equal(search(refs, "John 6")[0].entry.title, "Real Presence");
 });
 
+test("contractions do not outweigh meaningful words", () => {
+  const visit = buildIndex([
+    entry("I'm going to Mass for the first time. What should I know?", []),
+    entry("Can non-Catholics attend Mass?", [["Can non-Catholics receive Communion?", WEIGHT.alias]]),
+  ]);
+  assert.equal(search(visit, "Can I receive Communion if I'm not Catholic?")[0].entry.title, "Can non-Catholics attend Mass?");
+});

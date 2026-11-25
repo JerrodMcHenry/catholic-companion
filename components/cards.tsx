@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { SaveButton } from "@/components/save-button";
-import { resourceTypeLabel, type Resource, type Topic } from "@/content/types";
+import { resourceLabel, type Resource, type Topic } from "@/content/types";
 
 const card =
   "flex min-h-16 items-center gap-4 rounded-2xl border border-line bg-card px-5 py-4 transition-colors hover:border-gold";
@@ -72,7 +72,7 @@ export function ResourceList({ resources }: { resources: Resource[] }) {
             <CardLink
               href={r.url}
               external
-              eyebrow={`${resourceTypeLabel[r.type]} · ${r.source}`}
+              eyebrow={resourceLabel(r)}
               title={r.title}
               description={r.note}
             />

@@ -21,8 +21,9 @@ export type SearchResult = { entry: SearchEntry; score: number };
 export const WEIGHT = { title: 10, alias: 8, resourceTitle: 7, keyword: 6, context: 3, summary: 2, detail: 1 } as const;
 
 // Words too common to signal meaning. Ignored unless the query has nothing else.
+// Contractions appear without their apostrophes, because normalize() removes them.
 const STOP_WORDS = new Set(
-  "a about an and are as at be by can could did do does for from has have how i if in into is it its me my of on or our should so than that the their them then there these they this to us was we were what when where which who why will with would you your".split(
+  "a about an and are as at be by can could did do does for from has have how i if in into is it its me my of on or our should so than that the their them then there these they this to us was we were what when where which who why will with would you your im ive id ill youre dont doesnt didnt cant".split(
     " ",
   ),
 );

@@ -9,6 +9,7 @@ import {
   hasPage,
   pillars,
   resources,
+  resourceLabel,
   resourcesFor,
   resourceTypeLabel,
   topics,
@@ -124,7 +125,7 @@ export function searchEntries(): SearchEntry[] {
       title: r.title,
       href: r.url,
       external: true,
-      label: `${resourceTypeLabel[r.type]} · ${r.source}`,
+      label: resourceLabel(r),
       description: r.note,
       fields: [
         [r.title, WEIGHT.resourceTitle],
