@@ -46,14 +46,14 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | Topic | Catechism | Scripture | Church documents and law | Resources | Open questions for review | Status |
 |---|---|---|---|---|---|---|
 | `first-time-at-mass` | 1345–1355 | Lk 24:13–35 | USCCB Guidelines for the Reception of Communion; GIRM 43 | Bishop Barron, “What Is Happening at Mass?” (Word on Fire); Diocese of Arlington video | “Arms crossed for a blessing” presented as a local custom, not a rubric | Draft |
-| `why-go-to-mass-on-sunday` | 1166–1167, 2174–2188 | Acts 20:7; Rv 1:10; Lk 24:1–8 | Dies Domini; canons 1247–1248 | Bishop Barron, “Come Back to Mass!” (written for 2021 reopenings; noted on the card) | **R:** statement that deliberately missing Mass without serious reason is grave sin (CCC 2181) needs pastoral review of tone. Batch 3 added the distinction between grave matter and mortal sin (CCC 1857–1862) | Draft |
+| `why-go-to-mass-on-sunday` | 1166–1167, 2174–2188 | Acts 20:7; Rv 1:10; Lk 24:1–8 | Dies Domini; canons 1247–1248 | Bishop Barron, “Come Back to Mass!” (written for 2021 reopenings; noted on the card) | **R:** statement that deliberately missing Mass without serious reason is grave sin (CCC 2181) needs pastoral review of tone. Batch 3 added the distinction between grave matter and mortal sin; Batch 4 corrected it so it no longer implies the sin necessarily remains venial (now CCC 1735, 1857–1861: culpability can be lessened or removed) | Draft |
 | `mass-in-scripture` | 1090, 1333–1344 | Gn 14:18–20; Ex 12:1–14; Lk 22:14–20; 1 Cor 11:23–26; Lk 24:13–35; Acts 2:42; Rv 5:6–14 | Sacrosanctum Concilium | Brant Pitre video; St. Paul Center (“The Fourth Cup”); EWTN; Scott Hahn, *The Lamb's Supper* (**paid**) | Debate section (Protestantism) deferred to Apologetics I | Draft |
 | `mass-etiquette` | 1385–1390 | — | GIRM 45; canon 919 | (documents only) | No topic-specific etiquette resource of sufficient quality located yet; customs labeled as customs | Draft |
 | `mass-postures` | — | — | GIRM 42–43; USCCB, Praying with Body, Mind, and Voice | Aleteia guide; EWTN, “Why the Various Postures at Mass” | None noted | Draft |
 | `mass-gestures` | 1378, 2157 | — | GIRM 137, 160, 274–275; USCCB, Praying with Body, Mind, and Voice | Angelo Stagnaro, “Catholic Calisthenics” (National Catholic Register) | Batch 3: Gospel signing (GIRM 134), Confiteor breast-striking (Order of Mass rubric), and genuflection when passing the Blessed Sacrament (GIRM 274) now stated as norms; breast-striking at “Lord, I am not worthy” stated as custom | Draft |
 | `mass-responses` | 1062–1064 | — | Sacrosanctum Concilium 14; USCCB Parts of the Mass; GIRM | USCCB, Order of Mass | Batch 3: official people's texts now linked (Liturgy Office of England and Wales leaflet, same ICEL translation as the U.S.; British spelling noted on the card) | Draft |
 | `non-catholics-at-mass` | 1233, 1398–1401 | 1 Cor 10:16–17 | USCCB Guidelines; canon 844; Unitatis Redintegratio | (documents only) | **R:** charity and accuracy of the paragraph on Reformation communities (quotes CCC 1400); OCIA paragraph added; Batch 3 added the dismissal of catechumens (2024 U.S. National Statutes, Norm 10) | Draft |
-| `how-to-receive-communion` | 1384–1390 | 1 Cor 11:27–29 | GIRM 160–161, 286; canons 916, 919; USCCB, Happy Are Those Who Are Called to His Supper | Diocese of Springfield in Illinois video; Dominicast video | “Throne” hand position presented as what many parishes teach, not as a norm. Batch 3 added the ordinary rules and exceptions (canons 912, 913, 915, 916, 917, 919 §3, 921; CCC 1394). **R:** wording of the canon 915 sentence | Draft |
+| `how-to-receive-communion` | 1384–1390 | 1 Cor 11:27–29 | GIRM 160–161, 286; canons 916, 919; USCCB, Happy Are Those Who Are Called to His Supper | Diocese of Springfield in Illinois video; Dominicast video | “Throne” hand position presented as what many parishes teach, not as a norm. Batch 3 added the ordinary rules and exceptions (canons 912, 913, 915, 916, 917, 919 §3, 921; CCC 1394); Batch 4 restated the canon 916 exception so that all its conditions are explicit (grave reason, no opportunity to confess, perfect contrition including the resolution to confess as soon as possible). **R:** wording of the canon 915 sentence | Draft |
 
 **Updated (hub):** `what-happens-at-mass` now links to the new Mass topics and adds Bishop Barron's “What Is Happening at Mass?”
 
@@ -77,7 +77,7 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `mass-first-reading` | 1088, 1100–1102, 1349 | Neh 8:1–8 | GIRM 56–59, 128, 309 | USCCB, Liturgy of the Word; USCCB daily readings; Felix Just, S.J., Catholic Lectionary Website | “Often chosen to echo the Gospel” and the three-year cycle are summaries of the Lectionary, sourced to Felix Just's overview | Draft |
 | `mass-responsorial-psalm` | 2585–2589 | Col 3:16 | GIRM 57, 61 | USCCB (two) | None noted | Draft |
 | `mass-second-reading` | 1349 | 1 Thes 5:27; Col 4:16 | GIRM 130 | USCCB; Felix Just | Semi-continuous reading of the letters stated from the Lectionary overview | Draft |
-| `mass-gospel-acclamation` | — | Rev 19:1–6 | GIRM 62–64, 132, 175 | USCCB; Felix Just | Page titled “The Alleluia” so that a search for “gospel” finds the Gospel page first | Draft |
+| `mass-gospel-acclamation` | — | Rev 19:1–6 | GIRM 62–64, 132, 175 | USCCB; Felix Just | Batch 4: title restored to “The Gospel Acclamation” (Alleluia kept as alternative name), with a paragraph distinguishing the Alleluia from the Lenten acclamation. Search kept accurate by letting an exact title match ignore a leading “the” (tested). The individual Lenten acclamation texts are not quoted: they were found only in secondary sources (OCP, CMAA), not in an official online Lectionary | Draft |
 | `mass-gospel` | 1088, 1154 | Lk 4:16–21 | GIRM 60, 133–134 | Fr. Edward McNamara (EWTN); USCCB daily readings | “Mind, lips, heart” meaning labeled as a common explanation, not official | Draft |
 | `mass-homily` | 1349 | Neh 8:8; Lk 24:27 | GIRM 65–66, 136; Homiletic Directory; National Statutes for the Christian Initiation of Adults, Norm 10 | (documents only) | No independent homily resource of sufficient quality located yet | Draft |
 | `mass-creed` | 167, 185–197 | Rom 10:9–10 | GIRM 67–68, 137; Order of Mass rubric (Apostles' Creed option) | Liturgy Office leaflet; Bishop Barron (Word on Fire) | None noted | Draft |
@@ -87,6 +87,34 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 **Resolved from the pending list:** breast-striking at the Confiteor (Order of Mass rubric, “And, striking their breast, they say,” in the ICEL text); signing forehead, lips, and breast at the Gospel (GIRM 134: “which everyone else does as well”); dismissal of catechumens (National Statutes, Norm 10); a free online source for the people's parts (Liturgy Office leaflet).
 
+## Batch 4: Mass parts II (2026-11-25)
+
+**Verification (Batch 4):** GIRM 43, 72–90, 139–169, 181, and 274 read in the official text. The people's texts (Pray, brethren; the Preface dialogue; the Holy, Holy, Holy; the three Mystery of Faith acclamations; the Lord's Prayer doxology; Lamb of God; Lord, I am not worthy; the dismissal formulas) were read in the Liturgy Office of England and Wales leaflet of the ICEL 2010 translation. Sacrosanctum Concilium 48, Ecclesia de Eucharistia 34, and Sacramentum Caritatis 51 read on vatican.va; Mysterium Fidei and Redemptionis Sacramentum URLs and titles confirmed. Every Catechism reference re-located (automated check now covers all 114 references, 0 problems); every Scripture quotation matched on bible.usccb.org. Fifteen posts of the National Eucharistic Congress series, three USCCB pages, Word on Fire, and Ascension pages were opened in headless Chrome and their titles and authors confirmed.
+
+| Topic | Catechism | Scripture | Church documents | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `mass-preparation-of-the-gifts` | 1350–1351 | Mal 1:11; 2 Cor 9:7; Ps 141:2 | GIRM 72–76, 139–145 | USCCB, Liturgy of the Eucharist; Spannagel, Part 34 | Priest's quiet prayers paraphrased, not quoted | Draft |
+| `mass-prayer-over-the-offerings` | 1368 | Rom 12:1 | GIRM 43, 77, 146; Sacrosanctum Concilium 48 | Spannagel, Part 41; Liturgy Office leaflet | **R:** explanation of “my sacrifice and yours” (priest offers in the person of Christ; the faithful offer through and with him) | Draft |
+| `mass-preface-dialogue` | 1352 | Lam 3:41 | GIRM 78–79, 148 | Spannagel, Part 43; leaflet | Covers the Preface (P2 `mass-preface`) briefly | Draft |
+| `mass-sanctus` | 1352 | Is 6:1–3; Rev 4:8; Mt 21:9 | GIRM 43, 79 | Spannagel, Part 45; Fr. Edward McNamara (EWTN); Scott Hahn, *The Lamb's Supper* (**paid**) | None noted | Draft |
+| `mass-eucharistic-prayer` | 1105–1106, 1352–1355, 1362–1372 | 1 Cor 11:23–26; Heb 10:10–14 | GIRM 43, 78–79, 147, 150; Ecclesia de Eucharistia | Spannagel, Part 42; Timothy O'Malley (Church Life Journal, Notre Dame); Clement Harrold (St. Paul Center) | **R:** summary of the Mass as sacrifice (“one single sacrifice,” CCC 1367) and of the priest's and people's roles. Covers epiclesis, anamnesis, offering, and intercessions (P2 pages not yet built) | Draft |
+| `mass-consecration` | 1353, 1366–1367, 1373–1377 | Mt 26:26–28; Lk 22:19–20; 1 Cor 11:23–26; Jn 6:51–58 | GIRM 72, 79, 150, 274; USCCB, The Real Presence; Mysterium Fidei | Spannagel, Part 50; Bishop Barron video (reused); St. Paul Center | **R:** transubstantiation summary. **Research:** the institution words in the summary (“This is my Body… This is the chalice of my Blood”) and “given up for you” / “poured out” follow the 2011 Missal but the priest's text was not checked against an online official source | Draft |
+| `mass-mystery-of-faith` | 1362–1364 | 1 Cor 11:26 | GIRM 43, 151 | Spannagel, Part 52; leaflet | Statement that “Christ has died…” is not in the current translation rests on the three acclamations in the leaflet | Draft |
+| `mass-great-amen` | 1355 | Rom 11:36; 2 Cor 1:20 | GIRM 43, 79, 151 | Spannagel, Part 57 | None noted | Draft |
+| `mass-lords-prayer` | 2770, 2855 | Mt 6:9–13 | GIRM 81, 152–153 | Spannagel, Part 59; leaflet | Holding or raising hands described as customs not in the liturgical books | Draft |
+| `mass-sign-of-peace` | 1396–1398 | Jn 14:27; Mt 5:23–24 | GIRM 82, 154, 181 | Spannagel, Part 62 | Handshake described as common U.S. practice. The 2014 circular letter on the sign of peace was not located on vatican.va, so it is not cited | Draft |
+| `mass-lamb-of-god` | 1329 | Jn 1:29; 1 Cor 10:16–17; Rev 5:6–14 | GIRM 43, 83, 155 | Spannagel, Part 64; leaflet | None noted | Draft |
+| `mass-invitation-to-communion` | 1386 | Mt 8:5–13; Jn 1:29; Rev 19:9 | GIRM 84, 157 | Dr. Edward Sri (Ascension; card notes it quotes the earlier wording); Spannagel, Part 67 | None noted | Draft |
+| `mass-communion` | 1382–1405 | Jn 6:51–58; 1 Cor 10:16–17; 1 Cor 11:27–29 | GIRM 43, 84–89, 160–165; Ecclesia de Eucharistia 34; Redemptionis Sacramentum | Spannagel, Part 68; Dominicast video (reused) | Covers silence after Communion and the Prayer after Communion (P2 pages). Rules for receiving stay on `how-to-receive-communion` | Draft |
+| `mass-final-blessing` | 1671 | Num 6:22–27; Lk 24:50–53 | GIRM 90, 166–167 | USCCB, Concluding Rites; Spannagel, Part 77 | None noted | Draft |
+| `mass-dismissal` | 1332 | Mt 28:19–20; Lk 24:50–53 | GIRM 90, 168–169, 274; Sacramentum Caritatis 51 | Spannagel, Part 78; USCCB; leaflet | Covers the recessional (P2 page); closing song described as custom | Draft |
+
+**Updated:** `what-happens-at-mass` (adds the full Spannagel series; the step list now runs from arriving through the dismissal); `why-go-to-mass-on-sunday` and `how-to-receive-communion` (corrections above); `mass-gospel-acclamation` (title and Lenten acclamation).
+
+**Search change:** an exact phrase bonus now also applies when a title differs only by a leading “the,” “a,” or “an” (new unit test). Needed so “gospel” finds the Gospel page while the acclamation keeps its formal title.
+
+**Resource balance note:** the National Eucharistic Congress series (one author) supplies one topic-specific post on most Batch 4 pages; each page also has an official text and, where a good one was found, a second publisher.
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then.
@@ -94,7 +122,11 @@ These stay open until checked against an authoritative source; topics describe t
 - The Confiteor rubric was verified in the ICEL 2010 text as published in England and Wales; the printed U.S. Missal itself has not been seen. Order of Mass paragraph numbers also need the printed Missal.
 - The OCIA ritual's own text and paragraph numbers for the dismissal (the U.S. statute is verified).
 - A U.S.-published free copy of the people's parts (the England and Wales leaflet is used meanwhile).
-- A topic-specific etiquette resource and a homily resource of sufficient quality.
+- A topic-specific etiquette resource and a homily resource of sufficient quality (the Spannagel series has posts on the homily and other Batch 3 parts that could be added after review).
+- The priest's words of institution and other priest's texts quoted from the 2011 Missal, against the printed Missal.
+- The official U.S. Lenten Gospel acclamations (Lectionary), not quoted until checked.
+- The 2014 circular letter on the sign of peace (official text not located online).
+- Theological review (**R**): the Mass as sacrifice, transubstantiation, “my sacrifice and yours,” grave matter and culpability, and canon 915.
 
 ## Earlier topics (Phases 2–4)
 

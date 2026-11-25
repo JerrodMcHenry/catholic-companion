@@ -45,7 +45,7 @@ export const mass: Topic[] = [
       ],
       documents: ["sacrosanctum-concilium", "girm"],
     },
-    resources: ["usccb-order-of-mass", "video-mass-explained-arlington", "wof-what-is-happening-at-mass", "video-mass-pitre"],
+    resources: ["usccb-order-of-mass", "video-mass-explained-arlington", "wof-what-is-happening-at-mass", "video-mass-pitre", "ec-walk-through-the-mass"],
     related: ["first-time-at-mass", "mass-postures", "mass-responses", "mass-in-scripture", "real-presence", "how-to-receive-communion"],
   },
   {
@@ -84,13 +84,14 @@ export const mass: Topic[] = [
       "Jesus rose “on the first day of the week,” and Christians call it the Lord's Day. It recalls the first day of creation and the “eighth day” of the new creation begun by the Resurrection. Already in the New Testament, Christians gathered “on the first day of the week” to break bread (Acts 20:7).",
       "The Church's law says that on Sundays and other holy days of obligation, the faithful are obliged to participate in the Mass, and that a Mass celebrated anywhere in a Catholic rite, on the day itself or on the evening before, fulfills the obligation (canons 1247–1248).",
       "The obligation does not bind someone with a serious reason, such as illness or caring for infants, or someone dispensed by their pastor. The Catechism teaches that those who deliberately fail in this obligation commit a grave sin, because the Sunday Eucharist is “the foundation and confirmation of all Christian practice” (CCC 2181).",
-      "Grave matter is not the same as mortal sin. Missing Mass without a serious reason is grave matter. It is a mortal sin only when it is also done with full knowledge and deliberate consent (CCC 1857–1859); without these, the sin is venial (CCC 1862). The Catechism adds that while we can judge that an act is gravely wrong, we must entrust the judgment of persons to God's justice and mercy (CCC 1861). Anyone unsure about their own situation can talk with a priest, especially in Confession.",
+      "Grave matter is not the same as mortal sin. Missing Mass without a serious reason is grave matter. It is a mortal sin only when it is also done with full knowledge and deliberate consent (CCC 1857–1859). Ignorance, fear, pressure, and other factors can lessen or even remove a person's culpability (CCC 1735, 1860), so a person's guilt is not always what the act alone would suggest. The Catechism adds that while we can judge that an act is gravely wrong, we must entrust the judgment of persons to God's justice and mercy (CCC 1861). Anyone unsure about their own situation can talk with a priest, especially in Confession.",
       "Sunday is also a day of rest: Catholics are asked to set aside work and activities that get in the way of worship, joy, works of mercy, and rest. Pope John Paul II's letter Dies Domini explores the meaning of Sunday in depth.",
     ],
     teaching: {
       catechism: [
         { paragraphs: "1166–1167", url: ccc("__P39") },
-        { paragraphs: "1857–1862", url: ccc("__P6C") },
+        { paragraphs: "1735", url: ccc("__P5N") },
+        { paragraphs: "1857–1861", url: ccc("__P6C") },
         { paragraphs: "2174–2188", url: ccc("__P7O") },
       ],
       scripture: [
@@ -267,7 +268,7 @@ export const mass: Topic[] = [
       "Catholics who are prepared walk forward in procession and bow their heads before the Sacrament. The minister shows the Host and says “The Body of Christ,” and the communicant answers “Amen.” You may receive the Host on the tongue or in the hand, and where the chalice is offered, you may also receive the Precious Blood. The Church asks that those receiving have fasted for an hour and not be conscious of grave sin.",
     explanation: [
       "The fast: abstain from food and drink, except water and medicine, for at least one hour before Communion. The elderly, the sick, and those who care for them may receive even if they have eaten within the hour (canon 919).",
-      "Grave sin: anyone conscious of grave sin is not to receive without first going to Confession (canon 916; CCC 1385). The one exception is when there is a grave reason to receive and no opportunity to confess; then the person must make an act of perfect contrition, which includes the resolve to confess as soon as possible (canon 916). Venial sins do not keep anyone from Communion; the Eucharist itself wipes them away (CCC 1394).",
+      "Grave sin: anyone conscious of grave sin is not to receive without first going to Confession (canon 916; CCC 1385). Canon 916 allows one exception, and all of its conditions must be met: there is a grave reason to receive, there is no opportunity to go to Confession beforehand, and the person makes an act of perfect contrition, which includes the resolution to confess as soon as possible. Venial sins do not keep anyone from Communion; the Eucharist itself wipes them away (CCC 1394).",
       "Who may receive: any baptized Catholic not prohibited by law (canon 912). Children receive after suitable preparation (canon 913). Those under certain Church penalties, or obstinately persevering in manifest grave sin, are not to be admitted (canon 915). Other Christians are covered in “Can non-Catholics attend Mass?”",
       "How often: once a day, and a second time on the same day only at another Mass in which you take part (canon 917). Someone in danger of death is urged to receive again as Viaticum even if they already received that day (canon 921).",
       "In the line: in the United States, Communion is normally received standing, and those who kneel are not to be refused. Bow your head before receiving (GIRM 160). The minister says “The Body of Christ”; you answer “Amen” and receive on the tongue or, if you choose, in the hand, and you consume the Host right away (GIRM 161).",

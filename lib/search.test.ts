@@ -84,3 +84,12 @@ test("contractions do not outweigh meaningful words", () => {
   ]);
   assert.equal(search(visit, "Can I receive Communion if I'm not Catholic?")[0].entry.title, "Can non-Catholics attend Mass?");
 });
+
+test("a leading article does not prevent an exact title match", () => {
+  const titles = buildIndex([
+    entry("Why do Catholics stand and sing Alleluia?", [["The Gospel Acclamation", WEIGHT.title]]),
+    entry("Why is the Gospel treated differently from the other readings?", [["The Gospel", WEIGHT.title]]),
+  ]);
+  assert.equal(search(titles, "gospel")[0].entry.title, "Why is the Gospel treated differently from the other readings?");
+  assert.equal(search(titles, "gospel acclamation")[0].entry.title, "Why do Catholics stand and sing Alleluia?");
+});

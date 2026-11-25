@@ -42,6 +42,9 @@ export function normalize(text: string): string {
 
 const tokenize = (text: string) => normalize(text).split(" ").filter(Boolean);
 
+// A leading "the", "a", or "an" does not stop an exact match: "gospel" matches the title "The Gospel".
+const withoutArticle = (text: string) => text.replace(/^(the|a|an) /, "");
+
 // Damerau-Levenshtein distance (insert, delete, substitute, swap neighbors).
 function editDistance(a: string, b: string): number {
   const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array<number>(b.length).fill(0)]);
@@ -122,7 +125,7 @@ export function search({ items, vocabulary }: SearchIndex, query: string): Searc
     let bonus = 0;
     for (const field of item.fields) {
       if (field.weight < WEIGHT.alias) continue; // Phrase bonuses only for titles, questions, and alternative names.
-      if (field.text === phrase) bonus = Math.max(bonus, 60);
+      if (field.text === phrase || withoutArticle(field.text) === withoutArticle(phrase)) bonus = Math.max(bonus, 60);
       else if (phrase.length >= 4 && field.text.includes(phrase)) bonus = Math.max(bonus, 20);
     }
     ranked.push({ entry: item.entry, score: base + bonus, base });
