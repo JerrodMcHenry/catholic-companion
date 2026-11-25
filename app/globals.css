@@ -1,34 +1,54 @@
 @import "tailwindcss";
 
+/* Colors are semantic tokens so the dark theme only has to swap values. */
 @theme {
-  --color-ivory: #fbf7ef;
-  --color-cream: #f3ebdd;
-  --color-gold: #b08d57; /* decorative only: too light for body text */
-  --color-gold-deep: #7d5f2f;
-  --color-burgundy: #7a2e3a;
-  --color-burgundy-deep: #5e2029;
+  --color-page: #fbf7ef; /* ivory */
+  --color-card: #fffdf8;
+  --color-tint: #f3ebdd; /* cream */
+  --color-line: #e5d9c5;
   --color-ink: #2e2622;
-  --color-ink-soft: #62564d;
+  --color-ink-soft: #5c5047;
+  --color-accent: #7a2e3a; /* burgundy */
+  --color-accent-strong: #5e2029;
+  --color-on-accent: #fbf7ef;
+  --color-gold: #b08d57; /* decorative only: too light for text */
+  --color-gold-ink: #7d5f2f;
 
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-inter);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-page: #1a1613;
+    --color-card: #231e1a;
+    --color-tint: #2c2520;
+    --color-line: #3d342d;
+    --color-ink: #f3ebdd;
+    --color-ink-soft: #cbbfb0;
+    --color-accent: #e8a3ad;
+    --color-accent-strong: #f3c2c9;
+    --color-on-accent: #1a1613;
+    --color-gold: #a88a5c;
+    --color-gold-ink: #d9bc87;
+  }
+}
+
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
 }
 
 body {
-  background: var(--color-ivory);
+  background: var(--color-page);
   color: var(--color-ink);
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-gold-deep);
+  outline: 3px solid var(--color-gold-ink);
   outline-offset: 3px;
 }
 
-/* Headings that receive focus from script (tabindex="-1") are not controls: no focus ring. */
-[tabindex="-1"]:focus {
-  outline: none;
+/* Remove the default disclosure triangle; components draw their own. */
+summary::-webkit-details-marker {
+  display: none;
 }
