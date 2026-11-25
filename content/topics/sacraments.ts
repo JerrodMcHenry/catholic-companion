@@ -119,7 +119,7 @@ export const sacraments: Topic[] = [
       "Whose faith? Baptism is always a sacrament of faith. A baby cannot yet make a personal act of faith, so the child is baptized in the faith of the Church, which the parents and godparents profess and promise to hand on (CCC 1253, 1282). Faith must then grow after Baptism, for children and adults alike (CCC 1254–1255).",
       "Scripture: the New Testament mostly describes converts, adults who heard the apostles' preaching. But it also records whole households being baptized: Lydia “and her household” (Acts 16:15) and the jailer at Philippi, who “and all his family were baptized at once” (Acts 16:33). Peter told the crowd at Pentecost that the promise “is made to you and to your children” (Acts 2:39). Whether those households included infants is not stated; the Catechism says it is “quite possible” (CCC 1252).",
       "History: there is explicit testimony to infant Baptism from the second century on (CCC 1252). The Church's 1980 instruction on infant Baptism notes that Origen and St. Augustine called it a tradition received from the apostles, and that the third-century Apostolic Tradition instructs, “First baptize the children.” Some early writers, notably Tertullian, advised waiting (Pastoralis Actio 4–5).",
-      "Other Christians: many Protestant churches, including Lutheran, Reformed, Anglican, and Methodist churches, also baptize infants; the Westminster Confession says “the infants of one, or both, believing parents, are to be baptized” (28.4). Baptists and many evangelical and Pentecostal churches practice believer's baptism instead: the Baptist Faith and Message (2000) defines baptism as “the immersion of a believer in water,” an act of obedience that symbolizes the believer's faith. Catholics share with them the conviction that faith and Baptism belong together, and differ on whether the faith of the Church can precede the child's own.",
+      "Other Christians: many Protestant churches also baptize infants, while Baptists and many evangelical and Pentecostal churches baptize only believers. Catholics share with them the conviction that faith and Baptism belong together; their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -136,6 +136,43 @@ export const sacraments: Topic[] = [
     },
     resources: ["ca-early-infant-baptism", "video-a101-baptism"],
     related: ["baptism", "confirmation", "catechumen-or-candidate", "are-catholics-christians"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "The Church baptizes infants because Baptism is a free gift of God's grace that children need too. They are baptized in the faith of the Church, which their parents and godparents profess and promise to hand on, and that faith must then grow. The practice is attested from at least the second century (CCC 1250–1255).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Baptists and many evangelical and Pentecostal Christians hold that baptism should follow a personal profession of faith. The Baptist Faith and Message (2000) defines baptism as “the immersion of a believer in water,” an act of obedience symbolizing the believer's faith in a crucified, buried, and risen Savior. Since an infant cannot yet believe, they baptize only those old enough to profess faith.",
+          variations:
+            "Protestants are divided on this question. Lutheran, Reformed, Anglican, and Methodist churches baptize infants. The Augsburg Confession teaches “that children are to be baptized” (Article IX), and the Westminster Confession that “the infants of one, or both, believing parents, are to be baptized” (28.4).",
+          arguments: [
+            {
+              claim: "In the New Testament, people believed first and then were baptized.",
+              response:
+                "Catholics agree that adults come to Baptism through faith, and the New Testament mostly describes converts. It also records whole households being baptized (Acts 16:15, 33), and Peter says the promise “is made to you and to your children” (Acts 2:39). Whether those households included infants is not stated; the Catechism calls it “quite possible” (CCC 1252).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Baptism is a symbol of a believer's own faith, so it cannot mean anything for someone who cannot yet believe.",
+              response:
+                "Catholics hold that Baptism is first God's action, not ours: God “saved us through the bath of rebirth and renewal by the holy Spirit” (Titus 3:5). “The sheer gratuitousness of the grace of salvation is particularly manifest in infant Baptism” (CCC 1250). The child is baptized in the faith of the Church (CCC 1253).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Infant baptism produces people who are baptized but never come to personal faith.",
+              response:
+                "Catholics share this concern. The Church teaches that faith must grow after Baptism and that parents and godparents take on the duty of helping it grow (CCC 1254–1255). The remedy the Church proposes is formation in faith, not withholding the gift.",
+              authority: "pastoral-reflection",
+            },
+          ],
+          sources: ["baptist-faith-message", "augsburg-confession", "westminster-confession"],
+        },
+      ],
+    },
   },
   {
     slug: "confirmation",
@@ -250,6 +287,57 @@ export const sacraments: Topic[] = [
     },
     resources: ["ca-christ-in-the-eucharist", "video-barron-real-presence"],
     related: ["what-is-the-eucharist", "mass-as-sacrifice", "mass-consecration", "what-happens-at-mass", "how-to-become-catholic"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "In the Eucharist, Jesus Christ is truly, really, and substantially present, body and blood, soul and divinity, under the appearances of bread and wine. The Council of Trent taught that the whole substance of the bread and wine is changed into his Body and Blood, a change the Church “has fittingly and properly called transubstantiation” (CCC 1376).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants agree that Christ instituted the Lord's Supper and commanded his Church to celebrate it, and many speak of receiving Christ in it. Most reject transubstantiation, and they explain Christ's presence in different ways: from a true bodily presence to a spiritual presence received by faith to a memorial of his death.",
+          variations:
+            "The differences are large. Lutherans teach that “the Body and Blood of Christ are truly present” in the Supper (Augsburg Confession X) and that the bread and wine “are the true body and blood of Christ,” while rejecting transubstantiation (Smalcald Articles III.6). The Reformed teach that believers receive Christ “really, but spiritually,” by faith, and that his body is not “corporally or carnally” in the bread and wine (Westminster 29.7). Baptists describe the Supper as “a symbolic act of obedience” in which the church memorializes Christ's death and anticipates his return (Baptist Faith and Message, VII).",
+          arguments: [
+            {
+              claim: "Jesus spoke figuratively, as when he said “I am the gate” or “I am the vine.” “This is my body” means “This represents my body.”",
+              response:
+                "Catholics point to how Jesus answered those who took him literally in John 6. He did not soften his words but repeated them: “unless you eat the flesh of the Son of Man and drink his blood, you do not have life within you” (John 6:53), and many disciples “returned to their former way of life” (John 6:66). Paul warns that whoever eats the bread unworthily “will have to answer for the body and blood of the Lord” (1 Corinthians 11:27).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Jesus himself said, “the flesh is of no avail” (John 6:63), so he meant spiritual eating.",
+              response:
+                "In the same verse Jesus says, “It is the spirit that gives life… The words I have spoken to you are spirit and life.” Catholics read this as contrasting a merely natural, unbelieving understanding with faith, not as denying his earlier words; he speaks of “the flesh,” not “my flesh.” The Church receives the Eucharist as a mystery accepted in faith (CCC 1381).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Transubstantiation depends on medieval philosophy that the Bible does not teach.",
+              response:
+                "The Church distinguishes the reality from the term. Belief that the Eucharist is Christ's body is witnessed long before the medieval period, for example by Ignatius of Antioch and Justin Martyr (see below). The Council of Trent taught that the change of substance is real and that transubstantiation is a fitting and proper name for it (CCC 1376).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["augsburg-confession", "smalcald-articles", "westminster-confession", "baptist-faith-message"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Ignatius of Antioch",
+          work: "Letter to the Smyrnaeans, Chapter 7 (c. 107)",
+          note: "Warns against those who “confess not the Eucharist to be the flesh of our Saviour Jesus Christ.”",
+          url: "https://www.newadvent.org/fathers/0109.htm",
+        },
+        {
+          name: "St. Justin Martyr",
+          work: "First Apology, Chapter 66 (c. 155)",
+          note: "“Not as common bread and common drink do we receive these,” but as the flesh and blood of the incarnate Jesus.",
+          url: "https://www.newadvent.org/fathers/0126.htm",
+        },
+      ],
+    },
   },
   {
     slug: "mass-as-sacrifice",
@@ -267,8 +355,7 @@ export const sacraments: Topic[] = [
       "A memorial that makes present: in the Bible, a memorial is more than remembering. When Israel celebrated the Passover, the events of the Exodus became present to each generation. In the same way, when the Church does what Jesus commanded, “do this in memory of me” (Luke 22:19), his Passover becomes present (CCC 1362–1364). The words of institution are themselves sacrificial: his Body “given for you,” his Blood “shed for you” (Luke 22:19–20; CCC 1365).",
       "The Church's offering: because the Church is Christ's Body, she is united with her Head's offering. The faithful offer their praise, sufferings, prayer, and work with Christ (CCC 1368), and the sacrifice is offered for the living and the dead (CCC 1371). This is why the Mass can be offered for an intention.",
       "Early witness: the prophet Malachi foretold that among the nations incense offerings and “a pure offering” would be made to God's name “everywhere” (Malachi 1:11). The Didache, a very early Christian manual, applies that verse to the Sunday Eucharist, telling Christians to confess their sins “that your sacrifice may be pure” (Didache 14).",
-      "Where Christians differ: Protestant traditions reject the sacrifice of the Mass, but not for the same reasons. The Reformed Westminster Confession (1646) teaches that in the Lord's Supper “Christ is not offered up to his Father; nor any real sacrifice made at all,” but only a commemoration of his one offering on the cross and a spiritual offering of praise (29.2); it holds that Christ is received “really, but spiritually,” by faith, not bodily in the bread and wine (29.7). Lutherans kept the Mass and confess that Christ's Body and Blood “are truly present” in the Supper (Augsburg Confession, Article X), but they explain that presence differently: the Smalcald Articles (1537) affirm that the bread and wine “are the true body and blood of Christ” while rejecting transubstantiation and holding that the bread remains bread (Part III, Article VI). Their objection to the sacrifice, in Article XXIV, was to the belief that the Mass takes away sins “by the outward act,” which they held contrary to Christ's offering once for all (Hebrews 10:10, 14) and to justification by faith. So Catholics and confessional Lutherans both affirm Christ's true presence but explain it differently, and they differ on the sacrifice; the Reformed differ on the sacrifice and hold a spiritual rather than bodily presence.",
-      "The Catholic reply: the Mass takes nothing away from the cross, because it is not another sacrifice but that same sacrifice made present, through which the fruits of the cross are received (Council of Trent, Session 22, ch. 2; CCC 1366–1367). Its benefits are received by those who take part with faith and the right dispositions; the Church does not teach that it saves anyone mechanically (CCC 1128).",
+      "Where Christians differ: Protestant traditions reject the sacrifice of the Mass, but not all for the same reasons, and they understand Christ's presence in the Eucharist in different ways. Their views, with sources, and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -290,6 +377,51 @@ export const sacraments: Topic[] = [
     },
     resources: ["stpaul-re-presentation-of-calvary", "ca-early-church-sacrifice", "didache"],
     related: ["why-did-jesus-die", "mass-eucharistic-prayer", "real-presence", "mass-in-scripture", "mass-prayer-over-the-offerings"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "The Mass is a true sacrifice, but not a new or repeated one. It makes sacramentally present the one sacrifice Christ offered on the cross: “the victim is one and the same,” and only the manner of offering is different (Council of Trent; CCC 1367).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestant confessions reject the sacrifice of the Mass because they hold that Christ's one offering on the cross, made “once for all” (Hebrews 10:10), cannot be offered again and needs no addition. The Westminster Confession teaches that in the Lord's Supper “Christ is not offered up to his Father; nor any real sacrifice made at all,” but there is “only a commemoration of that one offering” and “a spiritual oblation of all possible praise unto God” (29.2).",
+          variations:
+            "Their reasons differ. Lutherans kept the Mass and confess that Christ's Body and Blood are truly present (Augsburg Confession X, XXIV), but they objected to the belief that the Mass takes away sins by the outward act, which they held contrary to Christ's offering once for all and to justification by faith (Article XXIV). The Reformed hold a spiritual rather than bodily presence (Westminster 29.7), and Baptists a memorial of Christ's death (Baptist Faith and Message, VII).",
+          arguments: [
+            {
+              claim: "Hebrews says Christ offered himself “once for all.” A sacrifice offered at every Mass contradicts that.",
+              response:
+                "Catholics agree that Christ's sacrifice is unique and complete (CCC 614). The Mass does not repeat or add to it: “The Mass makes present the sacrifice of the Cross; it does not add to that sacrifice nor does it multiply it” (Ecclesia de Eucharistia 12). The Eucharist is a sacrifice “because it re-presents (makes present) the sacrifice of the cross” (CCC 1366).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Making the Mass a sacrifice takes glory from the cross and makes salvation depend on a ritual.",
+              response:
+                "The Mass takes nothing from the cross: it is that same sacrifice made present, so that its fruits are received (Council of Trent, Session 22; CCC 1366–1367). Its benefits are received by those who take part with faith and the right dispositions; the Church does not teach that it works mechanically (CCC 1128).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Calling the minister a priest denies the priesthood of all believers.",
+              response:
+                "The Church teaches both: “the whole community of believers is, as such, priestly” (CCC 1546), and the ministerial priesthood of bishops and priests and the common priesthood of the faithful each participate “in its own proper way, in the one priesthood of Christ” (CCC 1547). The priest acts in the person of Christ, who is the one who offers (CCC 1410).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["westminster-confession", "augsburg-confession", "baptist-faith-message"],
+        },
+      ],
+      fathers: [
+        {
+          name: "The Didache",
+          work: "Chapter 14 (late first or early second century)",
+          note: "Calls the Sunday Eucharist a “sacrifice” and applies Malachi's “pure sacrifice” to it.",
+          url: "https://www.newadvent.org/fathers/0714.htm",
+        },
+      ],
+    },
   },
   {
     slug: "who-can-receive-communion",
@@ -306,7 +438,7 @@ export const sacraments: Topic[] = [
       "Orthodox and other Eastern Christians: their Churches have true sacraments, above all the priesthood and the Eucharist, so Catholic ministers may give them Communion if they ask on their own and are properly disposed (canon 844 §3; CCC 1399). The U.S. bishops ask them to respect the discipline of their own Churches.",
       "Other Christians: the communities that came from the Reformation, the Catechism says, “have not preserved the proper reality of the Eucharistic mystery in its fullness, especially because of the absence of the sacrament of Holy Orders,” so intercommunion with them is not possible (CCC 1400). In danger of death or another grave necessity judged by the bishop, a baptized Christian who cannot reach their own minister, asks on their own, shares the Catholic faith in the sacrament, and is properly disposed may receive (canon 844 §4; CCC 1401).",
       "People who are not baptized: Communion presupposes Baptism (canon 912), so they do not receive, but they are warmly welcome at Mass and invited to pray.",
-      "Many Protestant churches practice an “open table,” inviting all baptized believers, and others restrict Communion to their own members. The Catholic practice is not a judgment on anyone's sincerity. It reflects the Catholic belief that sharing Communion should express a unity in faith that does not yet fully exist, and the Church prays for the day when all Christians can share one table (CCC 1398).",
+      "Other Christian churches draw the boundaries of the Lord's table in different ways. The Catholic practice is not a judgment on anyone's sincerity; it reflects the belief that sharing Communion should express a unity in faith that does not yet fully exist, and the Church prays for the day when all Christians can share one table (CCC 1398). Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -322,6 +454,45 @@ export const sacraments: Topic[] = [
     },
     resources: ["ec-disposed-to-receive"],
     related: ["how-to-receive-communion", "non-catholics-at-mass", "mortal-and-venial-sin", "confession", "what-is-the-eucharist"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Receiving Communion expresses both faith in Christ's presence and full communion with the Church. Catholics in the state of grace may receive. Other Christians ordinarily do not, except that Orthodox and other Eastern Christians may receive if they ask and are properly disposed, and in grave necessity other baptized Christians who share the Catholic faith in the sacrament may be admitted (CCC 1398–1401; canon 844).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants agree that the Lord's Supper is for believers who receive it worthily (1 Corinthians 11:27–29), but they draw its boundaries differently. Many churches welcome baptized believers from other denominations to the table; others admit only their own members or those examined in the faith.",
+          variations:
+            "The Augsburg Confession says that in Lutheran churches “none are admitted except they be first examined” (Article XXIV). The Westminster Confession holds that “all ignorant and ungodly persons” are “unworthy of the Lord's table” (29.8). The Baptist Faith and Message makes baptism, which it defines as the immersion of a believer, “prerequisite to the privileges of church membership and to the Lord's Supper” (VII).",
+          arguments: [
+            {
+              claim: "The table belongs to Christ, not to the Church; turning fellow believers away divides the Body of Christ.",
+              response:
+                "Catholics feel the pain of division too: “The more painful the experience of the divisions in the Church which break the common participation in the table of the Lord, the more urgent are our prayers” for unity (CCC 1398). They believe Communion is a sign of unity already complete in faith, sacraments, and ministry, so sharing it before that unity exists would signify something not yet true (CCC 1400). It is not a judgment on anyone's faith or sincerity.",
+              authority: "doctrine",
+            },
+            {
+              claim: "If Catholics accept Protestants as Christians, they should share Communion with them.",
+              response:
+                "The Church teaches that baptized believers in Christ are in “a certain, although imperfect, communion” with the Catholic Church (CCC 838). Eucharistic communion expresses full communion. Because communities that came from the Reformation lack the sacrament of Holy Orders, the Church judges that they “have not preserved the proper reality of the Eucharistic mystery in its fullness,” so intercommunion is not possible (CCC 1400), apart from the cases of grave necessity in canon 844 §4.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["augsburg-confession", "westminster-confession", "baptist-faith-message"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Justin Martyr",
+          work: "First Apology, Chapter 66 (c. 155)",
+          note: "Only those who believe what the Church teaches, have been baptized, and live as Christ commanded may receive the Eucharist.",
+          url: "https://www.newadvent.org/fathers/0126.htm",
+        },
+      ],
+    },
   },
   {
     slug: "confession",
@@ -375,7 +546,7 @@ export const sacraments: Topic[] = [
       "Sin is never only private: sin wounds the Church as well as offending God, so forgiveness includes reconciliation with the Church, which the priest represents (CCC 1440, 1443–1445). The early Christians confessed their sins in the assembly (James 5:16; Didache 4); the form of the sacrament has changed over the centuries, but its basic structure has not (CCC 1447–1448).",
       "Can't I confess directly to God? Yes, and Catholics should, every day. Perfect contrition, sorrow out of love for God, already obtains forgiveness even of mortal sins when it includes the resolution to go to Confession as soon as possible (CCC 1452). The sacrament does not compete with private prayer; it is the ordinary way Christ gives for grave sins (CCC 1484; canon 960).",
       "The seal: everything said in confession is protected by the sacramental seal, which “admits of no exceptions” (CCC 1467; canon 983).",
-      "Where Christians differ: many Protestants hold that Christians should confess directly to God, who “is faithful and just and will forgive our sins” (1 John 1:9), with Christ as the “one mediator” (1 Timothy 2:5). Catholics affirm both verses and see the priest as Christ's minister, not a second mediator. Practice also varies among Protestants: the Augsburg Confession, for example, says Lutheran churches retain private absolution (Article XI).",
+      "Where Christians differ: many Protestants hold that Christians should confess directly to God, while Lutherans retain private absolution. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -396,6 +567,57 @@ export const sacraments: Topic[] = [
     },
     resources: ["ascension-why-confess-to-a-priest", "video-a101-seal-of-confession"],
     related: ["confession", "how-to-go-to-confession", "bishops-priests-deacons", "sola-scriptura"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Only God forgives sins. Christ shared that power with his apostles (John 20:22–23), and their successors, bishops and priests, exercise it in the sacrament of Penance. Through the priest's absolution Christ himself forgives the sinner and reconciles him with the Church. Grave sins are ordinarily forgiven through this sacrament (CCC 1441–1445, 1461–1462, 1484).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Most Protestants hold that Christians should confess their sins directly to God, trusting Christ, the “one mediator” (1 Timothy 2:5), and his promise that God “is faithful and just and will forgive our sins” (1 John 1:9). The Westminster Confession teaches that “every man is bound to make private confession of his sins to God,” and to confess to those he has wronged or scandalized (15.6).",
+          variations:
+            "Practice varies. Lutherans teach that “Private Absolution ought to be retained in the churches, although in confession an enumeration of all sins is not necessary” (Augsburg Confession, Article XI).",
+          arguments: [
+            {
+              claim: "Only God can forgive sins.",
+              response:
+                "Catholics agree (CCC 1441). Yet Jesus showed that “the Son of Man has authority to forgive sins on earth” (Mark 2:10), the crowds “glorified God who had given such authority to human beings” (Matthew 9:8), and on Easter evening he told the apostles, “Whose sins you forgive are forgiven them” (John 20:23). The priest forgives not by his own power but in Christ's name.",
+              authority: "doctrine",
+            },
+            {
+              claim: "Christ is the one mediator between God and us; a priest puts a man in between.",
+              response:
+                "Catholics affirm 1 Timothy 2:5. The priest is not a second mediator but Christ's minister: he is “not the master of God's forgiveness, but its servant” (CCC 1466). Paul writes that God has reconciled us to himself through Christ and “given us the ministry of reconciliation” (2 Corinthians 5:18). Catholics also confess to God directly every day; perfect contrition already obtains forgiveness when it includes the resolution to go to Confession (CCC 1452).",
+              authority: "doctrine",
+            },
+            {
+              claim: "John 20:23 was given to the apostles, not to priests who came later.",
+              response:
+                "The Church teaches that bishops, as successors of the apostles, and priests, as their co-workers, exercise this ministry by virtue of Holy Orders (CCC 1461–1462). Early Christians confessed their sins in the assembly (Didache 4), and in the third century St. Cyprian praises those who “confess this very thing to God's priests” even when their sins were only of thought (On the Lapsed 28).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession", "augsburg-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "The Didache",
+          work: "Chapter 4 (late first or early second century)",
+          note: "“In the church you shall acknowledge your transgressions.”",
+          url: "https://www.newadvent.org/fathers/0714.htm",
+        },
+        {
+          name: "St. Cyprian of Carthage",
+          work: "On the Lapsed, Section 28 (251)",
+          note: "Praises those who confess even sins of thought “to God's priests” and seek the remedy.",
+          url: "https://www.newadvent.org/fathers/050703.htm",
+        },
+      ],
+    },
   },
   {
     slug: "how-to-go-to-confession",

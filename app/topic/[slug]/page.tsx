@@ -27,7 +27,8 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
   const topic = getTopic((await params).slug);
   if (!topic) notFound();
   const category = getCategory(topic.category)!;
-  const back = topic.debate
+  // Debate topics filed under Learn (the sacraments, the Mass, the Bible) go back to their own category.
+  const back = topic.debate && category.pillar === "apologetics"
     ? { href: "/apologetics", label: "Apologetics" }
     : { href: `/category/${category.slug}`, label: category.title };
   const { catechism = [], scripture = [], documents = [] } = topic.teaching;

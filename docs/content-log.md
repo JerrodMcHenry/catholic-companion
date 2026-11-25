@@ -282,10 +282,10 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `what-is-the-magisterium` | 85–87, 95, 888–892 | Lk 10:16; Mt 28:18–20; Jn 16:12–13; Acts 15:1–29 | Dei Verbum; Lumen Gentium; Professio Fidei | Catholic Answers (reused) | Levels of teaching kept to CCC 891–892, pointing to `what-is-dogma` | Draft |
 | `peter-the-rock` | 552–553, 765, 880–882 | Mt 16:13–19; Is 22:15–25; Lk 22:31–32; Jn 21:15–17; Jn 1:42 | Pastor Aeternus; Ut Unum Sint; Ravenna; Lumen Gentium; Westminster 25.6 | Catholic Answers, “Peter and the Papacy” | **D:** Protestant perspective written; the **Eastern Orthodox perspective is in the explanation only**, because a formal perspective needs an Eastern Orthodoxy tradition page, which is not yet built. The Aramaic “Cephas” argument is an apologetic argument | Draft |
 | `papal-infallibility` | 85–87, 889–892 | Lk 22:31–32; Jn 16:12–13; Mt 16:18–19; 1 Tm 3:15 | Pastor Aeternus ch. 4; Lumen Gentium 25; Professio Fidei | Catholic Answers Q&A on infallible teachings (reused); “Peter and the Papacy” | **D:** Protestant perspective; Orthodox view in prose (Ravenna 45). The Catholic Answers “Papal Infallibility” tract was not used because of its tone. The two papal definitions named (1854, 1950) follow CCC 491 and 966 | Draft |
-| `apostolic-succession` | 77, 838, 857–862, 1399 | Acts 1:15–26; 2 Tm 1:6, 2:2; Ti 1:5; Lk 10:16 | Lumen Gentium; Dei Verbum; Augsburg VII and XXVIII; 1 Clement 42, 44 | Catholic Answers, early Church on succession; “Bishop, Priest, and Deacon” (reused) | **D:** Protestant perspective, noting Anglican and Scandinavian Lutheran episcopal succession (general statement, not sourced to a confession) | Draft |
+| `apostolic-succession` | 77, 838, 857–862, 1399 | Acts 1:15–26; 2 Tm 1:6, 2:2; Ti 1:5; Lk 10:16 | Lumen Gentium; Dei Verbum; Augsburg VII and XXVIII; 1 Clement 42, 44 | Catholic Answers, early Church on succession; “Bishop, Priest, and Deacon” (reused) | **D:** Protestant perspective, noting Anglican and Scandinavian Lutheran episcopal succession (general statement, not sourced to a confession; **replaced in Batch 9** with Apology XIV) | Draft |
 | `catholic-and-protestant-differences` | 817–819, 838, 1271 | Jn 17:20–23; Eph 4:1–6 | Unitatis Redintegratio; Joint Declaration on Justification; Ut Unum Sint | Catholic Answers, “Are Catholics Christian?” (reused); Westminster Confession | Agreement first. The Joint Declaration is stated as Lutheran–Catholic only. Points to existing topics rather than repeating them | Draft |
 | `catholic-and-orthodox-differences` | 247–248, 838, 1399, 1580 | Jn 17:20–23; Jn 15:26 | Unitatis Redintegratio; Orientalium Ecclesiarum; 1965 Common Declaration; Ravenna; Ut Unum Sint; canon 844 | Catholic Answers on the pope (reused) | **R:** Orthodox positions stated only as far as Ravenna 41, 43, 45 and the 1965 declaration support. An earlier draft line listing the Immaculate Conception and purgatory as rejected doctrines was removed as unsourced. No Orthodox primary source has been verified yet (needed for the Eastern Orthodoxy page) | Draft |
-| `praying-directly-to-god` | 956, 969–970, 2634–2636, 2683 | 1 Tm 2:1–5; Jas 5:16; Lk 20:37–38; Rev 5:8; Heb 12:1 | Lumen Gentium; Westminster 21.2 | Catholic Answers, “Why Do Catholics Pray to Saints?”; St. Paul Center | **D:** Protestant perspective. The Lutheran and Anglican variation (“some acknowledge that the saints pray for the Church”) is a general statement, not sourced to a confession | Draft |
+| `praying-directly-to-god` | 956, 969–970, 2634–2636, 2683 | 1 Tm 2:1–5; Jas 5:16; Lk 20:37–38; Rev 5:8; Heb 12:1 | Lumen Gentium; Westminster 21.2 | Catholic Answers, “Why Do Catholics Pray to Saints?”; St. Paul Center | **D:** Protestant perspective. The Lutheran and Anglican variation (“some acknowledge that the saints pray for the Church”) is a general statement, not sourced to a confession (**replaced in Batch 9** with Augsburg XXI and Apology XXI) | Draft |
 
 **Updated:**
 
@@ -314,6 +314,106 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 
 - **Limitation:** without JavaScript, only the first 24 resources are listed, because “Show more” needs JavaScript. Site search and topic pages still reach every resource.
 
+## Batch 9: Mary, saints, and salvation (2026-11-25)
+
+**Curriculum reconciliation (before writing):**
+
+- Audit of the launch curriculum: 164 P1 topics, all assigned to a batch. There are 34 required debate sections (P1 topics marked **D**) and 9 required (P1) tradition pages.
+- `scripts/curriculum.mjs` now reports launch progress in four categories (educational topics, required debate sections, required tradition pages, learning pathways). It checks that every required debate section and tradition page is complete or assigned to exactly one batch, reading the new §11.1 table in `docs/master-curriculum.md`. There is still one registry: the inventory tables.
+- **Revised schedule:** new Batches 10–12 (Apologetics II–IV) come before the remaining educational batches. The former Batches 10–13 are renumbered 13–16 with their contents unchanged.
+  - Batch 10: the eight deferred debate sections, plus the Evangelical page.
+  - Batch 11: the Eastern Orthodoxy and Judaism pages, plus the Orthodox perspectives on `peter-the-rock`, `papal-infallibility`, `immaculate-conception` and `purgatory`.
+  - Batch 12: the Mary, salvation, Jehovah's Witness and atheist debate sections.
+- **Unsourced statements replaced:**
+  - `praying-directly-to-god`: the Lutheran variation now cites Augsburg Confession XXI and the Apology XXI (the saints “pray for the Church in general”; invocation is not taught). The Reformed position cites Westminster 21.2. The unsourced Anglican statement was removed.
+  - `apostolic-succession`: now cites Apology XIV, where the Lutherans state their wish to keep the Church's grades of government while regarding them as of human authority. The unsourced Anglican statement was removed.
+  - `peter-the-rock`, `did-jesus-found-a-church` and `papal-infallibility`: variations are now tied to Joint Declaration 43, Ut Unum Sint 95–96, Westminster 25 and Augsburg VII, and the Formula of Concord.
+  - New resource: `apology-augsburg-confession` (BookOfConcord.org).
+- **Cross-links:** the Apologetics page has a “Comparing traditions” section linking the two comparison topics, which stay filed under The Church (`comparisonTopics` in `content/topics/index.ts`, validated at build time).
+
+**Verification (Batch 9):**
+
+- **Catechism:** all 288 Catechism references in the app checked automatically (0 problems). Every quotation in the new topics was compared word for word with the cached vatican.va text. New paragraphs read: 161, 466, 487–499, 828, 846–848, 946–948, 954–959, 963–971, 1005–1010, 1021–1037, 1213, 1257–1260, 1446, 1861, 1987–2016, 2129–2132, 2673–2675, 2683.
+- **Scripture:** all 29 new quotations matched on bible.usccb.org in a browser. 2 Peter 3:9 had been quoted in the Catechism's RSV wording and was corrected to the NABRE.
+- **Church documents:**
+  - Ineffabilis Deus: the 1854 definition (Papal Encyclicals Online).
+  - Munificentissimus Deus 44 (vatican.va).
+  - Council of Ephesus: Cyril's letter and the first anathema (Papal Encyclicals Online).
+  - Trent: Session 6, chapters 8 and 10; Session 25, decrees on purgatory and on the invocation of saints and sacred images (Hanover Historical Texts).
+  - Spe Salvi 47 (vatican.va).
+  - Lumen Gentium 16; Nostra Aetate 2.
+  - Joint Declaration 15, 25–27 and 40, checked in the Catholic Culture HTML copy because the LWF PDF could not be read as text here. The resource still links the LWF original.
+- **Protestant sources:** Westminster Confession 21.2 and 32.1 (OPC).
+- **Resources:** every new URL was opened and its title, publisher and opening text read. The two Aquinas 101 videos were confirmed through YouTube oEmbed and the Thomistic Institute's pages, which also name the presenters. The Ascension purgatory item is an episode page with no embedded video found, so it is listed as a podcast at its page URL.
+- **Search:** 130 of 130 regression checks pass (28 new). “why pray to saints” now leads to `praying-to-saints`, and “why not pray directly to God” leads to `praying-directly-to-god`.
+- **Checks on the build:** 1,831 internal links on 133 pages (0 problems), all 41 Mass parts in order with previous/next links, and existing ids unchanged. Screenshots were checked at 320 px (light), 390 px (light and dark) and 1280 px (light).
+
+| Topic | Catechism | Scripture | Church documents and sources | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `who-is-mary` | 487–495, 499, 963–971 | Lk 1:26–56; Jn 2:1–11; Jn 19:25–27; Acts 1:14 | Lumen Gentium; Munificentissimus Deus | Catholic Answers (Mother of God; Immaculate Conception and Assumption) | Overview only; points to the dogma topics | Draft |
+| `why-honor-mary` | 963–971, 2673–2675 | Lk 1:39–56; Jn 2:1–11 | Lumen Gentium; Westminster 21.2 | Catholic Answers, “Saint Worship?” (latria, dulia, hyperdulia) | **D** in Batch 12; Protestant objection stated from Westminster only | Draft |
+| `mother-of-god` | 466, 495, 963 | Lk 1:39–45; Gal 4:4–5; Jn 1:14 | Council of Ephesus (Cyril's letter) | Catholic Answers | **D** in Batch 12. A draft line saying other traditions use or accept the title was removed as unsourced | Draft |
+| `immaculate-conception` | 490–493, 496–498 | Lk 1:26–38; Gn 3:15; Eph 1:3–4 | Ineffabilis Deus | Catholic Answers | **D** in Batch 11. A draft line on Orthodox and Protestant views was reduced to CCC 493 and a neutral sentence; Orthodox sources are needed | Draft |
+| `what-is-a-saint` | 828, 946–948, 954–959 | Phil 1:1; Heb 12:1–2; Rev 7:9–17 | Lumen Gentium | Catholic Answers | Canonization process left to the P2 topic `how-saints-are-made` | Draft |
+| `praying-to-saints` | 954–959, 2683 | Lk 20:37–38; Rev 5:8; Jas 5:16 | Trent, Session 25 | Catholic Answers; St. Paul Center (reused) | **D** in Batch 12. Kept distinct from `praying-directly-to-god`, which holds the objections | Draft |
+| `statues-and-images` | 2129–2132 | Ex 20:2–6; Ex 25:18–22; Nm 21:8–9; Col 1:15 | Trent, Session 25 | Catholic Answers (statues; saint worship) | **D** in Batch 11 (Protestant, Islam, Judaism). Other views stated only generally until sourced | Draft |
+| `how-are-we-saved` | 161, 1987–1993, 1996–2003, 2010, 2016 | Eph 2:4–10; Rom 3:21–26; Jn 3; Phil 2:12–13 | Trent, Session 6; Joint Declaration | Aquinas 101 (grace); Catholic Answers (assurance) | **R:** loss of grace and assurance of salvation are stated briefly | Draft |
+| `what-is-grace` | 1996–2003, 2006–2011 | 2 Pt 1:3–4; 2 Cor 5:17–18; Rom 5:1–5 | Trent, Session 6 | Aquinas 101 | | Draft |
+| `faith-and-works` | 1987–1993, 2006–2011 | Rom 3:21–28; Eph 2:8–10; Jas 2:14–26; Gal 5:6 | Joint Declaration 15, 25–27, 40; Trent, Session 6, chapters 8 and 10 | Aquinas 101; Catholic Answers | **D** in Batch 12; **R:** the Joint Declaration is stated as Lutheran–Catholic only | Draft |
+| `what-happens-when-we-die` | 1005–1007, 1010, 1021–1022 | Heb 9:27–28; Lk 23:39–43; Mt 25:31–46; 1 Cor 15:42–44 | Spe Salvi | Aquinas 101 (Last Things) | | Draft |
+| `heaven` | 1023–1029 | 1 Cor 13:12; 1 Jn 3:2; 1 Cor 2:9; Rev 21:1–5 | Spe Salvi | Aquinas 101 | | Draft |
+| `hell` | 1033–1037 | Mt 25:31–46; Mk 9:43–48; 2 Pt 3:9; 1 Jn 3:14–15 | Spe Salvi | Aquinas 101 | **R; D** in Batch 12. Removed as unsourced: an unsourced statement of the Jehovah's Witness view of hell, and “the Church has never declared that any particular person is in hell” | Draft |
+| `purgatory` | 958, 1030–1032 | 2 Mc 12:38–46; 1 Cor 3:10–15; Rev 21:27; Mt 12:32 | Trent, Session 25; Spe Salvi 47 (stated as theological opinion); Westminster 32.1 | Catholic Answers; Fr. Mike Schmitz (Ascension) | **D** in Batch 11. An unsourced line on the Orthodox view was removed; it waits for Orthodox-authored sources | Draft |
+| `salvation-of-non-christians` | 846–848, 1257–1260 | Acts 4:12; 1 Tm 2:3–6; Jn 14:6; Rom 2:14–16 | Lumen Gentium 16; Nostra Aetate 2; Dominus Iesus | Catholic Answers | **R; D** in Batch 13. Other religions' views are not described. The Hindu, Buddhist and Sikh decision is still open (see below) | Draft |
+
+**Placement:** the seven Mary and saints topics are in a new subject file, `content/topics/mary-and-saints.ts`, under Mary and the Saints. The eight salvation topics are in `content/topics/salvation.ts`, under What Catholics Believe. There were no architectural changes.
+
+## Batch 10: Apologetics II, Protestant dialogue (2026-11-25)
+
+**Curriculum decisions applied:**
+
+- **Promoted to P1:** `after-becoming-catholic` (Batch 15), `trinity-in-scripture` and `was-jesus-crucified` (Batch 12), and `muhammad-and-the-quran` (Batch 13). Each was confirmed as P2 before promotion.
+  - Three of them are debate topics, so required debate sections rose from 34 to 37. `trinity-in-scripture` needs a Latter-day Saints perspective, so its section is assigned to Batch 16, when that page is written.
+- **Hinduism, Buddhism, and Sikhism:** their formal perspectives are deferred until after launch. `scripts/curriculum.mjs` reads the approved list from §11.1, reports the deferred work on every run, and fails if either debate section is completed without introductory coverage of each tradition. That coverage is written in Batch 13, with the two topics that name them.
+- **Pathways:** the six P2 topics in 8.4 stay P2. The script now reports each pathway against the topics available at launch: 8.4 is 5 of 8, with the six listed as after launch. Pathways are not rendered in the app (only Start Here is), so they create no dead links. §8.4 says that a launch version would list only built topics.
+- **Launch scope frozen:** 168 P1 topics. No new topics were added to the inventory.
+
+**Built:**
+
+- **Debate sections (8):** `are-catholics-christians`, `real-presence`, `mass-in-scripture`, `infant-baptism`, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `catholic-bible-books`. Each has a Protestant perspective with named Lutheran, Reformed, and Baptist variations, two or three objections with Catholic responses, and, where available, early Church witnesses.
+- **Evangelical and non-denominational page:** overview, differences, and sources. The evangelical self-description and convictions come from the NAE and the Lausanne Covenant.
+- **No duplicated text:** the topics' sourced “where Christians differ” paragraphs were moved into the perspectives. The articles keep a one-sentence pointer, and the Catholic reply on `mass-as-sacrifice` became an argument response.
+- **Navigation:**
+  - Debate topics filed under Learn (Sacraments, the Mass, the Bible, the Church, What Catholics Believe) now go back to their own category instead of to Apologetics.
+  - The Protestantism page links subtraditions that have a page and lists the rest as “Coming soon,” replacing the line saying that all their pages were coming soon.
+
+**Verification (Batch 10):**
+
+- **Protestant sources:**
+  - Westminster Confession 1.3, 15.6, 25.2, 25.5, 25.6, 28.4, 29.2, 29.7, 29.8 (OPC; this edition's 25.6 has no “Antichrist” clause).
+  - Augsburg Confession IX, X, XI, XXIV, and the Conclusion of Part I.
+  - Smalcald Articles III.6 (BookOfConcord.org).
+  - Baptist Faith and Message (2000), Articles VI, VII, XIV (bfm.sbc.net).
+- **Evangelical sources:** NAE Statement of Faith and “What Is an Evangelical?” (nae.org); Lausanne Covenant, introduction and sections 2 and 4 (lausanne.org).
+- **Early Church** (New Advent): Ignatius, Smyrnaeans 7–8; Justin, First Apology 66–67; Didache 4 and 14; Cyprian, On the Lapsed 28; Augustine, On Christian Doctrine 2.8.
+- **Catechism:** quotations compared with the cached vatican.va text: 176, 614, 838, 971, 1090, 1128, 1250, 1366–1367, 1376, 1381, 1398, 1400, 1410, 1441, 1452, 1466, 1546–1547, 2010, 2132, 2558. All 288 linked references were also checked (0 problems).
+- **Scripture:** 21 new quotations checked on bible.usccb.org in a browser. 2 Corinthians 5:18 was reworded to match the NABRE (“given us the ministry of reconciliation”).
+- **Not used:**
+  - Evangelicals and Catholics Together: its First Things URL redirected to a different article.
+  - The Thirty-Nine Articles: the Church of England page did not load. Anglican positions are still not stated.
+- **Search:** 140 of 140 regression checks pass (10 new). **Build:** 156 static pages; 1,847 internal links, 0 problems.
+
+| Debate section | Perspective sources | Early Church | Open questions for review |
+|---|---|---|---|
+| `are-catholics-christians` | Augsburg (Conclusion of Part I); Westminster 25; NAE | Ignatius, Smyrnaeans 8 | **R:** the summary of evangelical doubts is general, not sourced to one statement |
+| `real-presence` | Augsburg X; Smalcald III.6; Westminster 29.7; Baptist Faith and Message VII | Ignatius, Smyrnaeans 7; Justin 66 | The John 6:63 response is labelled an apologetic argument |
+| `mass-in-scripture` | Westminster 29.2; Augsburg XXIV; Baptist Faith and Message VII | Didache 14; Justin 67 | |
+| `infant-baptism` | Baptist Faith and Message VII; Augsburg IX; Westminster 28.4 | (Pastoralis Actio, already cited) | |
+| `mass-as-sacrifice` | Westminster 29.2, 29.7; Augsburg X, XXIV; Baptist Faith and Message VII | Didache 14 | **R** (carried over) |
+| `who-can-receive-communion` | Augsburg XXIV; Westminster 29.8; Baptist Faith and Message VII | Justin 66 | **R** (carried over) |
+| `why-confess-to-a-priest` | Westminster 15.6; Augsburg XI | Didache 4; Cyprian, On the Lapsed 28 | |
+| `catholic-bible-books` | Westminster 1.3 | Augustine, On Christian Doctrine 2.8 | Anglican and Lutheran views of these books are not stated until sourced |
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -332,9 +432,11 @@ These stay open until checked against an authoritative source; topics describe t
 - Which translation the current U.S. Lectionary for Mass uses (not stated in `which-bible-translation` until verified).
 - The Anglican Thirty-Nine Articles, Article VI, on the deuterocanonical books (page did not load; Anglican views not stated).
 - An Eastern Orthodoxy tradition page with verified Orthodox primary sources, so that the Orthodox perspectives on `peter-the-rock` and `papal-infallibility` can become formal debate perspectives (Batch 8 presents them in prose, citing the Ravenna Document).
-- Debate sections still owed on earlier D topics (`are-catholics-christians`, `real-presence`, `mass-in-scripture`, `infant-baptism`, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `catholic-bible-books`): not part of the Batch 8 inventory; scheduling needs a decision.
+- **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
+- Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
+- Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, and the fairness of the Protestant and Orthodox summaries in Batch 8.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, and in Batch 9 the teaching on hell, salvation outside the Church, and justification.
 
 ## Earlier topics (Phases 2–4)
 

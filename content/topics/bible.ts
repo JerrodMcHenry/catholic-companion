@@ -52,7 +52,7 @@ export const bibleTopics: Topic[] = [
       "What Catholics believe: “It was by the apostolic Tradition that the Church discerned which writings are to be included in the list of the sacred books” (CCC 120). The Church accepts as inspired 46 Old Testament books and 27 New Testament books (CCC 138). The Council of Trent listed them, including Tobit, Judith, Wisdom, Sirach, Baruch, and two books of Maccabees, and taught that God is the author of both Testaments (Session 4, 1546). The canon is therefore a matter of defined Catholic teaching.",
       "Early witnesses: the African Council of Carthage of 419 listed Tobit, Judith, and two books of Maccabees among the books to be read in church as Scripture (canon 24), recording what it had “received from our fathers.” The Church also adopted the ancient Greek translation of the Old Testament, the Septuagint, which contained these books (Dei Verbum 22).",
       "Why “deuterocanonical”: the name reflects that some early writers questioned these books and that their place in the canon was settled after the others. It does not mean they are less inspired.",
-      "Where Protestants differ: the Reformers adopted the shorter Old Testament of the Hebrew Bible. The Westminster Confession (1646), for example, teaches that “the books commonly called Apocrypha, not being of divine inspiration, are no part of the canon of the Scripture” (1.3). Protestant traditions differ in how they regard these books, and Catholics and Protestants agree on the New Testament.",
+      "Where Protestants differ: the Reformers adopted the shorter Old Testament of the Hebrew Bible, and Protestant traditions differ in how they regard these books. Catholics and Protestants agree on the New Testament. Their views and the Catholic responses are set out below.",
       "Why it matters: these books contain passages that bear on Catholic teaching and prayer, such as Judas Maccabeus' prayer for the dead (2 Maccabees 12:43–46; CCC 1032), and they are read at Mass. Scholars on both sides continue to discuss the history, including the role of the Septuagint and how the Jewish canon took shape.",
     ],
     teaching: {
@@ -70,6 +70,51 @@ export const bibleTopics: Topic[] = [
     },
     resources: ["ca-council-that-wasnt", "westminster-confession"],
     related: ["what-is-the-bible", "sola-scriptura", "what-is-sacred-tradition", "which-bible-translation"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "The Old Testament has 46 books, including Tobit, Judith, 1 and 2 Maccabees, Wisdom, Sirach, and Baruch. The Church discerned the canon of Scripture through apostolic Tradition (CCC 120) and defined the full list at the Council of Trent in 1546.",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants hold that the Old Testament canon is the shorter Old Testament of the Hebrew Bible, which does not include the deuterocanonical books. The Westminster Confession teaches that “the books commonly called Apocrypha, not being of divine inspiration, are no part of the canon of the Scripture, and therefore are of no authority in the church of God” (1.3).",
+          variations:
+            "Protestant traditions differ in how they regard and use these books. Catholics and Protestants agree on the 27 books of the New Testament.",
+          arguments: [
+            {
+              claim: "The Church added these books to the Bible at the Council of Trent.",
+              response:
+                "Trent defined the list but did not create it. Centuries earlier, the African Council of Carthage of 419 listed Tobit, Judith, and two books of Maccabees among the Scriptures, as it had “received from our fathers,” and St. Augustine's list of canonical books includes them (On Christian Doctrine 2.8). The apostolic Church used the Greek Old Testament, the Septuagint, which contained these books (Dei Verbum 22).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Some early Christian writers did not accept these books as fully canonical.",
+              response:
+                "That is true, and it is why they are called “deuterocanonical”: their place in the canon was settled after the others. The Catholic Church holds that the question was resolved by the Church's received use and teaching, and finally defined at Trent; “deuterocanonical” does not mean less inspired.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "These books contain teachings, such as prayer for the dead, that support Catholic doctrine, which is why Catholics keep them.",
+              response:
+                "The Church received these books long before the controversies of the Reformation, and her teaching on prayer for the dead rests on Tradition and the Church's practice as well as on 2 Maccabees (CCC 1032). Scholars on both sides continue to discuss the history of the canon, including the role of the Septuagint and how the Jewish canon took shape.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Augustine of Hippo",
+          work: "On Christian Doctrine, Book 2, Chapter 8 (c. 397)",
+          note: "Lists the canonical books, including Tobit, Judith, the two books of Maccabees, Wisdom, and Ecclesiasticus (Sirach).",
+          url: "https://www.newadvent.org/fathers/12022.htm",
+        },
+      ],
+    },
   },
   {
     slug: "inspiration-of-scripture",

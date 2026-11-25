@@ -118,7 +118,7 @@ export const mass: Topic[] = [
       "The Last Supper: at the Passover meal, Jesus took bread and the cup, called them his Body and his Blood of the covenant, and told the apostles to do this in his memory (Matthew 26:26–28; Mark 14:22–24; Luke 22:19–20; 1 Corinthians 11:23–26). By celebrating the Last Supper during the Passover, the Catechism teaches, Jesus gave the Jewish Passover its definitive meaning.",
       "The shape of the Mass: on the road to Emmaus, the risen Jesus first explained the Scriptures and then was recognized in the breaking of the bread (Luke 24:13–35): Word, then Eucharist, the same two parts as the Mass today. The first Christians devoted themselves to the apostles' teaching and to the breaking of the bread (Acts 2:42).",
       "Heaven's worship: the Book of Revelation shows the angels and saints worshiping “the Lamb” who was slain (Revelation 5). The Church teaches that in the liturgy on earth we share in a foretaste of that heavenly liturgy.",
-      "Many Protestant Christians read these passages differently, especially about sacrifice and Christ's presence in the Eucharist. Those differences belong to Apologetics.",
+      "Many Protestant Christians read these passages differently, especially about sacrifice and Christ's presence in the Eucharist. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -138,6 +138,57 @@ export const mass: Topic[] = [
     },
     resources: ["video-mass-pitre", "stpaul-fourth-cup", "ewtn-eucharist-in-scripture", "book-lambs-supper"],
     related: ["mass-as-sacrifice", "real-presence", "what-happens-at-mass", "why-did-jesus-die"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "The Mass is rooted in Scripture. Jesus instituted the Eucharist at the Last Supper and commanded, “Do this in memory of me”; the apostolic Church devoted itself to the breaking of the bread; and in the liturgy on earth the Church shares in a foretaste of the heavenly worship that Revelation describes (CCC 1090).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants agree that Christ instituted the Lord's Supper and that the Church must celebrate it as he commanded. Many hold that the New Testament describes a meal of remembrance and communion rather than the Mass as Catholics understand it. The Westminster Confession, for example, teaches that in the Supper Christ is not offered up to his Father; there is “only a commemoration” of his one offering on the cross (29.2).",
+          variations:
+            "Practice and belief differ. The Augsburg Confession says Lutheran churches were falsely accused of abolishing the Mass, “for the Mass is retained among us, and celebrated with the highest reverence” (Article XXIV), while rejecting its sacrificial understanding. Baptists describe the Lord's Supper as “a symbolic act of obedience” in which the church memorializes Christ's death (Baptist Faith and Message, VII).",
+          arguments: [
+            {
+              claim: "The New Testament never calls the Lord's Supper a sacrifice or its table an altar.",
+              response:
+                "Catholics point to Paul, who compares the Lord's table with Israel's sacrifices and pagan altars: “You cannot partake of the table of the Lord and of the table of demons” (1 Corinthians 10:21), and to Hebrews: “We have an altar from which those who serve the tabernacle have no right to eat” (Hebrews 13:10). Malachi foretold “a pure offering” among the nations (Malachi 1:11), a verse the Didache applies to the Sunday Eucharist. See “Is the Mass a sacrifice?”",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The Book of Revelation describes heaven, not Christian worship on earth.",
+              response:
+                "Catholics agree that Revelation shows the worship of heaven. The Church teaches that “in the earthly liturgy we share in a foretaste of that heavenly liturgy” (CCC 1090), so the Mass joins the worship Revelation describes rather than copying it.",
+              authority: "doctrine",
+            },
+            {
+              claim: "The Mass is a later development; the first Christians simply shared a meal.",
+              response:
+                "The earliest descriptions outside the New Testament already show the shape of the Mass. Around 155, Justin Martyr describes Christians gathering on Sunday to hear the writings of the apostles and prophets, followed by instruction, prayers, and the offering and thanksgiving over bread and wine (First Apology 67). The Didache speaks of the Sunday breaking of bread as a “sacrifice” (Didache 14).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession", "augsburg-confession", "baptist-faith-message"],
+        },
+      ],
+      fathers: [
+        {
+          name: "The Didache",
+          work: "Chapter 14 (late first or early second century)",
+          note: "Christians gather every Lord's day to break bread and give thanks, confessing their sins “that your sacrifice may be pure.”",
+          url: "https://www.newadvent.org/fathers/0714.htm",
+        },
+        {
+          name: "St. Justin Martyr",
+          work: "First Apology, Chapter 67 (c. 155)",
+          note: "Describes Sunday worship: readings from the apostles and prophets, instruction, prayers, and the Eucharist.",
+          url: "https://www.newadvent.org/fathers/0126.htm",
+        },
+      ],
+    },
   },
   {
     slug: "mass-etiquette",

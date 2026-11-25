@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { BackLink, CardLink, SectionTitle, TopicList } from "@/components/cards";
-import { debateTopics, hasPage, traditions, type Tradition } from "@/content";
+import { comparisonTopics, debateTopics, hasPage, topicsFor, traditions, type Tradition } from "@/content";
 
 export const metadata: Metadata = {
   title: "Apologetics",
@@ -69,6 +69,11 @@ export default function ApologeticsPage() {
             );
           })}
         </div>
+      </section>
+
+      <section aria-labelledby="comparing-title" className="mt-12">
+        <SectionTitle id="comparing-title">Comparing traditions</SectionTitle>
+        <TopicList topics={topicsFor(comparisonTopics)} />
       </section>
 
       <section id="questions" aria-labelledby="questions-title" className="mt-12 scroll-mt-6">

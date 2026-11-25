@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { BackLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
+import { BackLink, CardLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
 import { SaveButton } from "@/components/save-button";
 import {
   debatesFor,
@@ -51,11 +51,24 @@ export default async function TraditionPage({ params }: PageProps<"/apologetics/
       </div>
 
       {denominations.length > 0 && (
-        <p className="mt-5 rounded-2xl bg-tint px-5 py-4 leading-relaxed">
-          <span className="font-medium">Traditions within {tradition.name}:</span>{" "}
-          {denominations.map((d) => d.name).join(", ")}.{" "}
-          <span className="text-ink-soft">Pages for each are coming soon.</span>
-        </p>
+        <div className="mt-5 rounded-2xl bg-tint px-5 py-4 leading-relaxed">
+          <p className="font-medium">Traditions within {tradition.name}</p>
+          {denominations.some(hasPage) && (
+            <ul className="mt-2 space-y-2">
+              {denominations.filter(hasPage).map((d) => (
+                <li key={d.slug}>
+                  <CardLink href={`/apologetics/${d.slug}`} title={d.name} />
+                </li>
+              ))}
+            </ul>
+          )}
+          {denominations.some((d) => !hasPage(d)) && (
+            <p className="mt-2 text-ink-soft">
+              <span className="font-medium text-ink">Coming soon:</span>{" "}
+              {denominations.filter((d) => !hasPage(d)).map((d) => d.name).join(", ")}
+            </p>
+          )}
+        </div>
       )}
 
       {tradition.differences && (

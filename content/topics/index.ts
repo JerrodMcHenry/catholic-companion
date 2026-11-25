@@ -8,15 +8,19 @@ import { church } from "./church";
 import { foundations } from "./foundations";
 import { god } from "./god";
 import { jesus } from "./jesus";
+import { maryAndSaints } from "./mary-and-saints";
 import { mass } from "./mass";
 import { massOrder, massParts } from "./mass-parts";
 import { sacraments } from "./sacraments";
+import { salvation } from "./salvation";
 
 export const topics = [
   ...foundations,
   ...god,
   ...jesus,
+  ...salvation,
   ...church,
+  ...maryAndSaints,
   ...bibleTopics,
   ...sacraments,
   ...mass,
@@ -43,6 +47,9 @@ export const startHere = [
 ];
 
 export { massOrder };
+
+// "Comparing traditions" on the Apologetics page: comparison topics, which live under The Church.
+export const comparisonTopics = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences"];
 
 // Shown on the homepage.
 export const commonQuestions = ["how-to-become-catholic", "what-happens-at-mass", "real-presence"];

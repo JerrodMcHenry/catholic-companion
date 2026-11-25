@@ -353,7 +353,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Christ founded the Church, but its essence is the communion of all true believers united to him by faith. The Westminster Confession distinguishes the universal Church, “which is invisible,” made up of all the elect, from the visible Church of all who profess the true religion (25.1–2). The Augsburg Confession defines the Church as “the congregation of saints, in which the Gospel is rightly taught and the Sacraments are rightly administered” (Article VII). On this view no single institution can claim to be the one Church.",
           variations:
-            "Protestants differ considerably on church structure: Anglicans and many Lutherans keep bishops, Presbyterians are governed by elders, and Baptist and many evangelical churches are congregational. Most affirm the Church as one, holy, catholic, and apostolic in the words of the Creed, while defining those marks differently from Catholics.",
+            "Protestants differ considerably on church structure: some churches are led by bishops, others by elders, others by their congregations. The Westminster Confession and the Augsburg Confession, for example, define the Church differently from each other (Westminster 25.1–2; Augsburg VII), and both differ from Catholic teaching.",
           arguments: [
             {
               claim: "The true Church is the invisible company of all who believe; outward institutions mix believers and unbelievers and cannot be identified with the Body of Christ.",
@@ -418,7 +418,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Christ alone is the head and foundation of the Church. Many Protestants read the “rock” of Matthew 16:18 as Peter's confession that Jesus is the Christ, or as Christ himself, and note that Paul calls Christ the only foundation (1 Corinthians 3:11). Even those who accept that Peter was a leader among the apostles deny that his role passed to the bishops of Rome. The Westminster Confession states: “There is no other head of the church but the Lord Jesus Christ. Nor can the pope of Rome, in any sense, be head thereof” (25.6).",
           variations:
-            "Some Protestant scholars accept that the rock in Matthew 16 is Peter himself while denying any succession; Anglicans and Lutherans have engaged in dialogue with Catholics about a possible ministry of unity, while most evangelical churches reject the papacy outright.",
+            "Protestants agree in rejecting the papacy's claim to universal jurisdiction, but they differ on how to read Matthew 16 and on whether any ministry of unity is desirable. Dialogue continues: the Lutheran–Catholic Joint Declaration lists ecclesial authority and ministry among questions still needing clarification (43), and St. John Paul II invited other Christians into dialogue on how the papal primacy is exercised (Ut Unum Sint 95–96).",
           arguments: [
             {
               claim: "In Greek, Peter is “Petros” and rock is “petra”: different words, so Jesus built the Church on Peter's faith, not on Peter.",
@@ -502,7 +502,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Only Scripture is infallible. Popes and councils are human and can err, and history shows that they have contradicted one another. The Westminster Confession says the pope cannot “in any sense” be head of the Church (25.6) and that the supreme judge of all controversies is “the Holy Spirit speaking in the Scripture” (1.10). Church teachers are to be tested by the Bible, as the Bereans tested even Paul (Acts 17:11).",
           variations:
-            "Protestants generally agree in rejecting papal infallibility, though many value the ancient creeds and councils as faithful, if fallible, witnesses to Scripture.",
+            "Protestant confessions agree in rejecting papal infallibility. Many Protestants still receive the ancient creeds as faithful witnesses to Scripture; the Lutheran Formula of Concord, for example, holds Scripture as the only rule while receiving the ancient creeds.",
           arguments: [
             {
               claim: "Some popes taught errors or lived scandalously, which disproves infallibility.",
@@ -517,7 +517,7 @@ export const apologeticsTopics: Topic[] = [
               authority: "apologetic-argument",
             },
           ],
-          sources: ["westminster-confession"],
+          sources: ["westminster-confession", "formula-of-concord"],
         },
       ],
     },
@@ -565,7 +565,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "What matters is succession in apostolic teaching: a church is apostolic when it holds the faith the apostles taught in Scripture and administers the sacraments rightly, whether or not its ministers stand in an unbroken line of bishops. The Augsburg Confession holds that, by divine right, bishops' authority consists in the ministry of the Word and sacraments, and that for the true unity of the Church “it is enough to agree concerning the doctrine of the Gospel and the administration of the Sacraments” (Articles VII, XXVIII).",
           variations:
-            "Anglicans, and some Lutheran churches such as those in Scandinavia, have kept an episcopal succession and value it highly, while Reformed, Baptist, and most evangelical churches do not regard it as necessary. Some Protestant ordinations follow ancient patterns of laying on of hands.",
+            "Protestant churches differ on bishops. The Lutheran reformers wrote that it was their “greatest wish to maintain church-polity and the grades in the Church,” the government of bishops, while regarding it as established by human authority (Apology XIV). Other Protestant churches are governed by elders or by congregations. Views on whether any form of succession matters vary within and between traditions.",
           arguments: [
             {
               claim: "A line of bishops does not guarantee true doctrine; bishops in succession have taught error.",
@@ -580,7 +580,7 @@ export const apologeticsTopics: Topic[] = [
               authority: "apologetic-argument",
             },
           ],
-          sources: ["augsburg-confession"],
+          sources: ["augsburg-confession", "apology-augsburg-confession"],
         },
       ],
       fathers: [
@@ -644,7 +644,7 @@ export const apologeticsTopics: Topic[] = [
           position:
             "Because Christ is the “one mediator” (1 Timothy 2:5) and every believer has direct access to the Father through him (Hebrews 4:16), prayer should be addressed to God alone. The Westminster Confession teaches that worship is to be given to God “and to him alone; not to angels, saints, or any other creature,” and offered in the mediation of Christ alone (21.2). Scripture, on this view, gives no command or example of praying to the departed.",
           variations:
-            "Protestants commonly ask living Christians to pray for them. Some Lutherans and Anglicans acknowledge that the saints in heaven pray for the Church in general while rejecting invoking them; most evangelicals reject the practice entirely.",
+            "Protestants commonly ask living Christians to pray for them. The Lutheran Confessions grant that the saints in heaven “pray for the Church in general,” while holding that Scripture does not teach invoking them (Augsburg Confession XXI; Apology XXI). Reformed confessions reject invocation as well (Westminster 21.2). Practice and belief vary among other Protestant churches.",
           arguments: [
             {
               claim: "There is one mediator, Christ Jesus (1 Timothy 2:5); going through saints adds other mediators.",
@@ -659,7 +659,7 @@ export const apologeticsTopics: Topic[] = [
               authority: "apologetic-argument",
             },
           ],
-          sources: ["westminster-confession"],
+          sources: ["westminster-confession", "augsburg-confession", "apology-augsburg-confession"],
         },
       ],
     },

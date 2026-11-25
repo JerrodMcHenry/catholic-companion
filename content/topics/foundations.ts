@@ -69,7 +69,7 @@ export const foundations: Topic[] = [
       "The name goes back to the first generation of believers: the disciples were first called Christians at Antioch (Acts 11:26). What makes someone a Christian is faith in Christ and Baptism, which the Catechism calls “the basis of the whole Christian life.”",
       "Catholics profess the Nicene Creed, which the Catechism notes is common to the great Churches of East and West: one God in three persons, and Jesus Christ, true God and true man, who died and rose for our salvation.",
       "The Catholic Church also recognizes other baptized believers as Christians. The Catechism teaches that those who believe in Christ and are properly baptized “have a right to be called Christians” and are brothers and sisters to Catholics, even though they are not in full communion with the Catholic Church.",
-      "When someone asks whether Catholics are Christians, the real disagreement is usually about particular beliefs, such as the Church, the sacraments, or salvation. Those questions are covered in Apologetics.",
+      "When someone asks whether Catholics are Christians, the real disagreement is usually about particular beliefs, such as the Church, the sacraments, or salvation. Common objections and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -82,6 +82,51 @@ export const foundations: Topic[] = [
     },
     resources: ["ca-are-catholics-christian"],
     related: ["catholic-and-protestant-differences", "what-does-catholic-mean", "what-is-the-creed", "sola-scriptura"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Catholics are Christians: they are baptized into Christ and profess the faith of the ancient Creeds, in the Church that traces its history to the apostles. The Catholic Church also recognizes all who believe in Christ and are properly baptized as Christians, brothers and sisters in the Lord, in real though imperfect communion with her.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestant confessions share the faith of the ancient Creeds with Catholics, and many Protestants regard Catholics as fellow Christians. Their disagreement is over whether Catholic teaching on matters such as justification, the Mass, and the papacy is faithful to the Gospel. The Lutheran reformers, presenting the Augsburg Confession in 1530, held that their teaching did not vary “from the Scriptures, or from the Church Catholic, or from the Church of Rome as known from its writers,” and that the dispute concerned “certain abuses.”",
+          variations:
+            "Protestant judgments differ. The Westminster Confession teaches that the visible church “consists of all those throughout the world that profess the true religion” (25.2), yet warns that some churches “have so degenerated, as to become no churches of Christ” (25.5) and denies that the pope can “in any sense” be head of the Church (25.6). Evangelical statements of faith stress personal faith in Christ and the new birth, and some evangelicals question whether Catholic teaching presents that Gospel clearly.",
+          arguments: [
+            {
+              claim: "Catholics add works, sacraments, and the Church to Christ, so they do not trust in Christ alone for salvation.",
+              response:
+                "Catholics believe salvation is God's free gift in Christ: “no one can merit the initial grace of forgiveness and justification” (CCC 2010). Catholics and Lutherans confessed together that “by grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God” (Joint Declaration 15). The sacraments are Christ's own actions, not human achievements. See “How are we saved?” and “Are we saved by faith or by works?”",
+              authority: "doctrine",
+            },
+            {
+              claim: "Catholics give to Mary and the saints honor that belongs to God alone.",
+              response:
+                "The Church teaches that devotion to Mary “differs essentially from the adoration” given to God (CCC 971), and that veneration of images is “not the adoration due to God alone” (CCC 2132). Catholics worship God alone. See “Do Catholics worship Mary?”",
+              authority: "doctrine",
+            },
+            {
+              claim: "Being Catholic is about rituals and membership, not a personal relationship with Jesus.",
+              response:
+                "Catholics agree that faith must be personal. The Catechism defines faith as “a personal adherence of the whole man to God who reveals himself” (CCC 176) and says the faithful are to live “in a vital and personal relationship with the living and true God” (CCC 2558). Catholics would add that a sacramental, liturgical life is one of the ways that relationship is lived.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["augsburg-confession", "westminster-confession", "nae-statement-of-faith"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Ignatius of Antioch",
+          work: "Letter to the Smyrnaeans, Chapter 8 (c. 107)",
+          note: "The earliest surviving use of “the Catholic Church”: “wherever Jesus Christ is, there is the Catholic Church.”",
+          url: "https://www.newadvent.org/fathers/0109.htm",
+        },
+      ],
+    },
   },
   {
     slug: "what-is-the-creed",

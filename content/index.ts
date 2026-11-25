@@ -3,11 +3,11 @@
 
 import { categories, pillars } from "./categories";
 import { resources } from "./resources";
-import { commonQuestions, massOrder, startHere, topics } from "./topics";
+import { commonQuestions, comparisonTopics, massOrder, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
 import { resourceLabel, type PillarId, type Tradition } from "./types";
 
-export { categories, commonQuestions, pillars, resources, startHere, topics, traditions };
+export { categories, commonQuestions, comparisonTopics, pillars, resources, startHere, topics, traditions };
 export type * from "./types";
 export { resourceLabel, resourceTypeLabel } from "./types";
 
@@ -147,6 +147,7 @@ for (const t of traditions) {
 }
 
 checkTopics("homepage list", [...startHere, ...commonQuestions]);
+checkTopics("comparison list", comparisonTopics);
 
 const massSlugs = massOrder.flatMap((s) => s.slugs);
 check(new Set(massSlugs).size === massSlugs.length, "a Mass part appears twice in massOrder");
