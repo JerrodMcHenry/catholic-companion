@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
+import { DebateSections, Fathers } from "@/components/debate";
 import { getCategory, getTopic, resourcesFor, topics, topicsFor } from "@/content";
 
 export const dynamicParams = false; // Unknown topics are a 404.
@@ -17,19 +18,28 @@ export async function generateMetadata({ params }: PageProps<"/topic/[slug]">): 
 const refLink =
   "inline-flex min-h-11 items-center rounded-full border border-line bg-card px-4 font-medium text-accent hover:border-gold";
 
-// One page layout for every topic: answer, more detail, Church teaching, resources, related.
+// One page layout for every topic: answer, more detail, (for apologetics) the debate,
+// Church teaching, resources, related.
 export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) {
   const topic = getTopic((await params).slug);
   if (!topic) notFound();
   const category = getCategory(topic.category)!;
+  const back = topic.debate
+    ? { href: "/apologetics", label: "Apologetics" }
+    : { href: `/category/${category.slug}`, label: category.title };
   const { catechism = [], scripture = [], documents = [] } = topic.teaching;
 
   return (
     <article>
-      <BackLink href={`/category/${category.slug}`} label={category.title} />
+      <BackLink {...back} />
       <h1 className="mt-4 font-serif text-[2.5rem] leading-[1.1] font-semibold text-ink sm:text-5xl">
         {topic.question}
       </h1>
+      {topic.alsoKnownAs && (
+        <p className="mt-3 text-ink-soft">
+          Also called: <span className="font-medium text-ink">{topic.alsoKnownAs.join(", ")}</span>
+        </p>
+      )}
 
       <section aria-label="Short answer" className="mt-6">
         <p className="text-lg leading-relaxed text-ink sm:text-xl">{topic.summary}</p>
@@ -51,6 +61,8 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
           </div>
         </details>
       )}
+
+      {topic.debate && <DebateSections debate={topic.debate} />}
 
       <section aria-labelledby="teaching" className="mt-12">
         <SectionTitle id="teaching">What the Church teaches</SectionTitle>
@@ -85,6 +97,7 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
               </ul>
             </div>
           )}
+          {topic.debate?.fathers && <Fathers fathers={topic.debate.fathers} />}
           {documents.length > 0 && (
             <div>
               <h3 className="mb-3 font-medium text-ink">Church documents</h3>
@@ -96,7 +109,7 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
 
       {topic.resources && (
         <section aria-labelledby="deeper" className="mt-12">
-          <SectionTitle id="deeper">Go deeper</SectionTitle>
+          <SectionTitle id="deeper">Recommended resources</SectionTitle>
           <ResourceList resources={resourcesFor(topic.resources)} />
         </section>
       )}

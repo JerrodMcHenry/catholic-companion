@@ -41,6 +41,7 @@ export function TopicList({ topics }: { topics: Topic[] }) {
 
 const typeLabel: Record<ResourceType, string> = {
   document: "Church document",
+  source: "Source",
   article: "Article",
   video: "Video",
   podcast: "Podcast",

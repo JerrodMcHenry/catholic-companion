@@ -2,7 +2,8 @@ import Link from "next/link";
 import { CardLink, SectionTitle, TopicList } from "@/components/cards";
 import { commonQuestions, pillars, topicsFor } from "@/content";
 
-const pillarHref = (id: string) => (id === "resources" ? "/resources" : `/explore#${id}`);
+const pillarHref = (id: string) =>
+  id === "resources" ? "/resources" : id === "apologetics" ? "/apologetics" : `/explore#${id}`;
 
 export default function HomePage() {
   return (

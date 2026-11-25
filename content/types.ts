@@ -16,7 +16,9 @@ export type Category = {
   description: string;
 };
 
-export type ResourceType = "document" | "article" | "video" | "podcast" | "book" | "course";
+// "document" is an official Catholic Church document; "source" is a primary source
+// from another tradition, used to state that tradition's views in its own words.
+export type ResourceType = "document" | "source" | "article" | "video" | "podcast" | "book" | "course";
 
 // One entry in the shared registry. Topics refer to resources by id.
 export type Resource = {
@@ -32,6 +34,7 @@ export type Topic = {
   slug: string;
   title: string; // Short name: "The Real Presence"
   question: string; // How a beginner would ask it; shown as the page heading.
+  alsoKnownAs?: string[]; // Theological names for the question: "Sola Scriptura".
   category: string;
   keywords: string[]; // Synonyms and everyday wording, for search.
   summary: string; // The short, beginner-friendly answer.
@@ -43,11 +46,13 @@ export type Topic = {
   };
   resources?: string[]; // Resource ids, best first.
   related?: string[]; // Topic slugs.
-  debate?: Debate; // Apologetics topics only (built in a later phase).
+  debate?: Debate; // Apologetics topics only.
 };
 
 // Apologetics: one debate topic can hold several opposing perspectives,
 // each with its own position, arguments, Catholic responses, and sources.
+// Traditions are never stored on the topic itself: a tradition page lists every
+// topic with a perspective from that tradition, so nothing is duplicated.
 
 // How authoritative a Catholic claim is, so doctrine is never confused with opinion.
 export type Authority = "dogma" | "doctrine" | "theological-opinion" | "apologetic-argument";
@@ -55,12 +60,26 @@ export type Authority = "dogma" | "doctrine" | "theological-opinion" | "apologet
 export type Debate = {
   catholicPosition: { summary: string; authority: Authority };
   perspectives: Perspective[];
+  fathers?: { name: string; work: string; note: string; url: string }[]; // Early Church witnesses.
 };
 
 export type Perspective = {
-  tradition: string; // "Reformed Protestant", "Eastern Orthodox", ...
+  tradition: string; // Tradition slug.
   position: string; // A fair statement of the view, as its holders would put it.
   variations?: string; // How views differ within the tradition.
-  arguments: { claim: string; response: string; authority: Authority }[];
-  sources: string[]; // Resource ids, including the tradition's own primary sources.
+  arguments: { claim: string; response: string; authority: Authority }[]; // Strongest first.
+  sources: string[]; // Resource ids of the tradition's own primary sources.
+};
+
+export type Tradition = {
+  slug: string;
+  name: string;
+  group: "christian" | "religion" | "worldview";
+  parent?: string; // Denominations point to "protestantism".
+  // Everything below is optional: a tradition gets a page only once it has an overview.
+  overview?: string[];
+  differences?: string[]; // Main points where Catholics and this tradition differ.
+  sources?: string[]; // Resource ids of primary sources from the tradition.
+  resources?: string[]; // Resource ids of recommended Catholic resources.
+  related?: string[]; // Non-debate topic slugs worth reading alongside.
 };

@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
 import { CardLink } from "@/components/cards";
-import { categoriesIn, pillars, topicsIn } from "@/content";
+import { categoriesIn, pillars, topicsIn, type PillarId } from "@/content";
 
 export const metadata: Metadata = { title: "Explore" };
+
+// What each pillar links to: its categories, or for Apologetics and Resources, their own pages.
+function linksFor(pillar: PillarId) {
+  if (pillar === "apologetics") {
+    return [
+      { href: "/apologetics#religions", title: "By religion", description: "Other Christian traditions, other religions, and worldviews." },
+      { href: "/apologetics#questions", title: "By question", description: "Common objections and how Catholics respond." },
+    ];
+  }
+  if (pillar === "resources") {
+    return [{ href: "/resources", title: "All resources", description: "Church documents, articles, videos, and sources." }];
+  }
+  return categoriesIn(pillar).map((c) => ({
+    href: `/category/${c.slug}`,
+    title: c.title,
+    description: topicsIn(c.slug).length ? c.description : `${c.description} Coming soon.`,
+  }));
+}
 
 export default function ExplorePage() {
   return (
@@ -21,21 +39,11 @@ export default function ExplorePage() {
             </h2>
             <p className="mt-2 mb-4 leading-relaxed text-ink-soft">{pillar.description}</p>
             <ul className="space-y-3">
-              {pillar.id === "resources" ? (
-                <li>
-                  <CardLink href="/resources" title="All resources" description="Church documents, articles, and videos." />
+              {linksFor(pillar.id).map((link) => (
+                <li key={link.href}>
+                  <CardLink {...link} />
                 </li>
-              ) : (
-                categoriesIn(pillar.id).map((category) => (
-                  <li key={category.slug}>
-                    <CardLink
-                      href={`/category/${category.slug}`}
-                      title={category.title}
-                      description={topicsIn(category.slug).length ? category.description : `${category.description} Coming soon.`}
-                    />
-                  </li>
-                ))
-              )}
+              ))}
             </ul>
           </section>
         ))}

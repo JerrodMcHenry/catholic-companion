@@ -5,8 +5,9 @@ import { categories, getCategory, topicsIn } from "@/content";
 
 export const dynamicParams = false; // Unknown categories are a 404.
 
+// Apologetics is browsed by religion and by question on /apologetics instead.
 export function generateStaticParams() {
-  return categories.map((c) => ({ slug: c.slug }));
+  return categories.filter((c) => c.pillar !== "apologetics").map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/category/[slug]">): Promise<Metadata> {

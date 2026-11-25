@@ -6,6 +6,7 @@ export const metadata: Metadata = { title: "Resources" };
 
 const groups: { type: ResourceType; title: string }[] = [
   { type: "document", title: "Official Church documents" },
+  { type: "source", title: "Sources from other traditions" },
   { type: "article", title: "Articles" },
   { type: "video", title: "Videos" },
   { type: "podcast", title: "Podcasts" },
