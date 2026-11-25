@@ -16,7 +16,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Catholic Companion",
-  description: "A gentle, guided introduction to the Catholic Mass, in English and Spanish.",
+  description:
+    "Understand, explore, practice, and defend the Catholic faith, with trusted resources for every question.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

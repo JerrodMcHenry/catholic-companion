@@ -1,83 +1,13 @@
-import Link from "next/link";
-
-const steps = [
-  {
-    title: "Choose your language",
-    body: "Learn in English, Spanish, or both side by side.",
-  },
-  {
-    title: "Walk through the Mass",
-    body: "Move at your own pace, one moment at a time: what is happening, when to stand, sit, or kneel, and what to say.",
-  },
-  {
-    title: "Understand why it matters",
-    body: "Short explanations by default, with deeper biblical, historical, and theological background whenever you want it.",
-  },
-];
-
+// Placeholder until Phase 2 builds the real homepage.
 export default function HomePage() {
   return (
-    <>
-      <section className="text-center">
-        <p className="text-sm font-medium tracking-[0.2em] text-gold-deep uppercase">
-          A guide to the Catholic Mass
-        </p>
-        <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink sm:text-6xl">
-          Feel at home at Mass
-        </h1>
-        <p className="mx-auto mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
-          Catholic Companion walks you through the Mass step by step, like a friend sitting beside
-          you in the pew who knows what comes next and why.
-        </p>
-        <div className="mx-auto mt-10 flex max-w-sm flex-col gap-3">
-          <Link
-            href="/experience"
-            className="inline-flex min-h-14 items-center justify-center rounded-full bg-burgundy px-8 text-lg font-medium text-ivory shadow-sm transition-colors hover:bg-burgundy-deep"
-          >
-            Experience Mass
-          </Link>
-          <p className="text-sm text-ink-soft">Take part in a simulated Mass as it unfolds.</p>
-          <Link
-            href="/onboarding"
-            className="mt-2 inline-flex min-h-12 items-center justify-center rounded-full border-2 border-burgundy px-8 font-medium text-burgundy transition-colors hover:bg-cream"
-          >
-            Learn the Mass
-          </Link>
-          <p className="text-sm text-ink-soft">Go step by step, with explanations and practice.</p>
-        </div>
-      </section>
-
-      <div aria-hidden="true" className="my-14 flex items-center gap-4 text-gold">
-        <span className="h-px flex-1 bg-gold/40" />
-        <span>✦</span>
-        <span className="h-px flex-1 bg-gold/40" />
-      </div>
-
-      <section aria-labelledby="how-it-works">
-        <h2 id="how-it-works" className="text-center font-serif text-3xl font-semibold">
-          How it works
-        </h2>
-        <ol className="mt-8 space-y-4">
-          {steps.map((step, index) => (
-            <li key={step.title} className="flex gap-4 rounded-2xl bg-cream/60 p-5">
-              <span
-                aria-hidden="true"
-                className="flex size-9 shrink-0 items-center justify-center rounded-full border border-gold font-serif text-lg font-semibold text-gold-deep"
-              >
-                {index + 1}
-              </span>
-              <div>
-                <h3 className="font-medium text-ink">{step.title}</h3>
-                <p className="mt-1 leading-relaxed text-ink-soft">{step.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-        <p className="mt-8 text-center text-sm leading-relaxed text-ink-soft">
-          Catholic Companion is a learning guide for the Ordinary Form of the Roman Rite as
-          celebrated in the United States. It is not a celebration of Mass.
-        </p>
-      </section>
-    </>
+    <section className="text-center">
+      <h1 className="font-serif text-5xl leading-tight font-semibold text-ink">
+        Catholic Companion
+      </h1>
+      <p className="mx-auto mt-5 max-w-md text-lg leading-relaxed text-ink-soft">
+        Learn, explore, and live the Catholic faith. Coming soon.
+      </p>
+    </section>
   );
 }
