@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
+import { SaveButton } from "@/components/save-button";
 import {
   debatesFor,
   getTradition,
@@ -32,10 +33,13 @@ export default async function TraditionPage({ params }: PageProps<"/apologetics/
 
   return (
     <>
-      <BackLink
-        href={parent ? `/apologetics/${parent.slug}` : "/apologetics#religions"}
-        label={parent ? parent.name : "Apologetics"}
-      />
+      <div className="flex items-center justify-between gap-4">
+        <BackLink
+          href={parent ? `/apologetics/${parent.slug}` : "/apologetics#religions"}
+          label={parent ? parent.name : "Apologetics"}
+        />
+        <SaveButton kind="tradition" id={tradition.slug} title={tradition.name} />
+      </div>
       <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink">{tradition.name}</h1>
 
       <div className="mt-5 space-y-4 leading-relaxed">

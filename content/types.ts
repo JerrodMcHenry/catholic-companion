@@ -20,6 +20,18 @@ export type Category = {
 // from another tradition, used to state that tradition's views in its own words.
 export type ResourceType = "document" | "source" | "article" | "video" | "podcast" | "book" | "course";
 
+// Kept here, beside the type and away from the content data, so browser code can use
+// it without pulling the whole content registry into the JavaScript bundle.
+export const resourceTypeLabel: Record<ResourceType, string> = {
+  document: "Church document",
+  source: "Source",
+  article: "Article",
+  video: "Video",
+  podcast: "Podcast",
+  book: "Book",
+  course: "Course",
+};
+
 // One entry in the shared registry. Topics refer to resources by id.
 export type Resource = {
   id: string;

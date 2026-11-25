@@ -1,7 +1,8 @@
 // The small set of building blocks every page shares.
 
 import Link from "next/link";
-import { resourceTypeLabel, type Resource, type Topic } from "@/content";
+import { SaveButton } from "@/components/save-button";
+import { resourceTypeLabel, type Resource, type Topic } from "@/content/types";
 
 const card =
   "flex min-h-16 items-center gap-4 rounded-2xl border border-line bg-card px-5 py-4 transition-colors hover:border-gold";
@@ -66,14 +67,17 @@ export function ResourceList({ resources }: { resources: Resource[] }) {
   return (
     <ul className="space-y-3">
       {resources.map((r) => (
-        <li key={r.id}>
-          <CardLink
-            href={r.url}
-            external
-            eyebrow={`${resourceTypeLabel[r.type]} · ${r.source}`}
-            title={r.title}
-            description={r.note}
-          />
+        <li key={r.id} className="flex gap-2">
+          <div className="min-w-0 flex-1">
+            <CardLink
+              href={r.url}
+              external
+              eyebrow={`${resourceTypeLabel[r.type]} · ${r.source}`}
+              title={r.title}
+              description={r.note}
+            />
+          </div>
+          <SaveButton kind="resource" id={r.id} title={r.title} compact />
         </li>
       ))}
     </ul>

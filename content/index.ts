@@ -6,12 +6,13 @@ import { categories, pillars } from "./categories";
 import { resources } from "./resources";
 import { commonQuestions, startHere, topics as learningTopics } from "./topics";
 import { traditions } from "./traditions";
-import type { PillarId, ResourceType, Tradition } from "./types";
+import { resourceTypeLabel, type PillarId, type Tradition } from "./types";
 
 const topics = [...learningTopics, ...apologeticsTopics];
 
 export { categories, commonQuestions, pillars, resources, startHere, topics, traditions };
 export type * from "./types";
+export { resourceTypeLabel } from "./types";
 
 const topicBySlug = new Map(topics.map((t) => [t.slug, t]));
 const categoryBySlug = new Map(categories.map((c) => [c.slug, c]));
@@ -36,15 +37,33 @@ export function debatesFor(slug: string) {
   return debateTopics.filter((t) => t.debate!.perspectives.some((p) => family.has(p.tradition)));
 }
 
-export const resourceTypeLabel: Record<ResourceType, string> = {
-  document: "Church document",
-  source: "Source",
-  article: "Article",
-  video: "Video",
-  podcast: "Podcast",
-  book: "Book",
-  course: "Course",
-};
+// Everything a reader can save, keyed "kind:id", with just what the Saved page displays.
+// Saved items whose id is not found here (renamed or removed content) are simply skipped.
+export type SavedItem = { title: string; href: string; label: string; description?: string; external?: boolean };
+
+export function savableItems(): Record<string, SavedItem> {
+  const items: Record<string, SavedItem> = {};
+  for (const t of topics) {
+    items[`topic:${t.slug}`] = {
+      title: t.question,
+      href: `/topic/${t.slug}`,
+      label: t.debate ? "Apologetics" : categoryBySlug.get(t.category)!.title,
+    };
+  }
+  for (const t of traditions.filter(hasPage)) {
+    items[`tradition:${t.slug}`] = { title: t.name, href: `/apologetics/${t.slug}`, label: "Religious tradition" };
+  }
+  for (const r of resources) {
+    items[`resource:${r.id}`] = {
+      title: r.title,
+      href: r.url,
+      label: `${resourceTypeLabel[r.type]} · ${r.source}`,
+      description: r.note,
+      external: true,
+    };
+  }
+  return items;
+}
 
 // Only call with ids that validation has already checked.
 export const topicsFor = (slugs: string[] = []) => slugs.map((s) => topicBySlug.get(s)!);

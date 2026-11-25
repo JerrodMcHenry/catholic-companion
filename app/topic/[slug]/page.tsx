@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BackLink, ResourceList, SectionTitle, TopicList } from "@/components/cards";
 import { DebateSections, Fathers } from "@/components/debate";
+import { SaveButton } from "@/components/save-button";
 import { getCategory, getTopic, resourcesFor, topics, topicsFor } from "@/content";
 
 export const dynamicParams = false; // Unknown topics are a 404.
@@ -32,7 +33,10 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
 
   return (
     <article>
-      <BackLink {...back} />
+      <div className="flex items-center justify-between gap-4">
+        <BackLink {...back} />
+        <SaveButton kind="topic" id={topic.slug} title={topic.question} />
+      </div>
       <h1 className="mt-4 font-serif text-[2.5rem] leading-[1.1] font-semibold text-ink sm:text-5xl">
         {topic.question}
       </h1>

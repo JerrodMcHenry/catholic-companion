@@ -1,22 +1,19 @@
 import type { Metadata } from "next";
-import { CardLink } from "@/components/cards";
+import { SavedList } from "@/components/saved-list";
+import { savableItems } from "@/content";
 
 export const metadata: Metadata = { title: "Saved" };
 
-// Temporary page: bookmarks are built in a later phase.
+// Static page: the lookup of savable items is built at build time; which ones are
+// saved is read from this browser by the list.
 export default function SavedPage() {
   return (
     <>
-      <h1 className="font-serif text-5xl font-semibold text-ink">Saved</h1>
-      <p className="mt-6 rounded-2xl bg-tint px-5 py-5 leading-relaxed text-ink">
-        <strong className="font-semibold">Saving topics is coming soon.</strong> You will be able to
-        keep topics here on this device, with no account needed.
-      </p>
-      <ul className="mt-6 space-y-3">
-        <li>
-          <CardLink href="/explore" title="Explore all subjects" />
-        </li>
-      </ul>
+      <h1 tabIndex={-1} className="font-serif text-5xl font-semibold text-ink focus:outline-none">
+        Saved
+      </h1>
+      <p className="mt-3 leading-relaxed text-ink-soft">Topics, traditions, and resources you have saved.</p>
+      <SavedList items={savableItems()} />
     </>
   );
 }
