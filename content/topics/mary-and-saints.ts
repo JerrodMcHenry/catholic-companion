@@ -41,7 +41,7 @@ export const maryAndSaints: Topic[] = [
     question: "Do Catholics worship Mary?",
     alsoKnownAs: ["Marian devotion", "Hyperdulia", "Veneration of Mary"],
     category: "mary-and-the-saints",
-    keywords: ["worship Mary", "do Catholics worship Mary", "Mary devotion", "hyperdulia", "dulia", "latria", "Hail Mary", "Rosary", "Mary idolatry", "why pray to Mary", "Marian devotion"],
+    keywords: ["worship Mary", "do Catholics worship Mary", "Mary devotion", "hyperdulia", "dulia", "latria", "Hail Mary", "Rosary", "Mary idolatry", "why pray to Mary", "Marian devotion", "Queen of Heaven", "Mediatrix"],
     summary:
       "No. Catholics worship God alone. They honor Mary with special love because God himself honored her by choosing her to be the mother of his Son, and because Scripture says “all ages” will call her blessed. The Church teaches that devotion to Mary “differs essentially from the adoration” given to God and is meant to lead people to Christ.",
     explanation: [
@@ -49,7 +49,7 @@ export const maryAndSaints: Topic[] = [
       "Why honor her: Mary herself said, “from now on will all ages call me blessed” (Luke 1:48). Elizabeth, “filled with the holy Spirit,” called her blessed among women (Luke 1:41–42). Honoring the mother is a way of honoring the Son.",
       "Praying with Mary: when Catholics pray the Hail Mary, they repeat the angel's and Elizabeth's words and ask Mary to pray for them. Such prayer asks for her intercession; it does not treat her as a source of grace apart from Christ. Her role “depends entirely” on Christ's mediation and “draws all its power from it” (CCC 970).",
       "She points to Jesus: in the traditional image, Mary “shows the way” (hodigitria) and is herself the sign of the way to her Son (CCC 2674). Her words at Cana sum up all Marian devotion: “Do whatever he tells you” (John 2:5).",
-      "Other Christians: many Protestants honor Mary as a model of faith but reject prayers addressed to her; the Westminster Confession, for example, teaches that religious worship is to be given to God alone, “not to angels, saints, or any other creature” (21.2). Catholics agree that worship belongs to God alone and answer that asking Mary's prayers is not worship.",
+      "Other Christians: many Protestants honor Mary as a model of faith but reject prayers addressed to her. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [
@@ -62,8 +62,53 @@ export const maryAndSaints: Topic[] = [
       ],
       documents: ["lumen-gentium"],
     },
-    resources: ["ca-saint-worship", "ca-mother-of-god-early", "westminster-confession"],
+    resources: ["ca-saint-worship", "ca-mother-of-god-early", "westminster-confession", "spc-mother-and-queen"],
     related: ["who-is-mary", "praying-to-saints", "praying-directly-to-god", "statues-and-images"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Catholics worship God alone. They give Mary a unique honor, greater than that given to the other saints, because God chose her to be the Mother of his Son. This honor “differs essentially from the adoration” given to God, and her role “depends entirely” on Christ's unique mediation (CCC 970–971). Marian devotions are recommended, but private revelations, even those the Church recognizes, do not belong to the deposit of faith (CCC 67).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants honor Mary as the mother of Jesus and a model of faith, but object that Catholic devotion gives her a place that belongs to Christ. The Westminster Confession teaches that religious worship is to be given to God alone, “not to angels, saints, or any other creature” (21.2). The Lutheran Apology of the Augsburg Confession, while saying that Mary “is most worthy of the most ample honors,” objected that in popular devotion she had “succeeded altogether to the place of Christ” (Article XXI).",
+          variations:
+            "Lutheran confessions keep a high regard for Mary: the Formula of Concord confesses that “she is truly the mother of God” (Solid Declaration VIII), and the Apology grants that she may pray for the Church while rejecting prayers addressed to her. Reformed confessions direct all religious worship to God alone (Westminster 21.2).",
+          arguments: [
+            {
+              claim: "Titles such as Advocate, Mediatrix, and Queen of Heaven give Mary roles that belong to Christ.",
+              response:
+                "The Church uses these titles but teaches that Mary's role “in no way obscures or diminishes this unique mediation of Christ, but rather shows its power”; it “rests on his mediation, depends entirely on it, and draws all its power from it” (CCC 970). The title of queen draws on the queen mother of the Davidic kings, whose dignity came entirely from her son's kingship (1 Kings 2:19).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Jesus himself turned attention away from his mother: “Rather, blessed are those who hear the word of God and observe it” (Luke 11:28).",
+              response:
+                "Catholics read this as praising what Mary did above all: she heard God's word and said, “May it be done to me according to your word” (Luke 1:38). The same Gospel records her prophecy that all ages would call her blessed (Luke 1:48). Honoring her is a way of honoring the faith Jesus praised.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Catholics are required to believe in Marian apparitions and to practice devotions like the Rosary.",
+              response:
+                "No. Private revelations, including approved apparitions, “do not belong … to the deposit of faith” (CCC 67), so Catholics are not bound to believe them. The Church recommends Marian prayer such as the Rosary (CCC 971), but such devotions are not articles of faith; what Catholics must believe about Mary concerns Christ and is found in the Creed and the Church's defined teaching.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["westminster-confession", "apology-augsburg-confession", "formula-of-concord-sd8"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Irenaeus of Lyons",
+          work: "Against Heresies, Book 3, Chapter 22 (c. 180)",
+          note: "Contrasts Eve and Mary: “the knot of Eve's disobedience was loosed by the obedience of Mary.”",
+          url: "https://www.newadvent.org/fathers/0103322.htm",
+        },
+      ],
+    },
   },
   {
     slug: "mother-of-god",
@@ -92,8 +137,51 @@ export const maryAndSaints: Topic[] = [
       ],
       documents: ["council-of-ephesus", "lumen-gentium"],
     },
-    resources: ["ca-mother-of-god-early"],
+    resources: ["ca-mother-of-god-early", "spc-why-mother-of-god"],
     related: ["who-is-mary", "divinity-of-jesus", "incarnation", "why-honor-mary"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Mary is truly the Mother of God because the one she conceived and bore is the eternal Son of God made man. She did not give him his divinity: a mother is mother of a person, and that person is God the Son. The Council of Ephesus (431) confessed the title Theotokos to safeguard the unity of Christ's person (CCC 466, 495).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants affirm with the early councils that Jesus is one person, true God and true man. Lutheran confessions use the title: the Formula of Concord says Mary “is truly the mother of God” (Solid Declaration VIII). The Westminster Confession teaches the same union of “two whole, perfect, and distinct natures” in “one person,” conceived in the virgin Mary “of her substance,” without using the title (8.2). Some Protestants avoid the title and prefer “mother of Jesus” or “mother of the Lord.”",
+          arguments: [
+            {
+              claim: "God is eternal and has no mother; Mary is the mother of Jesus' human nature only.",
+              response:
+                "A mother is mother of a person, not of a nature, and the one Mary conceived is the eternal Son. The Church calls her Mother of God “not as though the nature of the Word or his godhead received the origin of their being from the holy virgin,” but because the Word was united to the flesh born of her (St. Cyril, in the acts of the Council of Ephesus). Denying the title risks dividing Christ into two persons (CCC 466).",
+              authority: "doctrine",
+            },
+            {
+              claim: "The title “Mother of God” is not in the Bible.",
+              response:
+                "Elizabeth, “filled with the holy Spirit,” calls Mary “the mother of my Lord” (Luke 1:41–43), and John writes that “the Word became flesh” (John 1:14). The title states in one word what these passages teach, much as the word “Trinity” names what Scripture reveals (see “Is the Trinity in the Bible?”).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The title exalts Mary instead of Christ.",
+              response:
+                "The council confessed the title to protect the truth about Christ: his humanity “has no other subject than the divine person of the Son of God” (CCC 466). The title is first a statement about who Jesus is.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["formula-of-concord-sd8", "westminster-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Cyril of Alexandria",
+          work: "Letter to Nestorius, in the acts of the Council of Ephesus (431)",
+          note: "Explains that Mary is called mother of God not because she gave the Word his divinity, but because he was born of her in the flesh.",
+          url: "https://www.papalencyclicals.net/councils/ecum03.htm",
+        },
+      ],
+    },
   },
   {
     slug: "immaculate-conception",
@@ -165,7 +253,7 @@ export const maryAndSaints: Topic[] = [
             {
               claim: "The doctrine assumes that everyone inherits the guilt of Adam's sin, which the Orthodox do not accept.",
               response:
-                "Part of this difference is terminology. The Catechism teaches that original sin “does not have the character of a personal fault in any of Adam's descendants”; it is “a deprivation of original holiness and justice” (CCC 405). The dogma affirms that Mary possessed grace and holiness from her first moment, not that others bear personal guilt for Adam's act. Substantive questions remain about how East and West understand original sin and whether this definition was needed.",
+                "Part of this difference is terminology. The Catechism teaches that original sin “does not have the character of a personal fault in any of Adam's descendants”; it is “a deprivation of original holiness and justice” (CCC 405). The dogma affirms that Mary possessed grace and holiness from her first moment, not that others bear personal guilt for Adam's act. Substantive differences remain in theological anthropology, how East and West understand original sin and its effects, and in doctrinal authority, whether a dogma could be defined in the West without an ecumenical council of East and West.",
               authority: "doctrine",
             },
             {
@@ -246,6 +334,51 @@ export const maryAndSaints: Topic[] = [
     },
     resources: ["ca-praying-to-the-saints", "spc-one-mediator"],
     related: ["praying-directly-to-god", "what-is-a-saint", "why-honor-mary"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Catholics ask the saints to pray for them, as they ask fellow Christians on earth, because the saints are alive in Christ and united with the Church in the communion of saints. This is not worship, which belongs to God alone: the saints intercede with the Father through Christ, the one mediator (CCC 956, 2683).",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestant confessions reject the invocation of saints. Luther's Smalcald Articles call it an abuse that “destroys the knowledge of Christ,” saying it has no command or example in Scripture, while granting that the saints, “perhaps also in heaven,” pray for us (Part II, Article II). Objections about Christ's sole mediation and about contacting the dead are treated in “Why not just pray directly to God?”; this section takes up other questions about the practice.",
+          variations:
+            "The Lutheran Apology also criticized legends and “invented” miracle stories attached to devotions (Article XXI). Reformed confessions direct all religious worship to God alone (Westminster 21.2).",
+          arguments: [
+            {
+              claim: "The saints cannot hear millions of prayers at once unless they are all-knowing like God.",
+              response:
+                "Catholics do not claim that the saints are all-knowing or hear by their own power; whatever they know of our needs they know in God. Those in glory “contemplate God, praise him and constantly care for those whom they have left on earth” (CCC 2683), and in Revelation the prayers of God's holy ones are presented before his throne (Revelation 5:8).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Patron saints, novenas, and requests for favors turn the saints into little gods.",
+              response:
+                "Catholics agree that worship belongs to God alone. The Council of Trent taught that the saints “offer up their own prayers to God for men” and that their help is sought “for obtaining benefits from God, through His Son, Jesus Christ our Lord, who is our alone Redeemer and Saviour” (Session 25). Devotions that obscured this would be abuses, which Trent itself told bishops to correct.",
+              authority: "doctrine",
+            },
+            {
+              claim: "How can the Church know who is in heaven?",
+              response:
+                "Canonization is the Church's solemn recognition that a person “practiced heroic virtue and lived in fidelity to God's grace” (CCC 828). Asking the prayers of the saints is older than formal canonization: St. Augustine explains that the Church remembers the martyrs at the altar not to pray for them, “but rather that they should do so for us.”",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["smalcald-articles-ii", "apology-augsburg-confession", "westminster-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Augustine of Hippo",
+          work: "Tractates on the Gospel of John, Tractate 84 (c. 416)",
+          note: "The martyrs are remembered at the Lord's table not so that we pray for them, “but rather that they should do so for us.”",
+          url: "https://www.newadvent.org/fathers/1701084.htm",
+        },
+      ],
+    },
   },
   {
     slug: "statues-and-images",

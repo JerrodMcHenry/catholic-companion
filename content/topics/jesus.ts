@@ -41,7 +41,7 @@ export const jesus: Topic[] = [
     question: "Did Jesus really exist?",
     alsoKnownAs: ["Historical Jesus"],
     category: "beliefs",
-    keywords: ["did Jesus exist", "historical Jesus", "Jesus myth", "evidence for Jesus", "Tacitus", "Josephus", "history"],
+    keywords: ["did Jesus exist", "historical Jesus", "Jesus myth", "evidence for Jesus", "Tacitus", "Josephus", "history", "mythicism", "mythicist", "Christ myth"],
     summary:
       "Yes: historians, including many who are not Christians, broadly accept that Jesus of Nazareth was a real Jewish teacher who was crucified under Pontius Pilate. Besides the New Testament, which includes letters written within a few decades of his death, ancient non-Christian writers such as the Roman historian Tacitus and the Jewish historian Josephus mention him.",
     explanation: [
@@ -57,8 +57,45 @@ export const jesus: Topic[] = [
       ],
       scripture: [{ passage: "1 Corinthians 15:3–8", url: bible("1corinthians/15") }],
     },
-    resources: ["ca-did-jesus-exist", "ca-four-reasons-jesus-existed"],
+    resources: ["ca-did-jesus-exist", "ca-four-reasons-jesus-existed", "ehrman-did-jesus-exist", "tacitus-annals-15"],
     related: ["who-is-jesus", "resurrection", "divinity-of-jesus"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Jesus of Nazareth is a real historical person who taught in Galilee and Judea and was crucified under Pontius Pilate; the Creed's words “under Pontius Pilate” anchor the faith in history. The Church holds that the Gospels “faithfully hand on what Jesus Christ … really did and taught” (Dei Verbum 19). History can show that Jesus lived; recognizing him as the Son of God is an act of faith.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "atheism",
+          position:
+            "Most historians, believers or not, accept that Jesus existed, but a small number of writers known as mythicists argue that he did not. Richard Carrier proposes that Christianity may have begun as “an apocalyptic cult inspired by visions of a heavenly being” that later “historicized its celestial savior,” noting that the earliest Christian letters speak of Jesus chiefly as a heavenly figure known by revelation.",
+          variations:
+            "Many non-Christian scholars reject mythicism. The New Testament scholar Bart Ehrman writes that “virtually every sane historian on the planet” has concluded that Jesus existed and that “Jesus certainly existed.” Rejecting mythicism does not mean accepting Christian beliefs about Jesus.",
+          arguments: [
+            {
+              claim: "No Roman records from Jesus' own lifetime mention him.",
+              response:
+                "Ehrman notes that the Roman sources of the time “mention scarcely anyone from his time and place,” not even Pontius Pilate in some cases. Within a few years of Jesus' death, Paul knew his closest disciple Peter and his brother James (Galatians 1:18–19), and later Tacitus and Josephus mention him.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The story of Jesus was modeled on pagan gods who were born of virgins, died, and rose again.",
+              response:
+                "Ehrman judges that such alleged parallels “in most instances reside in the modern imagination.” He also points out that no Jews before Christianity expected a crucified messiah, so it is not the kind of figure someone inventing a savior would create.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The sources about Jesus are Christian and therefore biased.",
+              response:
+                "Ehrman answers that “historians can never dismiss sources simply because they are biased”; they sift biased sources for reliable information, as they do for any ancient figure.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["carrier-historicity"],
+        },
+      ],
+    },
   },
   {
     slug: "incarnation",
@@ -115,6 +152,78 @@ export const jesus: Topic[] = [
     related: ["incarnation", "resurrection", "who-is-jesus"],
   },
   {
+    slug: "was-jesus-crucified",
+    title: "The Crucifixion",
+    question: "Was Jesus really crucified?",
+    alsoKnownAs: ["Crucifixion of Jesus", "Death of Jesus"],
+    category: "beliefs",
+    keywords: ["crucifixion", "was Jesus crucified", "did Jesus die on the cross", "Pontius Pilate", "Tacitus", "Quran 4:157", "swoon theory", "substitution", "Good Friday", "historical Jesus"],
+    summary:
+      "Yes. That Jesus was crucified under Pontius Pilate is one of the best-attested facts about him: it is reported by all four Gospels and by St. Paul, and by the Roman historian Tacitus. Christians believe more than the historical fact: that in his death Jesus freely gave his life for the salvation of the world. Muslims, following the Qur'an, generally hold that Jesus was not crucified.",
+    explanation: [
+      "The earliest witness: around the year 56, St. Paul handed on what he had received: “that Christ died for our sins in accordance with the scriptures; that he was buried; that he was raised on the third day” (1 Corinthians 15:3–4). All four Gospels narrate the crucifixion under Pontius Pilate (Mark 15; John 19).",
+      "A Roman witness: describing Nero's persecution of Christians, the historian Tacitus writes that “Christus, the founder of the name, had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus” (Annals 15.44).",
+      "Not something followers would invent: Paul admits that “Christ crucified” was “a stumbling block to Jews and foolishness to Gentiles” (1 Corinthians 1:23). The New Testament scholar Bart Ehrman notes that before Christianity “there were no Jews at all, of any kind whatsoever, who thought that there would be a future crucified messiah.” (This paragraph summarizes historical arguments, not Church teaching.)",
+      "What faith adds: history can establish that Jesus was crucified; faith understands why. Jesus' death was “not the result of chance” but part of God's plan (CCC 599), and Jesus “freely accepted his Passion and death” out of love for the Father and for us (CCC 609). See “Why did Jesus die on the cross?”",
+      "No collective blame: the Church teaches that responsibility for Jesus' death cannot be laid on the Jews of his time as a whole, nor on Jews today (CCC 597; Nostra Aetate 4).",
+      "Muslims honor Jesus as a prophet but, following the Qur'an, generally hold that he was not crucified. Their views and the Catholic responses are set out below.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "571–573", url: ccc("__P1M") },
+        { paragraphs: "595–609", url: ccc("__P1O") },
+      ],
+      scripture: [
+        { passage: "Mark 15:15–39", url: bible("mark/15") },
+        { passage: "John 19:16–37", url: bible("john/19") },
+        { passage: "1 Corinthians 15:3–8", url: bible("1corinthians/15") },
+        { passage: "1 Corinthians 1:18–25", url: bible("1corinthians/1") },
+      ],
+      documents: ["nostra-aetate"],
+    },
+    resources: ["ehrman-did-jesus-exist", "tacitus-annals-15"],
+    related: ["why-did-jesus-die", "resurrection", "did-jesus-exist", "divinity-of-jesus"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Jesus truly suffered, died on the cross under Pontius Pilate, and was buried. Christians believe that his death was not a defeat but the free gift of his life for the salvation of the world, “accomplished ‘once for all’ by the redemptive death of his Son” (CCC 571, 609).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "islam",
+          position:
+            "The Qur'an says of Jesus: “they neither killed nor crucified him—it was only made to appear so,” and “Allah raised him up to Himself” (4:157–158). Muslims generally hold that Jesus did not die on the cross and was taken up to God.",
+          variations:
+            "Muslim interpreters understand “it was only made to appear so” in different ways. A view reported by al-Tabari and Ibn Kathir, which SeekersGuidance calls the strongest position, is that God “cast the likeness of Isa upon another,” who was crucified in his place, while Jesus was raised. Wahiduddin Khan's commentary stresses that God protected his messenger against the plots of his enemies without describing how. The Ahmadiyya Muslim Community teaches that Jesus was put on the cross but did not die there, and rejects the substitution theory.",
+          arguments: [
+            {
+              claim: "Jesus was not crucified at all; it was only made to appear so.",
+              response:
+                "Catholics respect the Qur'an's concern to honor Jesus, but the crucifixion is attested by the earliest Christian writings, including Paul's letters, written within about twenty-five years (1 Corinthians 15:3), and by the Roman historian Tacitus, who records that “Christus … had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus” (Annals 15.44).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "God would not abandon his prophet to such a death.",
+              response:
+                "Christians believe that Jesus was not overcome by death but went to it freely: “No one takes it from me, but I lay it down on my own” (John 10:18). They see God's vindication of Jesus in the Resurrection, not in his escape from the cross (see “Did Jesus really rise from the dead?”).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["quran-4-157", "seekers-4-157", "ibn-kathir-4-157", "alislam-death-of-jesus"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Ignatius of Antioch",
+          work: "Letter to the Trallians, Chapter 9 (c. 107)",
+          note: "Jesus “was truly persecuted under Pontius Pilate; He was truly crucified, and [truly] died.”",
+          url: "https://www.newadvent.org/fathers/0106.htm",
+        },
+      ],
+    },
+  },
+  {
     slug: "resurrection",
     title: "The Resurrection",
     question: "Did Jesus really rise from the dead?",
@@ -139,5 +248,56 @@ export const jesus: Topic[] = [
     },
     resources: ["ca-resurrection-reasonable", "video-barron-resurrection"],
     related: ["why-did-jesus-die", "did-jesus-exist", "who-is-jesus"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Jesus truly rose from the dead in his own body, now glorified. The Church holds that the Resurrection is a real event with manifestations that were historically verified, the empty tomb and the appearances, and at the same time a mystery of faith that “transcends and surpasses history”: no one saw it happen or can say how it came about (CCC 639, 647).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "atheism",
+          position:
+            "Skeptics hold that a resurrection from the dead cannot be established historically, because a miracle will always be the least likely explanation of the evidence. The philosopher David Hume argued that “a miracle is a violation of the laws of nature,” and that “no testimony is sufficient to establish a miracle, unless the testimony be of such a kind, that its falsehood would be more miraculous, than the fact, which it endeavours to establish” (Enquiry, Section X).",
+          arguments: [
+            {
+              claim: "Dead people do not rise; no historical evidence could be strong enough to prove a miracle.",
+              response:
+                "Catholics agree that resurrection is not a natural process and that historical study alone cannot prove a miracle. The Church distinguishes what historians can examine, such as the empty tomb and the disciples' encounters with the risen Christ, from the conclusion of faith that God raised him, which “transcends and surpasses history” (CCC 647). Whether the evidence is best explained by a resurrection depends partly on whether one believes God exists and can act.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The disciples had visions born of grief and hope.",
+              response:
+                "The Gospels show disciples who were not expecting a resurrection: they were “demoralized” and frightened, and dismissed the women's report as “an idle tale” (CCC 643). Paul lists appearances to individuals and groups, including more than five hundred at once, “most of whom are still living” (1 Corinthians 15:6). Catholics argue that grief visions do not easily explain group appearances, the empty tomb, or the conversion of a persecutor like Paul.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["hume-of-miracles"],
+        },
+        {
+          tradition: "islam",
+          position:
+            "Islam teaches that Jesus was not killed or crucified but that “Allah raised him up to Himself” (Qur'an 4:158). Muslims therefore do not believe in his death and resurrection as Christians do; many hold that Jesus was raised alive to God. The interpretations of these verses are set out under “Was Jesus really crucified?”",
+          arguments: [
+            {
+              claim: "God would not let his messenger die a shameful death; he rescued Jesus instead.",
+              response:
+                "Christians believe God's power was shown not in sparing Jesus from death but in raising him from it. Jesus foretold that he must suffer, be killed, and rise after three days (Mark 8:31), and he “freely accepted his Passion and death” out of love (CCC 609).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["quran-4-157", "seekers-4-157"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Ignatius of Antioch",
+          work: "Letter to the Smyrnaeans, Chapter 3 (c. 107)",
+          note: "“I know that after His resurrection also He was still possessed of flesh.”",
+          url: "https://www.newadvent.org/fathers/0109.htm",
+        },
+      ],
+    },
   },
 ];

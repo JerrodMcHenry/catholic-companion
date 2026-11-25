@@ -482,6 +482,81 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `purgatory` | Protestant (Westminster 32.1; Smalcald II.2); Orthodox (OCA Q&A ×2, Breck, Dositheus 18) | Augustine, Confessions 9.11 | **R:** the summary of Orthodox variety |
 | `statues-and-images` | Protestant (Heidelberg 96–98; Larger Catechism 109); Islam (Qur'an 21:52; Bukhari 3225); Judaism (Mishneh Torah; Kukla; Thirteen Principles) | John of Damascus | **R:** the Islamic and Jewish summaries; Lutheran practice not stated (unsourced) |
 
+## Batch 12: Apologetics IV, Mary, salvation, and other traditions (2026-11-25)
+
+**Batch 11 follow-up:**
+
+- **Resource reconciliation:** the Batch 11 report listed 31 additions but gave category counts summing to 30. The correct breakdown is Orthodox 14 (not 13), Jewish 9 (My Jewish Learning 7, Chabad 1, Sefaria 1), Reformed and Lutheran 3, Islamic 2, and Catholic documents 3, which totals 31. Only one of the My Jewish Learning resources is by a named rabbi (Kukla); Rabbi Louis Jacobs's article was read but not added as a resource.
+- **Context edits made without rewriting the sections:**
+  - The Moscow text is identified as an official position prepared at its Holy Synod's request (2013), and the Elpidophoros response as written in January 2014 by the Metropolitan of Bursa, a hierarch of the Ecumenical Patriarchate. Both appear on `peter-the-rock` and the Eastern Orthodoxy page, each presented as one side of a continuing disagreement.
+  - The Confession of Dositheus is placed in its context: a seventeenth-century synod's answer to the Calvinist-leaning confession attributed to Cyril Lucaris, not the language of every Orthodox writer today.
+  - The Immaculate Conception response now names the substantive differences: theological anthropology (original sin and its effects) and doctrinal authority (a Western definition without an ecumenical council).
+- **Still requiring independent theological review:** the Orthodox, Jewish, and Islamic summaries.
+
+**Built:**
+
+- **New topics:**
+  - `trinity-in-scripture` (What Catholics Believe). Its formal debate section stays scheduled for Batch 16, with the Latter-day Saints page.
+  - `was-jesus-crucified`, with its Islam debate section.
+- **Debate sections:**
+  - Protestant perspectives on `why-honor-mary`, `mother-of-god`, `praying-to-saints`, and `faith-and-works`.
+  - Jehovah's Witness perspectives on `who-is-the-holy-spirit` and `hell`.
+  - An atheist perspective on `did-jesus-exist`; atheist and Islamic perspectives on `resurrection`.
+- **Assignments:** exactly as in §11.1; no discrepancy was found.
+- **`praying-to-saints`:** avoids repeating `praying-directly-to-god`, which already answers the objections about the one mediator and the dead. It takes up how the saints can hear prayers, whether invocation slides into worship, and canonization.
+- **Marian distinctions:** worship is owed to God alone; the saints receive veneration and Mary a unique honor (CCC 971); Christ's mediation is unique (CCC 970); and Marian devotions and private revelations, including approved apparitions, are not required belief (CCC 67).
+- **Mother of God:** the title is explained Christologically, through Ephesus and Cyril: Mary is mother of a person, not the source of Christ's divinity.
+- **Faith and works:**
+  - Positions: Lutheran (Augsburg IV and VI; Formula of Concord, Epitome IV), Reformed (Westminster 11 and 16), and Baptist (Baptist Faith and Message IV).
+  - Catholic sources: Trent, Session 6 (chapter 8; canons 9, 24, and 32 read) and CCC 1987–2016.
+  - The Joint Declaration (26, 38) is cited and stated as Lutheran–Catholic only.
+  - The section separates agreement from remaining difference, and says plainly that Catholics do not earn salvation and that Protestants do not hold that good works are unnecessary.
+- **Hell:**
+  - Covers God's will to save (CCC 1037), freedom and self-exclusion (1033), the conditions for mortal sin (1857), final impenitence (1864), and the entrusting of judgment of persons to God (1861).
+  - Makes no statement about any individual's destiny.
+  - Annihilationism is represented through the Jehovah's Witness perspective, the only one the curriculum assigns. Universalism is not assigned to this topic and is not described; it is flagged for review below.
+- **Historical topics:**
+  - They distinguish historical evidence from conclusions of faith (CCC 647: the Resurrection “transcends and surpasses history”), and say explicitly that historical evidence cannot prove a miracle.
+  - Mythicism is presented from a mythicist's own writing (Carrier), alongside the mainstream verdict of non-Christian scholarship (Ehrman).
+- **Muslim interpretations of Qur'an 4:157** are kept distinct: substitution (Ibn Kathir, as SeekersGuidance reports it, with al-Tabari), Wahiduddin Khan's commentary, which does not describe a mechanism, and the Ahmadiyya view that Jesus did not die on the cross.
+
+**Verification (Batch 12):**
+
+- **Lutheran:** Augsburg IV and VI; Apology XXI; Smalcald Articles II.2 (invocation of saints); Formula of Concord, Solid Declaration VIII and Epitome IV (BookOfConcord.org).
+- **Reformed and Baptist:** Westminster Confession 8.2, 11.1–2, 16.2, and 21.2 (OPC); Baptist Faith and Message IV (bfm.sbc.net).
+- **Joint Declaration:** 26 and 38 (Catholic Culture HTML). **Council of Trent:** Session 6, chapter 8 and canons 9, 24, 32 (Hanover).
+- **Jehovah's Witnesses:** “What Is the Holy Spirit?” and “Is Hell Real?” (jw.org), read in full where quoted.
+- **Historical:**
+  - Tacitus, Annals 15.44 (LacusCurtius, Loeb translation); Josephus, Antiquities 18.3.3 and 20.9.1 (Whiston). The Testimonium in Book 18 was read but not quoted, because its authenticity is disputed and no source on that dispute was verified.
+  - Pliny, Letters 10.96 (Fordham), read but not cited.
+  - Hume, Enquiry X (davidhume.org).
+  - Bart Ehrman, “Did Jesus Exist?” (HuffPost, 2012).
+  - Richard Carrier, “Historicity Big and Small” (2018).
+- **Islamic:**
+  - Qur'an 4:157–158 (Quran.com, read in a browser).
+  - Tafsir Ibn Kathir and Tazkirul Quran on 4:157 (Quran.com).
+  - SeekersGuidance on the crucifixion; Ahmadiyya, “Death of Hazrat Jesus” (alislam.org).
+- **Early Church** (New Advent):
+  - Ignatius: Ephesians 16, Smyrnaeans 3, Trallians 9.
+  - Irenaeus, Against Heresies 3.22.4; Augustine, Tractates on John 84.
+  - Cyril's letter in the acts of Ephesus (Papal Encyclicals Online).
+- **Catholic resources:** St. Paul Center, “Why Do We Call Mary the Mother of God?” and Edward Sri, “Mother and Queen” (both read); Thomistic Institute, “The Triune God” (description read; confirmed through YouTube oEmbed).
+- **Catechism:** quotations checked against the vatican.va cache, including CCC 67, 237, 251, 466, 571, 599, 609, 633, 643, 647, 685, 689, 828, 956, 970–971, 1033–1037, 1857, 1861, 1864, 1989, 1992, 2008–2016, 2683. All 291 linked references checked (0 problems).
+- **Scripture:** the new NABRE quotations were checked on bible.usccb.org in a browser, including 1 John 5:7–8 to confirm that the NABRE omits the later addition.
+- **Search:** 164 of 164 regression checks pass (13 new; “justification” is an either-of-two check). **Build:** 160 static pages; 1,906 internal links, 0 problems. All existing ids are unchanged.
+
+| Debate section | Perspectives (sources) | Early Church | Open questions for review |
+|---|---|---|---|
+| `why-honor-mary` | Protestant (Westminster 21.2; Apology XXI; Formula of Concord SD VIII) | Irenaeus 3.22.4 | **R:** Marian titles (Advocate, Mediatrix) explained from CCC 969–970 only |
+| `mother-of-god` | Protestant (Formula of Concord SD VIII; Westminster 8.2) | Cyril (Ephesus) | “Some Protestants avoid the title” is a general statement |
+| `praying-to-saints` | Protestant (Smalcald II.2; Apology XXI; Westminster 21.2) | Augustine, Tractate 84 | |
+| `faith-and-works` | Protestant (Augsburg IV, VI; Formula of Concord Ep. IV; Westminster 11, 16; Baptist Faith and Message IV) | | **R:** the treatment of assurance |
+| `who-is-the-holy-spirit` | Jehovah's Witnesses (jw.org) | | |
+| `hell` | Jehovah's Witnesses (jw.org) | Ignatius, Ephesians 16 | **R:** pastoral tone; how eternal loss is reconciled with God's mercy (flagged in the text); universalism not assigned or described |
+| `did-jesus-exist` | Atheism (Carrier; Ehrman in the variations) | | Ehrman's own religious position is not stated (unsourced) |
+| `resurrection` | Atheism (Hume); Islam (Qur'an 4:158; SeekersGuidance) | Ignatius, Smyrnaeans 3 | **R** |
+| `was-jesus-crucified` | Islam (Qur'an 4:157; SeekersGuidance; Ibn Kathir; Ahmadiyya) | Ignatius, Trallians 9 | **R:** the summary of Muslim interpretations; whether the Ahmadiyya view should be framed further (no sourced framing added) |
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -503,9 +578,11 @@ These stay open until checked against an authoritative source; topics describe t
 - Anglican and Lutheran positions on the deuterocanonical books (`catholic-bible-books`): still unresearched; Thirty-Nine Articles page did not load.
 - **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
 - Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
+- Universalism and other views on hell beyond the assigned Jehovah's Witness perspective (not assigned in the curriculum; a decision on coverage may be needed).
+- A verified source on the authenticity debate over Josephus, Antiquities 18.3.3 (the Testimonium), before it is quoted.
 - Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, and in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections.
 
 ## Earlier topics (Phases 2–4)
 

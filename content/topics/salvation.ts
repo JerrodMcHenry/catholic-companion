@@ -100,6 +100,43 @@ export const salvation: Topic[] = [
     },
     resources: ["video-a101-grace", "ca-assurance-of-salvation"],
     related: ["how-are-we-saved", "what-is-grace", "catholic-and-protestant-differences", "sola-scriptura"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "We are justified by God's grace, received through faith and Baptism, because of the merits of Christ; no one can merit the grace of justification. Justification both forgives sin and renews the person inwardly. Good works done in grace are the fruit of that grace and, by God's free promise, merit growth in grace and eternal life, yet even these merits are God's gifts (Council of Trent, Session 6; CCC 1987–2011).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Protestants hold that sinners are justified by grace alone through faith alone (sola fide), for Christ's sake, not because of any works. The Augsburg Confession teaches that people “cannot be justified before God by their own strength, merits, or works, but are freely justified for Christ's sake, through faith” (Article IV). This does not mean good works are unnecessary: the same Confession teaches that “this faith is bound to bring forth good fruits” (Article VI), and the Westminster Confession says justifying faith “is no dead faith, but worketh by love” (11.2).",
+          variations:
+            "Protestant traditions explain the relation in different ways. The Westminster Confession describes justification as God “pardoning their sins” and “imputing the obedience and satisfaction of Christ unto them,” “not by infusing righteousness into them” (11.1). The Lutheran Formula of Concord holds that the regenerate are bound to do good works, but that works must be excluded “in the question concerning salvation as in the article of justification” (Epitome IV). The Baptist Faith and Message calls justification God's “gracious and full acquittal” of sinners who repent and believe, followed by sanctification (Article IV). The Joint Declaration of 1999 involves Lutherans and Catholics only.",
+          arguments: [
+            {
+              claim: "Catholics teach that people earn salvation by their works.",
+              response:
+                "The Catholic Church teaches that “no one can merit the initial grace of forgiveness and justification” (CCC 2010) and that the merit of good works “is to be attributed in the first place to the grace of God” (CCC 2008). The Council of Trent taught that nothing that precedes justification, “whether faith or works,” merits it (Session 6, ch. 8).",
+              authority: "doctrine",
+            },
+            {
+              claim: "Justification is God's legal declaration that we are righteous for Christ's sake, not an inner renewal.",
+              response:
+                "Catholics hold that God's declaration is effective: justification “is not only the remission of sins, but also the sanctification and renewal of the interior man” (CCC 1989), and God “makes us inwardly just by the power of his mercy” (CCC 1992). The Lutheran explanation in the Joint Declaration also confesses that “justification and renewal are joined in Christ” (26), though the two traditions still differ in emphasis.",
+              authority: "doctrine",
+            },
+            {
+              claim: "If good works merit eternal life, believers cannot have assurance; they must trust their own performance.",
+              response:
+                "The Church teaches that “our merits are God's gifts” (CCC 2009) and that the faithful “rightly hope for the grace of final perseverance” from God's mercy (CCC 2016). In the Joint Declaration, Catholics explain that speaking of merit is meant to stress responsibility for one's actions, “not to contest the character of those works as gifts or far less to deny that justification always remains the unmerited gift of grace” (38). Catholics and Protestants still differ on what assurance of salvation a believer can have.",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["augsburg-confession", "formula-of-concord-ep4", "westminster-confession", "baptist-faith-message"],
+        },
+      ],
+    },
   },
   {
     slug: "what-happens-when-we-die",
@@ -176,7 +213,7 @@ export const salvation: Topic[] = [
       "Self-exclusion: “We cannot be united with God unless we freely choose to love him.” To die in mortal sin without repenting and accepting God's merciful love means remaining separated from him by our own free choice; this “state of definitive self-exclusion from communion with God and the blessed is called ‘hell’” (CCC 1033).",
       "What the Church affirms: the existence of hell and its eternity; “the chief punishment of hell is eternal separation from God” (CCC 1035).",
       "Not God's wish: “God predestines no one to go to hell”; it requires a willful turning away from God and persistence in it until the end (CCC 1037). The Lord is “not wishing that any should perish but that all should come to repentance” (2 Peter 3:9).",
-      "A call to conversion: the teaching on hell is above all “a call to the responsibility incumbent upon man to make use of his freedom” and “an urgent call to conversion” (CCC 1036). Other traditions understand hell differently; their perspectives are planned for a questions-and-objections section on this topic.",
+      "A call to conversion: the teaching on hell is above all “a call to the responsibility incumbent upon man to make use of his freedom” and “an urgent call to conversion” (CCC 1036). Jehovah's Witnesses understand hell differently; their view and the Catholic responses are set out below.",
     ],
     teaching: {
       catechism: [{ paragraphs: "1033–1037", url: ccc("__P2O") }],
@@ -190,6 +227,49 @@ export const salvation: Topic[] = [
     },
     resources: ["video-a101-last-things"],
     related: ["what-happens-when-we-die", "mortal-and-venial-sin", "heaven", "problem-of-evil"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Hell is the state of definitive self-exclusion from communion with God, chosen by those who die in mortal sin without repenting and accepting God's merciful love. The Church affirms its existence and eternity; its chief punishment is eternal separation from God. God predestines no one to hell, wills all to be saved, and does not reveal anyone's final state: “we must entrust judgment of persons to the justice and mercy of God” (CCC 1033–1037, 1861).",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "jehovahs-witnesses",
+          position:
+            "Jehovah's Witnesses teach that the Bible words translated “hell,” Sheol and Hades, refer to “the common grave of mankind,” where the dead are unconscious, and that death, not torment, is the penalty for sin. They hold that “the idea of eternal torment is repugnant to God,” that “God will annihilate, or permanently destroy, the wicked,” and that Gehenna means “eternal destruction.”",
+          arguments: [
+            {
+              claim: "Sheol and Hades simply mean the grave, so the Bible's “hell” is not a place of punishment.",
+              response:
+                "Catholics agree that Sheol and Hades usually mean the abode of the dead, which the Creed calls “hell” when it says Christ descended there (CCC 633); that is different from the hell of the damned. Catholic teaching on eternal punishment rests on Jesus' warnings about Gehenna and “the unquenchable fire” (Mark 9:43) and on the final judgment, when the wicked “will go off to eternal punishment, but the righteous to eternal life” (Matthew 25:46).",
+              authority: "doctrine",
+            },
+            {
+              claim: "A loving God would not punish anyone forever; the wages of sin is death (Romans 6:23).",
+              response:
+                "The Church teaches that God “predestines no one to go to hell” (CCC 1037) and that hell is the self-chosen state of those who refuse his love to the end (CCC 1033); its chief pain is separation from the God for whom we were made (CCC 1035). Mortal sin requires grave matter, “full knowledge and deliberate consent” (CCC 1857), and the Church never declares that any particular person is lost (CCC 1861). How eternal loss is reconciled with God's mercy remains a question theologians continue to reflect on.",
+              authority: "doctrine",
+            },
+            {
+              claim: "“Eternal destruction” means that the wicked simply cease to exist.",
+              response:
+                "Catholics read Jesus' parallel between “eternal punishment” and “eternal life” (Matthew 25:46) as describing two lasting destinies, and Paul's “eternal ruin” as separation “from the presence of the Lord” (2 Thessalonians 1:9), not annihilation.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["jw-hell"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Ignatius of Antioch",
+          work: "Letter to the Ephesians, Chapter 16 (c. 107)",
+          note: "Warns that one who corrupts the faith “shall go away into everlasting fire.”",
+          url: "https://www.newadvent.org/fathers/0104.htm",
+        },
+      ],
+    },
   },
   {
     slug: "purgatory",
@@ -256,7 +336,7 @@ export const salvation: Topic[] = [
           position:
             "Orthodox Christians pray for the departed constantly: at death, at the funeral, on the third, ninth, and fortieth days, and on anniversaries, convinced that the living and the departed are united in the communion of saints. But the Orthodox Churches have not accepted the Western doctrine of purgatory. The Orthodox Church in America explains that it “does not believe in purgatory as a ‘third’ or ‘alternate’ state to heaven and hell,” and that there is no concept of indulgences in Orthodox Christianity.",
           variations:
-            "Orthodox explanations of the state of the departed vary. The Confession of Dositheus, adopted by the Synod of Jerusalem in 1672, taught that the souls of those who repented but did not bring forth fruits of repentance suffer for their sins after death and can be delivered through the prayers of priests, the almsgiving of their relatives, and above all the bloodless sacrifice of the Liturgy (Decree 18). It does not use the word purgatory.",
+            "Orthodox explanations of the state of the departed vary. The Confession of Dositheus, adopted by the Synod of Jerusalem in 1672 to answer the Calvinist-leaning confession attributed to Patriarch Cyril Lucaris, taught that the souls of those who repented but did not bring forth fruits of repentance suffer for their sins after death and can be delivered through the prayers of priests, the almsgiving of their relatives, and above all the bloodless sacrifice of the Liturgy (Decree 18). It does not use the word purgatory. It is a seventeenth-century text written for a particular controversy, and Orthodox writers today, such as those cited above, do not all explain the state of the departed in its terms.",
           arguments: [
             {
               claim: "Purgatory turns the afterlife into a third place of punishment between heaven and hell.",
