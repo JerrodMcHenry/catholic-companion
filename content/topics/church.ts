@@ -33,7 +33,7 @@ export const church: Topic[] = [
       documents: ["lumen-gentium"],
     },
     resources: ["catholicculture-church-not-christ", "loyola-jesus-head-of-the-church"],
-    related: ["what-is-the-pope", "bishops-priests-deacons", "what-is-sacred-tradition", "what-does-catholic-mean"],
+    related: ["did-jesus-found-a-church", "what-is-the-pope", "bishops-priests-deacons", "what-is-sacred-tradition", "what-does-catholic-mean"],
   },
   {
     slug: "what-is-sacred-tradition",
@@ -90,7 +90,7 @@ export const church: Topic[] = [
       documents: ["lumen-gentium"],
     },
     resources: ["ca-what-catholics-believe-about-the-pope"],
-    related: ["what-is-the-church", "bishops-priests-deacons", "what-is-dogma"],
+    related: ["peter-the-rock", "papal-infallibility", "what-is-the-church", "bishops-priests-deacons"],
   },
   {
     slug: "bishops-priests-deacons",
@@ -122,6 +122,101 @@ export const church: Topic[] = [
       documents: ["lumen-gentium"],
     },
     resources: ["ca-bishop-priest-deacon"],
-    related: ["what-is-the-pope", "what-is-the-church", "what-is-sacred-tradition"],
+    related: ["apostolic-succession", "what-is-the-pope", "what-is-the-church", "what-is-sacred-tradition"],
+  },
+  {
+    slug: "what-is-the-magisterium",
+    title: "The Magisterium",
+    question: "Who teaches with authority in the Church?",
+    alsoKnownAs: ["Magisterium", "Teaching office of the Church", "Ordinary and extraordinary Magisterium"],
+    category: "church",
+    keywords: ["Magisterium", "teaching authority", "who decides what Catholics believe", "pope and bishops", "teaching office", "religious assent", "ordinary magisterium", "extraordinary magisterium", "ecumenical council", "can the Church change teaching", "interpretation of Scripture"],
+    summary:
+      "The Magisterium is the Church's living teaching office: the pope and the bishops in communion with him, who have the task of authentically interpreting God's word, handed on in Scripture and Tradition. It is not above the word of God but serves it, teaching only what has been handed on. Catholics believe Christ gave this office so that the faith would be preserved without error.",
+    explanation: [
+      "Who: Christ entrusted the task of authentically interpreting the word of God to the bishops in communion with the successor of Peter, the bishop of Rome (CCC 85). Bishops, with priests as co-workers, are “authentic teachers” of the apostolic faith (CCC 888).",
+      "A servant of the word: “this Magisterium is not superior to the Word of God, but is its servant. It teaches only what has been handed on to it” (CCC 86, quoting Dei Verbum 10). It listens to the word, guards it, and explains it faithfully.",
+      "Why: its mission is to keep God's people in the truth that sets them free and to guarantee “the objective possibility of professing the true faith without error” (CCC 890). Jesus told the apostles, “Whoever listens to you listens to me” (Luke 10:16; CCC 87).",
+      "Different levels: the Magisterium teaches infallibly when the pope defines a doctrine ex cathedra, when an ecumenical council defines it with the pope, or when the bishops throughout the world agree that a doctrine is to be held definitively (CCC 891; see “What is papal infallibility?”). Much of its teaching is ordinary and not defined; Catholics give it “religious assent,” a real but distinct response from the assent of faith (CCC 892). How to tell these levels apart is explained in “What is a dogma?”",
+      "Scripture, Tradition, Magisterium: the three are so connected that “one of them cannot stand without the others” (CCC 95; see “Is the Bible the only authority?”).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "85–87, 95", url: ccc("__PM") },
+        { paragraphs: "888–892", url: ccc("__P2A") },
+      ],
+      scripture: [
+        { passage: "Luke 10:16", url: bible("luke/10") },
+        { passage: "Matthew 28:18–20", url: bible("matthew/28") },
+        { passage: "John 16:12–13", url: bible("john/16") },
+        { passage: "Acts 15:1–29", url: bible("acts/15") },
+      ],
+      documents: ["dei-verbum", "lumen-gentium", "professio-fidei"],
+    },
+    resources: ["ca-infallible-teachings", "ca-dogma"],
+    related: ["what-is-dogma", "papal-infallibility", "sola-scriptura", "what-is-sacred-tradition", "apostolic-succession"],
+  },
+  {
+    slug: "catholic-and-protestant-differences",
+    title: "Catholics and Protestants",
+    question: "How are Catholics and Protestants different?",
+    alsoKnownAs: ["Catholic vs. Protestant", "Differences between Catholics and Protestants", "Reformation"],
+    category: "church",
+    keywords: ["Catholic vs Protestant", "difference between Catholic and Protestant", "difference between Catholics and Protestants", "Protestant", "Reformation", "Martin Luther", "what do Catholics and Protestants agree on", "justification", "faith alone", "Bible alone", "Joint Declaration", "ecumenism", "Christian unity"],
+    summary:
+      "Catholics and Protestants share a great deal: faith in the Trinity, in Jesus Christ as true God and true man who died and rose for us, in the authority of Scripture, and in Baptism. The main differences concern authority (Scripture alone, or Scripture and Tradition with the Church's teaching office), how salvation is received, the number and meaning of the sacraments, the papacy, and the role of Mary and the saints. Protestants also differ widely among themselves.",
+    explanation: [
+      "Agreement first: baptized Protestants are Christians, brothers and sisters in a real, though imperfect, communion with the Catholic Church (CCC 818, 838). Many elements of sanctification and truth, “the written Word of God; the life of grace; faith, hope, and charity,” are found in their communities (CCC 819).",
+      "Justification: in 1999 the Catholic Church and the Lutheran World Federation affirmed together that “by grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God” and declared “a consensus in basic truths of the doctrine of justification” (Joint Declaration 15, 40). Differences in explanation remain, as do questions about the Church, ministry, and sacraments (Joint Declaration 43). Other Protestant traditions are not party to that declaration.",
+      "Authority: Catholics receive God's word through Scripture and Tradition, interpreted by the Church's teaching office; most Protestants hold Scripture as the only infallible rule. See “Is the Bible the only authority?” and “Who teaches with authority in the Church?”",
+      "Sacraments and worship: Catholics celebrate seven sacraments and believe the Mass makes present Christ's sacrifice and that he is truly present in the Eucharist; most Protestants recognize two sacraments or ordinances and understand the Lord's Supper in varying ways. See “What are the seven sacraments?”, “Is the Mass a sacrifice?”, and “Why confess to a priest?”",
+      "Church and saints: Catholics accept the pope as Peter's successor and ask the prayers of Mary and the saints; Protestants generally reject the papacy and address prayer to God alone. See “Did Jesus make Peter the leader of the apostles?” and “Why not just pray directly to God?”",
+      "Many traditions: Lutheran, Reformed, Anglican, Methodist, Baptist, Pentecostal, and non-denominational churches differ on Baptism, the Eucharist, Church structure, and more, so no single description fits all Protestants. The Catholic Church is committed to dialogue and prayer for the unity Christ asked for: “that they may all be one” (John 17:21; Unitatis Redintegratio).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "817–819, 838", url: ccc("__P29") },
+        { paragraphs: "1271", url: ccc("__P3N") },
+      ],
+      scripture: [
+        { passage: "John 17:20–23", url: bible("john/17") },
+        { passage: "Ephesians 4:1–6", url: bible("ephesians/4") },
+      ],
+      documents: ["unitatis-redintegratio", "joint-declaration-justification", "ut-unum-sint"],
+    },
+    resources: ["ca-are-catholics-christian", "westminster-confession"],
+    related: ["are-catholics-christians", "sola-scriptura", "already-baptized", "catholic-and-orthodox-differences", "did-jesus-found-a-church"],
+  },
+  {
+    slug: "catholic-and-orthodox-differences",
+    title: "Catholics and Orthodox",
+    question: "How are Catholics and Orthodox different?",
+    alsoKnownAs: ["Catholic vs. Orthodox", "Eastern Orthodox Church", "Great Schism"],
+    category: "church",
+    keywords: ["Catholic vs Orthodox", "difference between Catholic and Orthodox", "Eastern Orthodox", "Orthodox Church", "Great Schism", "1054", "filioque", "papal primacy", "Patriarch", "Ecumenical Patriarch", "Eastern Catholic", "can Orthodox receive communion", "reunion"],
+    summary:
+      "Catholics and Orthodox Christians share nearly everything: the apostolic faith, the creeds and the early councils, apostolic succession, all seven sacraments, and devotion to Mary and the saints. The Catholic Church says their communion “lacks little” to be complete. The main differences concern the role of the bishop of Rome, the filioque in the Creed, and certain later doctrinal definitions. Their separation is usually dated to 1054.",
+    explanation: [
+      "So much in common: the Orthodox Churches “possess true sacraments, above all - by apostolic succession - the priesthood and the Eucharist” (CCC 1399), and the communion between Catholics and Orthodox “is so profound that it lacks little to attain the fullness that would permit a common celebration of the Lord's Eucharist” (CCC 838). Catholic ministers may give the sacraments to Orthodox Christians who ask on their own and are properly disposed (canon 844 §3).",
+      "The papacy: both sides agree that in the first millennium Rome held first place among the churches; they disagree on how to interpret the bishop of Rome's prerogatives then, and on how universal primacy should be understood and exercised today (Ravenna Document 41, 43, 45). See “Did Jesus make Peter the leader of the apostles?” and “What is papal infallibility?”",
+      "The filioque: the Western Church added that the Spirit proceeds from the Father “and the Son” (filioque) to the Creed of 381, which remains a point of disagreement. The Catechism presents the Eastern and Western formulations as complementary when rightly understood: the East confesses that the Spirit comes from the Father through the Son (CCC 247–248).",
+      "Other questions: how the Western councils' later teaching on the papacy should be understood is, in the joint commission's words, a crucial question for the dialogue (Ravenna Document 45), and the two traditions also discuss other teachings defined in the West after the separation. Some differences are matters of discipline rather than doctrine: in the East, married men may be ordained priests, while bishops are chosen from among celibates (CCC 1580). The Eastern Catholic Churches share these Eastern traditions while in full communion with Rome (Orientalium Ecclesiarum).",
+      "Toward reconciliation: in 1965 Pope Paul VI and Ecumenical Patriarch Athenagoras I regretted the mutual excommunications of 1054 and committed them “to oblivion,” and the two Churches continue official theological dialogue.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "247–248", url: ccc("__P17") },
+        { paragraphs: "838", url: ccc("__P29") },
+        { paragraphs: "1399", url: ccc("__P42") },
+        { paragraphs: "1580", url: ccc("__P4X") },
+      ],
+      scripture: [
+        { passage: "John 17:20–23", url: bible("john/17") },
+        { passage: "John 15:26", url: bible("john/15") },
+      ],
+      documents: ["unitatis-redintegratio", "orientalium-ecclesiarum", "common-declaration-1965", "ravenna-document", "ut-unum-sint", "canon-law-sacraments"],
+    },
+    resources: ["ca-what-catholics-believe-about-the-pope"],
+    related: ["catholic-and-protestant-differences", "peter-the-rock", "papal-infallibility", "who-can-receive-communion", "what-is-the-trinity"],
   },
 ];

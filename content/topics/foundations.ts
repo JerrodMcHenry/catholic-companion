@@ -81,7 +81,7 @@ export const foundations: Topic[] = [
       documents: ["unitatis-redintegratio"],
     },
     resources: ["ca-are-catholics-christian"],
-    related: ["what-does-catholic-mean", "what-is-the-creed", "sola-scriptura"],
+    related: ["catholic-and-protestant-differences", "what-does-catholic-mean", "what-is-the-creed", "sola-scriptura"],
   },
   {
     slug: "what-is-the-creed",
@@ -215,6 +215,6 @@ export const foundations: Topic[] = [
       documents: ["lumen-gentium", "professio-fidei"],
     },
     resources: ["ca-dogma", "ca-infallible-teachings"],
-    related: ["what-is-the-catechism", "what-is-the-pope", "what-is-sacred-tradition"],
+    related: ["what-is-the-magisterium", "what-is-the-catechism", "papal-infallibility", "what-is-sacred-tradition"],
   },
 ];

@@ -23,7 +23,7 @@ export const traditions: Tradition[] = [
     ],
     sources: ["westminster-confession", "formula-of-concord"],
     resources: ["unitatis-redintegratio", "ca-scripture-and-tradition"],
-    related: ["real-presence"],
+    related: ["catholic-and-protestant-differences", "real-presence"],
   },
   { slug: "baptist", name: "Baptist", group: "christian", parent: "protestantism" },
   { slug: "lutheran", name: "Lutheran", group: "christian", parent: "protestantism" },

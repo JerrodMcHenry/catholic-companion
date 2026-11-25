@@ -1,41 +1,34 @@
 import type { Metadata } from "next";
-import { BackLink, ResourceList, SectionTitle } from "@/components/cards";
-import { resources, type ResourceType } from "@/content";
+import { BackLink } from "@/components/cards";
+import { ResourceDirectory } from "@/components/resource-directory";
+import { resources, resourceSubjects, type ResourceType } from "@/content";
 
 export const metadata: Metadata = { title: "Resources" };
 
-const groups: { type: ResourceType; title: string }[] = [
-  { type: "document", title: "Official Church documents" },
-  { type: "source", title: "Sources from other traditions" },
-  { type: "article", title: "Articles" },
-  { type: "video", title: "Videos" },
-  { type: "podcast", title: "Podcasts" },
-  { type: "book", title: "Books" },
-  { type: "course", title: "Courses" },
-  { type: "directory", title: "Directories" },
-];
+// Formats in the order readers are offered them: official teaching first.
+const formatOrder: ResourceType[] = ["document", "source", "article", "video", "podcast", "book", "course", "directory"];
+
+// Alphabetical by title, ignoring a leading article or quotation mark.
+const sortKey = (title: string) => title.replace(/^[“"‘']+/, "").replace(/^(the|a|an) /i, "");
 
 export default function ResourcesPage() {
+  const subjectsById = resourceSubjects();
+  const items = [...resources]
+    .sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title), "en", { sensitivity: "base" }))
+    .map((resource) => ({ resource, subjects: subjectsById.get(resource.id) ?? [] }));
+  const subjects = [...new Set(items.flatMap((i) => i.subjects))].sort();
+  const formats = formatOrder.filter((f) => resources.some((r) => r.type === f));
+
   return (
     <>
       <BackLink href="/explore" label="Explore" />
       <h1 className="mt-4 font-serif text-5xl font-semibold text-ink">Resources</h1>
       <p className="mt-3 leading-relaxed text-ink-soft">
-        Trusted sources, each linked directly to the original.
+        Trusted sources, each linked directly to the original. Narrow the list by subject or format, or
+        search by title or publisher.
       </p>
-
-      <div className="mt-10 space-y-12">
-        {groups.map(({ type, title }) => {
-          const items = resources.filter((r) => r.type === type);
-          return (
-            items.length > 0 && (
-              <section key={type} aria-labelledby={type}>
-                <SectionTitle id={type}>{title}</SectionTitle>
-                <ResourceList resources={items} />
-              </section>
-            )
-          );
-        })}
+      <div className="mt-8">
+        <ResourceDirectory items={items} subjects={subjects} formats={formats} />
       </div>
     </>
   );

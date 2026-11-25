@@ -34,10 +34,10 @@ export const resourceTypeLabel: Record<ResourceType, string> = {
   directory: "Directory",
 };
 
-// The small label shown above a resource: its type, publisher, and any cost or sign-up.
+// The small label shown above a resource: its type, publisher, year, and any cost or sign-up.
 export function resourceLabel(r: Resource) {
   const access = r.access === "paid" ? " · Paid" : r.access === "registration" ? " · Free with sign-up" : "";
-  return `${resourceTypeLabel[r.type]} · ${r.source}${access}`;
+  return `${resourceTypeLabel[r.type]} · ${r.source}${r.year ? ` · ${r.year}` : ""}${access}`;
 }
 
 // One entry in the shared registry. Topics refer to resources by id.
@@ -45,7 +45,8 @@ export type Resource = {
   id: string;
   type: ResourceType;
   title: string;
-  source: string; // Who published it: "Vatican", "Catholic Answers", ...
+  source: string; // Author (if any) and publisher: "Vatican", "Trent Horn, Catholic Answers". No dates here.
+  year?: number; // Year of publication, where it matters (Church documents, councils).
   url: string;
   note?: string; // One line on what it is or why it is recommended.
   access?: "paid" | "registration"; // Omitted when the resource is free to read or watch.

@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–7 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture) are built: 97 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–8 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I) are built: 105 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -268,15 +268,15 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
 | `what-is-the-church` ✓ | What is the Church? | Body of Christ, People of God | B | P1 | `did-jesus-found-a-church` |  |
-| `did-jesus-found-a-church` | Did Jesus found a Church? | Ecclesiology | B | P1 | `peter-the-rock` | D: Protestantism |
+| `did-jesus-found-a-church` ✓ | Did Jesus found a Church? | Ecclesiology | B | P1 | `peter-the-rock` | D: Protestantism |
 | `four-marks` | What does "one, holy, catholic, and apostolic" mean? | Marks of the Church | I | P2 | `what-does-catholic-mean` | |
 | `what-is-sacred-tradition` ✓ | What is Sacred Tradition? | Tradition vs. traditions | B | P1 | `sola-scriptura` |  |
 | `sola-scriptura` ✓ | Is the Bible the only authority? | Sola Scriptura | I | P1 | `what-is-sacred-tradition` | D: Protestantism; built |
-| `what-is-the-magisterium` | Who teaches with authority in the Church? | Magisterium | I | P1 | `what-is-dogma` | |
+| `what-is-the-magisterium` ✓ | Who teaches with authority in the Church? | Magisterium | I | P1 | `what-is-dogma` | |
 | `what-is-the-pope` ✓ | What is the pope? | Papacy, Bishop of Rome | B | P1 | `peter-the-rock` |  |
-| `peter-the-rock` | Did Jesus make Peter the leader of the apostles? | Petrine primacy, Matthew 16:18, papacy in Scripture | I | P1 | `fathers-on-the-papacy` | D: Protestantism, Eastern Orthodoxy. Covers the biblical case: Matthew 16:17–19, Isaiah 22:20–22, Luke 22:31–32, John 21:15–17 |
-| `papal-infallibility` | What is papal infallibility? | Ex cathedra | I | P1 | `what-is-the-pope` | D: Protestantism, Eastern Orthodoxy |
-| `apostolic-succession` | What is apostolic succession? | | I | P1 | `bishops-priests-deacons` | D: Protestantism |
+| `peter-the-rock` ✓ | Did Jesus make Peter the leader of the apostles? | Petrine primacy, Matthew 16:18, papacy in Scripture | I | P1 | `fathers-on-the-papacy` | D: Protestantism, Eastern Orthodoxy. Covers the biblical case: Matthew 16:17–19, Isaiah 22:20–22, Luke 22:31–32, John 21:15–17 |
+| `papal-infallibility` ✓ | What is papal infallibility? | Ex cathedra | I | P1 | `what-is-the-pope` | D: Protestantism, Eastern Orthodoxy |
+| `apostolic-succession` ✓ | What is apostolic succession? | | I | P1 | `bishops-priests-deacons` | D: Protestantism |
 | `bishops-priests-deacons` ✓ | What do bishops, priests, and deacons do? | Hierarchy, clergy | B | P1 | `holy-orders` |  |
 | `ecumenical-councils` | What is an ecumenical council? | Councils | I | P2 | `council-of-nicaea` | |
 | `vatican-ii` | What was the Second Vatican Council? | Vatican II | B | P2 | `latin-mass` | R |
@@ -879,8 +879,8 @@ Short "how do we compare" topics that pull from many pages:
 
 | Slug | Question | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|
-| `catholic-and-protestant-differences` | How are Catholics and Protestants different? | B | P1 | `sola-scriptura`, `faith-and-works` | Agreement first |
-| `catholic-and-orthodox-differences` | How are Catholics and Orthodox different? | I | P1 | `great-schism` | |
+| `catholic-and-protestant-differences` ✓ | How are Catholics and Protestants different? | B | P1 | `sola-scriptura`, `faith-and-works` | Agreement first |
+| `catholic-and-orthodox-differences` ✓ | How are Catholics and Orthodox different? | I | P1 | `great-schism` | |
 | `catholics-and-jews` | What do Catholics and Jews share? | B | P2 | `jesus-the-messiah` | R |
 | `catholics-and-muslims` | What do Catholics and Muslims share, and where do they differ? | B | P1 | `divinity-of-jesus` | R |
 | `do-all-religions-lead-to-god` | Do all religions lead to God? | B | P1 | `salvation-of-non-christians` | D: Hinduism, Buddhism, Sikhism, all; R |
@@ -917,7 +917,7 @@ Questions that belong to no other subject:
 | `is-catholicism-pagan` | Did Catholicism borrow from paganism? | | I | P2 | Protestantism, atheism | |
 | `why-stay-catholic` | Why stay Catholic despite scandals? |  | B | P2 | all | R; pastoral |
 | `church-wealth` | Why is the Church so rich? |  | I | P3 | atheism, Protestantism |  |
-| `praying-directly-to-god` | Why not just pray directly to God? | One mediator (1 Timothy 2:5) | B | P1 | Protestantism | |
+| `praying-directly-to-god` ✓ | Why not just pray directly to God? | One mediator (1 Timothy 2:5) | B | P1 | Protestantism | |
 | `once-saved-always-saved` | Once saved, always saved? | Eternal security, perseverance of the saints | I | P2 | Protestantism (Baptist, Reformed, evangelical) | |
 | `predestination` | Does God predestine some people to heaven and others to hell? | Election, Calvinism | A | P2 | Protestantism (Reformed) | R |
 | `primacy-and-supremacy` | Does the pope have primacy, universal jurisdiction, or both? | Papal supremacy, Pastor Aeternus | A | P2 | Eastern Orthodoxy | R |
@@ -938,8 +938,8 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 
 <!-- generated: debate-index -->
 
-- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books` ✓, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church`, `sola-scriptura` ✓, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god`, `once-saved-always-saved`, `predestination`
-- **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock`, `papal-infallibility`, `immaculate-conception`, `purgatory`, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
+- **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books` ✓, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church` ✓, `sola-scriptura` ✓, `peter-the-rock` ✓, `papal-infallibility` ✓, `apostolic-succession` ✓, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `perpetual-virginity`, `assumption`, `praying-to-saints`, `relics`, `statues-and-images`, `contraception`, `faith-and-works`, `assurance-of-salvation`, `purgatory`, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god` ✓, `once-saved-always-saved`, `predestination`
+- **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock` ✓, `papal-infallibility` ✓, `immaculate-conception`, `purgatory`, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
 - **Oriental Orthodoxy** (1): `chalcedon-and-oriental-orthodoxy`
 - **Latter-day Saints** (4): `trinity-in-scripture`, `early-church`, `great-apostasy`, `book-of-mormon`
 - **Jehovah's Witnesses** (9): `trinity-in-scripture`, `who-is-the-holy-spirit` ✓, `divinity-of-jesus` ✓, `human-soul`, `st-michael`, `hell`, `early-church`, `great-apostasy`, `who-goes-to-heaven`
@@ -1019,7 +1019,7 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 `what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` → `who-are-the-church-fathers` → `thomas-aquinas`
 
 ### 8.5 Exploring Catholic apologetics (12)
-`does-god-exist` → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` → `sola-scriptura` ✓ → `peter-the-rock` → `faith-and-works` → `real-presence` ✓ → `why-honor-mary` → `salvation-of-non-christians`
+`does-god-exist` → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` ✓ → `sola-scriptura` ✓ → `peter-the-rock` ✓ → `faith-and-works` → `real-presence` ✓ → `why-honor-mary` → `salvation-of-non-christians`
 
 ### 8.6 Comparing Catholicism with another tradition (template)
 1. The tradition page (overview, agreement, differences)
@@ -1116,7 +1116,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 5 | Sacraments and the remaining Mass parts | 0 | 21 | `what-is-a-sacrament` ✓, `seven-sacraments` ✓, `baptism` ✓, `infant-baptism` ✓, `confirmation` ✓, `what-is-the-eucharist` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `confession` ✓, `why-confess-to-a-priest` ✓, `how-to-go-to-confession` ✓, `mortal-and-venial-sin` ✓, `marriage-sacrament` ✓, `mass-reverence-to-the-altar` ✓, `mass-preface` ✓, `mass-epiclesis` ✓, `mass-intercessions` ✓, `mass-thanksgiving-after-communion` ✓, `mass-prayer-after-communion` ✓, `mass-recessional` ✓ |
 | 6 | OCIA and returning Catholics | 0 | 9 | `how-to-become-catholic` ✓, `what-is-ocia` ✓, `stages-of-ocia` ✓, `catechumen-or-candidate` ✓, `already-baptized` ✓, `married-before-ocia` ✓, `finding-a-parish` ✓, `returning-to-the-church` ✓, `returning-after-mortal-sin` ✓ |
 | 7 | Sacred Scripture | 0 | 6 | `what-is-the-bible` ✓, `catholic-bible-books` ✓, `inspiration-of-scripture` ✓, `how-to-read-the-bible` ✓, `which-bible-translation` ✓, `where-to-start-reading-the-bible` ✓ |
-| 8 | Apologetics I: Church authority and other Christians | 8 | 1 | `did-jesus-found-a-church`, `sola-scriptura` ✓, `what-is-the-magisterium`, `peter-the-rock`, `papal-infallibility`, `apostolic-succession`, `catholic-and-protestant-differences`, `catholic-and-orthodox-differences`, `praying-directly-to-god` |
+| 8 | Apologetics I: Church authority and other Christians | 0 | 9 | `did-jesus-found-a-church` ✓, `sola-scriptura` ✓, `what-is-the-magisterium` ✓, `peter-the-rock` ✓, `papal-infallibility` ✓, `apostolic-succession` ✓, `catholic-and-protestant-differences` ✓, `catholic-and-orthodox-differences` ✓, `praying-directly-to-god` ✓ |
 | 9 | Mary, saints, and salvation | 15 | 0 | `who-is-mary`, `why-honor-mary`, `mother-of-god`, `immaculate-conception`, `what-is-a-saint`, `praying-to-saints`, `statues-and-images`, `how-are-we-saved`, `what-is-grace`, `faith-and-works`, `what-happens-when-we-die`, `heaven`, `hell`, `purgatory`, `salvation-of-non-christians` |
 | 10 | Faith, reason, creation, and other religions | 8 | 1 | `why-did-god-create-us`, `creation`, `creation-and-evolution`, `original-sin`, `does-god-exist`, `faith-and-science`, `problem-of-evil` ✓, `catholics-and-muslims`, `do-all-religions-lead-to-god` |
 | 11 | Moral life and social teaching | 8 | 0 | `how-catholics-decide-right-and-wrong`, `conscience`, `ten-commandments`, `what-is-sin`, `human-life-dignity`, `abortion`, `sexuality`, `what-is-catholic-social-teaching` |
@@ -1127,7 +1127,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 
 **Before launch:** hide categories and tradition pages that are still empty (decided in Phase 3).
 
-**Engineering checkpoints:** re-check search payload and relevance at about 100 and 500 topics (agreed in Phase 4).
+**Engineering checkpoints:** search payload and relevance were assessed at 103 topics (Batch 7; see the content log). Next assessment at about 250 topics, plus real-device mobile testing before launch.
 
 ---
 
@@ -1144,7 +1144,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.3 Jesus Christ | 15 | 6 | 7 | 2 | 4 | 0 | 6 |
 | 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 0 |
 | 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 6 |
-| 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 5 |
+| 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 10 |
 | 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 0 |
 | 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 0 |
@@ -1159,9 +1159,9 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.19 OCIA and Becoming Catholic | 17 | 8 | 8 | 1 | 0 | 1 | 8 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 1 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
-| 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 0 |
-| 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 0 |
-| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **103** |
+| 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 2 |
+| 7.2 Apologetics-only questions | 27 | 1 | 17 | 9 | 27 | 11 | 1 |
+| **Total** | **422** | **164** | **178** | **80** | **91** | **52** | **111** |
 
 <!-- /generated: counts -->
 

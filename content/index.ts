@@ -70,6 +70,27 @@ export function savableItems(): Record<string, SavedItem> {
   return items;
 }
 
+// The subjects each resource belongs to, derived from the pages that cite it: the category of
+// every topic that lists it (resources, Church documents, or a debate's sources), and
+// "Other traditions" for tradition pages. Used by the Resources directory; nothing to maintain.
+export function resourceSubjects(): Map<string, string[]> {
+  const subjects = new Map<string, Set<string>>();
+  const add = (ids: string[] = [], subject: string) => {
+    for (const id of ids) subjects.set(id, (subjects.get(id) ?? new Set()).add(subject));
+  };
+  for (const t of topics) {
+    const subject = categoryBySlug.get(t.category)!.title;
+    add(t.resources, subject);
+    add(t.teaching.documents, subject);
+    for (const p of t.debate?.perspectives ?? []) add(p.sources, subject);
+  }
+  for (const t of traditions) {
+    add(t.sources, "Other traditions");
+    add(t.resources, "Other traditions");
+  }
+  return new Map([...subjects].map(([id, s]) => [id, [...s].sort()]));
+}
+
 // Only call with ids that validation has already checked.
 export const topicsFor = (slugs: string[] = []) => slugs.map((s) => topicBySlug.get(s)!);
 export const resourcesFor = (ids: string[] = []) => ids.map((id) => resourceById.get(id)!);

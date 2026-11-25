@@ -259,6 +259,61 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 - Publisher names are inconsistent (for example “Catholic Answers” and “Catholic Answers Magazine”, and years inside the publisher field), giving 63 apparent publishers.
 - **Assessment:** the directory is already hard to browse on a phone and will not scale. Recommendations are in the completion report and await approval; nothing was changed.
 
+## Batch 8: Apologetics I, Church authority and other Christians (2026-11-25)
+
+**Verification (Batch 8):**
+
+- **Catechism:** all 258 Catechism references in the app checked automatically (0 problems). New paragraphs read: 77, 85–87, 95, 247–248, 551–553, 763–766, 771, 816, 819, 838, 857–862, 880–882, 888–892, 956, 969–970, 1399, 1580, 2634–2636, 2683.
+- **Scripture:** all 16 new quotations matched on bible.usccb.org in a browser.
+- **Church and ecumenical documents:**
+  - First Vatican Council, Pastor Aeternus, chapter 4: the definition and the statement that the Spirit was promised “not so that they might… make known some new doctrine.” English text on Papal Encyclicals Online; the Latin definition was also checked on vatican.va.
+  - Ut Unum Sint 95–96.
+  - Joint Catholic–Orthodox Declaration of 1965 (excommunications committed “to oblivion”).
+  - Ravenna Document 41, 43, 45 (christianunity.va; the page itself says it is not an official declaration of either Church).
+  - Joint Declaration on the Doctrine of Justification 1, 5, 15, 40, 41, 43, and the Official Common Statement (Lutheran World Federation PDF; the old vatican.va address now returns 404).
+  - Orientalium Ecclesiarum confirmed.
+- **Protestant sources:** Westminster Confession 1.10, 21.2, 25.1–2, 25.6 (OPC); Augsburg Confession Articles VII and XXVIII (BookOfConcord.org).
+- **Fathers:** 1 Clement 42 and 44; Cyprian, The Unity of the Church 4 (New Advent); Irenaeus, Against Heresies 3.3 (already in use).
+- **Resources:** every URL opened, with title and publisher confirmed. The St. Paul Center article has no clear byline, so it is credited to the publisher only.
+
+| Topic | Catechism | Scripture | Church documents and sources | Resources | Open questions for review | Status |
+|---|---|---|---|---|---|---|
+| `did-jesus-found-a-church` | 763–766, 771, 816, 819, 838 | Mt 16:13–19; 18:15–18; Acts 2:37–47; 1 Tm 3:14–15; Eph 2:19–22 | Lumen Gentium; Unitatis Redintegratio; Protestant perspective: Westminster 25.1–2, Augsburg VII | Catholic Answers on the pope; Jeff Mirus (reused) | **D:** Protestant perspective written. **R:** “subsists in” summarized from CCC 816 | Draft |
+| `what-is-the-magisterium` | 85–87, 95, 888–892 | Lk 10:16; Mt 28:18–20; Jn 16:12–13; Acts 15:1–29 | Dei Verbum; Lumen Gentium; Professio Fidei | Catholic Answers (reused) | Levels of teaching kept to CCC 891–892, pointing to `what-is-dogma` | Draft |
+| `peter-the-rock` | 552–553, 765, 880–882 | Mt 16:13–19; Is 22:15–25; Lk 22:31–32; Jn 21:15–17; Jn 1:42 | Pastor Aeternus; Ut Unum Sint; Ravenna; Lumen Gentium; Westminster 25.6 | Catholic Answers, “Peter and the Papacy” | **D:** Protestant perspective written; the **Eastern Orthodox perspective is in the explanation only**, because a formal perspective needs an Eastern Orthodoxy tradition page, which is not yet built. The Aramaic “Cephas” argument is an apologetic argument | Draft |
+| `papal-infallibility` | 85–87, 889–892 | Lk 22:31–32; Jn 16:12–13; Mt 16:18–19; 1 Tm 3:15 | Pastor Aeternus ch. 4; Lumen Gentium 25; Professio Fidei | Catholic Answers Q&A on infallible teachings (reused); “Peter and the Papacy” | **D:** Protestant perspective; Orthodox view in prose (Ravenna 45). The Catholic Answers “Papal Infallibility” tract was not used because of its tone. The two papal definitions named (1854, 1950) follow CCC 491 and 966 | Draft |
+| `apostolic-succession` | 77, 838, 857–862, 1399 | Acts 1:15–26; 2 Tm 1:6, 2:2; Ti 1:5; Lk 10:16 | Lumen Gentium; Dei Verbum; Augsburg VII and XXVIII; 1 Clement 42, 44 | Catholic Answers, early Church on succession; “Bishop, Priest, and Deacon” (reused) | **D:** Protestant perspective, noting Anglican and Scandinavian Lutheran episcopal succession (general statement, not sourced to a confession) | Draft |
+| `catholic-and-protestant-differences` | 817–819, 838, 1271 | Jn 17:20–23; Eph 4:1–6 | Unitatis Redintegratio; Joint Declaration on Justification; Ut Unum Sint | Catholic Answers, “Are Catholics Christian?” (reused); Westminster Confession | Agreement first. The Joint Declaration is stated as Lutheran–Catholic only. Points to existing topics rather than repeating them | Draft |
+| `catholic-and-orthodox-differences` | 247–248, 838, 1399, 1580 | Jn 17:20–23; Jn 15:26 | Unitatis Redintegratio; Orientalium Ecclesiarum; 1965 Common Declaration; Ravenna; Ut Unum Sint; canon 844 | Catholic Answers on the pope (reused) | **R:** Orthodox positions stated only as far as Ravenna 41, 43, 45 and the 1965 declaration support. An earlier draft line listing the Immaculate Conception and purgatory as rejected doctrines was removed as unsourced. No Orthodox primary source has been verified yet (needed for the Eastern Orthodoxy page) | Draft |
+| `praying-directly-to-god` | 956, 969–970, 2634–2636, 2683 | 1 Tm 2:1–5; Jas 5:16; Lk 20:37–38; Rev 5:8; Heb 12:1 | Lumen Gentium; Westminster 21.2 | Catholic Answers, “Why Do Catholics Pray to Saints?”; St. Paul Center | **D:** Protestant perspective. The Lutheran and Anglican variation (“some acknowledge that the saints pray for the Church”) is a general statement, not sourced to a confession | Draft |
+
+**Updated:**
+
+- Related links on `what-is-the-church`, `what-is-the-pope`, `bishops-priests-deacons`, `what-is-dogma`, and `are-catholics-christians`. The Protestantism tradition page now links `catholic-and-protestant-differences`.
+- Placement: the two comparison topics are filed under The Church, not Apologetics, because the Apologetics section lists only debate topics and tradition pages, where they would otherwise be unreachable.
+- Search: keywords added to the two comparison topics so that “difference between Catholic and Orthodox” no longer ranks the catechumen page first (101 of 101 regression checks pass).
+- Resource registry:
+  - Publishers normalized (for example “Catholic Answers Magazine” → “Catholic Answers”, “Ascension Presents” → “Ascension”, “Bishop Robert Barron” → “Bishop Robert Barron, Word on Fire”).
+  - Years moved from 29 publisher strings into a new optional `year` field, shown in the card label.
+  - `usccb-daily-readings` retyped from “Source” (reserved for other traditions) to “Church document”.
+  - `westminster-confession` retitled from “Chapter 1” to the whole Confession, since it now supports citations from five chapters.
+  - All resource ids are unchanged; saved bookmarks under these ids were tested and display with their new labels.
+
+**Resources directory (implemented):**
+
+- **Data flow:** at build time, `resourceSubjects()` in `content/index.ts` derives each resource's subjects from the topics that cite it (their category) and from tradition pages (“Other traditions”). The server page sorts resources by title and passes them with their subjects to `components/resource-directory.tsx`.
+- **Features:** a title/publisher box (using the existing `normalize()`), Subject and Format selects with live counts, “Showing N of 187,” Clear filters (which returns focus to the search box), an empty state, and results 24 at a time with “Show more.” It uses the existing resource cards.
+- **Measured at 390 px:**
+
+| | Before (Batch 7) | After |
+|---|---|---|
+| Page height | 32,191 px (40.2 screens) | 5,123 px (6.4 screens) |
+| DOM nodes | 2,470 | 428 |
+| Any single subject | (no subject filter) | 2.0–7.0 screens |
+| HTML | 546 KB raw / 38 KB gzipped | 118 KB raw / 20.5 KB gzipped |
+
+- **Limitation:** without JavaScript, only the first 24 resources are listed, because “Show more” needs JavaScript. Site search and topic pages still reach every resource.
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -276,8 +331,10 @@ These stay open until checked against an authoritative source; topics describe t
 - The OCIA ritual's text for the Rites of Acceptance, Welcoming, and Election, the Call to Continuing Conversion, and the Scrutinies (Batch 6 relies on catechetical guides).
 - Which translation the current U.S. Lectionary for Mass uses (not stated in `which-bible-translation` until verified).
 - The Anglican Thirty-Nine Articles, Article VI, on the deuterocanonical books (page did not load; Anglican views not stated).
+- An Eastern Orthodoxy tradition page with verified Orthodox primary sources, so that the Orthodox perspectives on `peter-the-rock` and `papal-infallibility` can become formal debate perspectives (Batch 8 presents them in prose, citing the Ravenna Document).
+- Debate sections still owed on earlier D topics (`are-catholics-christians`, `real-presence`, `mass-in-scripture`, `infant-baptism`, `mass-as-sacrifice`, `who-can-receive-communion`, `why-confess-to-a-priest`, `catholic-bible-books`): not part of the Batch 8 inventory; scheduling needs a decision.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, and the pastoral tone of the returning-Catholic and mortal-sin pages.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, and the fairness of the Protestant and Orthodox summaries in Batch 8.
 
 ## Earlier topics (Phases 2–4)
 

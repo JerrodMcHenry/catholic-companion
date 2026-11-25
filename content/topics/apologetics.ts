@@ -310,4 +310,358 @@ export const apologeticsTopics: Topic[] = [
       ],
     },
   },
+  {
+    slug: "did-jesus-found-a-church",
+    title: "Did Jesus Found a Church?",
+    question: "Did Jesus found a Church?",
+    alsoKnownAs: ["Founding of the Church", "Ecclesiology", "Visible Church"],
+    category: "church",
+    keywords: ["did Jesus start a church", "founded a church", "one true church", "visible church", "invisible church", "Matthew 16:18", "upon this rock I will build my church", "Twelve apostles", "church or just believers", "do I need a church"],
+    summary:
+      "Catholics believe Jesus did found a Church: he gathered disciples, chose the Twelve with Peter at their head, gave them authority and sacraments, and promised, “upon this rock I will build my church.” That Church is both a spiritual communion and a visible community with a structure meant to last until he returns. Many Protestants agree that Christ founded the Church but understand it chiefly as the whole body of true believers rather than one visible institution.",
+    explanation: [
+      "What the Gospels show: Jesus proclaimed the Kingdom and gathered a “little flock” around him (CCC 763–764). He chose twelve apostles, gave them a share in his authority, and placed Peter at their head; “the Lord Jesus endowed his community with a structure that will remain until the Kingdom is fully achieved” (CCC 765). He speaks of “my church” (Matthew 16:18) and gives it authority to settle disputes (Matthew 18:17).",
+      "Born from the cross: the Church is born above all from Christ's self-giving, anticipated at the Last Supper and fulfilled on the cross (CCC 766). After Pentecost the apostles preached, baptized, and gathered believers into communities devoted to their teaching and the breaking of the bread (Acts 2:41–42).",
+      "Visible and spiritual: Catholics believe the Church is at once a visible society with leaders and sacraments and the mystical Body of Christ; the two are one reality (CCC 771). St. Paul calls it “the church of the living God, the pillar and foundation of truth” (1 Timothy 3:15).",
+      "Where is that Church today? The Catholic Church teaches that the one Church of Christ “subsists in” the Catholic Church, governed by the successor of Peter and the bishops in communion with him, while “many elements of sanctification and of truth” are found outside its visible structure (CCC 816, 819). Other baptized Christians are brothers and sisters in a real, though imperfect, communion (CCC 838).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "763–766, 771", url: ccc("__P27") },
+        { paragraphs: "816, 819, 838", url: ccc("__P29") },
+      ],
+      scripture: [
+        { passage: "Matthew 16:13–19", url: bible("matthew/16") },
+        { passage: "Matthew 18:15–18", url: bible("matthew/18") },
+        { passage: "Acts 2:37–47", url: bible("acts/2") },
+        { passage: "1 Timothy 3:14–15", url: bible("1timothy/3") },
+        { passage: "Ephesians 2:19–22", url: bible("ephesians/2") },
+      ],
+      documents: ["lumen-gentium", "unitatis-redintegratio"],
+    },
+    resources: ["ca-what-catholics-believe-about-the-pope", "catholicculture-church-not-christ"],
+    related: ["what-is-the-church", "peter-the-rock", "apostolic-succession", "catholic-and-protestant-differences"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Christ founded his Church on the apostles with Peter at their head and gave it a visible, lasting structure, sacraments, and teaching authority. The one Church of Christ subsists in the Catholic Church, though elements of sanctification and truth exist outside its visible bounds.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Christ founded the Church, but its essence is the communion of all true believers united to him by faith. The Westminster Confession distinguishes the universal Church, “which is invisible,” made up of all the elect, from the visible Church of all who profess the true religion (25.1–2). The Augsburg Confession defines the Church as “the congregation of saints, in which the Gospel is rightly taught and the Sacraments are rightly administered” (Article VII). On this view no single institution can claim to be the one Church.",
+          variations:
+            "Protestants differ considerably on church structure: Anglicans and many Lutherans keep bishops, Presbyterians are governed by elders, and Baptist and many evangelical churches are congregational. Most affirm the Church as one, holy, catholic, and apostolic in the words of the Creed, while defining those marks differently from Catholics.",
+          arguments: [
+            {
+              claim: "The true Church is the invisible company of all who believe; outward institutions mix believers and unbelievers and cannot be identified with the Body of Christ.",
+              response:
+                "Catholics agree that membership in a church does not guarantee holiness and that God alone knows hearts. But the New Testament Church is visible: it has leaders, baptizes, excludes and readmits members (Matthew 18:17; 1 Corinthians 5), and holds a council to settle a dispute (Acts 15). Catholics hold that the visible society and the spiritual communion are “one complex reality” (CCC 771).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "What makes a church faithful is the pure preaching of the Gospel and right administration of the sacraments, not continuity of institution.",
+              response:
+                "Catholics agree that the Gospel and the sacraments are essential. They add that Christ also gave the apostles a lasting office, which they handed on (2 Timothy 2:2; CCC 861–862), and that early Christians pointed to succession from the apostles as a sign of the true Church (Irenaeus, Against Heresies 3.3).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession", "augsburg-confession"],
+        },
+      ],
+    },
+  },
+  {
+    slug: "peter-the-rock",
+    title: "Peter the Rock",
+    question: "Did Jesus make Peter the leader of the apostles?",
+    alsoKnownAs: ["Petrine primacy", "Matthew 16:18", "Papacy in Scripture", "Keys of the kingdom"],
+    category: "church",
+    keywords: ["Peter the rock", "you are Peter", "upon this rock", "keys of the kingdom", "Isaiah 22", "feed my sheep", "Petros petra", "first pope", "primacy of Peter", "is the pope in the Bible", "Cephas", "strengthen your brothers"],
+    summary:
+      "Catholics believe Jesus made Peter the visible head of the apostles and the rock on which he built his Church, giving him the keys of the kingdom and the charge to strengthen his brothers and feed Christ's sheep. They believe this office continues in Peter's successors, the bishops of Rome. Protestants generally read the “rock” as Peter's confession of faith or Christ himself and see no continuing office; the Orthodox honor Peter's primacy but understand Rome's role differently.",
+    explanation: [
+      "The key passages: Jesus renames Simon “Peter” (rock) and says, “upon this rock I will build my church” (Matthew 16:18). He gives him “the keys to the kingdom of heaven” and the power to bind and loose (Matthew 16:19). At the Last Supper he prays that Peter's faith may not fail and tells him to “strengthen your brothers” (Luke 22:32). After the Resurrection he tells Peter three times, “Feed my sheep” (John 21:15–17).",
+      "The keys: Catholics read the keys in light of Isaiah 22, where the king's steward receives “the key of the House of David” and authority over the household, an office passed from one holder to the next (Isaiah 22:20–22). The Catechism says the keys designate “authority to govern the house of God, which is the Church” (CCC 553).",
+      "Peter among the apostles: Peter is named first in the lists of apostles, speaks for them, preaches first at Pentecost, and leads the decision to welcome Gentiles (Acts 2; 10; 15:7). Christ “made Simon alone… the ‘rock’ of his Church” and the office of binding and loosing was also given to the college of apostles united to its head (CCC 881).",
+      "Successors: Catholics believe this office, like the apostles' office of shepherding, is permanent and continues in the bishop of Rome, “the perpetual and visible source and foundation of the unity both of the bishops and of the whole company of the faithful” (CCC 882). The First Vatican Council defined this primacy as a dogma in 1870 (Pastor Aeternus).",
+      "The Orthodox view: Orthodox Christians honor Peter and agree that Rome held first place among the churches in the first millennium. In the Ravenna Document (2007), a joint Catholic–Orthodox commission agreed that Rome “occupied the first place” and that the bishop of Rome was the “protos” among the patriarchs, but noted disagreement about the interpretation of his prerogatives and about the scriptural and theological foundations of universal primacy (Ravenna 41, 43). St. John Paul II invited other Christians into a “patient and fraternal dialogue” on how the primacy is exercised (Ut Unum Sint 95–96).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "552–553", url: ccc("__P1L") },
+        { paragraphs: "765", url: ccc("__P27") },
+        { paragraphs: "880–882", url: ccc("__P2A") },
+      ],
+      scripture: [
+        { passage: "Matthew 16:13–19", url: bible("matthew/16") },
+        { passage: "Isaiah 22:15–25", url: bible("isaiah/22") },
+        { passage: "Luke 22:31–32", url: bible("luke/22") },
+        { passage: "John 21:15–17", url: bible("john/21") },
+        { passage: "John 1:42", url: bible("john/1") },
+      ],
+      documents: ["lumen-gentium", "vatican-i-pastor-aeternus", "ut-unum-sint", "ravenna-document"],
+    },
+    resources: ["ca-peter-and-the-papacy", "ca-what-catholics-believe-about-the-pope"],
+    related: ["what-is-the-pope", "papal-infallibility", "apostolic-succession", "catholic-and-orthodox-differences"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Jesus made Peter the rock and visible head of the apostles, giving him the keys of the kingdom. This primacy is a permanent office in the Church, continued in the bishop of Rome as Peter's successor, as defined by the First Vatican Council.",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Christ alone is the head and foundation of the Church. Many Protestants read the “rock” of Matthew 16:18 as Peter's confession that Jesus is the Christ, or as Christ himself, and note that Paul calls Christ the only foundation (1 Corinthians 3:11). Even those who accept that Peter was a leader among the apostles deny that his role passed to the bishops of Rome. The Westminster Confession states: “There is no other head of the church but the Lord Jesus Christ. Nor can the pope of Rome, in any sense, be head thereof” (25.6).",
+          variations:
+            "Some Protestant scholars accept that the rock in Matthew 16 is Peter himself while denying any succession; Anglicans and Lutherans have engaged in dialogue with Catholics about a possible ministry of unity, while most evangelical churches reject the papacy outright.",
+          arguments: [
+            {
+              claim: "In Greek, Peter is “Petros” and rock is “petra”: different words, so Jesus built the Church on Peter's faith, not on Peter.",
+              response:
+                "Catholics reply that “Petros” is the masculine form of the word, used because it is a man's name, and that Jesus spoke Aramaic, in which Peter's name, Cephas (John 1:42), and “rock” are the same word. The Catechism also connects the rock with the faith Peter confessed: “Because of the faith he confessed Peter will remain the unshakeable rock of the Church” (CCC 552).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Christ is the only foundation (1 Corinthians 3:11); calling Peter the rock takes Christ's place.",
+              response:
+                "Scripture uses foundation imagery in more than one way: the Church is also “built upon the foundation of the apostles and prophets, with Christ Jesus himself as the capstone” (Ephesians 2:20). Catholics see Peter's role as a ministry entirely dependent on Christ, who remains the “living Stone” (CCC 552).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Nothing in Scripture says Peter's role would be passed on, or that it belongs to the bishop of Rome.",
+              response:
+                "Catholics point to the succession of the royal steward in Isaiah 22, to Christ's promise that the Church would last, and to early writers such as Irenaeus, who traced the succession of the bishops of Rome, and Cyprian, who saw in Peter the origin of the Church's unity (Against Heresies 3.3; The Unity of the Church 4). The historical argument is debated, as the Ravenna Document acknowledges.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Irenaeus of Lyons",
+          work: "Against Heresies, Book 3, Chapter 3 (c. 180)",
+          note: "Lists the bishops of Rome in succession from the apostles Peter and Paul as a witness to apostolic teaching.",
+          url: "https://www.newadvent.org/fathers/0103303.htm",
+        },
+        {
+          name: "St. Cyprian of Carthage",
+          work: "The Unity of the Church, Chapter 4 (c. 251)",
+          note: "Quotes Matthew 16:18–19 and John 21 and says Christ gave all the apostles equal power while setting forth unity “as beginning from one.”",
+          url: "https://www.newadvent.org/fathers/050701.htm",
+        },
+      ],
+    },
+  },
+  {
+    slug: "papal-infallibility",
+    title: "Papal Infallibility",
+    question: "What is papal infallibility?",
+    alsoKnownAs: ["Ex cathedra", "Infallibility", "Pastor Aeternus"],
+    category: "church",
+    keywords: ["papal infallibility", "is the pope infallible", "can the pope make mistakes", "ex cathedra", "infallible", "does the pope sin", "First Vatican Council", "Vatican I", "how many infallible statements", "Immaculate Conception", "Assumption"],
+    summary:
+      "Papal infallibility does not mean the pope cannot sin or never makes mistakes. It means that when the pope, as shepherd and teacher of all Christians, solemnly defines a doctrine of faith or morals to be held by the whole Church, the Holy Spirit protects that definition from error. Such definitions are rare. The same gift belongs to the bishops together with the pope, especially in an ecumenical council.",
+    explanation: [
+      "The definition: the First Vatican Council (1870) defined that when the Roman pontiff speaks ex cathedra, that is, when in his office as shepherd and teacher of all Christians he defines a doctrine of faith or morals to be held by the whole Church, he possesses the infallibility Christ willed his Church to have. This is a defined dogma (Pastor Aeternus, ch. 4; CCC 891).",
+      "What it is not: it is not sinlessness, not inspiration, and not a power to invent new teaching. The Council said the Holy Spirit was promised to Peter's successors “not so that they might, by his revelation, make known some new doctrine, but that, by his assistance, they might religiously guard and faithfully expound the revelation or deposit of faith transmitted by the apostles.” Most papal teaching is not infallible, though Catholics owe it “religious assent” (CCC 892).",
+      "Part of a larger gift: Christ willed to give his whole Church a share in his own infallibility, so that the People of God “unfailingly adheres” to the faith (CCC 889). The bishops united with the pope also teach infallibly when they define a doctrine together, above all in an ecumenical council, or when, dispersed throughout the world, they agree on a doctrine to be held definitively (CCC 891; Lumen Gentium 25). How doctrines are classified is explained in “What is a dogma?”",
+      "Examples: the two clearest papal definitions are the Immaculate Conception (1854) and the Assumption of Mary (1950) (CCC 491, 966).",
+      "Scripture: Catholics see the basis in Christ's prayer that Peter's faith would not fail (Luke 22:32), his promise that the Spirit would guide the apostles “to all truth” (John 16:13), and the Church as “the pillar and foundation of truth” (1 Timothy 3:15).",
+      "Other Christians: the Orthodox Churches do not accept the First Vatican Council's teaching on papal primacy and infallibility, and how that teaching should be understood in light of the first millennium is an open question in Catholic–Orthodox dialogue (Ravenna 45). Most Protestant churches hold that popes and councils can err.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "889–892", url: ccc("__P2A") },
+        { paragraphs: "85–87", url: ccc("__PM") },
+      ],
+      scripture: [
+        { passage: "Luke 22:31–32", url: bible("luke/22") },
+        { passage: "John 16:12–13", url: bible("john/16") },
+        { passage: "Matthew 16:18–19", url: bible("matthew/16") },
+        { passage: "1 Timothy 3:15", url: bible("1timothy/3") },
+      ],
+      documents: ["vatican-i-pastor-aeternus", "lumen-gentium", "professio-fidei"],
+    },
+    resources: ["ca-infallible-teachings", "ca-peter-and-the-papacy"],
+    related: ["what-is-the-magisterium", "what-is-dogma", "what-is-the-pope", "peter-the-rock"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "When the pope solemnly defines a doctrine of faith or morals for the whole Church (ex cathedra), he teaches infallibly by the assistance of the Holy Spirit; the same charism belongs to the college of bishops united with him. This was defined by the First Vatican Council and taught again by the Second.",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Only Scripture is infallible. Popes and councils are human and can err, and history shows that they have contradicted one another. The Westminster Confession says the pope cannot “in any sense” be head of the Church (25.6) and that the supreme judge of all controversies is “the Holy Spirit speaking in the Scripture” (1.10). Church teachers are to be tested by the Bible, as the Bereans tested even Paul (Acts 17:11).",
+          variations:
+            "Protestants generally agree in rejecting papal infallibility, though many value the ancient creeds and councils as faithful, if fallible, witnesses to Scripture.",
+          arguments: [
+            {
+              claim: "Some popes taught errors or lived scandalously, which disproves infallibility.",
+              response:
+                "Catholics agree that popes can sin gravely and can err in ordinary teaching or personal opinion. Infallibility is a narrow claim about solemn definitions of faith and morals for the whole Church, not about a pope's holiness or every statement he makes (Pastor Aeternus, ch. 4; CCC 891–892).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Infallibility was invented in 1870; the early Church knew nothing of it.",
+              response:
+                "Catholics hold that 1870 defined, rather than invented, the belief, which they see in the early Church's reliance on Rome to settle disputes and in the conviction that the Church cannot fail in the faith (Matthew 16:18; Luke 22:32). Historians on both sides debate how this developed, and the Ravenna Document notes that the bishop of Rome's prerogatives were understood in different ways even in the first millennium.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession"],
+        },
+      ],
+    },
+  },
+  {
+    slug: "apostolic-succession",
+    title: "Apostolic Succession",
+    question: "What is apostolic succession?",
+    alsoKnownAs: ["Succession of bishops", "Apostolicity", "Laying on of hands"],
+    category: "church",
+    keywords: ["apostolic succession", "bishops successors of the apostles", "laying on of hands", "ordination", "unbroken line", "valid orders", "Clement of Rome", "Irenaeus", "Timothy and Titus", "apostolic church"],
+    summary:
+      "Apostolic succession is the handing on of the apostles' mission and authority, through the laying on of hands, to the bishops who succeed them. Catholics believe it links today's bishops to the apostles in an unbroken line, so that the Church keeps the apostles' teaching, sacraments, and pastoral care until Christ returns. Many Protestants understand apostolic succession as faithfulness to the apostles' teaching rather than an unbroken line of bishops.",
+    explanation: [
+      "In the New Testament: the apostles appointed others to share and continue their work. When Judas died, they chose Matthias to take his office (Acts 1:20–26). Paul laid hands on Timothy, told him to entrust what he had heard to faithful people who could teach others, and told Titus to appoint presbyters in every town (2 Timothy 1:6; 2:2; Titus 1:5).",
+      "Why it matters: part of the apostles' office could not be passed on, being the chosen witnesses of the Resurrection, but part was permanent: their mission to teach, sanctify, and shepherd (CCC 860). So “the apostles left bishops as their successors,” so that the Gospel would be preserved “in a continuous line of succession until the end of time” (CCC 77, 861–862).",
+      "Early witnesses: around the year 96, St. Clement of Rome wrote that the apostles appointed bishops and deacons and gave instructions that when these died, “other approved men should succeed them in their ministry” (1 Clement 42, 44). Around 180, St. Irenaeus answered false teachers by pointing to the succession of bishops in the churches founded by the apostles (Against Heresies 3.3).",
+      "Succession and teaching go together: succession is not a guarantee of personal holiness, nor a mere list of names. It serves the faithful handing on of the apostles' teaching and sacraments (CCC 857). The Catholic Church recognizes valid apostolic succession, and so true sacraments, in the Orthodox Churches (CCC 838, 1399).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "77", url: ccc("__PK") },
+        { paragraphs: "838, 857–862", url: ccc("__P29") },
+        { paragraphs: "1399", url: ccc("__P42") },
+      ],
+      scripture: [
+        { passage: "Acts 1:15–26", url: bible("acts/1") },
+        { passage: "2 Timothy 1:6; 2:2", url: bible("2timothy/2") },
+        { passage: "Titus 1:5", url: bible("titus/1") },
+        { passage: "Luke 10:16", url: bible("luke/10") },
+      ],
+      documents: ["lumen-gentium", "dei-verbum"],
+    },
+    resources: ["ca-early-apostolic-succession", "ca-bishop-priest-deacon"],
+    related: ["bishops-priests-deacons", "peter-the-rock", "did-jesus-found-a-church", "what-is-the-magisterium"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "By divine institution the bishops have succeeded the apostles as pastors of the Church. Through the laying on of hands they receive and hand on the apostles' mission to teach, sanctify, and govern, in communion with the successor of Peter.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "What matters is succession in apostolic teaching: a church is apostolic when it holds the faith the apostles taught in Scripture and administers the sacraments rightly, whether or not its ministers stand in an unbroken line of bishops. The Augsburg Confession holds that, by divine right, bishops' authority consists in the ministry of the Word and sacraments, and that for the true unity of the Church “it is enough to agree concerning the doctrine of the Gospel and the administration of the Sacraments” (Articles VII, XXVIII).",
+          variations:
+            "Anglicans, and some Lutheran churches such as those in Scandinavia, have kept an episcopal succession and value it highly, while Reformed, Baptist, and most evangelical churches do not regard it as necessary. Some Protestant ordinations follow ancient patterns of laying on of hands.",
+          arguments: [
+            {
+              claim: "A line of bishops does not guarantee true doctrine; bishops in succession have taught error.",
+              response:
+                "Catholics agree that individual bishops can err and sin. Succession does not replace fidelity to the apostolic faith but serves it; the Church's teaching office is the servant of the word of God (CCC 86). Early writers like Irenaeus used succession precisely as a safeguard of apostolic teaching.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "The New Testament uses “bishop” and “presbyter” interchangeably and does not describe a single bishop over each church.",
+              response:
+                "Catholics acknowledge that New Testament terminology is fluid and that historians debate how quickly a single bishop presided in every church, as “What do bishops, priests, and deacons do?” notes. They hold that the apostles' authority was nonetheless handed on, as 1 Clement shows, and that the threefold ministry was recognized in the early second century.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["augsburg-confession"],
+        },
+      ],
+      fathers: [
+        {
+          name: "St. Clement of Rome",
+          work: "Letter to the Corinthians, Chapters 42 and 44 (c. 96)",
+          note: "Says the apostles appointed bishops and deacons and provided that other approved men should succeed them.",
+          url: "https://www.newadvent.org/fathers/1010.htm",
+        },
+        {
+          name: "St. Irenaeus of Lyons",
+          work: "Against Heresies, Book 3, Chapter 3 (c. 180)",
+          note: "Points to the succession of bishops from the apostles as the safeguard of apostolic teaching.",
+          url: "https://www.newadvent.org/fathers/0103303.htm",
+        },
+      ],
+    },
+  },
+  {
+    slug: "praying-directly-to-god",
+    title: "Why Not Pray Directly to God?",
+    question: "Why not just pray directly to God?",
+    alsoKnownAs: ["One mediator", "1 Timothy 2:5", "Intercession of the saints", "Praying to saints"],
+    category: "objections",
+    keywords: ["pray directly to God", "why pray to saints", "one mediator", "1 Timothy 2:5", "intercession", "do Catholics worship saints", "pray to Mary", "can the dead hear us", "communion of saints", "ask the saints to pray"],
+    summary:
+      "Catholics do pray directly to God: the Mass, the Our Father, and most Catholic prayer are addressed to him. Asking a saint to pray for you is like asking a friend to pray for you: it does not replace prayer to God or Christ's unique mediation, but shares in it. Because the saints are alive in Christ, Catholics believe they can still pray for us. Many Protestants hold that prayer should be addressed to God alone.",
+    explanation: [
+      "Christians pray for one another: just before calling Christ the “one mediator,” Paul asks that “supplications, prayers, petitions, and thanksgivings be offered for everyone” (1 Timothy 2:1–5). James says, “The fervent prayer of a righteous person is very powerful” (James 5:16). Such intercession “participates in Christ's” own intercession; it does not compete with it (CCC 2634–2635).",
+      "The saints are alive: God “is not God of the dead, but of the living, for to him all are alive” (Luke 20:38). In Revelation, the elders in heaven offer “gold bowls filled with incense, which are the prayers of the holy ones” (Revelation 5:8). The Church teaches that the saints in heaven “do not cease to intercede with the Father for us” through Christ (CCC 956), and that we can and should ask them to (CCC 2683).",
+      "Not worship: Catholics distinguish the worship owed to God alone from the honor given to the saints. Even Mary's role “in no way obscures or diminishes this unique mediation of Christ, but rather shows its power” (CCC 970).",
+      "A family: asking the saints' prayers expresses the communion of saints, the bond between all who belong to Christ in heaven and on earth, “so great a cloud of witnesses” (Hebrews 12:1).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "956", url: ccc("__P2B") },
+        { paragraphs: "969–970", url: ccc("__P2C") },
+        { paragraphs: "2634–2636", url: ccc("__P98") },
+        { paragraphs: "2683", url: ccc("__P9H") },
+      ],
+      scripture: [
+        { passage: "1 Timothy 2:1–5", url: bible("1timothy/2") },
+        { passage: "James 5:16", url: bible("james/5") },
+        { passage: "Luke 20:37–38", url: bible("luke/20") },
+        { passage: "Revelation 5:8", url: bible("revelation/5") },
+        { passage: "Hebrews 12:1", url: bible("hebrews/12") },
+      ],
+      documents: ["lumen-gentium"],
+    },
+    resources: ["ca-praying-to-the-saints", "spc-one-mediator"],
+    related: ["catholic-and-protestant-differences", "sola-scriptura", "who-is-jesus"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "Christ is the one mediator between God and humanity. The saints, alive in him, share in his intercession; asking for their prayers, like asking living Christians to pray for us, honors his mediation rather than replacing it.",
+        authority: "doctrine",
+      },
+      perspectives: [
+        {
+          tradition: "protestantism",
+          position:
+            "Because Christ is the “one mediator” (1 Timothy 2:5) and every believer has direct access to the Father through him (Hebrews 4:16), prayer should be addressed to God alone. The Westminster Confession teaches that worship is to be given to God “and to him alone; not to angels, saints, or any other creature,” and offered in the mediation of Christ alone (21.2). Scripture, on this view, gives no command or example of praying to the departed.",
+          variations:
+            "Protestants commonly ask living Christians to pray for them. Some Lutherans and Anglicans acknowledge that the saints in heaven pray for the Church in general while rejecting invoking them; most evangelicals reject the practice entirely.",
+          arguments: [
+            {
+              claim: "There is one mediator, Christ Jesus (1 Timothy 2:5); going through saints adds other mediators.",
+              response:
+                "Catholics agree that Christ alone is mediator in the unique sense of being both God and man and redeeming us. Asking others to pray for us does not add mediators in that sense; Paul urges intercession for all in the same passage (1 Timothy 2:1). Catholics argue that if asking a living friend to pray does not violate Christ's mediation, asking a saint does not either.",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "Scripture forbids contacting the dead, and nothing shows that the dead can hear our prayers.",
+              response:
+                "Catholics agree with Scripture's ban on necromancy, the attempt to summon or consult the dead. Asking a saint for prayer is a request to someone alive in Christ, not an attempt to obtain hidden knowledge. Catholics point to Revelation 5:8 and Hebrews 12:1 as signs that those in heaven are aware of and join in the prayers of the Church on earth.",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["westminster-confession"],
+        },
+      ],
+    },
+  },
 ];
