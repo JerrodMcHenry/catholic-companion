@@ -10,6 +10,7 @@ import { creationTopics } from "./creation";
 import { faithAndReason } from "./faith-and-reason";
 import { foundations } from "./foundations";
 import { god } from "./god";
+import { historyTopics } from "./history";
 import { jesus } from "./jesus";
 import { maryAndSaints } from "./mary-and-saints";
 import { mass } from "./mass";
@@ -37,6 +38,7 @@ export const topics = [
   ...churchYear,
   ...morality,
   ...faithAndReason,
+  ...historyTopics,
   ...apologeticsTopics,
 ];
 

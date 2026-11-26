@@ -775,6 +775,188 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `after-becoming-catholic` | **R:** obligations versus recommendations; the OCIA ritual's own text on mystagogy (OCIA 244–251) has not been read |
 | `easter-vigil` | Its statement that the Vigil satisfies the Easter obligation rests on canon 1248 §1 |
 
+## Batch 16: Church history and the Fathers (2026-11-25)
+
+The final Phase 7 batch. The inventory matched the master curriculum exactly: 7 topics, 3 debate sections, and 1 tradition page. No assignments were changed.
+
+**Batch 15 follow-ups:**
+
+- **Bookmark testing:** the Batch 15 test overwrote this browser's saved items for `localhost:3123`. From this batch on, browser tests back up existing storage and restore it afterwards.
+  - The Batch 16 test saved the current value to session storage, set test data, checked the Saved page, and restored the original. The restored value matched exactly (there were no saved items before the test).
+  - Screenshots now use a separate headless Chrome profile.
+- **Multimedia:** the 16 remaining items are listed in the Phase 8 checklist below. No further transcript attempts were made, and none of these items is described as verified.
+- **Prayer texts:** see the Phase 8 prayer-text table below.
+- **Pathway 8.4 reconciliation:**
+  - The Batch 15 report's 6/8 was correct, but its statement that "every launch topic the pathways reference exists" was wrong.
+  - The two missing launch topics were `fathers-on-the-eucharist` and `who-are-the-church-fathers`, both Batch 16 topics. The denominator of eight is right: six of the pathway's fourteen topics are approved P2 additions after launch.
+  - The pathway is now 8/8. No priorities were changed.
+- **Start Here:** the proposed improvements are deferred to Phase 8, and no interface changes were made.
+
+**Built:**
+
+- **Topics** (new file `content/topics/history.ts`, category Church History): `church-history-overview`, `early-church` (with debate), `council-of-nicaea`, `great-schism` (with debate), `protestant-reformation`, `who-are-the-church-fathers`, `fathers-on-the-eucharist`.
+- **Debate sections:**
+  - `early-church`: Latter-day Saints and Jehovah's Witnesses, presented separately, with a note on how the two differ, plus three Fathers (Clement, Ignatius, Irenaeus).
+  - `great-schism`: Eastern Orthodoxy (OCA; 1848 Encyclical of the Eastern Patriarchs).
+  - `trinity-in-scripture`: Jehovah's Witnesses, Islam, Judaism, and Latter-day Saints, each separate. The topic now states that it does not rely on the longer wording of 1 John 5:7–8 found in some older translations.
+- **Tradition page:** `latter-day-saints`, written from the Church's own official sources: the First Vision and the 1830 founding, Restoration, scripture, priesthood and keys, the Godhead, and eternal life and exaltation.
+  - It sets out the Catholic differences and the 2001 CDF response on baptism (answer "Negative"), with Ladaria's explanation, and contrasts it with the Church's recognition of other Christian baptisms.
+  - It states that it does not describe other groups tracing their origins to Joseph Smith.
+- **Distinctions maintained:**
+  - Documented events versus Catholic interpretation: for example, early bishops and Sunday Eucharist as evidence, against the claim of identity with the apostolic Church as a theological conclusion.
+  - Scholarly debate: the origin of the creed attributed to Constantinople in 381 (Tanner); how quickly church structures developed.
+  - The creed of 325 versus the Niceno-Constantinopolitan Creed. The topic states that Nicaea did not invent belief in Christ's divinity or set the canon.
+  - Lifting the 1054 excommunications versus full communion.
+  - Reformers who differed from one another (Luther, Zwingli, Calvin, the Anabaptists, the Anglican settlement), and abuses acknowledged by Trent itself.
+  - Individual Fathers versus their common witness ("unanimous consent," Trent Session 4).
+  - Patristic Eucharistic realism versus the later term "transubstantiation." Augustine is quoted in context, including "it must be spiritually understood."
+- **Other changes:**
+  - The curriculum script now prints "9 of 9 built." where it formerly printed "(all built remaining)."
+  - Two superseded search checks were updated: "Great Schism" now expects the new topic, and "Church history" expects the Church History category, with the overview topic checked separately.
+
+**Resources:**
+
+- **Added (31):**
+  - **Latter-day Saint sources (9):** Articles of Faith; Gospel Topics pages on Restoration, Apostasy, Book of Mormon, Godhead, Priesthood, and Eternal Life; the essay "Are 'Mormons' Christian?"; Doctrine and Covenants 130.
+  - **CDF (2):** the 2001 response and Ladaria's article.
+  - **Jehovah's Witnesses (3):** "Is God a Trinity?" and two Watchtower articles on apostasy.
+  - **Judaism (1):** Maimonides, Foundations of the Torah 1:7 (Sefaria).
+  - **Fathers (7):** Clement, Ignatius (Smyrnaeans), Justin, Irenaeus (3.3 and 4.18), Cyril, Augustine (Psalm 99).
+  - **Councils (2):** Nicaea 325 and Constantinople 381 (Tanner, at Papal Encyclicals Online).
+  - **Reformation (2):** Luther's Ninety-five Theses and the Schleitheim Confession.
+  - **Catholic Encyclopedia (2):** "Fathers of the Church" and "Doctors of the Church."
+  - **Britannica (3):** Reformation, First Council of Nicaea, East-West Schism.
+  - Reused: the Augsburg and Westminster confessions, Trent Sessions 4, 6, 22, and 25, the Joint Declaration, Ut Unum Sint, the 1965 Joint Declaration, the OCA, the 1848 Encyclical, Tacitus, and the Qur'an.
+- **Removed:** none. **Diversity:** Catholic documents, early Christian primary texts, Orthodox, Lutheran, Reformed, and Anabaptist primary sources, official Latter-day Saint and Jehovah's Witness sources, Jewish and Islamic texts, and Britannica for scholarly framing.
+- **Not used:**
+  - Britannica, the Anabaptist wiki, and GAMEO showed bot challenges to scripts. Britannica loaded normally in Chrome; the other two were not bypassed.
+  - The Fordham copy of the Ninety-five Theses returned an error, so luther.de was used.
+  - The Chabad page on the Thirteen Principles did not render.
+
+**Verification (Batch 16):**
+
+- **Primary texts read in context:**
+  - 1 Clement 42, 44.
+  - Ignatius, Smyrnaeans 7–8, and Ephesians (greeting and chapter 7).
+  - Justin, First Apology 66–67.
+  - Irenaeus, Against Heresies 3.3, 4.18.5, and 5.2.
+  - Cyril, Catechetical Lecture 22.1, 22.3, and 22.9.
+  - Augustine, Exposition on Psalm 99.8.
+  - The creed and canons of 325 and the creed of 381, with Tanner's introductions.
+  - Luther's theses; Augsburg Confession article 4; the Schleitheim Confession; Trent Sessions 4 and 25.
+- **Orthodox:** OCA, "The Great Schism" and "The Pope & Christian Unity"; the 1965 Joint Declaration, sections 1–5.
+- **Latter-day Saints:** all nine official pages, read in full or in relevant part; the CDF response and Ladaria's article.
+- **Jehovah's Witnesses:** Lesson 15, "What Is the Holy Spirit?", "Was the Word God or a god?", "Is God a Trinity?", and the two Watchtower articles.
+- **Islam and Judaism:** Qur'an 4:171 and 112 (Quran.com, browser); Mishneh Torah, Foundations of the Torah 1:7 (Sefaria, browser).
+- **Scholarly framing:** Britannica's articles on the Reformation, Nicaea, and the East-West Schism, read in Chrome.
+- **Catechism:** quotations checked against the vatican.va cache. All 414 linked references checked (0 problems).
+- **Scripture:** NABRE checked in a browser for John 4:24, Colossians 1:16, Matthew 13:30, and 1 John 5:7–8.
+- **Final Phase 7 checks:**
+  - 168 of 168 P1 topics; 37 of 37 debate sections (0 partial); 9 of 9 tradition pages; all six pathways complete for launch (8.4 at 8/8, with its six P2 topics after launch).
+  - Deferred Hindu, Buddhist, and Sikh formal perspectives still reported; P2 and P3 inventories unchanged.
+  - All 41 Mass parts accessible and in order.
+  - Every topic's related links, resources, documents, and perspective sources resolve; no resource or topic IDs removed in this batch.
+- **Search:** 233 of 233 regression checks pass (17 new, 2 updated).
+- **Build:** 201 static pages; 2,457 internal links, 0 problems. 334 resources, all with a subject.
+- **Accessibility:** 18 pages audited: 0 issues. Keyboard order and focus outlines checked.
+- **Layout:** screenshots at 320 px (light and dark), 390 px (dark), and 1280 px (light and dark).
+
+| Topic / debate | Open questions for review |
+|---|---|
+| `early-church` | **R:** the continuity argument; fairness of the Latter-day Saint and Jehovah's Witness summaries |
+| `great-schism` | **R:** balance of the account; the Orthodox perspective (Orthodox reviewers suggested) |
+| `protestant-reformation` | **R:** fairness to each reformer; the description of Catholic reform |
+| `trinity-in-scripture` | **R:** all four perspectives |
+| `latter-day-saints` | **R:** accuracy as Latter-day Saints would describe themselves; the baptism paragraph |
+| `fathers-on-the-eucharist` | The Augustine passage and its presentation |
+
+## Phase 8 review requirements (consolidated)
+
+Phase 7 is implemented. Implementation is not release readiness: none of the items below has been completed, and no topic has received independent theological review. The detailed pending list that follows remains the record of specific source items.
+
+**1. Theological and doctrinal review** (**R** topics):
+
+- **Sacraments and salvation:** the Mass as sacrifice and transubstantiation; grave matter and culpability, and canon 915; the necessity of Baptism and who may receive Communion; justification, faith and works; salvation outside the Church; hell; purgatory.
+- **Church authority and Mary:** papal primacy and infallibility; the Marian dogmas.
+- **Human origins and other religions:** original sin and human origins; salvation and religious pluralism.
+- **Moral life:** abortion (including complex medical situations and direct abortion); sexuality and chastity; same-sex attraction and culpability; contraception; human dignity.
+- **Catholic life:** fasting and abstinence; the obligations in `after-becoming-catholic`.
+- **Church history:** the Trinity perspectives and the Batch 16 history topics.
+
+**2. Historical and comparative religion review:**
+
+- Fairness of every tradition summary and debate perspective: Protestant (Evangelical, Lutheran, Reformed, Anabaptist), Eastern Orthodox, Jewish, Islamic, Jehovah's Witness, Latter-day Saint, Hindu, Buddhist, Sikh, atheist and agnostic.
+- The Batch 16 history topics, preferably by a historian.
+- Reviewers from the traditions concerned where possible, including Orthodox and Latter-day Saint readers.
+
+**3. Source and citation verification:**
+
+- The pending list below: printed Missal texts and rubrics, the OCIA ritual (dismissal, rites, mystagogy), Lectionary translation and acclamations, the 2014 letter on the sign of peace, USCCB Communion guidelines, the Confirmation age norm, Anglican and Lutheran canon positions, GOARCH sources, Josephus, and Evangelicals and Catholics Together.
+- Sites that need a browser for link checks: usccb.org, bible.usccb.org, Britannica, Sefaria, Quran.com.
+- Third-party hosts of official texts to re-check before launch: Catholic Culture (General Norms), the Liturgy Office (Paschale Solemnitatis), and Papal Encyclicals Online (Tanner).
+
+**4. Multimedia review.** No item's content has been reviewed. Each needs a person to watch or listen in full:
+
+| Resource ID | Title | Publisher | URL | Topics | Existing evidence | Required action |
+|---|---|---|---|---|---|---|
+| `video-where-do-i-start` | How to Become Catholic: Where Do I Start? | Catholic Central | https://www.youtube.com/watch?v=Hq-N-ImjTvM | `how-to-become-catholic` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-mass-explained-arlington` | The Mass Explained: All Parts | Catholic Diocese of Arlington | https://www.youtube.com/watch?v=NQfiwW52tmI | `what-happens-at-mass`, `first-time-at-mass` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-mass-pitre` | The Mass Explained: Roman Catholic Worship in the Bible and Tradition | Dr. Brant Pitre, Catholic Productions | https://www.youtube.com/watch?v=6luvJekWHxc | `what-happens-at-mass`, `mass-in-scripture` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-barron-real-presence` | The Real Presence of Jesus in the Eucharist | Bishop Robert Barron, Word on Fire | https://www.youtube.com/watch?v=UzCPu_lEhe8 | `what-is-the-eucharist`, `real-presence`, `mass-consecration` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-akin-white-sola-scriptura` | Jimmy Akin vs. James White: Sola Scriptura | Jimmy Akin | https://www.youtube.com/watch?v=5Cl9n5tqFcc | `sola-scriptura` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-barron-oconnor-evil` | Bishop Barron vs. Alex O’Connor: God, Evil and the Covid Pandemic | Premier Unbelievable? | https://www.youtube.com/watch?v=3v853kYz5ZY | `problem-of-evil` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-why-jesus-had-to-die` | Why Jesus Had to Die to Save Us | Dr. Edward Sri, Ascension | https://www.youtube.com/watch?v=V-enBTEqagE | `why-did-jesus-die` | Listing only: YouTube title and channel (Batch 1) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-barron-resurrection` | Bishop Barron on the Resurrection of Jesus | Bishop Robert Barron, Word on Fire | https://www.youtube.com/watch?v=SEp8IPJ-YZE | `resurrection` | Listing only: YouTube title and channel (Batch 1) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-aquinas101-faith-reason` | St. Thomas Aquinas on Faith and Reason (Aquinas 101) | Thomistic Institute (Aquinas 101) | https://www.youtube.com/watch?v=sfqgGRNr2ws | `what-is-faith` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-springfield-receiving-communion` | The Do's and Don'ts of Receiving the Eucharist | Diocese of Springfield in Illinois | https://www.youtube.com/watch?v=Re_pDFXUt8E | `how-to-receive-communion` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-dominicast-communion` | How to Give and Receive Holy Communion | Dominicast | https://www.youtube.com/watch?v=aSz8FR3qfok | `how-to-receive-communion`, `mass-communion` | Unknown: no method recorded | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-ascension-mortal-venial` | Mortal vs. Venial Sin | Fr. Mike Schmitz, Ascension | https://www.youtube.com/watch?v=eGghX65-9Zg | `mortal-and-venial-sin` | Listing only: YouTube title and channel (Batch 5) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `video-ascension-need-confession` | Do I Need to Go to Confession? | Fr. Mike Schmitz, Ascension | https://www.youtube.com/watch?v=7_puhgEzx9g | `confession`, `how-to-go-to-confession` | Listing only: YouTube title and channel (Batch 5) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `ascension-why-confess-to-a-priest` | Why Confess My Sins to a Priest? | Fr. Mike Schmitz, Ascension | https://ascensionpress.com/blogs/podcasts/why-confess-my-sins-to-a-priest | `why-confess-to-a-priest` | Description only: page metadata (Batch 5) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `ascension-bible-in-a-year` | The Bible in a Year | Fr. Mike Schmitz, Ascension | https://app.ascensionpress.com/podcasts/bible | `what-is-the-bible`, `how-to-read-the-bible`, `where-to-start-reading-the-bible` | Listing only: page metadata (Batch 7) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+| `ascension-purgatory` | What You Should Know About Purgatory | Fr. Mike Schmitz, Ascension | https://ascensionpress.com/blogs/podcasts/what-you-should-know-about-purgatory | `purgatory` | Description only: episode page opening text (Batch 9) | Watch or listen in full; check accuracy against the linked topics; keep, replace, or remove |
+
+**5. Prayer-text and reproduction review (D6).**
+
+Full prayer texts are reproduced only in `content/topics/prayer.ts`, quoted from Appendix A of the Compendium of the Catechism (vatican.va):
+
+| Text | Topic(s) |
+|---|---|
+| Our Father | `our-father` |
+| Hail Mary | `hail-mary` |
+| Glory Be | `basic-catholic-prayers` |
+| Sign of the Cross | `sign-of-the-cross` (also in `mass-sign-of-the-cross`, as the words at Mass) |
+
+- **Textual accuracy:** each text matches the Compendium as published on vatican.va (checked in Batch 15).
+- **Reproduction permission, which is a separate question:**
+  - These are traditional texts, but the Compendium's English edition is copyrighted (Libreria Editrice Vaticana).
+  - Whether quoting these short traditional prayers needs permission has not been confirmed.
+  - Brief people's responses at Mass, from the 2010 English translation (ICEL), are quoted under the §5.8 policy (short responses quoted, longer prayers linked); the extent of permitted quotation should be confirmed with the copyright holders.
+  - The council creeds are quoted in short excerpts from Tanner's published translation, whose reuse terms have not been checked.
+- **Unresolved:** the copyright status and permissions for each of these; whether to display the full prayer texts or link to the Compendium (D6).
+
+**6. Pastoral and sensitive-content review:**
+
+- Abortion and the Project Rachel paragraph, sexuality, the returning-Catholic and mortal-sin pages, fasting and health, the prayer-and-health note, after-becoming-Catholic, and hell and judgment.
+- Pages that mention other religions and churches, for respectful language.
+
+**7. Navigation and learning pathway usability:**
+
+- The deferred Start Here recommendations: show the approved pathways as lists, link `after-becoming-catholic` at the end of the OCIA path, and add a "next steps" link from `how-to-become-catholic`.
+- Usability testing with newcomers, OCIA participants, and first-time Mass visitors.
+
+**8. Real-device accessibility and performance:**
+
+- Screen readers (VoiceOver, TalkBack), real phones at 320–390 px, and reduced motion and zoom.
+- The search payload and relevance assessment due at about 250 topics; the launch scope is now 168 topics and 334 resources.
+
+**9. Production readiness:**
+
+- A final link check across all 334 resources, in a browser where needed.
+- Content freeze and versioning, error monitoring, and the deployment and hosting configuration.
+- Privacy wording for bookmarks stored in the browser.
+- Sign-off by the review team on items 1–6.
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.

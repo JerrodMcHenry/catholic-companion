@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–15 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions; Moral life; Prayer, the Church year, and Catholic life) are built: 155 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–16 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions; Moral life; Prayer, the Church year, and Catholic life; Church history and the Fathers) are built: 162 new topics. All 168 P1 topics, all 37 required debate sections, and all 9 required tradition pages are implemented; implementation is not the same as release readiness, which awaits the Phase 8 reviews listed in `docs/content-log.md`, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -450,21 +450,21 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `church-history-overview` | What are the big chapters of Church history? | | B | P1 | `early-church` | |
-| `early-church` | What was the early Church like? | Apostolic age | B | P1 | `who-are-the-church-fathers` | D: Latter-day Saints, Jehovah's Witnesses (see `great-apostasy`) |
+| `church-history-overview` ✓ | What are the big chapters of Church history? | | B | P1 | `early-church` | |
+| `early-church` ✓ | What was the early Church like? | Apostolic age | B | P1 | `who-are-the-church-fathers` | D: Latter-day Saints, Jehovah's Witnesses (see `great-apostasy`) |
 | `persecution-and-martyrs` | Why were early Christians persecuted? | Martyrs | B | P2 | `early-church` | |
 | `constantine` | Did Constantine change Christianity? | Edict of Milan | I | P2 | `council-of-nicaea` | D: Protestantism, atheism |
-| `council-of-nicaea` | What happened at the Council of Nicaea? | Arianism | I | P1 | `divinity-of-jesus` | |
+| `council-of-nicaea` ✓ | What happened at the Council of Nicaea? | Arianism | I | P1 | `divinity-of-jesus` | |
 | `council-of-ephesus` | What happened at the Council of Ephesus? | Theotokos, Nestorius, 431 | I | P2 | `mother-of-god` | |
 | `council-of-chalcedon` | What happened at the Council of Chalcedon? | Two natures of Christ, 451 | I | P2 | `jesus-fully-human`, `chalcedon-and-oriental-orthodoxy` | |
 | `early-heresies` | What were the early heresies? | Arianism, Gnosticism, Nestorianism | I | P2 | `ecumenical-councils` | |
 | `monasteries-and-civilization` | How did monasteries shape Western civilization? | St. Benedict | I | P3 | `religious-orders` | |
-| `great-schism` | Why did Catholics and Orthodox split? | East–West Schism, 1054 | I | P1 | `filioque` | D: Eastern Orthodoxy |
+| `great-schism` ✓ | Why did Catholics and Orthodox split? | East–West Schism, 1054 | I | P1 | `filioque` | D: Eastern Orthodoxy |
 | `crusades` | What were the Crusades? |  | I | P2 | `religion-and-violence` | D: atheism, Islam |
 | `inquisition` | What was the Inquisition? |  | I | P2 | `religious-freedom` | D: atheism, Protestantism |
 | `galileo` | What really happened with Galileo? | | I | P2 | `faith-and-science` | D: atheism |
 | `medieval-church` | What was the Church like in the Middle Ages? | Scholasticism, universities | I | P3 | `thomas-aquinas` | |
-| `protestant-reformation` | What was the Protestant Reformation? | Reformation | B | P1 | `council-of-trent` | |
+| `protestant-reformation` ✓ | What was the Protestant Reformation? | Reformation | B | P1 | `council-of-trent` | |
 | `council-of-trent` | What was the Council of Trent? | Catholic Reformation | I | P2 | `protestant-reformation` | |
 | `vatican-i` | What was the First Vatican Council? | Pastor Aeternus, Dei Filius, 1870 | I | P2 | `papal-infallibility`, `knowing-god-by-reason` | D: Eastern Orthodoxy, Protestantism |
 | `formation-of-the-canon` | How was the list of books in the Bible decided? | Biblical canon, councils of Hippo and Carthage, Trent | I | P2 | `catholic-bible-books`, `septuagint` | D: Protestantism |
@@ -480,7 +480,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `who-are-the-church-fathers` | Who are the Church Fathers? | Patristics | B | P1 | `fathers-on-the-eucharist` | |
+| `who-are-the-church-fathers` ✓ | Who are the Church Fathers? | Patristics | B | P1 | `fathers-on-the-eucharist` | |
 | `doctors-of-the-church` | What is a Doctor of the Church? | | B | P2 | `thomas-aquinas` | |
 | `apostolic-fathers` | Who were the Apostolic Fathers? | Clement, Ignatius, Polycarp | I | P2 | `early-church` | |
 | `didache` | What is the Didache? | Teaching of the Twelve Apostles | I | P3 | `apostolic-fathers` | |
@@ -491,7 +491,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `jerome` | Who was St. Jerome? | Vulgate | I | P3 | `catholic-bible-books` | |
 | `thomas-aquinas` | Who was St. Thomas Aquinas? | Summa Theologiae | B | P2 | `five-ways` | |
 | `women-doctors-of-the-church` | Who are the women Doctors of the Church? | Teresa of Ávila, Catherine of Siena, Thérèse of Lisieux, Hildegard of Bingen | B | P3 | `doctors-of-the-church` | |
-| `fathers-on-the-eucharist` | What did the early Christians believe about the Eucharist? | | I | P1 | `real-presence` | Supports D on `real-presence` |
+| `fathers-on-the-eucharist` ✓ | What did the early Christians believe about the Eucharist? | | I | P1 | `real-presence` | Supports D on `real-presence` |
 | `fathers-on-the-papacy` | What did the early Church believe about Peter and Rome? | | A | P2 | `peter-the-rock` | Supports D; R |
 | `where-to-start-with-the-fathers` | Where should I start reading the Church Fathers? | | B | P2 | `who-are-the-church-fathers` | |
 
@@ -850,7 +850,7 @@ Primary sources are **named** here; their URLs are located and verified in the b
 | Eastern Orthodoxy (`eastern-orthodoxy`) ✓ | Christian | P1 | Sacraments, apostolic succession, Mary, liturgy, the Fathers | Papal primacy and infallibility, filioque, purgatory (as defined), Immaculate Conception | `peter-the-rock`, `papal-infallibility`, `filioque`, `great-schism`, `purgatory` | Divine Liturgy of St. John Chrysostom; statements of the Ecumenical Patriarchate | Orientalium Ecclesiarum†; Ut Unum Sint† |
 | Oriental Orthodoxy (`oriental-orthodoxy`) | Christian | P2 | Nearly all doctrine; common Christological declarations | Council of Chalcedon terminology, papacy | `chalcedon-and-oriental-orthodoxy`, `peter-the-rock` | Common declarations (Paul VI–Shenouda III, 1973; John Paul II–Ignatius Zakka I, 1984) | |
 | Assyrian Church of the East (`assyrian-church-of-the-east`) | Christian | P3 | Sacraments, apostolic succession | Ephesus terminology, papacy | `mother-of-god` | Common Christological Declaration (1994) | |
-| Latter-day Saints (`latter-day-saints`) | Christian-identified | P1 | Jesus as Savior, family, moral life | Nature of God, Trinity, additional scripture, Great Apostasy, validity of baptism | `trinity-in-scripture`, `great-apostasy`, `book-of-mormon` | Book of Mormon; Articles of Faith (churchofjesuschrist.org) | CDF response on LDS baptism (2001; URL to locate) |
+| Latter-day Saints (`latter-day-saints`) ✓ | Christian-identified | P1 | Jesus as Savior, family, moral life | Nature of God, Trinity, additional scripture, Great Apostasy, validity of baptism | `trinity-in-scripture`, `great-apostasy`, `book-of-mormon` | Book of Mormon; Articles of Faith (churchofjesuschrist.org) | CDF response on LDS baptism (2001; URL to locate) |
 | Jehovah's Witnesses (`jehovahs-witnesses`) ✓ | Christian-identified | P1 | Scripture, moral life, God's name honored | Divinity of Christ, Trinity, soul, hell, authority | `divinity-of-jesus`, `trinity-in-scripture`, `hell`, `human-soul`, `who-goes-to-heaven` | jw.org† | |
 | Seventh-day Adventism (`seventh-day-adventism`) | Christian | P3 | Trinity, Christ, Scripture | Sabbath, soul, end times | `why-go-to-mass-on-sunday`, `human-soul` | 28 Fundamental Beliefs | |
 | Judaism (`judaism`) ✓ | Religion | P1 | The God of Abraham, the Hebrew Scriptures, the moral law, the Psalms | Jesus as Messiah and Son of God, the New Covenant | `jesus-the-messiah`, `prophecy-fulfilled`, `old-covenant` | Tanakh (Sefaria); Maimonides' Thirteen Principles | Nostra Aetate† 4; CCC 839–840 |
@@ -939,10 +939,10 @@ Generated from the **D** notes in the inventory (and the Traditions column of §
 <!-- generated: debate-index -->
 
 - **Protestantism** (44): `are-catholics-christians` ✓, `catholic-bible-books` ✓, `septuagint`, `did-the-church-hide-the-bible`, `did-jesus-found-a-church` ✓, `sola-scriptura` ✓, `peter-the-rock` ✓, `papal-infallibility` ✓, `apostolic-succession` ✓, `sacraments-in-scripture`, `infant-baptism` ✓, `real-presence` ✓, `mass-as-sacrifice` ✓, `who-can-receive-communion` ✓, `why-confess-to-a-priest` ✓, `priestly-celibacy`, `women-and-the-priesthood`, `why-honor-mary` ✓, `mother-of-god` ✓, `immaculate-conception` ✓, `perpetual-virginity`, `assumption`, `praying-to-saints` ✓, `relics`, `statues-and-images` ✓, `contraception`, `faith-and-works` ✓, `assurance-of-salvation`, `purgatory` ✓, `indulgences`, `end-times`, `constantine`, `inquisition`, `vatican-i`, `formation-of-the-canon`, `mass-in-scripture` ✓, `call-no-man-father`, `repetitive-prayer`, `revelation-and-rome`, `is-catholicism-pagan`, `church-wealth`, `praying-directly-to-god` ✓, `once-saved-always-saved`, `predestination`
-- **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock` ✓, `papal-infallibility` ✓, `immaculate-conception` ✓, `purgatory` ✓, `great-schism`, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
+- **Eastern Orthodoxy** (11): `filioque`, `peter-the-rock` ✓, `papal-infallibility` ✓, `immaculate-conception` ✓, `purgatory` ✓, `great-schism` ✓, `vatican-i`, `primacy-and-supremacy`, `essence-energies`, `orthodox-sacraments`, `catholic-orthodox-reunion`
 - **Oriental Orthodoxy** (1): `chalcedon-and-oriental-orthodoxy`
-- **Latter-day Saints** (4): `trinity-in-scripture` ✓, `early-church`, `great-apostasy`, `book-of-mormon`
-- **Jehovah's Witnesses** (9): `trinity-in-scripture` ✓, `who-is-the-holy-spirit` ✓, `divinity-of-jesus` ✓, `human-soul`, `st-michael`, `hell` ✓, `early-church`, `great-apostasy`, `who-goes-to-heaven`
+- **Latter-day Saints** (4): `trinity-in-scripture` ✓, `early-church` ✓, `great-apostasy`, `book-of-mormon`
+- **Jehovah's Witnesses** (9): `trinity-in-scripture` ✓, `who-is-the-holy-spirit` ✓, `divinity-of-jesus` ✓, `human-soul`, `st-michael`, `hell` ✓, `early-church` ✓, `great-apostasy`, `who-goes-to-heaven`
 - **Judaism** (7): `trinity-in-scripture` ✓, `prophecy-fulfilled`, `septuagint`, `statues-and-images` ✓, `old-covenant`, `jewish-objections-to-jesus`, `isaiah-53`
 - **Islam** (10): `trinity-in-scripture` ✓, `divinity-of-jesus` ✓, `resurrection` ✓, `was-jesus-crucified` ✓, `statues-and-images` ✓, `crusades`, `muhammad-and-the-quran` ✓, `bible-corruption-claims`, `jesus-in-the-quran`, `muhammad-in-the-bible`
 - **Hinduism** (4): `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓, `reincarnation`, `yoga-and-meditation`
@@ -1016,7 +1016,7 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 `first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
 
 ### 8.4 Practicing Catholic going deeper (14)
-`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` ✓ → `who-are-the-church-fathers` → `thomas-aquinas`
+`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` ✓ → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` ✓ → `who-are-the-church-fathers` ✓ → `thomas-aquinas`
 
 At launch this pathway is the eight topics that will exist then; `development-of-doctrine`, `kinds-of-prayer`, `liturgy-of-the-hours`, `virtues`, `natural-law`, and `thomas-aquinas` stay P2 and join it after launch. If the pathway is shown in the app before then, it lists only built topics, so there are no dead links or partial-completion counts.
 
@@ -1126,7 +1126,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 13 | Faith, reason, creation, and other religions | 0 | 10 | `why-did-god-create-us` ✓, `creation` ✓, `creation-and-evolution` ✓, `original-sin` ✓, `does-god-exist` ✓, `faith-and-science` ✓, `problem-of-evil` ✓, `catholics-and-muslims` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ |
 | 14 | Moral life and social teaching | 0 | 8 | `how-catholics-decide-right-and-wrong` ✓, `conscience` ✓, `ten-commandments` ✓, `what-is-sin` ✓, `human-life-dignity` ✓, `abortion` ✓, `sexuality` ✓, `what-is-catholic-social-teaching` ✓ |
 | 15 | Prayer, the Church year, and Catholic life | 0 | 16 | `what-is-prayer` ✓, `how-to-pray` ✓, `basic-catholic-prayers` ✓, `our-father` ✓, `hail-mary` ✓, `sign-of-the-cross` ✓, `the-rosary` ✓, `liturgical-year` ✓, `advent` ✓, `lent` ✓, `ash-wednesday` ✓, `holy-week` ✓, `easter-vigil` ✓, `holy-days-of-obligation` ✓, `fasting-and-abstinence` ✓, `after-becoming-catholic` ✓ |
-| 16 | Church history and the Fathers | 7 | 0 | `church-history-overview`, `early-church`, `council-of-nicaea`, `great-schism`, `protestant-reformation`, `who-are-the-church-fathers`, `fathers-on-the-eucharist` |
+| 16 | Church history and the Fathers | 0 | 7 | `church-history-overview` ✓, `early-church` ✓, `council-of-nicaea` ✓, `great-schism` ✓, `protestant-reformation` ✓, `who-are-the-church-fathers` ✓, `fathers-on-the-eucharist` ✓ |
 
 <!-- /generated: batches -->
 
@@ -1143,7 +1143,7 @@ Debate sections extend existing topics and tradition pages support them; neither
 | 11 | `peter-the-rock` ✓, `papal-infallibility` ✓, `immaculate-conception` ✓, `purgatory` ✓, `statues-and-images` ✓ | `eastern-orthodoxy` ✓, `judaism` ✓ |
 | 12 | `why-honor-mary` ✓, `mother-of-god` ✓, `praying-to-saints` ✓, `faith-and-works` ✓, `who-is-the-holy-spirit` ✓, `hell` ✓, `did-jesus-exist` ✓, `resurrection` ✓, `was-jesus-crucified` ✓ | — |
 | 13 | `does-god-exist` ✓, `faith-and-science` ✓, `creation-and-evolution` ✓, `salvation-of-non-christians` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ | — |
-| 16 | `early-church`, `great-schism`, `trinity-in-scripture` | `latter-day-saints` |
+| 16 | `early-church` ✓, `great-schism` ✓, `trinity-in-scripture` ✓ | `latter-day-saints` ✓ |
 
 **Deferred after launch (approved):** formal perspectives for `hinduism`, `buddhism`, `sikhism`. The launch topics that name them (`salvation-of-non-christians`, `do-all-religions-lead-to-god`) must introduce each in prose, written in Batch 13 with those debate sections.
 
@@ -1190,8 +1190,8 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 7 |
 | 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 7 |
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
-| 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 0 |
-| 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 0 |
+| 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 5 |
+| 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 2 |
 | 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 1 |
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 7 |
@@ -1200,7 +1200,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
 | 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
-| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **161** |
+| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **168** |
 
 <!-- /generated: counts -->
 

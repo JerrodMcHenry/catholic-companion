@@ -69,7 +69,7 @@ export const god: Topic[] = [
       "The Holy Spirit: Peter tells Ananias that in lying to the Holy Spirit he has lied “not to human beings, but to God” (Acts 5:3–4). Jesus promises the Spirit as “another Advocate” who will teach the disciples (John 14:16, 26). See “Who is the Holy Spirit?”",
       "Father, Son, and Spirit together: Jesus sends the apostles to baptize “in the name of the Father, and of the Son, and of the holy Spirit” (Matthew 28:19), one name for three. Paul blesses the Corinthians with “the grace of the Lord Jesus Christ and the love of God and the fellowship of the holy Spirit” (2 Corinthians 13:13), words the Church still uses at Mass (CCC 249).",
       "Revealed in Christ: the Catechism says God left “traces of his Trinitarian being” in creation and the Old Testament, but his inmost being as Trinity was “inaccessible to reason alone or even to Israel's faith” before the Incarnation and the sending of the Spirit (CCC 237).",
-      "Words for the mystery: to articulate this faith, the Church “had to develop her own terminology” with terms such as “substance,” “person,” and “relation” (CCC 251), especially at the Councils of Nicaea (325) and Constantinople (381). Jews, Muslims, Jehovah's Witnesses, and Latter-day Saints read these passages differently; their perspectives are planned for this topic's questions-and-objections section.",
+      "Words for the mystery: to articulate this faith, the Church “had to develop her own terminology” with terms such as “substance,” “person,” and “relation” (CCC 251), especially at the Councils of Nicaea (325) and Constantinople (381). Jews, Muslims, Jehovah's Witnesses, and Latter-day Saints read these passages differently; their views are set out below. This page does not rely on the longer wording of 1 John 5:7–8 that some older translations contain; the NABRE reads only, “So there are three that testify, the Spirit, the water, and the blood.”",
     ],
     teaching: {
       catechism: [
@@ -87,6 +87,85 @@ export const god: Topic[] = [
     },
     resources: ["ca-explaining-the-trinity", "ca-early-church-trinity"],
     related: ["what-is-the-trinity", "divinity-of-jesus", "who-is-the-holy-spirit", "who-is-god"],
+    debate: {
+      catholicPosition: {
+        summary:
+          "The Catholic Church professes one God in three really distinct persons, Father, Son, and Holy Spirit, each of whom is God whole and entire; the persons are distinguished by their relations of origin, not by dividing the one divine nature (CCC 253–255). This is a dogma of faith, revealed in Scripture and defined in terms developed at the councils of Nicaea and Constantinople.",
+        authority: "dogma",
+      },
+      perspectives: [
+        {
+          tradition: "jehovahs-witnesses",
+          position:
+            "Jehovah's Witnesses teach that God, Jehovah, is not a Trinity. Jesus “was created by Jehovah God before everything else,” which is why he is called “the firstborn of all creation,” and the holy spirit is “God's power in action, his active force,” not a person. They translate John 1:1 as “the Word was a god.”",
+          arguments: [
+            {
+              claim: "Scripture calls Jesus “the firstborn of all creation” (Colossians 1:15), so he is a creature.",
+              response:
+                "The next verse says that in him “were created all things in heaven and on earth” (Colossians 1:16), placing the Son on the Creator's side. Catholics read “firstborn” as a title of preeminence, as when God calls Israel his firstborn (Exodus 4:22).",
+              authority: "apologetic-argument",
+            },
+            {
+              claim: "John 1:1 should read “the Word was a god.”",
+              response:
+                "Most translations render “the Word was God,” and the Gospel ends with Thomas confessing Jesus as “My Lord and my God!” (John 20:28). A second, lesser god would also conflict with Scripture's insistence that there is only one God (Deuteronomy 6:4).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["jw-trinity", "jw-who-is-jesus", "jw-holy-spirit", "jw-john-1-1"],
+        },
+        {
+          tradition: "islam",
+          position:
+            "The Qur'an affirms God's absolute oneness: “He is Allah—One ˹and Indivisible˺ … He has never had offspring, nor was He born” (Qur'an 112). It addresses Christians directly: “do not say, ‘Trinity.’ Stop!—for your own good. Allah is only One God. Glory be to Him! He is far above having a son!” (Qur'an 4:171).",
+          arguments: [
+            {
+              claim: "Calling Jesus the Son of God, or speaking of three, compromises God's oneness.",
+              response:
+                "Christians agree that God is one and do not confess three gods (CCC 253). “Son” does not mean that God had offspring in a physical sense; it names an eternal relation within the one God (CCC 254–255).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["quran-112", "quran-4-171", "quran-5-116"],
+        },
+        {
+          tradition: "judaism",
+          position:
+            "Judaism's central confession is the Shema: “Hear O' Israel, the Lord is our God, the Lord is One.” Maimonides teaches that “this God is one. He is not two or more, but one, unified in a manner which [surpasses] any unity that is found in the world” (Mishneh Torah, Foundations of the Torah 1:7). Jews do not accept Jesus as divine.",
+          arguments: [
+            {
+              claim: "The Shema teaches that God is one, which excludes any plurality in God.",
+              response:
+                "Christians pray the same Shema; Jesus himself called it the first commandment (Mark 12:29). Catholic teaching holds that God's oneness is not numerical sameness of persons but the unity of one divine nature, which the Trinity does not divide (CCC 253–254). Catholics also acknowledge that this understanding of God was revealed fully only in Christ and was “inaccessible to … Israel's faith” before the Incarnation (CCC 237).",
+              authority: "apologetic-argument",
+            },
+          ],
+          sources: ["mjl-shema", "sefaria-mt-foundations-1-7"],
+        },
+        {
+          tradition: "latter-day-saints",
+          position:
+            "The Church of Jesus Christ of Latter-day Saints teaches that God the Father, Jesus Christ, and the Holy Ghost make up the Godhead and are “three separate beings”: “The Father and the Son have tangible bodies of flesh and bones, and the Holy Ghost is a personage of spirit.” They are “one in purpose and doctrine.” Latter-day Saints hold that the true doctrine of the Godhead was lost in the apostasy and restored through Joseph Smith.",
+          variations:
+            "Latter-day Saints and Jehovah's Witnesses both reject the Trinity, but for different reasons: Witnesses hold that only the Father is God, while Latter-day Saints hold that Father, Son, and Holy Ghost are three distinct divine beings.",
+          arguments: [
+            {
+              claim: "The Father, Son, and Holy Ghost are separate beings, united in purpose.",
+              response:
+                "Catholic teaching agrees that the three are really distinct, but holds that they are one God, not three: each is “that supreme reality, viz., the divine substance, essence or nature” (CCC 253). Scripture insists there is only one God (Deuteronomy 6:4; Isaiah 45:5). In 2001 the Congregation for the Doctrine of the Faith judged the difference so great that it does not recognize Latter-day Saint baptism as valid.",
+              authority: "doctrine",
+            },
+            {
+              claim: "God the Father has a glorified physical body (Doctrine and Covenants 130:22).",
+              response:
+                "Catholics believe that “God is Spirit” (John 4:24), indeed “pure spirit” (CCC 370), and that only the Son took a human body, at the Incarnation (CCC 461–463).",
+              authority: "doctrine",
+            },
+          ],
+          sources: ["lds-godhead", "lds-articles-of-faith", "lds-dc-130"],
+        },
+      ],
+    },
   },
   {
     slug: "who-is-the-holy-spirit",

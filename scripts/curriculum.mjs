@@ -195,7 +195,7 @@ console.log(counts);
 console.log("Launch progress:");
 console.log(`- Educational topics (P1): ${p1.filter((r) => r.built).length} of ${p1.length} built; ${built.size} topics in the app.`);
 console.log(`- Required debate sections: ${status.filter((s) => s === "complete").length} of ${requiredDebates.length} complete, ${status.filter((s) => s === "partial").length} partial, ${status.filter((s) => s === "missing").length} not started.`);
-console.log(`- Required tradition pages: ${requiredPages.filter((t) => traditionPages.has(t)).length} of ${requiredPages.length} built (${requiredPages.filter((t) => !traditionPages.has(t)).join(", ") || "all built"} remaining).`);
+console.log(`- Required tradition pages: ${requiredPages.filter((t) => traditionPages.has(t)).length} of ${requiredPages.length} built${requiredPages.some((t) => !traditionPages.has(t)) ? ` (${requiredPages.filter((t) => !traditionPages.has(t)).join(", ")} remaining)` : ""}.`);
 console.log(`- Learning pathways (built of the topics available at launch): ${pathways.map((p) => `${p.title.replace(/ \(.*$/, "")}: ${p.built.length}/${p.launch}${p.absent.length ? ` (after launch: ${p.absent.join(", ")})` : ""}`).join("; ")}.`);
 if (deferred.size) console.log(`- Deferred after launch (approved): formal ${[...deferred].join(", ")} perspectives on ${introductions.map((i) => i.slug).join(", ")}. Introductory coverage at launch: ${introductions.map((i) => `${i.slug} ${!i.built ? "not yet written" : i.missing.length ? `missing ${i.missing.join(", ")}` : "done"}`).join("; ")}.`);
 
