@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–11 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions) are built: 131 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–14 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions; Moral life) are built: 139 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -402,20 +402,20 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `how-catholics-decide-right-and-wrong` | How do Catholics decide what is right and wrong? | Moral theology, sources of morality | B | P1 | `conscience`, `natural-law` | |
-| `conscience` | What is conscience? | Formation of conscience | B | P1 | `how-catholics-decide-right-and-wrong` | |
-| `ten-commandments` | What are the Ten Commandments? | Decalogue | B | P1 | `what-is-sin` | |
+| `how-catholics-decide-right-and-wrong` ✓ | How do Catholics decide what is right and wrong? | Moral theology, sources of morality | B | P1 | `conscience`, `natural-law` | |
+| `conscience` ✓ | What is conscience? | Formation of conscience | B | P1 | `how-catholics-decide-right-and-wrong` | |
+| `ten-commandments` ✓ | What are the Ten Commandments? | Decalogue | B | P1 | `what-is-sin` | |
 | `beatitudes` | What are the Beatitudes? | | B | P2 | `what-jesus-taught` | |
-| `what-is-sin` | What is sin? | | B | P1 | `mortal-and-venial-sin` | |
+| `what-is-sin` ✓ | What is sin? | | B | P1 | `mortal-and-venial-sin` | |
 | `natural-law` | What is natural law? | | I | P2 | `morality-without-god` | |
 | `seven-deadly-sins` | What are the seven deadly sins? | Capital sins | B | P2 | `virtues` | |
 | `works-of-mercy` | What are the works of mercy? | Corporal and spiritual works of mercy | B | P2 | `what-is-catholic-social-teaching` | |
-| `human-life-dignity` | Why does the Church defend every human life? | Sanctity of life | B | P1 | `abortion`, `euthanasia` | |
-| `abortion` | What does the Church teach about abortion? | | I | P1 | `human-life-dignity` | R; pastoral tone required |
+| `human-life-dignity` ✓ | Why does the Church defend every human life? | Sanctity of life | B | P1 | `abortion`, `euthanasia` | |
+| `abortion` ✓ | What does the Church teach about abortion? | | I | P1 | `human-life-dignity` | R; pastoral tone required |
 | `euthanasia` | What does the Church teach about euthanasia and end-of-life care? | Assisted suicide, palliative care | I | P2 | `last-rites` | R |
 | `death-penalty` | What does the Church teach about the death penalty? | Capital punishment, CCC 2267 | I | P2 | `human-life-dignity` | R (2018 revision) |
 | `just-war` | What does the Church teach about war? | Just war doctrine | A | P3 | `religion-and-violence` | |
-| `sexuality` | What does the Church teach about sex and chastity? | Chastity, theology of the body | B | P1 | `male-and-female` | R |
+| `sexuality` ✓ | What does the Church teach about sex and chastity? | Chastity, theology of the body | B | P1 | `male-and-female` | R |
 | `contraception` | Why does the Church teach against contraception? | Humanae Vitae | I | P2 | `natural-family-planning` | D: Protestantism; R |
 | `same-sex-attraction` | What does the Church teach about homosexuality? | | I | P2 | `sexuality` | R; pastoral tone required |
 | `ivf-and-reproductive-technology` | What does the Church teach about IVF? | Donum Vitae, Dignitas Personae | A | P3 | `contraception` | R |
@@ -522,7 +522,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `what-is-catholic-social-teaching` | What is Catholic social teaching? | Social doctrine | B | P1 | `principles-of-social-teaching` | |
+| `what-is-catholic-social-teaching` ✓ | What is Catholic social teaching? | Social doctrine | B | P1 | `principles-of-social-teaching` | |
 | `principles-of-social-teaching` | What are the principles of Catholic social teaching? | Common good, solidarity, subsidiarity | I | P2 | `what-is-catholic-social-teaching` | |
 | `option-for-the-poor` | What is the preferential option for the poor? | | I | P2 | `works-of-mercy` | |
 | `dignity-of-work` | What does the Church teach about work and workers? | Rerum Novarum, Laborem Exercens | I | P3 | `principles-of-social-teaching` | |
@@ -1010,13 +1010,13 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 `what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
-`how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` ✓ → `what-happens-when-we-die` ✓ → `ten-commandments` → `easter-vigil` → `after-becoming-catholic`
+`how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` ✓ → `what-happens-when-we-die` ✓ → `ten-commandments` ✓ → `easter-vigil` → `after-becoming-catholic`
 
 ### 8.3 Attending a first Mass (10)
 `first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
 
 ### 8.4 Practicing Catholic going deeper (14)
-`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` → `who-are-the-church-fathers` → `thomas-aquinas`
+`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` ✓ → `who-are-the-church-fathers` → `thomas-aquinas`
 
 At launch this pathway is the eight topics that will exist then; `development-of-doctrine`, `kinds-of-prayer`, `liturgy-of-the-hours`, `virtues`, `natural-law`, and `thomas-aquinas` stay P2 and join it after launch. If the pathway is shown in the app before then, it lists only built topics, so there are no dead links or partial-completion counts.
 
@@ -1124,7 +1124,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 11 | Apologetics III: Eastern Orthodoxy and Judaism (pages and debate sections) | 0 | 0 | — |
 | 12 | Apologetics IV: Mary, salvation, and other traditions (debate sections) | 0 | 2 | `trinity-in-scripture` ✓, `was-jesus-crucified` ✓ |
 | 13 | Faith, reason, creation, and other religions | 0 | 10 | `why-did-god-create-us` ✓, `creation` ✓, `creation-and-evolution` ✓, `original-sin` ✓, `does-god-exist` ✓, `faith-and-science` ✓, `problem-of-evil` ✓, `catholics-and-muslims` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ |
-| 14 | Moral life and social teaching | 8 | 0 | `how-catholics-decide-right-and-wrong`, `conscience`, `ten-commandments`, `what-is-sin`, `human-life-dignity`, `abortion`, `sexuality`, `what-is-catholic-social-teaching` |
+| 14 | Moral life and social teaching | 0 | 8 | `how-catholics-decide-right-and-wrong` ✓, `conscience` ✓, `ten-commandments` ✓, `what-is-sin` ✓, `human-life-dignity` ✓, `abortion` ✓, `sexuality` ✓, `what-is-catholic-social-teaching` ✓ |
 | 15 | Prayer, the Church year, and Catholic life | 16 | 0 | `what-is-prayer`, `how-to-pray`, `basic-catholic-prayers`, `our-father`, `hail-mary`, `sign-of-the-cross`, `the-rosary`, `liturgical-year`, `advent`, `lent`, `ash-wednesday`, `holy-week`, `easter-vigil`, `holy-days-of-obligation`, `fasting-and-abstinence`, `after-becoming-catholic` |
 | 16 | Church history and the Fathers | 7 | 0 | `church-history-overview`, `early-church`, `council-of-nicaea`, `great-schism`, `protestant-reformation`, `who-are-the-church-fathers`, `fathers-on-the-eucharist` |
 
@@ -1188,19 +1188,19 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 4 |
 | 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 3 |
 | 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 0 |
-| 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 0 |
+| 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 7 |
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
 | 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 0 |
 | 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 0 |
 | 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
-| 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 0 |
+| 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 1 |
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
 | 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 8 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 1 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
 | 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
-| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **137** |
+| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **145** |
 
 <!-- /generated: counts -->
 

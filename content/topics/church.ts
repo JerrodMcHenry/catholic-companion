@@ -290,10 +290,10 @@ export const church: Topic[] = [
           position:
             "Islam teaches that Islam is the true religion before God: “Whoever seeks a way other than Islam, it will never be accepted from them” (Qur'an 3:85). The Sunni scholar Salman Younas, writing for SeekersGuidance, states that in the consensus of Islamic scholarship “the concept of the universal validity of religions is a heterodox belief.”",
           variations:
-            "Muslims read Qur'an 2:62, which promises reward to “the believers, Jews, Christians, and Sabians” who believe in God and the Last Day and do good, in different ways. SeekersGuidance reads it of those who lived before Muhammad's mission or who later accepted Islam; some exegetes regard it as abrogated by 3:85; and, according to the Shia reference work WikiShia, some Muslim pluralists read it as making faith in God and righteous deeds the only conditions of salvation.",
+            "Muslims read Qur'an 2:62, which promises reward to “the believers, Jews, Christians, and Sabians” who believe in God and the Last Day and do good, in different ways. SeekersGuidance (Sunni) reads it of those who lived before Muhammad's mission or who later accepted Islam. The Shia commentator Allamah Tabatabai, in his commentary al-Mizan, reads it as teaching that religious names gain nothing by themselves: “The only criterion, the only standard, of honour and happiness is the real belief in Allah and the Day of Resurrection, accompanied by good deeds.” Each reading is one interpreter's, not that of all Sunni or all Shia Muslims.",
           arguments: [
             {
-              claim: "Faith in God and good deeds are enough, whatever one's religion (a pluralist reading of Qur'an 2:62).",
+              claim: "What counts is real faith in God and good deeds, not religious labels (a reading of Qur'an 2:62).",
               response:
                 "Catholics agree that God's grace can reach those who, through no fault of their own, do not know the Gospel but seek God sincerely and try to do his will (Lumen Gentium 16; CCC 847). But they are saved by Christ's grace, not because their religion is an equal path: all salvation “comes from Christ the Head through the Church which is his Body” (CCC 846).",
               authority: "doctrine",
@@ -305,7 +305,7 @@ export const church: Topic[] = [
               authority: "doctrine",
             },
           ],
-          sources: ["quran-3-85", "quran-2-62", "seekers-quran-2-62", "wikishia-2-62"],
+          sources: ["quran-3-85", "quran-2-62", "seekers-quran-2-62", "almizan-2-62"],
         },
       ],
     },

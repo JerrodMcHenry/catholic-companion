@@ -13,6 +13,7 @@ import { jesus } from "./jesus";
 import { maryAndSaints } from "./mary-and-saints";
 import { mass } from "./mass";
 import { massOrder, massParts } from "./mass-parts";
+import { morality } from "./morality";
 import { sacraments } from "./sacraments";
 import { salvation } from "./salvation";
 
@@ -30,6 +31,7 @@ export const topics = [
   ...massParts,
   ...becomingCatholic,
   ...catholicLife,
+  ...morality,
   ...faithAndReason,
   ...apologeticsTopics,
 ];

@@ -642,6 +642,53 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `muhammad-and-the-quran` | Islam (Qur'an 33:40, 4:171; Yaqeen; WikiShia) | **R:** the Islamic summaries |
 | `catholics-and-muslims` | — | **R** |
 
+## Batch 14: Moral life (2026-11-25)
+
+**Batch 13 follow-ups:**
+
+- **Original sin and evolution:** `creation-and-evolution` now states that original sin is established Catholic teaching (CCC 390, 402–405) and that only its relation to scientific accounts of human origins remains open. The third response's authority changed from theological opinion to doctrine. The explanation paragraph is now headed “What is settled and what is open.” `original-sin` ends with the same distinction.
+- **Shia sources:** the WikiShia draft article on Qur'an 2:62 (`wikishia-2-62`) was removed. `do-all-religions-lead-to-god` now cites Allamah Tabatabai's al-Mizan on 2:62 (`almizan-2-62`, Al-Islam.org; quotation checked word for word in a browser, because the site refuses scripted requests). It sits beside SeekersGuidance (Sunni), with the note “Each reading is one interpreter's, not that of all Sunni or all Shia Muslims.” The WikiShia “Imamate” article (not a draft) is still used in `muhammad-and-the-quran`.
+- **Aquinas 101 videos on grace and the last things:** their transcripts could not be loaded (the transcript panel and caption track returned nothing), so both were deferred and removed (`video-a101-grace`, `video-a101-last-things`).
+  - `how-are-we-saved`, `what-is-grace`, and `faith-and-works` now use the Catholic Answers tract “Grace: What It Is and What It Does” (`ca-grace`).
+  - `what-happens-when-we-die`, `heaven`, and `hell` now list Church documents only. The Catholic Answers “heaven” and “four last things” tracts returned 404, and “What is hell?” was judged too polemical.
+  - Five other Aquinas 101 videos were probably also checked only from their descriptions and are flagged for the same review: `video-a101-what-is-a-sacrament`, `-baptism`, `-confirmation`, `-mortal-venial`, `-seal-of-confession`.
+- **Bookmarks:** checked on the Saved page with a stored list containing the removed `video-a101-triune-god` alongside valid entries. The missing item is skipped and the valid topic and resource entries still display. The two videos removed in this batch are handled the same way.
+
+**Built:** all eight Batch 14 topics, in the new file `content/topics/morality.ts` (category Moral Life, which now has topics): `how-catholics-decide-right-and-wrong`, `conscience`, `ten-commandments`, `what-is-sin`, `human-life-dignity`, `abortion` (**R**), `sexuality` (**R**), `what-is-catholic-social-teaching`. There are no debate sections in this batch.
+
+- **Distinctions maintained:**
+  - Objective wrong versus personal culpability (CCC 1735, 1793, 1860–1861, 2352), stated on every topic that names grave sins.
+  - Intrinsically evil acts (CCC 1753, 1756) versus prudential judgments in social questions (CCC 2420).
+  - Universal moral law versus numbering customs (the Ten Commandments: CCC 2066).
+  - The canonical penalty for abortion versus the scope of mercy (CCC 2272; Misericordia et Misera 12; Evangelium Vitae 99).
+- **No personal advice:** `how-catholics-decide-right-and-wrong`, `abortion`, and `sexuality` say that they explain general teaching, are not personal pastoral, medical, or legal advice, and that readers should speak with a priest. `abortion` says that complex medical situations cannot be settled by a general page.
+- **No repetition:** `what-is-sin` links to `mortal-and-venial-sin` and `original-sin` instead of restating them; `sexuality` links to `marriage-sacrament`.
+- **Project Rachel:** not used. The USCCB page returned 403, and the operator of hopeafterabortion.com could not be confirmed (the page is rendered by JavaScript and names no operator in its source). `abortion` points to the sacrament of Reconciliation and to a priest instead.
+
+**Resources:**
+
+- **Added (10):** Veritatis Splendor, Evangelium Vitae, Dignitas Infinita, Misericordia et Misera, Humanae Vitae, the Compendium of the Social Doctrine of the Church, Rerum Novarum (all vatican.va); USCCB, “Seven Themes of Catholic Social Teaching”; Catholic Answers, Joe Heschmeyer, “What You Don't Know About Conscience” (2025); Catholic Answers, “What the Early Church Believed: Abortion.” With the follow-ups, `almizan-2-62` and `ca-grace` were also added.
+- **Removed (3):** `video-a101-grace`, `video-a101-last-things`, `wikishia-2-62` (reasons above).
+- **Changed:** the Gaudium et Spes note now names the sections the app relies on (16, 19–21, 47–52, 63–72), checked against the vatican.va text, instead of atheism alone.
+- **Diversity:** the new topics rely mainly on Vatican documents, plus the USCCB and Catholic Answers. Candidate pages from Word on Fire and Ascension were found but not read in full, so they were not added.
+
+**Verification (Batch 14):**
+
+- **Catechism:** quotations checked against the vatican.va cache (1735, 1749–1756, 1776–1794, 1846–1869, 1883, 1905–1906, 1939, 1954–1956, 2052–2074, 2258, 2263, 2270–2277, 2319, 2331–2370, 2419–2425, 2443). All 340 linked references checked (0 problems). The cache parser now reads paragraph tags case-insensitively, which recovered CCC 2337–2359; no earlier mapping changed.
+- **Documents:** Gaudium et Spes 16; Evangelium Vitae 58, 62, 99; Dignitas Infinita 1 and its introduction; Misericordia et Misera 12; Compendium 160; Humanae Vitae 12; the USCCB seven themes; the Didache 2 and the Letter to Diognetus 5 (New Advent).
+- **Scripture:** new NABRE quotations checked on bible.usccb.org in a browser (Romans 2:15, Psalm 51:6, Romans 5:20, Matthew 19:17).
+- **Links:** all 12 new resource URLs respond (Al-Islam.org only in a browser).
+- **Search:** 196 of 196 regression checks pass (14 new). **Build:** 177 static pages; 2,145 internal links, 0 problems.
+- **Accessibility:** 15 pages audited (lang, one h1, heading order, duplicate ids, control names, new-tab notices): 0 issues. The keyboard reaches the skip link, header, breadcrumb, Save, and the disclosure, which opens with Enter; focus outlines are visible.
+- **Layout:** screenshots at 320 px (light), 390 px (dark), and 1280 px (light), plus the Moral Life category at 320 px (dark).
+
+| Topic | Open questions for review |
+|---|---|
+| `abortion` | **R:** pastoral tone; the wording on “direct” abortion and complex medical cases |
+| `sexuality` | **R:** the summary of acts contrary to chastity, same-sex attraction, and contraception |
+| `human-life-dignity` | The sentence on legitimate defense (CCC 2263) |
+| `what-is-catholic-social-teaching` | Whether the seven USCCB themes should be shown alongside the four Compendium principles |
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -664,12 +711,14 @@ These stay open until checked against an authoritative source; topics describe t
 - **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
 - Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
 - Universalism: a post-launch coverage item (decided after Batch 12); the launch curriculum is not expanded for it.
-- Aquinas 101 videos verified only from descriptions (`video-a101-grace`, `video-a101-last-things`): review their content; “The Triune God” was deferred and removed in Batch 13.
+- Aquinas 101 videos verified only from descriptions (`video-a101-what-is-a-sacrament`, `-baptism`, `-confirmation`, `-mortal-venial`, `-seal-of-confession`): review their content. “The Triune God” (Batch 13) and the grace and last-things videos (Batch 14) were deferred and removed.
+- `what-happens-when-we-die`, `heaven`, and `hell` have no recommended resources since Batch 14; find verified replacements.
+- A verified Project Rachel or other post-abortion healing resource, with its operator confirmed.
 - Hindu, Buddhist, and Sikh tradition pages and formal debate perspectives (after launch; introductory coverage done in Batch 13).
 - A verified source on the authenticity debate over Josephus, Antiquities 18.3.3 (the Testimonium), before it is quoted.
 - Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections, and in Batch 13 human origins and original sin, the Hindu, Buddhist, Sikh, Islamic, and Jewish summaries, and the pluralism topics.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections, in Batch 13 human origins and original sin, the Hindu, Buddhist, Sikh, Islamic, and Jewish summaries, and the pluralism topics, and in Batch 14 abortion and sexuality.
 
 ## Earlier topics (Phases 2–4)
 

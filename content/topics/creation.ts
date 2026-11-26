@@ -83,7 +83,7 @@ export const creationTopics: Topic[] = [
       "Passed on to all: St. Paul writes that “through one person sin entered the world, and through sin, death” (Romans 5:12). How this happens “is a mystery that we cannot fully understand” (CCC 404).",
       "Not personal guilt: original sin “does not have the character of a personal fault in any of Adam's descendants.” Human nature “has not been totally corrupted”; it is wounded, subject to ignorance, suffering, and death, and inclined to sin, an inclination called concupiscence (CCC 405).",
       "The remedy: Baptism, “by imparting the life of Christ's grace, erases original sin and turns a man back towards God,” though its consequences remain as a call to spiritual struggle (CCC 405). Christ is the new Adam, through whose obedience “the many will be made righteous” (Romans 5:19).",
-      "Human origins: how this teaching relates to scientific accounts of human origins is discussed in “Can Catholics accept evolution?” Some of these questions are still being studied by theologians.",
+      "Settled teaching and open questions: the doctrine of original sin is established Church teaching. How it is to be related to scientific accounts of human origins is still being studied by theologians; see “Can Catholics accept evolution?”",
     ],
     teaching: {
       catechism: [

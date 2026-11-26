@@ -36,7 +36,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["trent-session-6", "joint-declaration-justification"],
     },
-    resources: ["video-a101-grace", "ca-assurance-of-salvation"],
+    resources: ["ca-grace", "ca-assurance-of-salvation"],
     related: ["what-is-grace", "faith-and-works", "baptism", "why-did-jesus-die", "salvation-of-non-christians"],
   },
   {
@@ -67,7 +67,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["trent-session-6"],
     },
-    resources: ["video-a101-grace"],
+    resources: ["ca-grace"],
     related: ["how-are-we-saved", "faith-and-works", "what-is-a-sacrament", "mortal-and-venial-sin"],
   },
   {
@@ -98,7 +98,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["joint-declaration-justification", "trent-session-6"],
     },
-    resources: ["video-a101-grace", "ca-assurance-of-salvation"],
+    resources: ["ca-grace", "ca-assurance-of-salvation"],
     related: ["how-are-we-saved", "what-is-grace", "catholic-and-protestant-differences", "sola-scriptura"],
     debate: {
       catholicPosition: {
@@ -167,7 +167,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: ["video-a101-last-things"],
+    resources: [],
     related: ["heaven", "purgatory", "hell", "resurrection"],
   },
   {
@@ -196,7 +196,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: ["video-a101-last-things"],
+    resources: [],
     related: ["what-happens-when-we-die", "purgatory", "what-is-a-saint", "resurrection"],
   },
   {
@@ -225,7 +225,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: ["video-a101-last-things"],
+    resources: [],
     related: ["what-happens-when-we-die", "mortal-and-venial-sin", "heaven", "problem-of-evil"],
     debate: {
       catholicPosition: {
