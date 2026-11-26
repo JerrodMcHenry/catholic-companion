@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { BackLink, CardLink, SectionTitle, TopicList } from "@/components/cards";
-import { commonQuestions, comparisonTopics, debateTopics, hasPage, topicsFor, topicsIn, traditions } from "@/content";
+import { commonArguments, commonQuestions, comparisonTopics, debateTopics, getTopic, hasPage, topicsFor, topicsIn, traditions } from "@/content";
 
 // Route and internal ids stay "apologetics"; readers see "Common Questions".
 export const metadata: Metadata = {
-  title: "Common Questions",
-  description: "Clear, respectful answers to the questions people most often ask about the Catholic faith.",
+  title: "Common Questions and Arguments",
+  description: "Clear, respectful answers to common questions and arguments about the Catholic faith, with Scripture, early Christian sources, and Church teaching.",
 };
 
 const otherChristians = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences"];
@@ -21,15 +21,46 @@ export default function CommonQuestionsPage() {
   return (
     <>
       <BackLink href="/explore" label="Explore" />
-      <h1 className="mt-4 font-serif text-5xl font-semibold text-ink">Common Questions</h1>
+      <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink">Common Questions and Arguments</h1>
       <p className="mt-4 leading-relaxed text-ink-soft">
-        Answers to the questions people most often ask when they are exploring the Catholic faith.
-        Each answer explains what Catholics believe and why, with Scripture and Church teaching.
+        Answers to the questions and objections people most often meet when they look into the
+        Catholic faith. Each answer explains what the Church actually teaches and points you to the
+        Scripture, early Christian writings, and Church documents, so you can weigh the evidence yourself.
       </p>
 
-      <section aria-labelledby="questions-title" className="mt-10">
+      <section id="questions" aria-labelledby="questions-title" className="mt-10 scroll-mt-6">
         <SectionTitle id="questions-title">Questions people often ask</SectionTitle>
         <TopicList topics={topicsFor(commonQuestions)} />
+      </section>
+
+      <section id="arguments" aria-labelledby="arguments-title" className="mt-12 scroll-mt-6">
+        <SectionTitle id="arguments-title">Common arguments and Catholic responses</SectionTitle>
+        <p className="-mt-2 mb-4 leading-relaxed text-ink-soft">
+          Open a group to see the arguments it covers. Each links to a full answer.
+        </p>
+        <div className="space-y-3">
+          {commonArguments.map((g) => (
+            <details key={g.group} className="group rounded-2xl border border-line bg-card">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 rounded-2xl px-5 py-4">
+                <span className="font-medium text-ink">{g.group}</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 text-gold-ink transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </summary>
+              <ul className="space-y-3 px-5 pb-5">
+                {g.items.map((item) => (
+                  <li key={item.claim}>
+                    <CardLink
+                      href={`/topic/${item.slug}`}
+                      title={`“${item.claim}”`}
+                      description={`Answered in: ${getTopic(item.slug)!.question}`}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </details>
+          ))}
+        </div>
       </section>
 
       <section aria-labelledby="christians-title" className="mt-12">

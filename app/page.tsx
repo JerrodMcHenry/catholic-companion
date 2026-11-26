@@ -11,8 +11,10 @@ const journeys = [
 
 const quickLinks = [
   { href: "/category/mass", title: "Understanding the Mass" },
-  { href: "/apologetics", title: "Common Questions" },
+  { href: "/topic/how-to-go-to-confession", title: "How to go to Confession" },
   { href: "/category/prayer", title: "Prayer" },
+  { href: "/apologetics#questions", title: "Common Questions" },
+  { href: "/apologetics#arguments", title: "Common Arguments" },
   { href: "/resources", title: "Trusted Resources" },
 ];
 

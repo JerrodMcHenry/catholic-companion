@@ -65,7 +65,7 @@ export const sacraments: Topic[] = [
       documents: ["catechism-vatican", "compendium-ccc"],
     },
     resources: ["loyola-seven-sacraments", "ca-seven-sacraments"],
-    related: ["what-is-a-sacrament", "baptism", "confirmation", "what-is-the-eucharist", "confession", "marriage-sacrament"],
+    related: ["what-is-a-sacrament", "baptism", "confirmation", "what-is-the-eucharist", "confession", "anointing-of-the-sick", "bishops-priests-deacons", "marriage-sacrament"],
   },
   {
     slug: "baptism",
@@ -73,7 +73,7 @@ export const sacraments: Topic[] = [
     question: "What is Baptism?",
     alsoKnownAs: ["Christening", "Sacrament of Baptism", "Baptism of desire"],
     category: "sacraments",
-    keywords: ["baptism", "christening", "baptized", "born again", "born of water and Spirit", "original sin", "baptismal font", "immersion", "pouring water", "can anyone baptize", "emergency baptism", "is baptism necessary", "baptism of blood"],
+    keywords: ["baptism", "christening", "baptized", "born again", "born of water and Spirit", "original sin", "baptismal font", "immersion", "pouring water", "can anyone baptize", "emergency baptism", "is baptism necessary", "baptism of blood", "is baptism just a symbol", "baptism saves", "1 Peter 3:21", "baptism preparation", "arrange a baptism", "godparent requirements", "godparents", "baptism class", "baptize my baby"],
     summary:
       "Baptism is the first sacrament and the door to all the others. With water and the words “I baptize you in the name of the Father, and of the Son, and of the Holy Spirit,” a person is freed from sin, reborn as a child of God, made a member of Christ and his Church, and given a share in the Holy Spirit. It marks a Christian permanently, so it is received only once.",
     explanation: [
@@ -83,12 +83,17 @@ export const sacraments: Topic[] = [
       "Who baptizes: ordinarily a bishop, priest, or deacon. In an emergency anyone, even someone not baptized, can baptize by pouring water and saying the Trinitarian words with the intention of doing what the Church does (CCC 1256, 1284).",
       "Is it necessary? The Church teaches that Baptism is necessary for salvation for those who have heard the Gospel and could ask for it, and it knows no other sure means. But “God has bound salvation to the sacrament of Baptism, but he himself is not bound by his sacraments”: those who die for the faith, catechumens who die before Baptism, and others who sincerely seek God without knowing the Church can be saved (CCC 1257–1260). Children who die without Baptism are entrusted to God's mercy, with hope (CCC 1261).",
       "Other Christians: Baptism with water in the name of the Trinity is recognized by the Catholic Church wherever it is validly given, and it unites all the baptized in a real, though imperfect, communion (CCC 1271).",
+      "Only a symbol? Scripture speaks of Baptism as doing something: “baptism, which saves you now. It is not a removal of dirt from the body but an appeal to God for a clear conscience, through the resurrection of Jesus Christ” (1 Peter 3:21), and Ananias tells Paul, “have yourself baptized and your sins washed away, calling upon his name” (Acts 22:16). Some Protestants read 1 Peter 3:21 as saying that the believer’s “appeal” of faith, not the water, is what saves. Catholics answer that Peter attributes the saving to Baptism received in faith, and that its power comes from Christ’s resurrection, not from water as such (CCC 1257, 1263).",
+      "Arranging a child's Baptism: contact your parish, ideally during pregnancy or soon after the birth. Church law asks parents to have infants baptized “in the first few weeks,” and to go to the pastor “as soon as possible after the birth or even before it” to request the sacrament and be prepared for it (canon 867 §1). Parents and godparents are to be instructed in the meaning of Baptism and its obligations (canon 851), so parishes usually ask them to attend a preparation session. A child in danger of death is to be baptized without delay (canon 867 §2).",
+      "Godparents: a child may have one godparent or two, one man and one woman (canon 873). A godparent must normally be at least sixteen, a Catholic who has been confirmed and has received the Eucharist and who leads a life of faith, and not the child's mother or father (canon 874 §1). A baptized Christian of another church may take part only as a Christian witness, together with a Catholic godparent (canon 874 §2). Godparents should be firm believers, ready to help the child live as a Christian (CCC 1255).",
+      "Adults: an unbaptized adult prepares through the catechumenate, the Order of Christian Initiation of Adults (OCIA), and is normally baptized, confirmed, and receives first Communion at the Easter Vigil (canon 851; CCC 1232–1233). Start by contacting a parish; see What is OCIA?",
+      "Church law and parish practice: the points above come from the Church's universal law. Class schedules, forms, dates, and paperwork, such as a letter showing that a godparent is a practicing Catholic, are set by each parish and diocese, so ask your parish what it needs.",
     ],
     teaching: {
       catechism: [
         { paragraphs: "1213", url: ccc("__P3G") },
         { paragraphs: "1214–1216", url: ccc("__P3H") },
-        { paragraphs: "1239–1240", url: ccc("__P3J") },
+        { paragraphs: "1232–1233, 1239–1240", url: ccc("__P3J") },
         { paragraphs: "1256", url: ccc("__P3L") },
         { paragraphs: "1257–1261", url: ccc("__P3M") },
         { paragraphs: "1262–1274", url: ccc("__P3N") },
@@ -99,11 +104,13 @@ export const sacraments: Topic[] = [
         { passage: "Matthew 28:19", url: bible("matthew/28") },
         { passage: "Acts 2:38", url: bible("acts/2") },
         { passage: "Romans 6:3–4", url: bible("romans/6") },
+        { passage: "1 Peter 3:18–22", url: bible("1peter/3") },
+        { passage: "Acts 22:16", url: bible("acts/22") },
       ],
       documents: ["canon-law-sacraments"],
     },
-    resources: ["didache"],
-    related: ["infant-baptism", "confirmation", "seven-sacraments", "mass-holy-water", "how-to-become-catholic"],
+    resources: ["didache", "ca-baptism-symbol-broussard", "video-broussard-baptism-saves"],
+    related: ["infant-baptism", "confirmation", "seven-sacraments", "mass-holy-water", "how-to-become-catholic", "what-is-ocia"],
   },
   {
     slug: "infant-baptism",
@@ -120,6 +127,8 @@ export const sacraments: Topic[] = [
       "Scripture: the New Testament mostly describes converts, adults who heard the apostles' preaching. But it also records whole households being baptized: Lydia “and her household” (Acts 16:15) and the jailer at Philippi, who “and all his family were baptized at once” (Acts 16:33). Peter told the crowd at Pentecost that the promise “is made to you and to your children” (Acts 2:39). Whether those households included infants is not stated; the Catechism says it is “quite possible” (CCC 1252).",
       "History: there is explicit testimony to infant Baptism from the second century on (CCC 1252). The Church's 1980 instruction on infant Baptism notes that Origen and St. Augustine called it a tradition received from the apostles, and that the third-century Apostolic Tradition instructs, “First baptize the children.” Some early writers, notably Tertullian, advised waiting (Pastoralis Actio 4–5).",
       "Other Christians: many Protestant churches also baptize infants, while Baptists and many evangelical and Pentecostal churches baptize only believers. Catholics share with them the conviction that faith and Baptism belong together; their views and the Catholic responses are set out below.",
+      "An early council: in the 250s, St. Cyprian and a council of sixty-six bishops answered a bishop who thought newborns should wait until the eighth day: “we all rather judge that the mercy and grace of God is not to be refused to any one born of man” (Letter to Fidus, Epistle 58).",
+      "Arranging a Baptism: for the practical steps, including contacting the parish, preparation, and choosing godparents, see What is Baptism?",
     ],
     teaching: {
       catechism: [
@@ -134,7 +143,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["pastoralis-actio", "canon-law-sacraments"],
     },
-    resources: ["ca-early-infant-baptism"],
+    resources: ["ca-early-infant-baptism", "cyprian-letter-fidus"],
     related: ["baptism", "confirmation", "catechumen-or-candidate", "are-catholics-christians"],
     debate: {
       catholicPosition: {
@@ -180,7 +189,7 @@ export const sacraments: Topic[] = [
     question: "What is Confirmation?",
     alsoKnownAs: ["Chrismation", "Sacrament of Confirmation", "Be sealed with the Gift of the Holy Spirit"],
     category: "sacraments",
-    keywords: ["confirmation", "confirmed", "chrism", "anointing", "laying on of hands", "confirmation name", "sponsor", "gifts of the Holy Spirit", "age of confirmation", "bishop", "Pentecost", "seal of the Spirit"],
+    keywords: ["confirmation", "confirmed", "chrism", "anointing", "laying on of hands", "confirmation name", "sponsor", "gifts of the Holy Spirit", "age of confirmation", "bishop", "Pentecost", "seal of the Spirit", "is Confirmation biblical", "gifts of the Holy Spirit", "seven gifts", "chrism", "chrismation", "Confirmation sponsor", "Confirmation name", "Isaiah 11"],
     summary:
       "Confirmation completes the grace of Baptism. Through the laying on of hands and the anointing with sacred oil called chrism, the baptized receive the Holy Spirit in a special way, as the apostles did at Pentecost, and are strengthened to live and share their faith as witnesses to Christ. Like Baptism, it marks a person permanently and is received only once.",
     explanation: [
@@ -189,24 +198,33 @@ export const sacraments: Topic[] = [
       "What it does: Confirmation roots us more deeply as children of God, unites us more firmly to Christ, increases the gifts of the Holy Spirit, binds us more closely to the Church, and gives special strength to spread and defend the faith (CCC 1303). Christian initiation is incomplete without Confirmation and the Eucharist (CCC 1306).",
       "When: in the Eastern Churches, including Eastern Catholic Churches, the priest confirms (“chrismates”) immediately after Baptism, even for infants, with chrism consecrated by the bishop. In the Latin Church, Confirmation is ordinarily given by the bishop at about the age of discretion, unless the bishops' conference sets another age (CCC 1290, 1312–1313, 1318; canon 891). Ages and the order of the sacraments therefore vary from diocese to diocese. Adults becoming Catholic are usually confirmed by the priest who receives them, at the same celebration (CCC 1312).",
       "Preparing: a candidate who has reached the age of reason should profess the faith, be in the state of grace, want to receive the sacrament, and be ready to be Christ's disciple and witness (CCC 1319). It is not a graduation: grace given in Baptism “does not need ‘ratification’ to become effective,” and spiritual maturity is not a matter of age (CCC 1308).",
+      "The Spirit promised in the Old Testament: the prophets announced that the Spirit of the Lord would rest on the Messiah: “The spirit of the LORD shall rest upon him: a spirit of wisdom and of understanding, a spirit of counsel and of strength, a spirit of knowledge and of fear of the LORD” (Isaiah 11:2). Christian tradition draws from this passage the seven gifts of the Holy Spirit: wisdom, understanding, counsel, fortitude, knowledge, piety, and fear of the Lord (CCC 1831). The Spirit given to the Messiah was to be shared with the whole messianic people, as Joel foretold and Peter proclaimed at Pentecost (CCC 1286–1287; Acts 2:16–18).",
+      "Is Confirmation biblical? Besides the Samaritans in Acts 8, Paul baptized disciples at Ephesus, and “when Paul laid [his] hands on them, the holy Spirit came upon them” (Acts 19:6). In both cases the laying on of hands follows Baptism and is distinct from it. The Letter to the Hebrews lists “instruction about baptisms and laying on of hands” among the foundations of Christian teaching (Hebrews 6:1–2). The Church recognizes this imposition of hands as the origin of Confirmation (CCC 1288). Many Protestants read these passages as unique to the apostolic age; Catholics note that Hebrews treats the laying on of hands as part of ordinary, basic instruction.",
+      "Anointing: “very early,” anointing with perfumed oil called chrism was added to the laying on of hands (CCC 1289). The name “Christian” means “anointed one,” after Christ: “God anointed Jesus of Nazareth with the holy Spirit and power” (Acts 10:38). Around 200, Tertullian described the newly baptized being “anointed with a blessed unction,” after which “the hand is laid on us, invoking and inviting the Holy Spirit” (On Baptism 7–8). Around 350, St. Cyril of Jerusalem taught that the consecrated chrism “is no more simple ointment... but it is Christ's gift of grace” (Mystagogical Lecture 3.3).",
+      "East and West: in the early centuries Confirmation was usually celebrated together with Baptism (CCC 1290). The Eastern Churches kept this unity: the priest chrismates immediately after Baptism, with chrism consecrated by the bishop. In the West, the wish to reserve the completion of Baptism to the bishop led to Confirmation being celebrated later (CCC 1290–1292). Both practices are legitimate: the Eastern practice emphasizes the unity of Christian initiation, the Western the newly confirmed person's bond with the bishop and the apostolic Church (CCC 1292).",
+      "Preparation in practice: preparation should lead to “a more intimate union with Christ and a more lively familiarity with the Holy Spirit” (CCC 1309). Candidates should be in the state of grace, so going to Confession beforehand is recommended (CCC 1310). A sponsor helps the candidate, ideally one of the baptismal godparents (CCC 1311). Adults usually receive Confirmation at the Easter Vigil with Baptism or reception into full communion; for young people, the age and program are set by the diocese and parish, so ask your parish.",
     ],
     teaching: {
       catechism: [
         { paragraphs: "1285", url: ccc("__P3P") },
-        { paragraphs: "1286–1290", url: ccc("__P3Q") },
+        { paragraphs: "1286–1292", url: ccc("__P3Q") },
         { paragraphs: "1300", url: ccc("__P3R") },
         { paragraphs: "1302–1305", url: ccc("__P3S") },
-        { paragraphs: "1306–1308", url: ccc("__P3T") },
+        { paragraphs: "1306–1311", url: ccc("__P3T") },
         { paragraphs: "1312–1314", url: ccc("__P3U") },
         { paragraphs: "1315–1321", url: ccc("__P3V") },
+        { paragraphs: "1831", url: ccc("__P67") },
       ],
       scripture: [
         { passage: "Acts 8:14–17", url: bible("acts/8") },
         { passage: "Acts 2:1–4", url: bible("acts/2") },
+        { passage: "Isaiah 11:1–3", url: bible("isaiah/11") },
+        { passage: "Acts 19:1–7", url: bible("acts/19") },
+        { passage: "Hebrews 6:1–2", url: bible("hebrews/6") },
       ],
-      documents: ["canon-law-eucharist"],
+      documents: ["canon-law-eucharist", "canon-law-eucharist"],
     },
-    resources: ["loyola-seven-sacraments"],
+    resources: ["loyola-seven-sacraments", "ca-confirmation-tract", "tertullian-on-baptism", "cyril-mystagogic-3"],
     related: ["who-is-the-holy-spirit", "baptism", "seven-sacraments", "how-to-become-catholic"],
   },
   {
@@ -271,6 +289,7 @@ export const sacraments: Topic[] = [
       "The Council of Trent named this change transubstantiation. At the consecration, the whole substance of the bread and wine becomes the substance of Christ’s Body and Blood, while the appearances of bread and wine remain. Christ stays present as long as those appearances remain, and he is wholly present in every part.",
       "Catholics root this belief in the words of Jesus: “I am the living bread that came down from heaven… the bread that I will give is my flesh for the life of the world” (John 6:51), and at the Last Supper, “This is my body that is for you” (1 Corinthians 11:24). St. Paul warns that anyone who eats “without discerning the body” brings judgment on himself (1 Corinthians 11:29).",
       "Because Christ is present, Catholics genuflect toward the tabernacle, where the Eucharist is kept, spend time in prayer before it in adoration, and prepare carefully before receiving Communion.",
+      "The blood of the covenant: at Sinai, Moses sealed God’s covenant with sacrificial blood: “This is the blood of the covenant which the LORD has made with you” (Exodus 24:8). At the Last Supper, Jesus echoes those words over the cup: “This is my blood of the covenant, which will be shed for many” (Mark 14:24).",
     ],
     teaching: {
       catechism: [
@@ -282,6 +301,8 @@ export const sacraments: Topic[] = [
         { passage: "John 6:22–71", url: bible("john/6") },
         { passage: "Luke 22:14–20", url: bible("luke/22") },
         { passage: "1 Corinthians 11:23–29", url: bible("1corinthians/11") },
+        { passage: "Exodus 24:3–8", url: bible("exodus/24") },
+        { passage: "Mark 14:22–24", url: bible("mark/14") },
       ],
       documents: ["usccb-real-presence", "ecclesia-de-eucharistia"],
     },
@@ -356,6 +377,7 @@ export const sacraments: Topic[] = [
       "The Church's offering: because the Church is Christ's Body, she is united with her Head's offering. The faithful offer their praise, sufferings, prayer, and work with Christ (CCC 1368), and the sacrifice is offered for the living and the dead (CCC 1371). This is why the Mass can be offered for an intention.",
       "Early witness: the prophet Malachi foretold that among the nations incense offerings and “a pure offering” would be made to God's name “everywhere” (Malachi 1:11). The Didache, a very early Christian manual, applies that verse to the Sunday Eucharist, telling Christians to confess their sins “that your sacrifice may be pure” (Didache 14).",
       "Where Christians differ: Protestant traditions reject the sacrifice of the Mass, but not all for the same reasons, and they understand Christ's presence in the Eucharist in different ways. Their views, with sources, and the Catholic responses are set out below.",
+      "A witness from the Reformation: in 1520 Martin Luther, who rejected the idea, admitted that “there is today no more generally accepted and firmly believed opinion in the Church than this — that the mass is a good work and a sacrifice” (The Babylonian Captivity of the Church). This shows what was believed in his day; the evidence for earlier centuries comes from sources such as the Didache and the Fathers.",
     ],
     teaching: {
       catechism: [
@@ -375,7 +397,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["ecclesia-de-eucharistia", "trent-session-22", "sacrosanctum-concilium"],
     },
-    resources: ["stpaul-re-presentation-of-calvary", "ca-early-church-sacrifice", "didache"],
+    resources: ["stpaul-re-presentation-of-calvary", "ca-early-church-sacrifice", "didache", "luther-babylonian-captivity"],
     related: ["why-did-jesus-die", "mass-eucharistic-prayer", "real-presence", "mass-in-scripture", "mass-prayer-over-the-offerings"],
     debate: {
       catholicPosition: {
@@ -422,6 +444,39 @@ export const sacraments: Topic[] = [
         },
       ],
     },
+  },
+  {
+    slug: "eucharistic-adoration",
+    title: "Eucharistic Adoration",
+    question: "What is Eucharistic Adoration?",
+    alsoKnownAs: ["Adoration", "Benediction", "Holy hour", "Exposition of the Blessed Sacrament"],
+    category: "sacraments",
+    keywords: ["adoration", "Eucharistic adoration", "adoration chapel", "holy hour", "Benediction", "monstrance", "exposition", "Blessed Sacrament", "tabernacle", "perpetual adoration", "Corpus Christi", "can non-Catholics go to adoration", "what to do at adoration"],
+    summary:
+      "Eucharistic Adoration is prayer before Jesus truly present in the Blessed Sacrament, either reserved in the tabernacle or displayed on the altar in a vessel called a monstrance. Because Catholics believe the consecrated Host is Christ himself, they worship him there as they would worship him in person. Anyone may come and pray quietly, including people who are not Catholic.",
+    explanation: [
+      "Why Catholics adore the Eucharist: Catholics believe that in the Eucharist Jesus Christ is truly present (see The Real Presence). If that is true, worship is the fitting response: “Because Christ himself is present in the sacrament of the altar, he is to be honored with the worship of adoration” (CCC 1418). St. Augustine wrote that “no one eats that flesh without first adoring it” (quoted in Sacramentum Caritatis 66).",
+      "In Scripture: those who met the risen Jesus “did him homage” (Matthew 28:9), and Thomas confessed, “My Lord and my God!” (John 20:28). In Gethsemane Jesus asked his disciples, “So you could not keep watch with me for one hour?” (Matthew 26:40), words often recalled in the custom of a “holy hour.” Adoration of the Eucharist rests on Jesus' promise, “the bread that I will give is my flesh for the life of the world” (John 6:51), and on his words at the Last Supper.",
+      "How it developed: the Eucharist was first reserved so that it could be brought to the sick and to those absent from Mass; as faith in the Real Presence deepened, the Church came to value silent adoration before the tabernacle (CCC 1379). The Church “has always offered and still offers to the sacrament of the Eucharist the cult of adoration, not only during Mass, but also outside of it,” including exposition and processions (CCC 1378). In 1264 Pope Urban IV extended the feast of Corpus Christi to the whole Church (bull Transiturus).",
+      "What to expect: you can pray before the tabernacle whenever a church is open. During exposition, a consecrated Host is placed in a monstrance on the altar, usually with candles. Some parishes close exposition with Benediction, in which hymns are sung and the priest or deacon blesses the kneeling people with the Blessed Sacrament, making the sign of the cross with the monstrance. Catholics usually kneel or genuflect; if you are not Catholic or cannot kneel, sitting quietly or a respectful bow is fine. Most of the time is spent in silence.",
+      "How to pray: there is no required method. You can sit in silence, speak to Jesus in your own words, read a Gospel passage such as John 6, pray the Rosary or other prayers, or bring your worries and thanks. Pope John Paul II wrote, “It is pleasant to spend time with him, to lie close to his breast like the Beloved Disciple (cf. Jn 13:25) and to feel the infinite love present in his heart” (Ecclesia de Eucharistia 25). The Catechism adds: “Jesus awaits us in this sacrament of love” (CCC 1380).",
+      "If you are not Catholic: you are welcome. Nothing is required except respect and quiet, and many people exploring Catholicism find adoration a natural place to begin praying. Receiving Communion is different; see Who can receive Communion?",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1378–1381", url: ccc("__P41") },
+        { paragraphs: "1418", url: ccc("__P44") },
+      ],
+      scripture: [
+        { passage: "Matthew 26:36–41", url: bible("matthew/26") },
+        { passage: "John 6:51–58", url: bible("john/6") },
+        { passage: "Matthew 28:8–10", url: bible("matthew/28") },
+        { passage: "John 20:24–29", url: bible("john/20") },
+      ],
+      documents: ["ecclesia-de-eucharistia", "sacramentum-caritatis"],
+    },
+    resources: ["ce-benediction", "ce-corpus-christi"],
+    related: ["real-presence", "what-is-the-eucharist", "how-to-pray", "mass-genuflection", "who-can-receive-communion"],
   },
   {
     slug: "who-can-receive-communion",
@@ -500,7 +555,7 @@ export const sacraments: Topic[] = [
     question: "What is Confession?",
     alsoKnownAs: ["Sacrament of Penance", "Sacrament of Reconciliation", "Penance and Reconciliation"],
     category: "sacraments",
-    keywords: ["confession", "reconciliation", "penance", "forgiveness of sins", "absolution", "going to confession", "how often confession", "once a year", "confessional", "sacrament of healing", "prodigal son", "mercy"],
+    keywords: ["confession", "reconciliation", "penance", "forgiveness of sins", "absolution", "going to confession", "how often confession", "once a year", "confessional", "sacrament of healing", "prodigal son", "mercy", "struggling with sin", "habitual sin", "keep committing the same sin", "temptation", "occasion of sin", "same sin over and over", "scrupulosity", "addiction"],
     summary:
       "Confession is the sacrament in which Christ forgives sins committed after Baptism and reconciles the sinner with God and with the Church. The penitent is sorry for their sins, tells them to a priest, and accepts a penance; the priest, acting in Christ's name, gives absolution. It goes by several names: the sacrament of Penance, of Reconciliation, of conversion, and of forgiveness.",
     explanation: [
@@ -510,6 +565,8 @@ export const sacraments: Topic[] = [
       "What it does: it restores us to God's grace and friendship, reconciles us with the Church, takes away the eternal punishment of mortal sin, and brings peace of conscience and strength for the Christian struggle (CCC 1468–1470, 1496).",
       "How often: Catholics must confess any serious sins at least once a year (CCC 1457; canon 989), and anyone conscious of mortal sin should go before receiving Communion. Confessing everyday faults is not strictly required but is strongly recommended, because it helps us grow (CCC 1458).",
       "The seal: a priest may never reveal, for any reason, what is told to him in confession (CCC 1467; canon 983).",
+      "When you keep falling into the same sin: the struggle does not mean you are not a real Christian. Baptism takes away sin but not the inclination to sin, which “remains in the baptized” for the struggle of Christian life (CCC 1426). “Though the just fall seven times, they rise again” (Proverbs 24:16), and Jesus told Peter to forgive “seventy-seven times” (Matthew 18:22): God's mercy is not exhausted by repeated failure. Keep going to Confession; the Church recommends confessing even everyday faults, because it helps us “form our conscience, fight against evil tendencies, let ourselves be healed by Christ and progress in the life of the Spirit” (CCC 1458).",
+      "Growing in virtue: virtues grow “by deliberate acts and by a perseverance ever-renewed in repeated efforts” and are purified and raised by grace (CCC 1810). In practice: pray daily, avoid situations you know lead you into sin, replace bad habits with good ones, and ask for help. “God is faithful and will not let you be tried beyond your strength” (1 Corinthians 10:13). Responsibility can be lessened by habit, fear, and other factors (CCC 1735), so general guidance like this is not a judgment about your guilt; your confessor can help with your own situation. If worry about sin becomes constant and distressing (scrupulosity), tell your confessor and follow his guidance.",
     ],
     teaching: {
       catechism: [
@@ -519,16 +576,23 @@ export const sacraments: Topic[] = [
         { paragraphs: "1440–1449", url: ccc("__P4C") },
         { paragraphs: "1468–1470", url: ccc("__P4F") },
         { paragraphs: "1485–1498", url: ccc("__P4I") },
+        { paragraphs: "1426", url: ccc("__P48") },
+        { paragraphs: "1458", url: ccc("__P4D") },
+        { paragraphs: "1810", url: ccc("__P65") },
+        { paragraphs: "1735", url: ccc("__P5N") },
       ],
       scripture: [
         { passage: "John 20:19–23", url: bible("john/20") },
         { passage: "Luke 15:11–32", url: bible("luke/15") },
         { passage: "2 Corinthians 5:17–20", url: bible("2corinthians/5") },
+        { passage: "Proverbs 24:16", url: bible("proverbs/24") },
+        { passage: "Matthew 18:21–22", url: bible("matthew/18") },
+        { passage: "1 Corinthians 10:13", url: bible("1corinthians/10") },
       ],
       documents: ["canon-law-penance", "reconciliatio-et-paenitentia"],
     },
     resources: ["video-ascension-need-confession", "ascension-how-to-go-to-confession"],
-    related: ["how-to-go-to-confession", "why-confess-to-a-priest", "mortal-and-venial-sin", "returning-to-the-church"],
+    related: ["how-to-go-to-confession", "why-confess-to-a-priest", "mortal-and-venial-sin", "returning-to-the-church", "anointing-of-the-sick"],
   },
   {
     slug: "why-confess-to-a-priest",
@@ -565,7 +629,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["canon-law-penance", "reconciliatio-et-paenitentia", "apostolic-penitentiary-seal"],
     },
-    resources: ["ascension-why-confess-to-a-priest"],
+    resources: ["ascension-why-confess-to-a-priest", "video-staples-why-confess"],
     related: ["confession", "how-to-go-to-confession", "bishops-priests-deacons", "sola-scriptura"],
     debate: {
       catholicPosition: {
@@ -689,12 +753,53 @@ export const sacraments: Topic[] = [
     related: ["confession", "how-to-go-to-confession", "returning-after-mortal-sin", "who-can-receive-communion"],
   },
   {
+    slug: "anointing-of-the-sick",
+    title: "Anointing of the Sick",
+    question: "What is the Anointing of the Sick?",
+    alsoKnownAs: ["Last rites", "Extreme Unction", "Sacrament of the sick", "Viaticum"],
+    category: "sacraments",
+    keywords: ["anointing", "last rites", "extreme unction", "sick", "seriously ill", "dying", "hospital", "hospice", "nursing home", "priest for the sick", "call a priest", "before surgery", "elderly", "old age", "oil of the sick", "James 5", "viaticum", "sacraments for the dying", "caregiver"],
+    summary:
+      "The Anointing of the Sick is the sacrament Christ gives to strengthen Catholics who are seriously ill or weakened by old age. A priest lays hands on the sick person, prays over them, and anoints their forehead and hands with blessed oil. It brings the Holy Spirit's strength, peace, and courage, forgives sins, and sometimes restores bodily health if that is God's will. It is not only for the dying: you do not need to wait until death is near to ask for it.",
+    explanation: [
+      "In Scripture: when Jesus sent out the Twelve, “they anointed with oil many who were sick and cured them” (Mark 6:13). The Letter of James gives the instruction the Church still follows: “Is anyone among you sick? He should summon the presbyters of the church, and they should pray over him and anoint [him] with oil in the name of the Lord, and the prayer of faith will save the sick person, and the Lord will raise him up. If he has committed any sins, he will be forgiven” (James 5:14–15). The Council of Trent taught that the sacrament is “alluded to” in Mark and “promulgated by James” (CCC 1511).",
+      "Old Testament background: Israel brought sickness before God in lament and prayer (Psalm 38; Isaiah 38), and God revealed himself as healer: “I, the LORD, am your healer” (Exodus 15:26). The prophets looked ahead to a time when God would forgive his people and heal every illness (CCC 1502). Jesus healed the sick and forgave sins, and he identified himself with them, counting care for the sick as care for him: “ill and you cared for me” (Matthew 25:36; CCC 1503).",
+      "In the early Church: the anointing of the sick with blessed oil is attested from ancient times in the liturgies of both East and West (CCC 1512). Pope Paul VI singled out the letter of Pope Innocent I to Bishop Decentius of Gubbio (416) and the ancient Roman prayer for blessing the oil of the sick, which begins, “Send forth, O Lord, your Holy Spirit, the Paraclete” (Sacram unctionem infirmorum, 1972). Over the centuries the sacrament came to be given mostly to the dying and was called “Extreme Unction,” but the Church never stopped praying for the sick person's recovery (CCC 1512).",
+      "Who may receive it: a Catholic who has reached the use of reason and “begins to be in danger due to sickness or old age” (canon 1004). It is fitting before a serious operation, and for elderly people whose frailty is increasing (CCC 1514–1515). If it is doubtful whether the person has reached the use of reason, is seriously ill, or has already died, the priest is to give the sacrament (canon 1005). It is given to those who would have asked for it when they were able, even if they can no longer speak (canon 1006).",
+      "More than once: yes. Someone who recovers can receive it again in a later serious illness, and it can be repeated if the same illness becomes more serious (CCC 1515; canon 1004).",
+      "What happens: only a priest or bishop can give it (CCC 1516). It can be celebrated at home, in a hospital, or in church, for one person or for several together, and fittingly within Mass (CCC 1517). The priest lays his hands on the sick person in silence, prays over them, and anoints the forehead and hands with oil blessed by the bishop, saying: “Through this holy anointing may the Lord in his love and mercy help you with the grace of the Holy Spirit. May the Lord who frees you from sin save you and raise you up” (CCC 1513, 1519).",
+      "Anointing, Confession, and Viaticum: “last rites” is a common name for the sacraments the Church offers at the end of life: Penance, the Anointing of the Sick, and the Eucharist given as Viaticum to someone about to leave this life (CCC 1524–1525). They are distinct. Confession is the ordinary way serious sins are forgiven; the Anointing also forgives sins when the sick person was not able to go to Confession (CCC 1532). Viaticum, from the Latin for provisions for a journey, should be the last sacrament of the earthly journey (CCC 1517). When possible, the sick person goes to Confession first and receives Communion afterward (CCC 1517).",
+      "Common misunderstandings: being anointed does not mean a person is about to die, and asking for it is not giving up hope; the Church asks for healing of soul, and of body if that is God's will (CCC 1520). Families sometimes wait until the sick person can no longer take part. It is better to call while they are conscious and can also go to Confession and receive Communion.",
+      "For families and caregivers: call the parish office and ask for a priest to anoint the sick person, giving their name, where they are, and how serious the situation is. Ask the parish how to reach a priest in an emergency. Hospitals, hospices, and nursing homes often have a chaplain who can help. The Church asks the whole community to surround the sick with prayer and attention (CCC 1516), so you can pray with them, read Scripture, and, if possible, be present when the priest comes.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1499", url: ccc("__P4J") },
+        { paragraphs: "1502–1513", url: ccc("__P4K") },
+        { paragraphs: "1514–1516", url: ccc("__P4L") },
+        { paragraphs: "1517–1519", url: ccc("__P4M") },
+        { paragraphs: "1520–1523", url: ccc("__P4N") },
+        { paragraphs: "1524–1525", url: ccc("__P4O") },
+        { paragraphs: "1526–1532", url: ccc("__P4P") },
+      ],
+      scripture: [
+        { passage: "Mark 6:7–13", url: bible("mark/6") },
+        { passage: "James 5:13–16", url: bible("james/5") },
+        { passage: "Exodus 15:26", url: bible("exodus/15") },
+        { passage: "Matthew 25:31–46", url: bible("matthew/25") },
+      ],
+      documents: ["sacram-unctionem-infirmorum", "canon-law-orders-marriage"],
+    },
+    resources: ["usccb-anointing-of-the-sick", "ca-anointing-of-the-sick"],
+    related: ["seven-sacraments", "confession", "what-is-the-eucharist", "catholic-funerals-and-grief", "what-happens-when-we-die"],
+  },
+  {
     slug: "marriage-sacrament",
     title: "The Sacrament of Marriage",
     question: "What makes marriage a sacrament?",
     alsoKnownAs: ["Matrimony", "Sacrament of Matrimony", "Holy Matrimony"],
     category: "sacraments",
-    keywords: ["marriage", "matrimony", "Catholic wedding", "sacramental marriage", "vows", "consent", "indissoluble", "covenant", "Cana", "two become one flesh", "who marries the couple", "can marriage be dissolved", "marrying in the Church"],
+    keywords: ["marriage", "matrimony", "Catholic wedding", "sacramental marriage", "vows", "consent", "indissoluble", "covenant", "Cana", "two become one flesh", "who marries the couple", "can marriage be dissolved", "marrying in the Church", "divorce", "why can't Catholics divorce", "indissolubility"],
     summary:
       "God created marriage from the beginning as a lifelong covenant between a man and a woman, ordered to their good and to the gift of children. When both spouses are baptized, Christ raises their marriage to a sacrament: their union becomes a living sign of his own faithful love for the Church, and it gives them the grace to love each other as he loves. In the Latin Church, the spouses themselves confer the sacrament on each other by their consent.",
     explanation: [
@@ -704,6 +809,8 @@ export const sacraments: Topic[] = [
       "Who confers it: in the Latin Church the spouses are the ministers of the sacrament, giving it to each other by their free consent before the Church; the priest or deacon receives their consent in the Church's name, with two witnesses (CCC 1623, 1626; canon 1108). In the Eastern Churches, the priest or bishop is the minister and crowns the couple (CCC 1623).",
       "Its marks: unity, indissolubility, and openness to children are essential to marriage (CCC 1644–1652, 1664; canon 1056). A marriage between baptized persons that has been consummated can be dissolved by no human power (CCC 1640; canon 1141).",
       "Its grace: the sacrament strengthens the spouses to love each other faithfully, to grow in holiness together, and to welcome and raise their children (CCC 1641–1642, 1661).",
+      "Why can't the Church allow divorce and remarriage? Jesus himself taught, “Whoever divorces his wife and marries another commits adultery against her” (Mark 10:11), and said Moses had permitted divorce “because of the hardness of your hearts” (Matthew 19:8). The Church therefore holds that a valid, consummated marriage between baptized persons “can never be dissolved,” and that “the Church does not have the power to contravene this disposition of divine wisdom” (CCC 1640). When a marriage was never valid, a Church tribunal can declare its nullity; see What if I've been married before?",
+      "An early witness: around 110, St. Ignatius of Antioch wrote that “it becomes both men and women who marry, to form their union with the approval of the bishop, that their marriage may be according to God” (Letter to Polycarp 5).",
     ],
     teaching: {
       catechism: [
@@ -720,10 +827,11 @@ export const sacraments: Topic[] = [
         { passage: "Matthew 19:3–9", url: bible("matthew/19") },
         { passage: "John 2:1–11", url: bible("john/2") },
         { passage: "Ephesians 5:21–33", url: bible("ephesians/5") },
+        { passage: "Mark 10:2–12", url: bible("mark/10") },
       ],
       documents: ["canon-law-orders-marriage", "gaudium-et-spes", "familiaris-consortio"],
     },
-    resources: ["fym-marriage-as-sacrament"],
+    resources: ["fym-marriage-as-sacrament", "ignatius-to-polycarp"],
     related: ["seven-sacraments", "what-is-a-sacrament", "married-before-ocia"],
   },
 ];

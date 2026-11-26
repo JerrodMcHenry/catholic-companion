@@ -172,6 +172,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `what-is-the-creed` ✓ | What is the Creed? | Nicene Creed, Apostles' Creed, symbol of faith | B | P1 | `mass-creed`, `council-of-nicaea` |  |
 | `what-is-faith` ✓ | What is faith? | Theological virtue of faith, assent | B | P1 | `faith-and-reason` |  |
 | `divine-revelation` ✓ | How has God revealed himself? | Divine revelation, public and private revelation | I | P1 | `what-is-sacred-tradition`, `what-is-the-bible` |  |
+| `salvation-history` ✓ | What is the story of the Bible? | Salvation history, covenants | B | P2 | `divine-revelation`, `original-sin` | Approved 2026-11-25 |
 | `what-is-the-catechism` ✓ | What is the Catechism? | CCC, Compendium | B | P1 | `what-is-dogma` | Points readers to the Vatican text |
 | `what-is-dogma` ✓ | What is a dogma, and how is it different from opinion? | Doctrine, hierarchy of truths, theological notes | I | P1 | `what-is-the-magisterium`, `development-of-doctrine` | Explains the app's authority labels |
 | `why-does-the-church-have-rules` | Why does the Church have so many rules? | Precepts, law and freedom | B | P2 | `precepts-of-the-church` | |
@@ -307,13 +308,13 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `mass-as-sacrifice` ✓ | Is the Mass a sacrifice? | Eucharistic sacrifice | I | P1 | `why-did-jesus-die` | D: Protestantism |
 | `passover-and-the-eucharist` | How is the Eucharist connected to the Passover? | Last Supper, Seder, paschal lamb | I | P2 | `mass-in-scripture`, `the-temple` | Context for Jewish dialogue |
 | `who-can-receive-communion` ✓ | Who can receive Communion? | Communion guidelines, intercommunion | B | P1 | `how-to-receive-communion` | D: Protestantism; R |
-| `eucharistic-adoration` | What is Eucharistic adoration? | Adoration, Benediction | B | P2 | `real-presence` | |
+| `eucharistic-adoration` ✓ | What is Eucharistic adoration? | Adoration, Benediction | B | P2 | `real-presence` | Built 2026-11-25 |
 | `confession` ✓ | What is Confession? | Penance, Reconciliation | B | P1 | `how-to-go-to-confession` | |
 | `why-confess-to-a-priest` ✓ | Why confess to a priest? | | I | P1 | `confession` | D: Protestantism |
 | `how-to-go-to-confession` ✓ | How do I go to Confession? | Examination of conscience, Act of Contrition | B | P1 | `confession` | |
 | `mortal-and-venial-sin` ✓ | What is the difference between mortal and venial sin? | | I | P1 | `what-is-sin` | |
-| `anointing-of-the-sick` | What is the Anointing of the Sick? | Extreme unction | B | P2 | `last-rites` | |
-| `last-rites` | What are the last rites? | Viaticum | B | P2 | `anointing-of-the-sick` | |
+| `anointing-of-the-sick` ✓ | What is the Anointing of the Sick? | Extreme unction, last rites, Viaticum | B | P2 | `catholic-funerals-and-grief` | Approved 2026-11-25; covers `last-rites` |
+| `last-rites` | What are the last rites? | Viaticum | B | P2 | `anointing-of-the-sick` | Covered within `anointing-of-the-sick` (2026-11-25) |
 | `holy-orders` | What is Holy Orders? | Ordination | B | P2 | `bishops-priests-deacons` | |
 | `priestly-celibacy` | Why are Catholic priests usually celibate? | Celibacy | I | P2 | `married-priests` | D: Protestantism |
 | `married-priests` | Are there married Catholic priests? | Eastern Catholic clergy, Pastoral Provision | I | P3 | `priestly-celibacy` | |
@@ -382,7 +383,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `liturgy-of-the-hours` | What is the Liturgy of the Hours? | Divine Office, breviary | I | P2 | `the-psalms` | |
 | `daily-examen` | What is the daily examen? | Ignatian examen | B | P2 | `how-to-go-to-confession` | |
 | `forgiveness` | How do I forgive someone who hurt me? | | B | P2 | `our-father`, `confession` | |
-| `temptation` | How do I resist temptation? | Concupiscence, near occasion of sin | B | P2 | `what-is-sin`, `spiritual-warfare` | |
+| `temptation` | How do I resist temptation? | Concupiscence, near occasion of sin | B | P2 | `what-is-sin`, `spiritual-warfare` | Covered within `confession` (2026-11-25) |
 | `trusting-god` | How do I learn to trust God? | Abandonment to providence | B | P2 | `divine-providence` | |
 | `spiritual-warfare` | What is spiritual warfare? | Ephesians 6, armor of God | I | P3 | `is-the-devil-real`, `temptation` | R (avoid sensationalism) |
 | `scrupulosity` | What is scrupulosity, and where can I find help? | Scruples | I | P3 | `how-to-go-to-confession` | R; pastoral; points to a confessor and professional help |
@@ -391,9 +392,9 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `novenas` | What is a novena? | | B | P3 | | |
 | `sacred-heart` | What is devotion to the Sacred Heart? | | B | P3 | | |
 | `why-catholics-fast` | Why do Catholics fast? | Fasting, mortification | B | P2 | `fasting-and-abstinence` | |
-| `virtues` | What are the virtues? | Theological virtues, cardinal virtues | I | P2 | `what-is-faith` | |
+| `virtues` ✓ | What are the virtues? | Theological virtues, cardinal virtues | I | P2 | `what-is-faith` | Approved 2026-11-25 |
 | `universal-call-to-holiness` | Is everyone called to be a saint? | Universal call to holiness | B | P2 | `what-is-a-saint` | |
-| `dryness-in-prayer` | What if prayer feels empty? | Spiritual dryness, dark night | I | P3 | `how-to-pray` | |
+| `dryness-in-prayer` | What if prayer feels empty? | Spiritual dryness, dark night | I | P3 | `how-to-pray` | Covered within `how-to-pray` (2026-11-25) |
 | `spiritual-direction` | What is spiritual direction? | | I | P3 | `discernment` | |
 | `discernment` | How do I discern God's will? | Discernment of spirits | I | P3 | `vocation` | |
 
@@ -552,7 +553,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `ordinary-time` | What is Ordinary Time? | | B | P2 | `liturgical-year` | |
 | `holy-days-of-obligation` ✓ | What are holy days of obligation? | | B | P1 | `why-go-to-mass-on-sunday` | U.S. calendar |
 | `feasts-and-solemnities` | What are feasts, memorials, and solemnities? | Ranks of celebration | I | P3 | `liturgical-year` | |
-| `catholic-funerals` | What happens at a Catholic funeral? | Order of Christian Funerals | B | P2 | `praying-for-the-dead` | |
+| `catholic-funerals-and-grief` ✓ | What do Catholics do when someone dies? | Funeral Mass, Order of Christian Funerals, cremation, grief | B | P2 | `praying-for-the-dead` | Approved 2026-11-25; covers the planned `cremation` and `grief-and-faith` |
 | `other-catholic-liturgies` | What other liturgies do Catholics celebrate? | Blessings, Liturgy of the Hours, Benediction | I | P3 | `liturgy-of-the-hours` | |
 
 ### 4.19 OCIA and Becoming Catholic
@@ -573,7 +574,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `confession-before-becoming-catholic` | Do I go to Confession before becoming Catholic? | | B | P2 | `how-to-go-to-confession` | |
 | `married-before-ocia` ✓ | What if I've been married before? | Annulment, OCIA and marriage | I | P1 | `annulment` | R; common barrier |
 | `after-becoming-catholic` ✓ | What happens after I become Catholic? | Mystagogy | B | P1 | `stages-of-ocia` | |
-| `telling-family` | How do I talk to my family about becoming Catholic? | | B | P3 | | Pastoral reflection |
+| `telling-family` ✓ | What if my family opposes my becoming Catholic? | | B | P3 | | Pastoral reflection |
 | `finding-a-parish` ✓ | How do I find a parish? | | B | P1 | `dioceses-and-parishes` | |
 | `returning-to-the-church` ✓ | I was raised Catholic but stopped practicing. How do I come back? | Returning Catholics | B | P1 | `how-to-go-to-confession` | |
 | `catholic-but-not-confirmed` | I'm Catholic but was never confirmed. What do I do? | | B | P2 | `confirmation` | |
@@ -596,10 +597,10 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `supporting-the-church` | Should Catholics tithe? | Stewardship | B | P3 | `precepts-of-the-church` | |
 | `sharing-your-faith` | How do I share my faith? | Evangelization | B | P2 | `evangelization` | |
 | `evangelization` | Why does the Church evangelize? | Mission | I | P3 | `sharing-your-faith` | |
-| `grief-and-faith` | How does the faith help with grief? | Consolation | B | P3 | `catholic-funerals` | Pastoral reflection |
+| `grief-and-faith` | How does the faith help with grief? | Consolation | B | P3 | `catholic-funerals-and-grief` | Pastoral reflection; introductory coverage in `catholic-funerals-and-grief` |
 | `returning-after-mortal-sin` ✓ | I've committed a mortal sin. Can I still go to Mass? | | B | P1 | `how-to-go-to-confession`, `mortal-and-venial-sin` | R; pastoral |
-| `doubts-about-faith` | Is it wrong to have doubts about my faith? | Doubt and unbelief | B | P2 | `what-is-faith`, `faith-and-reason` | |
-| `cremation` | Can Catholics be cremated? | Ad resurgendum cum Christo | B | P2 | `catholic-funerals`, `resurrection-of-the-body` | |
+| `doubts-about-faith` | Is it wrong to have doubts about my faith? | Doubt and unbelief | B | P2 | `what-is-faith`, `faith-and-reason` | Covered within `what-is-faith` (2026-11-25) |
+| `cremation` | Can Catholics be cremated? | Ad resurgendum cum Christo | B | P2 | `catholic-funerals-and-grief`, `resurrection-of-the-body` | Covered within `catholic-funerals-and-grief` (2026-11-25) |
 | `single-life` | Is the single life a vocation? | | I | P3 | `vocation` | |
 
 ### 4.21 Comparative Religion and 4.22 Apologetics
@@ -1006,8 +1007,8 @@ Each curriculum is an ordered reading plan built only from inventory topics, wit
 
 Pathways are ordered lists of existing topic slugs. Each can later be a simple ordered list like today's Start here page; no new software is needed. Topics already built are marked ✓.
 
-### 8.1 Completely new to Catholicism (12)
-`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` ✓ → `how-to-become-catholic` ✓
+### 8.1 Completely new to Catholicism (15)
+`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `salvation-history` ✓ → `original-sin` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `how-are-we-saved` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` ✓ → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
 `how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` ✓ → `what-happens-when-we-die` ✓ → `ten-commandments` ✓ → `easter-vigil` ✓ → `after-becoming-catholic` ✓
@@ -1016,9 +1017,9 @@ Pathways are ordered lists of existing topic slugs. Each can later be a simple o
 `first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
 
 ### 8.4 Practicing Catholic going deeper (14)
-`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` ✓ → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` → `natural-law` → `what-is-catholic-social-teaching` ✓ → `who-are-the-church-fathers` ✓ → `thomas-aquinas`
+`what-is-dogma` ✓ → `divine-revelation` ✓ → `development-of-doctrine` → `what-is-grace` ✓ → `mass-as-sacrifice` ✓ → `mass-eucharistic-prayer` ✓ → `fathers-on-the-eucharist` ✓ → `kinds-of-prayer` → `liturgy-of-the-hours` → `virtues` ✓ → `natural-law` → `what-is-catholic-social-teaching` ✓ → `who-are-the-church-fathers` ✓ → `thomas-aquinas`
 
-At launch this pathway is the eight topics that will exist then; `development-of-doctrine`, `kinds-of-prayer`, `liturgy-of-the-hours`, `virtues`, `natural-law`, and `thomas-aquinas` stay P2 and join it after launch. If the pathway is shown in the app before then, it lists only built topics, so there are no dead links or partial-completion counts.
+At launch this pathway is the eight topics that will exist then; `development-of-doctrine`, `kinds-of-prayer`, `liturgy-of-the-hours`, `virtues` ✓, `natural-law`, and `thomas-aquinas` stay P2 and join it after launch. If the pathway is shown in the app before then, it lists only built topics, so there are no dead links or partial-completion counts.
 
 ### 8.5 Exploring Catholic apologetics (12)
 `does-god-exist` ✓ → `problem-of-evil` ✓ → `did-jesus-exist` ✓ → `resurrection` ✓ → `divinity-of-jesus` ✓ → `did-jesus-found-a-church` ✓ → `sola-scriptura` ✓ → `peter-the-rock` ✓ → `faith-and-works` ✓ → `real-presence` ✓ → `why-honor-mary` ✓ → `salvation-of-non-christians` ✓
@@ -1178,29 +1179,29 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 
 | Subject | Topics | P1 | P2 | P3 | Debate | Review (R) | Built |
 |---|---|---|---|---|---|---|---|
-| 4.1 Foundations of Catholicism | 12 | 8 | 4 | 0 | 1 | 0 | 8 |
+| 4.1 Foundations of Catholicism | 13 | 8 | 5 | 0 | 1 | 0 | 9 |
 | 4.2 God and the Holy Trinity | 12 | 4 | 4 | 4 | 3 | 0 | 4 |
 | 4.3 Jesus Christ | 15 | 7 | 6 | 2 | 4 | 0 | 7 |
 | 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 4 |
 | 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 6 |
 | 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 10 |
-| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
+| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 16 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 4 |
 | 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 3 |
-| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 7 |
+| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 8 |
 | 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 7 |
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
 | 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 5 |
 | 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 2 |
 | 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 1 |
-| 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 7 |
-| 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 9 |
+| 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 8 |
+| 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 10 |
 | 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 2 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
 | 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
-| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **168** |
+| **Total** | **423** | **168** | **175** | **80** | **91** | **52** | **174** |
 
 <!-- /generated: counts -->
 

@@ -60,7 +60,7 @@ export const god: Topic[] = [
     question: "Is the Trinity in the Bible?",
     alsoKnownAs: ["Biblical basis of the Trinity"],
     category: "beliefs",
-    keywords: ["Trinity in the Bible", "is the Trinity biblical", "word Trinity not in the Bible", "Father Son and Holy Spirit", "Matthew 28:19", "2 Corinthians 13:13", "John 1:1", "one God three persons", "Godhead", "Shema"],
+    keywords: ["Trinity in the Bible", "is the Trinity biblical", "word Trinity not in the Bible", "Father Son and Holy Spirit", "Matthew 28:19", "2 Corinthians 13:13", "John 1:1", "one God three persons", "Godhead", "Shema", "Trinity before Nicaea", "early Church Trinity", "Theophilus"],
     summary:
       "The word “Trinity” does not appear in the Bible, but Catholics believe the truth it names is revealed there. Scripture teaches that there is only one God, and it also presents the Father, the Son, and the Holy Spirit as each truly God and as distinct from one another. The Church later developed precise terms, such as “person” and “substance,” to express faithfully what Scripture reveals.",
     explanation: [
@@ -70,10 +70,11 @@ export const god: Topic[] = [
       "Father, Son, and Spirit together: Jesus sends the apostles to baptize “in the name of the Father, and of the Son, and of the holy Spirit” (Matthew 28:19), one name for three. Paul blesses the Corinthians with “the grace of the Lord Jesus Christ and the love of God and the fellowship of the holy Spirit” (2 Corinthians 13:13), words the Church still uses at Mass (CCC 249).",
       "Revealed in Christ: the Catechism says God left “traces of his Trinitarian being” in creation and the Old Testament, but his inmost being as Trinity was “inaccessible to reason alone or even to Israel's faith” before the Incarnation and the sending of the Spirit (CCC 237).",
       "Words for the mystery: to articulate this faith, the Church “had to develop her own terminology” with terms such as “substance,” “person,” and “relation” (CCC 251), especially at the Councils of Nicaea (325) and Constantinople (381). Jews, Muslims, Jehovah's Witnesses, and Latter-day Saints read these passages differently; their views are set out below. This page does not rely on the longer wording of 1 John 5:7–8 that some older translations contain; the NABRE reads only, “So there are three that testify, the Spirit, the water, and the blood.”",
+      "Before Nicaea: the faith defined at Nicaea in 325 was confessed long before it. The Didache, an early Christian manual often dated to the late first century, tells Christians to “baptize into the name of the Father, and of the Son, and of the Holy Spirit” (Didache 7). Around 180, St. Theophilus of Antioch gives the earliest surviving use of the Greek word trias (“triad”), naming God, his Word, and his Wisdom; the standard English translation renders it “the Trinity, of God, and His Word, and His wisdom” (To Autolycus 2.15). The word may already have been in use before him. Theophilus's terms are not yet the later technical vocabulary. The Latin trinitas appears soon after in Tertullian, who early in the third century defended “the mystery of the dispensation... which distributes the Unity into a Trinity, placing in their order the three Persons — the Father, the Son, and the Holy Ghost” (Against Praxeas 2). The precise formulation, one God in three distinct persons sharing one divine nature, was worked out at the Councils of Nicaea (325) and Constantinople (381) (CCC 245–256). Early writers did not always speak with that later precision, but faith in Father, Son, and Spirit as the one God did not begin at Nicaea.",
     ],
     teaching: {
       catechism: [
-        { paragraphs: "232–237, 249–256", url: ccc("__P17") },
+        { paragraphs: "232–237, 245, 249–256", url: ccc("__P17") },
       ],
       scripture: [
         { passage: "Deuteronomy 6:4", url: bible("deuteronomy/6") },
@@ -85,7 +86,7 @@ export const god: Topic[] = [
       ],
       documents: [],
     },
-    resources: ["ca-explaining-the-trinity", "ca-early-church-trinity"],
+    resources: ["ca-explaining-the-trinity", "ca-early-church-trinity", "didache", "theophilus-to-autolycus-2", "tertullian-against-praxeas"],
     related: ["what-is-the-trinity", "divinity-of-jesus", "who-is-the-holy-spirit", "who-is-god"],
     debate: {
       catholicPosition: {
@@ -177,7 +178,7 @@ export const god: Topic[] = [
     summary:
       "The Holy Spirit is the third person of the Holy Trinity: truly God, worshiped and glorified together with the Father and the Son. Jesus promised to send the Spirit as an Advocate who would remain with his disciples, and the Spirit came upon them at Pentecost. The Spirit awakens faith, makes Christ present in the Church, and makes us children of God.",
     explanation: [
-      "“Spirit” translates the Hebrew word ruah, meaning breath or wind. Jesus also called the Spirit the Paraclete, “the one called to one's side,” and the Spirit of truth (John 14:16–17).",
+      "“Spirit” translates the Hebrew word ruah, meaning breath or wind. Jesus also called the Spirit the Paraclete, literally “he who is called to one's side” (CCC 692), and the Spirit of truth (John 14:16–17).",
       "The Spirit is a person, not an impersonal force: the Church professes that “with the Father and the Son he is worshipped and glorified.”",
       "At Pentecost the apostles “were all filled with the holy Spirit” (Acts 2:4) and began to proclaim the Gospel. The Spirit continues to act through Scripture, the sacraments, prayer, and the gifts he gives.",
       "The Spirit is the one who first awakens faith in us. Through him we can call God “Abba, Father!” (Romans 8:15).",

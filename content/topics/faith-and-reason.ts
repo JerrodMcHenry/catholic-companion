@@ -34,7 +34,7 @@ export const faithAndReason: Topic[] = [
       ],
       documents: ["vatican-i-dei-filius", "fides-et-ratio"],
     },
-    resources: ["aquinas-five-ways", "sep-cosmological"],
+    resources: ["aquinas-five-ways", "sep-cosmological", "kreeft-can-you-prove-god"],
     related: ["problem-of-evil", "who-is-god", "faith-and-science", "creation"],
     debate: {
       catholicPosition: {
@@ -123,7 +123,7 @@ export const faithAndReason: Topic[] = [
       ],
       documents: ["fides-et-ratio", "vatican-i-dei-filius"],
     },
-    resources: ["sep-religion-science"],
+    resources: ["sep-religion-science", "baglow-fake-conflict"],
     related: ["creation-and-evolution", "creation", "does-god-exist", "what-is-the-bible"],
     debate: {
       catholicPosition: {

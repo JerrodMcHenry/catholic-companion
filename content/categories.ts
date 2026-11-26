@@ -5,7 +5,7 @@ export const pillars: Pillar[] = [
   { id: "becoming", title: "Becoming Catholic", description: "OCIA, finding a parish, and the path into the Church." },
   { id: "mass", title: "Understanding the Mass", description: "What happens at Mass, what to say and do, and what each part means." },
   { id: "live", title: "Living the Faith", description: "Prayer, the Church year, the moral life, and everyday Catholic practice." },
-  { id: "apologetics", title: "Common Questions", description: "Clear answers to the questions people most often ask about Catholicism." },
+  { id: "apologetics", title: "Common Questions and Arguments", description: "Clear answers to common questions, and Catholic responses to common arguments." },
   { id: "deeper", title: "Go Deeper", description: "Church history, faith and reason, and other Christian traditions and religions." },
   { id: "resources", title: "Trusted Resources", description: "Articles, videos, and official Church documents worth your time." },
 ];

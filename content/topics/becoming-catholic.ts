@@ -176,7 +176,7 @@ export const becomingCatholic: Topic[] = [
     question: "What if I've been married before?",
     alsoKnownAs: ["Annulment and OCIA", "Declaration of nullity", "Divorced and becoming Catholic"],
     category: "becoming-catholic",
-    keywords: ["divorced", "married before", "annulment", "declaration of nullity", "remarried", "previous marriage", "OCIA marriage", "irregular marriage", "convalidation", "Pauline privilege", "tribunal", "can I become Catholic if I'm divorced"],
+    keywords: ["divorced", "married before", "annulment", "declaration of nullity", "remarried", "previous marriage", "OCIA marriage", "irregular marriage", "convalidation", "Pauline privilege", "tribunal", "can I become Catholic if I'm divorced", "annulment", "declaration of nullity", "divorced", "tribunal", "remarried"],
     summary:
       "A previous marriage does not by itself keep anyone from becoming Catholic, and many people in OCIA have been married before. Because the Church presumes that marriages, including those of non-Catholics, are valid, a past marriage can matter, especially if you or your spouse were married before and are now in a new marriage. Every situation is different, and only your parish and the diocesan tribunal can look at yours. Tell the parish early; this page explains the general principles, not your individual case.",
     explanation: [
@@ -186,12 +186,15 @@ export const becomingCatholic: Topic[] = [
       "What a declaration of nullity is: after examining a case, a Church tribunal can declare that a marriage was null from the beginning, that is, that a true marriage never existed. It is not a Catholic divorce (CCC 1629), and children of the marriage remain legitimate (canon 1137). Cases are heard by diocesan tribunals (canons 1671–1673).",
       "Other paths: in some situations, such as a prior marriage between two unbaptized people, Church law provides other procedures, such as the Pauline privilege (canon 1143). Which path, if any, applies to you is for the tribunal to determine.",
       "You are not alone: the Church asks pastors and communities to show attentive care to the divorced, who are not separated from the Church and are encouraged to attend Mass, pray, and take part in parish life (CCC 1651). The first step is simply a conversation with the parish priest or OCIA leader, who can put you in touch with the diocesan tribunal if needed.",
+      "What it is not: a declaration of nullity is not a Catholic divorce. Civil divorce ends the legal effects of a marriage under civil law; it cannot end a valid marriage bond, though the Church may tolerate it to protect legal rights or the care of children (CCC 2383). A declaration of nullity is the Church's finding that a marriage thought to be valid lacked something essential from the start. It “does not deny that a relationship existed,” and it does not make children of the marriage illegitimate (canon 1137; USCCB, Annulment FAQ).",
+      "Taking the first step: talk with your parish priest, deacon, or OCIA leader, who can explain the process and put you in touch with the diocesan tribunal. Costs vary by diocese; Pope Francis has asked dioceses to provide tribunal services free of charge whenever possible, and fees can often be reduced or waived (USCCB, Annulment FAQ). Only the tribunal can judge a particular marriage, so avoid drawing conclusions about your own situation from general information, including this page.",
     ],
     teaching: {
       catechism: [
         { paragraphs: "1629", url: ccc("__P53") },
         { paragraphs: "1640", url: ccc("__P54") },
         { paragraphs: "1650–1651", url: ccc("__P55") },
+        { paragraphs: "2382–2386", url: ccc("__P87") },
       ],
       scripture: [
         { passage: "Matthew 19:3–9", url: bible("matthew/19") },
@@ -199,8 +202,41 @@ export const becomingCatholic: Topic[] = [
       ],
       documents: ["usccb-nscia", "canon-law-orders-marriage", "canon-law-marriage-cases"],
     },
-    resources: ["ca-divorce-annulment-primer"],
+    resources: ["ca-divorce-annulment-primer", "usccb-annulment-faq"],
     related: ["marriage-sacrament", "what-is-ocia", "who-can-receive-communion", "returning-to-the-church"],
+  },
+  {
+    slug: "telling-family",
+    title: "When Family Objects",
+    question: "What if my family opposes my becoming Catholic?",
+    alsoKnownAs: ["Telling family about becoming Catholic", "Spouse not Catholic"],
+    category: "becoming-catholic",
+    keywords: ["family opposition", "family against me becoming Catholic", "parents upset", "spouse objects", "husband not Catholic", "wife not Catholic", "telling my parents", "converting to Catholicism family", "friends disapprove", "interfaith marriage"],
+    summary:
+      "Many people come to the Catholic Church while a spouse, parents, or friends are worried or opposed. Go gently: listen to their concerns, explain what Catholics actually believe, keep loving and serving your family, and do not rush. Your parish priest or OCIA leader can help you take the next step at a pace that respects your family.",
+    explanation: [
+      "Listen first: family members may fear losing you, misunderstand Catholic teaching, or feel that their own faith is being rejected. Ask what worries them, and listen without rushing to rebut. A Coming Home Network guide for converts puts it this way: “This isn't an argument to be won; it's a dialog with a person you are called to love deeply.”",
+      "Explain, don't argue: Christians are asked to “always be ready to give an explanation to anyone who asks you for a reason for your hope, but do it with gentleness and reverence” (1 Peter 3:15–16). Many objections rest on misunderstandings, such as the idea that Catholics worship Mary or try to earn salvation; the Common Questions section can help you explain what the Church actually teaches. Share what drew you, rather than trying to win every point.",
+      "Keep your family responsibilities: becoming Catholic should make you a more loving spouse, son or daughter, and parent, not a more distant one. “Honor your father and your mother” (Exodus 20:12) still applies, and Paul urges, “If possible, on your part, live at peace with all” (Romans 12:18). He told believers married to unbelievers not to leave their spouses (1 Corinthians 7:12–14). Avoid ultimatums, and do not pressure anyone to convert: “nobody is to be forced to embrace the faith against his will” (CCC 160).",
+      "When following Christ is costly: the Catechism says that “family ties are important but not absolute,” because “the first vocation of the Christian is to follow Jesus” (CCC 2232), echoing his words, “Whoever loves father or mother more than me is not worthy of me” (Matthew 10:37). This is not permission to cut yourself off from your family. It means that, after patient discernment, you may follow your conscience even when people you love disagree.",
+      "Patience and practical steps: there is usually no need to rush. Many people move through OCIA at a pace that gives family time to ask questions; some invite a spouse to Mass or to meet the priest. If you are married, your spouse's concerns matter, including questions about how children will be raised; talk about them openly and with the parish. If you are under eighteen, ask the parish what is needed in your situation. Pray for your family, and ask others to pray for them too.",
+      "Get help early: talk with your parish priest or OCIA director. They have walked with many people in this situation and can help you discern timing. Organizations such as the Coming Home Network also support converts whose families do not share their journey.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "160", url: ccc("__PX") },
+        { paragraphs: "2232–2233", url: ccc("__P7V") },
+      ],
+      scripture: [
+        { passage: "1 Peter 3:13–17", url: bible("1peter/3") },
+        { passage: "Romans 12:9–18", url: bible("romans/12") },
+        { passage: "1 Corinthians 7:12–16", url: bible("1corinthians/7") },
+        { passage: "Matthew 10:34–39", url: bible("matthew/10") },
+      ],
+      documents: [],
+    },
+    resources: ["chn-marital-struggles", "ca-spouse-family-not-catholic"],
+    related: ["how-to-become-catholic", "what-is-ocia", "married-before-ocia", "are-catholics-christians", "catholic-and-protestant-differences"],
   },
   {
     slug: "finding-a-parish",
@@ -274,7 +310,7 @@ export const becomingCatholic: Topic[] = [
     question: "What happens after I become Catholic?",
     alsoKnownAs: ["Mystagogy"],
     category: "becoming-catholic",
-    keywords: ["after OCIA", "after becoming Catholic", "mystagogy", "neophyte", "new Catholic", "what next after Easter Vigil", "precepts of the Church", "Catholic obligations", "growing in faith", "spiritual direction", "parish life"],
+    keywords: ["after OCIA", "after becoming Catholic", "mystagogy", "neophyte", "new Catholic", "what next after Easter Vigil", "precepts of the Church", "Catholic obligations", "growing in faith", "spiritual direction", "parish life", "too many rules", "precepts of the Church", "Catholic rules"],
     summary:
       "Becoming Catholic is a beginning, not a graduation. After the sacraments of initiation comes mystagogy, a time of reflecting on the sacraments and growing into parish life, and then a lifetime of formation. The Church asks a few things of every Catholic, such as Sunday Mass and yearly Confession, and recommends much more: daily prayer, Scripture, learning, service, and good guidance.",
     explanation: [
@@ -284,6 +320,7 @@ export const becomingCatholic: Topic[] = [
       "Parish and service: formation is meant to lead into “the ordinary life of the Christian people” (National Statutes, Norm 5). Join a ministry or small group, and practice the works of mercy, such as feeding the hungry and visiting the sick (CCC 2447; see “What is Catholic social teaching?”).",
       "Guidance: the Church values spiritual direction by people with “wisdom, faith and discernment” (CCC 2690). A priest, your sponsor, or a trusted parishioner can help you grow and work through questions.",
       "When it gets hard: faith grows over a lifetime, with dry seasons as well as joyful ones. Struggles do not mean you failed; keep coming to Mass and Confession, and ask for help. If you ever drift away, the way back is always open (see “Returning to the Church”).",
+      "Too many rules? The Church's own precepts are few: Mass on Sundays and holy days, yearly Confession, Communion in the Easter season, fasting and abstinence on set days, and supporting the Church. Their purpose is “to guarantee to the faithful the indispensable minimum in the spirit of prayer and moral effort, in the growth in love of God and neighbor” (CCC 2041). Jesus summed up the law as love of God and neighbor (Matthew 22:37–40) and said, “If you love me, you will keep my commandments” (John 14:15). The New Law is “a law of love,” “a law of grace,” and “a law of freedom” (CCC 1972). The rules are a floor, not the ceiling.",
     ],
     teaching: {
       catechism: [
@@ -292,11 +329,14 @@ export const becomingCatholic: Topic[] = [
         { paragraphs: "2041–2043", url: ccc("__P75") },
         { paragraphs: "2447", url: ccc("__P8F") },
         { paragraphs: "2690", url: ccc("__P9H") },
+        { paragraphs: "1972", url: ccc("__P6W") },
       ],
       scripture: [
         { passage: "Acts 2:42", url: bible("acts/2") },
         { passage: "Colossians 2:6–7", url: bible("colossians/2") },
         { passage: "2 Peter 3:18", url: bible("2peter/3") },
+        { passage: "Matthew 22:34–40", url: bible("matthew/22") },
+        { passage: "John 14:15–21", url: bible("john/14") },
       ],
       documents: ["usccb-nscia"],
     },

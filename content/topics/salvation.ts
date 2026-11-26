@@ -18,7 +18,7 @@ export const salvation: Topic[] = [
       "Through Christ: justification “has been merited for us by the Passion of Christ” and “is conferred in Baptism, the sacrament of faith” (CCC 1992). Believing in Christ is necessary for salvation (CCC 161), and Baptism is the door to new life (CCC 1213).",
       "More than a verdict: the Church teaches that justification “is not only the remission of sins, but also the sanctification and renewal of the interior man” (CCC 1989). God forgives us and also makes us new, pouring faith, hope, and charity into our hearts (CCC 1991).",
       "A response of love: God's free initiative calls for our free response (CCC 2002). Faith works “through love” (Galatians 5:6), and with grace we “work out” our salvation, knowing that “God is the one who… works in you both to desire and to work” (Philippians 2:12–13). How faith and works relate is explained in “Are we saved by faith or by works?”",
-      "Can salvation be lost? Catholics believe grave sin can destroy the life of grace, which is restored through repentance and the sacrament of Penance (CCC 1446, 1861). They hope with confidence in God's mercy for the grace of final perseverance (CCC 2016).",
+      "Can salvation be lost? Catholics believe grave sin can destroy the life of grace, which is restored through repentance and the sacrament of Penance (CCC 1446, 1861). Scripture warns that believers can fall away: Paul disciplines himself “for fear that, after having preached to others, I myself should be disqualified” (1 Corinthians 9:27), and Hebrews speaks of those who “have fallen away” after sharing in the Holy Spirit (Hebrews 6:4–6). Catholics therefore hope with confidence in God's mercy for the grace of final perseverance (CCC 2016).",
     ],
     teaching: {
       catechism: [
@@ -33,10 +33,12 @@ export const salvation: Topic[] = [
         { passage: "Romans 3:21–26", url: bible("romans/3") },
         { passage: "John 3:3–5, 16", url: bible("john/3") },
         { passage: "Philippians 2:12–13", url: bible("philippians/2") },
+        { passage: "1 Corinthians 9:24–27", url: bible("1corinthians/9") },
+        { passage: "Hebrews 6:4–6", url: bible("hebrews/6") },
       ],
       documents: ["trent-session-6", "joint-declaration-justification"],
     },
-    resources: ["ca-grace", "ca-assurance-of-salvation"],
+    resources: ["ca-grace", "ca-assurance-of-salvation", "ca-eternal-security-akin"],
     related: ["what-is-grace", "faith-and-works", "baptism", "why-did-jesus-die", "salvation-of-non-christians"],
   },
   {
@@ -84,6 +86,7 @@ export const salvation: Topic[] = [
       "Faith working through love: the same Paul says what counts is “faith working through love” (Galatians 5:6), and James writes, “a person is justified by works and not by faith alone” (James 2:24). Catholics read these together: the faith that saves is a living faith that bears fruit.",
       "Growth and merit: once justified, the faithful grow in grace through faith “co-operating with good works” (Trent, Session 6, ch. 10). Any merit belongs first to God's grace (CCC 2008–2011).",
       "Common ground: the Catholic Church and the Lutheran World Federation declared “a consensus in basic truths of the doctrine of justification” (Joint Declaration 40), confessing together that “by grace alone, in faith in Christ's saving work and not because of any merit on our part, we are accepted by God” (15). They also noted remaining differences of emphasis, such as how Lutherans speak of faith alone and Catholics of the renewal of the person (Joint Declaration 25–27). The Declaration concerns Lutherans and Catholics; other Protestant churches are not parties to it.",
+      "An early witness: around 96, St. Clement of Rome wrote that Christians “are not justified by ourselves, nor by our own wisdom, or understanding, or godliness, or works which we have wrought in holiness of heart; but by that faith through which, from the beginning, Almighty God has justified all men” (1 Clement 32). In the next breath he asks whether we should therefore “become slothful in well-doing, and cease from the practice of love,” and answers: “God forbid,” urging Christians to “hasten with all energy and readiness of mind to perform every good work” (1 Clement 33). Catholics and Protestants both appeal to Clement; his letter shows the earliest Church holding together justification as God's gift and the call to good works done in love.",
     ],
     teaching: {
       catechism: [
@@ -98,7 +101,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["joint-declaration-justification", "trent-session-6"],
     },
-    resources: ["ca-grace", "ca-assurance-of-salvation"],
+    resources: ["ca-grace", "ca-assurance-of-salvation", "clement-1-corinthians"],
     related: ["how-are-we-saved", "what-is-grace", "catholic-and-protestant-differences", "sola-scriptura"],
     debate: {
       catholicPosition: {
@@ -168,7 +171,7 @@ export const salvation: Topic[] = [
       documents: ["spe-salvi"],
     },
     resources: ["ca-particular-final-judgment"],
-    related: ["heaven", "purgatory", "hell", "resurrection"],
+    related: ["heaven", "purgatory", "hell", "resurrection", "catholic-funerals-and-grief"],
   },
   {
     slug: "heaven",
@@ -185,9 +188,12 @@ export const salvation: Topic[] = [
       "Being with Christ: to live in heaven is “to be with Christ”; the blessed do not lose their identity but find their true selves (CCC 1025). Christ “opened” heaven to us by his death and Resurrection (CCC 1026).",
       "Beyond words: Scripture speaks of heaven in images, life, light, peace, a wedding feast, the Father's house, the heavenly Jerusalem, because it is “beyond all understanding and description” (CCC 1027). “What eye has not seen, and ear has not heard… what God has prepared for those who love him” (1 Corinthians 2:9).",
       "Not idle: the blessed “continue joyfully to fulfill God's will” and reign with Christ (CCC 1029); at the end, God will make all things new (Revelation 21:1–5).",
+      "An early witness: St. Augustine ended The City of God with this picture of eternal life: “There we shall rest and see, see and love, love and praise. This is what shall be in the end without end” (City of God 22.30).",
     ],
     teaching: {
-      catechism: [{ paragraphs: "1023–1029", url: ccc("__P2M") }],
+      catechism: [
+        { paragraphs: "1023–1029", url: ccc("__P2M") },
+      ],
       scripture: [
         { passage: "1 Corinthians 13:12", url: bible("1corinthians/13") },
         { passage: "1 John 3:2", url: bible("1john/3") },
@@ -196,7 +202,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: ["ca-heaven-akin"],
+    resources: ["ca-heaven-akin", "augustine-city-of-god-22"],
     related: ["what-happens-when-we-die", "purgatory", "what-is-a-saint", "resurrection"],
   },
   {
@@ -277,20 +283,22 @@ export const salvation: Topic[] = [
     question: "What is purgatory?",
     alsoKnownAs: ["Final purification", "Praying for the dead", "Holy souls"],
     category: "beliefs",
-    keywords: ["purgatory", "what is purgatory", "final purification", "praying for the dead", "holy souls", "is purgatory in the Bible", "2 Maccabees 12", "1 Corinthians 3:15", "Mass for the dead", "All Souls", "indulgences"],
+    keywords: ["purgatory", "what is purgatory", "final purification", "praying for the dead", "holy souls", "is purgatory in the Bible", "2 Maccabees 12", "1 Corinthians 3:15", "Mass for the dead", "All Souls", "indulgences", "indulgences", "buy forgiveness", "selling indulgences"],
     summary:
       "Purgatory is the final purification of those who die in God's grace and friendship but are not yet perfectly purified. They are assured of heaven, and are made ready for the holiness needed to see God. It is not a second chance or a place of punishment like hell. The Church prays for those being purified, especially at Mass.",
     explanation: [
       "What the Church teaches: “All who die in God's grace and friendship, but still imperfectly purified, are indeed assured of their eternal salvation; but after death they undergo purification, so as to achieve the holiness necessary to enter the joy of heaven” (CCC 1030). This is “entirely different from the punishment of the damned” (CCC 1031). The Councils of Florence and Trent formulated the doctrine (CCC 1031; Trent, Session 25).",
-      "Praying for the dead: the doctrine is tied to the ancient practice of praying for the dead, already found in Scripture: Judas Maccabeus “made atonement for the dead that they might be absolved from their sin” (2 Maccabees 12:46; CCC 1032). The Church offers prayer, the Eucharist, almsgiving, and penance for them (CCC 1032).",
+      "Praying for the dead: the doctrine is tied to the ancient practice of praying for the dead, already found in Scripture: Judas Maccabeus “made atonement for the dead that they might be absolved from their sin” (2 Maccabees 12:46; CCC 1032). The Church offers prayer, the Eucharist, almsgiving, and penance for them (CCC 1032). Around 200, Tertullian wrote that Christians “make offerings for the dead as birthday honours” on the anniversaries of their deaths (De Corona 3), and around 350 Cyril of Jerusalem explained that the Church prays for the departed, “believing that it will be a very great benefit to the souls” (Mystagogical Lecture 5.9).",
       "Scripture: Catholics also point to Paul's words that on the day of judgment a person's work will be tested and “the person will be saved, but only as through fire” (1 Corinthians 3:15), and to the teaching that nothing unclean enters the heavenly city (Revelation 21:27).",
       "Doctrine and imagery: the doctrine itself is the reality of purification after death and the value of prayer for the dead. How it happens is not defined. The tradition speaks of a “cleansing fire” (CCC 1031); Pope Benedict XVI noted that some recent theologians understand that fire as Christ himself, whose loving gaze burns away all that is false and heals us (Spe Salvi 47). That is a theological opinion, not a defined teaching.",
       "Other Christians: many Protestants reject purgatory, and Orthodox Christians pray for the departed while not accepting the Western doctrine as it is formulated. Their views and the Catholic responses are set out below.",
+      "Can Catholics buy forgiveness with indulgences? No. Sins are forgiven through repentance and, for grave sins, the sacrament of Confession. An indulgence applies only to sins “whose guilt has already been forgiven”: it remits the “temporal punishment” due to sin, which the Church understands not as “vengeance inflicted by God from without” but as the purification of an unhealthy attachment (CCC 1471–1472). The sale of indulgences was a real abuse in the late Middle Ages and helped spark the Reformation; the Council of Trent ordered that “all evil gains for the obtaining thereof … be wholly abolished” (Session 25). See “What was the Protestant Reformation?”",
     ],
     teaching: {
       catechism: [
         { paragraphs: "958", url: ccc("__P2B") },
         { paragraphs: "1030–1032", url: ccc("__P2N") },
+        { paragraphs: "1471–1472", url: ccc("__P4G") },
       ],
       scripture: [
         { passage: "2 Maccabees 12:38–46", url: bible("2maccabees/12") },
@@ -300,8 +308,8 @@ export const salvation: Topic[] = [
       ],
       documents: ["trent-session-25", "spe-salvi"],
     },
-    resources: ["ca-purgatory", "ascension-purgatory", "westminster-confession"],
-    related: ["what-happens-when-we-die", "heaven", "mass-intercessions", "catholic-bible-books"],
+    resources: ["ca-purgatory", "ascension-purgatory", "westminster-confession", "tertullian-de-corona", "cyril-catechetical-lecture-23", "ca-primer-indulgences", "video-akin-indulgences"],
+    related: ["what-happens-when-we-die", "heaven", "mass-intercessions", "catholic-bible-books", "catholic-funerals-and-grief"],
     debate: {
       catholicPosition: {
         summary:

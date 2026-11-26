@@ -54,6 +54,7 @@ export const bibleTopics: Topic[] = [
       "Why “deuterocanonical”: the name reflects that some early writers questioned these books and that their place in the canon was settled after the others. It does not mean they are less inspired.",
       "Where Protestants differ: the Reformers adopted the shorter Old Testament of the Hebrew Bible, and Protestant traditions differ in how they regard these books. Catholics and Protestants agree on the New Testament. Their views and the Catholic responses are set out below.",
       "Why it matters: these books contain passages that bear on Catholic teaching and prayer, such as Judas Maccabeus' prayer for the dead (2 Maccabees 12:43–46; CCC 1032), and they are read at Mass. Scholars on both sides continue to discuss the history, including the role of the Septuagint and how the Jewish canon took shape.",
+      "Before Trent: a century earlier, the Council of Florence’s bull of union with the Copts (4 February 1442) already listed the same books, including Tobit, Judith, Wisdom, Ecclesiasticus (Sirach), Baruch, and two books of Maccabees. Trent did not add them; it defined a list the Church already used.",
     ],
     teaching: {
       catechism: [
@@ -66,7 +67,7 @@ export const bibleTopics: Topic[] = [
         { passage: "Wisdom 2:12–20", url: bible("wisdom/2") },
         { passage: "Tobit 12:6–15", url: bible("tobit/12") },
       ],
-      documents: ["dei-verbum", "trent-session-4", "council-of-carthage-419"],
+      documents: ["dei-verbum", "trent-session-4", "council-of-carthage-419", "florence-decree-copts"],
     },
     resources: ["ca-council-that-wasnt", "westminster-confession"],
     related: ["what-is-the-bible", "sola-scriptura", "what-is-sacred-tradition", "which-bible-translation"],
@@ -122,7 +123,7 @@ export const bibleTopics: Topic[] = [
     question: "How is the Bible the word of God?",
     alsoKnownAs: ["Inspiration", "Biblical inspiration", "God as author of Scripture"],
     category: "bible",
-    keywords: ["inspiration", "inspired by God", "God-breathed", "who wrote the Bible", "human authors", "did God dictate the Bible", "2 Timothy 3:16", "without error", "inerrancy", "word of God in human words"],
+    keywords: ["inspiration", "inspired by God", "God-breathed", "who wrote the Bible", "human authors", "did God dictate the Bible", "2 Timothy 3:16", "without error", "inerrancy", "word of God in human words", "inerrancy", "errors in the Bible", "contradictions in the Bible", "Dei Verbum 11"],
     summary:
       "Catholics believe God is the author of Sacred Scripture because he inspired its human authors. God did not simply dictate: he chose people who used their own abilities, styles, and knowledge, and acted in and through them so that, as true authors, they wrote what he wanted written. For this reason the Bible teaches, firmly and without error, the truth God wanted put into it for the sake of our salvation.",
     explanation: [
@@ -131,12 +132,14 @@ export const bibleTopics: Topic[] = [
       "In Scripture itself: “All scripture is inspired by God and is useful for teaching, for refutation, for correction, and for training in righteousness” (2 Timothy 3:16). Prophecy came as “human beings moved by the holy Spirit spoke under the influence of God” (2 Peter 1:21).",
       "Without error: since what the inspired authors assert is asserted by the Holy Spirit, Scripture teaches “solidly, faithfully and without error that truth which God wanted put into sacred writings for the sake of salvation” (Dei Verbum 11; CCC 107). How to understand this, especially in passages that raise questions of history or science, is the subject of a separate topic on inerrancy, and depends on reading each text according to its literary form (CCC 110).",
       "Living and active: because it is God's word, Scripture is not only a record of the past. “The word of God is living and effective” (Hebrews 4:12), and in it “the Father who is in heaven meets His children with great love and speaks with them” (Dei Verbum 21).",
+      "How far does inerrancy extend? Dei Verbum 11 teaches that Scripture teaches “solidly, faithfully and without error that truth which God wanted put into sacred writings for the sake of salvation.” Interpreters disagree about that last phrase. Some read it as limiting inerrancy to matters of faith and morals; others read it as describing the saving purpose of all Scripture, so that whatever the sacred authors truly assert is without error. Earlier teaching rejected restricting inspiration to faith and morals: Pope Leo XIII called it “absolutely wrong and forbidden, either to narrow inspiration to certain parts only of Holy Scripture, or to admit that the sacred writer has erred” (Providentissimus Deus 20). What the Church plainly teaches is that the books are inspired “in their entirety, with all their parts” and that what the authors assert is asserted by the Holy Spirit (CCC 105, 107).",
+      "Apparent errors and contradictions: much depends on the kind of writing. “Truth is set forth and expressed differently in texts which are variously historical, prophetic, poetic, or of other forms of discourse” (Dei Verbum 12). Poetry, parables, round numbers, ancient ways of describing nature, and Gospel accounts that tell the same events differently are not errors in what the author meant to assert. Catholics are free to study genuine difficulties honestly, reading each text according to its literary form and within the whole of Scripture and Tradition (CCC 109–113).",
     ],
     teaching: {
       catechism: [
         { paragraphs: "101–104", url: ccc("__PO") },
         { paragraphs: "105–108", url: ccc("__PP") },
-        { paragraphs: "109–110", url: ccc("__PQ") },
+        { paragraphs: "109–110, 111–113", url: ccc("__PQ") },
         { paragraphs: "135–136", url: ccc("__PT") },
       ],
       scripture: [
@@ -145,7 +148,7 @@ export const bibleTopics: Topic[] = [
         { passage: "Luke 1:1–4", url: bible("luke/1") },
         { passage: "Hebrews 4:12", url: bible("hebrews/4") },
       ],
-      documents: ["dei-verbum", "verbum-domini"],
+      documents: ["dei-verbum", "verbum-domini", "providentissimus-deus"],
     },
     resources: ["ca-how-to-read-the-bible"],
     related: ["what-is-the-bible", "how-to-read-the-bible", "divine-revelation", "what-is-sacred-tradition"],

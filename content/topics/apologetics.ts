@@ -26,9 +26,16 @@ export const apologeticsTopics: Topic[] = [
       "canon of Scripture",
       "2 Timothy 3:16",
       "traditions of men",
+      "canon of Scripture", "who decided the Bible", "table of contents",
     ],
     summary:
       "Many Protestants hold that Scripture alone is the final, infallible authority for Christian faith. Catholics also receive the Bible as the inspired word of God, but believe God’s revelation is handed on in two ways, through Sacred Scripture and Sacred Tradition, and that the Church’s teaching office serves both by interpreting them faithfully.",
+    explanation: [
+      "Common ground: Catholics agree that Scripture is inspired by God and without error in what it teaches for our salvation. The disagreement is whether Scripture is the only infallible rule of faith, or whether God also hands on his revelation through Sacred Tradition, interpreted by the Church’s teaching office (CCC 80–83).",
+      "The canon question: the Bible has no inspired table of contents. For a time Christians disagreed about some books: around 325, Eusebius listed James, Jude, 2 Peter, and 2 and 3 John among the “disputed writings, which are nevertheless recognized by many” (Church History 3.25). The Church teaches that “it was by the apostolic Tradition that the Church discerned which writings are to be included in the list of the sacred books” (CCC 120). Many Protestants answer that the Church recognized the canon rather than creating it, or that the books authenticate themselves; Catholics reply that recognizing which books are Scripture still depends on a trustworthy witness outside Scripture itself.",
+      "Faith before the New Testament was complete: the first Christians lived by the apostles’ preaching before the New Testament was finished or collected (CCC 83). Around 180, Irenaeus noted that whole peoples believed in Christ “without paper or ink, … carefully preserving the ancient tradition” (Against Heresies 3.4.2).",
+      "The Church’s role: Paul calls “the church of the living God” “the pillar and foundation of truth” (1 Timothy 3:15), and tells the Thessalonians to hold fast to traditions received “either by an oral statement or by a letter of ours” (2 Thessalonians 2:15). The Church teaches that its teaching office “is not above the word of God, but serves it” (Dei Verbum 10).",
+    ],
     teaching: {
       catechism: [
         { paragraphs: "80–83", url: ccc("__PL") },
@@ -40,10 +47,11 @@ export const apologeticsTopics: Topic[] = [
         { passage: "2 Timothy 2:2", url: bible("2timothy/2") },
         { passage: "2 Timothy 3:14–17", url: bible("2timothy/3") },
         { passage: "John 16:12–13", url: bible("john/16") },
+        { passage: "1 Timothy 3:14–15", url: bible("1timothy/3") },
       ],
       documents: ["dei-verbum"],
     },
-    resources: ["ca-scripture-and-tradition", "video-akin-white-sola-scriptura"],
+    resources: ["ca-scripture-and-tradition", "video-akin-white-sola-scriptura", "eusebius-church-history-3", "irenaeus-against-heresies-3-4"],
     related: ["catholic-bible-books", "what-is-sacred-tradition", "how-to-read-the-bible"],
     debate: {
       perspectives: [
@@ -123,14 +131,22 @@ export const apologeticsTopics: Topic[] = [
       "Michael the archangel",
       "Nicaea",
       "Arius",
+      "Jesus never claimed to be God", "Son of Man", "Daniel 7", "Marana tha",
     ],
     summary:
       "Christians have confessed from the beginning that Jesus Christ is the eternal Son of God who became man: truly God and truly human. Muslims honor Jesus as a great prophet and the Messiah, but believe he is not God. Jehovah’s Witnesses believe Jesus is God’s Son and first creation, exalted above all others, but not Almighty God. The Catholic Church, together with the Orthodox and most Protestants, professes that the Son is one in being with the Father.",
+    explanation: [
+      "A cumulative case: no single verse settles the question. The evidence works together: Jesus’ own words, the New Testament’s use of Old Testament passages about the LORD, and the worship of Jesus by the earliest Christians.",
+      "Jesus’ claim at his trial: when the high priest asked, “Are you the Messiah, the son of the Blessed One?” Jesus answered, “I am; and ‘you will see the Son of Man seated at the right hand of the Power and coming with the clouds of heaven’” (Mark 14:61–62). He was drawing on Daniel’s vision of “one like a son of man” who comes with the clouds and receives an “everlasting dominion” (Daniel 7:13–14). The high priest called this blasphemy (Mark 14:63–64). Catholic and many other interpreters read it as a claim to share God’s own authority; skeptics such as Bart Ehrman read the scene differently.",
+      "Old Testament passages about the LORD applied to Jesus: God says in Isaiah, “I am the first, I am the last; there is no God but me” (Isaiah 44:6), and the risen Jesus says, “I am the first and the last” (Revelation 1:17). Joel promises that “everyone who calls upon the name of the LORD will escape harm” (Joel 3:5; 2:32 in some Bibles), and Paul applies this to confessing that Jesus is Lord (Romans 10:9–13). God swears, “To me every knee shall bend” (Isaiah 45:23), and Paul writes that “at the name of Jesus every knee should bend” (Philippians 2:10–11). After quoting Isaiah’s vision of the Lord’s glory, John writes, “Isaiah said this because he saw his glory and spoke about him” (John 12:41). These applications are made by the New Testament writers themselves.",
+      "The earliest worship: Paul preserves an Aramaic prayer in a Greek letter, “Marana tha,” which the NABRE explains as an expression “probably used in the early Christian liturgy,” meaning “O Lord, come!” (1 Corinthians 16:22). Around 110, Ignatius of Antioch called Christ “Jesus Christ, our God” (Letter to the Ephesians, greeting). An outsider confirms the practice: around 112, the Roman governor Pliny the Younger reported to the emperor Trajan that Christians met before dawn to “sing responsively a hymn to Christ as to a god” (Letters 10.96).",
+      "Follow-up questions: Jesus also said the Father is greater than he (John 14:28) and that the Son does not know the day or hour (Mark 13:32). The Church reads such passages in light of Christ’s two natures. As man, he had true human knowledge that could grow (CCC 472) and a human will that obeyed the Father (CCC 475). St. Augustine explained “the Father is greater than I” as spoken of “the form of a servant, to whom in the form of God the Son is equal” (On the Trinity 1.8.15). Of the day and the hour, the Catechism says that “what he admitted to not knowing in this area, he elsewhere declared himself not sent to reveal” (CCC 474). The responses to Muslim and Jehovah’s Witness readings are under “Common objections and Catholic responses” below.",
+    ],
     teaching: {
       catechism: [
         { paragraphs: "200", url: ccc("__P16") },
         { paragraphs: "253", url: ccc("__P17") },
-        { paragraphs: "464–469", url: ccc("__P1J") },
+        { paragraphs: "464–469, 472–475", url: ccc("__P1J") },
       ],
       scripture: [
         { passage: "John 1:1–18", url: bible("john/1") },
@@ -138,10 +154,17 @@ export const apologeticsTopics: Topic[] = [
         { passage: "John 20:28", url: bible("john/20") },
         { passage: "Philippians 2:5–11", url: bible("philippians/2") },
         { passage: "Colossians 1:15–20", url: bible("colossians/1") },
+        { passage: "Daniel 7:13–14", url: bible("daniel/7") },
+        { passage: "Mark 14:60–64", url: bible("mark/14") },
+        { passage: "Isaiah 44:6", url: bible("isaiah/44") },
+        { passage: "Revelation 1:17–18", url: bible("revelation/1") },
+        { passage: "Romans 10:9–13", url: bible("romans/10") },
+        { passage: "John 12:37–41", url: bible("john/12") },
+        { passage: "1 Corinthians 16:22", url: bible("1corinthians/16") },
       ],
       documents: ["dominus-iesus"],
     },
-    resources: ["ca-jesus-is-god", "ca-god-of-the-jws"],
+    resources: ["ca-jesus-is-god", "ca-god-of-the-jws", "ca-divinity-mark-broussard", "podcast-akin-trial-son-of-man", "pliny-letters-10-96", "augustine-on-the-trinity-1"],
     related: ["sola-scriptura", "real-presence"],
     debate: {
       perspectives: [
@@ -156,7 +179,7 @@ export const apologeticsTopics: Topic[] = [
               claim:
                 "God is one. Saying that God has a son, or that God is three, compromises his absolute oneness.",
               response:
-                "Catholics also confess that there is only one God. The Trinity is not three gods, but one God in three persons, each of whom is God whole and entire. The Church professes that the Son is eternally begotten of the Father, not made: “Son” names an eternal relationship within the one God, not a physical birth or a partner beside God.",
+                "Catholics also confess that there is only one God. The Trinity is not three gods, but one God in three persons, each of whom is God whole and entire. The Church professes that the Son is eternally begotten of the Father, not made: “Son” names an eternal relationship within the one God, not a physical birth or a partner beside God. The Qur’an asks, “How could He have a son when He does not have a companion?” (Qur’an 6:101, Sahih International); Christians also reject the idea of a son born of a divine consort.",
               authority: "doctrine",
             },
             {
@@ -235,21 +258,40 @@ export const apologeticsTopics: Topic[] = [
       "agnostic",
       "Job",
       "God is silent",
+      "suffering", "why does God allow suffering", "why does God allow evil", "natural disasters", "innocent suffering", "Job",
     ],
     summary:
       "If God is all-good and all-powerful, why is there so much suffering? Many atheists see this as strong evidence against God, and many agnostics find it a serious reason for doubt. The Church does not offer a quick answer. It teaches that God is never the cause of moral evil, that he permits evil out of respect for human freedom and can bring good even from it, and that the deepest answer is Christ’s own suffering, death, and resurrection.",
+    explanation: [
+      "Two kinds of question: the problem of evil can be raised as a philosophical argument, or cried out in the middle of suffering. Most of this page addresses the first; if you are suffering now, the last paragraph is for you. The Church does not pretend the question is easy: “no quick answer will suffice. Only Christian faith as a whole constitutes the answer to this question” (CCC 309).",
+      "The argument in two forms: the logical form claims that an all-good, all-powerful God and the existence of evil are contradictory. The evidential form grants that God might have reasons to permit some evil, but argues that the amount and kind of suffering we see, especially of children and of animals, make God's existence unlikely. Christian thinkers answer the logical form by noting that there would be a contradiction only if God could have no good reason for permitting evil. The evidential form is weightier and remains seriously debated; the responses below do not claim to settle every case.",
+      "Moral evil and freedom: much suffering comes from human choices. God made angels and human beings free, able to love and therefore able to refuse. “God is in no way, directly or indirectly, the cause of moral evil. He permits it, however, because he respects the freedom of his creatures and, mysteriously, knows how to derive good from it” (CCC 311). Permitting is not causing: God does not will the sin, but he does not override the freedom that makes love possible.",
+      "Natural suffering: disease, disaster, and death are harder to explain. The Catechism teaches that God freely willed a world “in a state of journeying” toward its perfection, which includes “both constructive and destructive forces of nature” (CCC 310), and it links suffering and death to the disorder that entered with the first sin (CCC 400, 1521). It does not claim that each illness or disaster has a reason we can name, and Jesus rejected the idea that suffering always points to the sufferer's own sin (John 9:1–3; Luke 13:1–5).",
+      "Providence: St. Augustine wrote that God, “being Himself supremely good, would never permit the existence of anything evil among His works, if He were not so omnipotent and good that He can bring good even out of evil” (Enchiridion 11), and St. Thomas Aquinas cited these words in answering this very objection to God's existence (Summa Theologiae I, q. 2, a. 3). Scripture shows the pattern in Joseph's words to the brothers who sold him: “Even though you meant harm to me, God meant it for good” (Genesis 50:20). Yet “the ways of his providence are often unknown to us” (CCC 314): Christians do not claim to see the reason for each evil.",
+      "The Book of Job: Job's friends insist that his suffering must be punishment for sin; God rejects their answer (Job 42:7). God answers Job not with an explanation but with a vision of creation's vastness: “Where were you when I founded the earth?” (Job 38:4). Pope John Paul II wrote that Job shows the meaning of suffering is not to be “unreservedly linked to the moral order, based on justice alone” (Salvifici Doloris 11).",
+      "God's answer in Christ: Christianity does not offer a God who watches suffering from a distance. In Jesus, God enters it: he wept, was betrayed, tortured, and crucified, and he prayed from the cross, “My God, my God, why have you forsaken me?” (Mark 15:34). The greatest evil ever committed, the killing of God's Son, became the means of our redemption (CCC 312). His resurrection is the promise that evil will not have the last word: God “will wipe every tear from their eyes” (Revelation 21:4). Suffering joined to Christ can share in his saving work (Colossians 1:24; CCC 1521).",
+      "Hope and the limits of knowledge: “I consider that the sufferings of this present time are as nothing compared with the glory to be revealed for us” (Romans 8:18). The Church teaches that God would not permit an evil without bringing a good from it, “by ways that we shall fully know only in eternal life” (CCC 324). Skeptics reply that appealing to mystery evades the question. Christians answer that finite minds should expect not to see all the purposes of an infinite God (“my thoughts are not your thoughts,” Isaiah 55:8), and that the Cross shows God's love even where his reasons are hidden.",
+      "If you are suffering now: arguments are not what most people need in grief or pain. Scripture gives words for lament and protest (Psalms 13 and 22). Your suffering is not necessarily a sign of personal sin. Pray as you can, stay close to people who care for you, receive the sacraments, and talk with a priest; see also the Anointing of the Sick and Death, Funerals, and Grief. Pope John Paul II admitted that suffering “always remains a mystery: we are conscious of the insufficiency and inadequacy of our explanations” (Salvifici Doloris 13).",
+    ],
     teaching: {
       catechism: [
         { paragraphs: "309–314, 324", url: ccc("__P19") },
+        { paragraphs: "385, 400, 412", url: ccc("__P1C") },
+        { paragraphs: "1521", url: ccc("__P4N") },
       ],
       scripture: [
         { passage: "Genesis 50:20", url: bible("genesis/50") },
         { passage: "Job 38–42", url: bible("job/38") },
         { passage: "Romans 8:18–39", url: bible("romans/8") },
+        { passage: "Genesis 50:15–21", url: bible("genesis/50") },
+        { passage: "Job 38:1–7", url: bible("job/38") },
+        { passage: "John 9:1–3", url: bible("john/9") },
+        { passage: "Romans 8:18–28", url: bible("romans/8") },
+        { passage: "Revelation 21:1–5", url: bible("revelation/21") },
       ],
-      documents: ["salvifici-doloris"],
+      documents: ["salvifici-doloris", "salvifici-doloris"],
     },
-    resources: ["ca-problem-of-evil", "video-barron-oconnor-evil"],
+    resources: ["ca-problem-of-evil", "video-barron-oconnor-evil", "augustine-enchiridion", "aquinas-summa-i-q2", "ca-horn-horrible-suffering"],
     related: ["divinity-of-jesus"],
     debate: {
       perspectives: [
@@ -388,6 +430,7 @@ export const apologeticsTopics: Topic[] = [
       "Peter among the apostles: Peter is named first in the lists of apostles, speaks for them, preaches first at Pentecost, and leads the decision to welcome Gentiles (Acts 2; 10; 15:7). Christ “made Simon alone… the ‘rock’ of his Church” and the office of binding and loosing was also given to the college of apostles united to its head (CCC 881).",
       "Successors: Catholics believe this office, like the apostles' office of shepherding, is permanent and continues in the bishop of Rome, “the perpetual and visible source and foundation of the unity both of the bishops and of the whole company of the faithful” (CCC 882). The First Vatican Council defined this primacy as a dogma in 1870 (Pastor Aeternus).",
       "The Orthodox view: Orthodox Christians honor Peter and agree that Rome held first place among the churches in the first millennium, but understand that primacy differently; their view and the Catholic responses are set out below. St. John Paul II invited other Christians into a “patient and fraternal dialogue” on how the primacy is exercised (Ut Unum Sint 95–96).",
+      "First among the Twelve: Peter is always named first in the lists of the apostles, and Matthew says so explicitly: “first, Simon called Peter” (Matthew 10:2).",
     ],
     teaching: {
       catechism: [
@@ -401,6 +444,7 @@ export const apologeticsTopics: Topic[] = [
         { passage: "Luke 22:31–32", url: bible("luke/22") },
         { passage: "John 21:15–17", url: bible("john/21") },
         { passage: "John 1:42", url: bible("john/1") },
+        { passage: "Matthew 10:1–4", url: bible("matthew/10") },
       ],
       documents: ["lumen-gentium", "vatican-i-pastor-aeternus", "ut-unum-sint", "ravenna-document"],
     },
@@ -580,6 +624,7 @@ export const apologeticsTopics: Topic[] = [
       "Why it matters: part of the apostles' office could not be passed on, being the chosen witnesses of the Resurrection, but part was permanent: their mission to teach, sanctify, and shepherd (CCC 860). So “the apostles left bishops as their successors,” so that the Gospel would be preserved “in a continuous line of succession until the end of time” (CCC 77, 861–862).",
       "Early witnesses: around the year 96, St. Clement of Rome wrote that the apostles appointed bishops and deacons and gave instructions that when these died, “other approved men should succeed them in their ministry” (1 Clement 42, 44). Around 180, St. Irenaeus answered false teachers by pointing to the succession of bishops in the churches founded by the apostles (Against Heresies 3.3).",
       "Succession and teaching go together: succession is not a guarantee of personal holiness, nor a mere list of names. It serves the faithful handing on of the apostles' teaching and sacraments (CCC 857). The Catholic Church recognizes valid apostolic succession, and so true sacraments, in the Orthodox Churches (CCC 838, 1399).",
+      "Registers of bishops: around 200, Tertullian challenged heretics to show a succession like that of the apostolic churches, “as the church of Smyrna, which records that Polycarp was placed therein by John; as also the church of Rome, which makes Clement to have been ordained in like manner by Peter” (Prescription Against Heretics 32).",
     ],
     teaching: {
       catechism: [
@@ -595,7 +640,7 @@ export const apologeticsTopics: Topic[] = [
       ],
       documents: ["lumen-gentium", "dei-verbum"],
     },
-    resources: ["ca-early-apostolic-succession", "ca-bishop-priest-deacon"],
+    resources: ["ca-early-apostolic-succession", "ca-bishop-priest-deacon", "tertullian-prescription"],
     related: ["bishops-priests-deacons", "peter-the-rock", "did-jesus-found-a-church", "what-is-the-magisterium"],
     debate: {
       catholicPosition: {

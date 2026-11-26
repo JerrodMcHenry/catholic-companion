@@ -130,7 +130,7 @@ export const jesus: Topic[] = [
     question: "Why did Jesus die on the cross?",
     alsoKnownAs: ["Atonement", "Redemption", "Paschal Mystery"],
     category: "beliefs",
-    keywords: ["why did Jesus die", "crucifixion", "cross", "atonement", "sacrifice", "salvation", "died for our sins", "Good Friday", "redemption"],
+    keywords: ["why did Jesus die", "crucifixion", "cross", "atonement", "sacrifice", "salvation", "died for our sins", "Good Friday", "redemption", "atonement", "penal substitution", "why couldn't God just forgive"],
     summary:
       "Catholics believe Jesus freely gave his life on the cross out of love, to save us from sin and reconcile us with God. His death was not an accident but part of God's plan, foretold in the Scriptures. As the Lamb of God, Jesus offered the one perfect sacrifice that takes away the sin of the world and opens the way to new life.",
     explanation: [
@@ -138,17 +138,23 @@ export const jesus: Topic[] = [
       "The cross reveals God's love: Christ died for us “while we were still sinners” (Romans 5:8). The Father gave his Son, and the Son freely offered himself in obedience and love, in place of our disobedience.",
       "Christ's sacrifice is unique: it completes and surpasses all the sacrifices of the Old Testament. It is his love “to the end” that gives his death its power to save, and because he is a divine person, his offering embraces every human being.",
       "The Church teaches that responsibility for Jesus' death cannot be laid on the Jewish people as a whole. Rather, all sinners share responsibility for his sufferings, and Christians bear the gravest responsibility of all.",
+      "An early witness: in the fourth century, St. Athanasius explained that the Word took a human body and, “because all were under penalty of the corruption of death He gave it over to death in the stead of all, and offered it to the Father — doing this, moreover, of His loving-kindness” (On the Incarnation 8).",
+      "Was the Father punishing his Son? Some critics call the Cross cruel, and Christians explain the atonement in different ways. The Catholic Church teaches that the Father and the Son act in one love. God's plan is “one of benevolent love, prior to any merit on our part” (CCC 604), and “it is love ‘to the end’ that confers on Christ's sacrifice its value as redemption and reparation, as atonement and satisfaction” (CCC 616). Jesus “did not experience reprobation as if he himself had sinned” (CCC 603), and he laid down his life freely (John 10:17–18). “In this is love: not that we have loved God, but that he loved us and sent his Son as expiation for our sins” (1 John 4:10).",
     ],
     teaching: {
-      catechism: [{ paragraphs: "597–618", url: ccc("__P1O") }],
+      catechism: [
+        { paragraphs: "597–618", url: ccc("__P1O") },
+      ],
       scripture: [
         { passage: "Mark 10:45", url: bible("mark/10") },
         { passage: "Isaiah 53:4–6", url: bible("isaiah/53") },
         { passage: "Romans 5:6–8", url: bible("romans/5") },
         { passage: "1 Corinthians 15:3", url: bible("1corinthians/15") },
+        { passage: "John 10:11–18", url: bible("john/10") },
+        { passage: "1 John 4:9–10", url: bible("1john/4") },
       ],
     },
-    resources: ["video-why-jesus-had-to-die", "ca-why-jesus-died"],
+    resources: ["video-why-jesus-had-to-die", "ca-why-jesus-died", "athanasius-on-the-incarnation"],
     related: ["incarnation", "resurrection", "who-is-jesus"],
   },
   {

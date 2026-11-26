@@ -43,7 +43,7 @@ export const historyTopics: Topic[] = [
     question: "What was the early Church like?",
     alsoKnownAs: ["Apostolic age", "Early Christianity"],
     category: "history",
-    keywords: ["early Church", "early Christians", "apostolic age", "first Christians", "Clement of Rome", "Ignatius of Antioch", "Justin Martyr", "persecution", "bishops", "apostolic succession", "Great Apostasy"],
+    keywords: ["early Church", "early Christians", "apostolic age", "first Christians", "Clement of Rome", "Ignatius of Antioch", "Justin Martyr", "persecution", "bishops", "apostolic succession", "Great Apostasy", "Constantine founded the Church", "pagan origins", "paganism in Catholicism"],
     summary:
       "The first Christians gathered on Sunday to hear the Scriptures and celebrate the Eucharist, were led by bishops with presbyters (priests) and deacons, and handed on the apostles' teaching while the New Testament was being written and collected. They spread quickly across the Roman Empire despite periods of persecution. Catholics see deep continuity between this Church and the Catholic Church today; others read the same evidence differently.",
     explanation: [
@@ -54,6 +54,7 @@ export const historyTopics: Topic[] = [
       "Scripture and Tradition: the first generation of Christians “did not yet have a written New Testament” (CCC 83); the Church later discerned the canon of Scripture by the apostolic Tradition (CCC 120). Early Christians already worshiped Jesus as God: Ignatius calls him “Jesus Christ, our God” (Ephesians, greeting).",
       "Persecution and growth: Christians faced intermittent persecution, from Nero's in Rome (Tacitus, Annals 15.44) to the empire-wide persecutions of the third and early fourth centuries; the Church treasures the acts of the martyrs as “archives of truth written in letters of blood” (CCC 2474).",
       "Continuity and interpretation: that bishops, Sunday Eucharist, and appeals to apostolic succession appear early is historical evidence; that this makes the Catholic Church the same Church as the apostles' is a theological conclusion that other Christians dispute. Latter-day Saints and Jehovah's Witnesses hold that the early Church fell into apostasy; their views are set out below.",
+      "Did Constantine found the Catholic Church, or did it borrow from paganism? Christian communities with bishops, Sunday Eucharist, and the name “Catholic Church” are documented two centuries before Constantine (Ignatius, Smyrnaeans 8, about 110; Justin, First Apology 67, about 155), and Christians had already suffered persecution under Nero (Tacitus, Annals 15.44). In 313 Constantine and Licinius granted “the Christians and all others” liberty “to follow that mode of religion which to each of them appeared best” (the Edict of Milan, as recorded by Lactantius, On the Deaths of the Persecutors 48): they legalized Christianity rather than founding it. The Church has taken up elements of human culture into its worship; the liturgy “presupposes, integrates and sanctifies elements from creation and human culture” (CCC 1149). Using a culture's forms is different from adopting its beliefs, and historians debate the origins of particular customs.",
     ],
     teaching: {
       catechism: [
@@ -61,6 +62,7 @@ export const historyTopics: Topic[] = [
         { paragraphs: "83", url: ccc("__PL") },
         { paragraphs: "120", url: ccc("__PR") },
         { paragraphs: "861–862", url: ccc("__P29") },
+        { paragraphs: "1149", url: ccc("__P38") },
         { paragraphs: "1345", url: ccc("__P40") },
         { paragraphs: "2474", url: ccc("__P8J") },
       ],
@@ -72,7 +74,7 @@ export const historyTopics: Topic[] = [
       ],
       documents: ["dei-verbum"],
     },
-    resources: ["clement-1-corinthians", "ignatius-smyrnaeans", "justin-first-apology", "irenaeus-against-heresies-3-3", "tacitus-annals-15"],
+    resources: ["clement-1-corinthians", "ignatius-smyrnaeans", "justin-first-apology", "irenaeus-against-heresies-3-3", "tacitus-annals-15", "lactantius-deaths-of-persecutors", "ca-is-catholicism-pagan"],
     related: ["who-are-the-church-fathers", "apostolic-succession", "did-jesus-found-a-church", "what-is-sacred-tradition"],
     debate: {
       catholicPosition: {

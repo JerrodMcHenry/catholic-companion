@@ -75,7 +75,7 @@ export const creationTopics: Topic[] = [
     question: "What is original sin?",
     alsoKnownAs: ["The Fall", "Concupiscence"],
     category: "beliefs",
-    keywords: ["original sin", "the Fall", "Adam and Eve", "Genesis 3", "concupiscence", "are babies born with sin", "inherited sin", "Romans 5", "first sin", "why do we sin"],
+    keywords: ["original sin", "the Fall", "Adam and Eve", "Genesis 3", "concupiscence", "are babies born with sin", "inherited sin", "Romans 5", "first sin", "why do we sin", "inherited guilt", "the Fall", "Adam and Eve", "concupiscence", "why are babies baptized", "contracted not committed"],
     summary:
       "Original sin is the state in which every human being is born: deprived of the original holiness and justice God intended, as a consequence of the first sin of our first parents. It is not a personal fault that we committed, but a wound in human nature, which is subject to ignorance, suffering, and death and inclined to sin. Christ's grace, given in Baptism, takes away original sin, though the inclination to sin remains as a struggle.",
     explanation: [
@@ -84,18 +84,31 @@ export const creationTopics: Topic[] = [
       "Not personal guilt: original sin “does not have the character of a personal fault in any of Adam's descendants.” Human nature “has not been totally corrupted”; it is wounded, subject to ignorance, suffering, and death, and inclined to sin, an inclination called concupiscence (CCC 405).",
       "The remedy: Baptism, “by imparting the life of Christ's grace, erases original sin and turns a man back towards God,” though its consequences remain as a call to spiritual struggle (CCC 405). Christ is the new Adam, through whose obedience “the many will be made righteous” (Romans 5:19).",
       "Settled teaching and open questions: the doctrine of original sin is established Church teaching. How it is to be related to scientific accounts of human origins is still being studied by theologians; see “Can Catholics accept evolution?”",
+      "The beginning: God created human beings in friendship with him, sharing his life in what the Church calls an original “state of holiness and justice” (CCC 375). Genesis presents this friendship in the garden, where the man and woman are at peace with God, with each other, and with creation (Genesis 2).",
+      "What Genesis teaches: “The account of the fall in Genesis 3 uses figurative language, but affirms a primeval event, a deed that took place at the beginning of the history of man” (CCC 390). Tempted to grasp at being “like gods” on their own terms (Genesis 3:5), our first parents distrusted God and disobeyed. They lost the grace of original holiness, became afraid of God, and their harmony with each other and with creation was broken (CCC 399–400).",
+      "Adam and Christ: Paul's central contrast is between the two heads of humanity: “just as through the disobedience of one person the many were made sinners, so through the obedience of one the many will be made righteous” (Romans 5:19); “just as in Adam all die, so too in Christ shall all be brought to life” (1 Corinthians 15:22). Around 180, St. Irenaeus echoed Paul: as “by the disobedience of the one man... the many were made sinners, and forfeited life,” so by “the obedience of one man... many should be justified and receive salvation” (Against Heresies 3.18.7). The doctrine of original sin is therefore the reverse side of the Good News: we learn how deep the wound is by seeing how great the remedy is (CCC 389).",
+      "Contracted, not committed: Adam and Eve committed a personal sin, but what is passed on to their descendants is a human nature “deprived of original holiness and justice.” That is why original sin is called sin “only in an analogical sense: it is a sin ‘contracted’ and not ‘committed’ - a state and not an act” (CCC 404). The Council of Trent taught that it is passed on “by propagation, not by imitation” (Session 5, canon 3): it is not simply copying bad examples.",
+      "Effects of the fall: human nature is “wounded in the natural powers proper to it, subject to ignorance, suffering and the dominion of death, and inclined to sin”; this inclination is called concupiscence (CCC 405). Concupiscence is not itself a sin, but it inclines us to sin (CCC 2515). Paul describes the struggle: “I do not do the good I want, but I do the evil I do not want” (Romans 7:19). Human freedom remains real, and we remain responsible for our choices (CCC 407).",
+      "Is it unjust to inherit Adam's sin? Catholics do not believe that anyone is personally guilty of Adam's act: original sin “does not have the character of a personal fault” (CCC 405). What is inherited is the absence of a gift, original holiness, that Adam received “not for himself alone, but for all human nature” (CCC 404). God's answer was not to abandon us but to promise a Redeemer from the beginning (Genesis 3:15; CCC 410), and the Church sings at Easter of the “happy fault” that gained so great a Redeemer (CCC 412).",
     ],
     teaching: {
       catechism: [
-        { paragraphs: "390, 396–409", url: ccc("__P1C") },
+        { paragraphs: "389–390, 396–412", url: ccc("__P1C") },
+        { paragraphs: "374–379", url: ccc("__P1B") },
+        { paragraphs: "2515", url: ccc("__P8P") },
       ],
       scripture: [
         { passage: "Genesis 3", url: bible("genesis/3") },
         { passage: "Romans 5:12–21", url: bible("romans/5") },
+        { passage: "Genesis 2:15–25", url: bible("genesis/2") },
+        { passage: "Genesis 3:1–24", url: bible("genesis/3") },
+        { passage: "Romans 5:12–21", url: bible("romans/5") },
+        { passage: "1 Corinthians 15:21–22", url: bible("1corinthians/15") },
+        { passage: "Romans 7:14–25", url: bible("romans/7") },
       ],
-      documents: ["humani-generis"],
+      documents: ["humani-generis", "trent-session-5"],
     },
-    resources: [],
+    resources: ["irenaeus-against-heresies-3-18", "ca-catholics-right-original-sin"],
     related: ["baptism", "creation-and-evolution", "immaculate-conception", "why-did-jesus-die"],
   },
 ];

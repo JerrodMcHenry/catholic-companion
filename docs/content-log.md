@@ -883,6 +883,115 @@ The final Phase 7 batch. The inventory matched the master curriculum exactly: 7 
   - Removed a user-facing "planned after launch" sentence from `do-all-religions-lead-to-god`.
   - Replaced the site description ("…and defend the Catholic faith") with the refocused mission.
 
+## Common arguments and Confession (2026-11-25)
+
+- **Interface:**
+  - Explore is now eight collapsed sections, including a new Confession section.
+  - The homepage gains "How to go to Confession" and "Common Arguments."
+  - Common Questions became "Common Questions and Arguments," with 41 arguments in six collapsed groups. Each argument links to an existing topic, and its wording is indexed for search.
+- **New material:** seven objections had no adequate answer, so one paragraph was added to an existing topic for each. No new topics.
+
+| Objection | Added to | Sources |
+|---|---|---|
+| Mary's "brothers" | `who-is-mary` | Mark 6:3; Matthew 27:56, 28:1; CCC 499–500; Jerome, Against Helvidius, noting that Helvidius cited Tertullian |
+| "Call no man father" | `bishops-priests-deacons` | Matthew 23:8–9; 1 Corinthians 4:15; 1 John 2:13 |
+| Repetitive prayer | `the-rosary` | Matthew 6:7, 26:44; Revelation 4:8; CCC 2668 |
+| Buying indulgences | `purgatory` | CCC 1471–1472; Trent, Session 25 |
+| Scandals | `what-is-the-church` | CCC 827; John 6:70–71; Matthew 13:24–30; Vos estis lux mundi (2019), arts. 1 and 3 |
+| Changing doctrine | `what-is-dogma` | CCC 66, 94; Vincent of Lérins, Commonitorium 23 (434); Vatican I, Dei Filius, ch. 4 |
+| Constantine and pagan origins | `early-church` | Ignatius, Smyrnaeans 8; Justin, First Apology 67; Tacitus, Annals 15.44; Lactantius, On the Deaths of the Persecutors 48 (Edict of Milan, 313); CCC 1149 |
+
+- **Verification:** Scripture checked on bible.usccb.org; the Catechism against the vatican.va cache; the Fathers, Lactantius, Dei Filius, and Vos estis read in their texts.
+- **For review (R):** all seven paragraphs, especially the scandal paragraph (pastoral sensitivity) and the paragraph on Mary's "brothers" (interpretation versus direct statement).
+
+## Apologetics audit, recommendations 1–8 (2026-11-25)
+
+Implements the approved recommendations from the consolidated apologetics audit. Recommendation 9 stays pending (see below). Every quotation was checked against its source: NABRE text and notes on bible.usccb.org (in a browser), the Catechism, New Advent, Papal Encyclicals Online, and Project Wittenberg.
+
+- `divinity-of-jesus`: new explanation. The cumulative case; Mark 14:61–64 with Daniel 7:13–14 (and the note that skeptics read it differently); Old Testament passages about the LORD applied to Jesus (Isaiah 44:6 / Revelation 1:17; Joel 3:5 [2:32] / Romans 10:9–13; Isaiah 45:23 / Philippians 2:10–11; John 12:41); *Marana tha* (with the NABRE note); Ignatius, Ephesians greeting; Mark 13:32 and John 14:28 answered from CCC 474 (added to the existing CCC 464–469 link).
+- `sola-scriptura`: new explanation. Common ground; the canon argument (Eusebius, Church History 3.25; CCC 120; the Protestant "recognized / self-authenticating" reply and the Catholic answer); Irenaeus 3.4.2; 1 Timothy 3:15; 2 Thessalonians 2:15; Dei Verbum 10.
+- `baptism`: 1 Peter 3:21 and Acts 22:16, with the Protestant reading of the "appeal" and the Catholic reply (CCC 1257, 1263).
+- `immaculate-conception`: the New Eve (Genesis 3:15; Justin, Dialogue 100; Irenaeus 3.22.4; CCC 411, 494) and the Ark parallels in 2 Samuel 6 / Luke 1 (CCC 2676), with a paragraph labeling typology as interpretation, not proof. The *anaphōneō* lexical claim is **not** used.
+- `who-is-mary`: the NABRE note on Matthew 1:25 ("until") and John 19:26–27, labeled as an inference.
+- `praying-to-saints`: Revelation 8:3–4; 2 Maccabees 15:14 (deuterocanonical, labeled as such); Cyril of Jerusalem, Mystagogical Lecture 5.9.
+- `ten-commandments`: the images and numbering question (CCC 2066, 2129–2132; Nicaea II).
+- Smaller additions: Florence 1442 (`catholic-bible-books`); Cyprian to Fidus (`infant-baptism`); Tertullian, De Corona 3, and Cyril 5.9 (`purgatory`); Tertullian, Prescription 32 (`apostolic-succession`); John 3:14 and 2 Kings 18:4 (`statues-and-images`); Exodus 24:8 / Mark 14:24 (`real-presence`); Luther, Babylonian Captivity, as evidence of belief in his own day only (`mass-as-sacrifice`); Matthew 10:2 (`peter-the-rock`); Luke 16:24 (`bishops-priests-deacons`).
+- 21 articles and primary sources added to the registry, one per answered objection, each opened and read. Four Catholic Answers videos and podcasts added whose published transcripts were read in full: Broussard (Baptism), Staples (Confession), Akin (indulgences), Akin podcast (Mark 14:62; note says it includes debated scholarly proposals).
+- Corrections found by re-running the Scripture check in a browser: Hebrews 1:2 now matches the NABRE ("he spoke to us through a son"); the Paraclete gloss in `who-is-the-holy-spirit` is now attributed to CCC 692, where it comes from, instead of being quoted as John 14.
+- Search: seven new regression checks (249 total).
+
+Still pending (recommendation 9): the *Sub tuum praesidium* dating; Qur'an 6:101; the *anaphōneō* claim and the St. Paul Center "New Ark" resource; Protestant commentators on Peter; Luther on Mary's perpetual virginity; Pliny, Letter 10.96; the J. N. D. Kelly quotation; and the content of the books, longer videos, and audio named in the audit.
+
+## Content excellence review: approved additions (2026-11-25)
+
+Approved additions, each checked against its source (Catechism; Code of Canon Law and Holy See documents at vatican.va; NABRE on bible.usccb.org and USCCB pages, read in a browser because both refuse scripted requests; New Advent; Fordham; quran.com).
+
+- **Church scandals** (`what-is-the-church`): the single apologetic paragraph is replaced by four. They open with harm to survivors (Letter to the People of God, 2018), then cover institutional failure, clericalism, accountability (Vos estis lux mundi), and U.S. reporting routes (911 for current danger; law enforcement; diocesan victim assistance coordinators; the Catholic Bishop Abuse Reporting Service, reportbishopabuse.org, 1-800-276-1562). The Church's claims are distinguished from its members' conduct (CCC 827) without using theology to excuse abuse. The Judas and wheat-and-weeds examples were removed.
+- **New topic `anointing-of-the-sick`** (sacraments): Mark 6:13; James 5:14–15; Old Testament background (Exodus 15:26; CCC 1502); early witness via Paul VI, Sacram unctionem infirmorum (Innocent I, 416; the Roman blessing of the oil); who may receive it and repetition (canons 1004–1007; CCC 1514–1515); the rite and its form (CCC 1513, 1519); the distinction between Anointing, Confession, and Viaticum (CCC 1517, 1524–1525, 1532); misconceptions; guidance for families.
+- **New topic `catholic-funerals-and-grief`** (Catholic life): Christian hope (John 11; 1 Thessalonians 4:13; CCC 1005); prayer for the dead (CCC 1032; Augustine, Confessions 9.11); the funeral rites (CCC 1684–1690; Order of Christian Funerals 5, via USCCB); who may have a Catholic funeral (canons 1176–1177, 1183); burial and cremation (canon 1176 §3; CCC 2301; Ad resurgendum cum Christo 3, 5–7); practical steps; grief, including the 988 Suicide & Crisis Lifeline; no judgment on any person's eternal destiny (CCC 2283).
+- **Baptism preparation** (`baptism`, with a pointer from `infant-baptism`): canons 851, 867, 873–874; CCC 1232–1233, 1255; universal law distinguished from parish procedure.
+- **Annulment** (`married-before-ocia`): what a declaration of nullity is not; civil divorce versus nullity (CCC 2383); the first step and costs (USCCB Annulment FAQ).
+- **Sacramental coverage:** `bishops-priests-deacons` (Holy Orders) is now linked from `seven-sacraments`; its content gaps are recorded for approval in `docs/content-depth-inventory.md`.
+- **Pending verification resolved:** Pliny, Letters 10.96 (Fordham) and Qur'an 6:101 (Sahih International) verified and used once each in `divinity-of-jesus`. *Anaphōneō* checked in the Septuagint: 1 Chronicles 15:28 and 16:4–5 and 2 Chronicles 5:13 are before the ark, but 16:42 is at the tabernacle in Gibeon. A hedged sentence was added to `immaculate-conception`; the St. Paul Center "New Ark" article is **not** used (it says "every time" before the ark, and miscites Luke 1:19 for 1:39). Excluded as unverifiable or disputed: the *Sub tuum praesidium* date (third to ninth century proposed), Luther on Mary's perpetual virginity, the Protestant commentators on Peter, and the J. N. D. Kelly quotation (books not accessible).
+- **Correction:** the `divinity-of-jesus` note on John 14:28 had leaned on CCC 474, which concerns Mark 13:32. It now cites CCC 472 and 475 and Augustine, On the Trinity 1.8.15; CCC 474 is kept for Mark 13:32. Matthew 25:36 in the new topic was corrected to the NABRE wording.
+- **Resources added:** 14 (official documents, USCCB pages, abuse-reporting services, the Catholic Answers anointing tract, Augustine, Pliny); details in `content/resources.ts`.
+- **Search:** ten new regression checks (259 total); keywords for "struggling with sin."
+- **Curriculum:** `docs/master-curriculum.md` rows updated; `last-rites`, `cremation`, and `grief-and-faith` are noted as covered by the new topics.
+
+## Final substantive content improvements (2026-11-25)
+
+All 14 approved recommendations, plus ongoing struggle with sin, multimedia, and search. Quotations were checked against their sources: NABRE (bible.usccb.org, in a browser), the Catechism, vatican.va, New Advent, and Papal Encyclicals Online.
+
+- **Previously incomplete topics, now expanded:** `problem-of-evil` (nine paragraphs; Augustine, Enchiridion 11; Aquinas, ST I q.2 a.3; Salvifici Doloris 11, 13; pastoral guidance kept separate from the argument); `bishops-priests-deacons` (Holy Orders: Old Testament priesthood, Melchizedek, CCC 1545–1548, Last Supper, laying on of hands, 1 Clement 42 and 44, Ignatius, the character, Ordinatio Sacerdotalis 3–4, the priesthood of all believers); `confirmation` (Isaiah 11:2, Acts 19:6, Hebrews 6:1–2, Tertullian, On Baptism 7–8, Cyril, Mystagogic 3, East and West, preparation); `original-sin` (CCC 375, 390, 404–405, 2515; Romans 5:19; Irenaeus 3.18.7; Trent Session 5; the justice objection). An unsourced sentence characterizing the Orthodox view was removed, per the Orthodox source standard.
+- **Other teachings:** pre-Nicene witnesses to the Trinity (Didache 7; Theophilus, To Autolycus 2.15, the first known use of "Trinity," per the Catholic Encyclopedia; Tertullian, Against Praxeas 2); 1 Clement 32–33 on faith and works; Athanasius, On the Incarnation 8, and the "was the Father punishing his Son?" objection (CCC 603–604, 616); inerrancy (Dei Verbum 11 and 12, with the two readings of "for the sake of salvation" set out, and Providentissimus Deus 20); sexuality (vision, chastity, pastoral honesty); a personal relationship with Jesus and the Church (CCC 181; 1 John 1:3); "too many rules" (CCC 2041, 1972); and a "story in brief" paragraph in `what-do-catholics-believe` linking creation, the Fall, the covenants, Christ, grace, the theological virtues, and heaven.
+- **Pastoral additions:** new topics `telling-family` (family opposition; drawing on CCC 160 and 2232, Scripture, and the Coming Home Network) and `eucharistic-adoration` (CCC 1378–1381, 1418; Ecclesia de Eucharistia 25; Sacramentum Caritatis 66; Transiturus, 1264; Benediction); doubt (CCC 157, 2088) in `what-is-faith`; dryness (CCC 2731) in `how-to-pray`; ongoing struggle with sin (CCC 1426, 1458, 1735, 1810) in `confession`.
+- **Pastoral integrity:** the abuse argument is reworded as "How can I trust a Church whose leaders covered up abuse?"; reporting resources are labeled "(United States)," and guidance for other countries is added (Vos estis lux mundi, art. 2). Cremation: the Dicastery for the Doctrine of the Faith note of 9 December 2023 was read on vatican.va, and the funeral topic now reflects it (the 2016 norm "still retains all its validity"; a shared sacred place for ashes; a "minimal part" kept in a meaningful place at the authority's discretion).
+- **Corrections:** Acts 10:38 (NABRE wording); the CCC 375 quotation boundary.
+- **Search:** `how-to-pray` now asks "How do I pray?" (the Rosary's question "How do I pray the Rosary?" had been taking the phrase bonus). Holy Orders gains the alternative names "Ordination" and "Priesthood." The agnosticism page no longer claims the keyword "doubt," so believers' searches reach `what-is-faith`. Eleven new regression checks (270 total).
+- **Resources added (24):** official documents, Fathers, and articles, each opened and read; two media, below.
+
+### Multimedia: verified and added
+
+| Resource | Contributor | URL | Topic | Review method |
+|---|---|---|---|---|
+| Why Horrible Suffering Does Not Disprove God's Existence (article) | Trent Horn | https://www.catholic.com/magazine/online-edition/why-horrible-suffering-does-not-disprove-gods-existence | problem-of-evil | Read in full. |
+
+### Multimedia: human-review queue (not published)
+
+For a person to watch or listen to before approval. None has been reviewed beyond what is stated.
+
+| Title | Contributor | URL | Topic | Why promising | Limitation |
+|---|---|---|---|---|---|
+| Jesus and the Jewish Roots of the Eucharist | Brant Pitre | https://watch.formed.org/videos/jesus-and-the-jewish-roots-of-the-eucharist | real-presence, mass-in-scripture | Well-known lecture on Passover, manna, and the bread of the Presence | FORMED subscription; no transcript |
+| The Problem of Evil (Newman Center lecture, 2020) | Peter Kreeft | https://osu-newman.squarespace.com/events/peterkreeft | problem-of-evil | Page offers a video, an outline, and a transcript | Transcript link could not be retrieved by script |
+| Dialogue: Does Evil Disprove God? | Trent Horn with Alex O'Connor, Joe Schmid, Cameron Bertuzzi | https://www.catholic.com/audio/cot/dialogue-does-evil-disprove-god-with-alex-oconnor-joe-schmid-and-cameron-bertuzzi | problem-of-evil | Fair, multi-view discussion for serious investigators | Long; transcript not reviewed |
+| Are We Born Sinners? | Karlo Broussard | https://www.catholic.com/video/are-we-born-sinners | original-sin | Short answer on inherited guilt | No transcript on page |
+| If God Exists, Why Do I Suffer? | Catholic Answers | https://www.catholic.com/video/if-god-exists-why-do-i-suffer | problem-of-evil | Beginner-length | No transcript; speaker not confirmed |
+| The Problem of Evil (Aquinas 101) | Thomistic Institute | https://aquinas101.thomisticinstitute.org/videos/the-problem-of-evil | problem-of-evil | Same series as resources already linked | No transcript |
+| Faith Alone: What Everybody Gets Wrong | Jimmy Akin | https://www.catholic.com/audio/tjap/faith-alone-what-everybody-gets-wrong | faith-and-works | Even-handed treatment of both sides | Transcript long; only the opening read |
+| Refuting the Protestant Self-Authenticating Canon | Trent Horn and Joe Heschmeyer | https://www.catholic.com/audio/cot/refuting-the-protestant-self-authenticating-canon-with-joe-heschmeyer | sola-scriptura | Directly addresses the canon reply | Partly reviewed; calls Jerome "the one exceptional case" on the deuterocanon, an overstatement |
+| Is Sola Scriptura True? (debate) | Trent Horn vs. Anthony Rogers | https://www.catholic.com/audio/cot/is-sola-scriptura-true-anthony-rogers-vs-trent-horn | sola-scriptura | Formal debate | No transcript |
+| Are Catholics Wrong About John 6? | Karlo Broussard | https://www.catholic.com/video/are-catholics-wrong-about-john-6 | real-presence | Answers Protestant counter-readings | No transcript |
+| Explaining Purgatory to a Protestant Pastor | Trent Horn | https://www.catholic.com/audio/cot/explaining-purgatory-to-a-protestant-pastor | purgatory | Conversational, charitable | Transcript partly read |
+| Is the Pope Just the First Among Equals? | Michael Lofton | https://www.catholic.com/audio/caf/is-the-pope-just-the-first-among-equals | catholic-and-orthodox-differences | Lofton specializes in Orthodox dialogue | No transcript on page |
+| How the Anointing of the Sick Actually Works | Ascension (Every Knee Shall Bow) | https://ascensionpress.com/blogs/podcasts/how-the-anointing-of-the-sick-actually-works | anointing-of-the-sick | Addresses common misunderstandings | No transcript on the official page; third-party transcripts not used |
+| Your Questions About Cremation and Burial: Answered | Fr. Mike Schmitz | https://ascensionpress.com/blogs/podcasts/your-questions-about-cremation-and-burial-answered | catholic-funerals-and-grief | Practical Q&A | No transcript; may predate the 2023 note |
+| Jesus was the Angel of the Lord in the Old Testament? | Sam Shamoun (clip on the "Essence of Faith" channel) | https://www.youtube.com/watch?v=vgQIGKSX1JI | divinity-of-jesus, trinity-in-scripture | Old Testament theophanies | Third-party clip channel, not Shamoun's own; earlier audit noted errors and inflammatory rhetoric in his material |
+| What Good Does Adoration Do? | Fr. James Boric with Cy Kellett (Catholic Answers Focus, 2021) | https://www.catholic.com/audio/caf/what-good-does-adoration-do | eucharistic-adoration | Good practical guidance (start with 15 minutes, bring questions, read a Gospel, sit in silence); welcomes non-Catholics | Full published transcript read (not listened to). It credits perpetual adoration with large drops in murders in Ciudad Juárez and Baltimore; those figures were not verified, though the speaker grants other factors and a small sample. Moved here from verified resources for a human decision. |
+
+Not found with a verifiable direct URL this session: Scott Hahn, John Bergsma, Steve Ray, William Albrecht, Edward Feser, and a Bishop Barron video on these topics. A search for Shamoun returned mostly AI-generated summaries of clips (not used).
+
+## Final content completion (2026-11-25)
+
+- **New topic `salvation-history`** (beliefs): creation and the Fall, the covenants with Noah (Genesis 9:16), Abraham (Genesis 12:3), Moses and Israel (Exodus 19), and David (2 Samuel 7:16); the prophets and the new covenant (Jeremiah 31:31–33; Isaiah 49:6, 53); Jesus (Matthew 1:1; Luke 22:20; Hebrews 8); Pentecost and the Church; the new creation (Revelation 21). Explicit New Testament typology (Romans 5:14; 1 Peter 3:20–21) is distinguished from patristic interpretation (1 Clement 12 on Rahab). Irenaeus, Against Heresies 4.9.1; CCC 1, 54–73, 128–130, 410, 1093–1095.
+- **New topic `virtues`** (morality): virtue (CCC 1803); faith, hope, and charity (CCC 1812–1829; 1 Corinthians 13:13); the cardinal virtues (CCC 1805–1809; Wisdom 8:7); grace and effort (CCC 1810–1811); Augustine, On the Morals of the Catholic Church 15; practical suggestions; holiness (CCC 2013, 2015; 2 Peter 1:5–7; Galatians 5:22–23).
+- **Curious pathway** (app `startHere` and curriculum §8.1, now 15 topics): `salvation-history` and `original-sin` follow `who-is-god`; `how-are-we-saved` follows `resurrection`. `virtues` joins pathway 8.4.
+- **Optional gaps closed:** `how-are-we-saved` (1 Corinthians 9:27; Hebrews 6:4–6); `marriage-sacrament` (indissolubility, Mark 10:11, Matthew 19:8, CCC 1640; Ignatius, To Polycarp 5); `heaven` (Augustine, City of God 22.30).
+- **Trinity wording corrected:** Theophilus gives the earliest surviving use of the Greek trias (God, his Word, his Wisdom), which the English translation renders "Trinity"; the Latin trinitas follows in Tertullian; the precise formulation came at Nicaea and Constantinople (CCC 245–256). Source: Catholic Encyclopedia, "The Blessed Trinity."
+- **Multimedia:** the Adoration podcast's full transcript was read; it was moved to the human-review queue (see above) because of unverified statistical claims. No verified audio or video recommendations were added in the last two passes; the queue now has 16 candidates.
+- **Corrections:** Genesis 9:16 ("the everlasting covenant"); CCC 245 page link.
+- **Resources added (5):** Irenaeus, Against Heresies 4.9; Augustine, On the Morals of the Catholic Church; Aquinas, Summa Theologiae I–II q.61; Ignatius, To Polycarp; Augustine, City of God 22. Four new search regression checks (274 total).
+
 ## Phase 8 review requirements (consolidated)
 
 Phase 7 is implemented. Implementation is not release readiness: none of the items below has been completed, and no topic has received independent theological review. The detailed pending list that follows remains the record of specific source items.

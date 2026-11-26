@@ -4,6 +4,7 @@
 import { WEIGHT, type SearchEntry } from "@/lib/search";
 import {
   categories,
+  commonArguments,
   getCategory,
   getTradition,
   hasPage,
@@ -34,6 +35,9 @@ const groupLabel = { christian: "Christian tradition", religion: "Religion", wor
 
 export function searchEntries(): SearchEntry[] {
   const entries: SearchEntry[] = [];
+  // The common arguments a topic answers, so searching an objection finds its answer.
+  const claimsFor = new Map<string, string[]>();
+  for (const { claim, slug } of commonArguments.flatMap((g) => g.items)) claimsFor.set(slug, [...(claimsFor.get(slug) ?? []), claim]);
 
   for (const t of topics) {
     const perspectives = t.debate?.perspectives ?? [];
@@ -52,6 +56,7 @@ export function searchEntries(): SearchEntry[] {
         [t.title, WEIGHT.title],
         [(t.alsoKnownAs ?? []).join(" "), WEIGHT.alias],
         [t.keywords.join(" "), WEIGHT.keyword],
+        [(claimsFor.get(t.slug) ?? []).join(" "), WEIGHT.keyword],
         [t.debate ? `${getCategory(t.category)!.title} common questions objections apologetics` : getCategory(t.category)!.title, WEIGHT.context],
         [traditionNames.join(" "), WEIGHT.context],
         [(t.teaching.scripture ?? []).map((s) => s.passage).join(" "), WEIGHT.context],

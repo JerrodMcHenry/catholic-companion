@@ -80,7 +80,7 @@ export const morality: Topic[] = [
     question: "What are the Ten Commandments?",
     alsoKnownAs: ["Decalogue", "The Law of God"],
     category: "morality",
-    keywords: ["Ten Commandments", "Decalogue", "commandments", "Moses", "Mount Sinai", "Exodus 20", "Deuteronomy 5", "list of the Ten Commandments", "greatest commandment", "do Christians still keep the commandments"],
+    keywords: ["Ten Commandments", "Decalogue", "commandments", "Moses", "Mount Sinai", "Exodus 20", "Deuteronomy 5", "list of the Ten Commandments", "greatest commandment", "do Christians still keep the commandments", "changed the Ten Commandments", "second commandment", "graven images"],
     summary:
       "The Ten Commandments are the “ten words” God gave to Israel through Moses on Mount Sinai, summing up the duties of love toward God and neighbor. Jesus confirmed them and summed them up in two commandments: love God with all your heart, and love your neighbor as yourself. Catholics believe they express the moral law written in every human heart and still bind Christians today.",
     explanation: [
@@ -89,10 +89,12 @@ export const morality: Topic[] = [
       "Different numberings: the Catholic Church follows the division of St. Augustine, as do the Lutheran confessions; the Orthodox Churches and Reformed communities divide them slightly differently (CCC 2066). The content is the same.",
       "Love of God and neighbor: the first three commandments concern love of God, the other seven love of neighbor (CCC 2067). When asked how to reach eternal life, Jesus answered, “If you wish to enter into life, keep the commandments” (Matthew 19:17).",
       "Still binding: the commandments “are fundamentally immutable, and they oblige always and everywhere. No one can dispense from them” (CCC 2072). They are to be read in the light of the commandment of love (CCC 2055).",
+      "Did the Church remove the commandment against images? No. In the Catholic numbering, “You shall not make for yourself an idol” is part of the First Commandment rather than counted separately, and the full text is in Exodus 20 and Deuteronomy 5 in every Bible. Short catechism lists can make it look omitted, which is an understandable source of the charge. The Catechism teaches that the commandment forbids representing God “by the hand of man” and worshiping images (CCC 2129), and that the veneration of sacred images “is not contrary to the first commandment which proscribes idols,” because “the honor rendered to an image passes to its prototype” (CCC 2132). The Second Council of Nicaea (787) defended icons on the basis of the Incarnation (CCC 2131).",
     ],
     teaching: {
       catechism: [
         { paragraphs: "2052–2074", url: ccc("__P78") },
+        { paragraphs: "2129–2132", url: ccc("__P7F") },
       ],
       scripture: [
         { passage: "Exodus 20:1–17", url: bible("exodus/20") },
@@ -102,7 +104,7 @@ export const morality: Topic[] = [
       ],
       documents: ["veritatis-splendor"],
     },
-    resources: [],
+    resources: ["ca-ten-commandments-staples"],
     related: ["how-catholics-decide-right-and-wrong", "what-is-sin", "why-go-to-mass-on-sunday", "human-life-dignity"],
   },
   {
@@ -209,7 +211,7 @@ export const morality: Topic[] = [
     question: "What does the Church teach about sex and chastity?",
     alsoKnownAs: ["Chastity", "Sexual morality"],
     category: "morality",
-    keywords: ["sex", "chastity", "sexual morality", "sex before marriage", "contraception", "natural family planning", "pornography", "same-sex attraction", "Humanae Vitae", "purity", "marriage"],
+    keywords: ["sex", "chastity", "sexual morality", "sex before marriage", "contraception", "natural family planning", "pornography", "same-sex attraction", "Humanae Vitae", "purity", "marriage", "chastity", "why wait until marriage", "Theology of the Body", "same-sex attraction", "contraception"],
     summary:
       "The Church teaches that sexuality is a good gift of God that involves the whole person, body and soul, and is meant for the total, faithful, and fruitful self-giving of husband and wife in marriage. Chastity, the virtue that integrates sexuality within the person, is a call for everyone, married or single, according to their state of life. The Church teaches that sexual acts outside marriage are morally wrong, while entrusting the judgment of persons to God and offering his mercy and grace to all who struggle.",
     explanation: [
@@ -219,6 +221,9 @@ export const morality: Topic[] = [
       "Acts contrary to chastity: the Catechism names acts such as lust, masturbation, fornication, pornography, prostitution, and rape as contrary to chastity (CCC 2351–2356), and notes that various factors can lessen a person's moral responsibility (CCC 2352).",
       "Same-sex attraction: the Church teaches that homosexual acts are contrary to the natural law, and that people with deep-seated homosexual tendencies “must be accepted with respect, compassion, and sensitivity. Every sign of unjust discrimination in their regard should be avoided” (CCC 2357–2358). Like everyone, they are called to chastity, supported by friendship, prayer, and grace (CCC 2359).",
       "Mercy and growth: the Church judges acts, but “we must entrust judgment of persons to the justice and mercy of God” (CCC 1861). Christ's forgiveness is offered in Confession. This page explains the Church's general teaching; it is not personal pastoral, medical, or legal advice. For a particular situation, speak with a priest.",
+      "The underlying vision: the Church's teaching begins with who we are, not with a list of rules. God “is love and in himself he lives a mystery of personal loving communion,” and he created man and woman with “the vocation, and thus the capacity and responsibility, of love and communion” (CCC 2331). The body is not merely something we use: “your body is a temple of the holy Spirit within you” (1 Corinthians 6:19). Sexual union expresses a total gift of self, which is why the Church teaches that it belongs within marriage, where that gift is complete, faithful, and open to life (CCC 2337, 2360–2363).",
+      "Chastity as freedom: chastity is not repression but “the successful integration of sexuality within the person” (CCC 2337), and it is a virtue for married and single people alike (CCC 2348). It grows through self-knowledge, prayer, the sacraments, and good friendships, and it is honest about setbacks: “Self-mastery is a long and exacting work. One can never consider it acquired once and for all” (CCC 2342).",
+      "Pastoral honesty: many people find this teaching hard, including committed Catholics. The Church asks those who struggle not to give up but to keep coming to Christ in prayer and Confession, and it insists that every person be met “with respect, compassion, and sensitivity” (CCC 2358). For questions about your own life, a priest can help in confidence.",
     ],
     teaching: {
       catechism: [
@@ -231,8 +236,9 @@ export const morality: Topic[] = [
         { passage: "Genesis 1:27–28", url: bible("genesis/1") },
         { passage: "Matthew 19:4–6", url: bible("matthew/19") },
         { passage: "1 Corinthians 6:18–20", url: bible("1corinthians/6") },
+        { passage: "1 Corinthians 6:12–20", url: bible("1corinthians/6") },
       ],
-      documents: ["humanae-vitae", "gaudium-et-spes"],
+      documents: ["humanae-vitae", "gaudium-et-spes", "truth-and-meaning-of-human-sexuality"],
     },
     resources: [],
     related: ["marriage-sacrament", "how-catholics-decide-right-and-wrong", "mortal-and-venial-sin", "confession"],
@@ -271,5 +277,43 @@ export const morality: Topic[] = [
     },
     resources: ["usccb-seven-themes"],
     related: ["human-life-dignity", "ten-commandments", "what-is-sin", "why-did-god-create-us"],
+  },
+  {
+    slug: "virtues",
+    title: "Virtue and Growing in Holiness",
+    question: "What are the virtues?",
+    alsoKnownAs: ["Theological virtues", "Cardinal virtues", "Holiness"],
+    category: "morality",
+    keywords: ["virtue", "virtues", "faith hope and charity", "faith hope and love", "cardinal virtues", "prudence", "justice", "fortitude", "courage", "temperance", "self-control", "holiness", "become a better person", "good habits", "character", "spiritual growth", "fruits of the Spirit"],
+    summary:
+      "A virtue is a firm habit of doing good. Catholics speak of three theological virtues, faith, hope, and charity, which are God's gifts uniting us to him, and four cardinal virtues, prudence, justice, fortitude, and temperance, in which we grow by practice, strengthened by grace. Holiness is not a matter of rare heroics but of growing, day by day, in love for God and neighbor.",
+    explanation: [
+      "What virtue is: “A virtue is an habitual and firm disposition to do the good. It allows the person not only to perform good acts, but to give the best of himself” (CCC 1803). Paul urges, “whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is gracious, if there is any excellence and if there is anything worthy of praise, think about these things” (Philippians 4:8).",
+      "Faith, hope, and charity: the theological virtues “relate directly to God” (CCC 1812) and are poured into us by God (CCC 1813). Faith believes God and all he has revealed (CCC 1814); hope desires heaven and trusts Christ's promises (CCC 1817); charity loves God above all things and our neighbor as ourselves for love of God (CCC 1822). “So faith, hope, love remain, these three; but the greatest of these is love” (1 Corinthians 13:13). Charity “is the form of the virtues,” the source and goal of all the others (CCC 1827).",
+      "The cardinal virtues: four virtues “play a pivotal role and accordingly are called ‘cardinal’; all the others are grouped around them” (CCC 1805). The Book of Wisdom already names them: Wisdom “teaches moderation and prudence, righteousness and fortitude” (Wisdom 8:7). Prudence discerns our true good and the right way to reach it (CCC 1806); justice gives God and neighbor their due (CCC 1807); fortitude keeps us firm in difficulties and constant in doing good (CCC 1808); temperance moderates the attraction of pleasures (CCC 1809).",
+      "Grace and effort: human virtues grow “by deliberate acts and by a perseverance ever-renewed in repeated efforts,” and they are “purified and elevated by divine grace” (CCC 1810). Grace does not replace our effort, and our effort cannot replace grace. Prayer, the sacraments, and the gifts of the Holy Spirit sustain this growth (CCC 1811, 1830–1831).",
+      "An early witness: St. Augustine described the cardinal virtues as forms of love for God: “temperance is love giving itself entirely to that which is loved; fortitude is love readily bearing all things for the sake of the loved object; justice is love serving only the loved object, and therefore ruling rightly; prudence is love distinguishing with sagacity between what hinders it and what helps it” (On the Morals of the Catholic Church 15).",
+      "Living them day to day (suggestions, not rules): faith, pray the Creed and read the Gospels; hope, in hard times entrust the future to God instead of giving in to despair; charity, do a concrete act of kindness each day, especially for someone hard to love; prudence, before important decisions, pray, seek good advice, and consider the consequences; justice, be honest at work, pay what you owe, and stand up for the vulnerable; fortitude, do what is right when it costs you and keep praying when it is hard; temperance, practice moderation in food, drink, screens, and spending, for example through Friday penance.",
+      "Holiness: all Christians, in every state of life, are called to holiness (CCC 2013). “There is no holiness without renunciation and spiritual battle” (CCC 2015), but holiness is above all growth in love. Peter urges, “make every effort to supplement your faith with virtue, virtue with knowledge, knowledge with self-control, self-control with endurance, endurance with devotion, devotion with mutual affection, mutual affection with love” (2 Peter 1:5–7). The fruits of the Spirit are signs of this growth (Galatians 5:22–23; CCC 1832).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1803", url: ccc("__P64") },
+        { paragraphs: "1804–1811", url: ccc("__P65") },
+        { paragraphs: "1812–1829", url: ccc("__P66") },
+        { paragraphs: "1830–1832", url: ccc("__P67") },
+        { paragraphs: "2013–2016", url: ccc("__P71") },
+      ],
+      scripture: [
+        { passage: "Philippians 4:8–9", url: bible("philippians/4") },
+        { passage: "1 Corinthians 13:1–13", url: bible("1corinthians/13") },
+        { passage: "Wisdom 8:7", url: bible("wisdom/8") },
+        { passage: "2 Peter 1:3–11", url: bible("2peter/1") },
+        { passage: "Galatians 5:22–25", url: bible("galatians/5") },
+      ],
+      documents: [],
+    },
+    resources: ["augustine-morals-catholic-church", "aquinas-summa-i-ii-q61"],
+    related: ["what-is-faith", "ten-commandments", "how-catholics-decide-right-and-wrong", "how-to-pray", "after-becoming-catholic", "what-is-grace"],
   },
 ];

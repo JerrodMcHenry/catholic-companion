@@ -10,7 +10,7 @@ export const maryAndSaints: Topic[] = [
     question: "Who is Mary?",
     alsoKnownAs: ["Blessed Virgin Mary", "Our Lady", "Mother of Jesus"],
     category: "mary-and-the-saints",
-    keywords: ["Mary", "Virgin Mary", "Blessed Mother", "Our Lady", "mother of Jesus", "Annunciation", "Hail Mary", "Mary in the Bible", "Mother of the Church", "Assumption", "ever-virgin"],
+    keywords: ["Mary", "Virgin Mary", "Blessed Mother", "Our Lady", "mother of Jesus", "Annunciation", "Hail Mary", "Mary in the Bible", "Mother of the Church", "Assumption", "ever-virgin", "brothers of Jesus", "did Mary have other children", "perpetual virginity", "ever-virgin"],
     summary:
       "Mary is the Jewish woman of Nazareth whom God chose to be the mother of Jesus. She said yes to God at the Annunciation, conceived Jesus by the power of the Holy Spirit, stood by him at the cross, and prayed with the apostles at Pentecost. Catholics honor her as the Mother of God, the first and model disciple, and a mother to all Christians, while always pointing to her Son.",
     explanation: [
@@ -18,10 +18,11 @@ export const maryAndSaints: Topic[] = [
       "In the Gospels: the angel Gabriel greets her, “Hail, favored one! The Lord is with you” (Luke 1:28), and she answers, “May it be done to me according to your word” (Luke 1:38). Elizabeth calls her “the mother of my Lord” (Luke 1:43). At Cana she tells the servants, “Do whatever he tells you” (John 2:5). From the cross Jesus entrusts her to the beloved disciple: “Behold, your mother” (John 19:27). She prays with the apostles before Pentecost (Acts 1:14).",
       "What the Church teaches about her: she is truly the Mother of God (CCC 495); she was preserved from original sin from her conception (the Immaculate Conception, CCC 491); she remained a virgin, and the liturgy calls her “Ever-virgin” (CCC 499); and at the end of her earthly life she was taken up body and soul into heavenly glory (the Assumption, defined in 1950; CCC 966).",
       "Model and mother: Mary is the Church's “model of faith and charity” (CCC 967) and “a mother to us in the order of grace” (CCC 968). Her role “in no way obscures or diminishes” Christ's unique mediation (CCC 970). How Catholics honor her is explained in “Do Catholics worship Mary?”",
+      "Did Mary have other children? In Mark’s Gospel, Jesus’ neighbors call him “the brother of James and Joses and Judas and Simon” and mention his “sisters” (Mark 6:3). The Church teaches that Mary remained a virgin (CCC 499) and reads these passages as referring to Jesus’ relatives: James and Joseph are elsewhere called sons of “Mary the mother of James and Joseph,” whom Matthew calls “the other Mary” (Matthew 27:56; 28:1), and the Catechism explains that they are “close relations of Jesus, according to an Old Testament expression” (CCC 500; compare Genesis 13:8). The passages themselves do not settle the question; this is how the Church has understood them. In the fourth century Helvidius argued, citing Tertullian, that Mary had later children; St. Jerome answered him, while Damasus was pope, that the “brethren” were kinsmen (Against Helvidius). On Matthew 1:25 (“He had no relations with her until she bore a son”), the NABRE’s own note explains that the Greek word translated “until” “does not imply normal marital conduct after Jesus’ birth, nor does it exclude it.” At the cross Jesus entrusted his mother to the beloved disciple (John 19:26–27), which Catholics find hard to explain if she had other sons, though this is an inference rather than a proof.",
     ],
     teaching: {
       catechism: [
-        { paragraphs: "487–495, 499", url: ccc("__P1K") },
+        { paragraphs: "487–495, 499–500", url: ccc("__P1K") },
         { paragraphs: "963–971", url: ccc("__P2C") },
       ],
       scripture: [
@@ -32,7 +33,7 @@ export const maryAndSaints: Topic[] = [
       ],
       documents: ["lumen-gentium", "munificentissimus-deus"],
     },
-    resources: ["ca-mother-of-god-early", "ca-immaculate-conception-assumption"],
+    resources: ["ca-mother-of-god-early", "ca-immaculate-conception-assumption", "jerome-against-helvidius", "ca-brethren-of-the-lord"],
     related: ["why-honor-mary", "mother-of-god", "immaculate-conception", "incarnation"],
   },
   {
@@ -189,7 +190,7 @@ export const maryAndSaints: Topic[] = [
     question: "What is the Immaculate Conception?",
     alsoKnownAs: ["Mary conceived without sin", "Ineffabilis Deus", "1854 definition"],
     category: "mary-and-the-saints",
-    keywords: ["Immaculate Conception", "Mary without sin", "original sin", "full of grace", "1854", "Pius IX", "Ineffabilis Deus", "December 8", "is the Immaculate Conception the virgin birth", "did Mary need a savior"],
+    keywords: ["Immaculate Conception", "Mary without sin", "original sin", "full of grace", "1854", "Pius IX", "Ineffabilis Deus", "December 8", "is the Immaculate Conception the virgin birth", "did Mary need a savior", "New Eve", "Ark of the Covenant", "Mary typology"],
     summary:
       "The Immaculate Conception is the Catholic dogma that Mary, from the first moment of her conception, was preserved by God's grace from original sin, in view of the merits of Jesus Christ. It is not about Jesus' conception (that is the virgin birth). Mary was redeemed too, but in a more exalted way: kept from sin rather than cleansed of it. Pope Pius IX defined it in 1854.",
     explanation: [
@@ -198,17 +199,26 @@ export const maryAndSaints: Topic[] = [
       "Why: God prepared Mary to give the free assent of faith at the Annunciation, “wholly borne by God's grace” (CCC 490). The angel greets her as one already filled with God's favor: “Hail, favored one!” (Luke 1:28). By God's grace Mary also remained free from personal sin throughout her life (CCC 493).",
       "Not the virgin birth: people often confuse the two. The Immaculate Conception concerns Mary's own conception by her parents; the virginal conception concerns Jesus, conceived by the Holy Spirit (CCC 496–498).",
       "East and West: the Fathers of the Eastern tradition call Mary “the All-Holy” (Panagia) and celebrate her as free from any stain of sin (CCC 493). Orthodox and Protestant Christians understand Mary's holiness in different ways and have not accepted the 1854 definition; their views and the Catholic responses are set out below.",
+      "The New Eve: after the fall, God promises “enmity between you and the woman” (Genesis 3:15). Around 155, Justin Martyr contrasted Eve, who “having conceived the word of the serpent, brought forth disobedience and death,” with Mary, who “received faith and joy” at the Annunciation (Dialogue with Trypho 100). About 180, Irenaeus wrote that “the knot of Eve’s disobedience was loosed by the obedience of Mary” (Against Heresies 3.22.4; CCC 494). Many Fathers and Doctors of the Church see Mary as the “woman” of Genesis 3:15, “the ‘new Eve’” (CCC 411).",
+      "The Ark of the Covenant: Luke’s account of the Visitation echoes the ark’s journey in 2 Samuel 6. David “set out” to bring up the ark (2 Samuel 6:2), and Mary “set out” for the hill country of Judah (Luke 1:39). David asks, “How can the ark of the LORD come to me?” (2 Samuel 6:9), and Elizabeth asks why “the mother of my Lord should come to me” (Luke 1:43). David danced before the LORD (2 Samuel 6:16), and the infant “leaped” in Elizabeth’s womb (Luke 1:41, 44). The ark stayed in the house of Obed-edom “three months” (2 Samuel 6:11), and Mary “remained with her about three months” (Luke 1:56). Luke's verb for Elizabeth's loud cry, anaphōneō, appears nowhere else in the New Testament; in the Greek Old Testament it is used for the Levites' music and praise before the ark (1 Chronicles 15:28; 16:4–5; 2 Chronicles 5:13), and also for worship at the tabernacle in Gibeon (1 Chronicles 16:42). It was also an ordinary Greek word, so this echo is suggestive, not conclusive. The Church calls Mary “the ark of the covenant, the place where the glory of the Lord dwells” (CCC 2676).",
+      "What typology shows, and what it does not: these parallels are interpretations. Luke does not state them outright, and they do not by themselves prove the Immaculate Conception. They show how Christians have read Mary’s unique holiness in the light of the Old Testament; the dogma itself rests on the Church’s definition (Ineffabilis Deus), read together with Scripture and Tradition.",
     ],
     teaching: {
-      catechism: [{ paragraphs: "490–493, 496–498", url: ccc("__P1K") }],
+      catechism: [
+        { paragraphs: "490–494, 496–498", url: ccc("__P1K") },
+        { paragraphs: "411", url: ccc("__P1C") },
+        { paragraphs: "2676", url: ccc("__P9F") },
+      ],
       scripture: [
         { passage: "Luke 1:26–38", url: bible("luke/1") },
         { passage: "Genesis 3:15", url: bible("genesis/3") },
         { passage: "Ephesians 1:3–4", url: bible("ephesians/1") },
+        { passage: "2 Samuel 6:1–16", url: bible("2samuel/6") },
+        { passage: "Luke 1:39–56", url: bible("luke/1") },
       ],
       documents: ["ineffabilis-deus", "lumen-gentium"],
     },
-    resources: ["ca-immaculate-conception-assumption"],
+    resources: ["ca-immaculate-conception-assumption", "justin-dialogue-trypho-100", "irenaeus-against-heresies-3-22"],
     related: ["who-is-mary", "mother-of-god", "baptism", "papal-infallibility"],
     debate: {
       catholicPosition: {
@@ -319,6 +329,7 @@ export const maryAndSaints: Topic[] = [
       "Imitation and friendship: we honor the saints “not merely by the title of example” but because communion with them joins us more closely to Christ (CCC 957). Many Catholics choose patron saints whose lives connect with their own.",
       "What it is not: asking a saint's prayer is not worship, not a way around God, and not a claim that saints act by their own power. The Council of Trent taught that the saints “offer up their own prayers to God for men” and that it is good to ask their help in obtaining benefits from God “through His Son, Jesus Christ” (Session 25).",
       "Why not go straight to God? Catholics do, constantly. The question, and the objections many Protestants raise, are treated in “Why not just pray directly to God?”",
+      "More from Scripture and the early Church: in Revelation, “the smoke of the incense along with the prayers of the holy ones went up before God from the hand of the angel” (Revelation 8:4). Second Maccabees describes the prophet Jeremiah, long dead, as one who “fervently prays for the people and the holy city” (2 Maccabees 15:14); Protestants do not accept this book as Scripture, but it shows that some Jews before Christ believed the righteous dead pray for the living. Around 350, Cyril of Jerusalem taught the newly baptized that the Church commemorates “Patriarchs, Prophets, Apostles, Martyrs, that at their prayers and intercessions God would receive our petition” (Mystagogical Lecture 5.9).",
     ],
     teaching: {
       catechism: [
@@ -329,10 +340,12 @@ export const maryAndSaints: Topic[] = [
         { passage: "Luke 20:37–38", url: bible("luke/20") },
         { passage: "Revelation 5:8", url: bible("revelation/5") },
         { passage: "James 5:16", url: bible("james/5") },
+        { passage: "Revelation 8:3–4", url: bible("revelation/8") },
+        { passage: "2 Maccabees 15:12–16", url: bible("2maccabees/15") },
       ],
       documents: ["lumen-gentium", "trent-session-25"],
     },
-    resources: ["ca-praying-to-the-saints", "spc-one-mediator"],
+    resources: ["ca-praying-to-the-saints", "spc-one-mediator", "cyril-catechetical-lecture-23"],
     related: ["praying-directly-to-god", "what-is-a-saint", "why-honor-mary"],
     debate: {
       catholicPosition: {
@@ -395,14 +408,19 @@ export const maryAndSaints: Topic[] = [
       "Veneration, not worship: “the honor rendered to an image passes to its prototype,” and the honor paid to sacred images is “a respectful veneration, not the adoration due to God alone” (CCC 2132). Trent taught the same: no divinity or power is believed to be in images; the honor shown them is referred to those they represent (Session 25).",
       "In practice: kneeling before a crucifix or kissing an icon is like kissing a photograph of someone you love; the gesture is directed to the person, not the material object.",
       "Other views: Reformed Protestants, Muslims, and Jews understand the commandment against images in their own ways. Their views and the Catholic responses are set out below.",
+      "Pointing to God, not replacing him: Jesus compares his crucifixion to the bronze serpent God commanded Moses to make: “just as Moses lifted up the serpent in the desert, so must the Son of Man be lifted up” (John 3:14; Numbers 21:8–9). Scripture also shows the danger the commandment guards against: when the Israelites began “burning incense to it,” King Hezekiah smashed the bronze serpent (2 Kings 18:4). The difference lies in whether an image is worshiped or used to point to God.",
     ],
     teaching: {
-      catechism: [{ paragraphs: "2129–2132", url: ccc("__P7F") }],
+      catechism: [
+        { paragraphs: "2129–2132", url: ccc("__P7F") },
+      ],
       scripture: [
         { passage: "Exodus 20:2–6", url: bible("exodus/20") },
         { passage: "Exodus 25:18–22", url: bible("exodus/25") },
         { passage: "Numbers 21:8–9", url: bible("numbers/21") },
         { passage: "Colossians 1:15", url: bible("colossians/1") },
+        { passage: "John 3:14–15", url: bible("john/3") },
+        { passage: "2 Kings 18:4", url: bible("2kings/18") },
       ],
       documents: ["nicaea-ii", "trent-session-25"],
     },

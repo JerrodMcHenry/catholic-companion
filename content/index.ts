@@ -3,11 +3,11 @@
 
 import { categories, pillars } from "./categories";
 import { resources } from "./resources";
-import { becomingPath, commonQuestions, comparisonTopics, massOrder, newCatholicPath, startHere, topics } from "./topics";
+import { becomingPath, commonArguments, commonQuestions, comparisonTopics, massOrder, newCatholicPath, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
 import { resourceLabel, type PillarId, type Tradition } from "./types";
 
-export { becomingPath, categories, commonQuestions, comparisonTopics, newCatholicPath, pillars, resources, startHere, topics, traditions };
+export { becomingPath, categories, commonArguments, commonQuestions, comparisonTopics, newCatholicPath, pillars, resources, startHere, topics, traditions };
 export type * from "./types";
 export { resourceLabel, resourceTypeLabel } from "./types";
 
@@ -146,7 +146,7 @@ for (const t of traditions) {
   checkTopics(where, t.related);
 }
 
-checkTopics("pathways and question lists", [...startHere, ...becomingPath, ...newCatholicPath, ...commonQuestions]);
+checkTopics("pathways and question lists", [...startHere, ...becomingPath, ...newCatholicPath, ...commonQuestions, ...commonArguments.flatMap((g) => g.items.map((i) => i.slug))]);
 checkTopics("comparison list", comparisonTopics);
 
 const massSlugs = massOrder.flatMap((s) => s.slugs);

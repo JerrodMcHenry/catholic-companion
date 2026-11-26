@@ -194,7 +194,7 @@ export const traditions: Tradition[] = [
     slug: "agnosticism",
     name: "Agnosticism",
     group: "worldview",
-    keywords: ["agnostic", "agnostics", "doubt", "unsure about God"],
+    keywords: ["agnostic", "agnostics", "unsure about God", "is there a God"],
     overview: [
       "Agnosticism is the view that we do not, or cannot, know whether God exists. The term was coined in the late nineteenth century by the English biologist T. H. Huxley.",
       "Some agnostics hold that the question can never be answered; others have simply not found the arguments on either side convincing.",

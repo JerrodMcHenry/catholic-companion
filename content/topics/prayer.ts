@@ -43,10 +43,10 @@ export const prayerTopics: Topic[] = [
   {
     slug: "how-to-pray",
     title: "How to Start Praying",
-    question: "How do I start praying?",
+    question: "How do I pray?",
     alsoKnownAs: ["How to pray"],
     category: "prayer",
-    keywords: ["how to pray", "start praying", "beginner prayer", "daily prayer", "morning prayer", "prayer routine", "distractions in prayer", "dryness in prayer", "lectio divina", "praying with Scripture"],
+    keywords: ["how to pray", "start praying", "beginner prayer", "daily prayer", "morning prayer", "prayer routine", "distractions in prayer", "dryness in prayer", "lectio divina", "praying with Scripture", "how do I pray", "how to start praying", "learn to pray", "spiritual dryness", "prayer feels empty", "prayer feels dry", "God feels distant", "dark night"],
     summary:
       "Start simply and regularly. Set aside a few minutes at a fixed time, put yourself in God's presence, speak to him honestly, and listen, especially through Scripture. Use the Church's prayers when your own words run out. Distractions and dry spells are normal; the Catechism calls prayer both a gift and a “battle.” No single method is required of every Catholic.",
     explanation: [
@@ -56,6 +56,7 @@ export const prayerTopics: Topic[] = [
       "Distractions: “To set about hunting down distractions would be to fall into their trap, when all that is necessary is to turn back to our heart” (CCC 2729). Dryness, when prayer feels empty, is also part of the journey (CCC 2731).",
       "No technique guarantees results: prayer “is both a gift of grace and a determined response on our part” (CCC 2725). “There are as many paths of prayer as there are persons who pray,” and the same Spirit acts in all (CCC 2672).",
       "Prayer and health: prayer is not a substitute for medical or mental health care. If you are struggling with persistent sadness, anxiety, or scrupulosity, speak with a doctor or counselor as well as a priest.",
+      "When prayer feels dry: sometimes prayer brings no feeling at all. The Catechism calls this dryness and describes it as “the moment of sheer faith clinging faithfully to Jesus in his agony and in his tomb” (CCC 2731). Saints such as St. John of the Cross wrote about long seasons of dryness and did not treat them as failure. Keep a simple, regular time of prayer; faithfulness matters more than feelings. Dryness sometimes has a cause that calls for conversion (CCC 2731), and sometimes it is simply part of growing. A priest or spiritual director can help you tell the difference.",
     ],
     teaching: {
       catechism: [
@@ -210,7 +211,7 @@ export const prayerTopics: Topic[] = [
     question: "How do I pray the Rosary?",
     alsoKnownAs: ["Mysteries of the Rosary", "Holy Rosary"],
     category: "prayer",
-    keywords: ["Rosary", "how to pray the Rosary", "mysteries of the Rosary", "joyful mysteries", "sorrowful mysteries", "glorious mysteries", "luminous mysteries", "rosary beads", "decade", "Fatima prayer", "repetitive prayer"],
+    keywords: ["Rosary", "how to pray the Rosary", "mysteries of the Rosary", "joyful mysteries", "sorrowful mysteries", "glorious mysteries", "luminous mysteries", "rosary beads", "decade", "Fatima prayer", "repetitive prayer", "vain repetition", "Matthew 6:7"],
     summary:
       "The Rosary is a Scripture-based prayer in which Catholics meditate on events in the life of Jesus and Mary, called mysteries, while praying the Our Father, ten Hail Marys, and the Glory Be for each of five “decades,” usually counted on beads. It is a contemplative prayer, recommended by the Church but not required, and it can be prayed alone or with others.",
     explanation: [
@@ -220,12 +221,13 @@ export const prayerTopics: Topic[] = [
       "Contemplation, not mere repetition: the Rosary is “essentially a contemplative prayer” (Directory on Popular Piety 197); “Christian prayer tries above all to meditate on the mysteries of Christ, as in lectio divina or the rosary” (CCC 2708). It grew up in medieval Western piety (CCC 2678).",
       "Local customs: some add the prayer associated with Fatima after each decade, and closing prayers vary by local custom (Rosarium Virginis Mariae 35). The Church also esteems other approved Marian prayers and chaplets (Directory on Popular Piety 202).",
       "Devotions like this are recommended, not required: the Church calls such pious exercises optional, while warning against undervaluing them (Directory on Popular Piety 12).",
+      "Doesn't Jesus forbid repetitive prayer? Jesus said, “In praying, do not babble like the pagans, who think that they will be heard because of their many words” (Matthew 6:7). His warning concerns trying to win God over by the number of words. Scripture also shows prayer that repeats: in Gethsemane Jesus “prayed a third time, saying the same thing again” (Matthew 26:44), and in heaven the living creatures never stop exclaiming, “Holy, holy, holy” (Revelation 4:8). The Catechism teaches that when a prayer is “repeated often by a humbly attentive heart, the prayer is not lost by heaping up empty phrases” (CCC 2668).",
     ],
     teaching: {
       catechism: [
         { paragraphs: "971", url: ccc("__P2C") },
         { paragraphs: "1674", url: ccc("__P58") },
-        { paragraphs: "2678", url: ccc("__P9F") },
+        { paragraphs: "2668, 2678", url: ccc("__P9F") },
         { paragraphs: "2708", url: ccc("__P9L") },
       ],
       scripture: [
@@ -235,7 +237,7 @@ export const prayerTopics: Topic[] = [
       ],
       documents: ["rosarium-virginis-mariae", "directory-popular-piety"],
     },
-    resources: ["usccb-rosary", "ca-how-to-pray-the-rosary"],
+    resources: ["usccb-rosary", "ca-how-to-pray-the-rosary", "ca-rosary-vain-repetition-staples"],
     related: ["hail-mary", "our-father", "why-honor-mary", "who-is-mary"],
   },
 ];
