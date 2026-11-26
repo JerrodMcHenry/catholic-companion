@@ -65,7 +65,7 @@ export function SavedList({ items }: { items: Record<string, SavedItem> }) {
               <CardLink href="/start" title="New to Catholicism? Start here" />
             </li>
             <li>
-              <CardLink href="/explore" title="Explore all subjects" />
+              <CardLink href="/explore" title="Learn the Faith" />
             </li>
           </ul>
         </div>

@@ -5,16 +5,55 @@ import { bible, ccc } from "./refs";
 
 export const faithAndReason: Topic[] = [
   {
+    slug: "what-is-truth",
+    title: "What Is Truth?",
+    question: "What is truth, and how can we know it?",
+    alsoKnownAs: ["Objective truth", "Faith and reason", "Relativism"],
+    category: "faith-and-reason",
+    keywords: ["what is truth", "truth", "objective truth", "subjective", "is truth relative", "moral relativism", "relativism", "can we know the truth", "how do I know what is true", "faith and reason", "religious truth claims", "how to investigate religion", "Pilate"],
+    summary:
+      "Truth is what is actually so: what we think or say is true when it matches reality. Catholics hold that truth is objective, not merely personal opinion, and that human beings can really know it, through reason and experience, and more fully through what God has revealed. Christians believe that truth is finally a person, Jesus Christ. Anyone can investigate these claims honestly, with an open mind and a willingness to follow the evidence.",
+    explanation: [
+      "What truth means (philosophy): St. Thomas Aquinas gave a classic definition: “truth is defined by the conformity of intellect and thing” (Summa Theologiae I, q. 16, a. 2). A statement is true when it says of what is that it is. Whether a bridge will bear a truck depends on the bridge, not on how we feel about it. This is a point of ordinary reasoning that anyone can test, believer or not.",
+      "Objective truth and opinion: some things are matters of taste, like a favorite song. Others are matters of fact, like whether a medicine works. The Church holds that the great questions of life belong to the second kind: whether God exists, who Jesus was, and whether an act is just are questions with real answers, even when people disagree. Disagreement shows that a question is hard, not that it has no answer.",
+      "Can we know truth? We know many truths with real certainty, through our senses, reasoning, and trustworthy testimony, even though we never know everything. The Church teaches that every person is “impelled by their nature and bound by a moral obligation to seek the truth, especially religious truth” (CCC 2467), and that human reason can come to know God's existence from the created world (CCC 31–36).",
+      "Faith and reason: faith is not believing against reason. Pope John Paul II wrote that “faith and reason are like two wings on which the human spirit rises to the contemplation of truth” (Fides et Ratio, opening). Because the same God gives both, “God cannot deny himself, nor can truth ever contradict truth” (CCC 159). Reason can establish some truths, such as that God exists; revelation adds truths reason could never reach on its own, such as the Trinity (CCC 50, 237).",
+      "Moral relativism: relativism holds that there is no truth binding on everyone, especially about right and wrong. Philosophers often point out two problems: the claim that no truth binds everyone is itself offered as true for everyone, and if morality is only opinion, we cannot say that ending slavery was moral progress rather than mere change. In 2005, the future Pope Benedict XVI warned of “a dictatorship of relativism that does not recognize anything as definitive and whose ultimate goal consists solely of one's own ego and desires” (Homily at the Mass for the Election of the Roman Pontiff). The Church's alternative is not coercion: truth is to be proposed, never forced, because “nobody is to be forced to embrace the faith against his will” (CCC 160).",
+      "Jesus Christ, the truth (revealed faith): Christianity makes a striking claim: truth is not only a set of correct statements but a person. Jesus called himself the way, the truth, and the life (John 14:6). On trial, he told Pilate that he had come into the world to bear witness to the truth, and Pilate answered with his famous question, asking what truth is (John 18:37–38). The Church teaches that “in Jesus Christ, the whole of God's truth has been made manifest” (CCC 2466). St. Augustine wrote that the happy life everyone longs for “is joy in the truth,” and he found that truth in God (Confessions X.23). These are claims of faith, offered for investigation, not assumptions you must accept in advance.",
+      "Philosophy and revelation: the first points above (what truth is, whether we can know it, and the problems with relativism) are philosophical reasoning open to everyone. That God has revealed himself, and that Jesus is the truth, are matters of Christian faith. The Church holds that faith is reasonable, supported by signs and evidence, yet rests finally on trust in God who reveals (CCC 156).",
+      "How to investigate honestly (practical suggestions): be honest about what you hope is true; look at the strongest version of each position, including the objections; read primary sources, not only summaries; weigh the evidence (philosophical arguments about God, the historical sources about Jesus, the Resurrection, and how well a worldview fits human experience); talk with people who hold the views you are examining; and, if you are open to it, ask God to show you the truth. Good places to begin here are Does God exist?, Did Jesus really exist?, Did Jesus really rise from the dead?, and the Common Questions & Objections section.",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "31–35", url: ccc("__PA") },
+        { paragraphs: "36", url: ccc("__PB") },
+        { paragraphs: "50", url: ccc("__PE") },
+        { paragraphs: "156–160", url: ccc("__PX") },
+        { paragraphs: "237", url: ccc("__P17") },
+        { paragraphs: "2465–2470", url: ccc("__P8I") },
+      ],
+      scripture: [
+        { passage: "John 14:1–7", url: bible("john/14") },
+        { passage: "John 18:33–38", url: bible("john/18") },
+        { passage: "John 8:31–32", url: bible("john/8") },
+        { passage: "Romans 1:19–20", url: bible("romans/1") },
+      ],
+      documents: ["fides-et-ratio"],
+    },
+    resources: ["aquinas-summa-i-q16", "augustine-confessions-10", "ratzinger-homily-2005"],
+    related: ["what-is-faith", "does-god-exist", "divine-revelation", "who-is-jesus", "faith-and-science", "did-jesus-exist"],
+  },
+  {
     slug: "does-god-exist",
     title: "Does God Exist?",
     question: "Does God exist?",
     alsoKnownAs: ["Arguments for God", "Natural theology", "The Five Ways", "Cosmological argument"],
     category: "faith-and-reason",
-    keywords: ["does God exist", "is there a God", "proof of God", "arguments for God", "cosmological argument", "contingency", "first cause", "Five Ways", "Aquinas", "natural theology", "atheism", "agnosticism", "who made God", "moral argument"],
+    keywords: ["does God exist", "is there a God", "proof of God", "arguments for God", "cosmological argument", "contingency", "first cause", "Five Ways", "Aquinas", "natural theology", "atheism", "agnosticism", "who made God", "moral argument", "why believe in God", "is God real"],
     summary:
       "The Catholic Church teaches that God's existence can be known with certainty by human reason from the created world, and it offers what the Catechism calls not scientific proofs but “converging and convincing arguments.” Philosophers continue to debate these arguments, and many thoughtful people are not persuaded by them. Faith in God also rests on his revelation, above all in Jesus Christ.",
     explanation: [
-      "What the Church teaches: the First Vatican Council taught that God “can be known with certainty from the consideration of created things, by the natural power of human reason” (Dei Filius 2; CCC 36). St. Paul writes that God's “invisible attributes of eternal power and divinity have been able to be understood and perceived in what he has made” (Romans 1:20).",
+      "What the Church teaches: the First Vatican Council taught that God “can be known with certainty from the consideration of created things, by the natural power of human reason” (Dei Filius 2; CCC 36). St. Paul writes that God's invisible qualities, his eternal power and divine nature, can be clearly seen and understood through the things he has made (Romans 1:20).",
       "Not laboratory proofs: these are proofs “not in the sense of proofs in the natural sciences, but rather in the sense of ‘converging and convincing arguments’” (CCC 31). They are philosophical arguments about why anything exists at all, not scientific experiments or measurements.",
       "Arguments from the world: “starting from movement, becoming, contingency, and the world's order and beauty, one can come to a knowledge of God” (CCC 32). These are cosmological arguments: they reason from the fact that the things around us are changing and dependent, and could have not existed, to a first cause that depends on nothing. St. Thomas Aquinas set out five such “ways,” beginning with change: nothing passes from potential to actual except by something already actual (Summa Theologiae I, q. 2, a. 3).",
       "Arguments from the person: our openness to truth and beauty, our sense of moral goodness, our freedom and conscience, and our longing for the infinite also lead people to ask about God (CCC 33).",
@@ -35,7 +74,7 @@ export const faithAndReason: Topic[] = [
       documents: ["vatican-i-dei-filius", "fides-et-ratio"],
     },
     resources: ["aquinas-five-ways", "sep-cosmological", "kreeft-can-you-prove-god"],
-    related: ["problem-of-evil", "who-is-god", "faith-and-science", "creation"],
+    related: ["problem-of-evil", "who-is-god", "faith-and-science", "creation", "what-is-truth"],
     debate: {
       catholicPosition: {
         summary:
@@ -124,7 +163,7 @@ export const faithAndReason: Topic[] = [
       documents: ["fides-et-ratio", "vatican-i-dei-filius"],
     },
     resources: ["sep-religion-science", "baglow-fake-conflict"],
-    related: ["creation-and-evolution", "creation", "does-god-exist", "what-is-the-bible"],
+    related: ["creation-and-evolution", "creation", "does-god-exist", "what-is-the-bible", "what-is-truth"],
     debate: {
       catholicPosition: {
         summary:

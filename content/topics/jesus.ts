@@ -11,13 +11,13 @@ export const jesus: Topic[] = [
     question: "Who is Jesus?",
     alsoKnownAs: ["Jesus Christ", "Christology"],
     category: "beliefs",
-    keywords: ["Jesus", "Christ", "Messiah", "Son of God", "Lord", "Savior", "Jesus of Nazareth"],
+    keywords: ["Jesus", "Christ", "Messiah", "Son of God", "Lord", "Savior", "Jesus of Nazareth", "why believe in Jesus"],
     summary:
       "Catholics believe that Jesus of Nazareth, a Jew born in Bethlehem and crucified under Pontius Pilate, is the eternal Son of God made man. His name means “God saves.” He is the Christ, the Messiah anointed by God; the Son of God; and the Lord. By his life, death, and resurrection he reconciles us to God.",
     explanation: [
       "Jesus was a real man of history: born of the Virgin Mary in the time of King Herod and the emperor Caesar Augustus, a carpenter by trade, who died on a cross in Jerusalem. Christians believe this same man is the eternal Son of God.",
       "His names tell us who he is. “Jesus” means “God saves.” “Christ” comes from the Greek translation of the Hebrew “Messiah,” meaning “anointed.” “Son of God” in his case means God's unique, eternal Son. And “Lord,” the title the Greek Old Testament used for God's own name, is given to Jesus in the New Testament to recognize his divinity.",
-      "When Jesus asked his disciples who they thought he was, Peter answered, “You are the Messiah” (Mark 8:29). Christians have been answering that question ever since.",
+      "When Jesus asked his disciples who they thought he was, Peter answered that he was the Messiah (Mark 8:29). Christians have been answering that question ever since.",
     ],
     teaching: {
       catechism: [
@@ -107,9 +107,9 @@ export const jesus: Topic[] = [
     summary:
       "Catholics believe the eternal Son of God became a man, Jesus Christ, without ceasing to be God. The Church calls this the Incarnation, from John's words “the Word became flesh.” The Catechism gives four reasons: to save us by reconciling us with God, to show us God's love, to be our model of holiness, and to make us sharers in the divine nature.",
     explanation: [
-      "The Son of God “emptied himself” and took the form of a servant (Philippians 2:7). He came, as the Nicene Creed says, “for us men and for our salvation.”",
-      "He came to save us: our fallen nature needed to be healed and raised up. And he came so that we might know God's love: “For God so loved the world that he gave his only Son” (John 3:16).",
-      "He came to be our model, showing what a fully human life looks like when it is lived in love for the Father and for others. And he came so that we might “share in the divine nature” (2 Peter 1:4). St. Athanasius put it boldly: the Son of God became man so that we might become God, that is, share by grace in God's own life.",
+      "The Son of God emptied himself and took the form of a servant (Philippians 2:7). He came, as the Nicene Creed says, “for us men and for our salvation.”",
+      "He came to save us: our fallen nature needed to be healed and raised up. And he came so that we might know God's love: God loved the world so much that he gave his only Son (John 3:16).",
+      "He came to be our model, showing what a fully human life looks like when it is lived in love for the Father and for others. And he came so that we might come to share in God's own nature (2 Peter 1:4). St. Athanasius put it boldly: the Son of God became man so that we might become God, that is, share by grace in God's own life.",
       "Jesus is not part God and part man, nor a mixture of the two. He is truly God and truly man, a truth the Church defended against early heresies.",
     ],
     teaching: {
@@ -134,12 +134,12 @@ export const jesus: Topic[] = [
     summary:
       "Catholics believe Jesus freely gave his life on the cross out of love, to save us from sin and reconcile us with God. His death was not an accident but part of God's plan, foretold in the Scriptures. As the Lamb of God, Jesus offered the one perfect sacrifice that takes away the sin of the world and opens the way to new life.",
     explanation: [
-      "Jesus said he came “to give his life as a ransom for many” (Mark 10:45). The earliest Christian creed, passed on by St. Paul, says “that Christ died for our sins in accordance with the scriptures” (1 Corinthians 15:3), recalling Isaiah's suffering Servant: “by his wounds we were healed” (Isaiah 53:5).",
-      "The cross reveals God's love: Christ died for us “while we were still sinners” (Romans 5:8). The Father gave his Son, and the Son freely offered himself in obedience and love, in place of our disobedience.",
+      "Jesus said he came to give his life as a ransom for many (Mark 10:45). The earliest Christian creed, passed on by St. Paul says that Christ died for our sins in fulfillment of the Scriptures (1 Corinthians 15:3), recalling Isaiah's suffering Servant, by whose wounds we are healed (Isaiah 53:5).",
+      "The cross reveals God's love: Christ died for us while we were still sinners (Romans 5:8). The Father gave his Son, and the Son freely offered himself in obedience and love, in place of our disobedience.",
       "Christ's sacrifice is unique: it completes and surpasses all the sacrifices of the Old Testament. It is his love “to the end” that gives his death its power to save, and because he is a divine person, his offering embraces every human being.",
       "The Church teaches that responsibility for Jesus' death cannot be laid on the Jewish people as a whole. Rather, all sinners share responsibility for his sufferings, and Christians bear the gravest responsibility of all.",
       "An early witness: in the fourth century, St. Athanasius explained that the Word took a human body and, “because all were under penalty of the corruption of death He gave it over to death in the stead of all, and offered it to the Father — doing this, moreover, of His loving-kindness” (On the Incarnation 8).",
-      "Was the Father punishing his Son? Some critics call the Cross cruel, and Christians explain the atonement in different ways. The Catholic Church teaches that the Father and the Son act in one love. God's plan is “one of benevolent love, prior to any merit on our part” (CCC 604), and “it is love ‘to the end’ that confers on Christ's sacrifice its value as redemption and reparation, as atonement and satisfaction” (CCC 616). Jesus “did not experience reprobation as if he himself had sinned” (CCC 603), and he laid down his life freely (John 10:17–18). “In this is love: not that we have loved God, but that he loved us and sent his Son as expiation for our sins” (1 John 4:10).",
+      "Was the Father punishing his Son? Some critics call the Cross cruel, and Christians explain the atonement in different ways. The Catholic Church teaches that the Father and the Son act in one love. God's plan is “one of benevolent love, prior to any merit on our part” (CCC 604), and “it is love ‘to the end’ that confers on Christ's sacrifice its value as redemption and reparation, as atonement and satisfaction” (CCC 616). Jesus “did not experience reprobation as if he himself had sinned” (CCC 603), and he laid down his life freely (John 10:17–18). John explains what love is: not that we loved God first, but that he loved us and sent his Son to be the atoning sacrifice for our sins (1 John 4:10).",
     ],
     teaching: {
       catechism: [
@@ -167,9 +167,9 @@ export const jesus: Topic[] = [
     summary:
       "Yes. That Jesus was crucified under Pontius Pilate is one of the best-attested facts about him: it is reported by all four Gospels and by St. Paul, and by the Roman historian Tacitus. Christians believe more than the historical fact: that in his death Jesus freely gave his life for the salvation of the world. Muslims, following the Qur'an, generally hold that Jesus was not crucified.",
     explanation: [
-      "The earliest witness: around the year 56, St. Paul handed on what he had received: “that Christ died for our sins in accordance with the scriptures; that he was buried; that he was raised on the third day” (1 Corinthians 15:3–4). All four Gospels narrate the crucifixion under Pontius Pilate (Mark 15; John 19).",
+      "The earliest witness: around the year 56, St. Paul handed on what he had received: that Christ died for our sins according to the Scriptures, was buried, and was raised on the third day (1 Corinthians 15:3–4). All four Gospels narrate the crucifixion under Pontius Pilate (Mark 15; John 19).",
       "A Roman witness: describing Nero's persecution of Christians, the historian Tacitus writes that “Christus, the founder of the name, had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus” (Annals 15.44).",
-      "Not something followers would invent: Paul admits that “Christ crucified” was “a stumbling block to Jews and foolishness to Gentiles” (1 Corinthians 1:23). The New Testament scholar Bart Ehrman notes that before Christianity “there were no Jews at all, of any kind whatsoever, who thought that there would be a future crucified messiah.” (This paragraph summarizes historical arguments, not Church teaching.)",
+      "Not something followers would invent: Paul admits that the message of a crucified Messiah was a scandal to Jews and folly to Gentiles (1 Corinthians 1:23). The New Testament scholar Bart Ehrman notes that before Christianity “there were no Jews at all, of any kind whatsoever, who thought that there would be a future crucified messiah.” (This paragraph summarizes historical arguments, not Church teaching.)",
       "What faith adds: history can establish that Jesus was crucified; faith understands why. Jesus' death was “not the result of chance” but part of God's plan (CCC 599), and Jesus “freely accepted his Passion and death” out of love for the Father and for us (CCC 609). See “Why did Jesus die on the cross?”",
       "No collective blame: the Church teaches that responsibility for Jesus' death cannot be laid on the Jews of his time as a whole, nor on Jews today (CCC 597; Nostra Aetate 4).",
       "Muslims honor Jesus as a prophet but, following the Qur'an, generally hold that he was not crucified. Their views and the Catholic responses are set out below.",
@@ -212,7 +212,7 @@ export const jesus: Topic[] = [
             {
               claim: "God would not abandon his prophet to such a death.",
               response:
-                "Christians believe that Jesus was not overcome by death but went to it freely: “No one takes it from me, but I lay it down on my own” (John 10:18). They see God's vindication of Jesus in the Resurrection, not in his escape from the cross (see “Did Jesus really rise from the dead?”).",
+                "Christians believe that Jesus was not overcome by death but went to it freely; he said that no one takes his life from him, but that he lays it down of his own accord (John 10:18). They see God's vindication of Jesus in the Resurrection, not in his escape from the cross (see “Did Jesus really rise from the dead?”).",
               authority: "doctrine",
             },
           ],
@@ -275,7 +275,7 @@ export const jesus: Topic[] = [
             {
               claim: "The disciples had visions born of grief and hope.",
               response:
-                "The Gospels show disciples who were not expecting a resurrection: they were “demoralized” and frightened, and dismissed the women's report as “an idle tale” (CCC 643). Paul lists appearances to individuals and groups, including more than five hundred at once, “most of whom are still living” (1 Corinthians 15:6). Catholics argue that grief visions do not easily explain group appearances, the empty tomb, or the conversion of a persecutor like Paul.",
+                "The Gospels show disciples who were not expecting a resurrection: they were “demoralized” and frightened, and dismissed the women's report as “an idle tale” (CCC 643). Paul lists appearances to individuals and groups, including more than five hundred at once, most of whom, he notes, were still alive when he wrote (1 Corinthians 15:6). Catholics argue that grief visions do not easily explain group appearances, the empty tomb, or the conversion of a persecutor like Paul.",
               authority: "apologetic-argument",
             },
           ],

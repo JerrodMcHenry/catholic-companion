@@ -95,7 +95,7 @@ export const massParts: Topic[] = [
     summary:
       "Near the doors of a Catholic church there is a font, or basin, of holy water. On the way in, Catholics dip their fingers in it and make the Sign of the Cross. The gesture recalls Baptism, when they were washed in water and entered the Church. Holy water is a sacramental: a sacred sign that disposes us to receive God's grace.",
     explanation: [
-      "Why water: Baptism is the door to the Christian life. St. Paul writes that we were “buried with him through baptism” so that we might live a new life (Romans 6:4). The Catechism explains that a church has a holy water font to foster remembrance of our baptismal promises (CCC 1185).",
+      "Why water: Baptism is the door to the Christian life. St. Paul writes that in baptism we were buried with Christ so that we might live a new life (Romans 6:4). The Catechism explains that a church has a holy water font to foster remembrance of our baptismal promises (CCC 1185).",
       "What it is: holy water is water blessed by a priest or deacon with a prayer of the Church. It is a sacramental. Unlike the sacraments, sacramentals do not give grace by themselves; through the Church's prayer they prepare us to receive grace and to cooperate with it (CCC 1670).",
       "What to do: touch the water with the fingers of your right hand and make the Sign of the Cross. Some people bless themselves again on the way out. This is a devotion rather than a rule of the Mass, and visitors are free to do it or not.",
       "On some Sundays, especially in Easter Time, the priest may bless water during Mass and sprinkle the people with it in place of the Penitential Act, for the same reason: to recall Baptism (GIRM 51).",
@@ -143,7 +143,7 @@ export const massParts: Topic[] = [
     summary:
       "Once in the pew, many Catholics kneel or sit for a few minutes of quiet prayer. It is a time to place yourself in God's presence, bring your intentions, and get ready to listen. The Church recommends silence in the church before Mass so that everyone can prepare. Greet the people around you quietly.",
     explanation: [
-      "The Church's instruction on the Mass says it is commendable to keep silence in the church before the celebration, so that all can prepare to take part devoutly (GIRM 45). The prophet Habakkuk puts it simply: “silence before him, all the earth!” (Habakkuk 2:20).",
+      "The Church's instruction on the Mass says it is commendable to keep silence in the church before the celebration, so that all can prepare to take part devoutly (GIRM 45). The prophet Habakkuk puts it simply: the whole earth should keep silence before the Lord in his holy temple (Habakkuk 2:20).",
       "How to pray: there is no set prayer. You might thank God, ask for help in a need, offer the Mass for someone, or read the day's readings. Kneeling is a common custom for this prayer; sitting is just as fine.",
       "Conversation: a church is also a place where friends meet, and a warm, quiet greeting is welcome. Longer conversations are best kept for the entrance or after Mass, since others may be praying.",
     ],
@@ -170,7 +170,7 @@ export const massParts: Topic[] = [
       "Why: the Introductory Rites help the people who have gathered become one assembly and prepare to hear God's word and celebrate the Eucharist (GIRM 46). The Entrance Chant opens the celebration, fosters unity, introduces the mystery of the day or season, and accompanies the procession (GIRM 47).",
       "The procession: servers usually carry the cross and candles, followed by the reader or the deacon with the Book of the Gospels, and the priest. At the sanctuary, the ministers reverence the altar, explained in the next part (GIRM 49).",
       "What the congregation does: stand and join in the singing. In the United States, the chant may be the antiphon from the Missal, a psalm, or another suitable song approved by the bishops (GIRM 48). If there is no singing, the people, a reader, or the priest recites the antiphon printed in the Missal.",
-      "The Psalms sang of going up to God's house: “I rejoiced when they said to me, ‘Let us go to the house of the LORD’” (Psalm 122:1).",
+      "The Psalms sang of going up to God's house with joy when friends said, Let us go to the house of the Lord (Psalm 122:1).",
     ],
     teaching: {
       catechism: [
@@ -195,8 +195,8 @@ export const massParts: Topic[] = [
     explanation: [
       "What happens: the ministers bow deeply to the altar; then, “as an expression of veneration,” the priest and deacon kiss it, and the priest may incense the cross and the altar (GIRM 49, 123, 173). If the tabernacle is in the sanctuary, the ministers genuflect to the Blessed Sacrament as they approach and leave the altar (GIRM 274). If the deacon carries the Book of the Gospels, he places it on the altar first (GIRM 173).",
       "Why the altar: the Catechism calls the altar “the center of the church,” where the sacrifice of the Cross is made present under sacramental signs, and “the table of the Lord, to which the People of God are invited” (CCC 1182). It is also “the symbol of Christ himself”; St. Ambrose asked, “For what is the altar of Christ if not the image of the Body of Christ?” (CCC 1383). A fixed altar signifies Christ, “the living stone” (GIRM 298).",
-      "Why a kiss and incense: kissing the altar is a traditional sign of veneration; where it does not suit a culture, the bishops' conference may establish another sign (GIRM 273). Incense expresses reverence and prayer, as Scripture says: “Let my prayer be incense before you” (Psalm 141:2; Revelation 8:3–4; GIRM 276).",
-      "What the congregation does: stand and continue singing. There is nothing for the people to say; you can unite yourself with the priest's gesture of love for Christ, in the spirit of the Psalm: “That I may come to the altar of God, to God, my joy, my delight” (Psalm 43:4).",
+      "Why a kiss and incense: kissing the altar is a traditional sign of veneration; where it does not suit a culture, the bishops' conference may establish another sign (GIRM 273). Incense expresses reverence and prayer, as the psalmist asks that his prayer rise before God like incense (Psalm 141:2; Revelation 8:3–4; GIRM 276).",
+      "What the congregation does: stand and continue singing. There is nothing for the people to say; you can unite yourself with the priest's gesture of love for Christ, in the spirit of the psalmist who longs to go to the altar of God, the God of his gladness and joy (Psalm 43:4).",
       "You may also see: many altars contain relics of saints: the Church “fittingly” keeps the ancient practice of placing relics under an altar when it is dedicated (GIRM 302). The altar is covered with at least one white cloth and has candles and a crucifix on or near it (GIRM 117, 304, 307–308). The same kiss and bow are repeated at the end of Mass.",
     ],
     teaching: {
@@ -227,7 +227,7 @@ export const massParts: Topic[] = [
     explanation: [
       "What happens: at the chair, the priest makes the Sign of the Cross together with the whole assembly (GIRM 50). Everyone stands.",
       "How to make it: with your right hand, touch your forehead, your chest, your left shoulder, and then your right shoulder.",
-      "Meaning: the words come from Jesus' command to baptize “in the name of the Father, and of the Son, and of the holy Spirit” (Matthew 28:19). The Catechism notes that Christians begin their day, their prayers, and their activities with this sign, dedicating them to God (CCC 2157), and that the cross marks those who belong to Christ (CCC 1235).",
+      "Meaning: the words come from Jesus' command to baptize in the name of the Father, the Son, and the Holy Spirit (Matthew 28:19). The Catechism notes that Christians begin their day, their prayers, and their activities with this sign, dedicating them to God (CCC 2157), and that the cross marks those who belong to Christ (CCC 1235).",
       "The people's “Amen” makes the prayer their own. The Mass ends with the same sign at the final blessing.",
     ],
     teaching: {
@@ -252,8 +252,8 @@ export const massParts: Topic[] = [
       "After the Sign of the Cross, the priest greets the people with words from Scripture, such as “The Lord be with you,” and the people answer “And with your spirit.” The greeting expresses that the Lord is present among his people as they gather. “And with your spirit” is a faithful translation of the ancient Latin response, which echoes St. Paul's letters.",
     explanation: [
       "What the priest says: one of three greetings, “The grace of our Lord Jesus Christ …” (from 2 Corinthians 13:13), “Grace to you and peace …,” or “The Lord be with you.” By this greeting and the people's response, the instruction on the Mass says, the mystery of the Church gathered together is made manifest (GIRM 50).",
-      "What the people say: “And with your spirit.” The response translates the Latin Et cum spiritu tuo and echoes Scripture: St. Paul closes his letters with “The grace of our Lord Jesus Christ be with your spirit” (Galatians 6:18) and “The Lord be with your spirit” (2 Timothy 4:22). An earlier English translation used “And also with you.”",
-      "Even older roots: when Boaz greeted his harvesters, “The LORD be with you!” they answered with a blessing in return (Ruth 2:4).",
+      "What the people say: “And with your spirit.” The response translates the Latin Et cum spiritu tuo and echoes Scripture: St. Paul closes his letters by praying that the grace of our Lord Jesus Christ be with the spirit of his readers (Galatians 6:18), and that the Lord be with their spirit (2 Timothy 4:22). An earlier English translation used “And also with you.”",
+      "Even older roots: when Boaz greeted his harvesters by wishing that the Lord be with them, they answered by asking the Lord to bless him (Ruth 2:4).",
       "After the greeting, the priest, the deacon, or another minister may briefly introduce the Mass of the day (GIRM 50). Everyone stands.",
     ],
     teaching: {
@@ -279,7 +279,7 @@ export const massParts: Topic[] = [
       "Near the start of Mass, the priest invites everyone to acknowledge their sins and ask for God's mercy, so that they can celebrate the sacred mysteries well. After a moment of silence, the people confess together, most often with the prayer called the I confess (Confiteor), and the priest asks God to have mercy on all. This prayer does not replace the Sacrament of Confession.",
     explanation: [
       "Three forms: the priest chooses one. The I confess, said by all; a short exchange between priest and people asking for God's mercy; or a series of invocations addressed to Christ, each answered with “Lord, have mercy” or “Christ, have mercy.” The full texts are in the Order of Mass linked below.",
-      "Striking the breast: during the I confess, at the words admitting fault (“through my fault …”), the Missal directs everyone to strike their breast. It is the gesture of the tax collector in Jesus' parable, who “beat his breast” and prayed, “O God, be merciful to me a sinner” (Luke 18:13).",
+      "Striking the breast: during the I confess, at the words admitting fault (“through my fault …”), the Missal directs everyone to strike their breast. It is the gesture of the tax collector in Jesus' parable, who struck his breast and begged God to have mercy on him, a sinner (Luke 18:13).",
       "The absolution: the priest concludes, “May almighty God have mercy on us …,” and the people answer “Amen.” The instruction on the Mass is clear that this prayer lacks the effect of the Sacrament of Penance (GIRM 51). Venial sins are forgiven through the Eucharist and acts of love (CCC 1394), but grave sins need Confession.",
       "The sprinkling rite: on Sundays, especially in Easter Time, the priest may instead bless water and sprinkle the people to recall their Baptism (GIRM 51). People often make the Sign of the Cross as the water reaches them.",
     ],
@@ -307,7 +307,7 @@ export const massParts: Topic[] = [
       "Meaning: the Kyrie is a chant by which the faithful acclaim the Lord and implore his mercy, so it is ordinarily done by everyone, people with the choir or cantor (GIRM 52). It is as much praise of Christ as a plea for forgiveness.",
       "How it goes: the priest, cantor, or choir sings or says each invocation and the people repeat it. As a rule each is sung or said twice, though it can be repeated more often, especially when sung (GIRM 52).",
       "When it is left out: if the Penitential Act already used the invocations with “Lord, have mercy,” the Kyrie is not repeated (GIRM 52).",
-      "In the Gospels, people in need cried out to Jesus in the same way: “Lord, Son of David, have pity on us!” (Matthew 20:30). Everyone stands.",
+      "In the Gospels, people in need cried out to Jesus in the same way, calling him Son of David and asking for his mercy (Matthew 20:30). Everyone stands.",
     ],
     teaching: {
       scripture: [{ passage: "Matthew 20:29–34", url: bible("matthew/20") }],
@@ -377,7 +377,7 @@ export const massParts: Topic[] = [
       "Who reads: proclaiming the readings is a ministry, usually done by a lay reader (lector), not by the priest (GIRM 59). Readings are proclaimed from the ambo, the place set apart for God's word (GIRM 309). Only biblical texts may be read (GIRM 57).",
       "Which reading: the readings come from the Lectionary, the book of readings for Mass. On Sundays they follow a three-year cycle, and the first reading is often chosen to echo the Gospel of the day.",
       "What the people do: sit, listen, and answer “Thanks be to God.” Many people read along in a missal; others prefer simply to listen. Brief silence afterward lets the word sink in (GIRM 56, 128).",
-      "In the Old Testament, when Ezra read the law to the people, they stood to listen, and the Levites explained it “so that all could understand what was read” (Nehemiah 8:8).",
+      "In the Old Testament, when Ezra read the law to the people, they stood to listen, and the Levites explained its meaning so that everyone could understand (Nehemiah 8:8).",
     ],
     teaching: {
       catechism: [
@@ -404,7 +404,7 @@ export const massParts: Topic[] = [
       "Why: the Responsorial Psalm is an integral part of the Liturgy of the Word because it fosters meditation on God's word (GIRM 61). It usually answers the first reading. The Catechism calls the Psalter the book in which “the Word of God becomes man's prayer” (CCC 2587).",
       "How it goes: the psalmist or cantor sings the verses from the ambo or another suitable place; the people remain seated and sing the refrain. If it cannot be sung, it is recited. To help the people sing, a seasonal psalm and response may be used instead of the one assigned for the day (GIRM 61).",
       "The psalm is the word of God, so it may not be replaced by a non-biblical song (GIRM 57).",
-      "The first Christians also prayed the psalms together: “singing psalms, hymns, and spiritual songs with gratitude in your hearts to God” (Colossians 3:16).",
+      "The first Christians also prayed the psalms together, singing psalms, hymns, and spiritual songs to God with thankful hearts (Colossians 3:16).",
     ],
     teaching: {
       catechism: [{ paragraphs: "2585–2589", url: ccc("__P91") }],
@@ -424,7 +424,7 @@ export const massParts: Topic[] = [
     summary:
       "On Sundays and solemnities there is a second reading before the Gospel, usually from one of the New Testament letters written by apostles such as St. Paul. A reader proclaims it, everyone sits and listens, and it ends with the same response as the first reading: “The word of the Lord.” “Thanks be to God.” Weekday Masses usually have only one reading before the Gospel.",
     explanation: [
-      "From the beginning, apostolic letters were written to be read aloud to the gathered Church. Paul tells the Thessalonians that “this letter be read to all the brothers” (1 Thessalonians 5:27) and asks the Colossians to share theirs with the church of the Laodiceans (Colossians 4:16).",
+      "From the beginning, apostolic letters were written to be read aloud to the gathered Church. Paul asks that his letter be read aloud to all the brothers and sisters at Thessalonica (1 Thessalonians 5:27) and asks the Colossians to share theirs with the church of the Laodiceans (Colossians 4:16).",
       "On Sundays in Ordinary Time, the second reading often moves through one letter over several weeks, so it does not always share a theme with the other readings.",
       "The reader proclaims it from the ambo (GIRM 130); everyone sits, listens, and responds. A few moments of silence may follow.",
     ],
@@ -449,7 +449,7 @@ export const massParts: Topic[] = [
     summary:
       "Before the Gospel, everyone stands to sing the Gospel Acclamation, welcoming Christ, who is about to speak in the Gospel. For most of the year it is the Alleluia, a Hebrew word meaning “Praise the Lord.” During Lent the Alleluia is not sung; a different acclamation praising Christ is used instead, with a verse before the Gospel.",
     explanation: [
-      "Meaning: the acclamation is a rite in itself, by which the assembly welcomes and greets the Lord who is about to speak to it in the Gospel (GIRM 62). In the Book of Revelation, the multitude in heaven cries “Alleluia!” in praise of God (Revelation 19:1–6).",
+      "Meaning: the acclamation is a rite in itself, by which the assembly welcomes and greets the Lord who is about to speak to it in the Gospel (GIRM 62). In the Book of Revelation, the great multitude in heaven praises God with the shout of Alleluia (Revelation 19:1–6).",
       "How it goes: all stand and sing; a choir or cantor leads and sings the verse, and the people repeat the Alleluia (GIRM 62). At Masses with only one reading before the Gospel, it may be left out if it is not sung (GIRM 63).",
       "Alleluia or Lenten acclamation: the Alleluia is sung in every season except Lent. In Lent, the Church sets aside this joyful word until Easter, and the people instead sing one of several short acclamations that praise Christ by name, while the cantor sings the verse before the Gospel from the Lectionary (GIRM 62). Both are the Gospel Acclamation; only the words change with the season.",
       "The Sequence: on Easter Sunday and Pentecost, a special hymn called the Sequence is sung before the Alleluia; on a few other days it is optional (GIRM 64).",
@@ -476,7 +476,7 @@ export const massParts: Topic[] = [
       "The dialogue: the deacon or priest says “The Lord be with you,” and the people answer “And with your spirit.” He announces “A reading from the holy Gospel according to …,” and everyone answers “Glory to you, O Lord.” At the end he says “The Gospel of the Lord,” and all answer “Praise to you, Lord Jesus Christ.”",
       "Three small crosses: as he announces the reading, the deacon or priest signs the book and then his forehead, mouth, and breast with his thumb, “which everyone else does as well” (GIRM 134). A common explanation is that we ask for God's word to be in our minds, on our lips, and in our hearts.",
       "Posture: everyone stands and turns toward the ambo as a sign of reverence for the Gospel of Christ (GIRM 133). Afterward the priest or deacon kisses the book (GIRM 134).",
-      "Jesus himself read Scripture in the synagogue at Nazareth and said, “Today this scripture passage is fulfilled in your hearing” (Luke 4:21).",
+      "Jesus himself read Scripture in the synagogue at Nazareth and announced that the passage had been fulfilled that very day, as they listened (Luke 4:21).",
     ],
     teaching: {
       catechism: [
@@ -501,7 +501,7 @@ export const massParts: Topic[] = [
     explanation: [
       "Purpose: the homily should explain some aspect of the readings or of the texts of the Mass, taking into account the mystery being celebrated and the needs of the listeners (GIRM 65). The Catechism calls it an exhortation to accept the readings as what they truly are, the Word of God, and to put it into practice (CCC 1349).",
       "Who preaches: ordinarily the priest celebrant; he may entrust it to a concelebrating priest or, at times, to the deacon, but never to a lay person (GIRM 66). There must be a homily at Sunday and holy day Masses with a congregation, and it may be omitted only for a serious reason; on other days it is recommended (GIRM 66).",
-      "Scripture shows the pattern: after Ezra read the law, the Levites interpreted it for the people (Nehemiah 8:8), and the risen Jesus “interpreted to them what referred to him in all the scriptures” (Luke 24:27).",
+      "Scripture shows the pattern: after Ezra read the law, the Levites interpreted it for the people (Nehemiah 8:8), and the risen Jesus explained to his disciples what all the Scriptures said about him (Luke 24:27).",
       "Catechumens: in many U.S. parishes, people preparing for Baptism through OCIA are dismissed with a catechist after the homily to reflect together on the word of God. The U.S. bishops call this “praiseworthy,” at least on Sundays (National Statutes for the Christian Initiation of Adults, Norm 10). They first receive the Eucharist when they complete their initiation, usually at the Easter Vigil.",
     ],
     teaching: {
@@ -552,7 +552,7 @@ export const massParts: Topic[] = [
     summary:
       "The Liturgy of the Word ends with the Prayer of the Faithful. A deacon, cantor, or reader announces a series of intentions, and the people respond to each one, usually with a short spoken or sung response such as “Lord, hear our prayer.” In this prayer the baptized exercise their priesthood by praying for the whole world.",
     explanation: [
-      "Meaning: the people respond to the word of God they have received and, exercising their baptismal priesthood, offer prayers for the salvation of all (GIRM 69). St. Paul asks “that supplications, prayers, petitions, and thanksgivings be offered for everyone” (1 Timothy 2:1).",
+      "Meaning: the people respond to the word of God they have received and, exercising their baptismal priesthood, offer prayers for the salvation of all (GIRM 69). St. Paul asks that requests, prayers, intercessions, and thanksgivings be offered for all people (1 Timothy 2:1).",
       "The order of intentions: as a rule, for the needs of the Church; for public authorities and the salvation of the world; for those burdened by any difficulty; and for the local community. At weddings, funerals, and similar Masses they may reflect the occasion more closely (GIRM 70).",
       "Who does what: the priest introduces the prayer and concludes it with a prayer from the chair. The intentions are announced by a deacon, cantor, reader, or other lay person. The people stand and respond after each intention, or pray in silence (GIRM 71, 138).",
       "The response varies from parish to parish; listen to how the first intention ends and follow along. After the concluding prayer and its Amen, everyone sits for the Preparation of the Gifts.",
@@ -581,7 +581,7 @@ export const massParts: Topic[] = [
       "The Liturgy of the Eucharist begins as the altar is prepared and the bread and wine are brought forward, often by members of the congregation, while a collection is taken for the Church and the poor. The priest places the gifts on the altar with prayers of blessing, mixes a little water into the wine, and washes his hands. The people sit, sing, and offer themselves with the gifts.",
     explanation: [
       "Why: Christ at the Last Supper “took bread” and the cup. The Church arranges the Liturgy of the Eucharist to match his actions: the gifts are taken and prepared, thanks is given over them, and they are broken and given (GIRM 72). The bread and wine will be offered in the Eucharistic sacrifice and become Christ's Body and Blood (CCC 1350).",
-      "The collection: from the beginning, Christians brought gifts for those in need along with the bread and wine (CCC 1351). Money and other gifts are received and placed apart from the altar (GIRM 73). “God loves a cheerful giver” (2 Corinthians 9:7).",
+      "The collection: from the beginning, Christians brought gifts for those in need along with the bread and wine (CCC 1351). Money and other gifts are received and placed apart from the altar (GIRM 73). Paul reminds the Corinthians that God loves someone who gives gladly (2 Corinthians 9:7).",
       "What the priest does: he holds up the bread and then the chalice, blessing God for these gifts of creation and human work. If there is no singing, he may say these prayers aloud, and the people answer “Blessed be God for ever” (GIRM 142). He adds a little water to the wine, praying quietly that we may share in the divinity of Christ, who shared our humanity. He may incense the gifts, the altar, and the people, a sign of prayer rising to God (GIRM 75; Psalm 141:2). He then washes his hands, expressing a desire for inner purification (GIRM 76).",
       "What the people do: sit, join the Offertory song, and give to the collection. Bringing up the gifts is a privilege the instruction on the Mass calls praiseworthy (GIRM 73). Interiorly, this is the moment to place your own life, work, and needs on the altar with the gifts.",
     ],
@@ -610,7 +610,7 @@ export const massParts: Topic[] = [
       "“My sacrifice and yours”: the priest offers the sacrifice in the person of Christ, but he does not offer it alone. The Second Vatican Council taught that the faithful offer the spotless Victim “not only through the hands of the priest, but also with him,” and so learn to offer themselves (Sacrosanctum Concilium 48). The Catechism says the lives of the faithful, “their praise, sufferings, prayer, and work,” are united with Christ's offering (CCC 1368).",
       "The people's response: “May the Lord accept the sacrifice at your hands for the praise and glory of his name, for our good and the good of all his holy Church.” The full text is in the Order of Mass linked below.",
       "The Prayer over the Offerings changes with each Mass. It concludes the Preparation of the Gifts and prepares for the Eucharistic Prayer; the people make it their own with “Amen” (GIRM 77).",
-      "Posture: everyone stands at the invitation “Pray, brethren” (GIRM 43, 146) and remains standing through the Holy, Holy, Holy. St. Paul urges Christians to offer their bodies “as a living sacrifice” to God (Romans 12:1).",
+      "Posture: everyone stands at the invitation “Pray, brethren” (GIRM 43, 146) and remains standing through the Holy, Holy, Holy. St. Paul urges Christians to offer their bodies to God as a living sacrifice (Romans 12:1).",
     ],
     teaching: {
       catechism: [{ paragraphs: "1368", url: ccc("__P41") }],
@@ -632,7 +632,7 @@ export const massParts: Topic[] = [
     explanation: [
       "Why: the Eucharistic Prayer is the center and summit of the Mass, a prayer of thanksgiving and sanctification. In the dialogue, the priest invites the people to lift up their hearts to the Lord in prayer and thanksgiving and unites them with himself in the prayer he addresses to God the Father (GIRM 78). The word “Eucharist” itself means thanksgiving.",
       "The dialogue leads straight into the Preface, the priest's prayer of thanksgiving that changes with the day and season, explained in the next part (GIRM 79; CCC 1352).",
-      "In Scripture: “Let us lift up our hearts as well as our hands toward God in heaven!” (Lamentations 3:41).",
+      "In Scripture: the Book of Lamentations calls the people to lift up their hearts, along with their hands, to God in heaven (Lamentations 3:41).",
       "Everyone stands. The priest extends and raises his hands during the dialogue (GIRM 148).",
     ],
     teaching: {
@@ -657,7 +657,7 @@ export const massParts: Topic[] = [
       "Why so many: the many Prefaces of the Roman Missal bring out more fully the reasons for thanksgiving and the different facets of the mystery of salvation (GIRM 364). There are Prefaces for Advent, Christmas, Lent, Easter, Sundays in Ordinary Time, Mary and the saints, Masses for the dead, and more.",
       "Not always a free choice: some Eucharistic Prayers come with their own Preface. Eucharistic Prayer IV has an unchangeable Preface; Eucharistic Prayer II has its own Preface but may also be used with others; Eucharistic Prayer III may be said with any Preface (GIRM 365).",
       "Its shape: many Prefaces begin by echoing the people's last response, saying it is truly right and just to give God thanks, then name a reason for thanksgiving from salvation history, and end by joining the praise of heaven. That final invitation leads straight into the Sanctus.",
-      "What the people do: stand and listen. The priest prays the Preface with hands extended (GIRM 148). It is a good moment to notice the theme of the day and make that thanksgiving your own, in the spirit of St. Paul: “In all circumstances give thanks” (1 Thessalonians 5:18).",
+      "What the people do: stand and listen. The priest prays the Preface with hands extended (GIRM 148). It is a good moment to notice the theme of the day and make that thanksgiving your own, in the spirit of St. Paul tells believers to give thanks in every circumstance (1 Thessalonians 5:18).",
     ],
     teaching: {
       catechism: [{ paragraphs: "1352", url: ccc("__P40") }],
@@ -681,7 +681,7 @@ export const massParts: Topic[] = [
       "At the end of the Preface, the whole congregation joins the angels' hymn of praise: “Holy, Holy, Holy Lord God of hosts.” Its words come from Isaiah's vision of God's throne and the crowds' welcome of Jesus into Jerusalem. It is part of the Eucharistic Prayer itself and is sung or said by everyone with the priest. In the United States, the people kneel after it.",
     explanation: [
       "Meaning: in the Sanctus the congregation, “joining with the heavenly powers,” sings or says this acclamation with the priest; it is part of the Eucharistic Prayer itself (GIRM 79). The Church on earth joins the unending praise of the angels and saints in heaven (CCC 1352).",
-      "Scripture: the first part echoes the seraphim in Isaiah's vision, “Holy, holy, holy is the LORD of hosts!” (Isaiah 6:3), and the living creatures around God's throne in Revelation 4:8. The second part, “Blessed is he who comes in the name of the Lord. Hosanna in the highest,” is the crowds' welcome of Jesus into Jerusalem (Matthew 21:9).",
+      "Scripture: the first part echoes the seraphim in Isaiah's vision, who call out that the Lord of hosts is holy, holy, holy (Isaiah 6:3), and the living creatures around God's throne in Revelation 4:8. The second part, “Blessed is he who comes in the name of the Lord. Hosanna in the highest,” is the crowds' welcome of Jesus into Jerusalem (Matthew 21:9).",
       "Posture: everyone stands to sing it. In the United States, the people kneel after the Holy, Holy, Holy until after the Amen that ends the Eucharistic Prayer, unless prevented by health, lack of space, or another good reason; those who do not kneel make a profound bow when the priest genuflects after the consecration (GIRM 43).",
       "The full text is in the Order of Mass linked below.",
     ],
@@ -709,7 +709,7 @@ export const massParts: Topic[] = [
     explanation: [
       "Its parts: the instruction on the Mass names its chief elements: thanksgiving (the Preface); the acclamation (Holy, Holy, Holy); the epiclesis, calling down the Holy Spirit; the institution narrative and consecration; the anamnesis, or memorial; the offering; the intercessions; and the final doxology with the people's Amen (GIRM 79; CCC 1352–1355). Each has its own page in “The Mass, step by step.”",
       "One prayer, several forms: these elements belong to every Eucharistic Prayer, but not always in the same order. In Eucharistic Prayers II, III, and IV the Holy Spirit is invoked on the gifts before the consecration and on the communicants after it, and the intercessions follow the consecration; the Roman Canon places some intercessions and a list of saints before the consecration; and some liturgical traditions put the epiclesis after the anamnesis (CCC 1353). The pages on each part follow the order of Eucharistic Prayers II–IV and note the differences.",
-      "A sacrifice: the Eucharistic Prayer makes present the one sacrifice Christ offered “once for all” on the cross (Hebrews 10:10), without repeating it or adding to it; the sacrifice of Christ and the sacrifice of the Eucharist are “one single sacrifice” (CCC 1366–1367). This is explained in “Is the Mass a sacrifice?”",
+      "A sacrifice: the Eucharistic Prayer makes present the one sacrifice Christ offered once and for all on the cross (Hebrews 10:10), without repeating it or adding to it; the sacrifice of Christ and the sacrifice of the Eucharist are “one single sacrifice” (CCC 1366–1367). This is explained in “Is the Mass a sacrifice?”",
       "Who prays what: the Eucharistic Prayer by its nature is said only by the priest, in virtue of his ordination. The people associate themselves with him in faith and in silence, and through their parts: the Preface dialogue, the Holy, Holy, Holy, the acclamation after the consecration, and the Great Amen (GIRM 147). The whole assembly joins Christ in offering the sacrifice, and offers itself with him (GIRM 78–79).",
       "Options: the Missal contains several Eucharistic Prayers, including the ancient Roman Canon (Eucharistic Prayer I); the priest chooses one according to the rubrics (GIRM 147).",
       "Posture: in the United States the people kneel from after the Holy, Holy, Holy until after the Great Amen; those who cannot kneel make a profound bow when the priest genuflects after the consecration (GIRM 43). A bell may be rung shortly before the consecration and, by local custom, at the elevations (GIRM 150).",
@@ -773,7 +773,7 @@ export const massParts: Topic[] = [
       "What the Church believes: by the consecration, the whole substance of the bread becomes the substance of Christ's Body, and the whole substance of the wine becomes the substance of his Blood; the Church calls this change transubstantiation (CCC 1376, quoting the Council of Trent). The appearances of bread and wine remain, but Christ is truly, really, and substantially present, Body and Blood, soul and divinity (CCC 1374).",
       "Christ himself acts: the priest speaks in the person of Christ, but it is Christ's words and the power of the Holy Spirit that bring about the change (CCC 1353, 1375). Christ's presence begins at the consecration and lasts as long as the appearances of bread and wine remain; he is whole and entire in every part (CCC 1377).",
       "A sacrifice: in these words Christ offered his Body “given up for you” and his Blood “poured out” for the forgiveness of sins. The consecration makes present that same sacrifice, offered once for all on the cross (GIRM 72, 79; CCC 1366–1367).",
-      "What the people do: kneel and look at the Host and chalice as each is raised, in silent adoration. Many people pray quietly, as St. Thomas did, “My Lord and my God” (John 20:28); this is a devotion, not a rubric. A bell may be rung, and incense may be used (GIRM 150). The priest genuflects after showing each (GIRM 274).",
+      "What the people do: kneel and look at the Host and chalice as each is raised, in silent adoration. Many people pray quietly, as St. Thomas did when he confessed the risen Jesus as his Lord and God (John 20:28); this is a devotion, not a rubric. A bell may be rung, and incense may be used (GIRM 150). The priest genuflects after showing each (GIRM 274).",
       "Many Protestant Christians understand the Lord's Supper differently. The Catholic belief and the questions people raise about it are explained in “What is the Real Presence?”",
     ],
     teaching: {
@@ -803,7 +803,7 @@ export const massParts: Topic[] = [
       "Right after the consecration, the priest says “The mystery of faith,” and the people respond with one of three acclamations proclaiming Christ's death and Resurrection until he comes again. It is the congregation's response of faith to what has just taken place on the altar.",
     explanation: [
       "The three acclamations: one begins “We proclaim your Death, O Lord,” another “When we eat this Bread and drink this Cup,” and the third “Save us, Savior of the world.” All three are in the Order of Mass linked below. The people sing or say one of the approved formulas (GIRM 151).",
-      "Meaning: the words echo St. Paul: “as often as you eat this bread and drink the cup, you proclaim the death of the Lord until he comes” (1 Corinthians 11:26). The Eucharist is the memorial of Christ's Passover, making present his sacrifice, and points ahead to his return (CCC 1362–1364).",
+      "Meaning: the words echo St. Paul teaches that each time we eat this bread and drink this cup, we proclaim the Lord's death until he comes (1 Corinthians 11:26). The Eucharist is the memorial of Christ's Passover, making present his sacrifice, and points ahead to his return (CCC 1362–1364).",
       "The older English acclamation “Christ has died, Christ is risen, Christ will come again” is not among the acclamations in the current translation of the Missal.",
       "Posture: the people remain kneeling (GIRM 43).",
     ],
@@ -860,7 +860,7 @@ export const massParts: Topic[] = [
     explanation: [
       "What the priest does: he lifts the paten with the Host and the chalice and sings or says the doxology alone (GIRM 151). The doxology expresses the glorification of God and is confirmed and concluded by the people's acclamation (GIRM 79).",
       "Why “Great”: it is the people's assent to everything prayed in their name: the thanksgiving, the consecration, the offering, and the intercessions. Many parishes sing it, sometimes repeated, to show its importance.",
-      "Scripture: “For from him and through him and for him are all things. To him be glory forever. Amen” (Romans 11:36). St. Paul says Christians utter “the Amen” to God's glory through Christ (2 Corinthians 1:20).",
+      "Scripture: Paul's praise that all things come from God, exist through him, and are for him, to whom be glory forever, Amen (Romans 11:36). St. Paul says that through Christ we say our Amen to God, for his glory (2 Corinthians 1:20).",
       "Posture: the people kneel until after the Amen, then stand for the Lord's Prayer (GIRM 43). The doxology belongs to the priest; the people's part is the Amen.",
     ],
     teaching: {
@@ -912,7 +912,7 @@ export const massParts: Topic[] = [
     summary:
       "Before Communion, the priest prays for the peace and unity of the Church, then says “The peace of the Lord be with you always,” and the people answer “And with your spirit.” Then, when it is invited, people offer a sign of peace to those near them, usually a handshake in the United States, with words such as “Peace be with you.”",
     explanation: [
-      "Meaning: in the Rite of Peace the Church asks for peace and unity for herself and the whole human family, and the faithful express their communion and charity toward one another before receiving the Sacrament (GIRM 82). Jesus said, “Peace I leave with you; my peace I give to you” (John 14:27), and taught reconciliation before bringing a gift to the altar (Matthew 5:23–24).",
+      "Meaning: in the Rite of Peace the Church asks for peace and unity for herself and the whole human family, and the faithful express their communion and charity toward one another before receiving the Sacrament (GIRM 82). Jesus gave his disciples his own peace, a peace unlike the world's (John 14:27), and taught reconciliation before bringing a gift to the altar (Matthew 5:23–24).",
       "What to do: offer the sign only to those nearest you, in a sober manner (GIRM 82). The form is set by each bishops' conference according to local culture; in the United States people commonly shake hands, and a nod or a bow is also fine. The priest remains in the sanctuary (GIRM 154).",
       "Options: the deacon, or the priest, invites the exchange of peace “if it is appropriate,” so on some occasions it may be omitted (GIRM 154, 181).",
       "Everyone stands.",
@@ -940,7 +940,7 @@ export const massParts: Topic[] = [
     explanation: [
       "The breaking of the bread: Jesus broke bread at the Last Supper, and in apostolic times the whole Eucharist was called “the breaking of the bread.” The gesture shows that the many faithful are made one body by sharing the one Bread of Life (GIRM 83; 1 Corinthians 10:17). It is reserved to the priest and deacon.",
       "The commingling: the priest drops a small piece of the Host into the chalice, signifying the unity of the Body and Blood of the Lord in the work of salvation, the living and glorious Body of Christ (GIRM 83).",
-      "The Lamb of God: John the Baptist pointed to Jesus and said, “Behold, the Lamb of God, who takes away the sin of the world” (John 1:29). The chant accompanies the breaking of the bread and may be repeated as long as it takes, always ending with “grant us peace” (GIRM 83).",
+      "The Lamb of God: John the Baptist pointed to Jesus and called him the Lamb of God who takes away the sin of the world (John 1:29). The chant accompanies the breaking of the bread and may be repeated as long as it takes, always ending with “grant us peace” (GIRM 83).",
       "Posture: everyone stands for the chant. In the United States the people kneel after it, unless the diocesan bishop determines otherwise (GIRM 43).",
     ],
     teaching: {
@@ -966,8 +966,8 @@ export const massParts: Topic[] = [
       "The priest raises the Host and says, “Behold the Lamb of God, behold him who takes away the sins of the world. Blessed are those called to the supper of the Lamb.” Together with the priest, the people answer in the words of a Roman centurion from the Gospel: “Lord, I am not worthy that you should enter under my roof, but only say the word and my soul shall be healed.”",
     explanation: [
       "Before this, the priest prays quietly to receive Christ fruitfully, and the faithful do the same in silence (GIRM 84).",
-      "The invitation joins John the Baptist's words (John 1:29) with the angel's words in Revelation: “Blessed are those who have been called to the wedding feast of the Lamb” (Revelation 19:9). Communion is a foretaste of the marriage supper of heaven.",
-      "The response: the centurion asked Jesus to heal his servant without coming to his house: “I am not worthy to have you enter under my roof; only say the word” (Matthew 8:8). Jesus marveled at his faith. Catholics borrow his words to express both humility and trust as Christ comes to them in Communion; the priest says them with the people (GIRM 84).",
+      "The invitation joins John the Baptist's words (John 1:29) with the angel's words in Revelation, which call blessed those invited to the wedding feast of the Lamb (Revelation 19:9). Communion is a foretaste of the marriage supper of heaven.",
+      "The response: the centurion told Jesus he was not worthy to have him come under his roof, and asked him only to speak the word so that his servant would be healed (Matthew 8:8). Jesus marveled at his faith. Catholics borrow his words to express both humility and trust as Christ comes to them in Communion; the priest says them with the people (GIRM 84).",
       "Posture: in the United States the people are kneeling. Some people strike their breast at these words; it is a personal custom, not called for by the Missal.",
     ],
     teaching: {
@@ -992,7 +992,7 @@ export const massParts: Topic[] = [
     summary:
       "Catholics who are prepared come forward in procession to receive the Body of Christ, and where it is offered, the Precious Blood, while a Communion song is sung. Those not receiving stay in the pew and pray. Afterward there is a time of silent prayer or a song of praise, and the priest says the Prayer after Communion, to which the people answer “Amen.”",
     explanation: [
-      "Meaning: the principal fruit of Communion is intimate union with Christ: “Whoever eats my flesh and drinks my blood remains in me and I in him” (John 6:56; CCC 1391). Communion also separates us from sin, strengthens charity, unites us more closely to the Church, commits us to the poor, and is a pledge of eternal life (CCC 1393–1397, 1402).",
+      "Meaning: the principal fruit of Communion is intimate union with Christ, who promised that whoever eats his flesh and drinks his blood abides in him, and he in them (John 6:56; CCC 1391). Communion also separates us from sin, strengthens charity, unites us more closely to the Church, commits us to the poor, and is a pledge of eternal life (CCC 1393–1397, 1402).",
       "The procession: the priest receives first; the Communion song begins, expressing the communicants' unity and joy (GIRM 86). People normally receive standing in the United States and bow their heads before the Sacrament; the minister says “The Body of Christ,” and the communicant answers “Amen” (GIRM 160–161). How to receive, the Eucharistic fast, and who may receive are explained in “How do I receive Communion?”",
       "Other ministers: when there are many communicants, the priest may be assisted by other priests, deacons, or extraordinary ministers of Holy Communion (GIRM 162).",
       "If you are not receiving: stay in the pew and pray. The Church recommends a “spiritual communion,” a heartfelt desire to be united with Christ, for those who cannot receive (Ecclesia de Eucharistia 34).",
@@ -1025,8 +1025,8 @@ export const massParts: Topic[] = [
     explanation: [
       "What the Church asks: when the distribution of Communion is finished, the priest and faithful pray quietly for some time; if desired, the whole congregation may also sing a psalm, canticle of praise, or hymn (GIRM 88, 164). After Communion, the instruction on the Mass says, all “praise and pray to God in their hearts” (GIRM 45).",
       "Posture: as circumstances allow, people may sit or kneel during this silence (GIRM 43). Either is fine; follow what you find most prayerful or what is customary in your parish.",
-      "How to pray: there is no set prayer. Thank Christ for the gift of himself, bring him your needs and the people you love, and ask for strength for the week ahead. Many Catholics also use traditional prayers after Communion. The Psalmist asked, “How can I repay the LORD for all the great good done for me?” and answered, “I will raise the cup of salvation and call on the name of the LORD” (Psalm 116:12–13).",
-      "Why it matters: Communion's first fruit is intimate union with Christ, who said, “Whoever eats my flesh and drinks my blood remains in me and I in him” (John 6:56; CCC 1391). It strengthens charity and commits us to the poor (CCC 1394, 1397).",
+      "How to pray: there is no set prayer. Thank Christ for the gift of himself, bring him your needs and the people you love, and ask for strength for the week ahead. Many Catholics also use traditional prayers after Communion. The psalmist asks how he can repay the Lord for all his goodness, and answers that he will lift up the cup of salvation and call on the Lord's name (Psalm 116:12–13).",
+      "Why it matters: Communion's first fruit is intimate union with Christ, who promised that whoever eats his flesh and drinks his blood abides in him, and he in them (John 6:56; CCC 1391). It strengthens charity and commits us to the poor (CCC 1394, 1397).",
       "At the altar: the priest consumes any remaining Precious Blood, places remaining Hosts in the tabernacle, and purifies the vessels, or does this after Mass (GIRM 163, 279). The care taken with every fragment shows the Church's faith that Christ is present in even the smallest part (CCC 1377).",
     ],
     teaching: {
@@ -1080,7 +1080,7 @@ export const massParts: Topic[] = [
     explanation: [
       "The Concluding Rites: brief announcements if needed; the priest's greeting and blessing; the dismissal; and the kissing of the altar by the priest and deacon (GIRM 90).",
       "The blessing: the priest raises his hand and blesses the people with the Sign of the Cross, and all answer “Amen” (GIRM 167). On certain days and occasions the blessing is expanded into a prayer over the people or a more solemn formula. A bishop blesses with the Sign of the Cross three times (GIRM 167).",
-      "Meaning: blessings praise God for his gifts and call down his grace (CCC 1671). The Mass begins and ends with the Sign of the Cross. The priestly blessing of Israel asked, “The LORD bless you and keep you!” (Numbers 6:24), and the risen Jesus “raised his hands, and blessed” his disciples before his Ascension (Luke 24:50).",
+      "Meaning: blessings praise God for his gifts and call down his grace (CCC 1671). The Mass begins and ends with the Sign of the Cross. The priestly blessing of Israel asks the Lord to bless and protect his people (Numbers 6:24), and the risen Jesus lifted up his hands and blessed his disciples before his Ascension (Luke 24:50).",
       "Everyone stands.",
     ],
     teaching: {
@@ -1134,7 +1134,7 @@ export const massParts: Topic[] = [
       "The closing song: singing as the ministers leave is a widespread custom; the Missal itself does not prescribe a recessional chant, as it does for the entrance and for Communion. Instrumental music is also common.",
       "Leaving: remaining until the priest has left is a courtesy and custom, not a rule. As you leave your pew, genuflect toward the tabernacle, since all who pass before the Blessed Sacrament genuflect unless they are in procession (GIRM 274). If you cannot genuflect, a bow is fine.",
       "Personal thanksgiving: many saints recommended staying a few minutes after Mass to thank God. The Church's law asks priests to give thanks after celebrating Mass (canon 909), and the Catechism calls a visit to the Blessed Sacrament “a proof of gratitude, an expression of love, and a duty of adoration” (CCC 1418). Conversation is best continued outside the church, out of respect for those still praying.",
-      "Going out: after the Ascension the disciples “returned to Jerusalem with great joy, and they were continually in the temple praising God” (Luke 24:52–53). The Mass sends Catholics out to live what they have celebrated.",
+      "Going out: after the Ascension the disciples went back to Jerusalem full of joy and spent their time in the temple praising God (Luke 24:52–53). The Mass sends Catholics out to live what they have celebrated.",
     ],
     teaching: {
       catechism: [

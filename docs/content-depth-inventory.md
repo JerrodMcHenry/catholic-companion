@@ -12,11 +12,11 @@ Every topic in `content/topics/*.ts` (170, read from the repository at the time 
 
 | Classification | Topics |
 |---|---|
-| Practical | 84 |
-| Adequate | 58 |
-| Strong | 32 |
+| Practical | 85 |
+| Adequate | 64 |
+| Strong | 36 |
 
-Topics marked * were added or improved on 2026-11-25. The final pass added salvation-history and virtues and closed the three optional gaps (how-are-we-saved, marriage-sacrament, heaven). The four topics previously classified Incomplete (problem-of-evil, bishops-priests-deacons, confirmation, original-sin) were expanded and reassessed from the regenerated evidence.
+Topics marked * were added or improved on 2026-11-25. The Spiritual Warfare pass added ten topics in the spiritual-warfare category. The final pass added salvation-history and virtues and closed the three optional gaps (how-are-we-saved, marriage-sacrament, heaven). The four topics previously classified Incomplete (problem-of-evil, bishops-priests-deacons, confirmation, original-sin) were expanded and reassessed from the regenerated evidence.
 
 No topic is currently classified **Needs Correction**: errors found in review (Hebrews 1:2, the Paraclete gloss, Matthew 25:36, Acts 10:38, a CCC 375 quotation boundary, and the John 14:28 citation) were corrected, and the scandals section was reworked.
 
@@ -42,74 +42,74 @@ Sources marked “verify” have not been checked yet and must be verified befor
 | beliefs | `what-does-catholic-mean` | Practical | 4¶, 186w; OT 0 / NT 1; CCC 1, docs 0; witnesses: Ignatius; objections: —; res 1 | — | — |
 | beliefs | `are-catholics-christians` | Adequate | 4¶, 216w; OT 0 / NT 2; CCC 3, docs 1; witnesses: Ignatius; objections: 3 in debate; res 1 | — | — |
 | beliefs | `what-is-the-creed` | Practical | 3¶, 215w; OT 0 / NT 2; CCC 1, docs 0; witnesses: —; objections: —; res 2 | — | — |
-| beliefs | `what-is-faith *` | Adequate | 6¶, 383w; OT 0 / NT 5; CCC 4, docs 2; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in divine-revelation | — |
-| beliefs | `salvation-history *` | Strong | 8¶, 798w; OT 14 / NT 12; CCC 7, docs 1; witnesses: Clement, Irenaeus; objections: —; res 2 | — | — |
-| beliefs | `divine-revelation` | Adequate | 4¶, 226w; OT 0 / NT 2; CCC 4, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in what-is-sacred-tradition, sola-scriptura | — |
+| beliefs | `what-is-faith *` | Adequate | 6¶, 391w; OT 0 / NT 5; CCC 4, docs 2; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in divine-revelation | — |
+| bible | `salvation-history *` | Strong | 8¶, 783w; OT 14 / NT 12; CCC 7, docs 1; witnesses: Clement, Irenaeus; objections: —; res 2 | — | — |
+| beliefs | `divine-revelation` | Adequate | 4¶, 224w; OT 0 / NT 2; CCC 4, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in what-is-sacred-tradition, sola-scriptura | — |
 | beliefs | `what-is-the-catechism` | Practical | 4¶, 169w; OT 0 / NT 0; CCC 2, docs 3; witnesses: —; objections: —; res 0 | no further resource | Low |
 | beliefs | `what-is-dogma` | Adequate | 5¶, 375w; OT 0 / NT 0; CCC 3, docs 3; witnesses: —; objections: 1 ¶; res 3 | Introductory; depth in papal-infallibility | — |
 | beliefs | `who-is-god` | Adequate | 3¶, 175w; OT 2 / NT 2; CCC 1, docs 0; witnesses: —; objections: —; res 1 | Introductory; depth in what-is-the-trinity, does-god-exist | — |
-| beliefs | `what-is-the-trinity` | Adequate | 4¶, 201w; OT 0 / NT 2; CCC 1, docs 0; witnesses: —; objections: —; res 2 | Introductory; depth in trinity-in-scripture | — |
-| beliefs | `trinity-in-scripture *` | Strong | 7¶, 599w; OT 3 / NT 11; CCC 1, docs 0; witnesses: Didache, Tertullian; objections: 6 in debate; res 5 | — | — |
+| beliefs | `what-is-the-trinity` | Adequate | 4¶, 198w; OT 0 / NT 2; CCC 1, docs 0; witnesses: —; objections: —; res 2 | Introductory; depth in trinity-in-scripture | — |
+| beliefs | `trinity-in-scripture *` | Strong | 7¶, 607w; OT 3 / NT 11; CCC 1, docs 0; witnesses: Didache, Tertullian; objections: 6 in debate; res 5 | — | — |
 | beliefs | `who-is-the-holy-spirit` | Adequate | 4¶, 175w; OT 0 / NT 10; CCC 2, docs 1; witnesses: —; objections: 2 in debate; res 2 | — | — |
 | beliefs | `why-did-god-create-us` | Adequate | 5¶, 291w; OT 1 / NT 1; CCC 4, docs 1; witnesses: Augustine; objections: —; res 0 | — | — |
-| beliefs | `creation` | Adequate | 5¶, 300w; OT 2 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| beliefs | `original-sin *` | Strong | 11¶, 817w; OT 3 / NT 3; CCC 3, docs 2; witnesses: Irenaeus; objections: 1 ¶; res 2 | — | — |
-| beliefs | `who-is-jesus` | Adequate | 3¶, 186w; OT 0 / NT 2; CCC 5, docs 0; witnesses: —; objections: —; res 2 | Introductory; depth in divinity-of-jesus, incarnation | — |
+| beliefs | `creation` | Adequate | 5¶, 298w; OT 2 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| beliefs | `original-sin *` | Strong | 11¶, 808w; OT 3 / NT 3; CCC 3, docs 2; witnesses: Irenaeus; objections: 1 ¶; res 2 | — | — |
+| beliefs | `who-is-jesus` | Adequate | 3¶, 187w; OT 0 / NT 2; CCC 5, docs 0; witnesses: —; objections: —; res 2 | Introductory; depth in divinity-of-jesus, incarnation | — |
 | beliefs | `did-jesus-exist` | Adequate | 4¶, 237w; OT 0 / NT 2; CCC 2, docs 0; witnesses: —; objections: 3 in debate; res 4 | — | — |
-| beliefs | `incarnation` | Adequate | 4¶, 227w; OT 0 / NT 6; CCC 1, docs 0; witnesses: Athanasius; objections: —; res 2 | — | — |
-| beliefs | `why-did-jesus-die *` | Strong | 6¶, 407w; OT 2 / NT 7; CCC 1, docs 0; witnesses: Athanasius; objections: 1 ¶; res 3 (media 1) | — | — |
-| beliefs | `was-jesus-crucified` | Strong | 6¶, 333w; OT 0 / NT 6; CCC 2, docs 1; witnesses: Ignatius; objections: 2 in debate; res 2 | — | — |
+| beliefs | `incarnation` | Adequate | 4¶, 229w; OT 0 / NT 6; CCC 1, docs 0; witnesses: Athanasius; objections: —; res 2 | — | — |
+| beliefs | `why-did-jesus-die *` | Strong | 6¶, 411w; OT 2 / NT 7; CCC 1, docs 0; witnesses: Athanasius; objections: 1 ¶; res 3 (media 1) | — | — |
+| beliefs | `was-jesus-crucified` | Strong | 6¶, 332w; OT 0 / NT 6; CCC 2, docs 1; witnesses: Ignatius; objections: 2 in debate; res 2 | — | — |
 | beliefs | `resurrection` | Adequate | 4¶, 220w; OT 0 / NT 5; CCC 1, docs 0; witnesses: Ignatius; objections: 3 in debate; res 2 (media 1) | — | — |
-| beliefs | `how-are-we-saved *` | Adequate | 5¶, 373w; OT 0 / NT 8; CCC 5, docs 2; witnesses: —; objections: 1 ¶; res 3 | — | — |
-| beliefs | `what-is-grace` | Adequate | 5¶, 274w; OT 0 / NT 4; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in how-are-we-saved, faith-and-works | — |
-| beliefs | `faith-and-works *` | Strong | 5¶, 442w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Clement; objections: 3 in debate; res 3 | — | — |
-| beliefs | `what-happens-when-we-die` | Adequate | 5¶, 275w; OT 0 / NT 5; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in heaven, hell, purgatory, catholic-funerals-and-grief | — |
-| beliefs | `heaven *` | Adequate | 6¶, 299w; OT 0 / NT 4; CCC 1, docs 1; witnesses: Augustine; objections: —; res 2 | — | — |
-| beliefs | `hell` | Adequate | 5¶, 271w; OT 0 / NT 7; CCC 1, docs 1; witnesses: Ignatius; objections: 3 in debate; res 1 | — | — |
-| beliefs | `purgatory` | Strong | 6¶, 493w; OT 2 / NT 3; CCC 3, docs 2; witnesses: Tertullian, Cyril, Augustine; objections: 4 in debate; res 7 (media 2) | — | — |
-| beliefs | `salvation-of-non-christians` | Adequate | 5¶, 426w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: 3 in debate; res 1 | — | — |
-| church | `what-is-the-church *` | Adequate | 9¶, 800w; OT 0 / NT 9; CCC 4, docs 3; witnesses: Cyprian; objections: —; res 5 | Introductory; depth in did-jesus-found-a-church | — |
-| church | `what-is-sacred-tradition` | Adequate | 4¶, 220w; OT 0 / NT 3; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in sola-scriptura | — |
+| beliefs | `how-are-we-saved *` | Adequate | 5¶, 371w; OT 0 / NT 8; CCC 5, docs 2; witnesses: —; objections: 1 ¶; res 3 | — | — |
+| beliefs | `what-is-grace` | Adequate | 5¶, 277w; OT 0 / NT 4; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in how-are-we-saved, faith-and-works | — |
+| beliefs | `faith-and-works *` | Strong | 5¶, 448w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Clement; objections: 3 in debate; res 3 | — | — |
+| beliefs | `what-happens-when-we-die` | Adequate | 5¶, 277w; OT 0 / NT 5; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in heaven, hell, purgatory, catholic-funerals-and-grief | — |
+| beliefs | `heaven *` | Adequate | 6¶, 306w; OT 0 / NT 4; CCC 1, docs 1; witnesses: Augustine; objections: —; res 2 | — | — |
+| beliefs | `hell` | Adequate | 5¶, 273w; OT 0 / NT 7; CCC 1, docs 1; witnesses: Ignatius; objections: 3 in debate; res 1 | — | — |
+| beliefs | `purgatory` | Strong | 6¶, 502w; OT 2 / NT 3; CCC 3, docs 2; witnesses: Tertullian, Cyril, Augustine; objections: 4 in debate; res 7 (media 2) | — | — |
+| beliefs | `salvation-of-non-christians` | Adequate | 5¶, 433w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: 3 in debate; res 1 | — | — |
+| church | `what-is-the-church *` | Adequate | 9¶, 792w; OT 0 / NT 9; CCC 4, docs 3; witnesses: Cyprian; objections: —; res 5 | Introductory; depth in did-jesus-found-a-church | — |
+| bible | `what-is-sacred-tradition` | Adequate | 4¶, 220w; OT 0 / NT 3; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in sola-scriptura | — |
 | church | `what-is-the-pope` | Adequate | 4¶, 217w; OT 0 / NT 3; CCC 1, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in peter-the-rock, papal-infallibility | — |
-| church | `bishops-priests-deacons *` | Strong | 14¶, 1008w; OT 4 / NT 19; CCC 8, docs 2; witnesses: Ignatius, Clement; objections: 1 ¶; res 5 | — | — |
-| church | `what-is-the-magisterium` | Adequate | 5¶, 309w; OT 0 / NT 4; CCC 2, docs 3; witnesses: —; objections: —; res 2 | Introductory; depth in papal-infallibility, apostolic-succession | — |
-| church | `catholic-and-protestant-differences` | Adequate | 6¶, 398w; OT 0 / NT 2; CCC 2, docs 3; witnesses: —; objections: —; res 2 | Introductory; depth in the Protestantism debates | — |
+| church | `bishops-priests-deacons *` | Strong | 14¶, 1011w; OT 4 / NT 19; CCC 8, docs 2; witnesses: Ignatius, Clement; objections: 1 ¶; res 5 | — | — |
+| church | `what-is-the-magisterium` | Adequate | 5¶, 312w; OT 0 / NT 4; CCC 2, docs 3; witnesses: —; objections: —; res 2 | Introductory; depth in papal-infallibility, apostolic-succession | — |
+| church | `catholic-and-protestant-differences` | Adequate | 6¶, 402w; OT 0 / NT 2; CCC 2, docs 3; witnesses: —; objections: —; res 2 | Introductory; depth in the Protestantism debates | — |
 | church | `catholic-and-orthodox-differences` | Adequate | 5¶, 376w; OT 0 / NT 2; CCC 4, docs 6; witnesses: —; objections: —; res 2 | Introductory; depth in great-schism, peter-the-rock, papal-infallibility | — |
 | church | `catholics-and-muslims` | Adequate | 5¶, 336w; OT 1 / NT 1; CCC 1, docs 2; witnesses: —; objections: —; res 2 | — | — |
 | church | `do-all-religions-lead-to-god` | Adequate | 6¶, 501w; OT 0 / NT 3; CCC 1, docs 2; witnesses: —; objections: 2 in debate; res 6 | — | — |
-| mary-and-the-saints | `who-is-mary` | Strong | 5¶, 512w; OT 1 / NT 10; CCC 2, docs 2; witnesses: Tertullian, Jerome; objections: 1 ¶; res 4 | — | — |
+| mary-and-the-saints | `who-is-mary` | Strong | 5¶, 528w; OT 1 / NT 10; CCC 2, docs 2; witnesses: Tertullian, Jerome; objections: 1 ¶; res 4 | — | — |
 | mary-and-the-saints | `why-honor-mary` | Adequate | 5¶, 296w; OT 1 / NT 5; CCC 2, docs 1; witnesses: Irenaeus; objections: 3 in debate; res 4 | — | — |
-| mary-and-the-saints | `mother-of-god` | Adequate | 3¶, 255w; OT 0 / NT 4; CCC 3, docs 2; witnesses: Cyril; objections: 3 in debate; res 2 | — | — |
-| mary-and-the-saints | `immaculate-conception` | Strong | 8¶, 654w; OT 7 / NT 6; CCC 3, docs 2; witnesses: Justin, Irenaeus; objections: 6 in debate; res 3 | — | — |
-| mary-and-the-saints | `what-is-a-saint` | Adequate | 4¶, 244w; OT 0 / NT 3; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in praying-to-saints | — |
-| mary-and-the-saints | `praying-to-saints` | Strong | 6¶, 398w; OT 1 / NT 5; CCC 2, docs 2; witnesses: Cyril, Augustine; objections: 3 in debate; res 3 | — | — |
-| mary-and-the-saints | `statues-and-images` | Strong | 6¶, 337w; OT 6 / NT 2; CCC 1, docs 2; witnesses: —; objections: 4 in debate; res 2 | — | — |
+| mary-and-the-saints | `mother-of-god` | Adequate | 3¶, 256w; OT 0 / NT 4; CCC 3, docs 2; witnesses: Cyril; objections: 3 in debate; res 2 | — | — |
+| mary-and-the-saints | `immaculate-conception` | Strong | 8¶, 671w; OT 7 / NT 6; CCC 3, docs 2; witnesses: Justin, Irenaeus; objections: 6 in debate; res 3 | — | — |
+| mary-and-the-saints | `what-is-a-saint` | Adequate | 4¶, 248w; OT 0 / NT 3; CCC 2, docs 1; witnesses: —; objections: —; res 1 | Introductory; depth in praying-to-saints | — |
+| mary-and-the-saints | `praying-to-saints` | Strong | 6¶, 396w; OT 1 / NT 5; CCC 2, docs 2; witnesses: Cyril, Augustine; objections: 3 in debate; res 3 | — | — |
+| mary-and-the-saints | `statues-and-images` | Strong | 6¶, 336w; OT 6 / NT 2; CCC 1, docs 2; witnesses: —; objections: 4 in debate; res 2 | — | — |
 | bible | `what-is-the-bible` | Strong | 6¶, 355w; OT 0 / NT 3; CCC 5, docs 2; witnesses: Jerome; objections: 1 ¶; res 2 (media 1) | — | — |
 | bible | `catholic-bible-books` | Adequate | 6¶, 397w; OT 4 / NT 0; CCC 3, docs 4; witnesses: Augustine; objections: 3 in debate; res 2 | — | — |
-| bible | `inspiration-of-scripture *` | Adequate | 7¶, 588w; OT 0 / NT 5; CCC 4, docs 3; witnesses: —; objections: 1 ¶; res 1 | — | — |
-| bible | `how-to-read-the-bible` | Practical | 5¶, 380w; OT 0 / NT 5; CCC 1, docs 2; witnesses: —; objections: 1 ¶; res 2 (media 1) | — | — |
+| bible | `inspiration-of-scripture *` | Adequate | 7¶, 594w; OT 0 / NT 5; CCC 4, docs 3; witnesses: —; objections: 1 ¶; res 1 | — | — |
+| bible | `how-to-read-the-bible` | Practical | 5¶, 381w; OT 0 / NT 5; CCC 1, docs 2; witnesses: —; objections: —; res 2 (media 1) | — | — |
 | bible | `which-bible-translation` | Practical | 6¶, 274w; OT 1 / NT 0; CCC 1, docs 2; witnesses: —; objections: —; res 2 | — | — |
-| bible | `where-to-start-reading-the-bible` | Practical | 5¶, 287w; OT 1 / NT 2; CCC 3, docs 2; witnesses: —; objections: —; res 3 (media 1) | — | — |
+| bible | `where-to-start-reading-the-bible` | Practical | 5¶, 288w; OT 1 / NT 2; CCC 3, docs 2; witnesses: —; objections: —; res 3 (media 1) | — | — |
 | sacraments | `what-is-a-sacrament` | Adequate | 5¶, 350w; OT 0 / NT 2; CCC 6, docs 2; witnesses: Leo the Great; objections: —; res 1 | Introductory; depth in seven-sacraments | — |
 | sacraments | `seven-sacraments` | Adequate | 5¶, 252w; OT 0 / NT 0; CCC 5, docs 2; witnesses: —; objections: 1 ¶; res 2 | Introductory; depth in each sacrament's topic | — |
-| sacraments | `baptism *` | Strong | 11¶, 811w; OT 0 / NT 7; CCC 7, docs 1; witnesses: Didache; objections: 2 ¶; res 3 (media 1) | — | — |
-| sacraments | `infant-baptism *` | Strong | 7¶, 421w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Origen, Augustine, Tertullian, Cyprian; objections: 3 in debate; res 2 | — | — |
-| sacraments | `confirmation *` | Strong | 10¶, 842w; OT 2 / NT 6; CCC 8, docs 2; witnesses: Tertullian, Cyril; objections: 1 ¶; res 4 | — | — |
-| sacraments | `what-is-the-eucharist` | Adequate | 5¶, 282w; OT 0 / NT 3; CCC 4, docs 3; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in real-presence, mass-as-sacrifice, fathers-on-the-eucharist | — |
-| sacraments | `real-presence` | Strong | 5¶, 330w; OT 2 / NT 6; CCC 3, docs 2; witnesses: Ignatius, Justin; objections: 3 in debate; res 2 (media 1) | — | — |
-| sacraments | `mass-as-sacrifice` | Strong | 8¶, 619w; OT 1 / NT 5; CCC 5, docs 3; witnesses: Didache; objections: 3 in debate; res 4 | — | — |
-| sacraments | `eucharistic-adoration *` | Adequate | 6¶, 529w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Augustine; objections: —; res 2 | — | — |
-| sacraments | `who-can-receive-communion` | Strong | 6¶, 498w; OT 0 / NT 2; CCC 3, docs 4; witnesses: Justin; objections: 2 in debate; res 1 | — | — |
-| sacraments | `confession *` | Adequate | 8¶, 526w; OT 1 / NT 6; CCC 10, docs 2; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in why-confess-to-a-priest | — |
-| sacraments | `why-confess-to-a-priest` | Strong | 7¶, 415w; OT 0 / NT 11; CCC 4, docs 3; witnesses: Didache, Cyprian; objections: 3 in debate; res 2 (media 2) | — | — |
-| sacraments | `how-to-go-to-confession` | Practical | 6¶, 394w; OT 1 / NT 2; CCC 4, docs 2; witnesses: —; objections: 1 ¶; res 2 (media 1) | — | — |
+| sacraments | `baptism *` | Strong | 11¶, 813w; OT 0 / NT 7; CCC 7, docs 1; witnesses: Didache; objections: 2 ¶; res 3 (media 1) | — | — |
+| sacraments | `infant-baptism *` | Strong | 7¶, 423w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Origen, Augustine, Tertullian, Cyprian; objections: 3 in debate; res 2 | — | — |
+| sacraments | `confirmation *` | Strong | 10¶, 826w; OT 2 / NT 6; CCC 8, docs 2; witnesses: Tertullian, Cyril; objections: 1 ¶; res 4 | — | — |
+| sacraments | `what-is-the-eucharist` | Adequate | 5¶, 286w; OT 0 / NT 3; CCC 4, docs 3; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in real-presence, mass-as-sacrifice, fathers-on-the-eucharist | — |
+| sacraments | `real-presence` | Strong | 5¶, 344w; OT 2 / NT 6; CCC 3, docs 2; witnesses: Ignatius, Justin; objections: 3 in debate; res 2 (media 1) | — | — |
+| sacraments | `mass-as-sacrifice` | Strong | 8¶, 631w; OT 1 / NT 5; CCC 5, docs 3; witnesses: Didache; objections: 3 in debate; res 4 | — | — |
+| sacraments | `eucharistic-adoration *` | Adequate | 6¶, 537w; OT 0 / NT 6; CCC 2, docs 2; witnesses: Augustine; objections: —; res 2 | — | — |
+| sacraments | `who-can-receive-communion` | Strong | 6¶, 501w; OT 0 / NT 2; CCC 3, docs 4; witnesses: Justin; objections: 2 in debate; res 1 | — | — |
+| sacraments | `confession *` | Adequate | 8¶, 546w; OT 1 / NT 6; CCC 10, docs 2; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in why-confess-to-a-priest | — |
+| sacraments | `why-confess-to-a-priest` | Strong | 7¶, 422w; OT 0 / NT 11; CCC 4, docs 3; witnesses: Didache, Cyprian; objections: 3 in debate; res 2 (media 2) | — | — |
+| sacraments | `how-to-go-to-confession` | Practical | 6¶, 393w; OT 1 / NT 2; CCC 4, docs 2; witnesses: —; objections: 1 ¶; res 2 (media 1) | — | — |
 | sacraments | `mortal-and-venial-sin` | Adequate | 6¶, 374w; OT 0 / NT 3; CCC 5, docs 1; witnesses: —; objections: —; res 2 (media 1) | Introductory; depth in what-is-sin | — |
-| sacraments | `anointing-of-the-sick *` | Adequate | 9¶, 870w; OT 1 / NT 4; CCC 7, docs 2; witnesses: Innocent I; objections: —; res 2 | — | — |
-| sacraments | `marriage-sacrament *` | Strong | 8¶, 495w; OT 2 / NT 8; CCC 7, docs 3; witnesses: Ignatius, Polycarp; objections: 1 ¶; res 2 | — | — |
+| sacraments | `anointing-of-the-sick *` | Adequate | 9¶, 859w; OT 1 / NT 4; CCC 7, docs 2; witnesses: Innocent I; objections: —; res 2 | — | — |
+| sacraments | `marriage-sacrament *` | Strong | 8¶, 496w; OT 2 / NT 8; CCC 7, docs 3; witnesses: Ignatius, Polycarp; objections: 1 ¶; res 2 | — | — |
 | mass | `what-happens-at-mass` | Practical | 5¶, 317w; OT 0 / NT 3; CCC 2, docs 2; witnesses: Justin; objections: —; res 5 (media 2) | — | — |
 | mass | `first-time-at-mass` | Practical | 4¶, 252w; OT 0 / NT 1; CCC 1, docs 2; witnesses: —; objections: —; res 2 (media 1) | — | — |
-| mass | `why-go-to-mass-on-sunday` | Adequate | 5¶, 377w; OT 0 / NT 3; CCC 4, docs 2; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-in-scripture` | Strong | 5¶, 311w; OT 3 / NT 9; CCC 2, docs 1; witnesses: Didache, Justin; objections: 3 in debate; res 4 (media 1) | — | — |
+| mass | `why-go-to-mass-on-sunday` | Adequate | 5¶, 378w; OT 0 / NT 3; CCC 4, docs 2; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-in-scripture` | Strong | 5¶, 310w; OT 3 / NT 9; CCC 2, docs 1; witnesses: Didache, Justin; objections: 3 in debate; res 4 (media 1) | — | — |
 | mass | `mass-etiquette` | Practical | 4¶, 192w; OT 0 / NT 0; CCC 1, docs 2; witnesses: —; objections: —; res 0 | no further resource | Low |
 | mass | `mass-postures` | Practical | 5¶, 256w; OT 0 / NT 0; CCC 0, docs 2; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-gestures` | Practical | 5¶, 306w; OT 0 / NT 0; CCC 2, docs 2; witnesses: —; objections: —; res 2 | — | — |
@@ -119,64 +119,64 @@ Sources marked “verify” have not been checked yet and must be verified befor
 | mass | `mass-arriving` | Practical | 4¶, 206w; OT 0 / NT 1; CCC 1, docs 2; witnesses: —; objections: —; res 1 | — | — |
 | mass | `mass-holy-water` | Practical | 4¶, 247w; OT 0 / NT 2; CCC 2, docs 0; witnesses: —; objections: —; res 1 | — | — |
 | mass | `mass-genuflection` | Practical | 4¶, 235w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: 1 ¶; res 2 | — | — |
-| mass | `mass-quiet-prayer` | Practical | 3¶, 172w; OT 1 / NT 0; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-entrance` | Practical | 4¶, 223w; OT 1 / NT 0; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-reverence-to-the-altar` | Practical | 5¶, 398w; OT 3 / NT 2; CCC 2, docs 1; witnesses: Ambrose; objections: —; res 2 | — | — |
-| mass | `mass-sign-of-the-cross` | Practical | 4¶, 192w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-greeting` | Practical | 4¶, 221w; OT 1 / NT 3; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-quiet-prayer` | Practical | 3¶, 179w; OT 1 / NT 0; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-entrance` | Practical | 4¶, 221w; OT 1 / NT 0; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-reverence-to-the-altar` | Practical | 5¶, 401w; OT 3 / NT 2; CCC 2, docs 1; witnesses: Ambrose; objections: —; res 2 | — | — |
+| mass | `mass-sign-of-the-cross` | Practical | 4¶, 189w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-greeting` | Practical | 4¶, 232w; OT 1 / NT 3; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-penitential-act` | Practical | 4¶, 262w; OT 0 / NT 3; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-kyrie` | Practical | 4¶, 180w; OT 0 / NT 2; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-kyrie` | Practical | 4¶, 182w; OT 0 / NT 2; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-gloria` | Practical | 4¶, 194w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-collect` | Practical | 4¶, 165w; OT 0 / NT 0; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-first-reading` | Practical | 5¶, 266w; OT 2 / NT 0; CCC 3, docs 1; witnesses: —; objections: —; res 3 | — | — |
-| mass | `mass-responsorial-psalm` | Practical | 4¶, 200w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-second-reading` | Practical | 3¶, 160w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-gospel-acclamation` | Practical | 5¶, 283w; OT 0 / NT 1; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-gospel` | Practical | 5¶, 282w; OT 0 / NT 2; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-first-reading` | Practical | 5¶, 264w; OT 2 / NT 0; CCC 3, docs 1; witnesses: —; objections: —; res 3 | — | — |
+| mass | `mass-responsorial-psalm` | Practical | 4¶, 198w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-second-reading` | Practical | 3¶, 163w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-gospel-acclamation` | Practical | 5¶, 285w; OT 0 / NT 1; CCC 0, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-gospel` | Practical | 5¶, 285w; OT 0 / NT 2; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-homily` | Practical | 4¶, 277w; OT 1 / NT 1; CCC 1, docs 3; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-creed` | Practical | 5¶, 249w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-universal-prayer` | Practical | 4¶, 224w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
-| mass | `mass-preparation-of-the-gifts` | Practical | 4¶, 323w; OT 2 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-universal-prayer` | Practical | 4¶, 225w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-preparation-of-the-gifts` | Practical | 4¶, 329w; OT 2 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-prayer-over-the-offerings` | Practical | 4¶, 247w; OT 0 / NT 1; CCC 1, docs 2; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-preface-dialogue` | Practical | 4¶, 188w; OT 1 / NT 0; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-preface` | Practical | 5¶, 336w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-sanctus` | Practical | 4¶, 237w; OT 2 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 3 | — | — |
-| mass | `mass-eucharistic-prayer` | Practical | 6¶, 431w; OT 0 / NT 2; CCC 3, docs 2; witnesses: —; objections: —; res 3 | — | — |
+| mass | `mass-preface-dialogue` | Practical | 4¶, 193w; OT 1 / NT 0; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-preface` | Practical | 5¶, 339w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-sanctus` | Practical | 4¶, 241w; OT 2 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 3 | — | — |
+| mass | `mass-eucharistic-prayer` | Practical | 6¶, 432w; OT 0 / NT 2; CCC 3, docs 2; witnesses: —; objections: —; res 3 | — | — |
 | mass | `mass-epiclesis` | Practical | 5¶, 394w; OT 0 / NT 3; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-consecration` | Practical | 5¶, 332w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: —; res 3 (media 1) | — | — |
-| mass | `mass-mystery-of-faith` | Practical | 4¶, 180w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-consecration` | Practical | 5¶, 338w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: —; res 3 (media 1) | — | — |
+| mass | `mass-mystery-of-faith` | Practical | 4¶, 179w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-intercessions` | Practical | 5¶, 348w; OT 1 / NT 3; CCC 3, docs 1; witnesses: —; objections: —; res 3 | — | — |
-| mass | `mass-great-amen` | Practical | 4¶, 187w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-great-amen` | Practical | 4¶, 193w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
 | mass | `mass-lords-prayer` | Practical | 4¶, 255w; OT 0 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-sign-of-peace` | Practical | 4¶, 208w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
+| mass | `mass-sign-of-peace` | Practical | 4¶, 207w; OT 0 / NT 2; CCC 1, docs 1; witnesses: —; objections: —; res 1 | — | — |
 | mass | `mass-lamb-of-god` | Practical | 4¶, 230w; OT 0 / NT 3; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-invitation-to-communion` | Practical | 4¶, 224w; OT 0 / NT 4; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-communion` | Practical | 5¶, 272w; OT 0 / NT 3; CCC 2, docs 3; witnesses: —; objections: —; res 2 (media 1) | — | — |
-| mass | `mass-thanksgiving-after-communion` | Practical | 5¶, 327w; OT 1 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-communion` | Practical | 5¶, 275w; OT 0 / NT 3; CCC 2, docs 3; witnesses: —; objections: —; res 2 (media 1) | — | — |
+| mass | `mass-thanksgiving-after-communion` | Practical | 5¶, 324w; OT 1 / NT 1; CCC 2, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-prayer-after-communion` | Practical | 4¶, 239w; OT 0 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| mass | `mass-final-blessing` | Practical | 4¶, 203w; OT 1 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| mass | `mass-final-blessing` | Practical | 4¶, 205w; OT 1 / NT 1; CCC 1, docs 1; witnesses: —; objections: —; res 2 | — | — |
 | mass | `mass-dismissal` | Practical | 4¶, 224w; OT 0 / NT 2; CCC 1, docs 2; witnesses: —; objections: —; res 3 | — | — |
-| mass | `mass-recessional` | Practical | 5¶, 297w; OT 1 / NT 1; CCC 2, docs 2; witnesses: —; objections: —; res 3 | — | — |
+| mass | `mass-recessional` | Practical | 5¶, 298w; OT 1 / NT 1; CCC 2, docs 2; witnesses: —; objections: —; res 3 | — | — |
 | becoming-catholic | `how-to-become-catholic` | Practical | 4¶, 235w; OT 0 / NT 2; CCC 3, docs 1; witnesses: —; objections: —; res 3 (media 1) | — | — |
 | becoming-catholic | `what-is-ocia` | Practical | 5¶, 325w; OT 0 / NT 2; CCC 2, docs 3; witnesses: —; objections: —; res 2 | — | — |
 | becoming-catholic | `stages-of-ocia` | Practical | 7¶, 344w; OT 0 / NT 1; CCC 2, docs 3; witnesses: —; objections: —; res 2 | — | — |
 | becoming-catholic | `catechumen-or-candidate` | Practical | 5¶, 253w; OT 0 / NT 1; CCC 4, docs 3; witnesses: —; objections: —; res 2 | — | — |
 | becoming-catholic | `already-baptized` | Practical | 6¶, 359w; OT 0 / NT 2; CCC 3, docs 3; witnesses: —; objections: —; res 2 | — | — |
-| becoming-catholic | `married-before-ocia *` | Practical | 8¶, 591w; OT 0 / NT 3; CCC 4, docs 3; witnesses: —; objections: —; res 2 | — | — |
-| becoming-catholic | `telling-family *` | Practical | 6¶, 485w; OT 1 / NT 5; CCC 2, docs 0; witnesses: —; objections: —; res 2 | — | — |
-| becoming-catholic | `finding-a-parish` | Practical | 6¶, 322w; OT 0 / NT 2; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
-| becoming-catholic | `returning-to-the-church` | Practical | 6¶, 357w; OT 0 / NT 3; CCC 6, docs 1; witnesses: —; objections: —; res 2 | — | — |
-| becoming-catholic | `after-becoming-catholic *` | Practical | 7¶, 504w; OT 0 / NT 5; CCC 6, docs 1; witnesses: —; objections: 2 ¶; res 1 | — | — |
-| catholic-life | `returning-after-mortal-sin` | Practical | 6¶, 360w; OT 0 / NT 3; CCC 5, docs 3; witnesses: —; objections: 1 ¶; res 2 | — | — |
+| becoming-catholic | `married-before-ocia *` | Practical | 8¶, 590w; OT 0 / NT 3; CCC 4, docs 3; witnesses: —; objections: —; res 2 | — | — |
+| becoming-catholic | `telling-family *` | Practical | 6¶, 488w; OT 1 / NT 5; CCC 2, docs 0; witnesses: —; objections: —; res 2 | — | — |
+| becoming-catholic | `finding-a-parish` | Practical | 6¶, 319w; OT 0 / NT 2; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
+| becoming-catholic | `returning-to-the-church` | Practical | 6¶, 355w; OT 0 / NT 3; CCC 6, docs 1; witnesses: —; objections: —; res 2 | — | — |
+| becoming-catholic | `after-becoming-catholic *` | Practical | 7¶, 506w; OT 0 / NT 5; CCC 6, docs 1; witnesses: —; objections: 2 ¶; res 1 | — | — |
+| catholic-life | `returning-after-mortal-sin` | Practical | 6¶, 358w; OT 0 / NT 3; CCC 5, docs 3; witnesses: —; objections: 1 ¶; res 2 | — | — |
 | catholic-life | `fasting-and-abstinence` | Practical | 6¶, 388w; OT 1 / NT 2; CCC 2, docs 3; witnesses: —; objections: —; res 1 | — | — |
-| catholic-life | `catholic-funerals-and-grief *` | Practical | 8¶, 837w; OT 1 / NT 6; CCC 8, docs 3; witnesses: Augustine; objections: —; res 2 | — | — |
+| catholic-life | `catholic-funerals-and-grief *` | Practical | 8¶, 844w; OT 1 / NT 6; CCC 8, docs 3; witnesses: Augustine; objections: —; res 2 | — | — |
 | prayer | `what-is-prayer` | Practical | 6¶, 259w; OT 0 / NT 4; CCC 5, docs 1; witnesses: —; objections: 1 ¶; res 0 | no further resource | Low |
 | prayer | `how-to-pray *` | Practical | 7¶, 407w; OT 1 / NT 2; CCC 5, docs 1; witnesses: —; objections: —; res 1 | — | — |
 | prayer | `basic-catholic-prayers` | Practical | 5¶, 279w; OT 0 / NT 3; CCC 3, docs 1; witnesses: Chrysostom; objections: 1 ¶; res 0 | no further resource | Low |
-| prayer | `our-father` | Practical | 6¶, 294w; OT 0 / NT 2; CCC 6, docs 1; witnesses: Tertullian; objections: —; res 1 | — | — |
-| prayer | `hail-mary` | Practical | 5¶, 282w; OT 0 / NT 3; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
-| prayer | `sign-of-the-cross` | Practical | 5¶, 251w; OT 0 / NT 3; CCC 3, docs 0; witnesses: Tertullian; objections: —; res 1 | — | — |
-| prayer | `the-rosary` | Practical | 7¶, 481w; OT 0 / NT 6; CCC 4, docs 2; witnesses: —; objections: 1 ¶; res 3 | — | — |
+| prayer | `our-father` | Practical | 6¶, 296w; OT 0 / NT 2; CCC 6, docs 1; witnesses: Tertullian; objections: —; res 1 | — | — |
+| prayer | `hail-mary` | Practical | 5¶, 284w; OT 0 / NT 3; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
+| prayer | `sign-of-the-cross` | Practical | 5¶, 248w; OT 0 / NT 3; CCC 3, docs 0; witnesses: Tertullian; objections: —; res 1 | — | — |
+| prayer | `the-rosary` | Practical | 7¶, 485w; OT 0 / NT 6; CCC 4, docs 2; witnesses: —; objections: 1 ¶; res 3 | — | — |
 | church-year | `liturgical-year` | Practical | 6¶, 284w; OT 1 / NT 2; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
 | church-year | `advent` | Practical | 5¶, 307w; OT 1 / NT 3; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
 | church-year | `lent` | Practical | 6¶, 291w; OT 1 / NT 2; CCC 3, docs 1; witnesses: —; objections: —; res 2 | — | — |
@@ -184,15 +184,26 @@ Sources marked “verify” have not been checked yet and must be verified befor
 | church-year | `holy-week` | Practical | 6¶, 289w; OT 0 / NT 4; CCC 1, docs 2; witnesses: —; objections: —; res 0 | no further resource | Low |
 | church-year | `easter-vigil` | Practical | 5¶, 261w; OT 2 / NT 2; CCC 2, docs 2; witnesses: —; objections: —; res 1 | — | — |
 | church-year | `holy-days-of-obligation` | Practical | 5¶, 318w; OT 1 / NT 1; CCC 2, docs 2; witnesses: —; objections: —; res 0 | no further resource | Low |
-| morality | `how-catholics-decide-right-and-wrong` | Strong | 6¶, 344w; OT 1 / NT 2; CCC 5, docs 2; witnesses: —; objections: 1 ¶; res 1 | — | — |
+| morality | `how-catholics-decide-right-and-wrong` | Strong | 6¶, 343w; OT 1 / NT 2; CCC 5, docs 2; witnesses: —; objections: 1 ¶; res 1 | — | — |
 | morality | `conscience` | Adequate | 6¶, 312w; OT 1 / NT 2; CCC 5, docs 2; witnesses: —; objections: —; res 1 | — | — |
 | morality | `ten-commandments` | Strong | 6¶, 393w; OT 2 / NT 2; CCC 2, docs 1; witnesses: Augustine; objections: 1 ¶; res 1 | — | — |
-| morality | `what-is-sin` | Adequate | 5¶, 278w; OT 1 / NT 2; CCC 4, docs 1; witnesses: —; objections: —; res 0 | Introductory; depth in mortal-and-venial-sin | — |
+| morality | `what-is-sin` | Adequate | 5¶, 280w; OT 1 / NT 2; CCC 4, docs 1; witnesses: —; objections: —; res 0 | Introductory; depth in mortal-and-venial-sin | — |
 | morality | `human-life-dignity` | Adequate | 5¶, 276w; OT 2 / NT 1; CCC 4, docs 2; witnesses: —; objections: 1 ¶; res 0 | — | — |
 | morality | `abortion` | Adequate | 6¶, 374w; OT 2 / NT 1; CCC 2, docs 2; witnesses: Didache; objections: —; res 3 | — | — |
-| morality | `sexuality *` | Adequate | 9¶, 641w; OT 1 / NT 2; CCC 4, docs 3; witnesses: —; objections: —; res 0 | — | — |
+| morality | `sexuality *` | Adequate | 9¶, 649w; OT 1 / NT 2; CCC 4, docs 3; witnesses: —; objections: —; res 0 | — | — |
 | morality | `what-is-catholic-social-teaching` | Practical | 6¶, 387w; OT 0 / NT 3; CCC 5, docs 3; witnesses: —; objections: —; res 1 | — | — |
-| morality | `virtues *` | Adequate | 7¶, 628w; OT 1 / NT 5; CCC 5, docs 0; witnesses: Augustine; objections: —; res 2 | — | — |
+| morality | `virtues *` | Adequate | 8¶, 671w; OT 1 / NT 5; CCC 5, docs 0; witnesses: Augustine; objections: —; res 2 | — | — |
+| spiritual-warfare | `spiritual-warfare *` | Adequate | 6¶, 611w; OT 0 / NT 9; CCC 4, docs 1; witnesses: Aquinas; objections: —; res 2 | — | — |
+| spiritual-warfare | `angels *` | Strong | 5¶, 494w; OT 4 / NT 5; CCC 1, docs 1; witnesses: Augustine, Aquinas; objections: —; res 2 | — | — |
+| spiritual-warfare | `satan-and-demons *` | Strong | 6¶, 512w; OT 2 / NT 8; CCC 2, docs 1; witnesses: Aquinas; objections: 1 ¶; res 2 | — | — |
+| spiritual-warfare | `temptation *` | Adequate | 9¶, 838w; OT 1 / NT 6; CCC 11, docs 0; witnesses: —; objections: 1 ¶; res 1 | — | — |
+| spiritual-warfare | `capital-sins *` | Adequate | 10¶, 716w; OT 1 / NT 5; CCC 5, docs 0; witnesses: Gregory; objections: —; res 3 | — | — |
+| spiritual-warfare | `discernment *` | Strong | 6¶, 417w; OT 0 / NT 5; CCC 3, docs 1; witnesses: Ignatius; objections: 1 ¶; res 1 | — | — |
+| spiritual-warfare | `sacramentals *` | Adequate | 7¶, 531w; OT 1 / NT 2; CCC 2, docs 2; witnesses: —; objections: 1 ¶; res 2 | — | — |
+| spiritual-warfare | `daily-spiritual-life *` | Practical | 7¶, 471w; OT 1 / NT 3; CCC 5, docs 0; witnesses: Ignatius; objections: —; res 2 | — | — |
+| spiritual-warfare | `occult-practices *` | Adequate | 5¶, 411w; OT 2 / NT 2; CCC 2, docs 0; witnesses: —; objections: —; res 0 | — | — |
+| spiritual-warfare | `exorcism-and-deliverance *` | Adequate | 7¶, 677w; OT 0 / NT 6; CCC 2, docs 2; witnesses: —; objections: —; res 0 | — | — |
+| faith-and-reason | `what-is-truth *` | Strong | 8¶, 786w; OT 0 / NT 5; CCC 6, docs 1; witnesses: Aquinas, Augustine; objections: 1 ¶; res 3 | — | — |
 | faith-and-reason | `does-god-exist` | Strong | 6¶, 382w; OT 2 / NT 3; CCC 2, docs 2; witnesses: Aquinas; objections: 5 in debate; res 3 | — | — |
 | faith-and-reason | `faith-and-science` | Adequate | 5¶, 303w; OT 2 / NT 0; CCC 2, docs 2; witnesses: —; objections: 2 in debate; res 2 | — | — |
 | faith-and-reason | `creation-and-evolution` | Adequate | 6¶, 442w; OT 1 / NT 0; CCC 4, docs 3; witnesses: —; objections: 3 in debate; res 2 | — | — |
@@ -203,14 +214,14 @@ Sources marked “verify” have not been checked yet and must be verified befor
 | history | `protestant-reformation` | Adequate | 6¶, 442w; OT 0 / NT 3; CCC 3, docs 4; witnesses: —; objections: —; res 5 | Introductory; depth in faith-and-works, sola-scriptura | — |
 | history | `who-are-the-church-fathers` | Adequate | 6¶, 349w; OT 0 / NT 3; CCC 4, docs 2; witnesses: Ignatius, Irenaeus, Athanasius, Augustine; objections: —; res 3 | — | — |
 | history | `fathers-on-the-eucharist` | Adequate | 6¶, 339w; OT 0 / NT 3; CCC 3, docs 2; witnesses: Ignatius, Justin, Irenaeus, Cyril; objections: —; res 6 | — | — |
-| objections | `sola-scriptura` | Strong | 4¶, 326w; OT 0 / NT 6; CCC 3, docs 1; witnesses: Eusebius, Irenaeus, Basil; objections: 3 in debate; res 4 (media 1) | — | — |
-| objections | `divinity-of-jesus` | Strong | 5¶, 578w; OT 5 / NT 16; CCC 3, docs 1; witnesses: Ignatius, Pliny, Augustine; objections: 5 in debate; res 6 (media 1) | — | — |
-| objections | `problem-of-evil *` | Strong | 9¶, 904w; OT 6 / NT 7; CCC 3, docs 2; witnesses: Augustine, Aquinas; objections: 3 in debate; res 5 (media 1) | — | — |
-| church | `did-jesus-found-a-church` | Strong | 4¶, 309w; OT 0 / NT 7; CCC 2, docs 2; witnesses: Irenaeus; objections: 2 in debate; res 2 | — | — |
-| church | `peter-the-rock` | Strong | 6¶, 413w; OT 2 / NT 8; CCC 3, docs 4; witnesses: Irenaeus, Cyprian; objections: 5 in debate; res 2 | — | — |
-| church | `papal-infallibility` | Adequate | 6¶, 382w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: 4 in debate; res 2 | — | — |
+| objections | `sola-scriptura` | Strong | 4¶, 329w; OT 0 / NT 6; CCC 3, docs 1; witnesses: Eusebius, Irenaeus, Basil; objections: 3 in debate; res 4 (media 1) | — | — |
+| objections | `divinity-of-jesus` | Strong | 5¶, 597w; OT 5 / NT 16; CCC 3, docs 1; witnesses: Ignatius, Pliny, Augustine; objections: 5 in debate; res 6 (media 1) | — | — |
+| objections | `problem-of-evil *` | Strong | 9¶, 906w; OT 6 / NT 7; CCC 3, docs 2; witnesses: Augustine, Aquinas; objections: 3 in debate; res 5 (media 1) | — | — |
+| church | `did-jesus-found-a-church` | Strong | 4¶, 312w; OT 0 / NT 7; CCC 2, docs 2; witnesses: Irenaeus; objections: 2 in debate; res 2 | — | — |
+| church | `peter-the-rock` | Strong | 6¶, 432w; OT 2 / NT 8; CCC 3, docs 4; witnesses: Irenaeus, Cyprian; objections: 5 in debate; res 2 | — | — |
+| church | `papal-infallibility` | Adequate | 6¶, 384w; OT 0 / NT 5; CCC 2, docs 3; witnesses: —; objections: 4 in debate; res 2 | — | — |
 | church | `apostolic-succession` | Strong | 5¶, 360w; OT 0 / NT 5; CCC 3, docs 2; witnesses: Clement, Irenaeus, Tertullian, Polycarp; objections: 2 in debate; res 3 | — | — |
-| objections | `praying-directly-to-god` | Adequate | 4¶, 280w; OT 0 / NT 7; CCC 4, docs 1; witnesses: —; objections: 2 in debate; res 2 | — | — |
+| objections | `praying-directly-to-god` | Adequate | 4¶, 287w; OT 0 / NT 7; CCC 4, docs 1; witnesses: —; objections: 2 in debate; res 2 | — | — |
 | objections | `muhammad-and-the-quran` | Adequate | 6¶, 365w; OT 0 / NT 3; CCC 2, docs 3; witnesses: —; objections: 3 in debate; res 3 | — | — |
 
 ## Common arguments (all 41)

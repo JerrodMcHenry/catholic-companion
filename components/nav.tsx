@@ -8,7 +8,8 @@ import { usePathname } from "next/navigation";
 
 type Tab = "home" | "explore" | "search" | "saved";
 
-const tabs: { id: Tab; label: string; href: string; icon: React.ReactNode }[] = [
+// shortLabel is used in the phone tab bar, where "Learn the Faith" would not fit.
+const tabs: { id: Tab; label: string; shortLabel?: string; href: string; icon: React.ReactNode }[] = [
   {
     id: "home",
     label: "Home",
@@ -17,7 +18,8 @@ const tabs: { id: Tab; label: string; href: string; icon: React.ReactNode }[] = 
   },
   {
     id: "explore",
-    label: "Explore",
+    label: "Learn the Faith",
+    shortLabel: "Learn",
     href: "/explore",
     icon: (
       <>
@@ -49,7 +51,7 @@ function currentTab(pathname: string): Tab {
   if (pathname === "/") return "home";
   if (pathname.startsWith("/search")) return "search";
   if (pathname.startsWith("/saved")) return "saved";
-  return "explore"; // Explore, categories, topics, Start here, resources.
+  return "explore"; // Learn the Faith, categories, topics, Start here, resources.
 }
 
 function Icon({ children }: { children: React.ReactNode }) {
@@ -113,7 +115,7 @@ export function TabBar() {
               }`}
             >
               <Icon>{tab.icon}</Icon>
-              {tab.label}
+              {tab.shortLabel ?? tab.label}
             </Link>
           </li>
         ))}

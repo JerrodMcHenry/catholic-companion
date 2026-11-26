@@ -15,10 +15,10 @@ export const maryAndSaints: Topic[] = [
       "Mary is the Jewish woman of Nazareth whom God chose to be the mother of Jesus. She said yes to God at the Annunciation, conceived Jesus by the power of the Holy Spirit, stood by him at the cross, and prayed with the apostles at Pentecost. Catholics honor her as the Mother of God, the first and model disciple, and a mother to all Christians, while always pointing to her Son.",
     explanation: [
       "Everything about Mary points to Christ: “What the Catholic faith believes about Mary is based on what it believes about Christ, and what it teaches about Mary illumines in turn its faith in Christ” (CCC 487).",
-      "In the Gospels: the angel Gabriel greets her, “Hail, favored one! The Lord is with you” (Luke 1:28), and she answers, “May it be done to me according to your word” (Luke 1:38). Elizabeth calls her “the mother of my Lord” (Luke 1:43). At Cana she tells the servants, “Do whatever he tells you” (John 2:5). From the cross Jesus entrusts her to the beloved disciple: “Behold, your mother” (John 19:27). She prays with the apostles before Pentecost (Acts 1:14).",
+      "In the Gospels: the angel Gabriel greets her as one highly favored by God, with whom the Lord is present (Luke 1:28), and she answers by giving herself completely to God's will: let it happen to me as you have said (Luke 1:38). Elizabeth greets her as the mother of her Lord (Luke 1:43). At Cana she tells the servants to do whatever Jesus tells them (John 2:5). From the cross Jesus entrusts her to the beloved disciple, telling him that she is now his mother (John 19:27). She prays with the apostles before Pentecost (Acts 1:14).",
       "What the Church teaches about her: she is truly the Mother of God (CCC 495); she was preserved from original sin from her conception (the Immaculate Conception, CCC 491); she remained a virgin, and the liturgy calls her “Ever-virgin” (CCC 499); and at the end of her earthly life she was taken up body and soul into heavenly glory (the Assumption, defined in 1950; CCC 966).",
       "Model and mother: Mary is the Church's “model of faith and charity” (CCC 967) and “a mother to us in the order of grace” (CCC 968). Her role “in no way obscures or diminishes” Christ's unique mediation (CCC 970). How Catholics honor her is explained in “Do Catholics worship Mary?”",
-      "Did Mary have other children? In Mark’s Gospel, Jesus’ neighbors call him “the brother of James and Joses and Judas and Simon” and mention his “sisters” (Mark 6:3). The Church teaches that Mary remained a virgin (CCC 499) and reads these passages as referring to Jesus’ relatives: James and Joseph are elsewhere called sons of “Mary the mother of James and Joseph,” whom Matthew calls “the other Mary” (Matthew 27:56; 28:1), and the Catechism explains that they are “close relations of Jesus, according to an Old Testament expression” (CCC 500; compare Genesis 13:8). The passages themselves do not settle the question; this is how the Church has understood them. In the fourth century Helvidius argued, citing Tertullian, that Mary had later children; St. Jerome answered him, while Damasus was pope, that the “brethren” were kinsmen (Against Helvidius). On Matthew 1:25 (“He had no relations with her until she bore a son”), the NABRE’s own note explains that the Greek word translated “until” “does not imply normal marital conduct after Jesus’ birth, nor does it exclude it.” At the cross Jesus entrusted his mother to the beloved disciple (John 19:26–27), which Catholics find hard to explain if she had other sons, though this is an inference rather than a proof.",
+      "Did Mary have other children? In Mark's Gospel, Jesus' neighbors name James, Joses, Judas, and Simon as his brothers and mention his sisters (Mark 6:3). The Church teaches that Mary remained a virgin (CCC 499) and reads these passages as referring to Jesus' relatives: James and Joseph are elsewhere called sons of another Mary, whom Matthew distinguishes from the mother of Jesus (Matthew 27:56; 28:1), and the Catechism explains that they are “close relations of Jesus, according to an Old Testament expression” (CCC 500; compare Genesis 13:8). The passages themselves do not settle the question; this is how the Church has understood them. In the fourth century Helvidius argued, citing Tertullian, that Mary had later children; St. Jerome answered him, while Damasus was pope, that the “brethren” were kinsmen (Against Helvidius). Matthew 1:25 says that Joseph did not have relations with Mary until she gave birth; but the Greek word for “until” (heōs) describes what happened up to a point without implying what happened afterward, as the NABRE's own note on the verse points out. At the cross Jesus entrusted his mother to the beloved disciple (John 19:26–27), which Catholics find hard to explain if she had other sons, though this is an inference rather than a proof.",
     ],
     teaching: {
       catechism: [
@@ -47,9 +47,9 @@ export const maryAndSaints: Topic[] = [
       "No. Catholics worship God alone. They honor Mary with special love because God himself honored her by choosing her to be the mother of his Son, and because Scripture says “all ages” will call her blessed. The Church teaches that devotion to Mary “differs essentially from the adoration” given to God and is meant to lead people to Christ.",
     explanation: [
       "Honor, not adoration: the Church's devotion to Mary “differs essentially from the adoration which is given to the incarnate Word and equally to the Father and the Holy Spirit, and greatly fosters this adoration” (CCC 971). Traditional theology calls the worship due to God alone latria, the honor shown to the saints dulia, and the greater honor shown to Mary hyperdulia, which remains essentially different from the worship of God.",
-      "Why honor her: Mary herself said, “from now on will all ages call me blessed” (Luke 1:48). Elizabeth, “filled with the holy Spirit,” called her blessed among women (Luke 1:41–42). Honoring the mother is a way of honoring the Son.",
+      "Why honor her: Mary herself foretold that every generation would call her blessed (Luke 1:48). Elizabeth, filled with the Holy Spirit, called her the most blessed of women (Luke 1:41–42). Honoring the mother is a way of honoring the Son.",
       "Praying with Mary: when Catholics pray the Hail Mary, they repeat the angel's and Elizabeth's words and ask Mary to pray for them. Such prayer asks for her intercession; it does not treat her as a source of grace apart from Christ. Her role “depends entirely” on Christ's mediation and “draws all its power from it” (CCC 970).",
-      "She points to Jesus: in the traditional image, Mary “shows the way” (hodigitria) and is herself the sign of the way to her Son (CCC 2674). Her words at Cana sum up all Marian devotion: “Do whatever he tells you” (John 2:5).",
+      "She points to Jesus: in the traditional image, Mary “shows the way” (hodigitria) and is herself the sign of the way to her Son (CCC 2674). Her words at Cana sum up all Marian devotion: do whatever Jesus tells you (John 2:5).",
       "Other Christians: many Protestants honor Mary as a model of faith but reject prayers addressed to her. Their views and the Catholic responses are set out below.",
     ],
     teaching: {
@@ -86,9 +86,9 @@ export const maryAndSaints: Topic[] = [
               authority: "doctrine",
             },
             {
-              claim: "Jesus himself turned attention away from his mother: “Rather, blessed are those who hear the word of God and observe it” (Luke 11:28).",
+              claim: "Jesus himself turned attention away from his mother, saying that those who hear God's word and keep it are even more blessed (Luke 11:28).",
               response:
-                "Catholics read this as praising what Mary did above all: she heard God's word and said, “May it be done to me according to your word” (Luke 1:38). The same Gospel records her prophecy that all ages would call her blessed (Luke 1:48). Honoring her is a way of honoring the faith Jesus praised.",
+                "Catholics read this as praising what Mary did above all: she heard God's word and accepted it with her whole life (Luke 1:38). The same Gospel records her prophecy that all ages would call her blessed (Luke 1:48). Honoring her is a way of honoring the faith Jesus praised.",
               authority: "apologetic-argument",
             },
             {
@@ -121,9 +121,9 @@ export const maryAndSaints: Topic[] = [
     summary:
       "Because her Son is God. Jesus is one divine person, the eternal Son of the Father, who became man. Mary did not give him his divinity, but the one she conceived and bore is truly God, so she is truly the Mother of God. The Council of Ephesus confirmed the title Theotokos (“God-bearer”) in 431 to protect the truth that Jesus is one person, both God and man.",
     explanation: [
-      "A title about Jesus: Elizabeth calls Mary “the mother of my Lord” (Luke 1:43). The one Mary conceived “was none other than the Father's eternal Son, the second person of the Holy Trinity. Hence the Church confesses that Mary is truly ‘Mother of God’ (Theotokos)” (CCC 495).",
+      "A title about Jesus: Elizabeth greets Mary as the mother of her Lord (Luke 1:43). The one Mary conceived “was none other than the Father's eternal Son, the second person of the Holy Trinity. Hence the Church confesses that Mary is truly ‘Mother of God’ (Theotokos)” (CCC 495).",
       "Not the source of God: the Church does not say Mary existed before God or gave him his divine nature. As St. Cyril of Alexandria wrote in a letter read at the Council of Ephesus, she is called mother of God “not as though the nature of the Word or his godhead received the origin of their being from the holy virgin,” but because the Word was united to the flesh born of her.",
-      "Why it was defined: the Nestorian teaching regarded Christ as a human person joined to the divine Son. Opposing it, the Council of Ephesus (431) confessed that Christ's humanity has no other subject than the divine person of the Son, and so proclaimed that Mary truly became the Mother of God (CCC 466). Paul writes that God sent his Son, “born of a woman” (Galatians 4:4).",
+      "Why it was defined: the Nestorian teaching regarded Christ as a human person joined to the divine Son. Opposing it, the Council of Ephesus (431) confessed that Christ's humanity has no other subject than the divine person of the Son, and so proclaimed that Mary truly became the Mother of God (CCC 466). Paul writes that God sent his Son, born of a woman (Galatians 4:4).",
     ],
     teaching: {
       catechism: [
@@ -161,7 +161,7 @@ export const maryAndSaints: Topic[] = [
             {
               claim: "The title “Mother of God” is not in the Bible.",
               response:
-                "Elizabeth, “filled with the holy Spirit,” calls Mary “the mother of my Lord” (Luke 1:41–43), and John writes that “the Word became flesh” (John 1:14). The title states in one word what these passages teach, much as the word “Trinity” names what Scripture reveals (see “Is the Trinity in the Bible?”).",
+                "Elizabeth, filled with the Holy Spirit, greets Mary as the mother of her Lord (Luke 1:41–43), and John writes that the Word became flesh (John 1:14). The title states in one word what these passages teach, much as the word “Trinity” names what Scripture reveals (see “Is the Trinity in the Bible?”).",
               authority: "apologetic-argument",
             },
             {
@@ -196,11 +196,11 @@ export const maryAndSaints: Topic[] = [
     explanation: [
       "The definition: in 1854 Pope Pius IX declared that “the most Blessed Virgin Mary, in the first instance of her conception, by a singular grace and privilege granted by Almighty God, in view of the merits of Jesus Christ, the Savior of the human race, was preserved free from all stain of original sin” (Ineffabilis Deus; CCC 491). It is a defined dogma.",
       "Mary needed a Savior: her holiness “comes wholly from Christ: she is ‘redeemed, in a more exalted fashion, by reason of the merits of her Son’” (CCC 492). God preserved her in advance through the same grace that saves us.",
-      "Why: God prepared Mary to give the free assent of faith at the Annunciation, “wholly borne by God's grace” (CCC 490). The angel greets her as one already filled with God's favor: “Hail, favored one!” (Luke 1:28). By God's grace Mary also remained free from personal sin throughout her life (CCC 493).",
+      "Why: God prepared Mary to give the free assent of faith at the Annunciation, “wholly borne by God's grace” (CCC 490). The angel greets her as one who is already full of God's favor (Luke 1:28). By God's grace Mary also remained free from personal sin throughout her life (CCC 493).",
       "Not the virgin birth: people often confuse the two. The Immaculate Conception concerns Mary's own conception by her parents; the virginal conception concerns Jesus, conceived by the Holy Spirit (CCC 496–498).",
       "East and West: the Fathers of the Eastern tradition call Mary “the All-Holy” (Panagia) and celebrate her as free from any stain of sin (CCC 493). Orthodox and Protestant Christians understand Mary's holiness in different ways and have not accepted the 1854 definition; their views and the Catholic responses are set out below.",
-      "The New Eve: after the fall, God promises “enmity between you and the woman” (Genesis 3:15). Around 155, Justin Martyr contrasted Eve, who “having conceived the word of the serpent, brought forth disobedience and death,” with Mary, who “received faith and joy” at the Annunciation (Dialogue with Trypho 100). About 180, Irenaeus wrote that “the knot of Eve’s disobedience was loosed by the obedience of Mary” (Against Heresies 3.22.4; CCC 494). Many Fathers and Doctors of the Church see Mary as the “woman” of Genesis 3:15, “the ‘new Eve’” (CCC 411).",
-      "The Ark of the Covenant: Luke’s account of the Visitation echoes the ark’s journey in 2 Samuel 6. David “set out” to bring up the ark (2 Samuel 6:2), and Mary “set out” for the hill country of Judah (Luke 1:39). David asks, “How can the ark of the LORD come to me?” (2 Samuel 6:9), and Elizabeth asks why “the mother of my Lord should come to me” (Luke 1:43). David danced before the LORD (2 Samuel 6:16), and the infant “leaped” in Elizabeth’s womb (Luke 1:41, 44). The ark stayed in the house of Obed-edom “three months” (2 Samuel 6:11), and Mary “remained with her about three months” (Luke 1:56). Luke's verb for Elizabeth's loud cry, anaphōneō, appears nowhere else in the New Testament; in the Greek Old Testament it is used for the Levites' music and praise before the ark (1 Chronicles 15:28; 16:4–5; 2 Chronicles 5:13), and also for worship at the tabernacle in Gibeon (1 Chronicles 16:42). It was also an ordinary Greek word, so this echo is suggestive, not conclusive. The Church calls Mary “the ark of the covenant, the place where the glory of the Lord dwells” (CCC 2676).",
+      "The New Eve: after the fall, God promises lasting hostility between the serpent and the woman, and between their offspring (Genesis 3:15). Around 155, Justin Martyr contrasted Eve, who “having conceived the word of the serpent, brought forth disobedience and death,” with Mary, who “received faith and joy” at the Annunciation (Dialogue with Trypho 100). About 180, Irenaeus wrote that “the knot of Eve’s disobedience was loosed by the obedience of Mary” (Against Heresies 3.22.4; CCC 494). Many Fathers and Doctors of the Church see Mary as the “woman” of Genesis 3:15, “the ‘new Eve’” (CCC 411).",
+      "The Ark of the Covenant: Luke’s account of the Visitation echoes the ark’s journey in 2 Samuel 6. David set out to bring the ark up to Jerusalem (2 Samuel 6:2), and Mary set out in haste for the hill country of Judah (Luke 1:39). David asks how the ark of the Lord could come to him (2 Samuel 6:9), and Elizabeth asks how it is that the mother of her Lord should come to her (Luke 1:43). David danced before the Lord (2 Samuel 6:16), and the unborn John leaped for joy in Elizabeth's womb (Luke 1:41, 44). The ark stayed in the house of Obed-edom for three months (2 Samuel 6:11), and Mary stayed with Elizabeth for about three months (Luke 1:56). Luke's verb for Elizabeth's loud cry, anaphōneō, appears nowhere else in the New Testament; in the Greek Old Testament it is used for the Levites' music and praise before the ark (1 Chronicles 15:28; 16:4–5; 2 Chronicles 5:13), and also for worship at the tabernacle in Gibeon (1 Chronicles 16:42). It was also an ordinary Greek word, so this echo is suggestive, not conclusive. The Church calls Mary “the ark of the covenant, the place where the glory of the Lord dwells” (CCC 2676).",
       "What typology shows, and what it does not: these parallels are interpretations. Luke does not state them outright, and they do not by themselves prove the Immaculate Conception. They show how Christians have read Mary’s unique holiness in the light of the Old Testament; the dogma itself rests on the Church’s definition (Ineffabilis Deus), read together with Scripture and Tradition.",
     ],
     teaching: {
@@ -230,7 +230,7 @@ export const maryAndSaints: Topic[] = [
         {
           tradition: "protestantism",
           position:
-            "Protestants generally hold that Scripture does not teach the Immaculate Conception and that every human being except Christ inherits original sin. They point to Mary's own words, “my spirit rejoices in God my savior” (Luke 1:47), and to Paul's teaching that “all have sinned and are deprived of the glory of God” (Romans 3:23). The Westminster Confession teaches that the corruption of original sin is “conveyed to all their posterity descending from them by ordinary generation” (6.3).",
+            "Protestants generally hold that Scripture does not teach the Immaculate Conception and that every human being except Christ inherits original sin. They point to Mary's own words, in which she rejoices in God her Savior (Luke 1:47), and to Paul's teaching that all have sinned and fall short of God's glory (Romans 3:23). The Westminster Confession teaches that the corruption of original sin is “conveyed to all their posterity descending from them by ordinary generation” (6.3).",
           arguments: [
             {
               claim: "Mary called God her Savior (Luke 1:47), so she was a sinner who needed saving.",
@@ -239,7 +239,7 @@ export const maryAndSaints: Topic[] = [
               authority: "doctrine",
             },
             {
-              claim: "“All have sinned” (Romans 3:23) leaves no room for exceptions.",
+              claim: "Paul's statement that all have sinned (Romans 3:23) leaves no room for exceptions.",
               response:
                 "Catholics read Paul as describing humanity's universal need for grace rather than listing every individual; Christ himself is the obvious exception. The Church holds that God's grace also preserved Mary, so that her holiness “comes wholly from Christ” (CCC 492).",
               authority: "apologetic-argument",
@@ -247,7 +247,7 @@ export const maryAndSaints: Topic[] = [
             {
               claim: "The doctrine is not in Scripture and was defined only in 1854.",
               response:
-                "The Church holds that this truth belongs to revelation and was grasped more fully over time: “Through the centuries the Church has become ever more aware that Mary, ‘full of grace’ through God, was redeemed from the moment of her conception” (CCC 491). Catholics cite the angel's greeting, “Hail, favored one!” (Luke 1:28), and the Eastern Fathers' title for Mary, “the All-Holy” (CCC 493).",
+                "The Church holds that this truth belongs to revelation and was grasped more fully over time: “Through the centuries the Church has become ever more aware that Mary, ‘full of grace’ through God, was redeemed from the moment of her conception” (CCC 491). Catholics cite the angel's greeting to Mary as one full of God's favor (Luke 1:28), and the Eastern Fathers' title for Mary, “the All-Holy” (CCC 493).",
               authority: "apologetic-argument",
             },
           ],
@@ -294,10 +294,10 @@ export const maryAndSaints: Topic[] = [
     summary:
       "A saint is someone who is with God in heaven. In a broad sense the New Testament calls all believers “saints” (holy ones), and every Christian is called to holiness. When the Church canonizes someone, it solemnly declares that this person lived a life of heroic virtue and is now in heaven, and proposes them as a model and an intercessor.",
     explanation: [
-      "Holy ones: Paul writes to “the holy ones” in the churches (for example Philippians 1:1). Every baptized person is called to be holy; the Church calls the bond between all the faithful, living and dead, “the communion of saints” (CCC 946–948).",
+      "Holy ones: Paul addresses his letters to the saints, God's holy people, in the churches (for example Philippians 1:1). Every baptized person is called to be holy; the Church calls the bond between all the faithful, living and dead, “the communion of saints” (CCC 946–948).",
       "Canonized saints: “By canonizing some of the faithful, i.e., by solemnly proclaiming that they practiced heroic virtue and lived in fidelity to God's grace,” the Church recognizes the Spirit's work and proposes them “as models and intercessors” (CCC 828). Canonization does not make someone a saint; it recognizes what God has done.",
       "Three states of the Church: some disciples are pilgrims on earth, some have died and are being purified, and others are in glory with God; all share one charity (CCC 954). The union between us and those who have died in Christ “is in no way interrupted” (CCC 955).",
-      "Why they matter: the saints show that holiness is possible in every time and state of life, and they are “a cloud of witnesses” cheering us on (Hebrews 12:1). Catholics also ask their prayers; see “Why do Catholics pray to saints?”",
+      "Why they matter: the saints show that holiness is possible in every time and state of life, and they surround us like a great crowd of witnesses (Hebrews 12:1). Catholics also ask their prayers; see “Why do Catholics pray to saints?”",
     ],
     teaching: {
       catechism: [
@@ -329,7 +329,7 @@ export const maryAndSaints: Topic[] = [
       "Imitation and friendship: we honor the saints “not merely by the title of example” but because communion with them joins us more closely to Christ (CCC 957). Many Catholics choose patron saints whose lives connect with their own.",
       "What it is not: asking a saint's prayer is not worship, not a way around God, and not a claim that saints act by their own power. The Council of Trent taught that the saints “offer up their own prayers to God for men” and that it is good to ask their help in obtaining benefits from God “through His Son, Jesus Christ” (Session 25).",
       "Why not go straight to God? Catholics do, constantly. The question, and the objections many Protestants raise, are treated in “Why not just pray directly to God?”",
-      "More from Scripture and the early Church: in Revelation, “the smoke of the incense along with the prayers of the holy ones went up before God from the hand of the angel” (Revelation 8:4). Second Maccabees describes the prophet Jeremiah, long dead, as one who “fervently prays for the people and the holy city” (2 Maccabees 15:14); Protestants do not accept this book as Scripture, but it shows that some Jews before Christ believed the righteous dead pray for the living. Around 350, Cyril of Jerusalem taught the newly baptized that the Church commemorates “Patriarchs, Prophets, Apostles, Martyrs, that at their prayers and intercessions God would receive our petition” (Mystagogical Lecture 5.9).",
+      "More from Scripture and the early Church: in Revelation, an angel offers incense before God's throne, and its smoke rises to God together with the prayers of the saints (Revelation 8:4). Second Maccabees describes the prophet Jeremiah, long dead, as one who prays earnestly for the people and for the holy city (2 Maccabees 15:14); Protestants do not accept this book as Scripture, but it shows that some Jews before Christ believed the righteous dead pray for the living. Around 350, Cyril of Jerusalem taught the newly baptized that the Church commemorates “Patriarchs, Prophets, Apostles, Martyrs, that at their prayers and intercessions God would receive our petition” (Mystagogical Lecture 5.9).",
     ],
     teaching: {
       catechism: [
@@ -408,7 +408,7 @@ export const maryAndSaints: Topic[] = [
       "Veneration, not worship: “the honor rendered to an image passes to its prototype,” and the honor paid to sacred images is “a respectful veneration, not the adoration due to God alone” (CCC 2132). Trent taught the same: no divinity or power is believed to be in images; the honor shown them is referred to those they represent (Session 25).",
       "In practice: kneeling before a crucifix or kissing an icon is like kissing a photograph of someone you love; the gesture is directed to the person, not the material object.",
       "Other views: Reformed Protestants, Muslims, and Jews understand the commandment against images in their own ways. Their views and the Catholic responses are set out below.",
-      "Pointing to God, not replacing him: Jesus compares his crucifixion to the bronze serpent God commanded Moses to make: “just as Moses lifted up the serpent in the desert, so must the Son of Man be lifted up” (John 3:14; Numbers 21:8–9). Scripture also shows the danger the commandment guards against: when the Israelites began “burning incense to it,” King Hezekiah smashed the bronze serpent (2 Kings 18:4). The difference lies in whether an image is worshiped or used to point to God.",
+      "Pointing to God, not replacing him: Jesus compares his crucifixion to the bronze serpent God commanded Moses to make: as Moses lifted up the serpent in the wilderness, so the Son of Man must be lifted up (John 3:14; Numbers 21:8–9). Scripture also shows the danger the commandment guards against: when the Israelites began offering incense to it, King Hezekiah smashed the bronze serpent (2 Kings 18:4). The difference lies in whether an image is worshiped or used to point to God.",
     ],
     teaching: {
       catechism: [
@@ -449,7 +449,7 @@ export const maryAndSaints: Topic[] = [
             {
               claim: "God cannot be portrayed, so an image of Christ either divides his natures or tries to depict his divinity.",
               response:
-                "In Christ the invisible God became visible: he is “the image of the invisible God” (Colossians 1:15). An icon portrays the incarnate Son as he was seen, which is the basis on which the Second Council of Nicaea defended icons (CCC 2131). St. John of Damascus wrote: “I do not worship matter, I worship the God of matter, who became matter for my sake.”",
+                "In Christ the invisible God became visible: Paul calls him the image of the invisible God (Colossians 1:15). An icon portrays the incarnate Son as he was seen, which is the basis on which the Second Council of Nicaea defended icons (CCC 2131). St. John of Damascus wrote: “I do not worship matter, I worship the God of matter, who became matter for my sake.”",
               authority: "doctrine",
             },
           ],

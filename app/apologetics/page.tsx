@@ -4,8 +4,8 @@ import { commonArguments, commonQuestions, comparisonTopics, debateTopics, getTo
 
 // Route and internal ids stay "apologetics"; readers see "Common Questions".
 export const metadata: Metadata = {
-  title: "Common Questions and Arguments",
-  description: "Clear, respectful answers to common questions and arguments about the Catholic faith, with Scripture, early Christian sources, and Church teaching.",
+  title: "Common Questions & Objections",
+  description: "Clear, respectful answers to common questions and objections about the Catholic faith, with Scripture, early Christian sources, and Church teaching.",
 };
 
 const otherChristians = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences"];
@@ -20,8 +20,8 @@ export default function CommonQuestionsPage() {
 
   return (
     <>
-      <BackLink href="/explore" label="Explore" />
-      <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink">Common Questions and Arguments</h1>
+      <BackLink href="/explore" label="Learn the Faith" />
+      <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink">Common Questions &amp; Objections</h1>
       <p className="mt-4 leading-relaxed text-ink-soft">
         Answers to the questions and objections people most often meet when they look into the
         Catholic faith. Each answer explains what the Church actually teaches and points you to the
@@ -34,9 +34,9 @@ export default function CommonQuestionsPage() {
       </section>
 
       <section id="arguments" aria-labelledby="arguments-title" className="mt-12 scroll-mt-6">
-        <SectionTitle id="arguments-title">Common arguments and Catholic responses</SectionTitle>
+        <SectionTitle id="arguments-title">Common objections and Catholic responses</SectionTitle>
         <p className="-mt-2 mb-4 leading-relaxed text-ink-soft">
-          Open a group to see the arguments it covers. Each links to a full answer.
+          Open a group to see the objections it covers. Each links to a full answer.
         </p>
         <div className="space-y-3">
           {commonArguments.map((g) => (

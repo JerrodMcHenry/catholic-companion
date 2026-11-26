@@ -1,13 +1,16 @@
 import type { Category, Pillar } from "./types";
 
 export const pillars: Pillar[] = [
-  { id: "discover", title: "Discover Catholicism", description: "What Catholics believe about God, Jesus, the Church, the Bible, and the sacraments." },
-  { id: "becoming", title: "Becoming Catholic", description: "OCIA, finding a parish, and the path into the Church." },
+  { id: "discover", title: "Discover Catholicism", description: "God and his love, Jesus Christ, the Church, Mary and the saints, salvation, and eternal life." },
+  { id: "scripture", title: "The Bible & Sacred Tradition", description: "Salvation history, reading Scripture, the canon, Sacred Tradition, and the Church Fathers." },
+  { id: "apologetics", title: "Common Questions & Objections", description: "Clear answers to common questions, and Catholic responses to common objections." },
+  { id: "becoming", title: "Becoming Catholic", description: "OCIA, finding a parish, and the practical path into the Church." },
   { id: "mass", title: "Understanding the Mass", description: "What happens at Mass, what to say and do, and what each part means." },
-  { id: "live", title: "Living the Faith", description: "Prayer, the Church year, the moral life, and everyday Catholic practice." },
-  { id: "apologetics", title: "Common Questions and Arguments", description: "Clear answers to common questions, and Catholic responses to common arguments." },
+  { id: "sacraments", title: "The Sacraments", description: "All seven sacraments, including how to go to Confession." },
+  { id: "live", title: "Living the Catholic Faith", description: "Prayer, virtue and holiness, the moral life, the Church year, and everyday practice." },
+  { id: "spiritual-warfare", title: "Spiritual Warfare", description: "Christ's victory over evil, angels, temptation, the capital sins, discernment, and spiritual protection." },
   { id: "deeper", title: "Go Deeper", description: "Church history, faith and reason, and other Christian traditions and religions." },
-  { id: "resources", title: "Trusted Resources", description: "Articles, videos, and official Church documents worth your time." },
+  { id: "resources", title: "Trusted Resources", description: "Scripture, Church documents, the Fathers, books, articles, and videos." },
 ];
 
 export const categories: Category[] = [
@@ -25,7 +28,7 @@ export const categories: Category[] = [
   },
   {
     slug: "sacraments",
-    pillar: "discover",
+    pillar: "sacraments",
     title: "The Sacraments",
     description: "The seven sacred rites, from Baptism to Marriage, through which Christ acts.",
   },
@@ -37,9 +40,9 @@ export const categories: Category[] = [
   },
   {
     slug: "bible",
-    pillar: "discover",
-    title: "The Bible",
-    description: "How Catholics read and understand Sacred Scripture.",
+    pillar: "scripture",
+    title: "The Bible and Sacred Tradition",
+    description: "The story of salvation, how to read Scripture, the canon, and Sacred Tradition.",
   },
   {
     slug: "history",
@@ -100,5 +103,11 @@ export const categories: Category[] = [
     pillar: "live",
     title: "Moral Life",
     description: "How Catholics understand right and wrong, and living well.",
+  },
+  {
+    slug: "spiritual-warfare",
+    pillar: "spiritual-warfare",
+    title: "Spiritual Warfare",
+    description: "Understand temptation, resist evil, strengthen your spiritual life, and grow in holiness through Jesus Christ.",
   },
 ];

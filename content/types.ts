@@ -1,7 +1,8 @@
 // The shape of all app content. Data lives in the other files in this folder.
 
-// The areas of Explore. "apologetics" is the internal id of Common Questions (its route is /apologetics).
-export type PillarId = "discover" | "becoming" | "mass" | "live" | "apologetics" | "deeper" | "resources";
+// The sections of Learn the Faith (route /explore). "apologetics" is the internal id of Common Questions
+// & Objections (its route is /apologetics); "resources" is linked from the page rather than shown as a section.
+export type PillarId = "discover" | "scripture" | "apologetics" | "becoming" | "mass" | "sacraments" | "live" | "spiritual-warfare" | "deeper" | "resources";
 
 export type Pillar = {
   id: PillarId;

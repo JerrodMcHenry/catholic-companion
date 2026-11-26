@@ -19,6 +19,7 @@ import { morality } from "./morality";
 import { prayerTopics } from "./prayer";
 import { sacraments } from "./sacraments";
 import { salvation } from "./salvation";
+import { spiritualWarfare } from "./spiritual-warfare";
 
 export const topics = [
   ...foundations,
@@ -37,6 +38,7 @@ export const topics = [
   ...prayerTopics,
   ...churchYear,
   ...morality,
+  ...spiritualWarfare,
   ...faithAndReason,
   ...historyTopics,
   ...apologeticsTopics,

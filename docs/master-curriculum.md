@@ -296,7 +296,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `what-is-a-sacrament` ✓ | What is a sacrament? | Ex opere operato | B | P1 | `seven-sacraments` | |
 | `seven-sacraments` ✓ | What are the seven sacraments? | | B | P1 | `what-is-a-sacrament` | |
 | `sacraments-in-scripture` | Are the sacraments in the Bible? | | I | P2 | `seven-sacraments` | D: Protestantism |
-| `sacramentals` | What are sacramentals? | Holy water, blessings, rosaries | B | P2 | `mass-holy-water` | |
+| `sacramentals` ✓ | What are sacramentals? | Holy water, blessings, medals, scapular | B | P2 | `mass-holy-water` | Approved 2026-11-25 (Spiritual Warfare) |
 | `baptism` ✓ | What is Baptism? | Christening | B | P1 | `original-sin` | |
 | `infant-baptism` ✓ | Why do Catholics baptize babies? | Paedobaptism | B | P1 | `baptism` | D: Protestantism (Baptist, Pentecostal, evangelical) |
 | `is-baptism-necessary` | Is Baptism necessary for salvation? | Baptism of desire, baptism of blood | I | P2 | `salvation-of-non-christians` | |
@@ -356,10 +356,13 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `patron-saints` | What are patron saints? | | B | P2 | `choosing-a-confirmation-saint` | |
 | `relics` | What are relics? | | I | P2 | `what-is-a-saint` | D: Protestantism |
 | `statues-and-images` ✓ | Do Catholics worship statues? | Icons, veneration, idolatry | B | P1 | `praying-to-saints` | D: Protestantism, Islam, Judaism |
-| `angels` | Do angels exist? | | B | P2 | `guardian-angels` | |
-| `guardian-angels` | Do I have a guardian angel? | | B | P2 | `angels` | |
-| `is-the-devil-real` | Is the devil real? | Satan, fallen angels | B | P2 | `angels` | |
-| `exorcism` | What does the Church teach about exorcism? | | I | P3 | `is-the-devil-real` | R |
+| `angels` ✓ | What are angels? | Guardian angels, archangels | B | P2 | `satan-and-demons` | Approved 2026-11-25 (Spiritual Warfare); covers `guardian-angels` |
+| `guardian-angels` | Do I have a guardian angel? | | B | P2 | `angels` | Covered within `angels` (2026-11-25) |
+| `is-the-devil-real` | Is the devil real? | Satan, fallen angels | B | P2 | `angels` | Built as `satan-and-demons` (2026-11-25) |
+| `satan-and-demons` ✓ | Is Satan real? | The devil, fallen angels, demons | B | P2 | `angels`, `spiritual-warfare` | Approved 2026-11-25 (Spiritual Warfare) |
+| `exorcism` | What does the Church teach about exorcism? | | I | P3 | `is-the-devil-real` | Built as `exorcism-and-deliverance` (2026-11-25) |
+| `exorcism-and-deliverance` ✓ | What is exorcism? | Deliverance, prayer for protection | I | P3 | `satan-and-demons` | Approved 2026-11-25 (Spiritual Warfare); R |
+| `occult-practices` ✓ | Why does the Church warn against occult practices? | Divination, Ouija, astrology | B | P3 | `satan-and-demons` | Approved 2026-11-25 (Spiritual Warfare) |
 | `saints-to-know-first` | Which saints should I get to know first? | | B | P3 | `what-is-a-saint` | |
 | `st-joseph` | Who is St. Joseph? | Patron of the universal Church | B | P2 | `what-is-a-saint` | |
 | `st-peter` | Who was St. Peter? | Simon Peter | B | P2 | `peter-the-rock`, `what-is-the-pope` | |
@@ -383,9 +386,9 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `liturgy-of-the-hours` | What is the Liturgy of the Hours? | Divine Office, breviary | I | P2 | `the-psalms` | |
 | `daily-examen` | What is the daily examen? | Ignatian examen | B | P2 | `how-to-go-to-confession` | |
 | `forgiveness` | How do I forgive someone who hurt me? | | B | P2 | `our-father`, `confession` | |
-| `temptation` | How do I resist temptation? | Concupiscence, near occasion of sin | B | P2 | `what-is-sin`, `spiritual-warfare` | Covered within `confession` (2026-11-25) |
+| `temptation` ✓ | Is being tempted a sin? | Concupiscence, near occasion of sin, unwanted thoughts | B | P2 | `what-is-sin`, `spiritual-warfare` | Approved 2026-11-25 (Spiritual Warfare) |
 | `trusting-god` | How do I learn to trust God? | Abandonment to providence | B | P2 | `divine-providence` | |
-| `spiritual-warfare` | What is spiritual warfare? | Ephesians 6, armor of God | I | P3 | `is-the-devil-real`, `temptation` | R (avoid sensationalism) |
+| `spiritual-warfare` ✓ | What is spiritual warfare? | Ephesians 6, armor of God | I | P3 | `satan-and-demons`, `temptation` | Approved 2026-11-25 (Spiritual Warfare); R (avoid sensationalism) |
 | `scrupulosity` | What is scrupulosity, and where can I find help? | Scruples | I | P3 | `how-to-go-to-confession` | R; pastoral; points to a confessor and professional help |
 | `stations-of-the-cross` | What are the Stations of the Cross? | Way of the Cross | B | P2 | `lent` | |
 | `divine-mercy` | What is the Divine Mercy devotion? | Chaplet of Divine Mercy | B | P3 | | |
@@ -396,7 +399,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `universal-call-to-holiness` | Is everyone called to be a saint? | Universal call to holiness | B | P2 | `what-is-a-saint` | |
 | `dryness-in-prayer` | What if prayer feels empty? | Spiritual dryness, dark night | I | P3 | `how-to-pray` | Covered within `how-to-pray` (2026-11-25) |
 | `spiritual-direction` | What is spiritual direction? | | I | P3 | `discernment` | |
-| `discernment` | How do I discern God's will? | Discernment of spirits | I | P3 | `vocation` | |
+| `discernment` ✓ | What is spiritual discernment? | Discernment of spirits | I | P3 | `vocation` | Approved 2026-11-25 (Spiritual Warfare) |
 
 ### 4.12 Catholic Moral Theology
 *Learn › Moral Life. Sources: C (Part Three), D (Veritatis Splendor, Evangelium Vitae, Humanae Vitae, CDF), S.* Many topics here are **R**: review before drafting.
@@ -409,7 +412,9 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `beatitudes` | What are the Beatitudes? | | B | P2 | `what-jesus-taught` | |
 | `what-is-sin` ✓ | What is sin? | | B | P1 | `mortal-and-venial-sin` | |
 | `natural-law` | What is natural law? | | I | P2 | `morality-without-god` | |
-| `seven-deadly-sins` | What are the seven deadly sins? | Capital sins | B | P2 | `virtues` | |
+| `seven-deadly-sins` | What are the seven deadly sins? | Capital sins | B | P2 | `virtues` | Built as `capital-sins` (2026-11-25) |
+| `capital-sins` ✓ | What are the seven deadly sins? | Capital sins, capital vices | B | P2 | `virtues`, `temptation` | Approved 2026-11-25 (Spiritual Warfare) |
+| `daily-spiritual-life` ✓ | How do I build a daily spiritual life? | Rule of life, morning offering, examen | B | P2 | `how-to-pray` | Approved 2026-11-25 (Spiritual Warfare) |
 | `works-of-mercy` | What are the works of mercy? | Corporal and spiritual works of mercy | B | P2 | `what-is-catholic-social-teaching` | |
 | `human-life-dignity` ✓ | Why does the Church defend every human life? | Sanctity of life | B | P1 | `abortion`, `euthanasia` | |
 | `abortion` ✓ | What does the Church teach about abortion? | | I | P1 | `human-life-dignity` | R; pastoral tone required |
@@ -501,6 +506,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
+| `what-is-truth` ✓ | What is truth, and how can we know it? | Objective truth, relativism, faith and reason | B | P2 | `what-is-faith`, `does-god-exist` | Approved 2026-11-25 |
 | `does-god-exist` ✓ | Does God exist? | Theism | B | P1 | `five-ways`, `problem-of-evil` | D: atheism, agnosticism |
 | `knowing-god-by-reason` | Can we know God by reason alone? | Natural theology | I | P2 | `does-god-exist` | |
 | `five-ways` | What are Aquinas's five ways? | Cosmological argument | I | P2 | `thomas-aquinas` | |
@@ -1185,15 +1191,15 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.4 Creation and the Human Person (new) | 11 | 4 | 6 | 1 | 2 | 3 | 4 |
 | 4.5 Sacred Scripture | 21 | 6 | 12 | 3 | 5 | 1 | 6 |
 | 4.6 The Church, Sacred Tradition, and Church Authority | 19 | 10 | 8 | 1 | 5 | 1 | 10 |
-| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 16 |
+| 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 17 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 4 |
-| 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 3 |
-| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 8 |
-| 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 7 |
+| 4.10 Saints and Angels | 20 | 3 | 11 | 6 | 4 | 1 | 7 |
+| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 11 |
+| 4.12 Catholic Moral Theology | 23 | 7 | 11 | 5 | 1 | 9 | 9 |
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
 | 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 5 |
 | 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 2 |
-| 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
+| 4.16 Philosophy and Natural Theology | 17 | 3 | 9 | 5 | 8 | 0 | 4 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 1 |
 | 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 8 |
 | 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 10 |
@@ -1201,7 +1207,7 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
 | 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
-| **Total** | **423** | **168** | **175** | **80** | **91** | **52** | **174** |
+| **Total** | **429** | **168** | **179** | **82** | **91** | **52** | **185** |
 
 <!-- /generated: counts -->
 

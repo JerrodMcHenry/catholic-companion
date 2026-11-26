@@ -113,7 +113,7 @@ export const historyTopics: Topic[] = [
             {
               claim: "Jesus foretold the apostasy in the parable of the wheat and the weeds (Matthew 13:24–30, 36–43).",
               response:
-                "In the parable the master lets the wheat and the weeds “grow together until harvest” (Matthew 13:30): the good seed is not destroyed but remains in the field throughout. Catholics read it as describing a Church that always contains sinners, not one that disappears for centuries.",
+                "In the parable the master lets the wheat and the weeds grow side by side until the harvest (Matthew 13:30): the good seed is not destroyed but remains in the field throughout. Catholics read it as describing a Church that always contains sinners, not one that disappears for centuries.",
               authority: "apologetic-argument",
             },
             {

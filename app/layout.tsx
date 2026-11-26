@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: { default: "Catholic Companion", template: "%s · Catholic Companion" },
   description:
-    "A friendly guide for anyone curious about Catholicism, becoming Catholic, or newly Catholic, with clear answers and trusted resources.",
+    "Discover God's love, understand the truth, and live the Catholic faith: clear answers, trusted sources, and practical guidance for anyone curious about Catholicism, becoming Catholic, or newly Catholic.",
 };
 
 export const viewport: Viewport = {
@@ -53,9 +53,30 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <HeaderNav />
           </div>
         </header>
-        <main id="main" className="mx-auto w-full max-w-3xl flex-1 px-4 pt-8 pb-28 sm:px-6 sm:pt-12 sm:pb-16">
+        <main id="main" className="mx-auto w-full max-w-3xl flex-1 px-4 pt-8 sm:px-6 sm:pt-12">
           {children}
         </main>
+        <footer className="mx-auto w-full max-w-3xl px-4 pt-12 pb-28 text-center sm:px-6 sm:pb-12">
+          <p lang="la" className="font-serif text-lg text-ink">Ad Majorem Dei Gloriam</p>
+          <p className="text-[0.9375rem] text-ink-soft">For the greater glory of God.</p>
+          <div className="mx-auto mt-6 max-w-xl space-y-2 text-xs leading-relaxed text-ink-soft">
+            <p>
+              Scripture passages are explained in our own words; Scripture links lead to the New American Bible, Revised Edition on the
+              USCCB website. The verse on the home page is quoted from the Douay-Rheims Bible (Challoner revision), which is in the public
+              domain.
+            </p>
+            <p>
+              Excerpts from the English translation of the Catechism of the Catholic Church for use in the United States of America
+              Copyright © 1994, United States Catholic Conference, Inc. -- Libreria Editrice Vaticana. Used with Permission. English
+              translation of the Catechism of the Catholic Church: Modifications from the Editio Typica copyright © 1997, United States
+              Conference of Catholic Bishops—Libreria Editrice Vaticana.
+            </p>
+            <p>
+              Excerpts from the English translation of The Roman Missal © 2010, International Commission on English in the Liturgy
+              Corporation. All rights reserved.
+            </p>
+          </div>
+        </footer>
         <TabBar />
       </body>
     </html>

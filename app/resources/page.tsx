@@ -21,7 +21,7 @@ export default function ResourcesPage() {
 
   return (
     <>
-      <BackLink href="/explore" label="Explore" />
+      <BackLink href="/explore" label="Learn the Faith" />
       <h1 className="mt-4 font-serif text-5xl font-semibold text-ink">Resources</h1>
       <p className="mt-3 leading-relaxed text-ink-soft">
         Trusted sources, each linked directly to the original. Narrow the list by subject or format, or

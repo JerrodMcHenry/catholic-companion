@@ -24,7 +24,7 @@ export default async function CategoryPage({ params }: PageProps<"/category/[slu
 
   return (
     <>
-      <BackLink href={`/explore#${category.pillar}`} label="Explore" />
+      <BackLink href={`/explore#${category.pillar}`} label="Learn the Faith" />
       <h1 className="mt-4 font-serif text-5xl leading-tight font-semibold text-ink">{category.title}</h1>
       <p className="mt-3 leading-relaxed text-ink-soft">{category.description}</p>
 

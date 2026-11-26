@@ -46,11 +46,11 @@ export const prayerTopics: Topic[] = [
     question: "How do I pray?",
     alsoKnownAs: ["How to pray"],
     category: "prayer",
-    keywords: ["how to pray", "start praying", "beginner prayer", "daily prayer", "morning prayer", "prayer routine", "distractions in prayer", "dryness in prayer", "lectio divina", "praying with Scripture", "how do I pray", "how to start praying", "learn to pray", "spiritual dryness", "prayer feels empty", "prayer feels dry", "God feels distant", "dark night"],
+    keywords: ["how to pray", "start praying", "beginner prayer", "daily prayer", "morning prayer", "prayer routine", "distractions in prayer", "dryness in prayer", "lectio divina", "praying with Scripture", "how do I pray", "how to start praying", "learn to pray", "spiritual dryness", "prayer feels empty", "prayer feels dry", "God feels distant", "dark night", "has God abandoned me", "feel abandoned by God", "God is silent", "begin praying"],
     summary:
       "Start simply and regularly. Set aside a few minutes at a fixed time, put yourself in God's presence, speak to him honestly, and listen, especially through Scripture. Use the Church's prayers when your own words run out. Distractions and dry spells are normal; the Catechism calls prayer both a gift and a “battle.” No single method is required of every Catholic.",
     explanation: [
-      "A regular time: the Church's tradition proposes daily rhythms such as morning and evening prayer and grace before and after meals (CCC 2698). Jesus said, “when you pray, go to your inner room, close the door, and pray to your Father in secret” (Matthew 6:6).",
+      "A regular time: the Church's tradition proposes daily rhythms such as morning and evening prayer and grace before and after meals (CCC 2698). Jesus told his disciples to go into a private room, shut the door, and pray to their Father in secret (Matthew 6:6).",
       "A simple pattern (practical advice, not a rule): quiet yourself and remember that God is present; thank him; tell him honestly what is on your mind; read a short passage of Scripture slowly and ask what it says to you; end with the Our Father. Praying with Scripture this way is called lectio divina (CCC 2708).",
       "Borrowed words: when your own words run out, the Psalms and the Church's common prayers can carry you; see “What prayers do Catholics know by heart?”",
       "Distractions: “To set about hunting down distractions would be to fall into their trap, when all that is necessary is to turn back to our heart” (CCC 2729). Dryness, when prayer feels empty, is also part of the journey (CCC 2731).",
@@ -74,7 +74,7 @@ export const prayerTopics: Topic[] = [
       documents: ["compendium-ccc"],
     },
     resources: ["usccb-daily-readings"],
-    related: ["what-is-prayer", "basic-catholic-prayers", "how-to-read-the-bible", "the-rosary"],
+    related: ["what-is-prayer", "basic-catholic-prayers", "how-to-read-the-bible", "the-rosary", "daily-spiritual-life"],
   },
   {
     slug: "basic-catholic-prayers",
@@ -118,7 +118,7 @@ export const prayerTopics: Topic[] = [
     summary:
       "The Our Father is the prayer Jesus taught his disciples when they asked him how to pray. It calls God “Father” and makes seven requests: three for God's glory (his name, his kingdom, his will) and four for our needs (daily bread, forgiveness, help in temptation, and deliverance from evil). The Church calls it “the summary of the whole gospel.”",
     explanation: [
-      "From Jesus: when a disciple asked, “Lord, teach us to pray,” Jesus gave this prayer (Luke 11:1–4); St. Matthew gives a longer form in the Sermon on the Mount (Matthew 6:9–13; CCC 2759).",
+      "From Jesus: when a disciple asked Jesus to teach them how to pray, Jesus gave this prayer (Luke 11:1–4); St. Matthew gives a longer form in the Sermon on the Mount (Matthew 6:9–13; CCC 2759).",
       "The traditional text: “Our Father who art in heaven, hallowed be thy name. Thy kingdom come. Thy will be done on earth, as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us, and lead us not into temptation, but deliver us from evil.” (Compendium of the Catechism, Appendix A).",
       "A summary of the Gospel: Tertullian called it “truly the summary of the whole gospel” (CCC 2761).",
       "“Our” Father: the word “does not express possession, but an entirely new relationship with God” (CCC 2786): through Jesus, we may call God Father together.",
@@ -141,7 +141,7 @@ export const prayerTopics: Topic[] = [
       documents: ["compendium-ccc"],
     },
     resources: ["ec-lords-prayer"],
-    related: ["mass-lords-prayer", "what-is-prayer", "basic-catholic-prayers", "hail-mary"],
+    related: ["mass-lords-prayer", "what-is-prayer", "basic-catholic-prayers", "hail-mary", "spiritual-warfare"],
   },
   {
     slug: "hail-mary",
@@ -154,7 +154,7 @@ export const prayerTopics: Topic[] = [
       "The Hail Mary joins two greetings from the Gospel of Luke, the angel Gabriel's and Elizabeth's, to a request that Mary pray for us “now and at the hour of our death.” Catholics do not worship Mary; they honor her as the Mother of God and ask her prayers, as one might ask any fellow Christian to pray. The prayer centers on Jesus, “the fruit of thy womb.”",
     explanation: [
       "The traditional text: “Hail, Mary, full of grace, the Lord is with thee. Blessed art thou among women and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.” (Compendium of the Catechism, Appendix A).",
-      "From Scripture: the first part repeats the angel's greeting (“Hail, favored one! The Lord is with you,” Luke 1:28) and Elizabeth's (“Most blessed are you among women, and blessed is the fruit of your womb,” Luke 1:42). Modern Bible translations word these verses differently from the traditional prayer. According to the U.S. bishops, St. Pius V officially added the second part.",
+      "From Scripture: the first part repeats the angel's greeting to Mary, full of God's favor, with the Lord present to her (Luke 1:28), and Elizabeth's blessing of Mary among women and of the fruit of her womb (Luke 1:42). Modern Bible translations word these verses differently from the traditional prayer. According to the U.S. bishops, St. Pius V officially added the second part.",
       "Mother of God: “Because she gives us Jesus, her son, Mary is Mother of God and our mother; we can entrust all our cares and petitions to her” (CCC 2677).",
       "Pray for us sinners: “By asking Mary to pray for us, we acknowledge ourselves to be poor sinners” (CCC 2677). Asking her prayers is like asking any Christian to pray for us; see “Why do Catholics pray to saints?”",
       "Centered on Christ: St. John Paul II wrote that the Hail Mary's “Marian character is not opposed to its Christological character, but that it actually emphasizes and increases it” (Rosarium Virginis Mariae 33).",
@@ -185,7 +185,7 @@ export const prayerTopics: Topic[] = [
     explanation: [
       "A prayer of the whole day: “The Christian begins his day, his prayers, and his activities with the Sign of the Cross,” dedicating the day to God's glory (CCC 2157).",
       "An ancient practice: around the year 200, Tertullian wrote that Christians, at every step and in all the ordinary actions of daily life, “trace upon the forehead the sign” (De Corona 3).",
-      "Baptism: at the start of Baptism, the sign of the cross “marks with the imprint of Christ the one who is going to belong to him” (CCC 1235). Christians are baptized “in the name of the Father, and of the Son, and of the holy Spirit” (Matthew 28:19).",
+      "Baptism: at the start of Baptism, the sign of the cross “marks with the imprint of Christ the one who is going to belong to him” (CCC 1235). Christians are baptized in the name of the Father, the Son, and the Holy Spirit (Matthew 28:19).",
       "A sacramental: the Church's blessings and other sacramentals often include “the sign of the cross, or the sprinkling of holy water (which recalls Baptism)” (CCC 1668). Many Catholics sign themselves with holy water on entering a church.",
       "Not a charm: the sign expresses faith and asks God's grace; it is not a magical gesture. How to make it, and its place at Mass, are explained in “Why does Mass begin with the Sign of the Cross?”",
     ],
@@ -221,7 +221,7 @@ export const prayerTopics: Topic[] = [
       "Contemplation, not mere repetition: the Rosary is “essentially a contemplative prayer” (Directory on Popular Piety 197); “Christian prayer tries above all to meditate on the mysteries of Christ, as in lectio divina or the rosary” (CCC 2708). It grew up in medieval Western piety (CCC 2678).",
       "Local customs: some add the prayer associated with Fatima after each decade, and closing prayers vary by local custom (Rosarium Virginis Mariae 35). The Church also esteems other approved Marian prayers and chaplets (Directory on Popular Piety 202).",
       "Devotions like this are recommended, not required: the Church calls such pious exercises optional, while warning against undervaluing them (Directory on Popular Piety 12).",
-      "Doesn't Jesus forbid repetitive prayer? Jesus said, “In praying, do not babble like the pagans, who think that they will be heard because of their many words” (Matthew 6:7). His warning concerns trying to win God over by the number of words. Scripture also shows prayer that repeats: in Gethsemane Jesus “prayed a third time, saying the same thing again” (Matthew 26:44), and in heaven the living creatures never stop exclaiming, “Holy, holy, holy” (Revelation 4:8). The Catechism teaches that when a prayer is “repeated often by a humbly attentive heart, the prayer is not lost by heaping up empty phrases” (CCC 2668).",
+      "Doesn't Jesus forbid repetitive prayer? Jesus warned against piling up empty words in prayer, as the pagans do, thinking they will be heard because they say so much (Matthew 6:7). His warning concerns trying to win God over by the number of words. Scripture also shows prayer that repeats: in Gethsemane Jesus prayed a third time using the same words (Matthew 26:44), and in heaven the living creatures cry day and night that God is holy, holy, holy (Revelation 4:8). The Catechism teaches that when a prayer is “repeated often by a humbly attentive heart, the prayer is not lost by heaping up empty phrases” (CCC 2668).",
     ],
     teaching: {
       catechism: [

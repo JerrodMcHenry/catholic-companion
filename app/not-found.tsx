@@ -10,7 +10,7 @@ export default function NotFound() {
           <CardLink href="/" title="Home" />
         </li>
         <li>
-          <CardLink href="/explore" title="Explore all subjects" />
+          <CardLink href="/explore" title="Learn the Faith" />
         </li>
       </ul>
     </>

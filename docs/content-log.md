@@ -978,6 +978,11 @@ For a person to watch or listen to before approval. None has been reviewed beyon
 | Your Questions About Cremation and Burial: Answered | Fr. Mike Schmitz | https://ascensionpress.com/blogs/podcasts/your-questions-about-cremation-and-burial-answered | catholic-funerals-and-grief | Practical Q&A | No transcript; may predate the 2023 note |
 | Jesus was the Angel of the Lord in the Old Testament? | Sam Shamoun (clip on the "Essence of Faith" channel) | https://www.youtube.com/watch?v=vgQIGKSX1JI | divinity-of-jesus, trinity-in-scripture | Old Testament theophanies | Third-party clip channel, not Shamoun's own; earlier audit noted errors and inflammatory rhetoric in his material |
 | What Good Does Adoration Do? | Fr. James Boric with Cy Kellett (Catholic Answers Focus, 2021) | https://www.catholic.com/audio/caf/what-good-does-adoration-do | eucharistic-adoration | Good practical guidance (start with 15 minutes, bring questions, read a Gospel, sit in silence); welcomes non-Catholics | Full published transcript read (not listened to). It credits perpetual adoration with large drops in murders in Ciudad Juárez and Baltimore; those figures were not verified, though the speaker grants other factors and a small sample. Moved here from verified resources for a human decision. |
+| Spiritual Warfare (16-track conference series) and other conferences | Fr. Chad Ripperger | https://sensustraditionis.org/multimedia/conferences/ | spiritual-warfare, temptation, capital-sins | Principal intended contributor; Thomistic treatment of virtue, vice, and spiritual warfare | Audio only, "PenanceWare" (a $1 offering, a decade of the Rosary, or a penance per file); no transcripts; not listened to. The site asks others to link to the page, not to the files. |
+| The 5 Levels of Spiritual Combat (Chris Stefanick Show) | Fr. Chad Ripperger | https://watch.formed.org/september-29-sts-michael-gabriel-and-raphael/videos/the-5-levels-of-spiritual-combat-w-fr-chad-ripperger-chris-stefanick-show | spiritual-warfare | Interview on ordinary and extraordinary spiritual combat | FORMED subscription; no transcript |
+| Levels of Spiritual Warfare (talk; transcript posted by WQPH) | Fr. Chad Ripperger | https://wqphradio.org/2020/09/fr-ripperger-levels-of-spiritual-warfare | temptation | Reportedly treats ordinary temptation as the basic level of spiritual warfare | Third-party transcript, not checked against the recording |
+| Shawn Ryan Show #285; Tucker Carlson interview | Fr. Chad Ripperger | (third-party transcripts only: singjupost.com, happyscribe.com) | exorcism-and-deliverance | High-profile long interviews | Unofficial transcripts; focused on extraordinary cases; not appropriate to cite without review of the original recordings |
+| Dominion: The Nature of Diabolic Warfare; Deliverance Prayers for Use by the Laity | Fr. Chad Ripperger (Sensus Traditionis Press) | https://sentradpress.com/product/deliverance-prayers-for-use-by-the-laity/ | spiritual-warfare | Books named in the brief | Paid books; not read. Publisher page mentions an imprimatur (details not verified). Introduction to the Science of Mental Health was not found on the publisher's site. |
 
 Not found with a verifiable direct URL this session: Scott Hahn, John Bergsma, Steve Ray, William Albrecht, Edward Feser, and a Bishop Barron video on these topics. A search for Shamoun returned mostly AI-generated summaries of clips (not used).
 
@@ -991,6 +996,45 @@ Not found with a verifiable direct URL this session: Scott Hahn, John Bergsma, S
 - **Multimedia:** the Adoration podcast's full transcript was read; it was moved to the human-review queue (see above) because of unverified statistical claims. No verified audio or video recommendations were added in the last two passes; the queue now has 16 candidates.
 - **Corrections:** Genesis 9:16 ("the everlasting covenant"); CCC 245 page link.
 - **Resources added (5):** Irenaeus, Against Heresies 4.9; Augustine, On the Morals of the Catholic Church; Aquinas, Summa Theologiae I–II q.61; Ignatius, To Polycarp; Augustine, City of God 22. Four new search regression checks (274 total).
+
+## Mission, homepage, and navigation refinement (2026-11-25)
+
+- **Homepage** (`app/page.tsx`):
+  - Opening: "Discover the Catholic Faith," followed by the God's-love message grounded in CCC 1, 27, and 355–357, and 1 John 4:19 (NABRE wording verified).
+  - Search is unchanged.
+  - "Life's Greatest Questions": seven collapsed questions, each with a real answer, Scripture and Catechism links (each CCC range checked against its vatican.va page), and links to existing topics.
+  - Cards: "Discover and Understand" (4); "Become and Live as a Catholic" (6); "Continue Learning" (Guided Learning, Trusted Catholic Resources). The three journey cards were removed from the homepage; the pathways are unchanged at /start.
+  - Footer: "Ad Majorem Dei Gloriam / For the greater glory of God" (`app/layout.tsx`).
+- **Navigation:** Explore is renamed "Learn the Faith," shortened to "Learn" in the phone tab bar; the route stays /explore. Back links and empty-state links are relabeled.
+- **Learn the Faith** (`app/explore/page.tsx`, `content/categories.ts`, `content/types.ts`): eight collapsed sections (Discover Catholicism; The Bible & Sacred Tradition; Common Questions & Objections; Becoming Catholic; Understanding the Mass; The Sacraments, with Confession first; Living the Catholic Faith; Go Deeper), followed by Guided Learning and Trusted Catholic Resources cards. Spiritual Warfare (section 8 in the approved design) is held until the section is approved and built.
+- **Category moves** (URLs unchanged): `what-is-sacred-tradition` and `salvation-history` now sit in "The Bible and Sacred Tradition" (formerly "The Bible"); the Sacraments category is its own section.
+- **Terminology:** "Common Questions & Objections" on the apologetics page; all 41 objections preserved.
+- **Search:** keywords added for personal questions (can God forgive me, has God abandoned me, why believe in God or Jesus, why a Church, why consider Catholicism, why am I here, and others).
+- **Spiritual Warfare:** Phase B coverage and source report at `docs/spiritual-warfare-research.md`, awaiting approval. No spiritual warfare content has been added.
+- **Permissions (open):** the app quotes the NABRE throughout but has no NABRE copyright notice. Secondary sources describe a 5,000-word allowance with a required notice; the USCCB/CCD terms and exact notice wording must be confirmed before launch.
+
+## Spiritual Warfare section (Phase D, 2026-11-25)
+
+- **Ten new topics** in category `spiritual-warfare` (`content/topics/spiritual-warfare.ts`): `spiritual-warfare`, `angels`, `satan-and-demons`, `temptation`, `capital-sins`, `discernment`, `sacramentals`, `daily-spiritual-life`, `occult-practices`, `exorcism-and-deliverance`. Christ's victory comes first (1 John 3:8; Colossians 2:15; CCC 2853); ordinary struggle is treated before anything extraordinary; temptation is distinguished from consent (de Sales, Introduction IV.3; CCC 2847).
+- **Sources read for these topics:** Catechism; canon 1172; the CDF letter of 1985; Directory on Popular Piety and the Liturgy 205–206, 215–217; Holy See Press Office, September 29, 2018 (prayer to St. Michael); Aquinas, ST I q. 57 a. 4, q. 113 a. 2, q. 114 a. 3; Cassian, Institutes V.1; Francis de Sales, Introduction IV.3 and IV.8; Ignatius, Spiritual Exercises (General Examen; Rules for Discernment, First Week, 3–5); Catholic Encyclopedia, "Miraculous Medal."
+- **Fr. Ripperger:** his free Virtues list (Sensus Traditionis) was read in full after extracting its text with macOS PDFKit, and it is linked from `capital-sins` as a study aid. No other material could be reviewed; it is listed in the review queue above. No claims are attributed to him.
+- **Excluded or qualified:** lay binding prayers, "Freemasonic curse" prayers, and suspected-oppression prayers (conflict with the safeguards); categories of diabolic influence, mentioned only as terms from exorcists' and pastoral literature, not defined in the Catechism or Code, and not diagnoses; no checklists, rituals, or prayer texts beyond links; Satan's rebellion described only as revealed (CCC 391–392); hierarchies of angels labeled as theological tradition; whether demons read thoughts labeled as Aquinas's opinion; scapular and medal promises framed within faith (DPP 205–206), not as guarantees; mental illness, addiction, intrusive thoughts, nightmares, and sleep paralysis explicitly not treated as evidence of demons (CCC 1673).
+- **Light additions:** `virtues` (the virtues opposed to the capital sins); related links from `virtues`, `confession`, `how-to-pray`, `what-is-a-sacrament`, `our-father`, `mortal-and-venial-sin`, and `problem-of-evil`.
+- **Navigation:** Spiritual Warfare is the eighth section of Learn the Faith (Go Deeper is ninth), and there is a compact homepage card linking to `/category/spiritual-warfare`.
+- **Search:** 23 new regression checks (297 total). "What is truth" is a documented content gap: no topic answers it directly, and the Holy Spirit topic ranks first through its alternative name "Spirit of truth"; `what-is-faith` covers it in part. Ranking was not forced.
+- **Corrections from verification:** James 1:14 and Luke 12:15 (exact NABRE wording).
+- **Permissions:** see `docs/permissions-inventory.md`. The NABRE digital use is unresolved, and the Catechism notice is needed.
+- **Counts:** 184 topics; 412 resources (+10).
+
+## Development closeout (2026-11-25)
+
+- **New topic `what-is-truth`** (faith-and-reason): what truth is (Aquinas, ST I q. 16 a. 2); objective truth versus opinion; whether we can know truth (CCC 2467, 31–36); faith and reason (Fides et Ratio, opening; CCC 159); moral relativism (with the philosophical arguments labeled as such; Ratzinger, 2005 homily; CCC 160); Jesus as the truth (John 14:6; John 18:37–38; CCC 2466; Augustine, Confessions X.23); philosophy distinguished from revealed faith (CCC 156); how to investigate honestly. Searching "what is truth" now finds it first; Holy Spirit searches are unchanged.
+- **Scripture permissions:** all reproduced NABRE quotations in topics and on the homepage were replaced with independently written explanations, keeping references, meaning, connections, and USCCB links. The homepage verse is now the public-domain Douay-Rheims (labeled). Remaining quotation marks near Scripture references were reviewed by hand and are not NABRE.
+- **Acknowledgments:** the USCCB's prescribed Catechism notice and ICEL's Roman Missal excerpt notice, word for word, plus an accurate note on how Scripture is handled, now appear in the footer. No NABRE permission is claimed.
+- **Order of Christian Funerals:** the one ICEL quotation was paraphrased.
+- **Fr. Ripperger:** limitations accepted. The Virtues document stays as a supplementary resource; other materials remain in the review queue. The Spiritual Warfare section rests on Scripture, Church teaching, and verified spiritual writers, not primarily on his work.
+- **Documentation:** `docs/permissions-inventory.md` (updated with policies, resolutions, and open items) and the new `docs/review-checklist.md`.
+- **Counts:** 185 topics; 415 resources; 41 objections. No topic or resource was removed relative to the V1 commit.
 
 ## Phase 8 review requirements (consolidated)
 
