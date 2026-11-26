@@ -39,4 +39,36 @@ export const catholicLife: Topic[] = [
     resources: ["ca-attending-mass-mortal-sin", "osv-receive-communion"],
     related: ["mortal-and-venial-sin", "how-to-go-to-confession", "returning-to-the-church", "who-can-receive-communion"],
   },
+  {
+    slug: "fasting-and-abstinence",
+    title: "Fasting and Abstinence",
+    question: "What are the rules for fasting and abstinence?",
+    alsoKnownAs: ["Friday abstinence", "Lenten fasting"],
+    category: "catholic-life",
+    keywords: ["fasting", "abstinence", "no meat on Fridays", "Friday abstinence", "Lenten fasting rules", "fast on Ash Wednesday", "Good Friday fast", "who has to fast", "age for fasting", "excused from fasting", "fish on Fridays", "penance"],
+    summary:
+      "In the United States, Latin Catholics fast and abstain from meat on Ash Wednesday and Good Friday, and abstain from meat on the Fridays of Lent. Fasting binds those aged 18 to 59 and allows one full meal and two smaller meals; abstinence binds those 14 and older. Every Friday of the year remains a day of penance. The sick, pregnant or nursing women, and others with serious reasons are excused.",
+    explanation: [
+      "Why Catholics fast: “The divine law binds all the Christian faithful to do penance each in his or her own way,” and common penitential days unite the Church (canon 1249). These days “help us acquire mastery over our instincts and freedom of heart” (CCC 2043).",
+      "The rules in the United States: “Ash Wednesday and Good Friday are obligatory days of fasting and abstinence for Catholics. In addition, Fridays during Lent are obligatory days of abstinence.” Fasting binds from age 18 until age 59; “a person is permitted to eat one full meal, as well as two smaller meals that together are not equal to a full meal.” Abstinence from meat binds from age 14 onwards (USCCB).",
+      "What abstinence means: abstaining from meat; eggs, milk products, and condiments made from animal fat are not forbidden (Paenitemini, norm III). When a solemnity falls on a Friday, abstinence is not required (canon 1251).",
+      "Fridays all year: every Friday is a penitential day (canon 1250). The U.S. bishops ended the year-round law of Friday abstinence in 1966 but said that “Friday itself remains a special day of penitential observance throughout the year,” giving “first place” to voluntary abstinence from meat while allowing other works of penance and charity (Pastoral Statement on Penance and Abstinence 22–24; canon 1253).",
+      "Who is excused: the U.S. bishops list the physically or mentally ill, including people with chronic illnesses such as diabetes, and pregnant or nursing women. Members of the Eastern Catholic Churches follow the law of their own Church. Parents and pastors should teach children the meaning of penance even before they are bound (canon 1252).",
+      "Health first: fasting is a spiritual practice, not a diet. If fasting could harm your health, including if you have or have had an eating disorder, speak with a doctor and a priest. On Good Friday, many continue the fast until the Easter Vigil as the “paschal fast” (USCCB).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1434–1438", url: ccc("__P4B") },
+        { paragraphs: "2041–2043", url: ccc("__P75") },
+      ],
+      scripture: [
+        { passage: "Matthew 6:16–18", url: bible("matthew/6") },
+        { passage: "Matthew 4:1–2", url: bible("matthew/4") },
+        { passage: "Isaiah 58:6–7", url: bible("isaiah/58") },
+      ],
+      documents: ["canon-law-sunday", "paenitemini", "usccb-penance-abstinence"],
+    },
+    resources: ["usccb-fast-abstinence"],
+    related: ["lent", "ash-wednesday", "holy-week", "how-to-go-to-confession"],
+  },
 ];

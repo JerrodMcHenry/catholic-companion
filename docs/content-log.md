@@ -689,6 +689,92 @@ One entry per topic. **Status values:** *Draft* (researched, written, and verifi
 | `human-life-dignity` | The sentence on legitimate defense (CCC 2263) |
 | `what-is-catholic-social-teaching` | Whether the seven USCCB themes should be shown alongside the four Compendium principles |
 
+## Batch 15: Prayer, the Church year, and Catholic life (2026-11-25)
+
+**Batch 14 follow-ups:**
+
+- **Multimedia inventory (registry-wide).** Before this batch there were 21 multimedia items (19 videos, 2 podcasts); the evidence comes from this log's per-batch method notes.
+  - **Content or transcript reviewed: none.** No record shows a transcript or a full viewing for any item. A fresh attempt this batch to read YouTube transcripts in a browser (the transcript request, the "Show transcript" panel by script, and by a real click) returned nothing.
+  - **Title, description, or listing only (documented):**
+    - YouTube oEmbed title and channel: `video-why-jesus-had-to-die`, `video-barron-resurrection` (Batch 1 method); `video-ascension-mortal-venial`, `video-ascension-need-confession` (Batch 5 method).
+    - Page metadata or the episode page's opening text: `ascension-why-confess-to-a-priest` (Batch 5), `ascension-bible-in-a-year` (Batch 7), `ascension-purgatory` (Batch 9).
+  - **Verification status unknown (no method recorded):**
+    - Phase 2–4 topics: `video-where-do-i-start`, `video-barron-real-presence`, `video-akin-white-sola-scriptura`, `video-barron-oconnor-evil`.
+    - Batch 2 additions, which have no resource-method note: `video-aquinas101-faith-reason`, `video-mass-explained-arlington`, `video-mass-pitre`, `video-springfield-receiving-communion`, `video-dominicast-communion`.
+  - **Deferred and removed (5):** the flagged Aquinas 101 videos `video-a101-what-is-a-sacrament`, `-baptism`, `-confirmation`, `-mortal-venial`, `-seal-of-confession`. This applies the Batch 13–14 precedent.
+    - `why-confess-to-a-priest` now lists the Apostolic Penitentiary's 2019 Note on the sacramental seal (section 1 read).
+    - The other affected topics keep their readable resources (Catholic Answers, Loyola Press, the Didache).
+  - **Remaining 16 items:** kept, and listed for Phase 8. Their content cannot be checked with the tools available here, so a person needs to watch or listen to each before launch.
+- **Bookmarks:** checked on the Saved page with three removed video ids alongside valid entries. The valid items display, and the page reports "3 saved items are no longer available" with an option to remove them.
+- **Pastoral resource:** the USCCB page "Abortion Healing" (`usccb-abortion-healing`) was read in full; it is a USCCB page in its Pro-Life Activities section. It describes Project Rachel Ministry as "the U.S. Catholic Church's outreach to those who have been involved in abortion": a diocesan network offering referrals to Reconciliation, pastoral counseling, support groups, retreats, and referrals to licensed mental health professionals, "open to people of all faiths or no faith."
+  - Added to `abortion`, with one sentence in its mercy section.
+  - Diocesan Project Rachel pages (Washington, Arlington) were found but not read in full, so they are not cited.
+- **Death, heaven, and hell resources** (each read in full):
+  - `what-happens-when-we-die`: Catholic Answers, "Particular Judgment Versus Final Judgment."
+  - `heaven`: Jimmy Akin, "What Is Heaven Really Like?" (Catholic Answers, 2005), which compares popular images of heaven with Scripture and CCC 1024–1028.
+  - `hell`: E. Christian Brugger, "How Is Eternal Damnation Consistent With an All-Loving God?" (National Catholic Register, 2025), grounded in CCC 1033 and Lateran IV.
+  - Not used: Tim Staples, "What Is Hell?" (frames hell as a dispute with named Catholics); the Register's "10 Things" list (its text did not load); the Opus Dei page (blocked).
+
+**Built:** all 16 Batch 15 topics. There were no assignment discrepancies and no debate sections.
+
+- **New files:**
+  - `content/topics/prayer.ts` (category Prayer): `what-is-prayer`, `how-to-pray`, `basic-catholic-prayers`, `our-father`, `hail-mary`, `sign-of-the-cross`, `the-rosary`.
+  - `content/topics/church-year.ts` (category The Church Year): `liturgical-year`, `advent`, `lent`, `ash-wednesday`, `holy-week`, `easter-vigil`, `holy-days-of-obligation`.
+- **Added to existing files:** `fasting-and-abstinence` (`catholic-life.ts`) and the promoted `after-becoming-catholic` (`becoming-catholic.ts`).
+- **Distinctions maintained:**
+  - Requirements versus devotions: the Rosary, the Advent wreath, giving something up for Lent, and Holy Week processions are described as optional or customary (Directory on Popular Piety 12, 98, 138). Obligations come from canon law and the U.S. complementary norms, and `after-becoming-catholic` separates the precepts (CCC 2041–2043, "the indispensable minimum") from recommendations.
+  - Universal versus local: the universal holy-day list (canon 1246) versus the U.S. list; the U.S. fasting norms versus Eastern Catholic law; local Advent and Holy Week customs.
+  - No mechanical guarantees (CCC 2725, 2766; the Sign of the Cross is "not a charm"). No single spirituality required (CCC 2672; the Rosary schedule is "not intended to limit a rightful freedom," Rosarium Virginis Mariae 38).
+  - Spiritual versus medical: `how-to-pray` and `fasting-and-abstinence` direct readers to a doctor or counselor for health concerns, and the fasting exemptions follow the USCCB's own list.
+- **D6 (prayer texts):** the traditional English texts of the Sign of the Cross, the Glory Be, the Our Father, and the Hail Mary are quoted from Appendix A of the Compendium of the Catechism (vatican.va). Per D6, they are flagged for review.
+- **Small changes:**
+  - `mass-sign-of-the-cross` was retitled "The Sign of the Cross at Mass" so that it is distinct from the new general topic.
+  - Removed alias "Mystagogy" from `stages-of-ocia` (now its own topic) and alias "Eastern Orthodox Church" from `catholic-and-orthodox-differences` (the Eastern Orthodoxy page had led that query by 0.2 points and fell behind as the index grew).
+  - "Start here" now includes `how-to-pray` (pathway 8.1, now complete).
+  - The National Statutes note now mentions Norm 13.
+
+**Resources:**
+
+- **Added (20):**
+  - Documents: Rosarium Virginis Mariae; Directory on Popular Piety and the Liturgy; General Norms for the Liturgical Year (text at Catholic Culture); Paschale Solemnitatis (text at the Liturgy Office of England and Wales; the vatican.va address returned 404); Paenitemini; USCCB Pastoral Statement on Penance and Abstinence (1966); USCCB complementary norm on holy days (canon 1246); the Apostolic Penitentiary note on the seal.
+  - USCCB pages: How to Pray the Rosary, Liturgical Year and Calendar, What Is Advent?, What Is Lent?, Fast and Abstinence, Why Ashes? (PDF), Abortion Healing.
+  - Catholic Answers: How to Pray the Rosary; Particular Judgment Versus Final Judgment; Akin on heaven.
+  - National Catholic Register: Brugger on hell.
+  - Tertullian, De Corona (New Advent).
+- **Removed (5):** the five Aquinas 101 videos (reasons above).
+- **Not used:** Ascension, "A Sinner's Guide to Catholic Prayer" (read; it calls novenas "super prayers" with confidence of being answered, which conflicts with the standard on guarantees); Catholic Answers, "The Rosary" (read; much of it argues against Protestant readings of the Creed rather than explaining the Rosary).
+- **Diversity:** official sources dominate this batch (Vatican, USCCB, the England and Wales bishops' Liturgy Office), with Catholic Answers, the National Catholic Register, and New Advent. No further publisher was added merely for variety.
+
+**Verification (Batch 15):**
+
+- **Catechism:** quotations checked against the vatican.va cache (524, 540, 971, 1075, 1163–1173, 1194, 1233–1244, 1430–1438, 1458, 1667–1674, 2041–2043, 2157, 2177–2185, 2447, 2559–2565, 2644, 2672, 2676–2678, 2690, 2698–2731, 2759–2766, 2786, 2803, 2864–2865). All 389 linked references checked (0 problems).
+- **Canon law:** canons 1246–1253 (vatican.va).
+- **U.S. norms**, read in a browser because usccb.org refuses scripted requests:
+  - The holy-days decree, including the Saturday/Monday rule and the Ascension transfer.
+  - The Fast and Abstinence page.
+  - The 1966 Pastoral Statement, nos. 22–26.
+  - The complementary norm to canon 1253 (fasting age amended to 18).
+  - The Lent, Advent, Rosary, and Liturgical Year pages.
+  - The "Why Ashes?" and fasting PDFs, read directly.
+- **Documents:**
+  - Rosarium Virginis Mariae 19, 21, 33–38; Directory on Popular Piety 11–12, 96–99, 124–125, 138, 197–202.
+  - General Norms 1, 18–22, 27–31, 39–43, 48; Paschale Solemnitatis 27–28, 38–39, 45, 58–64, 77–89.
+  - National Statutes for the Christian Initiation of Adults, Norms 1–18 (PDF); Compendium Appendix A; Tertullian, De Corona 3.
+- **Scripture:** new NABRE quotations checked on bible.usccb.org (Matthew 6:6; Luke 1:28, 1:42).
+- **Links:** all new resource URLs respond (usccb.org only in a browser).
+- **Search:** 216 of 216 regression checks pass (21 new, one superseded "mystagogy" check updated). **Build:** 193 static pages; 2,354 internal links, 0 problems.
+- **Accessibility:** 28 pages audited: 0 issues. The keyboard reaches the skip link, header, breadcrumb, Save, and the disclosure.
+- **Layout:** screenshots at 320 px (light and dark), 390 px (dark), and 1280 px (light and dark).
+
+| Topic | Open questions for review |
+|---|---|
+| `basic-catholic-prayers`, `our-father`, `hail-mary`, `sign-of-the-cross` | **D6:** quoted traditional prayer texts (Compendium Appendix A) |
+| `the-rosary` | Whether to list the Hail, Holy Queen and closing prayer (USCCB) as customary |
+| `fasting-and-abstinence` | **R:** Friday penance outside Lent; the exemptions wording; the health note |
+| `holy-days-of-obligation` | Ascension practice by province; the 2024 Vatican response on transferred holy days was seen only in a news report and is not used |
+| `after-becoming-catholic` | **R:** obligations versus recommendations; the OCIA ritual's own text on mystagogy (OCIA 244–251) has not been read |
+| `easter-vigil` | Its statement that the Vigil satisfies the Easter obligation rests on canon 1248 §1 |
+
 ## Pending verification (carried forward)
 
 These stay open until checked against an authoritative source; topics describe them cautiously until then. Apart from the homily resource, these items were not re-researched in Batch 5.
@@ -711,14 +797,14 @@ These stay open until checked against an authoritative source; topics describe t
 - **Orthodox source standard** (for Batch 11): use Orthodox-authored primary or representative sources. Distinguish Eastern Orthodoxy from Oriental Orthodoxy and from the Eastern Catholic Churches, and represent differences between jurisdictions. The Ravenna Document is a joint commission text, not an official declaration of either Church, and is not to be used as the Orthodox position.
 - Hindu, Buddhist and Sikh introductions for `salvation-of-non-christians` and `do-all-religions-lead-to-god` (decided in Batch 10; written in Batch 13 from sources representing each tradition's own beliefs).
 - Universalism: a post-launch coverage item (decided after Batch 12); the launch curriculum is not expanded for it.
-- Aquinas 101 videos verified only from descriptions (`video-a101-what-is-a-sacrament`, `-baptism`, `-confirmation`, `-mortal-venial`, `-seal-of-confession`): review their content. “The Triune God” (Batch 13) and the grace and last-things videos (Batch 14) were deferred and removed.
-- `what-happens-when-we-die`, `heaven`, and `hell` have no recommended resources since Batch 14; find verified replacements.
-- A verified Project Rachel or other post-abortion healing resource, with its operator confirmed.
+- **Phase 8, multimedia:** the 16 remaining videos and podcasts (see the Batch 15 inventory) need a person to watch or listen to them before launch; none has had its content reviewed. All eight Aquinas 101 videos have been deferred and removed (Batches 13–15).
+- The OCIA ritual text on mystagogy (OCIA 244–251), not yet read; `after-becoming-catholic` relies on the National Statutes and the Catechism meanwhile.
+- The USCCB pages are reachable only in a browser; future link checks need one.
 - Hindu, Buddhist, and Sikh tradition pages and formal debate perspectives (after launch; introductory coverage done in Batch 13).
 - A verified source on the authenticity debate over Josephus, Antiquities 18.3.3 (the Testimonium), before it is quoted.
 - Evangelicals and Catholics Together (1994): a possible source for evangelical–Catholic agreement, not yet opened at a working address.
 - bible.usccb.org and usccb.org now refuse scripted requests, so future verification of these sources needs a browser.
-- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections, in Batch 13 human origins and original sin, the Hindu, Buddhist, Sikh, Islamic, and Jewish summaries, and the pluralism topics, and in Batch 14 abortion and sexuality.
+- Theological review (**R**): the Mass as sacrifice (including the Reformed and Lutheran summaries), transubstantiation, “my sacrifice and yours,” grave matter and culpability, canon 915, the necessity of Baptism, who can receive Communion, previously married candidates, the pastoral tone of the returning-Catholic and mortal-sin pages, papal primacy and infallibility, the fairness of the Protestant and Orthodox summaries in Batch 8, in Batch 9 the teaching on hell, salvation outside the Church, and justification, and in Batch 11 the Orthodox, Jewish, and Islamic summaries and the Eastern Orthodoxy and Judaism pages, in Batch 12 hell, the historical and Islamic treatments of the crucifixion and Resurrection, and the faith-and-works and Marian sections, in Batch 13 human origins and original sin, the Hindu, Buddhist, Sikh, Islamic, and Jewish summaries, and the pluralism topics, in Batch 14 abortion (including complex medical situations and direct abortion), sexuality and chastity, same-sex attraction and culpability, contraception, and human dignity, and in Batch 15 the quoted prayer texts (D6), fasting and abstinence, and the obligations in `after-becoming-catholic`. Original sin and human origins, and salvation and religious pluralism, remain open from Batch 13.
 
 ## Earlier topics (Phases 2–4)
 

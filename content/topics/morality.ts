@@ -185,7 +185,7 @@ export const morality: Topic[] = [
       "What “direct” means: the teaching concerns abortion “willed either as an end or a means” (CCC 2271). Complex medical situations require careful moral reasoning, and this general page cannot settle any particular case.",
       "An early witness: the Didache, one of the earliest Christian writings, says, “you shall not murder a child by abortion nor kill that which is begotten” (Didache 2). The Letter to Diognetus describes Christians as those who “beget children; but they do not destroy their offspring.”",
       "Mercy, not only law: the Church attaches the canonical penalty of excommunication to procuring a completed abortion, but “the Church does not thereby intend to restrict the scope of mercy” (CCC 2272). Pope Francis granted all priests the faculty to absolve the sin of procured abortion (Misericordia et Misera 12).",
-      "To women who have had an abortion, St. John Paul II wrote: “Certainly what happened was and remains terribly wrong. But do not give in to discouragement and do not lose hope… The Father of mercies is ready to give you his forgiveness and his peace in the Sacrament of Reconciliation” (Evangelium Vitae 99).",
+      "To women who have had an abortion, St. John Paul II wrote: “Certainly what happened was and remains terribly wrong. But do not give in to discouragement and do not lose hope… The Father of mercies is ready to give you his forgiveness and his peace in the Sacrament of Reconciliation” (Evangelium Vitae 99). In the United States, Project Rachel Ministry, “a diocesan-based network of priests, religious, counselors, and laypeople,” offers confidential help to anyone who has been involved in an abortion, “open to people of all faiths or no faith” (USCCB).",
       "Objective wrong and personal responsibility are distinct: many factors can lessen a person's culpability, which only God judges (CCC 1735, 1861). This page explains the Church's general teaching; it is not personal pastoral, medical, or legal advice. For a particular situation, speak with a priest.",
     ],
     teaching: {
@@ -200,7 +200,7 @@ export const morality: Topic[] = [
       ],
       documents: ["evangelium-vitae", "misericordia-et-misera"],
     },
-    resources: ["ca-abortion-early-church", "didache"],
+    resources: ["usccb-abortion-healing", "ca-abortion-early-church", "didache"],
     related: ["human-life-dignity", "confession", "returning-after-mortal-sin", "mortal-and-venial-sin"],
   },
   {

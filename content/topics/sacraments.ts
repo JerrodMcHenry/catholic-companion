@@ -35,7 +35,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["catechism-vatican", "sacrosanctum-concilium"],
     },
-    resources: ["video-a101-what-is-a-sacrament", "ca-seven-sacraments"],
+    resources: ["ca-seven-sacraments"],
     related: ["seven-sacraments", "baptism", "what-is-the-eucharist", "mass-holy-water"],
   },
   {
@@ -102,7 +102,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["canon-law-sacraments"],
     },
-    resources: ["video-a101-baptism", "didache"],
+    resources: ["didache"],
     related: ["infant-baptism", "confirmation", "seven-sacraments", "mass-holy-water", "how-to-become-catholic"],
   },
   {
@@ -134,7 +134,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["pastoralis-actio", "canon-law-sacraments"],
     },
-    resources: ["ca-early-infant-baptism", "video-a101-baptism"],
+    resources: ["ca-early-infant-baptism"],
     related: ["baptism", "confirmation", "catechumen-or-candidate", "are-catholics-christians"],
     debate: {
       catholicPosition: {
@@ -206,7 +206,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["canon-law-eucharist"],
     },
-    resources: ["video-a101-confirmation", "loyola-seven-sacraments"],
+    resources: ["loyola-seven-sacraments"],
     related: ["who-is-the-holy-spirit", "baptism", "seven-sacraments", "how-to-become-catholic"],
   },
   {
@@ -563,9 +563,9 @@ export const sacraments: Topic[] = [
         { passage: "2 Corinthians 5:18–20", url: bible("2corinthians/5") },
         { passage: "James 5:16", url: bible("james/5") },
       ],
-      documents: ["canon-law-penance", "reconciliatio-et-paenitentia"],
+      documents: ["canon-law-penance", "reconciliatio-et-paenitentia", "apostolic-penitentiary-seal"],
     },
-    resources: ["ascension-why-confess-to-a-priest", "video-a101-seal-of-confession"],
+    resources: ["ascension-why-confess-to-a-priest"],
     related: ["confession", "how-to-go-to-confession", "bishops-priests-deacons", "sola-scriptura"],
     debate: {
       catholicPosition: {
@@ -685,7 +685,7 @@ export const sacraments: Topic[] = [
       ],
       documents: ["reconciliatio-et-paenitentia"],
     },
-    resources: ["video-ascension-mortal-venial", "video-a101-mortal-venial", "ca-do-venial-sins-matter"],
+    resources: ["video-ascension-mortal-venial", "ca-do-venial-sins-matter"],
     related: ["confession", "how-to-go-to-confession", "returning-after-mortal-sin", "who-can-receive-communion"],
   },
   {

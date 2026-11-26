@@ -167,7 +167,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: [],
+    resources: ["ca-particular-final-judgment"],
     related: ["heaven", "purgatory", "hell", "resurrection"],
   },
   {
@@ -196,7 +196,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: [],
+    resources: ["ca-heaven-akin"],
     related: ["what-happens-when-we-die", "purgatory", "what-is-a-saint", "resurrection"],
   },
   {
@@ -225,7 +225,7 @@ export const salvation: Topic[] = [
       ],
       documents: ["spe-salvi"],
     },
-    resources: [],
+    resources: ["ncr-brugger-hell"],
     related: ["what-happens-when-we-die", "mortal-and-venial-sin", "heaven", "problem-of-evil"],
     debate: {
       catholicPosition: {

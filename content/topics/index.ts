@@ -4,6 +4,7 @@ import { apologeticsTopics } from "./apologetics";
 import { becomingCatholic } from "./becoming-catholic";
 import { bibleTopics } from "./bible";
 import { catholicLife } from "./catholic-life";
+import { churchYear } from "./church-year";
 import { church } from "./church";
 import { creationTopics } from "./creation";
 import { faithAndReason } from "./faith-and-reason";
@@ -14,6 +15,7 @@ import { maryAndSaints } from "./mary-and-saints";
 import { mass } from "./mass";
 import { massOrder, massParts } from "./mass-parts";
 import { morality } from "./morality";
+import { prayerTopics } from "./prayer";
 import { sacraments } from "./sacraments";
 import { salvation } from "./salvation";
 
@@ -31,6 +33,8 @@ export const topics = [
   ...massParts,
   ...becomingCatholic,
   ...catholicLife,
+  ...prayerTopics,
+  ...churchYear,
   ...morality,
   ...faithAndReason,
   ...apologeticsTopics,
@@ -49,6 +53,7 @@ export const startHere = [
   "what-is-the-bible",
   "seven-sacraments",
   "what-happens-at-mass",
+  "how-to-pray",
   "how-to-become-catholic",
 ];
 

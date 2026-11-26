@@ -217,7 +217,7 @@ export const massParts: Topic[] = [
   },
   {
     slug: "mass-sign-of-the-cross",
-    title: "The Sign of the Cross",
+    title: "The Sign of the Cross at Mass",
     question: "Why does Mass begin with the Sign of the Cross?",
     alsoKnownAs: ["In the name of the Father"],
     category: "mass",

@@ -191,7 +191,7 @@ export const church: Topic[] = [
     slug: "catholic-and-orthodox-differences",
     title: "Catholics and Orthodox",
     question: "How are Catholics and Orthodox different?",
-    alsoKnownAs: ["Catholic vs. Orthodox", "Differences between Catholics and Orthodox", "Eastern Orthodox Church", "Great Schism"],
+    alsoKnownAs: ["Catholic vs. Orthodox", "Differences between Catholics and Orthodox", "Great Schism"],
     category: "church",
     keywords: ["Catholic vs Orthodox", "difference between Catholic and Orthodox", "Eastern Orthodox", "Orthodox Church", "Great Schism", "1054", "filioque", "papal primacy", "Patriarch", "Ecumenical Patriarch", "Eastern Catholic", "can Orthodox receive communion", "reunion"],
     summary:

@@ -1,6 +1,6 @@
 # Catholic Companion — Master Curriculum
 
-**Status:** approved with revisions (Phase 7). Batches 1–14 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions; Moral life) are built: 139 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
+**Status:** approved with revisions (Phase 7). Batches 1–15 (Foundations launch, First Mass, Mass parts I and II, Sacraments and the remaining Mass parts, OCIA and returning Catholics, Sacred Scripture, Apologetics I; Mary, saints, and salvation; Apologetics II and III; Apologetics IV; Faith, reason, creation, and other religions; Moral life; Prayer, the Church year, and Catholic life) are built: 155 new topics, marked ✓ like the 6 built earlier. In Batch 5 the last seven Mass parts were promoted from P2 to P1, so all 41 Mass part topics are now launch topics and built. Debate sections for topics marked **D** are written in their apologetics batches. Verification details and review status are in `docs/content-log.md`; no topic has yet received external theological review.
 **Revision history:** Phase 6 first draft; Phase 7 added 35 topics and 6 traditions, corrected the authority labels, distinguished required, optional, and customary liturgical actions, added dedicated Protestant, Orthodox, Jewish, and Islamic curricula, and replaced estimated counts with counts generated from the inventory. Batch 5 promoted seven Mass parts to P1 (157 → 164 P1 topics; 422 in all).
 **Scope:** the complete plan of subjects, topics, pathways, sources, and process for Catholic Companion.
 **Guiding principle:** comprehensive Catholic knowledge, minimal interface, minimal codebase.
@@ -371,13 +371,13 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `what-is-prayer` | What is prayer? | | B | P1 | `how-to-pray` | |
-| `how-to-pray` | How do I start praying? | | B | P1 | `basic-catholic-prayers` | |
-| `basic-catholic-prayers` | What prayers do Catholics know by heart? | Common prayers | B | P1 | `our-father`, `hail-mary` | Links to official texts; see D6 |
-| `our-father` | What does the Our Father mean? | Lord's Prayer | B | P1 | `mass-lords-prayer` | |
-| `hail-mary` | What does the Hail Mary mean? | Ave Maria | B | P1 | `the-rosary` | |
-| `sign-of-the-cross` | Why do Catholics make the Sign of the Cross? | | B | P1 | `mass-sign-of-the-cross` | |
-| `the-rosary` | How do I pray the Rosary? | Mysteries of the Rosary | B | P1 | `hail-mary` | Objection handled in `repetitive-prayer` |
+| `what-is-prayer` ✓ | What is prayer? | | B | P1 | `how-to-pray` | |
+| `how-to-pray` ✓ | How do I start praying? | | B | P1 | `basic-catholic-prayers` | |
+| `basic-catholic-prayers` ✓ | What prayers do Catholics know by heart? | Common prayers | B | P1 | `our-father`, `hail-mary` | Links to official texts; see D6 |
+| `our-father` ✓ | What does the Our Father mean? | Lord's Prayer | B | P1 | `mass-lords-prayer` | |
+| `hail-mary` ✓ | What does the Hail Mary mean? | Ave Maria | B | P1 | `the-rosary` | |
+| `sign-of-the-cross` ✓ | Why do Catholics make the Sign of the Cross? | | B | P1 | `mass-sign-of-the-cross` | |
+| `the-rosary` ✓ | How do I pray the Rosary? | Mysteries of the Rosary | B | P1 | `hail-mary` | Objection handled in `repetitive-prayer` |
 | `kinds-of-prayer` | What kinds of prayer are there? | Vocal prayer, meditation, contemplation | I | P2 | `what-is-prayer` | |
 | `liturgy-of-the-hours` | What is the Liturgy of the Hours? | Divine Office, breviary | I | P2 | `the-psalms` | |
 | `daily-examen` | What is the daily examen? | Ignatian examen | B | P2 | `how-to-go-to-confession` | |
@@ -539,18 +539,18 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 
 | Slug | Question | Also called | Lvl | Pri | Related | Notes |
 |---|---|---|---|---|---|---|
-| `liturgical-year` | What is the liturgical year? | Church calendar | B | P1 | `liturgical-colors` | |
+| `liturgical-year` ✓ | What is the liturgical year? | Church calendar | B | P1 | `liturgical-colors` | |
 | `liturgical-colors` | What do the colors at Mass mean? | Vestment colors | B | P2 | `vestments` | |
-| `advent` | What is Advent? | | B | P1 | `christmas-season` | |
+| `advent` ✓ | What is Advent? | | B | P1 | `christmas-season` | |
 | `christmas-season` | How do Catholics celebrate Christmas? |  | B | P2 | `advent` | Pagan-origins claim handled in `is-catholicism-pagan` |
-| `lent` | What is Lent? | | B | P1 | `ash-wednesday` | |
-| `ash-wednesday` | Why do Catholics receive ashes? | | B | P1 | `lent` | |
-| `holy-week` | What is Holy Week? | Paschal Triduum | B | P1 | `easter-vigil` | |
-| `easter-vigil` | What happens at the Easter Vigil? | | B | P1 | `how-to-become-catholic` | |
+| `lent` ✓ | What is Lent? | | B | P1 | `ash-wednesday` | |
+| `ash-wednesday` ✓ | Why do Catholics receive ashes? | | B | P1 | `lent` | |
+| `holy-week` ✓ | What is Holy Week? | Paschal Triduum | B | P1 | `easter-vigil` | |
+| `easter-vigil` ✓ | What happens at the Easter Vigil? | | B | P1 | `how-to-become-catholic` | |
 | `easter-season` | What is the Easter season? | Eastertide | B | P2 | `pentecost` | |
 | `pentecost` | What is Pentecost? | | B | P2 | `who-is-the-holy-spirit` | |
 | `ordinary-time` | What is Ordinary Time? | | B | P2 | `liturgical-year` | |
-| `holy-days-of-obligation` | What are holy days of obligation? | | B | P1 | `why-go-to-mass-on-sunday` | U.S. calendar |
+| `holy-days-of-obligation` ✓ | What are holy days of obligation? | | B | P1 | `why-go-to-mass-on-sunday` | U.S. calendar |
 | `feasts-and-solemnities` | What are feasts, memorials, and solemnities? | Ranks of celebration | I | P3 | `liturgical-year` | |
 | `catholic-funerals` | What happens at a Catholic funeral? | Order of Christian Funerals | B | P2 | `praying-for-the-dead` | |
 | `other-catholic-liturgies` | What other liturgies do Catholics celebrate? | Blessings, Liturgy of the Hours, Benediction | I | P3 | `liturgy-of-the-hours` | |
@@ -572,7 +572,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 | `scrutinies` | What are the Scrutinies? | | B | P2 | `lent` | |
 | `confession-before-becoming-catholic` | Do I go to Confession before becoming Catholic? | | B | P2 | `how-to-go-to-confession` | |
 | `married-before-ocia` ✓ | What if I've been married before? | Annulment, OCIA and marriage | I | P1 | `annulment` | R; common barrier |
-| `after-becoming-catholic` | What happens after I become Catholic? | Mystagogy | B | P1 | `stages-of-ocia` | |
+| `after-becoming-catholic` ✓ | What happens after I become Catholic? | Mystagogy | B | P1 | `stages-of-ocia` | |
 | `telling-family` | How do I talk to my family about becoming Catholic? | | B | P3 | | Pastoral reflection |
 | `finding-a-parish` ✓ | How do I find a parish? | | B | P1 | `dioceses-and-parishes` | |
 | `returning-to-the-church` ✓ | I was raised Catholic but stopped practicing. How do I come back? | Returning Catholics | B | P1 | `how-to-go-to-confession` | |
@@ -585,7 +585,7 @@ The Church distinguishes three levels of teaching, set out in the Profession of 
 |---|---|---|---|---|---|---|
 | `catholic-daily-life` | What does a Catholic's daily life look like? | | B | P2 | `how-to-pray` | |
 | `precepts-of-the-church` | What are the precepts of the Church? | Commandments of the Church | B | P2 | `why-go-to-mass-on-sunday` | |
-| `fasting-and-abstinence` | What are the rules for fasting and abstinence? | Friday abstinence | B | P1 | `lent` | U.S. norms |
+| `fasting-and-abstinence` ✓ | What are the rules for fasting and abstinence? | Friday abstinence | B | P1 | `lent` | U.S. norms |
 | `catholic-home` | How do Catholics pray at home? | Domestic church | B | P3 | `family-and-society` | |
 | `vocation` | What is a vocation? | | B | P2 | `discernment` | |
 | `becoming-a-priest` | How does someone become a priest? | Seminary | B | P3 | `holy-orders` | |
@@ -1007,10 +1007,10 @@ Each curriculum is an ordered reading plan built only from inventory topics, wit
 Pathways are ordered lists of existing topic slugs. Each can later be a simple ordered list like today's Start here page; no new software is needed. Topics already built are marked ✓.
 
 ### 8.1 Completely new to Catholicism (12)
-`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` → `how-to-become-catholic` ✓
+`what-do-catholics-believe` ✓ → `who-is-god` ✓ → `who-is-jesus` ✓ → `divinity-of-jesus` ✓ → `why-did-jesus-die` ✓ → `resurrection` ✓ → `what-is-the-church` ✓ → `what-is-the-bible` ✓ → `seven-sacraments` ✓ → `what-happens-at-mass` ✓ → `how-to-pray` ✓ → `how-to-become-catholic` ✓
 
 ### 8.2 OCIA participant (18)
-`how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` ✓ → `what-happens-when-we-die` ✓ → `ten-commandments` ✓ → `easter-vigil` → `after-becoming-catholic`
+`how-to-become-catholic` ✓ → `what-is-ocia` ✓ → `stages-of-ocia` ✓ → `catechumen-or-candidate` ✓ → `what-is-the-creed` ✓ → `what-is-the-trinity` ✓ → `what-is-sacred-tradition` ✓ → `sola-scriptura` ✓ → `seven-sacraments` ✓ → `baptism` ✓ → `confirmation` ✓ → `real-presence` ✓ → `how-to-go-to-confession` ✓ → `why-honor-mary` ✓ → `what-happens-when-we-die` ✓ → `ten-commandments` ✓ → `easter-vigil` ✓ → `after-becoming-catholic` ✓
 
 ### 8.3 Attending a first Mass (10)
 `first-time-at-mass` ✓ → `mass-etiquette` ✓ → `non-catholics-at-mass` ✓ → `what-happens-at-mass` ✓ → `mass-postures` ✓ → `mass-responses` ✓ → `mass-gestures` ✓ → `who-can-receive-communion` ✓ → `real-presence` ✓ → `why-go-to-mass-on-sunday` ✓
@@ -1125,7 +1125,7 @@ Each batch follows the workflow in [§10](#10-content-development-and-verificati
 | 12 | Apologetics IV: Mary, salvation, and other traditions (debate sections) | 0 | 2 | `trinity-in-scripture` ✓, `was-jesus-crucified` ✓ |
 | 13 | Faith, reason, creation, and other religions | 0 | 10 | `why-did-god-create-us` ✓, `creation` ✓, `creation-and-evolution` ✓, `original-sin` ✓, `does-god-exist` ✓, `faith-and-science` ✓, `problem-of-evil` ✓, `catholics-and-muslims` ✓, `do-all-religions-lead-to-god` ✓, `muhammad-and-the-quran` ✓ |
 | 14 | Moral life and social teaching | 0 | 8 | `how-catholics-decide-right-and-wrong` ✓, `conscience` ✓, `ten-commandments` ✓, `what-is-sin` ✓, `human-life-dignity` ✓, `abortion` ✓, `sexuality` ✓, `what-is-catholic-social-teaching` ✓ |
-| 15 | Prayer, the Church year, and Catholic life | 16 | 0 | `what-is-prayer`, `how-to-pray`, `basic-catholic-prayers`, `our-father`, `hail-mary`, `sign-of-the-cross`, `the-rosary`, `liturgical-year`, `advent`, `lent`, `ash-wednesday`, `holy-week`, `easter-vigil`, `holy-days-of-obligation`, `fasting-and-abstinence`, `after-becoming-catholic` |
+| 15 | Prayer, the Church year, and Catholic life | 0 | 16 | `what-is-prayer` ✓, `how-to-pray` ✓, `basic-catholic-prayers` ✓, `our-father` ✓, `hail-mary` ✓, `sign-of-the-cross` ✓, `the-rosary` ✓, `liturgical-year` ✓, `advent` ✓, `lent` ✓, `ash-wednesday` ✓, `holy-week` ✓, `easter-vigil` ✓, `holy-days-of-obligation` ✓, `fasting-and-abstinence` ✓, `after-becoming-catholic` ✓ |
 | 16 | Church history and the Fathers | 7 | 0 | `church-history-overview`, `early-church`, `council-of-nicaea`, `great-schism`, `protestant-reformation`, `who-are-the-church-fathers`, `fathers-on-the-eucharist` |
 
 <!-- /generated: batches -->
@@ -1187,20 +1187,20 @@ Generated from the inventory tables by `scripts/curriculum.mjs` (no dependencies
 | 4.7 The Seven Sacraments | 30 | 14 | 14 | 2 | 8 | 4 | 14 |
 | 4.9 Mary | 11 | 4 | 4 | 3 | 5 | 1 | 4 |
 | 4.10 Saints and Angels | 17 | 3 | 10 | 4 | 4 | 1 | 3 |
-| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 0 |
+| 4.11 Prayer and Spiritual Life | 25 | 7 | 10 | 8 | 0 | 2 | 7 |
 | 4.12 Catholic Moral Theology | 21 | 7 | 9 | 5 | 1 | 9 | 7 |
 | 4.13 Salvation and Eternal Life | 15 | 8 | 6 | 1 | 7 | 3 | 8 |
 | 4.14 Church History | 24 | 5 | 13 | 6 | 9 | 3 | 0 |
 | 4.15 Church Fathers and Doctors | 14 | 2 | 7 | 5 | 0 | 1 | 0 |
 | 4.16 Philosophy and Natural Theology | 16 | 3 | 8 | 5 | 8 | 0 | 3 |
 | 4.17 Catholic Social Teaching | 11 | 1 | 6 | 4 | 0 | 3 | 1 |
-| 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 0 |
-| 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 8 |
-| 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 1 |
+| 4.18 Liturgical Life | 15 | 7 | 6 | 2 | 0 | 0 | 7 |
+| 4.19 OCIA and Becoming Catholic | 17 | 9 | 7 | 1 | 0 | 1 | 9 |
+| 4.20 Everyday Catholic Life, Marriage, and Vocation (new) | 18 | 2 | 7 | 9 | 0 | 2 | 2 |
 | 5 Holy Mass (themes and parts) | 65 | 51 | 9 | 5 | 1 | 3 | 51 |
 | 6.3 Comparison questions | 6 | 4 | 2 | 0 | 1 | 3 | 4 |
 | 7.2 Apologetics-only questions | 27 | 2 | 16 | 9 | 27 | 11 | 2 |
-| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **145** |
+| **Total** | **422** | **168** | **174** | **80** | **91** | **52** | **161** |
 
 <!-- /generated: counts -->
 

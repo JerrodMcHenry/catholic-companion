@@ -84,7 +84,7 @@ export const becomingCatholic: Topic[] = [
     slug: "stages-of-ocia",
     title: "The Stages of OCIA",
     question: "What are the stages of OCIA?",
-    alsoKnownAs: ["Precatechumenate", "Catechumenate", "Purification and Enlightenment", "Mystagogy", "Rite of Acceptance", "Rite of Election"],
+    alsoKnownAs: ["Precatechumenate", "Catechumenate", "Purification and Enlightenment", "Rite of Acceptance", "Rite of Election"],
     category: "becoming-catholic",
     keywords: ["stages of OCIA", "periods of OCIA", "inquiry", "precatechumenate", "catechumenate", "rite of acceptance", "rite of welcoming", "rite of election", "call to continuing conversion", "scrutinies", "Lent", "Easter Vigil", "mystagogy", "neophyte", "book of the elect"],
     summary:
@@ -267,5 +267,40 @@ export const becomingCatholic: Topic[] = [
     },
     resources: ["relevant-radio-return", "catholics-come-home"],
     related: ["how-to-go-to-confession", "returning-after-mortal-sin", "confession", "finding-a-parish", "married-before-ocia"],
+  },
+  {
+    slug: "after-becoming-catholic",
+    title: "After Becoming Catholic",
+    question: "What happens after I become Catholic?",
+    alsoKnownAs: ["Mystagogy"],
+    category: "becoming-catholic",
+    keywords: ["after OCIA", "after becoming Catholic", "mystagogy", "neophyte", "new Catholic", "what next after Easter Vigil", "precepts of the Church", "Catholic obligations", "growing in faith", "spiritual direction", "parish life"],
+    summary:
+      "Becoming Catholic is a beginning, not a graduation. After the sacraments of initiation comes mystagogy, a time of reflecting on the sacraments and growing into parish life, and then a lifetime of formation. The Church asks a few things of every Catholic, such as Sunday Mass and yearly Confession, and recommends much more: daily prayer, Scripture, learning, service, and good guidance.",
+    explanation: [
+      "Mystagogy: the time after initiation is called mystagogy, a word for catechesis that leads “from the visible to the invisible, from the sign to the thing signified, from the ‘sacraments’ to the ‘mysteries’” (CCC 1075). The newly baptized are called neophytes. After it ends, the U.S. bishops encourage neophytes to keep meeting “to deepen their Christian formation, especially through opportunities that enhance their participation in the life of the parish” (National Statutes for the Christian Initiation of Adults, Norm 13).",
+      "What the Church requires of every Catholic: attending Mass on Sundays and holy days of obligation; confessing one's sins at least once a year; receiving Communion at least during the Easter season; keeping the holy days; observing the days of fasting and abstinence; and helping to provide for the Church's needs (CCC 2042–2043). These are “the indispensable minimum” (CCC 2041), not the whole of Christian life.",
+      "What the Church recommends: a daily rhythm of prayer (see “How do I start praying?”); reading Scripture (see “Where should a beginner start reading the Bible?”); continuing to learn the faith, for example with the Catechism; and regular Confession, even of venial sins, which “is nevertheless strongly recommended by the Church” (CCC 1458).",
+      "Parish and service: formation is meant to lead into “the ordinary life of the Christian people” (National Statutes, Norm 5). Join a ministry or small group, and practice the works of mercy, such as feeding the hungry and visiting the sick (CCC 2447; see “What is Catholic social teaching?”).",
+      "Guidance: the Church values spiritual direction by people with “wisdom, faith and discernment” (CCC 2690). A priest, your sponsor, or a trusted parishioner can help you grow and work through questions.",
+      "When it gets hard: faith grows over a lifetime, with dry seasons as well as joyful ones. Struggles do not mean you failed; keep coming to Mass and Confession, and ask for help. If you ever drift away, the way back is always open (see “Returning to the Church”).",
+    ],
+    teaching: {
+      catechism: [
+        { paragraphs: "1075", url: ccc("__P2T") },
+        { paragraphs: "1458", url: ccc("__P4D") },
+        { paragraphs: "2041–2043", url: ccc("__P75") },
+        { paragraphs: "2447", url: ccc("__P8F") },
+        { paragraphs: "2690", url: ccc("__P9H") },
+      ],
+      scripture: [
+        { passage: "Acts 2:42", url: bible("acts/2") },
+        { passage: "Colossians 2:6–7", url: bible("colossians/2") },
+        { passage: "2 Peter 3:18", url: bible("2peter/3") },
+      ],
+      documents: ["usccb-nscia"],
+    },
+    resources: ["usccb-ocia"],
+    related: ["stages-of-ocia", "why-go-to-mass-on-sunday", "how-to-pray", "finding-a-parish", "how-to-go-to-confession"],
   },
 ];
