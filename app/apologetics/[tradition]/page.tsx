@@ -35,8 +35,8 @@ export default async function TraditionPage({ params }: PageProps<"/apologetics/
     <>
       <div className="flex items-center justify-between gap-4">
         <BackLink
-          href={parent ? `/apologetics/${parent.slug}` : "/apologetics#religions"}
-          label={parent ? parent.name : "Apologetics"}
+          href={parent ? `/apologetics/${parent.slug}` : "/apologetics#traditions"}
+          label={parent ? parent.name : "Common Questions"}
         />
         <SaveButton kind="tradition" id={tradition.slug} title={tradition.name} />
       </div>
@@ -64,7 +64,7 @@ export default async function TraditionPage({ params }: PageProps<"/apologetics/
           )}
           {denominations.some((d) => !hasPage(d)) && (
             <p className="mt-2 text-ink-soft">
-              <span className="font-medium text-ink">Coming soon:</span>{" "}
+              <span className="font-medium text-ink">Also covered here:</span>{" "}
               {denominations.filter((d) => !hasPage(d)).map((d) => d.name).join(", ")}
             </p>
           )}

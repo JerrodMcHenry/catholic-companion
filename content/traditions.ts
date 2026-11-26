@@ -1,7 +1,7 @@
 import type { Tradition } from "./types";
 
 // Religious traditions and worldviews. Only entries with an overview get a page;
-// the rest are listed as "coming soon".
+// the rest are not listed, except as denominations named on their parent's page.
 export const traditions: Tradition[] = [
   // Christian traditions
   {

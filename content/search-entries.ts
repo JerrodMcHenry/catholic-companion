@@ -45,14 +45,14 @@ export function searchEntries(): SearchEntry[] {
       kind: "topic",
       title: t.question,
       href: `/topic/${t.slug}`,
-      label: t.debate ? "Apologetics" : getCategory(t.category)!.title,
+      label: getCategory(t.category)!.title,
       description: firstSentence(t.summary),
       fields: [
         [t.question, WEIGHT.title],
         [t.title, WEIGHT.title],
         [(t.alsoKnownAs ?? []).join(" "), WEIGHT.alias],
         [t.keywords.join(" "), WEIGHT.keyword],
-        [t.debate ? "Apologetics questions objections" : getCategory(t.category)!.title, WEIGHT.context],
+        [t.debate ? `${getCategory(t.category)!.title} common questions objections apologetics` : getCategory(t.category)!.title, WEIGHT.context],
         [traditionNames.join(" "), WEIGHT.context],
         [(t.teaching.scripture ?? []).map((s) => s.passage).join(" "), WEIGHT.context],
         [`Catechism CCC ${(t.teaching.catechism ?? []).map((c) => expandParagraphs(c.paragraphs)).join(" ")}`, WEIGHT.context],
@@ -104,13 +104,13 @@ export function searchEntries(): SearchEntry[] {
     });
   }
 
-  for (const c of categories.filter((c) => c.pillar !== "apologetics")) {
-    const empty = topicsIn(c.slug).length === 0;
+  // Empty categories are left out until they have topics.
+  for (const c of categories.filter((c) => c.pillar !== "apologetics" && topicsIn(c.slug).length > 0)) {
     entries.push({
       kind: "category",
       title: c.title,
       href: `/category/${c.slug}`,
-      label: empty ? "Category · coming soon" : "Category",
+      label: "Category",
       description: c.description,
       fields: [
         [c.title, WEIGHT.title],

@@ -1,93 +1,73 @@
 import type { Category, Pillar } from "./types";
 
 export const pillars: Pillar[] = [
-  {
-    id: "learn",
-    title: "Learn",
-    description: "What Catholics believe and why: God, the Bible, the sacraments, and the Mass.",
-  },
-  {
-    id: "apologetics",
-    title: "Apologetics",
-    subtitle: "Questions & Objections",
-    description: "Fair, honest answers to common challenges to the Catholic faith.",
-  },
-  {
-    id: "live",
-    title: "Live the Faith",
-    description: "Becoming Catholic, prayer, and growing closer to God day by day.",
-  },
-  {
-    id: "resources",
-    title: "Resources",
-    description: "Trusted articles, videos, and official Church documents.",
-  },
+  { id: "discover", title: "Discover Catholicism", description: "What Catholics believe about God, Jesus, the Church, the Bible, and the sacraments." },
+  { id: "becoming", title: "Becoming Catholic", description: "OCIA, finding a parish, and the path into the Church." },
+  { id: "mass", title: "Understanding the Mass", description: "What happens at Mass, what to say and do, and what each part means." },
+  { id: "live", title: "Living the Faith", description: "Prayer, the Church year, the moral life, and everyday Catholic practice." },
+  { id: "apologetics", title: "Common Questions", description: "Clear answers to the questions people most often ask about Catholicism." },
+  { id: "deeper", title: "Go Deeper", description: "Church history, faith and reason, and other Christian traditions and religions." },
+  { id: "resources", title: "Trusted Resources", description: "Articles, videos, and official Church documents worth your time." },
 ];
 
 export const categories: Category[] = [
   {
     slug: "beliefs",
-    pillar: "learn",
+    pillar: "discover",
     title: "What Catholics Believe",
     description: "God, Jesus Christ, the Church, and the Creed.",
   },
   {
     slug: "church",
-    pillar: "learn",
+    pillar: "discover",
     title: "The Church",
     description: "What the Church is, the pope and bishops, and how the faith is handed on.",
   },
   {
     slug: "sacraments",
-    pillar: "learn",
+    pillar: "discover",
     title: "The Sacraments",
     description: "The seven sacred rites, from Baptism to Marriage, through which Christ acts.",
   },
   {
     slug: "mass",
-    pillar: "learn",
+    pillar: "mass",
     title: "The Mass",
     description: "What happens at Mass, and why it is the center of Catholic life.",
   },
   {
     slug: "bible",
-    pillar: "learn",
+    pillar: "discover",
     title: "The Bible",
     description: "How Catholics read and understand Sacred Scripture.",
   },
   {
     slug: "history",
-    pillar: "learn",
+    pillar: "deeper",
     title: "Church History",
     description: "Two thousand years, from the apostles to today.",
   },
   {
     slug: "mary-and-the-saints",
-    pillar: "learn",
+    pillar: "discover",
     title: "Mary and the Saints",
     description: "Who they are, and why Catholics honor them.",
   },
   {
-    slug: "morality",
-    pillar: "learn",
-    title: "Moral Life",
-    description: "How Catholics understand right and wrong, and living well.",
-  },
-  {
     slug: "faith-and-reason",
-    pillar: "learn",
+    pillar: "deeper",
     title: "Faith and Reason",
     description: "Does God exist? Faith, science, and the big questions.",
   },
   {
     slug: "objections",
     pillar: "apologetics",
-    title: "Common Objections",
+    title: "Common Questions",
     description: "Challenges from other Christians, other religions, and skeptics.",
   },
   {
     slug: "becoming-catholic",
-    pillar: "live",
+    pillar: "becoming",
     title: "Becoming Catholic",
     description: "OCIA and the path into the Church.",
   },
@@ -114,5 +94,11 @@ export const categories: Category[] = [
     pillar: "live",
     title: "Catholic Life",
     description: "Everyday practices, marriage and family, and vocations.",
+  },
+  {
+    slug: "morality",
+    pillar: "live",
+    title: "Moral Life",
+    description: "How Catholics understand right and wrong, and living well.",
   },
 ];

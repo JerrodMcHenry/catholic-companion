@@ -7,7 +7,7 @@ export type SearchEntry = {
   kind: SearchKind;
   title: string;
   href: string;
-  label: string; // What the result is: "The Mass", "Apologetics", "Video · Catholic Answers".
+  label: string; // What the result is: "The Mass", "Common Questions", "Video · Catholic Answers".
   description?: string;
   external?: boolean;
   fields: [text: string, weight: number][]; // Searchable text; higher weight is a stronger signal.

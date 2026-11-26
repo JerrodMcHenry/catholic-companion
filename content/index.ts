@@ -3,11 +3,11 @@
 
 import { categories, pillars } from "./categories";
 import { resources } from "./resources";
-import { commonQuestions, comparisonTopics, massOrder, startHere, topics } from "./topics";
+import { becomingPath, commonQuestions, comparisonTopics, massOrder, newCatholicPath, startHere, topics } from "./topics";
 import { traditions } from "./traditions";
 import { resourceLabel, type PillarId, type Tradition } from "./types";
 
-export { categories, commonQuestions, comparisonTopics, pillars, resources, startHere, topics, traditions };
+export { becomingPath, categories, commonQuestions, comparisonTopics, newCatholicPath, pillars, resources, startHere, topics, traditions };
 export type * from "./types";
 export { resourceLabel, resourceTypeLabel } from "./types";
 
@@ -52,7 +52,7 @@ export function savableItems(): Record<string, SavedItem> {
     items[`topic:${t.slug}`] = {
       title: t.question,
       href: `/topic/${t.slug}`,
-      label: t.debate ? "Apologetics" : categoryBySlug.get(t.category)!.title,
+      label: categoryBySlug.get(t.category)!.title,
     };
   }
   for (const t of traditions.filter(hasPage)) {
@@ -146,7 +146,7 @@ for (const t of traditions) {
   checkTopics(where, t.related);
 }
 
-checkTopics("homepage list", [...startHere, ...commonQuestions]);
+checkTopics("pathways and question lists", [...startHere, ...becomingPath, ...newCatholicPath, ...commonQuestions]);
 checkTopics("comparison list", comparisonTopics);
 
 const massSlugs = massOrder.flatMap((s) => s.slugs);

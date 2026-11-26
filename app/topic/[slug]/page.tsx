@@ -21,15 +21,15 @@ const MASS_HUB = "what-happens-at-mass";
 const refLink =
   "inline-flex min-h-11 items-center rounded-full border border-line bg-card px-4 font-medium text-accent hover:border-gold";
 
-// One page layout for every topic: answer, more detail, (for apologetics) the debate,
-// Church teaching, resources, related.
+// One page layout for every topic: the answer, more detail, Scripture and Church teaching,
+// resources, then (collapsed) common objections, the next part of the Mass, related questions.
 export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) {
   const topic = getTopic((await params).slug);
   if (!topic) notFound();
   const category = getCategory(topic.category)!;
   // Debate topics filed under Learn (the sacraments, the Mass, the Bible) go back to their own category.
   const back = topic.debate && category.pillar === "apologetics"
-    ? { href: "/apologetics", label: "Apologetics" }
+    ? { href: "/apologetics", label: "Common Questions" }
     : { href: `/category/${category.slug}`, label: category.title };
   const { catechism = [], scripture = [], documents = [] } = topic.teaching;
   const fathers = topic.debate?.fathers;
@@ -94,63 +94,50 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
         </section>
       )}
 
-      {topic.debate && <DebateSections debate={topic.debate} />}
-
-      <section aria-labelledby="teaching" className="mt-12">
-        <SectionTitle id="teaching">What the Church teaches</SectionTitle>
-        <div className="space-y-6">
-          {catechism.length > 0 && (
-            <div>
-              <h3 className="mb-3 font-medium text-ink">Catechism of the Catholic Church</h3>
-              <ul className="flex flex-wrap gap-2">
-                {catechism.map((ref) => (
-                  <li key={ref.paragraphs}>
-                    <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
-                      {/[–,]/.test(ref.paragraphs) ? "Paragraphs" : "Paragraph"} {ref.paragraphs}
-                      <span className="sr-only"> (opens in a new tab)</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-          {documents.length > 0 && (
-            <div>
-              <h3 className="mb-3 font-medium text-ink">Church documents</h3>
-              <ResourceList resources={resourcesFor(documents)} />
-            </div>
-          )}
-          {/* Supporting references stay one tap away so the page stays short on phones. */}
-          {(scripture.length > 0 || fathers) && (
-            <details className="group rounded-2xl border border-line bg-card">
-              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 rounded-2xl px-5 font-medium text-accent">
-                {fathers ? "Scripture and the early Church" : "Scripture"}
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5 shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </summary>
-              <div className="space-y-6 px-5 pb-5">
-                {scripture.length > 0 && (
-                  <div>
-                    <h3 className="mb-3 font-medium text-ink">Scripture</h3>
-                    <ul className="flex flex-wrap gap-2">
-                      {scripture.map((ref) => (
-                        <li key={ref.passage}>
-                          <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
-                            {ref.passage}
-                            <span className="sr-only"> (opens in a new tab)</span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {fathers && <Fathers fathers={fathers} />}
+      {(scripture.length > 0 || fathers || catechism.length > 0 || documents.length > 0) && (
+        <section aria-labelledby="teaching" className="mt-12">
+          <SectionTitle id="teaching">Scripture and Church teaching</SectionTitle>
+          <div className="space-y-6">
+            {scripture.length > 0 && (
+              <div>
+                <h3 className="mb-3 font-medium text-ink">In Scripture</h3>
+                <ul className="flex flex-wrap gap-2">
+                  {scripture.map((ref) => (
+                    <li key={ref.passage}>
+                      <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
+                        {ref.passage}
+                        <span className="sr-only"> (opens in a new tab)</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </details>
-          )}
-        </div>
-      </section>
+            )}
+            {fathers && <Fathers fathers={fathers} />}
+            {catechism.length > 0 && (
+              <div>
+                <h3 className="mb-3 font-medium text-ink">Catechism of the Catholic Church</h3>
+                <ul className="flex flex-wrap gap-2">
+                  {catechism.map((ref) => (
+                    <li key={ref.paragraphs}>
+                      <a href={ref.url} target="_blank" rel="noopener noreferrer" className={refLink}>
+                        {/[–,]/.test(ref.paragraphs) ? "Paragraphs" : "Paragraph"} {ref.paragraphs}
+                        <span className="sr-only"> (opens in a new tab)</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {documents.length > 0 && (
+              <div>
+                <h3 className="mb-3 font-medium text-ink">Church documents</h3>
+                <ResourceList resources={resourcesFor(documents)} />
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {topic.resources && (
         <section aria-labelledby="deeper" className="mt-12">
@@ -158,6 +145,8 @@ export default async function TopicPage({ params }: PageProps<"/topic/[slug]">) 
           <ResourceList resources={resourcesFor(topic.resources)} />
         </section>
       )}
+
+      {topic.debate && <DebateSections debate={topic.debate} />}
 
       {massStep && (
         <nav aria-labelledby="follow" className="mt-12">

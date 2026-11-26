@@ -870,6 +870,19 @@ The final Phase 7 batch. The inventory matched the master curriculum exactly: 7 
 | `latter-day-saints` | **R:** accuracy as Latter-day Saints would describe themselves; the baptism paragraph |
 | `fathers-on-the-eucharist` | The Augustine passage and its presentation |
 
+## Final cleanup before user testing (2026-11-25)
+
+- **External links:** all 334 resource URLs were checked.
+  - 304 answered normally to a script.
+  - 27 refuse scripts (usccb.org, bible.usccb.org, Britannica, Word on Fire, Chabad, sunnah.com, Al-Islam.org) and HuffPost answered 406; all of these load in a browser.
+  - Two SeekersGuidance pages (`seekers-4-157`, `seekers-quran-2-62`) were offline: the whole site showed "scheduled maintenance." They are kept and must be rechecked; replace them if the site does not return.
+  - No soft 404s were found.
+- **Scripture links:** all 178 unique bible.usccb.org chapter links open the correct NABRE chapter (checked in a browser).
+- **Multimedia:** all 13 YouTube videos are still available (oEmbed), and the 3 Ascension pages load. Their content is still unreviewed; see the checklist below.
+- **Text fixes:**
+  - Removed a user-facing "planned after launch" sentence from `do-all-religions-lead-to-god`.
+  - Replaced the site description ("…and defend the Catholic faith") with the refocused mission.
+
 ## Phase 8 review requirements (consolidated)
 
 Phase 7 is implemented. Implementation is not release readiness: none of the items below has been completed, and no topic has received independent theological review. The detailed pending list that follows remains the record of specific source items.

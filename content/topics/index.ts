@@ -42,8 +42,7 @@ export const topics = [
   ...apologeticsTopics,
 ];
 
-// The beginner path behind "New to Catholicism? Start here", in reading order
-// (the approved "new to Catholicism" pathway, limited to topics that exist so far).
+// "I'm curious about Catholicism": the approved "new to Catholicism" pathway, in reading order.
 export const startHere = [
   "what-do-catholics-believe",
   "who-is-god",
@@ -61,8 +60,26 @@ export const startHere = [
 
 export { massOrder };
 
-// "Comparing traditions" on the Apologetics page: comparison topics, which live under The Church.
+// On Common Questions: the comparisons with other Christians come first, then the other religions.
 export const comparisonTopics = ["catholic-and-protestant-differences", "catholic-and-orthodox-differences", "catholics-and-muslims", "do-all-religions-lead-to-god"];
 
-// Shown on the homepage.
-export const commonQuestions = ["how-to-become-catholic", "what-happens-at-mass", "real-presence"];
+// Listed first on Common Questions, in this order.
+export const commonQuestions = [
+  "are-catholics-christians", "why-honor-mary", "praying-to-saints", "statues-and-images", "what-is-the-pope",
+  "what-is-sacred-tradition", "catholic-bible-books", "why-confess-to-a-priest", "infant-baptism", "real-presence",
+  "faith-and-works", "purgatory", "problem-of-evil",
+];
+
+// "I'm becoming Catholic": the approved OCIA pathway (8.2), with finding a parish and the Mass added.
+export const becomingPath = [
+  "how-to-become-catholic", "what-is-ocia", "finding-a-parish", "stages-of-ocia", "catechumen-or-candidate", "what-happens-at-mass",
+  "what-is-the-creed", "what-is-the-trinity", "what-is-sacred-tradition", "sola-scriptura", "seven-sacraments", "baptism",
+  "confirmation", "real-presence", "how-to-go-to-confession", "why-honor-mary", "what-happens-when-we-die", "ten-commandments",
+  "easter-vigil", "after-becoming-catholic",
+];
+
+// "I'm a new Catholic": practical next steps after reception into the Church.
+export const newCatholicPath = [
+  "after-becoming-catholic", "why-go-to-mass-on-sunday", "how-to-receive-communion", "how-to-go-to-confession", "how-to-pray",
+  "basic-catholic-prayers", "liturgical-year", "holy-days-of-obligation", "fasting-and-abstinence", "finding-a-parish",
+];

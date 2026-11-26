@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: { default: "Catholic Companion", template: "%s · Catholic Companion" },
   description:
-    "Understand, explore, practice, and defend the Catholic faith, with trusted resources for every question.",
+    "A friendly guide for anyone curious about Catholicism, becoming Catholic, or newly Catholic, with clear answers and trusted resources.",
 };
 
 export const viewport: Viewport = {

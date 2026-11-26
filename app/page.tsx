@@ -1,10 +1,20 @@
 import Form from "next/form";
 import Link from "next/link";
-import { CardLink, SectionTitle, TopicList } from "@/components/cards";
-import { commonQuestions, pillars, topicsFor } from "@/content";
+import { CardLink, SectionTitle } from "@/components/cards";
 
-const pillarHref = (id: string) =>
-  id === "resources" ? "/resources" : id === "apologetics" ? "/apologetics" : `/explore#${id}`;
+// Three ways in, one for each kind of reader; each opens its path on the Where to begin page.
+const journeys = [
+  { href: "/start#curious", title: "I'm curious about Catholicism", description: "What Catholics believe and why, starting from the basics." },
+  { href: "/start#becoming", title: "I'm becoming Catholic", description: "OCIA, finding a parish, the Mass, and the sacraments, step by step." },
+  { href: "/start#new-catholic", title: "I'm a new Catholic", description: "Mass, Confession, prayer, and the Church year in everyday life." },
+];
+
+const quickLinks = [
+  { href: "/category/mass", title: "Understanding the Mass" },
+  { href: "/apologetics", title: "Common Questions" },
+  { href: "/category/prayer", title: "Prayer" },
+  { href: "/resources", title: "Trusted Resources" },
+];
 
 export default function HomePage() {
   return (
@@ -14,8 +24,8 @@ export default function HomePage() {
           Discover the Catholic faith
         </h1>
         <p className="mx-auto mt-4 max-w-md leading-relaxed text-ink-soft">
-          Clear answers about what Catholics believe and why, with trusted resources when you want
-          to go deeper.
+          A friendly guide for anyone curious about Catholicism, preparing to become Catholic, or
+          newly Catholic.
         </p>
 
         {/* A real search field: type here, press Enter, and land on the results. */}
@@ -45,38 +55,35 @@ export default function HomePage() {
         </Form>
       </section>
 
-      <Link
-        href="/start"
-        className="block rounded-3xl bg-accent px-6 py-6 text-on-accent transition-colors hover:bg-accent-strong sm:px-8"
-      >
-        <span className="block font-medium opacity-90">New to Catholicism?</span>
-        <span className="mt-1 flex items-center gap-2 font-serif text-4xl font-semibold">
-          Start here
-          <span aria-hidden="true">→</span>
-        </span>
-        <span className="mt-2 block leading-snug opacity-90">
-          A short path through the questions most people ask first.
-        </span>
-      </Link>
-
-      <section aria-labelledby="explore">
-        <SectionTitle id="explore">Explore</SectionTitle>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {pillars.map((pillar) => (
-            <li key={pillar.id}>
-              <CardLink
-                href={pillarHref(pillar.id)}
-                title={pillar.subtitle ? `${pillar.title} · ${pillar.subtitle}` : pillar.title}
-                description={pillar.description}
-              />
+      <section aria-labelledby="journeys">
+        <SectionTitle id="journeys">Where are you on your journey?</SectionTitle>
+        <ul className="space-y-3">
+          {journeys.map((j) => (
+            <li key={j.href}>
+              <Link
+                href={j.href}
+                className="flex items-center gap-4 rounded-2xl border border-line bg-card px-5 py-5 transition-colors hover:border-gold"
+              >
+                <span className="flex-1">
+                  <span className="block font-serif text-2xl font-semibold text-ink">{j.title}</span>
+                  <span className="mt-1 block leading-snug text-ink-soft">{j.description}</span>
+                </span>
+                <span aria-hidden="true" className="text-2xl text-gold-ink">→</span>
+              </Link>
             </li>
           ))}
         </ul>
       </section>
 
-      <section aria-labelledby="questions">
-        <SectionTitle id="questions">Common questions</SectionTitle>
-        <TopicList topics={topicsFor(commonQuestions)} />
+      <section aria-labelledby="quick">
+        <SectionTitle id="quick">Quick links</SectionTitle>
+        <ul className="grid grid-cols-2 gap-3">
+          {quickLinks.map((link) => (
+            <li key={link.href}>
+              <CardLink {...link} />
+            </li>
+          ))}
+        </ul>
       </section>
     </div>
   );

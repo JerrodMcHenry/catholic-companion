@@ -4,29 +4,38 @@ import { categoriesIn, pillars, topicsIn, type PillarId } from "@/content";
 
 export const metadata: Metadata = { title: "Explore" };
 
-// What each pillar links to: its categories, or for Apologetics and Resources, their own pages.
+// What each area links to: its categories that have topics, plus a few direct links.
 function linksFor(pillar: PillarId) {
-  if (pillar === "apologetics") {
-    return [
-      { href: "/apologetics#religions", title: "By religion", description: "Other Christian traditions, other religions, and worldviews." },
-      { href: "/apologetics#questions", title: "By question", description: "Common objections and how Catholics respond." },
-    ];
+  const withTopics = categoriesIn(pillar)
+    .filter((c) => topicsIn(c.slug).length > 0)
+    .map((c) => ({ href: `/category/${c.slug}`, title: c.title, description: c.description }));
+  switch (pillar) {
+    case "becoming":
+      return [
+        { href: "/start#becoming", title: "Your path into the Church", description: "A suggested order, from first questions to the Easter Vigil." },
+        ...withTopics.map((c) => ({ ...c, title: "All questions about becoming Catholic", description: "OCIA, sponsors, previous marriages, and returning to the Church." })),
+      ];
+    case "mass":
+      return [
+        { href: "/topic/what-happens-at-mass", title: "The Mass, step by step", description: "Every part of the Mass in order, with what it means." },
+        ...withTopics.map((c) => ({ ...c, title: "Questions about the Mass", description: "Your first Mass, what to say, when to stand or kneel, and Communion." })),
+      ];
+    case "apologetics":
+      return [{ href: "/apologetics", title: "Common questions", description: "Mary and the saints, Confession, the pope, the Bible, and more." }];
+    case "deeper":
+      return [...withTopics, { href: "/apologetics#traditions", title: "Other traditions and religions", description: "How Catholic belief compares with other churches and religions." }];
+    case "resources":
+      return [{ href: "/resources", title: "All resources", description: "Articles, videos, and official Church documents." }];
+    default:
+      return withTopics;
   }
-  if (pillar === "resources") {
-    return [{ href: "/resources", title: "All resources", description: "Church documents, articles, videos, and sources." }];
-  }
-  return categoriesIn(pillar).map((c) => ({
-    href: `/category/${c.slug}`,
-    title: c.title,
-    description: topicsIn(c.slug).length ? c.description : `${c.description} Coming soon.`,
-  }));
 }
 
 export default function ExplorePage() {
   return (
     <>
       <h1 className="font-serif text-5xl font-semibold text-ink">Explore</h1>
-      <p className="mt-3 leading-relaxed text-ink-soft">Everything in Catholic Companion, by subject.</p>
+      <p className="mt-3 leading-relaxed text-ink-soft">Find what you need, from first questions to everyday Catholic life.</p>
 
       <div className="mt-10 space-y-12">
         {pillars.map((pillar) => (
